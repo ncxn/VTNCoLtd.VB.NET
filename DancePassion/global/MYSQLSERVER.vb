@@ -3,129 +3,116 @@ Public Class MYSQLSERVER
     Public Property Server As String = "173.254.231.108"
     Public Property UserName As String = "root"
     Public Property Password As String = "mmttmhh"
-    Public Property Database As String = "spm"
+    Public Property Database As String = "dp"
 
-    Public Function Connect_Server() As String
-        Connect_Server = CType("server=" & Server & ";" & "userid=" & UserName & ";" & "password=" & Password & ";" & "database=" & Database, String)
-        Return Connect_Server
+    Public Function connstr() As String
+        connstr = CType("server=" & Server & ";" & "userid=" & UserName & ";" & "password=" & Password & ";" & "database=" & Database, String)
+        Return connstr
     End Function
-    Public Function Get_Row(SQLStatement As String) As ArrayList
+    Public Function Get_Row(sql As String) As ArrayList
         Dim Result As New ArrayList
-        Dim Reader As MySqlDataReader
-        Dim MySQL_Connection As New MySqlConnection
-        Dim MySQL_Command As New MySqlCommand
-        Try
-            MySQL_Connection.ConnectionString = Connect_Server()
-            MySQL_Command.CommandText = SQLStatement
-            MySQL_Command.Connection = MySQL_Connection
-            MySQL_Connection.Open()
-            MessageBox.Show("Connection to Database has been opened.")
+        Dim conn As New MySqlConnection(connstr)
 
-            Reader = MySQL_Command.ExecuteReader
-            While Reader.Read()
+        Try
+            conn.Open()
+            Dim cmd As New MySqlCommand(sql, conn)
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+
+            While reader.Read()
                 Dim dict As New Dictionary(Of String, Object)
-                For count As Integer = 0 To (Reader.FieldCount - 1)
-                    dict.Add(Reader.GetName(count), Reader(count))
+                For count As Integer = 0 To (reader.FieldCount - 1)
+                    dict.Add(reader.GetName(count), reader(count))
                 Next
                 Result.Add(dict)
             End While
-            Reader.Close()
-            MySQL_Connection.Close()
+            reader.Close()
+
         Catch ex As Exception
-            MessageBox.Show("MySQL retrieve row: " & ex.Message & Err.Number)
+            MessageBox.Show("không thể kết nối với dữ liệu: " & ex.Message & Err.Number)
         Finally
-            MySQL_Connection.Dispose()
-            MySQL_Connection = Nothing
-            Reader = Nothing
+            conn.Close()
         End Try
         GC.Collect()
         Return Result
     End Function
-    Public Function Get_Value(SQLStatement As String) As String
+    Public Function Get_Value(sql As String) As String
+        Dim conn As New MySqlConnection(connstr)
         Dim Result As String
-        Dim MySQL_Connection As New MySqlConnection
-        Dim MySQL_Command As New MySqlCommand
         Try
-            MySQL_Connection.ConnectionString = Connect_Server()
-            MySQL_Command.CommandText = SQLStatement
-            MySQL_Command.Connection = MySQL_Connection
-            MySQL_Connection.Open()
-            Result = CType(MySQL_Command.ExecuteScalar(), String)
-            MySQL_Connection.Close()
+            conn.Open()
+            Dim cmd As New MySqlCommand(sql, conn)
+            Result = CType(cmd.ExecuteScalar(), String)
+            conn.Close()
         Catch ex As Exception
             Console.WriteLine("MySQL retrieve value: " & ex.Message & Err.Number)
             Result = Nothing
         Finally
-            MySQL_Connection.Dispose()
-            MySQL_Connection = Nothing
+            conn.Dispose()
+            conn = Nothing
         End Try
         GC.Collect()
         Return Result
     End Function
-    Public Function Get_Table(SQLStatement As String) As DataTable
-        Dim table As New DataTable
-        Dim Reader As MySqlDataReader
-        Dim MySQL_Connection As New MySqlConnection
-        Dim MySQL_Command As New MySqlCommand
+    Public Function Get_tb(sql As String) As DataTable
+
+        Dim conn As New MySqlConnection(connstr)
+        Dim dt As New DataTable
+
         Try
-            MySQL_Connection.ConnectionString = Connect_Server()
-            MySQL_Command.CommandText = SQLStatement
-            MySQL_Command.Connection = MySQL_Connection
-            MySQL_Connection.Open()
-            Reader = MySQL_Command.ExecuteReader
-            table.Load(Reader)
-            Reader.Close()
-            MySQL_Connection.Close()
+            conn.Open()
+            Dim da As New MySqlDataAdapter(sql, conn)
+            da.Fill(dt)
+            conn.Close()
         Catch ex As Exception
-            MessageBox.Show("MySQL retrieve table: " & ex.Message & Err.Number)
-            table = Nothing
+            MessageBox.Show("Không thể kết nối với dữ liệu: " & ex.Message & Err.Number)
         Finally
-            MySQL_Connection.Dispose()
-            MySQL_Connection = Nothing
-            Reader = Nothing
+            conn.Dispose()
+            conn = Nothing
+            dt = Nothing
         End Try
+
         GC.Collect()
-        Return table
+        Return dt
+
     End Function
-    Public Function Insert_Row(SQLStatement As String) As Boolean
+    Public Function Insert_Row(sql As String) As Boolean
+
         Insert_Row = False
-        Dim MySQL_Connection As New MySqlConnection
-        Dim MySQL_Command As New MySqlCommand
+
+        Dim conn As New MySqlConnection(connstr)
+
+
         Try
-            MySQL_Connection.ConnectionString = Connect_Server()
-            MySQL_Command.CommandText = SQLStatement
-            MySQL_Command.Connection = MySQL_Connection
-            MySQL_Connection.Open()
-            MySQL_Command.ExecuteNonQuery()
-            MySQL_Connection.Close()
+            conn.Open()
+            Dim cmd As New MySqlCommand(sql, conn)
+            cmd.ExecuteNonQuery()
+            conn.Close()
             Insert_Row = True
         Catch ex As MySqlException
-            Console.WriteLine("MySQL insert: " & ex.Message & Err.Number)
+            Console.WriteLine("Không thể thêm dữ liệu: " & ex.Message & Err.Number)
             Insert_Row = False
         Finally
-            MySQL_Connection.Dispose()
-            MySQL_Connection = Nothing
+            conn.Dispose()
+            conn = Nothing
         End Try
         GC.Collect()
     End Function
-    Public Function Delete_Row(SQLStatement As String) As Boolean
-        Delete_Row = False
-        Dim MySQL_Connection As New MySqlConnection
-        Dim MySQL_Command As New MySqlCommand
+    Public Function Delete_Row(sql As String) As Boolean
+
+        Dim conn As New MySqlConnection(connstr)
+
         Try
-            MySQL_Connection.ConnectionString = Connect_Server()
-            MySQL_Command.CommandText = SQLStatement
-            MySQL_Command.Connection = MySQL_Connection
-            MySQL_Connection.Open()
-            MySQL_Command.ExecuteNonQuery()
-            MySQL_Connection.Close()
+            conn.Open()
+            Dim cmd As New MySqlCommand(sql, conn)
+            cmd.ExecuteNonQuery()
+            conn.Close()
             Delete_Row = True
         Catch ex As MySqlException
-            Console.WriteLine("MySQL delete: " & ex.Message & Err.Number)
+            Console.WriteLine("Không thể xóa: " & ex.Message & Err.Number)
             Delete_Row = False
         Finally
-            MySQL_Connection.Dispose()
-            MySQL_Connection = Nothing
+            conn.Dispose()
+            conn = Nothing
         End Try
         GC.Collect()
     End Function

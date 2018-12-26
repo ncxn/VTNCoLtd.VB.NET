@@ -5,8 +5,8 @@
         InitializeComponent()
         Dim tb As DataTable
         Dim svr As New MYSQLSERVER
-        tb = svr.Get_Table("select * from product_type")
+        tb = svr.Get_tb("select * from product_type")
         ' Add any initialization after the InitializeComponent() call.
-
+        WaitForm.Show()
     End Sub
 End Class
