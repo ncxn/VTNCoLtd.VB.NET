@@ -93,6 +93,12 @@
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
+    <Compile Include="form\Account.Designer.vb">
+      <DependentUpon>Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form\SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
@@ -114,6 +120,9 @@
     <Compile Include="Pros\Product_type.vb" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Account.resx">
+      <DependentUpon>Account.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>

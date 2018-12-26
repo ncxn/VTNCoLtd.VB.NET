@@ -5,8 +5,12 @@
         InitializeComponent()
         Dim tb As DataTable
         Dim svr As New MYSQLSERVER
-        tb = svr.Get_tb("select * from product_type")
+        tb = svr.Get_tb("select * from event")
         ' Add any initialization after the InitializeComponent() call.
-        WaitForm.Show()
+        Account.Show()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
