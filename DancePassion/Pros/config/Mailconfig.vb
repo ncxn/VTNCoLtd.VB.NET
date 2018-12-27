@@ -1,15 +1,19 @@
 ﻿Imports System.Net.Mail
-Public Class MailConfig
-    Private _server As String
+Imports DancePassion.MYSQLSERVER
+Namespace MailConfig
 
-    Private _port As Integer
+    Public Class MailConfig
+        Private _server As String
 
-    Private _user As String
+        Private _port As Integer
 
-    Private _pwd As String
+        Private _user As String
 
-    Private _ssl As Boolean
-    Public Function Update_mail() As Boolean
+        Private _pwd As String
 
-    End Function
-End Class
+        Private _ssl As Boolean
+        Public Function Update_mail() As Boolean
+
+        End Function
+    End Class
+End Namespace
