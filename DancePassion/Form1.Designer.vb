@@ -33,26 +33,27 @@ Partial Class Form1
         'FluentDesignFormContainer1
         '
         Me.FluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FluentDesignFormContainer1.Location = New System.Drawing.Point(202, 30)
+        Me.FluentDesignFormContainer1.Location = New System.Drawing.Point(173, 47)
         Me.FluentDesignFormContainer1.Margin = New System.Windows.Forms.Padding(2)
         Me.FluentDesignFormContainer1.Name = "FluentDesignFormContainer1"
-        Me.FluentDesignFormContainer1.Size = New System.Drawing.Size(420, 500)
+        Me.FluentDesignFormContainer1.Size = New System.Drawing.Size(360, 384)
         Me.FluentDesignFormContainer1.TabIndex = 0
         '
         'AccordionControl1
         '
         Me.AccordionControl1.Dock = System.Windows.Forms.DockStyle.Left
         Me.AccordionControl1.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.AccordionControlElement1})
-        Me.AccordionControl1.Location = New System.Drawing.Point(0, 30)
+        Me.AccordionControl1.Location = New System.Drawing.Point(0, 47)
         Me.AccordionControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.AccordionControl1.Name = "AccordionControl1"
         Me.AccordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch
-        Me.AccordionControl1.Size = New System.Drawing.Size(202, 500)
+        Me.AccordionControl1.Size = New System.Drawing.Size(173, 384)
         Me.AccordionControl1.TabIndex = 1
         Me.AccordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu
         '
         'AccordionControlElement1
         '
+        Me.AccordionControlElement1.HeaderTemplate.AddRange(New DevExpress.XtraBars.Navigation.HeaderElementInfo() {New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)})
         Me.AccordionControlElement1.Name = "AccordionControlElement1"
         Me.AccordionControlElement1.Text = "Element1"
         '
@@ -64,20 +65,21 @@ Partial Class Form1
         Me.FluentDesignFormControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.FluentDesignFormControl1.Name = "FluentDesignFormControl1"
         Me.FluentDesignFormControl1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.FluentDesignFormControl1.Size = New System.Drawing.Size(622, 30)
+        Me.FluentDesignFormControl1.Size = New System.Drawing.Size(533, 47)
         Me.FluentDesignFormControl1.TabIndex = 2
         Me.FluentDesignFormControl1.TabStop = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 530)
+        Me.ClientSize = New System.Drawing.Size(533, 431)
         Me.ControlContainer = Me.FluentDesignFormContainer1
         Me.Controls.Add(Me.FluentDesignFormContainer1)
         Me.Controls.Add(Me.AccordionControl1)
         Me.Controls.Add(Me.FluentDesignFormControl1)
         Me.FluentDesignFormControl = Me.FluentDesignFormControl1
+        Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.NavigationControl = Me.AccordionControl1
