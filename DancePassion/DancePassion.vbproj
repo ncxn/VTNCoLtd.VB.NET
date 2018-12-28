@@ -182,6 +182,20 @@
   <ItemGroup>
     <Folder Include="resource\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DTO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTO.tt</DependentUpon>
+    </Content>
+    <Content Include="DTO.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DTO.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

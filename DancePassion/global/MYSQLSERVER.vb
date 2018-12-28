@@ -44,7 +44,7 @@ Public Class MYSQLSERVER
             Result = CType(cmd.ExecuteScalar(), String)
             conn.Close()
         Catch ex As Exception
-            Console.WriteLine("MySQL retrieve value: " & ex.Message & Err.Number)
+            MessageBox.Show("MySQL retrieve value: " & ex.Message & Err.Number)
             Result = Nothing
         Finally
             conn.Dispose()
@@ -89,7 +89,7 @@ Public Class MYSQLSERVER
             conn.Close()
             Insert_Row = True
         Catch ex As MySqlException
-            Console.WriteLine("Không thể thêm dữ liệu: " & ex.Message & Err.Number)
+            MessageBox.Show("Không thể thêm dữ liệu: " & ex.Message & Err.Number)
             Insert_Row = False
         Finally
             conn.Dispose()
@@ -108,7 +108,7 @@ Public Class MYSQLSERVER
             conn.Close()
             Delete_Row = True
         Catch ex As MySqlException
-            Console.WriteLine("Không thể xóa: " & ex.Message & Err.Number)
+            MessageBox.Show("Không thể xóa: " & ex.Message & Err.Number)
             Delete_Row = False
         Finally
             conn.Dispose()
