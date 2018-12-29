@@ -4,11 +4,12 @@ Public Class MYSQLSERVER
     Public Property UserName As String = "root"
     Public Property Password As String = "mmttmhh"
     Public Property Database As String = "dp"
-
+    Public Property conn As New MySqlConnection(connstr)
     Public Function connstr() As String
         connstr = CType("server=" & Server & ";" & "userid=" & UserName & ";" & "password=" & Password & ";" & "database=" & Database, String)
         Return connstr
     End Function
+
     Public Function Get_Row(sql As String) As ArrayList
         Dim Result As New ArrayList
         Dim conn As New MySqlConnection(connstr)

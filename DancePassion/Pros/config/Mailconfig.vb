@@ -76,19 +76,33 @@ Namespace MailConfig
         Private fn As New MYSQLSERVER
 
         Public Function _Get() As DataTable
-            Dim dt_mailconfig As DataTable = fn.Get_tb("Select * From mailConfig")
-            Return dt_mailconfig
+
+            Dim dt As New DataTable
+
+            Try
+                fn.conn.Open()
+                Dim da As New MySqlDataAdapter("select * from mailConfig", fn.conn)
+                da.Fill(dt)
+                fn.conn.Close()
+            Catch e As Exception
+                MessageBox.Show(e.Message)
+            Finally
+
+            End Try
+
+            Return dt
         End Function
 
         Public Function _Add(ByVal mailconfig As DTO) As Boolean
-
-            Dim conn As New MySqlConnection(fn.connstr)
-            Dim da As New MySqlDataAdapter("select * from mailConfig", conn)
+            fn.conn.Open()
+            Dim da As New MySqlDataAdapter("select * from mailConfig", fn.conn)
             Dim dt As New DataTable
             da.Fill(dt)
             Dim cb As New MySqlCommandBuilder(da)
+            Dim cbi = cb.GetInsertCommand
+            Dim tr As MySqlTransaction = fn.conn.BeginTransaction
+            cbi.Transaction = tr
             Try
-                conn.Open()
                 Dim r As DataRow = dt.NewRow
                 r("server") = mailconfig.server
                 r("port") = mailconfig.port
@@ -97,16 +111,19 @@ Namespace MailConfig
                 r("ssl") = mailconfig.ssl
                 dt.Rows.Add(r)
                 da.Update(dt)
-                conn.Close()
+                tr.Commit()
+
                 Return True
             Catch e As Exception
                 MessageBox.Show(e.Message)
+                tr.Rollback()
                 Return False
             Finally
-
+                fn.conn.Close()
             End Try
 
         End Function
+
     End Class
 #End Region
 #Region "BUS"
