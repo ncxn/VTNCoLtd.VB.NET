@@ -113,6 +113,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -166,7 +167,7 @@
     <EmbeddedResource Include="form\WaitForm.resx">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </EmbeddedResource>
-    
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -198,17 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="resource\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DTO.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DTO.tt</DependentUpon>
-    </Content>
-    <Content Include="DTO.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DTO.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
