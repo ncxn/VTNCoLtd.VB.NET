@@ -19,168 +19,170 @@ Partial Class Mailconfigfrm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mailconfigfrm))
+        Dim WindowsUIButtonImageOptions1 As DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions = New DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions()
+        Dim WindowsUIButtonImageOptions2 As DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions = New DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions()
         Me.ctrMailconfigServer = New System.Windows.Forms.TextBox()
         Me.ctrMailconfigPort = New System.Windows.Forms.TextBox()
         Me.ctrMailconfigUser = New System.Windows.Forms.TextBox()
         Me.ctrMailconfigPwd = New System.Windows.Forms.TextBox()
         Me.ctrMailconfigVdefault = New DevExpress.XtraEditors.CheckEdit()
         Me.ctrMailconfigSSL = New DevExpress.XtraEditors.CheckEdit()
-        Me.ctrMailconfigOK = New DevExpress.XtraEditors.SimpleButton()
         Me.ctrMailconfigKey = New System.Windows.Forms.TextBox()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
+        Me.WindowsUIButtonPanel1 = New DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel()
         CType(Me.ctrMailconfigVdefault.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ctrMailconfigSSL.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ctrMailconfigServer
         '
-        Me.ctrMailconfigServer.Location = New System.Drawing.Point(131, 77)
-        Me.ctrMailconfigServer.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        resources.ApplyResources(Me.ctrMailconfigServer, "ctrMailconfigServer")
         Me.ctrMailconfigServer.Name = "ctrMailconfigServer"
-        Me.ctrMailconfigServer.Size = New System.Drawing.Size(210, 23)
-        Me.ctrMailconfigServer.TabIndex = 0
         '
         'ctrMailconfigPort
         '
-        Me.ctrMailconfigPort.Location = New System.Drawing.Point(131, 123)
-        Me.ctrMailconfigPort.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        resources.ApplyResources(Me.ctrMailconfigPort, "ctrMailconfigPort")
         Me.ctrMailconfigPort.Name = "ctrMailconfigPort"
-        Me.ctrMailconfigPort.Size = New System.Drawing.Size(210, 23)
-        Me.ctrMailconfigPort.TabIndex = 1
         '
         'ctrMailconfigUser
         '
-        Me.ctrMailconfigUser.Location = New System.Drawing.Point(131, 170)
-        Me.ctrMailconfigUser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        resources.ApplyResources(Me.ctrMailconfigUser, "ctrMailconfigUser")
         Me.ctrMailconfigUser.Name = "ctrMailconfigUser"
-        Me.ctrMailconfigUser.Size = New System.Drawing.Size(210, 23)
-        Me.ctrMailconfigUser.TabIndex = 2
         '
         'ctrMailconfigPwd
         '
-        Me.ctrMailconfigPwd.Location = New System.Drawing.Point(131, 220)
-        Me.ctrMailconfigPwd.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        resources.ApplyResources(Me.ctrMailconfigPwd, "ctrMailconfigPwd")
         Me.ctrMailconfigPwd.Name = "ctrMailconfigPwd"
-        Me.ctrMailconfigPwd.Size = New System.Drawing.Size(210, 23)
-        Me.ctrMailconfigPwd.TabIndex = 3
+        Me.ctrMailconfigPwd.UseSystemPasswordChar = True
         '
         'ctrMailconfigVdefault
         '
-        Me.ctrMailconfigVdefault.Location = New System.Drawing.Point(254, 269)
-        Me.ctrMailconfigVdefault.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        resources.ApplyResources(Me.ctrMailconfigVdefault, "ctrMailconfigVdefault")
         Me.ctrMailconfigVdefault.Name = "ctrMailconfigVdefault"
-        Me.ctrMailconfigVdefault.Properties.Caption = "Mặc định"
-        Me.ctrMailconfigVdefault.Size = New System.Drawing.Size(87, 21)
-        Me.ctrMailconfigVdefault.TabIndex = 4
+        Me.ctrMailconfigVdefault.Properties.AccessibleDescription = resources.GetString("ctrMailconfigVdefault.Properties.AccessibleDescription")
+        Me.ctrMailconfigVdefault.Properties.AccessibleName = resources.GetString("ctrMailconfigVdefault.Properties.AccessibleName")
+        Me.ctrMailconfigVdefault.Properties.AutoHeight = CType(resources.GetObject("ctrMailconfigVdefault.Properties.AutoHeight"), Boolean)
+        Me.ctrMailconfigVdefault.Properties.Caption = resources.GetString("ctrMailconfigVdefault.Properties.Caption")
+        Me.ctrMailconfigVdefault.Properties.DisplayValueChecked = resources.GetString("ctrMailconfigVdefault.Properties.DisplayValueChecked")
+        Me.ctrMailconfigVdefault.Properties.DisplayValueGrayed = resources.GetString("ctrMailconfigVdefault.Properties.DisplayValueGrayed")
+        Me.ctrMailconfigVdefault.Properties.DisplayValueUnchecked = resources.GetString("ctrMailconfigVdefault.Properties.DisplayValueUnchecked")
+        Me.ctrMailconfigVdefault.Properties.GlyphVerticalAlignment = CType(resources.GetObject("ctrMailconfigVdefault.Properties.GlyphVerticalAlignment"), DevExpress.Utils.VertAlignment)
         '
         'ctrMailconfigSSL
         '
-        Me.ctrMailconfigSSL.Location = New System.Drawing.Point(131, 268)
-        Me.ctrMailconfigSSL.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        resources.ApplyResources(Me.ctrMailconfigSSL, "ctrMailconfigSSL")
         Me.ctrMailconfigSSL.Name = "ctrMailconfigSSL"
-        Me.ctrMailconfigSSL.Properties.Caption = "Bật SSL"
-        Me.ctrMailconfigSSL.Size = New System.Drawing.Size(87, 21)
-        Me.ctrMailconfigSSL.TabIndex = 5
-        '
-        'ctrMailconfigOK
-        '
-        Me.ctrMailconfigOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat
-        Me.ctrMailconfigOK.Location = New System.Drawing.Point(131, 299)
-        Me.ctrMailconfigOK.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ctrMailconfigOK.Name = "ctrMailconfigOK"
-        Me.ctrMailconfigOK.Size = New System.Drawing.Size(87, 28)
-        Me.ctrMailconfigOK.TabIndex = 6
-        Me.ctrMailconfigOK.Text = "OK"
+        Me.ctrMailconfigSSL.Properties.AccessibleDescription = resources.GetString("ctrMailconfigSSL.Properties.AccessibleDescription")
+        Me.ctrMailconfigSSL.Properties.AccessibleName = resources.GetString("ctrMailconfigSSL.Properties.AccessibleName")
+        Me.ctrMailconfigSSL.Properties.AutoHeight = CType(resources.GetObject("ctrMailconfigSSL.Properties.AutoHeight"), Boolean)
+        Me.ctrMailconfigSSL.Properties.Caption = resources.GetString("ctrMailconfigSSL.Properties.Caption")
+        Me.ctrMailconfigSSL.Properties.DisplayValueChecked = resources.GetString("ctrMailconfigSSL.Properties.DisplayValueChecked")
+        Me.ctrMailconfigSSL.Properties.DisplayValueGrayed = resources.GetString("ctrMailconfigSSL.Properties.DisplayValueGrayed")
+        Me.ctrMailconfigSSL.Properties.DisplayValueUnchecked = resources.GetString("ctrMailconfigSSL.Properties.DisplayValueUnchecked")
+        Me.ctrMailconfigSSL.Properties.GlyphVerticalAlignment = CType(resources.GetObject("ctrMailconfigSSL.Properties.GlyphVerticalAlignment"), DevExpress.Utils.VertAlignment)
         '
         'ctrMailconfigKey
         '
-        Me.ctrMailconfigKey.Location = New System.Drawing.Point(131, 28)
-        Me.ctrMailconfigKey.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        resources.ApplyResources(Me.ctrMailconfigKey, "ctrMailconfigKey")
         Me.ctrMailconfigKey.Name = "ctrMailconfigKey"
-        Me.ctrMailconfigKey.Size = New System.Drawing.Size(210, 23)
-        Me.ctrMailconfigKey.TabIndex = 7
         '
         'LabelControl1
         '
-        Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.LabelControl1, "LabelControl1")
+        Me.LabelControl1.Appearance.Font = CType(resources.GetObject("LabelControl1.Appearance.Font"), System.Drawing.Font)
+        Me.LabelControl1.Appearance.FontSizeDelta = CType(resources.GetObject("LabelControl1.Appearance.FontSizeDelta"), Integer)
+        Me.LabelControl1.Appearance.FontStyleDelta = CType(resources.GetObject("LabelControl1.Appearance.FontStyleDelta"), System.Drawing.FontStyle)
+        Me.LabelControl1.Appearance.GradientMode = CType(resources.GetObject("LabelControl1.Appearance.GradientMode"), System.Drawing.Drawing2D.LinearGradientMode)
+        Me.LabelControl1.Appearance.Image = CType(resources.GetObject("LabelControl1.Appearance.Image"), System.Drawing.Image)
         Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.Location = New System.Drawing.Point(12, 28)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.ShowToolTips = False
-        Me.LabelControl1.Size = New System.Drawing.Size(57, 23)
-        Me.LabelControl1.TabIndex = 9
-        Me.LabelControl1.Text = "Dịch vụ"
         '
         'LabelControl2
         '
-        Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.LabelControl2, "LabelControl2")
+        Me.LabelControl2.Appearance.Font = CType(resources.GetObject("LabelControl2.Appearance.Font"), System.Drawing.Font)
+        Me.LabelControl2.Appearance.FontSizeDelta = CType(resources.GetObject("LabelControl2.Appearance.FontSizeDelta"), Integer)
+        Me.LabelControl2.Appearance.FontStyleDelta = CType(resources.GetObject("LabelControl2.Appearance.FontStyleDelta"), System.Drawing.FontStyle)
+        Me.LabelControl2.Appearance.GradientMode = CType(resources.GetObject("LabelControl2.Appearance.GradientMode"), System.Drawing.Drawing2D.LinearGradientMode)
+        Me.LabelControl2.Appearance.Image = CType(resources.GetObject("LabelControl2.Appearance.Image"), System.Drawing.Image)
         Me.LabelControl2.Appearance.Options.UseFont = True
-        Me.LabelControl2.Location = New System.Drawing.Point(12, 77)
         Me.LabelControl2.Name = "LabelControl2"
         Me.LabelControl2.ShowToolTips = False
-        Me.LabelControl2.Size = New System.Drawing.Size(47, 23)
-        Me.LabelControl2.TabIndex = 10
-        Me.LabelControl2.Text = "Server"
         '
         'LabelControl3
         '
-        Me.LabelControl3.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.LabelControl3, "LabelControl3")
+        Me.LabelControl3.Appearance.Font = CType(resources.GetObject("LabelControl3.Appearance.Font"), System.Drawing.Font)
+        Me.LabelControl3.Appearance.FontSizeDelta = CType(resources.GetObject("LabelControl3.Appearance.FontSizeDelta"), Integer)
+        Me.LabelControl3.Appearance.FontStyleDelta = CType(resources.GetObject("LabelControl3.Appearance.FontStyleDelta"), System.Drawing.FontStyle)
+        Me.LabelControl3.Appearance.GradientMode = CType(resources.GetObject("LabelControl3.Appearance.GradientMode"), System.Drawing.Drawing2D.LinearGradientMode)
+        Me.LabelControl3.Appearance.Image = CType(resources.GetObject("LabelControl3.Appearance.Image"), System.Drawing.Image)
         Me.LabelControl3.Appearance.Options.UseFont = True
-        Me.LabelControl3.Location = New System.Drawing.Point(12, 123)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.ShowToolTips = False
-        Me.LabelControl3.Size = New System.Drawing.Size(88, 23)
-        Me.LabelControl3.TabIndex = 11
-        Me.LabelControl3.Text = "Cổng (port)"
         '
         'LabelControl4
         '
-        Me.LabelControl4.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.LabelControl4, "LabelControl4")
+        Me.LabelControl4.Appearance.Font = CType(resources.GetObject("LabelControl4.Appearance.Font"), System.Drawing.Font)
+        Me.LabelControl4.Appearance.FontSizeDelta = CType(resources.GetObject("LabelControl4.Appearance.FontSizeDelta"), Integer)
+        Me.LabelControl4.Appearance.FontStyleDelta = CType(resources.GetObject("LabelControl4.Appearance.FontStyleDelta"), System.Drawing.FontStyle)
+        Me.LabelControl4.Appearance.GradientMode = CType(resources.GetObject("LabelControl4.Appearance.GradientMode"), System.Drawing.Drawing2D.LinearGradientMode)
+        Me.LabelControl4.Appearance.Image = CType(resources.GetObject("LabelControl4.Appearance.Image"), System.Drawing.Image)
         Me.LabelControl4.Appearance.Options.UseFont = True
-        Me.LabelControl4.Location = New System.Drawing.Point(12, 170)
         Me.LabelControl4.Name = "LabelControl4"
         Me.LabelControl4.ShowToolTips = False
-        Me.LabelControl4.Size = New System.Drawing.Size(85, 23)
-        Me.LabelControl4.TabIndex = 12
-        Me.LabelControl4.Text = "User(email)"
         '
         'LabelControl5
         '
-        Me.LabelControl5.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.LabelControl5, "LabelControl5")
+        Me.LabelControl5.Appearance.Font = CType(resources.GetObject("LabelControl5.Appearance.Font"), System.Drawing.Font)
+        Me.LabelControl5.Appearance.FontSizeDelta = CType(resources.GetObject("LabelControl5.Appearance.FontSizeDelta"), Integer)
+        Me.LabelControl5.Appearance.FontStyleDelta = CType(resources.GetObject("LabelControl5.Appearance.FontStyleDelta"), System.Drawing.FontStyle)
+        Me.LabelControl5.Appearance.GradientMode = CType(resources.GetObject("LabelControl5.Appearance.GradientMode"), System.Drawing.Drawing2D.LinearGradientMode)
+        Me.LabelControl5.Appearance.Image = CType(resources.GetObject("LabelControl5.Appearance.Image"), System.Drawing.Image)
         Me.LabelControl5.Appearance.Options.UseFont = True
-        Me.LabelControl5.Location = New System.Drawing.Point(12, 220)
         Me.LabelControl5.Name = "LabelControl5"
         Me.LabelControl5.ShowToolTips = False
-        Me.LabelControl5.Size = New System.Drawing.Size(72, 23)
-        Me.LabelControl5.TabIndex = 13
-        Me.LabelControl5.Text = "Mật khẩu"
+        '
+        'WindowsUIButtonPanel1
+        '
+        resources.ApplyResources(Me.WindowsUIButtonPanel1, "WindowsUIButtonPanel1")
+        WindowsUIButtonImageOptions1.EnableTransparency = True
+        WindowsUIButtonImageOptions1.Image = Global.DancePassion.My.Resources.Resources.Data_add_WF
+        resources.ApplyResources(WindowsUIButtonImageOptions1, "WindowsUIButtonImageOptions1")
+        WindowsUIButtonImageOptions2.EnableTransparency = True
+        WindowsUIButtonImageOptions2.Image = Global.DancePassion.My.Resources.Resources.Data_delete_WF
+        resources.ApplyResources(WindowsUIButtonImageOptions2, "WindowsUIButtonImageOptions2")
+        Me.WindowsUIButtonPanel1.Buttons.AddRange(New DevExpress.XtraEditors.ButtonPanel.IBaseButton() {New DevExpress.XtraBars.Docking2010.WindowsUIButton(resources.GetString("WindowsUIButtonPanel1.Buttons"), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons1"), Boolean), WindowsUIButtonImageOptions1, CType(resources.GetObject("WindowsUIButtonPanel1.Buttons2"), DevExpress.XtraBars.Docking2010.ButtonStyle), resources.GetString("WindowsUIButtonPanel1.Buttons3"), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons4"), Integer), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons5"), Boolean), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons6"), DevExpress.Utils.SuperToolTip), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons7"), Boolean), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons8"), Boolean), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons9"), Boolean), resources.GetString("WindowsUIButtonPanel1.Buttons10"), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons11"), Integer), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons12"), Boolean)), New DevExpress.XtraBars.Docking2010.WindowsUIButton(resources.GetString("WindowsUIButtonPanel1.Buttons13"), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons14"), Boolean), WindowsUIButtonImageOptions2, CType(resources.GetObject("WindowsUIButtonPanel1.Buttons15"), DevExpress.XtraBars.Docking2010.ButtonStyle), resources.GetString("WindowsUIButtonPanel1.Buttons16"), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons17"), Integer), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons18"), Boolean), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons19"), DevExpress.Utils.SuperToolTip), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons20"), Boolean), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons21"), Boolean), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons22"), Boolean), resources.GetString("WindowsUIButtonPanel1.Buttons23"), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons24"), Integer), CType(resources.GetObject("WindowsUIButtonPanel1.Buttons25"), Boolean))})
+        Me.WindowsUIButtonPanel1.Name = "WindowsUIButtonPanel1"
         '
         'Mailconfigfrm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(362, 376)
+        Me.Controls.Add(Me.WindowsUIButtonPanel1)
         Me.Controls.Add(Me.LabelControl5)
         Me.Controls.Add(Me.LabelControl4)
         Me.Controls.Add(Me.LabelControl3)
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.ctrMailconfigKey)
-        Me.Controls.Add(Me.ctrMailconfigOK)
         Me.Controls.Add(Me.ctrMailconfigSSL)
         Me.Controls.Add(Me.ctrMailconfigVdefault)
         Me.Controls.Add(Me.ctrMailconfigPwd)
         Me.Controls.Add(Me.ctrMailconfigUser)
         Me.Controls.Add(Me.ctrMailconfigPort)
         Me.Controls.Add(Me.ctrMailconfigServer)
-        Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
         Me.Name = "Mailconfigfrm"
-        Me.Text = "MailConfig"
+        Me.ShowIcon = False
         CType(Me.ctrMailconfigVdefault.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ctrMailconfigSSL.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -194,11 +196,11 @@ Partial Class Mailconfigfrm
     Friend WithEvents ctrMailconfigPwd As TextBox
     Friend WithEvents ctrMailconfigVdefault As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents ctrMailconfigSSL As DevExpress.XtraEditors.CheckEdit
-    Friend WithEvents ctrMailconfigOK As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents ctrMailconfigKey As TextBox
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl5 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents WindowsUIButtonPanel1 As DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel
 End Class

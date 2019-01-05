@@ -23,11 +23,11 @@ Partial Class SplashScreen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen))
-        Me.pictureEdit2 = New DevExpress.XtraEditors.PictureEdit
-        Me.pictureEdit1 = New DevExpress.XtraEditors.PictureEdit
-        Me.labelControl2 = New DevExpress.XtraEditors.LabelControl
-        Me.labelControl1 = New DevExpress.XtraEditors.LabelControl
-        Me.marqueeProgressBarControl1 = New DevExpress.XtraEditors.MarqueeProgressBarControl
+        Me.pictureEdit2 = New DevExpress.XtraEditors.PictureEdit()
+        Me.pictureEdit1 = New DevExpress.XtraEditors.PictureEdit()
+        Me.labelControl2 = New DevExpress.XtraEditors.LabelControl()
+        Me.labelControl1 = New DevExpress.XtraEditors.LabelControl()
+        Me.marqueeProgressBarControl1 = New DevExpress.XtraEditors.MarqueeProgressBarControl()
         CType(Me.pictureEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.marqueeProgressBarControl1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,32 +51,33 @@ Partial Class SplashScreen
         '
         Me.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default
         Me.pictureEdit1.EditValue = CType(resources.GetObject("pictureEdit1.EditValue"), Object)
-        Me.pictureEdit1.Location = New System.Drawing.Point(278, 266)
+        Me.pictureEdit1.Location = New System.Drawing.Point(372, 249)
         Me.pictureEdit1.Name = "pictureEdit1"
         Me.pictureEdit1.Properties.AllowFocused = False
         Me.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
         Me.pictureEdit1.Properties.Appearance.Options.UseBackColor = True
         Me.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.pictureEdit1.Properties.ShowMenu = False
-        Me.pictureEdit1.Size = New System.Drawing.Size(160, 48)
+        Me.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch
+        Me.pictureEdit1.Size = New System.Drawing.Size(66, 65)
         Me.pictureEdit1.TabIndex = 13
         '
         'labelControl2
         '
         Me.labelControl2.Location = New System.Drawing.Point(23, 206)
         Me.labelControl2.Name = "labelControl2"
-        Me.labelControl2.Size = New System.Drawing.Size(50, 13)
+        Me.labelControl2.Size = New System.Drawing.Size(87, 13)
         Me.labelControl2.TabIndex = 12
-        Me.labelControl2.Text = "Starting..."
+        Me.labelControl2.Text = "Đang khởi động..."
         '
         'labelControl1
         '
         Me.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.labelControl1.Location = New System.Drawing.Point(23, 286)
         Me.labelControl1.Name = "labelControl1"
-        Me.labelControl1.Size = New System.Drawing.Size(115, 13)
+        Me.labelControl1.Size = New System.Drawing.Size(51, 13)
         Me.labelControl1.TabIndex = 11
-        Me.labelControl1.Text = "Copyright"
+        Me.labelControl1.Text = "Bản quyền"
         '
         'marqueeProgressBarControl1
         '
@@ -88,6 +89,7 @@ Partial Class SplashScreen
         '
         'SplashScreen
         '
+        Me.ActiveGlowColor = System.Drawing.Color.White
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(450, 320)
@@ -96,8 +98,9 @@ Partial Class SplashScreen
         Me.Controls.Add(Me.labelControl2)
         Me.Controls.Add(Me.labelControl1)
         Me.Controls.Add(Me.marqueeProgressBarControl1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.InactiveGlowColor = System.Drawing.Color.White
+        Me.Name = "SplashScreen"
+        Me.Text = "VTNCo.,Ltd"
         CType(Me.pictureEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.marqueeProgressBarControl1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
