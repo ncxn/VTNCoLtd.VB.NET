@@ -7,7 +7,7 @@
         Dim svr As New MYSQLSERVER
         tb = svr.Get_tb("select * from event")
         ' Add any initialization after the InitializeComponent() call.
-        Mailconfigfrm.Show()
+        Setting.Show()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
