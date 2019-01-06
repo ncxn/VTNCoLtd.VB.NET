@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Public Class MailConfigfrm
+Partial Public Class Setting
     Inherits DevExpress.XtraBars.Ribbon.RibbonForm
     ''' <summary>
     ''' Required designer variable.
@@ -283,7 +283,7 @@ Partial Public Class MailConfigfrm
         Me.BarButtonGroup2.Id = 2
         Me.BarButtonGroup2.Name = "BarButtonGroup2"
         '
-        'MailConfigfrm
+        'Setting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -294,7 +294,7 @@ Partial Public Class MailConfigfrm
         Me.Controls.Add(Me.ribbonStatusBar)
         Me.Controls.Add(Me.ribbonControl)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Name = "MailConfigfrm"
+        Me.Name = "Setting"
         Me.Ribbon = Me.ribbonControl
         Me.StatusBar = Me.ribbonStatusBar
         CType(Me.tabbedView, System.ComponentModel.ISupportInitialize).EndInit()

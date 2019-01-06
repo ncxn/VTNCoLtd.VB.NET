@@ -137,10 +137,10 @@
     <Compile Include="form\config\SMSconfig.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\config\MailConfig.Designer.vb">
-      <DependentUpon>MailConfig.vb</DependentUpon>
+    <Compile Include="form\config\Setting.Designer.vb">
+      <DependentUpon>Setting.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\config\MailConfig.vb">
+    <Compile Include="form\config\Setting.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form\SplashScreen.Designer.vb">
@@ -170,8 +170,8 @@
     <EmbeddedResource Include="form\Account.resx">
       <DependentUpon>Account.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\config\MailConfig.resx">
-      <DependentUpon>MailConfig.vb</DependentUpon>
+    <EmbeddedResource Include="form\config\Setting.resx">
+      <DependentUpon>Setting.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\config\SMSconfig.resx">
       <DependentUpon>SMSconfig.vb</DependentUpon>

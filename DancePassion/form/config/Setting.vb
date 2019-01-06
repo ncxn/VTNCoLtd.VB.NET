@@ -1,4 +1,4 @@
-﻿Partial Public Class MailConfigfrm
+﻿Partial Public Class Setting
 
     Public Sub New()
         InitializeComponent()
