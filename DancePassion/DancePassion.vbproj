@@ -64,8 +64,7 @@
       <HintPath>bin\Debug\DevExpress.BonusSkins.v18.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v18.2" />
-    <Reference Include="DevExpress.Images.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v18.2" />
     <Reference Include="DevExpress.XtraBars.v18.2" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
@@ -73,9 +72,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DevExpress.XtraLayout.v18.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
@@ -131,16 +132,16 @@
     <Compile Include="form\Account.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="form\config\MailConfig.Designer.vb">
+      <DependentUpon>MailConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\config\MailConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form\config\SMSconfig.Designer.vb">
       <DependentUpon>SMSconfig.vb</DependentUpon>
     </Compile>
     <Compile Include="form\config\SMSconfig.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="form\config\Setting.Designer.vb">
-      <DependentUpon>Setting.vb</DependentUpon>
-    </Compile>
-    <Compile Include="form\config\Setting.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form\SplashScreen.Designer.vb">
@@ -170,8 +171,11 @@
     <EmbeddedResource Include="form\Account.resx">
       <DependentUpon>Account.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\config\Setting.resx">
-      <DependentUpon>Setting.vb</DependentUpon>
+    <EmbeddedResource Include="form\config\MailConfig.resx">
+      <DependentUpon>MailConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\config\MailConfig.vi.resx">
+      <DependentUpon>MailConfig.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\config\SMSconfig.resx">
       <DependentUpon>SMSconfig.vb</DependentUpon>

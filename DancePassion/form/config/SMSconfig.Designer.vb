@@ -29,22 +29,20 @@ Partial Class SMSconfig
         WindowsUIButtonImageOptions1.EnableTransparency = True
         WindowsUIButtonImageOptions1.Image = Global.DancePassion.My.Resources.Resources.Data_add_WF
         WindowsUIButtonImageOptions2.Image = Global.DancePassion.My.Resources.Resources.Data_delete_WF
-        Me.WindowsUIButtonPanel1.Buttons.AddRange(New DevExpress.XtraEditors.ButtonPanel.IBaseButton() {New DevExpress.XtraBars.Docking2010.WindowsUIButton("Thêm", True, WindowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, True, Nothing, True, False, True, "Add", -1, False), New DevExpress.XtraBars.Docking2010.WindowsUIButton("Xóa", True, WindowsUIButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, True, Nothing, True, False, True, "Del", -1, False)})
+        Me.WindowsUIButtonPanel1.Buttons.AddRange(New DevExpress.XtraEditors.ButtonPanel.IBaseButton() {New DevExpress.XtraBars.Docking2010.WindowsUIButton("Thêm", True, WindowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, True, Nothing, True, False, True, Nothing, -1, False), New DevExpress.XtraBars.Docking2010.WindowsUIButton("Xóa", True, WindowsUIButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, True, Nothing, True, False, True, Nothing, -1, False)})
         Me.WindowsUIButtonPanel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.WindowsUIButtonPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.WindowsUIButtonPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.WindowsUIButtonPanel1.Name = "WindowsUIButtonPanel1"
-        Me.WindowsUIButtonPanel1.Size = New System.Drawing.Size(350, 89)
+        Me.WindowsUIButtonPanel1.Size = New System.Drawing.Size(266, 68)
         Me.WindowsUIButtonPanel1.TabIndex = 0
         Me.WindowsUIButtonPanel1.Text = "WindowsUIButtonPanel1"
         '
         'SMSconfig
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(350, 348)
+        Me.ClientSize = New System.Drawing.Size(266, 236)
         Me.Controls.Add(Me.WindowsUIButtonPanel1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "SMSconfig"
         Me.Text = "Cấu hình SMS"
         Me.ResumeLayout(False)
