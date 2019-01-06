@@ -1,6 +1,7 @@
-﻿Imports System.Net.Mail
+﻿Option Explicit On
+Imports System.Net.Mail
 Imports MySql.Data.MySqlClient
-Imports DancePassion.MYSQLSERVER
+'Imports DancePassion.MYSQLSERVER
 
 Namespace MailConfig
 
@@ -81,7 +82,7 @@ Namespace MailConfig
             Me.key = key
             Me.server = server
             Me.port = port
-            Me.user = server
+            Me.user = user
             Me.pwd = pwd
             Me.ssl = ssl
             Me.vdefault = vdefault
@@ -119,14 +120,8 @@ Namespace MailConfig
                 da.Fill(dt)
                 dt.PrimaryKey = New DataColumn() {dt.Columns("key")}
                 dr = dt.Rows.Find(key)
-                If dr Is Nothing Then
-                    MessageBox.Show("Không tìm thấy kết quả mong muốn")
-                Else
-                    Return dr
-                End If
-
             Catch e As Exception
-                MessageBox.Show(e.Message)
+                'MessageBox.Show(e.Message)
             Finally
                 fn.conn.Close()
             End Try
@@ -142,12 +137,6 @@ Namespace MailConfig
                 da.Fill(dt)
                 dt.PrimaryKey = New DataColumn() {dt.Columns("key")}
                 dr = dt.Rows(0)
-                If dr Is Nothing Then
-                    MessageBox.Show("Không tìm thấy kết quả mong muốn")
-                Else
-                    Return dr
-                End If
-
             Catch e As Exception
                 'MessageBox.Show(e.Message)
             Finally
@@ -163,22 +152,25 @@ Namespace MailConfig
             da.Fill(dt)
             Dim cb As New MySqlCommandBuilder(da)
             Dim ci = cb.GetInsertCommand
+            Dim cu = cb.GetUpdateCommand
+            Dim cd = cb.GetDeleteCommand
             Dim tr As MySqlTransaction = fn.conn.BeginTransaction
             ci.Transaction = tr
+            cu.Transaction = tr
+            cd.Transaction = tr
+            Dim r As DataRow = dt.NewRow
+            r("key") = mailconfig.key
+            r("server") = mailconfig.server
+            r("port") = mailconfig.port
+            r("user") = mailconfig.user
+            r("pwd") = mailconfig.pwd
+            r("ssl") = mailconfig.ssl
+            r("vdefault") = mailconfig.vdefault
+            dt.Rows.Add(r)
             Try
-                Dim r As DataRow = dt.NewRow
-                r("key") = mailconfig.key
-                r("server") = mailconfig.server
-                r("port") = mailconfig.port
-                r("user") = mailconfig.user
-                r("pwd") = mailconfig.pwd
-                r("ssl") = mailconfig.ssl
-                r("vdefault") = mailconfig.vdefault
-                dt.Rows.Add(r)
                 da.Update(dt)
                 tr.Commit()
                 Return True
-
             Catch e As Exception
                 MessageBox.Show(e.Message)
                 tr.Rollback()
@@ -186,7 +178,6 @@ Namespace MailConfig
             Finally
                 fn.conn.Close()
             End Try
-
         End Function
         Public Function _update(ByVal mailconfig As DTO) As Boolean
             fn.conn.Open()
@@ -233,23 +224,56 @@ Namespace MailConfig
         Public Function _get() As DataTable
             Return dal._Get()
         End Function
+
         Public Function _findById(key As String) As DataRow
             Return dal._findByID(key)
         End Function
         Public Function _findFirst() As DataRow
             Return dal._findFirst()
-
         End Function
 
         Public Function _add(ByVal mailConfig As DTO) As Boolean
             Return dal._Add(mailConfig)
         End Function
+
         Public Function _update(ByVal mailConfig As DTO) As Boolean
             Return dal._update(mailConfig)
         End Function
     End Class
 #End Region
 #Region "Send mail"
+    Class sendmail
+        Public Function _ssend(ByVal sto As String, ByVal ssubject As String, ByVal sbody As String, ByVal sAttachment As String) As Boolean
+            Dim SmtpServer As New SmtpClient()
+            Dim fn As New BUS
+            Dim dr As DataRow = fn._findFirst()
+            SmtpServer.UseDefaultCredentials = False
+            SmtpServer.Credentials = New Net.NetworkCredential(CType(dr("user"), String), CType(dr("pwd"), String))
+            SmtpServer.Host = CType(dr("server"), String)
+            SmtpServer.Port = CInt(dr("port"))
+            SmtpServer.EnableSsl = CBool(dr("ssl").ToString)
 
+            Dim mail As New MailMessage
+            mail.From = New MailAddress("nhan.vt@spm.com.vn")
+            mail.To.Add(sto)
+            mail.Subject = ssubject
+            mail.Body = sbody
+            mail.BodyEncoding = Text.Encoding.UTF8
+            mail.IsBodyHtml = True
+            If sAttachment Is Nothing Then
+                mail.Attachments.Add(New Attachment(sAttachment))
+            End If
+
+            mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure
+            Try
+                'Debug.Print(CBool(dr("SSL")))
+                SmtpServer.Send(mail)
+                Return True
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+                Return False
+            End Try
+        End Function
+    End Class
 #End Region
 End Namespace

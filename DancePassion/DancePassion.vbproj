@@ -59,12 +59,19 @@
     <StartupObject>DancePassion.My.MyApplication</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.BonusSkins.v18.2.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v18.2" />
     <Reference Include="DevExpress.XtraBars.v18.2" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
-    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v18.2.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -131,6 +138,12 @@
     <Compile Include="form\config\MailConfig.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="form\config\SMSconfig.Designer.vb">
+      <DependentUpon>SMSconfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\config\SMSconfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form\SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
@@ -150,6 +163,7 @@
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="Pros\config\Mailconfig.vb" />
+    <Compile Include="Pros\config\SMSconfig.vb" />
     <Compile Include="Pros\Product_type.vb" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -159,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\config\MailConfig.resx">
       <DependentUpon>MailConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\config\MailConfig.vi.resx">
+      <DependentUpon>MailConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\config\SMSconfig.resx">
+      <DependentUpon>SMSconfig.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
@@ -196,9 +216,7 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="resource\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
@@ -213,6 +231,42 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data add-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data copy-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data delete-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data down-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data Edit-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data Error-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data Find-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data information-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data refresh-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data replace -WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data setting-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data warning-WF.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

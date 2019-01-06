@@ -59,5 +59,125 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_add_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data add-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_copy_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data copy-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_delete_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data delete-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_down_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data down-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_Edit_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data Edit-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_Error_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data Error-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_Find_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data Find-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_information_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data information-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_refresh_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data refresh-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_replace__WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data replace -WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_setting_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data setting-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Data_warning_WF() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Data warning-WF", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace
