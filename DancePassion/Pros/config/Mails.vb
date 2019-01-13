@@ -147,7 +147,7 @@ Namespace cfgMails
 
         Public Function _Add(ByVal mailconfig As DTO) As Boolean
             Dim cmd As New MySqlCommand()
-            Dim tr As MySqlTransaction
+            Dim tr As MySqlTransaction = Nothing
             Try
                 fn.conn.Open()
                 tr = fn.conn.BeginTransaction()
@@ -155,12 +155,12 @@ Namespace cfgMails
                 cmd.Transaction = tr
                 cmd.CommandText = "INSERT INTO Configs (Config_key, Config_values) 
                                                VALUES ('" & mailconfig.key & "', 
-                                               COLUMN_CREATE('Server', mailconfig.server,
-                                                                           'Port', mailconfig.port,
-                                                                           'User', mailconfig.user,
-                                                                           'Pwd', mailconfig.pwd,
-                                                                           'SSL', mailconfig.ssl,
-                                                                           'vdefault', mailconfig.vdefault))"
+                                               COLUMN_CREATE('Server', '" & mailconfig.server & "',
+                                                                           'Port', '" & mailconfig.port & "',
+                                                                           'User', '" & mailconfig.user & "',
+                                                                           'Pwd', '" & mailconfig.pwd & "',
+                                                                           'SSL', '" & mailconfig.ssl & "',
+                                                                           'vdefault', '" & mailconfig.vdefault & "'))"
                 Debug.Print(cmd.CommandText.ToString)
                 'cmd.Parameters.AddWithValue("@Config_key", mailconfig.key)
                 'cmd.Parameters.AddWithValue("@Config_values",
