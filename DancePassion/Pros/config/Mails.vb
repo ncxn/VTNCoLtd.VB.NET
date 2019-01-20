@@ -163,11 +163,10 @@ Namespace cfgMails
                                                                            'vdefault', '" & mailconfig.vdefault & "'))"
                 Debug.Print(cmd.CommandText.ToString)
                 'cmd.Parameters.AddWithValue("@Config_key", mailconfig.key)
-                'cmd.Parameters.AddWithValue("@Config_values",
+                'cmd.Parameters.AddWithValue("@Config_values",)
 
                 cmd.ExecuteNonQuery()
                 tr.Commit()
-                Dim debugSQL As String = cmd.CommandText
 
                 fn.conn.Close()
 
