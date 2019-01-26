@@ -4,7 +4,7 @@
         ' This call is required by the designer.
         InitializeComponent()
 
-        Mails.Show()
+        Setting.Show()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

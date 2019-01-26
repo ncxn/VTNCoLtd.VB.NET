@@ -1,10 +1,8 @@
 ﻿Option Explicit On
 Imports System.Net.Mail
 Imports MySql.Data.MySqlClient
-'Imports DancePassion.MYSQLSERVER
 
 Namespace cfgMails
-
 #Region "DTO"
     Public Class DTO
         Private _key As String
@@ -161,7 +159,7 @@ Namespace cfgMails
                                                                            'Pwd', '" & mailconfig.pwd & "',
                                                                            'SSL', '" & mailconfig.ssl & "',
                                                                            'vdefault', '" & mailconfig.vdefault & "'))"
-                Debug.Print(cmd.CommandText.ToString)
+                'Debug.Print(cmd.CommandText.ToString)
                 'cmd.Parameters.AddWithValue("@Config_key", mailconfig.key)
                 'cmd.Parameters.AddWithValue("@Config_values",)
 
