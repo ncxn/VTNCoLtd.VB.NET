@@ -48,14 +48,14 @@ Partial Public Class Setting
         tabbedView.AddDocument(form)
         tabbedView.ActivateDocument(form)
     End Sub
-    Private Sub barButtonNavigation_ItemClick(ByVal sender As Object, ByVal e As ItemClickEventArgs) Handles employeesBarButtonItem.ItemClick, customersBarButtonItem.ItemClick
+    Private Sub barButtonNavigation_ItemClick(ByVal sender As Object, ByVal e As ItemClickEventArgs) Handles infoBarButtonItem.ItemClick, emailBarButtonItem.ItemClick
         Dim childForm As New Form()
         childForm.MdiParent = Me
         If e.Item.Caption = "Mails Setting" Then
             Mails.Show()
             'accordionControl.SelectedElement = employeesAccordionControlElement
         Else
-            accordionControl.SelectedElement = customersAccordionControlElement
+            accordionControl.SelectedElement = infoAccordionControlElement
         End If
     End Sub
     Private Sub tabbedView_DocumentClosed(ByVal sender As Object, ByVal e As DocumentEventArgs) Handles tabbedView.DocumentClosed
@@ -66,9 +66,9 @@ Partial Public Class Setting
         If tabbedView.Documents.Count <> 0 Then
             Select Case e.Document.Caption
                 Case "Employees"
-                    accordionControl.SelectedElement = employeesAccordionControlElement
+                    accordionControl.SelectedElement = smsAccordionControlElement
                 Case "Customers"
-                    accordionControl.SelectedElement = customersAccordionControlElement
+                    accordionControl.SelectedElement = infoAccordionControlElement
                 Case "Mails Setting"
                     accordionControl.SelectedElement = MailsAccordionControlElement
                     'Case "Clients"

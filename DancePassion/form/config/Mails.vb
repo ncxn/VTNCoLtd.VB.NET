@@ -9,4 +9,5 @@ Public Class Mails
         Dim fn As New BUS
         fn._add(Configs)
     End Sub
+
 End Class
