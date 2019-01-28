@@ -57,16 +57,19 @@ Partial Public Class Setting
         'ribbonControl
         '
         Me.ribbonControl.ExpandCollapseItem.Id = 0
+        Me.ribbonControl.ForeColor = System.Drawing.Color.White
         Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.skinRibbonGalleryBarItem, Me.barSubItemNavigation, Me.infoBarButtonItem, Me.emailBarButtonItem, Me.smsBarButtonItem})
         Me.ribbonControl.Location = New System.Drawing.Point(0, 0)
-        Me.ribbonControl.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ribbonControl.Margin = New System.Windows.Forms.Padding(4)
         Me.ribbonControl.MaxItemId = 1
         Me.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.ribbonControl.Name = "ribbonControl"
+        Me.ribbonControl.OptionsStubGlyphs.AllowStubGlyphs = DevExpress.Utils.DefaultBoolean.[True]
+        Me.ribbonControl.OptionsStubGlyphs.CaseMode = DevExpress.Utils.Drawing.GlyphTextCaseMode.UpperCase
         Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage})
-        Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
+        Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ribbonControl.Size = New System.Drawing.Size(1125, 274)
+        Me.ribbonControl.Size = New System.Drawing.Size(1000, 147)
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '
         'skinRibbonGalleryBarItem
@@ -78,9 +81,11 @@ Partial Public Class Setting
         '
         Me.barSubItemNavigation.Caption = "Danh mục"
         Me.barSubItemNavigation.Id = 15
+        Me.barSubItemNavigation.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
+        Me.barSubItemNavigation.ImageOptions.AllowStubGlyph = DevExpress.Utils.DefaultBoolean.[True]
         Me.barSubItemNavigation.ImageOptions.ImageUri.Uri = "NavigationBar"
         Me.barSubItemNavigation.ImageOptions.SvgImage = CType(resources.GetObject("barSubItemNavigation.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.barSubItemNavigation.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.infoBarButtonItem), New DevExpress.XtraBars.LinkPersistInfo(Me.emailBarButtonItem), New DevExpress.XtraBars.LinkPersistInfo(Me.smsBarButtonItem)})
+        Me.barSubItemNavigation.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(CType((DevExpress.XtraBars.BarLinkUserDefines.Caption Or DevExpress.XtraBars.BarLinkUserDefines.PaintStyle), DevExpress.XtraBars.BarLinkUserDefines), Me.infoBarButtonItem, "Doanh nghiệp", False, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.emailBarButtonItem, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.smsBarButtonItem, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
         Me.barSubItemNavigation.Name = "barSubItemNavigation"
         Me.barSubItemNavigation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
         '
@@ -88,6 +93,9 @@ Partial Public Class Setting
         '
         Me.infoBarButtonItem.Caption = "Doanh nghiệp"
         Me.infoBarButtonItem.Id = 46
+        Me.infoBarButtonItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
+        Me.infoBarButtonItem.ImageOptions.AllowStubGlyph = DevExpress.Utils.DefaultBoolean.[True]
+        Me.infoBarButtonItem.ImageOptions.Image = CType(resources.GetObject("infoBarButtonItem.ImageOptions.Image"), System.Drawing.Image)
         Me.infoBarButtonItem.Name = "infoBarButtonItem"
         '
         'emailBarButtonItem
@@ -137,22 +145,22 @@ Partial Public Class Setting
         Me.dockPanel.ID = New System.Guid("a045df26-1503-4d9a-99c1-a531310af22b")
         Me.dockPanel.ImageOptions.Image = CType(resources.GetObject("dockPanel.ImageOptions.Image"), System.Drawing.Image)
         Me.dockPanel.ImeMode = System.Windows.Forms.ImeMode.AlphaFull
-        Me.dockPanel.Location = New System.Drawing.Point(0, 274)
-        Me.dockPanel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.dockPanel.Location = New System.Drawing.Point(0, 147)
+        Me.dockPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.dockPanel.Name = "dockPanel"
         Me.dockPanel.Options.ShowCloseButton = False
         Me.dockPanel.Options.ShowMaximizeButton = False
         Me.dockPanel.OriginalSize = New System.Drawing.Size(283, 200)
-        Me.dockPanel.Size = New System.Drawing.Size(283, 780)
+        Me.dockPanel.Size = New System.Drawing.Size(283, 498)
         Me.dockPanel.Text = "Mục lục"
         '
         'dockPanel_Container
         '
         Me.dockPanel_Container.Controls.Add(Me.accordionControl)
-        Me.dockPanel_Container.Location = New System.Drawing.Point(4, 38)
-        Me.dockPanel_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.dockPanel_Container.Location = New System.Drawing.Point(3, 36)
+        Me.dockPanel_Container.Margin = New System.Windows.Forms.Padding(4)
         Me.dockPanel_Container.Name = "dockPanel_Container"
-        Me.dockPanel_Container.Size = New System.Drawing.Size(268, 740)
+        Me.dockPanel_Container.Size = New System.Drawing.Size(272, 460)
         Me.dockPanel_Container.TabIndex = 0
         '
         'accordionControl
@@ -161,11 +169,11 @@ Partial Public Class Setting
         Me.accordionControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.accordionControl.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.mainAccordionGroup})
         Me.accordionControl.Location = New System.Drawing.Point(0, 0)
-        Me.accordionControl.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.accordionControl.Margin = New System.Windows.Forms.Padding(4)
         Me.accordionControl.Name = "accordionControl"
         Me.accordionControl.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.[Auto]
         Me.accordionControl.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.[Auto]
-        Me.accordionControl.Size = New System.Drawing.Size(268, 740)
+        Me.accordionControl.Size = New System.Drawing.Size(272, 460)
         Me.accordionControl.TabIndex = 0
         Me.accordionControl.Text = "accordionControl"
         Me.accordionControl.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu
@@ -180,7 +188,7 @@ Partial Public Class Setting
         '
         'infoAccordionControlElement
         '
-        Me.infoAccordionControlElement.HeaderTemplate.AddRange(New DevExpress.XtraBars.Navigation.HeaderElementInfo() {New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)})
+        Me.infoAccordionControlElement.HeaderTemplate.AddRange(New DevExpress.XtraBars.Navigation.HeaderElementInfo() {New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Left), New DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)})
         Me.infoAccordionControlElement.ImageOptions.Image = CType(resources.GetObject("infoAccordionControlElement.ImageOptions.Image"), System.Drawing.Image)
         Me.infoAccordionControlElement.Name = "infoAccordionControlElement"
         Me.infoAccordionControlElement.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
@@ -201,9 +209,6 @@ Partial Public Class Setting
         Me.smsAccordionControlElement.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
         Me.smsAccordionControlElement.Text = "Cấu hình SMS"
         '
-        'tabbedView
-        '
-        '
         'documentManager
         '
         Me.documentManager.MdiParent = Me
@@ -215,14 +220,14 @@ Partial Public Class Setting
         '
         Me.Appearance.Image = CType(resources.GetObject("Setting.Appearance.Image"), System.Drawing.Image)
         Me.Appearance.Options.UseImage = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1125, 1054)
+        Me.ClientSize = New System.Drawing.Size(1000, 645)
         Me.Controls.Add(Me.dockPanel)
         Me.Controls.Add(Me.ribbonControl)
         Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
         Me.IsMdiContainer = True
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Setting"
         Me.Ribbon = Me.ribbonControl
         Me.Text = "Hệ thống"
