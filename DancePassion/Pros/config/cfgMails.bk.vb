@@ -1,10 +1,8 @@
 ﻿Option Explicit On
 Imports System.Net.Mail
 Imports MySql.Data.MySqlClient
-'Imports DancePassion.MYSQLSERVER
 
-Namespace MailConfig
-
+Namespace cfgMails.BK
 #Region "DTO"
     Public Class DTO
         Private _key As String
@@ -75,8 +73,6 @@ Namespace MailConfig
                 _vdefault = value
             End Set
         End Property
-        Public Sub New()
-        End Sub
 
         Public Sub New(ByVal key As String, ByVal server As String, ByVal port As Integer, ByVal user As String, ByVal pwd As String, ssl As Boolean, vdefault As Boolean)
             Me.key = key
@@ -88,7 +84,8 @@ Namespace MailConfig
             Me.vdefault = vdefault
         End Sub
     End Class
-#End Region
+#End Region 'DTO
+
 #Region "DAL"
     Public Class DAL
         Private fn As New MYSQLSERVER
@@ -99,7 +96,7 @@ Namespace MailConfig
 
             Try
                 fn.conn.Open()
-                Dim da As New MySqlDataAdapter("select * from mailConfig", fn.conn)
+                Dim da As New MySqlDataAdapter("select * from Configs", fn.conn)
                 da.Fill(dt)
                 fn.conn.Close()
             Catch e As Exception
@@ -116,9 +113,9 @@ Namespace MailConfig
             Dim dr As DataRow = Nothing
             Try
                 fn.conn.Open()
-                Dim da As New MySqlDataAdapter("select * from mailConfig", fn.conn)
+                Dim da As New MySqlDataAdapter("select * from Configs", fn.conn)
                 da.Fill(dt)
-                dt.PrimaryKey = New DataColumn() {dt.Columns("key")}
+                dt.PrimaryKey = New DataColumn() {dt.Columns("Config_key")}
                 dr = dt.Rows.Find(key)
             Catch e As Exception
                 'MessageBox.Show(e.Message)
@@ -133,9 +130,9 @@ Namespace MailConfig
             Dim dr As DataRow = Nothing
             Try
                 fn.conn.Open()
-                Dim da As New MySqlDataAdapter("select * from mailConfig where vDefault = 1", fn.conn)
+                Dim da As New MySqlDataAdapter("select * from Configs where vDefault = 1", fn.conn)
                 da.Fill(dt)
-                dt.PrimaryKey = New DataColumn() {dt.Columns("key")}
+                dt.PrimaryKey = New DataColumn() {dt.Columns("Config_key")}
                 dr = dt.Rows(0)
             Catch e As Exception
                 'MessageBox.Show(e.Message)
@@ -146,30 +143,30 @@ Namespace MailConfig
         End Function
 
         Public Function _Add(ByVal mailconfig As DTO) As Boolean
-            fn.conn.Open()
-            Dim da As New MySqlDataAdapter("select * from mailConfig", fn.conn)
-            Dim dt As New DataTable
-            da.Fill(dt)
-            Dim cb As New MySqlCommandBuilder(da)
-            Dim ci = cb.GetInsertCommand
-            Dim cu = cb.GetUpdateCommand
-            Dim cd = cb.GetDeleteCommand
-            Dim tr As MySqlTransaction = fn.conn.BeginTransaction
-            ci.Transaction = tr
-            cu.Transaction = tr
-            cd.Transaction = tr
-            Dim r As DataRow = dt.NewRow
-            r("key") = mailconfig.key
-            r("server") = mailconfig.server
-            r("port") = mailconfig.port
-            r("user") = mailconfig.user
-            r("pwd") = mailconfig.pwd
-            r("ssl") = mailconfig.ssl
-            r("vdefault") = mailconfig.vdefault
-            dt.Rows.Add(r)
+            Dim cmd As New MySqlCommand()
+            Dim tr As MySqlTransaction = Nothing
             Try
-                da.Update(dt)
+                fn.conn.Open()
+                tr = fn.conn.BeginTransaction()
+                cmd.Connection = fn.conn
+                cmd.Transaction = tr
+                cmd.CommandText = "INSERT INTO Configs (Config_key, Config_values) 
+                                               VALUES ('" & mailconfig.key & "', 
+                                               COLUMN_CREATE('Server', '" & mailconfig.server & "',
+                                                                           'Port', '" & mailconfig.port & "',
+                                                                           'User', '" & mailconfig.user & "',
+                                                                           'Pwd', '" & mailconfig.pwd & "',
+                                                                           'SSL', '" & mailconfig.ssl & "',
+                                                                           'vdefault', '" & mailconfig.vdefault & "'))"
+                'Debug.Print(cmd.CommandText.ToString)
+                'cmd.Parameters.AddWithValue("@Config_key", mailconfig.key)
+                'cmd.Parameters.AddWithValue("@Config_values",)
+
+                cmd.ExecuteNonQuery()
                 tr.Commit()
+
+                fn.conn.Close()
+
                 Return True
             Catch e As Exception
                 MessageBox.Show(e.Message)

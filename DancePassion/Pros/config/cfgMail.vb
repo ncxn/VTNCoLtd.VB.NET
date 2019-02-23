@@ -1,11 +1,13 @@
 ﻿Option Explicit On
 Imports System.Net.Mail
 Imports MySql.Data.MySqlClient
+'Imports DancePassion.MYSQLSERVER
 
-Namespace cfgMails
+Namespace cfgMail
+
 #Region "DTO"
     Public Class DTO
-        Private _key As String
+        Private _Service As String
         Private _server As String
         Private _port As Integer
         Private _user As String
@@ -13,12 +15,16 @@ Namespace cfgMails
         Private _ssl As Boolean
         Private _vdefault As Boolean
 
-        Public Property key As String
+        Public Property Service As String
             Get
-                Return _key
+                Return _Service
             End Get
             Set(ByVal value As String)
-                _key = value
+                If Len(Trim(value)) = 0 Then
+                    Throw New Exception("Ông nội phải nhập giá trị vào nhé")
+                Else
+                    _Service = value
+                End If
             End Set
         End Property
         Public Property server As String
@@ -73,11 +79,10 @@ Namespace cfgMails
                 _vdefault = value
             End Set
         End Property
-        Public Sub New()
-        End Sub
 
-        Public Sub New(ByVal key As String, ByVal server As String, ByVal port As Integer, ByVal user As String, ByVal pwd As String, ssl As Boolean, vdefault As Boolean)
-            Me.key = key
+
+        Public Sub New(ByVal Service As String, ByVal server As String, ByVal port As Integer, ByVal user As String, ByVal pwd As String, ssl As Boolean, vdefault As Boolean)
+            Me.Service = Service
             Me.server = server
             Me.port = port
             Me.user = user
@@ -97,7 +102,7 @@ Namespace cfgMails
 
             Try
                 fn.conn.Open()
-                Dim da As New MySqlDataAdapter("select * from Configs", fn.conn)
+                Dim da As New MySqlDataAdapter("select * from cfgmail", fn.conn)
                 da.Fill(dt)
                 fn.conn.Close()
             Catch e As Exception
@@ -108,16 +113,17 @@ Namespace cfgMails
 
             Return dt
         End Function
-        Public Function _findByID(key As String) As DataRow
+        Public Function _findByID(Service As String) As DataRow
 
             Dim dt As New DataTable
             Dim dr As DataRow = Nothing
             Try
                 fn.conn.Open()
-                Dim da As New MySqlDataAdapter("select * from Configs", fn.conn)
+                Dim da As New MySqlDataAdapter("SELECT * FROM cfgMail", fn.conn)
                 da.Fill(dt)
-                dt.PrimaryKey = New DataColumn() {dt.Columns("Config_key")}
-                dr = dt.Rows.Find(key)
+                dt.PrimaryKey = New DataColumn() {dt.Columns("Service")}
+                dr = dt.Rows.Find(Service)
+
             Catch e As Exception
                 'MessageBox.Show(e.Message)
             Finally
@@ -131,9 +137,9 @@ Namespace cfgMails
             Dim dr As DataRow = Nothing
             Try
                 fn.conn.Open()
-                Dim da As New MySqlDataAdapter("select * from Configs where vDefault = 1", fn.conn)
+                Dim da As New MySqlDataAdapter("SELECT * FROM cfgMail where vDefault = 1", fn.conn)
                 da.Fill(dt)
-                dt.PrimaryKey = New DataColumn() {dt.Columns("Config_key")}
+                dt.PrimaryKey = New DataColumn() {dt.Columns("Service")}
                 dr = dt.Rows(0)
             Catch e As Exception
                 'MessageBox.Show(e.Message)
@@ -144,33 +150,34 @@ Namespace cfgMails
         End Function
 
         Public Function _Add(ByVal mailconfig As DTO) As Boolean
-            Dim cmd As New MySqlCommand()
-            Dim tr As MySqlTransaction = Nothing
+            fn.conn.Open()
+            Dim da As New MySqlDataAdapter("SELECT * FROM cfgMail", fn.conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+            Dim cb As New MySqlCommandBuilder(da)
+            Dim ci = cb.GetInsertCommand
+            Dim cu = cb.GetUpdateCommand
+            Dim cd = cb.GetDeleteCommand
+            Dim tr As MySqlTransaction = fn.conn.BeginTransaction
+            ci.Transaction = tr
+            cu.Transaction = tr
+            cd.Transaction = tr
+            Dim r As DataRow = dt.NewRow
+            r("Service") = mailconfig.Service
+            r("server") = mailconfig.server
+            r("port") = mailconfig.port
+            r("user") = mailconfig.user
+            r("pwd") = mailconfig.pwd
+            r("ssl") = mailconfig.ssl
+            r("vdefault") = mailconfig.vdefault
+            dt.Rows.Add(r)
             Try
-                fn.conn.Open()
-                tr = fn.conn.BeginTransaction()
-                cmd.Connection = fn.conn
-                cmd.Transaction = tr
-                cmd.CommandText = "INSERT INTO Configs (Config_key, Config_values) 
-                                               VALUES ('" & mailconfig.key & "', 
-                                               COLUMN_CREATE('Server', '" & mailconfig.server & "',
-                                                                           'Port', '" & mailconfig.port & "',
-                                                                           'User', '" & mailconfig.user & "',
-                                                                           'Pwd', '" & mailconfig.pwd & "',
-                                                                           'SSL', '" & mailconfig.ssl & "',
-                                                                           'vdefault', '" & mailconfig.vdefault & "'))"
-                'Debug.Print(cmd.CommandText.ToString)
-                'cmd.Parameters.AddWithValue("@Config_key", mailconfig.key)
-                'cmd.Parameters.AddWithValue("@Config_values",)
-
-                cmd.ExecuteNonQuery()
+                da.Update(dt)
                 tr.Commit()
-
-                fn.conn.Close()
-
                 Return True
+
             Catch e As Exception
-                MessageBox.Show(e.Message)
+                'MessageBox.Show(e.Message)
                 tr.Rollback()
                 Return False
             Finally
@@ -179,7 +186,7 @@ Namespace cfgMails
         End Function
         Public Function _update(ByVal mailconfig As DTO) As Boolean
             fn.conn.Open()
-            Dim da As New MySqlDataAdapter("select * from mailConfig", fn.conn)
+            Dim da As New MySqlDataAdapter("SELECT * FROM cfgMail", fn.conn)
             Dim dt As New DataTable
             da.Fill(dt)
             Dim cb As New MySqlCommandBuilder(da)
@@ -188,8 +195,7 @@ Namespace cfgMails
             cu.Transaction = tr
             Try
                 For Each r As DataRow In dt.Rows
-                    If r("key").ToString = mailconfig.key Then
-
+                    If r("Service").ToString = mailconfig.Service Then
                         'r("key") = mailconfig.key
                         r("server") = mailconfig.server
                         r("port") = mailconfig.port
@@ -223,8 +229,8 @@ Namespace cfgMails
             Return dal._Get()
         End Function
 
-        Public Function _findById(key As String) As DataRow
-            Return dal._findByID(key)
+        Public Function _findById(Service As String) As DataRow
+            Return dal._findByID(Service)
         End Function
         Public Function _findFirst() As DataRow
             Return dal._findFirst()

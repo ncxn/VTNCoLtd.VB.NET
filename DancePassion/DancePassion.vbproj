@@ -137,8 +137,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Twilio, Version=5.26.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Twilio.5.26.0\lib\net451\Twilio.dll</HintPath>
+    <Reference Include="Twilio, Version=5.26.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.26.1\lib\net451\Twilio.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +203,7 @@
     <Compile Include="form\WaitForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="global\FlyMessagesBox.vb" />
     <Compile Include="global\MYSQLSERVER.vb" />
     <Compile Include="global\SQLiteDatabase.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -210,8 +211,8 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="Pros\config\Mails.vb" />
-    <Compile Include="Pros\config\Mailconfig.vb" />
+    <Compile Include="Pros\config\cfgMails.bk.vb" />
+    <Compile Include="Pros\config\cfgMail.vb" />
     <Compile Include="Pros\config\SMSconfig.vb" />
     <Compile Include="Pros\Product_type.vb" />
     <EmbeddedResource Include="Form1.resx">
