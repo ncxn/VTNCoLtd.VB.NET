@@ -72,43 +72,43 @@ Partial Class Mails
         '
         'txtServer
         '
-        Me.txtServer.Location = New System.Drawing.Point(144, 67)
+        Me.txtServer.Location = New System.Drawing.Point(144, 72)
         Me.txtServer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtServer.Name = "txtServer"
-        Me.txtServer.Size = New System.Drawing.Size(460, 20)
+        Me.txtServer.Size = New System.Drawing.Size(442, 20)
         Me.txtServer.TabIndex = 0
         '
         'txtKey
         '
-        Me.txtKey.Location = New System.Drawing.Point(144, 43)
+        Me.txtKey.Location = New System.Drawing.Point(144, 48)
         Me.txtKey.Margin = New System.Windows.Forms.Padding(4)
         Me.txtKey.Name = "txtKey"
-        Me.txtKey.Size = New System.Drawing.Size(460, 20)
+        Me.txtKey.Size = New System.Drawing.Size(442, 20)
         Me.txtKey.TabIndex = 1
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(144, 115)
+        Me.txtUser.Location = New System.Drawing.Point(144, 120)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(460, 20)
+        Me.txtUser.Size = New System.Drawing.Size(442, 20)
         Me.txtUser.TabIndex = 2
         '
         'txtPwd
         '
-        Me.txtPwd.Location = New System.Drawing.Point(144, 139)
+        Me.txtPwd.Location = New System.Drawing.Point(144, 144)
         Me.txtPwd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPwd.Name = "txtPwd"
-        Me.txtPwd.Size = New System.Drawing.Size(460, 20)
+        Me.txtPwd.Size = New System.Drawing.Size(442, 20)
         Me.txtPwd.TabIndex = 3
         Me.txtPwd.UseSystemPasswordChar = True
         '
         'txtPort
         '
-        Me.txtPort.Location = New System.Drawing.Point(144, 91)
+        Me.txtPort.Location = New System.Drawing.Point(144, 96)
         Me.txtPort.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPort.Name = "txtPort"
-        Me.txtPort.Size = New System.Drawing.Size(460, 20)
+        Me.txtPort.Size = New System.Drawing.Size(442, 20)
         Me.txtPort.TabIndex = 7
         '
         'chkSSL
@@ -118,10 +118,10 @@ Partial Class Mails
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.chkSSL.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkSSL.ForeColor = System.Drawing.Color.Black
-        Me.chkSSL.Location = New System.Drawing.Point(24, 206)
+        Me.chkSSL.Location = New System.Drawing.Point(24, 216)
         Me.chkSSL.Margin = New System.Windows.Forms.Padding(4)
         Me.chkSSL.Name = "chkSSL"
-        Me.chkSSL.Size = New System.Drawing.Size(580, 31)
+        Me.chkSSL.Size = New System.Drawing.Size(562, 31)
         Me.chkSSL.TabIndex = 5
         Me.chkSSL.Text = "Bật SSL ?"
         Me.chkSSL.UseVisualStyleBackColor = True
@@ -133,10 +133,10 @@ Partial Class Mails
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ChkVdefault.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ChkVdefault.ForeColor = System.Drawing.Color.Black
-        Me.ChkVdefault.Location = New System.Drawing.Point(24, 241)
+        Me.ChkVdefault.Location = New System.Drawing.Point(24, 251)
         Me.ChkVdefault.Margin = New System.Windows.Forms.Padding(4)
         Me.ChkVdefault.Name = "ChkVdefault"
-        Me.ChkVdefault.Size = New System.Drawing.Size(580, 31)
+        Me.ChkVdefault.Size = New System.Drawing.Size(562, 31)
         Me.ChkVdefault.TabIndex = 4
         Me.ChkVdefault.Text = "Mặc định?"
         Me.ChkVdefault.UseVisualStyleBackColor = True
@@ -147,12 +147,13 @@ Partial Class Mails
         Me.Root.GroupBordersVisible = False
         Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup1, Me.LayoutControlGroup3})
         Me.Root.Name = "Root"
-        Me.Root.Size = New System.Drawing.Size(628, 517)
+        Me.Root.Size = New System.Drawing.Size(610, 506)
         Me.Root.TextVisible = False
         '
         'LayoutControlGroup1
         '
-        Me.LayoutControlGroup1.AppearanceGroup.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(163, Byte))
+        Me.LayoutControlGroup1.AppearanceGroup.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(163, Byte))
+        Me.LayoutControlGroup1.AppearanceGroup.FontStyleDelta = System.Drawing.FontStyle.Bold
         Me.LayoutControlGroup1.AppearanceGroup.Options.UseFont = True
         Me.LayoutControlGroup1.AppearanceItemCaption.Options.UseFont = True
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5})
@@ -160,7 +161,7 @@ Partial Class Mails
         Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
         Me.LayoutControlGroup1.OptionsItemText.AlignControlsWithHiddenText = True
         Me.LayoutControlGroup1.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.AlignLocal
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(608, 163)
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(590, 168)
         Me.LayoutControlGroup1.Text = "Thông tin"
         '
         'LayoutControlItem1
@@ -170,7 +171,7 @@ Partial Class Mails
         Me.LayoutControlItem1.Control = Me.txtKey
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(584, 24)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(566, 24)
         Me.LayoutControlItem1.Text = "Dịch vụ mail"
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(117, 19)
         '
@@ -183,7 +184,7 @@ Partial Class Mails
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
         Me.LayoutControlItem2.OptionsPrint.AppearanceItemCaption.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LayoutControlItem2.OptionsPrint.AppearanceItemCaption.Options.UseFont = True
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(584, 24)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(566, 24)
         Me.LayoutControlItem2.Text = "Địa chỉ máy chủ"
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(117, 19)
         '
@@ -194,7 +195,7 @@ Partial Class Mails
         Me.LayoutControlItem3.Control = Me.txtPort
         Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 48)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(584, 24)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(566, 24)
         Me.LayoutControlItem3.Text = "Cổng kết nối (port)"
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(117, 19)
         '
@@ -205,7 +206,7 @@ Partial Class Mails
         Me.LayoutControlItem4.Control = Me.txtUser
         Me.LayoutControlItem4.Location = New System.Drawing.Point(0, 72)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(584, 24)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(566, 24)
         Me.LayoutControlItem4.Text = "Đăng nhập (user)"
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(117, 19)
         '
@@ -216,7 +217,7 @@ Partial Class Mails
         Me.LayoutControlItem5.Control = Me.txtPwd
         Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 96)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(584, 24)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(566, 24)
         Me.LayoutControlItem5.Text = "Mật khẩu"
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(117, 19)
         '
@@ -227,9 +228,9 @@ Partial Class Mails
         Me.LayoutControlGroup3.AppearanceItemCaption.Options.UseFont = True
         Me.LayoutControlGroup3.AppearanceItemCaption.Options.UseImage = True
         Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem6, Me.LayoutControlItem7})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 163)
+        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 168)
         Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(608, 334)
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(590, 318)
         Me.LayoutControlGroup3.Text = "Lựa chọn"
         '
         'LayoutControlItem6
@@ -239,7 +240,7 @@ Partial Class Mails
         Me.LayoutControlItem6.Control = Me.chkSSL
         Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(584, 35)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(566, 35)
         Me.LayoutControlItem6.Text = "Bảo mật"
         Me.LayoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(0, 31)
@@ -254,7 +255,7 @@ Partial Class Mails
         Me.LayoutControlItem7.MaxSize = New System.Drawing.Size(0, 35)
         Me.LayoutControlItem7.MinSize = New System.Drawing.Size(24, 35)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(584, 256)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(566, 235)
         Me.LayoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem7.Text = "Mặc định"
         Me.LayoutControlItem7.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
@@ -286,9 +287,9 @@ Partial Class Mails
         Me.LayoutControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat
         Me.LayoutControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.LayoutControl1.Name = "LayoutControl1"
-        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(107, 11, 1230, 695)
+        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(65, 62, 1230, 695)
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(628, 517)
+        Me.LayoutControl1.Size = New System.Drawing.Size(610, 506)
         Me.LayoutControl1.TabIndex = 9
         Me.LayoutControl1.Text = "LayoutControl1"
         '
@@ -308,7 +309,7 @@ Partial Class Mails
         Me.FlyMess.OptionsButtonPanel.ShowButtonPanel = True
         Me.FlyMess.OwnerControl = Me
         Me.FlyMess.Padding = New System.Windows.Forms.Padding(0, 0, 0, 50)
-        Me.FlyMess.Size = New System.Drawing.Size(580, 87)
+        Me.FlyMess.Size = New System.Drawing.Size(562, 87)
         Me.FlyMess.TabIndex = 10
         '
         'FlyCtrMess
@@ -318,7 +319,7 @@ Partial Class Mails
         Me.FlyCtrMess.FlyoutPanel = Me.FlyMess
         Me.FlyCtrMess.Location = New System.Drawing.Point(0, 0)
         Me.FlyCtrMess.Name = "FlyCtrMess"
-        Me.FlyCtrMess.Size = New System.Drawing.Size(580, 37)
+        Me.FlyCtrMess.Size = New System.Drawing.Size(562, 37)
         Me.FlyCtrMess.TabIndex = 0
         '
         'WindowsUIButtonPanel1
@@ -330,7 +331,7 @@ Partial Class Mails
         Me.WindowsUIButtonPanel1.Location = New System.Drawing.Point(24, 341)
         Me.WindowsUIButtonPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.WindowsUIButtonPanel1.Name = "WindowsUIButtonPanel1"
-        Me.WindowsUIButtonPanel1.Size = New System.Drawing.Size(580, 61)
+        Me.WindowsUIButtonPanel1.Size = New System.Drawing.Size(562, 61)
         Me.WindowsUIButtonPanel1.TabIndex = 8
         Me.WindowsUIButtonPanel1.Text = "WindowsUIButtonPanel1"
         Me.WindowsUIButtonPanel1.WrapButtons = True
@@ -350,9 +351,9 @@ Partial Class Mails
         'LayoutControlItem10
         '
         Me.LayoutControlItem10.Control = Me.FlyMess
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 65)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 71)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(584, 113)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(600, 119)
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem10.TextVisible = False
         '
@@ -363,7 +364,7 @@ Partial Class Mails
         Me.LayoutControlItem8.Control = Me.WindowsUIButtonPanel1
         Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(584, 65)
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(600, 71)
         Me.LayoutControlItem8.Text = "Lưu dữ liệu"
         Me.LayoutControlItem8.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem8.TextVisible = False
@@ -382,7 +383,7 @@ Partial Class Mails
         Me.Appearance.Options.UseForeColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(628, 517)
+        Me.ClientSize = New System.Drawing.Size(610, 506)
         Me.Controls.Add(Me.LayoutControl1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Mails"
