@@ -32,7 +32,6 @@ Public Class Mails
         'Try
         If Not (dr Is Nothing) Then
             If fn._update(Configs) = True Then
-                FlyMess.Controls.Add(FlyCtrMess)
                 FlyMess.ShowPopup()
             End If
         Else
@@ -54,11 +53,12 @@ Public Class Mails
         FlyMess.OwnerControl.FindForm().BringToFront()
     End Sub
 
-    Private Sub FlyMess_ButtonClick(sender As Object, e As FlyoutPanelButtonClickEventArgs)
+    Private Sub FlyMess_ButtonClick(sender As Object, e As FlyoutPanelButtonClickEventArgs) Handles FlyMess.ButtonClick
         Dim tag As String = e.Button.Tag.ToString()
         Select Case tag
             Case "OK"
-            ' . . . 
+
+                FlyMess.HidePopup()
             Case "Cancel"
                 ' . . . 
                 TryCast(sender, FlyoutPanel).HidePopup()
