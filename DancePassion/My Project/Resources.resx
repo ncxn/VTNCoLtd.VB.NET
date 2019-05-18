@@ -118,40 +118,67 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Data add-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data add-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="differentoddevenpages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\differentoddevenpages.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Data copy-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data copy-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gmail1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Data delete-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data delete-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data down-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data down-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data Edit-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data Edit-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data Error-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data Error-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data Find-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data Find-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data information-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data information-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data refresh-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data refresh-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data replace -WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data replace -WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data setting-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Data_setting_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Data setting-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Data warning-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\properties.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="outlook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outlook1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="eSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eSMS1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Data_delete_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data delete-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_Find_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data Find-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_Edit_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data Edit-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_information_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data information-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="twilio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\twilio1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Data_refresh_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data refresh-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="groupbyresource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\groupbyresource.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Data_down_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data down-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_warning_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Data warning-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_add_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data add-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_Error_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data Error-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_copy_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data copy-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sms1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Data_replace__WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data replace -WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bo_sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bo_sale.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

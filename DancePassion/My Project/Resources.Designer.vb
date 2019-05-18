@@ -61,11 +61,21 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property bo_sale() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bo_sale", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Data_add_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data add-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_add_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -75,7 +85,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_copy_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data copy-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_copy_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -85,7 +95,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_delete_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data delete-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_delete_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -95,7 +105,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_down_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data down-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_down_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -105,7 +115,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_Edit_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data Edit-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_Edit_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -115,7 +125,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_Error_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data Error-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_Error_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -125,7 +135,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_Find_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data Find-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_Find_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -135,7 +145,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_information_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data information-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_information_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -145,7 +155,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_refresh_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data refresh-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_refresh_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -155,7 +165,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_replace__WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data replace -WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_replace__WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -165,7 +175,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_setting_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data setting-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_setting_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -175,8 +185,88 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Data_warning_WF() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Data warning-WF", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Data_warning_WF", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property differentoddevenpages() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("differentoddevenpages", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property eSMS() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("eSMS", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property gmail() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gmail", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property groupbyresource() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("groupbyresource", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property outlook() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("outlook", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property properties() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("properties", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property sms() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("sms", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property twilio() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("twilio", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
             End Get
         End Property
     End Module

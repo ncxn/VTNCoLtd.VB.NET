@@ -44,6 +44,9 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,6 +56,9 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <MyType>WindowsForms</MyType>
@@ -140,8 +146,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Twilio, Version=5.28.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Twilio.5.28.4\lib\net451\Twilio.dll</HintPath>
+    <Reference Include="Twilio, Version=5.29.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.29.0\lib\net451\Twilio.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +212,12 @@
     <Compile Include="form\WaitForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="global\MYSQLSERVER.vb" />
     <Compile Include="global\SQLiteDatabase.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -213,10 +225,15 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="Pros\config\cfgMails.bk.vb" />
-    <Compile Include="Pros\config\cfgMail.vb" />
-    <Compile Include="Pros\config\SMSconfig.vb" />
-    <Compile Include="Pros\Product_type.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pros\config\cfgMails.bk.vb" />
+    <Compile Include="pros\config\cfgMail.vb" />
+    <Compile Include="pros\config\SMSconfig.vb" />
+    <Compile Include="pros\Product_type.vb" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -241,18 +258,16 @@
     <EmbeddedResource Include="form\WaitForm.resx">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="App.config" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -271,7 +286,9 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="uc\" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
@@ -322,6 +339,53 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Data warning-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eSMS .svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eSMS.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outlook.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twilio.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eSMS1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outlook1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twilio1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\differentoddevenpages.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupbyresource.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_sale.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets')" />

@@ -28,9 +28,9 @@ Partial Class Form1
         Me.FluentDesignFormContainer1 = New DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer()
         Me.FlyoutPanel1 = New DevExpress.Utils.FlyoutPanel()
         Me.FlyoutPanelControl1 = New DevExpress.Utils.FlyoutPanelControl()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.AccordionControl1 = New DevExpress.XtraBars.Navigation.AccordionControl()
         Me.AccordionControlElement1 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.FluentDesignFormContainer1.SuspendLayout()
         CType(Me.FlyoutPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlyoutPanel1.SuspendLayout()
@@ -76,6 +76,16 @@ Partial Class Form1
         Me.FlyoutPanelControl1.Size = New System.Drawing.Size(480, 114)
         Me.FlyoutPanelControl1.TabIndex = 0
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(75, 19)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Tổ cha mài"
+        '
         'AccordionControl1
         '
         Me.AccordionControl1.Dock = System.Windows.Forms.DockStyle.Left
@@ -93,16 +103,6 @@ Partial Class Form1
         Me.AccordionControlElement1.Name = "AccordionControlElement1"
         Me.AccordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
         Me.AccordionControlElement1.Text = "FlyOut Messages"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 19)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Tổ cha mài"
         '
         'Form1
         '
