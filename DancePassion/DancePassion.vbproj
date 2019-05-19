@@ -69,6 +69,9 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -269,6 +272,7 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
@@ -341,11 +345,6 @@
     <None Include="Resources\Data warning-WF.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\eSMS .svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\eSMS.svg" />
   </ItemGroup>
   <ItemGroup>
@@ -361,21 +360,6 @@
     <None Include="Resources\twilio.svg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\eSMS1.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gmail1.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\outlook1.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sms1.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\twilio1.svg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\properties.svg" />
   </ItemGroup>
   <ItemGroup>
@@ -386,6 +370,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bo_sale.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out1.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets')" />

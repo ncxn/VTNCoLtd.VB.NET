@@ -118,39 +118,217 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RibbonControl.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Slide_menu.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="Slide_menu.Appearance.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
-        QOPFkEOS/gHhRXjbwUGG0AAAAABJRU5ErkJggg==
+        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
+        5UGCYf4ArM8KCJqLfeQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="dbKhoiTao.Caption" xml:space="preserve">
-    <value>Khởi tạo</value>
+  <data name="BackstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 79</value>
+  </data>
+  <data name="BackstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1146, 383</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BackstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl1.Name" xml:space="preserve">
+    <value>BackstageViewClientControl1</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl1.Parent" xml:space="preserve">
+    <value>Slide_menu</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Slide_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="TaiKhoan.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
+  <data name="TaiKhoan.Appearance.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="TaiKhoan.Caption" xml:space="preserve">
+    <value>Tài khoản</value>
   </data>
   <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="dbKhoiTao.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TaiKhoan.ImageOptions.ItemNormal.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAJICAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJDdXN0b21lcl8xXyI+DQogICAgPHBh
+        dGggZD0iTTEwLDkuOWMtMC4xLDAuNSwwLjIsMC45LDAuNCwxLjRzLTAuMSwxLjcsMC45LDEuNmMwLDAs
+        MCwwLjEsMCwwLjJjMC42LDIuMywyLDQuOSw0LjcsNC45czQuMi0yLjYsNC43LTQuOSAgIFYxM2MxLDAu
+        MSwwLjYtMS4xLDAuOS0xLjZjMC4yLTAuNSwwLjQtMC45LDAuMy0xLjRjLTAuMS0wLjQtMC40LTAuNC0w
+        LjUtMC4zQzIzLjIsNC44LDIwLjMsNSwyMC4zLDVTMjAsMiwxNC44LDIgICBDMTAsMiw5LjQsNiwxMC41
+        LDkuNkMxMC40LDkuNiwxMC4xLDkuNywxMCw5Ljl6IE0yMCwxOGMtMC44LDEuNS0yLjEsNC00LDRzLTMu
+        Mi0yLjUtNC00Yy0yLjMsMy41LTgsMS04LDguNVYzMGgyNHYtMy41ICAgQzI4LDE5LjEsMjIuMywyMS40
+        LDIwLDE4eiIgZmlsbD0iIzExNzdENyIgY2xhc3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="DangNhap.Caption" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="DangNhap.ImageOptions.ItemNormal.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMsBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iRmlsbF9SaWdodCI+DQogIDxnIG9wYWNpdHk9IjAuNSIgY2xhc3M9InN0
+        MCI+DQogICAgPHBhdGggZD0iTTMwLDJ2MjZIMTBWMThoNnY0LjdMMjcuNiwxNUwxNiw3LjNWMTJoLTZW
+        MkgzMHoiIGZpbGw9IiM3MjcyNzIiIG9wYWNpdHk9IjAuNSIgY2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+
+        DQogIDxwYXRoIGQ9Ik04LDJ2MjZIMlYySDh6IE0xMCwxNmg4djNsNi00bC02LTR2M2gtOFYxNnoiIGZp
+        bGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="DangXuat.Caption" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="DangXuat.ImageOptions.ItemNormal.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAM8BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iRmlsbF9MZWZ0Ij4NCiAgPGcgb3BhY2l0eT0iMC41IiBjbGFzcz0ic3Qw
+        Ij4NCiAgICA8cGF0aCBkPSJNMTYsMTJWNy4zTDQuNCwxNUwxNiwyMi43VjE4aDZ2MTBIMlYyaDIwdjEw
+        SDE2eiIgZmlsbD0iIzcyNzI3MiIgb3BhY2l0eT0iMC41IiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4N
+        CiAgPHBhdGggZD0iTTMwLDJ2MjZoLTZWMkgzMHogTTIyLDE0aC04di0zbC02LDRsNiw0di0zaDhWMTR6
+        IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="HoSo.Caption" xml:space="preserve">
+    <value>Hồ sơ</value>
+  </data>
+  <data name="HoSo.ImageOptions.ItemNormal.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAF8CAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJEb2N1bWVudF8xXyI+DQogICAgPHBh
+        dGggZD0iTTE1LDIwbDktOWw1LDVsLTksOUwxNSwyMHogTTMxLjcsMTEuOWwtMy42LTMuNmMtMC40LTAu
+        NC0xLTAuNC0xLjQsMEwyNSwxMGw1LDVsMS43LTEuNyAgIEMzMi4xLDEyLjksMzIuMSwxMi4zLDMxLjcs
+        MTEuOXogTTE0LDI2aDVsLTUtNVYyNnoiIGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICAg
+        IDxwYXRoIGQ9Ik0yNCwyMy44VjI4aC00LjJIMTJINlY0aDE4djQuMmwyLTJWM2MwLTAuNS0wLjUtMS0x
+        LTFINUM0LjQsMiw0LDIuNSw0LDN2MjZjMCwwLjUsMC41LDEsMSwxaDIwICAgYzAuNSwwLDEtMC41LDEt
+        MXYtNy4yTDI0LDIzLjh6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwv
+        c3ZnPgs=
+</value>
+  </data>
+  <data name="Slide_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 273</value>
+  </data>
+  <data name="Slide_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1331, 463</value>
+  </data>
+  <data name="Slide_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Slide_menu.Text" xml:space="preserve">
+    <value>Mở rộng</value>
+  </data>
+  <data name="&gt;&gt;Slide_menu.Name" xml:space="preserve">
+    <value>Slide_menu</value>
+  </data>
+  <data name="&gt;&gt;Slide_menu.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Slide_menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Slide_menu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="MainControlRibbon.ApplicationButtonImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFoCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJNZW51Ij4NCiAgICA8cGF0aCBkPSJN
+        MiwxMFYzYzAtMC41LDAuNS0xLDEtMWgyNmMwLjUsMCwxLDAuNSwxLDF2N0gyeiBNOSwxMmMtMS43LDAt
+        MywxLjMtMywzczEuMywzLDMsM3MzLTEuMywzLTNTMTAuNywxMiw5LDEyeiAgICBNOSwyMGMtMS43LDAt
+        MywxLjMtMywzczEuMywzLDMsM3MzLTEuMywzLTNTMTAuNywyMCw5LDIweiIgZmlsbD0iIzExNzdENyIg
+        Y2xhc3M9IkJsdWUiIC8+DQogICAgPHBhdGggZD0iTTMwLDEwdjE5YzAsMC41LTAuNSwxLTEsMUgzYy0w
+        LjUsMC0xLTAuNS0xLTFWMTBoMnYxOGgyNFYxMEgzMHogTTI0LDE0SDE0djJoMTBWMTR6IE0yNCwyMkgx
+        NHYyaDEwVjIyeiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="MainControlRibbon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="KhoiTao_dbs_btn.Caption" xml:space="preserve">
+    <value>Khởi tạo</value>
+  </data>
+  <data name="KhoiTao_dbs_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -168,10 +346,10 @@
         IDMwLDI2ICIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVuIiAvPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="dbKetNoi.Caption" xml:space="preserve">
+  <data name="KetNoi_dbs_btn.Caption" xml:space="preserve">
     <value>Kết nối</value>
   </data>
-  <data name="dbKetNoi.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="KetNoi_dbs_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -192,10 +370,10 @@
         IC8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="dbLuuTru.Caption" xml:space="preserve">
+  <data name="LuuTru_dbs_btn.Caption" xml:space="preserve">
     <value>Lưu trữ</value>
   </data>
-  <data name="dbLuuTru.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LuuTru_dbs_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -213,10 +391,10 @@
         c3M9IlllbGxvdyIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="userGroup.Caption" xml:space="preserve">
-    <value>Nhóm</value>
+  <data name="NhomNhanVien_NhanVien_btn.Caption" xml:space="preserve">
+    <value>Nhóm nhân viên</value>
   </data>
-  <data name="userGroup.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="NhomNhanVien_NhanVien_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -245,29 +423,30 @@
         MTQsMjJ6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="user.Caption" xml:space="preserve">
+  <data name="NhanVien_NhanVien_btn.Caption" xml:space="preserve">
     <value>Nhân viên</value>
   </data>
-  <data name="user.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="NhanVien_NhanVien_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAI4CAAAC77u/
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAALYCAAAC77u/
         PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
         IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
         MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJQZXJzb24iPg0KICAgIDxwYXRoIGQ9
-        Ik0xMCw5LjljLTAuMSwwLjUsMC4yLDAuOSwwLjQsMS40cy0wLjEsMS43LDAuOSwxLjZjMCwwLDAsMC4x
-        LDAsMC4yYzAuNiwyLjMsMiw0LjksNC43LDQuOXM0LjItMi42LDQuNy00LjkgICBWMTNjMSwwLjEsMC42
-        LTEuMSwwLjktMS42YzAuMi0wLjUsMC40LTAuOSwwLjMtMS40Yy0wLjEtMC40LTAuNC0wLjQtMC41LTAu
-        M0MyMy4yLDQuOCwyMC4zLDUsMjAuMyw1UzIwLDIsMTQuOCwyICAgQzEwLDIsOS40LDYsMTAuNSw5LjZD
-        MTAuNCw5LjYsMTAuMSw5LjcsMTAsOS45eiBNMjAsMThjLTAuOCwxLjUtMi4xLDQtNCw0cy0zLjItMi41
-        LTQtNGMtMi4zLDMuNS04LDEtOCw4LjVWMzBoMjR2LTMuNSAgIEMyOCwxOS4xLDIyLjMsMjEuNCwyMCwx
-        OHoiIGZpbGw9IiMwMzlDMjMiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJMZWFkXzFfIj4NCiAgICA8cGF0aCBk
+        PSJNMTAuNSw5LjZDOS40LDYsMTAsMiwxNC44LDJjNS4yLDAsNS41LDMsNS41LDNzMi45LTAuMiwxLjEs
+        NC43YzAuMS0wLjEsMC40LTAuMSwwLjUsMC4zICAgYzAuMSwwLjUtMC4xLDAuOS0wLjMsMS40Yy0wLjMs
+        MC41LDAuMSwxLjctMC45LDEuNnYwLjFjLTAuNSwyLjMtMiw0LjktNC43LDQuOXMtNC4xLTIuNi00Ljct
+        NC45YzAtMC4xLDAtMC4yLDAtMC4yICAgYy0xLDAuMS0wLjctMS4xLTAuOS0xLjZTOS45LDEwLjQsMTAs
+        OS45QzEwLjEsOS43LDEwLjQsOS42LDEwLjUsOS42eiBNMjAsMThsLTIuNCw3LjlMMTcsMjJsMC42LTJo
+        LTMuMmwwLjYsMmwtMC42LDMuOUwxMiwxOCAgIGMtMi4zLDMuNS04LDEtOCw4LjVWMzBoMTBoMWgyaDFo
+        MTB2LTMuNUMyOCwxOS4xLDIyLjMsMjEuNCwyMCwxOHoiIGZpbGw9IiM3MjcyNzIiIGlkPSJMZWFkIiBj
+        bGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
   <data name="roles.Caption" xml:space="preserve">
-    <value>Phân quyền</value>
+    <value>Nhân viên</value>
   </data>
   <data name="roles.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -292,25 +471,486 @@
         MiwyNywyMnoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="gmail.Caption" xml:space="preserve">
+  <data name="roles.ItemAppearance.Hovered.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="roles.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="roles.ItemAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="roles.ItemInMenuAppearance.Disabled.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="roles.ItemInMenuAppearance.Hovered.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="roles.ItemInMenuAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="roles.ItemInMenuAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="gmail_email_btn.Caption" xml:space="preserve">
     <value>Gmail</value>
   </data>
-  <data name="outlook.Caption" xml:space="preserve">
+  <data name="outlook_email_btn.Caption" xml:space="preserve">
     <value>Outlook</value>
   </data>
-  <data name="smsDCOM.Caption" xml:space="preserve">
+  <data name="Dcom_SMS_btn.Caption" xml:space="preserve">
     <value>D-COM</value>
   </data>
-  <data name="smsTwilio.Caption" xml:space="preserve">
+  <data name="Twilio_SMS_btn.Caption" xml:space="preserve">
     <value>Twilio</value>
   </data>
-  <data name="eSMS.Caption" xml:space="preserve">
+  <data name="eSMS__SMS_btn.Caption" xml:space="preserve">
     <value>eSMS</value>
   </data>
-  <data name="RibbonControl.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DoanhNghiep_CauHinh_btn.Caption" xml:space="preserve">
+    <value>Doanh nghiệp</value>
+  </data>
+  <data name="DoanhNghiep_CauHinh_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMADAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIC8+DQogIDxnIGlkPSJJbml0aWFsU3RhdGUi
+        Pg0KICAgIDxwYXRoIGQ9Ik0xNiwyNmMwLjIsMC43LDAuNSwxLjQsMC44LDJIM2MtMC42LDAtMS0wLjQt
+        MS0xVjEyaDJ2MTRIMTZ6IE0yNiwxMnY0YzAuNywwLjIsMS40LDAuNSwyLDAuOFYxMkgyNnoiIGZpbGw9
+        IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCiAgICA8cGF0aCBkPSJNMzIsMjV2LTJsLTIuMi0wLjRj
+        LTAuMi0wLjYtMC40LTEuMy0wLjgtMS44bDEuMy0xLjhsLTEuNC0xLjRsLTEuOCwxLjNjLTAuNS0wLjMt
+        MS4yLTAuNi0xLjgtMC43TDI1LDE2aC0yICAgbC0wLjQsMi4yYy0wLjYsMC4yLTEuMywwLjQtMS44LDAu
+        N0wxOSwxNy42TDE3LjYsMTlsMS4zLDEuOGMtMC4zLDAuNS0wLjYsMS4yLTAuOCwxLjhMMTYsMjN2Mmwy
+        LjIsMC40YzAuMiwwLjYsMC40LDEuMywwLjgsMS44ICAgTDE3LjcsMjlsMS40LDEuNGwxLjgtMS4zYzAu
+        NSwwLjMsMS4yLDAuNiwxLjgsMC43TDIzLDMyaDJsMC40LTIuMmMwLjYtMC4yLDEuMy0wLjQsMS44LTAu
+        N2wxLjgsMS4zbDEuNC0xLjRsLTEuMy0xLjggICBjMC4zLTAuNSwwLjYtMS4yLDAuOC0xLjhMMzIsMjV6
+        IE0yNCwyNmMtMS4xLDAtMi0wLjktMi0yczAuOS0yLDItMnMyLDAuOSwyLDJTMjUuMSwyNiwyNCwyNnog
+        TTI3LDJIM0MyLjUsMiwyLDIuNSwyLDN2OWgyNlYzICAgQzI4LDIuNSwyNy41LDIsMjcsMnogTTksOUw2
+        LDZoNkw5LDl6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="CongCu__CauHinh_btn.Caption" xml:space="preserve">
+    <value>Công cụ</value>
+  </data>
+  <data name="CongCu__CauHinh_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAADsDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJHcm91cFRvb2x0aXBzIj4NCiAgICA8
+        cmVjdCB4PSIyMiIgeT0iMTAiIHdpZHRoPSI2IiBoZWlnaHQ9IjEyIiByeD0iMCIgcnk9IjAiIGZpbGw9
+        IiMwMzlDMjMiIGNsYXNzPSJHcmVlbiIgLz4NCiAgICA8cmVjdCB4PSI0IiB5PSIyNCIgd2lkdGg9IjE2
+        IiBoZWlnaHQ9IjQiIHJ4PSIwIiByeT0iMCIgZmlsbD0iI0QxMUMxQyIgY2xhc3M9IlJlZCIgLz4NCiAg
+        ICA8cmVjdCB4PSIyMiIgeT0iMjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjQiIHJ4PSIwIiByeT0iMCIgZmls
+        bD0iI0ZGQjExNSIgY2xhc3M9IlllbGxvdyIgLz4NCiAgICA8cGF0aCBkPSJNMzEsNmgtOXYyaDh2MjJI
+        MlYxMlY4VjZIMUMwLjUsNiwwLDYuNSwwLDd2MjRjMCwwLjUsMC41LDEsMSwxaDMwYzAuNSwwLDEtMC41
+        LDEtMVY3QzMyLDYuNSwzMS41LDYsMzEsNnoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4N
+        CiAgICA8cGF0aCBkPSJNMjAsMTJ2MTBINFYxMmg1LjJsMi44LDIuOGwyLjgtMi44SDIweiBNMjAsMHYx
+        MGgtNmwtMiwybC0yLTJINFYwSDIweiBNMTgsMkg2djZoNC44TDEyLDkuMkwxMy4yLDhIMThWMnoiIGZp
+        bGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="BarButtonItem3.Caption" xml:space="preserve">
+    <value>Nhóm</value>
+  </data>
+  <data name="QuyenHan_NhanVien_btn.Caption" xml:space="preserve">
+    <value>Quyền hạn</value>
+  </data>
+  <data name="QuyenHan_NhanVien_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMEDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJVc2VyIj4NCiAgICA8cGF0aCBkPSJN
+        MTYuMiwyNkgydi0xLjVjMC03LjUsNS43LTUsOC04LjVjMC44LDEuNSwyLjEsNCw0LDRzMy4yLTIuNSw0
+        LTRjMC43LDEsMS43LDEuNSwyLjcsMS45bDAsMCAgIGMtMC41LDAuOS0wLjcsMi0wLjcsMy4xYzAsMC40
+        LDAsMC43LDAuMSwxLjFMMTYuMiwyNkwxNi4yLDI2eiBNOS4zLDEwLjljMCwwLDAsMC4xLDAsMC4yYzAu
+        NiwyLjMsMiw0LjksNC43LDQuOXM0LjItMi42LDQuNy00LjkgICBWMTFjMSwwLjEsMC42LTEuMSwwLjkt
+        MS42QzE5LjgsOC45LDIwLDguNSwxOS45LDhjLTAuMS0wLjQtMC40LTAuNC0wLjUtMC4zQzIxLjIsMi44
+        LDE4LjMsMywxOC4zLDNTMTgsMCwxMi44LDBDOCwwLDcuNCw0LDguNSw3LjYgICBDOC40LDcuNiw4LjEs
+        Ny43LDgsNy45QzcuOSw4LjQsOC4yLDguOCw4LjQsOS4zQzguNiw5LjgsOC4zLDExLDkuMywxMC45eiIg
+        ZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICAgIDxwYXRoIGQ9Ik0yNywxNmMtMi44LDAt
+        NSwyLjItNSw1YzAsMC42LDAuMSwxLjIsMC4zLDEuN0wxNiwyOXYzaDR2LTJoMnYtMmgybDIuMS0yLjFD
+        MjYuNCwyNiwyNi43LDI2LDI3LDI2ICAgYzIuOCwwLDUtMi4yLDUtNVMyOS44LDE2LDI3LDE2eiBNMjcs
+        MjJjLTAuNiwwLTEtMC40LTEtMWMwLTAuNiwwLjQtMSwxLTFzMSwwLjQsMSwxQzI4LDIxLjYsMjcuNiwy
+        MiwyNywyMnoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="SuKien_LoaiSuKien_bnt.Caption" xml:space="preserve">
+    <value>Loại sự kiện</value>
+  </data>
+  <data name="SuKien_LoaiSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAABEFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iSW5zZXJ0U2VjdGlvbkJyZWFrRXZlblBhZ2UiPg0KICA8cGF0aCBkPSJN
+        MjgsMnYxMEgxMFYySDh2MTFjMCwwLjYsMC40LDEsMSwxaDIwYzAuNiwwLDEtMC40LDEtMVYySDI4eiBN
+        MjgsMzBWMjBIMTB2MTBIOFYxOWMwLTAuNiwwLjQtMSwxLTFoMjAgIGMwLjYsMCwxLDAuNCwxLDF2MTFI
+        Mjh6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDxwYXRoIGQ9Ik0wLDEybDYsNGwt
+        Niw0IE0yMiwxMFY4LjRoLTMuNEMxOC43LDguMiwxOC45LDguMSwxOSw4YzAuMi0wLjIsMC41LTAuNCww
+        LjctMC41YzAuMy0wLjIsMC41LTAuMywwLjgtMC41ICBjMC4zLTAuMiwwLjUtMC40LDAuNy0wLjZjMC4y
+        LTAuMiwwLjQtMC41LDAuNS0wLjhjMC4xLTAuMywwLjItMC42LDAuMi0xYzAtMC40LTAuMS0wLjctMC4y
+        LTEuMWMtMC4xLTAuMy0wLjQtMC42LTAuNi0wLjggIGMtMC4zLTAuMi0wLjUtMC40LTAuOS0wLjVjLTAu
+        My0wLjEtMC43LTAuMi0xLTAuMmMtMC41LDAtMC45LDAuMS0xLjMsMC4yYy0wLjQsMC4yLTAuNywwLjQt
+        MC45LDAuN2MtMC4yLDAuMy0wLjQsMC42LTAuNSwxICBjLTAuMSwwLjQtMC4yLDAuOC0wLjIsMS4zbDAs
+        MC4xaDEuOFY1LjJjMC0wLjIsMC0wLjQsMC4xLTAuNmMwLTAuMiwwLjEtMC40LDAuMi0wLjVjMC4xLTAu
+        MSwwLjItMC4zLDAuMy0wLjQgIGMwLjEtMC4xLDAuMy0wLjEsMC41LTAuMWMwLjMsMCwwLjUsMC4xLDAu
+        NywwLjNjMC4yLDAuMiwwLjMsMC40LDAuMywwLjhjMCwwLjIsMCwwLjQtMC4xLDAuNWMtMC4xLDAuMi0w
+        LjIsMC4zLTAuNCwwLjUgIGMtMC4xLDAuMS0wLjMsMC4zLTAuNSwwLjRjLTAuMiwwLjEtMC40LDAuMi0w
+        LjUsMC40QzE4LjMsNi42LDE4LDYuOCwxNy43LDdjLTAuMywwLjItMC42LDAuNS0wLjgsMC43Yy0wLjIs
+        MC4zLTAuNCwwLjYtMC41LDAuOSAgYy0wLjEsMC4zLTAuMiwwLjctMC4yLDEuMlYxMEgyMnoiIGZpbGw9
+        IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8cGF0aCBkPSJNMTgsMzB2LTJoLTN2LTEuN2wzLjQt
+        NC4zSDIwbDAsNC4zaDFWMjhoLTFsMCwySDE4eiBNMTgsMjYuM3YtMS41bC0xLjMsMS41SDE4eiIgZmls
+        bD0iI0QxMUMxQyIgY2xhc3M9IlJlZCIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="SuKien_TaoSuKien_bnt.Caption" xml:space="preserve">
+    <value>Mở sự kiện</value>
+  </data>
+  <data name="SuKien_TaoSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAA4DAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJBcHBvaW50bWVudCI+DQogICAgPHBh
+        dGggZD0iTTAsM3YyNGMwLDAuNiwwLjQsMSwxLDFoMjhjMC42LDAsMS0wLjQsMS0xVjNjMC0wLjYtMC40
+        LTEtMS0xSDFDMC40LDIsMCwyLjQsMCwzeiBNMjgsMjZIMlY2aDI2VjI2eiIgZmlsbD0iIzcyNzI3MiIg
+        Y2xhc3M9IkJsYWNrIiAvPg0KICAgIDxyZWN0IHg9IjEwIiB5PSIxNCIgd2lkdGg9IjQiIGhlaWdodD0i
+        NCIgcng9IjAiIHJ5PSIwIiBmaWxsPSIjRDExQzFDIiBjbGFzcz0iUmVkIiAvPg0KICAgIDxnIG9wYWNp
+        dHk9IjAuNSIgY2xhc3M9InN0MCI+DQogICAgICA8cGF0aCBkPSJNOCwyNEg0di00aDRWMjR6IE0xNCwy
+        MGgtNHY0aDRWMjB6IE0yMCwyMGgtNHY0aDRWMjB6IE0yNiwyMGgtNHY0aDRWMjB6IE0yMCw4aC00djRo
+        NFY4eiBNMjYsOGgtNHY0aDRWOHogICAgIE0yNiwxNGgtNHY0aDRWMTR6IE0yMCwxNGgtNHY0aDRWMTR6
+        IE04LDE0SDR2NGg0VjE0eiBNMTQsOGgtNHY0aDRWOHogTTgsOEg0djRoNFY4eiIgZmlsbD0iIzcyNzI3
+        MiIgb3BhY2l0eT0iMC41IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="SuKien_VeSuKien_bnt.Caption" xml:space="preserve">
+    <value>Vé sự kiện</value>
+  </data>
+  <data name="SuKien_VeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANICAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iRG9fTm90X1JlcGVhdF9JdGVtX0xhYmVsc19QaXZvdF9UYWJsZSI+DQog
+        IDxwYXRoIGQ9Ik0yNywySDVDNC40LDIsNCwyLjQsNCwzdjI2YzAsMC42LDAuNCwxLDEsMWgyMmMwLjYs
+        MCwxLTAuNCwxLTFWM0MyOCwyLjQsMjcuNiwyLDI3LDJ6IE0yNiwyOEg2VjRoMjBWMjh6IiBmaWxsPSIj
+        NzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDxwYXRoIGQ9Ik0xMiwxMEg4VjhoNFYxMHogTTEyLDE2
+        SDh2Mmg0VjE2eiIgZmlsbD0iIzExNzdENyIgY2xhc3M9IkJsdWUiIC8+DQogIDxnIG9wYWNpdHk9IjAu
+        NzUiIGNsYXNzPSJzdDAiPg0KICAgIDxwYXRoIGQ9Ik0xOCwxMGgtNFY4aDRWMTB6IE0yNCw4aC00djJo
+        NFY4eiBNMjQsMTJoLTR2Mmg0VjEyeiBNMTgsMTJoLTR2Mmg0VjEyeiBNMTgsMTZoLTR2Mmg0VjE2eiBN
+        MjQsMTZoLTR2Mmg0VjE2ICAgeiBNMjQsMjBoLTR2Mmg0VjIweiBNMTgsMjBoLTR2Mmg0VjIweiIgZmls
+        bD0iIzcyNzI3MiIgb3BhY2l0eT0iMC43NSIgY2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="SuKien_DangKySuKien_bnt.Caption" xml:space="preserve">
+    <value>Đăng ký</value>
+  </data>
+  <data name="SuKien_DangKySuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKABAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJDaGVja0JveCI+DQogICAgPHBhdGgg
+        ZD0iTTI3LDRINUM0LjUsNCw0LDQuNSw0LDV2MjJjMCwwLjUsMC41LDEsMSwxaDIyYzAuNSwwLDEtMC41
+        LDEtMVY1QzI4LDQuNSwyNy41LDQsMjcsNHogTTE0LDIybC02LTZsMi0ybDQsNCAgIGw4LThsMiwyTDE0
+        LDIyeiIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVuIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="SuKien_ThanhToanSuKien_bnt.Caption" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="SuKien_ThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAIsFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJEb2xsYXJfMV8iPg0KICAgIDxwYXRo
+        IGQ9Ik0yNS4yLDE3LjVjLTAuNi0wLjgtMS4yLTEuNS0yLTJjLTAuOC0wLjUtMS42LTAuOS0yLjMtMS4x
+        Yy0wLjgtMC4yLTEuNC0wLjQtMS44LTAuNSAgIGMtMC4zLTAuMS0wLjctMC4yLTAuOS0wLjJWOC40YzAu
+        MiwwLjEsMC4zLDAuMSwwLjQsMC4yYzAuNCwwLjMsMC44LDAuNiwxLDEuMWMwLjMsMC40LDAuNCwxLjIs
+        MC40LDIuM0gyNWMwLTEuOS0wLjMtMy4xLTAuOC00ICAgYy0wLjUtMC45LTEuMi0xLjctMi4xLTIuM2Mt
+        MC45LTAuNi0xLjktMS0zLTEuM2MtMC40LTAuMS0wLjctMC4xLTEtMC4yVjJoLTR2Mi4xYy0wLjQsMC4x
+        LTAuOCwwLjItMS4zLDAuM2MtMS4xLDAuMy0yLDAuNy0yLjksMS4zICAgQzksNi4zLDguMyw3LDcuOCw3
+        LjlDNy4zLDguNyw3LDkuOCw3LDEwLjljMCwxLDAuMiwxLjksMC42LDIuN0M4LDE0LjQsOC42LDE1LDku
+        MiwxNS41YzAuNywwLjUsMS40LDAuOSwyLjMsMS4yICAgYzAuOCwwLjMsMS43LDAuNiwyLjUsMC44djYu
+        M2MtMC41LTAuMi0xLTAuNC0xLjQtMC42Yy0wLjUtMC4zLTAuOS0wLjgtMS4xLTEuM2MtMC4zLTAuNS0w
+        LjQtMS4xLTAuNC0xLjhINmMwLDEuNCwwLjMsMi41LDAuOCwzLjUgICBjMC42LDEsMS4zLDEuOSwyLjIs
+        Mi41YzAuOSwwLjcsMiwxLjIsMy4zLDEuNWMwLjYsMC4xLDEuMSwwLjIsMS43LDAuM1YzMGg0di0yLjFj
+        MC45LTAuMSwxLjctMC4yLDIuNC0wLjRjMS4yLTAuNCwyLjMtMC45LDMuMS0xLjUgICBjMC44LTAuNywx
+        LjUtMS40LDEuOS0yLjNjMC40LTAuOSwwLjYtMS45LDAuNi0yLjlDMjYsMTkuNCwyNS43LDE4LjMsMjUu
+        MiwxNy41eiBNMTMuNCwxMi40Yy0wLjUtMC4yLTAuOS0wLjUtMS0wLjggICBjLTAuMi0wLjMtMC4zLTAu
+        Ni0wLjMtMS4xYzAtMC41LDAuMS0wLjksMC4zLTEuMmMwLjItMC4zLDAuNS0wLjYsMC44LTAuOGMwLjIt
+        MC4xLDAuNS0wLjMsMC44LTAuM3Y0LjUgICBDMTMuOCwxMi41LDEzLjYsMTIuNSwxMy40LDEyLjR6IE0y
+        MC41LDIyLjdjLTAuMywwLjQtMC43LDAuNy0xLjIsMC45Yy0wLjQsMC4yLTAuOSwwLjMtMS4zLDAuNHYt
+        NS40YzAuMiwwLjEsMC41LDAuMiwwLjcsMC4yICAgYzAuNywwLjMsMS4yLDAuNiwxLjYsMWMwLjQsMC40
+        LDAuNiwwLjksMC42LDEuNUMyMC45LDIxLjgsMjAuOCwyMi4zLDIwLjUsMjIuN3oiIGZpbGw9IiMwMzlD
+        MjMiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="SuKien_TongVeSuKien_bnt.Caption" xml:space="preserve">
+    <value>Tổng vé đăng ký</value>
+  </data>
+  <data name="SuKien_TongVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAIkBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJTdW1tYXJ5Ij4NCiAgICA8cG9seWdv
+        biBwb2ludHM9IjI4LDggMjgsNCA0LDQgMTYsMTYgMTYsMTYgOCwyNCA4LDI0IDgsMjQgNCwyOCAyOCwy
+        OCAyOCwyNCAxMy43LDI0IDIxLjcsMTYgMjEuNywxNiAxMy43LDggICIgZmlsbD0iI0ZGQjExNSIgY2xh
+        c3M9IlllbGxvdyIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="SuKien_DaThanhToanSuKien_bnt.Caption" xml:space="preserve">
+    <value>Đã thanh toán</value>
+  </data>
+  <data name="SuKien_DaThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAEYCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJUYXNrIj4NCiAgICA8cGF0aCBkPSJN
+        MjcsMmgtM3YyNEg4VjJINUM0LjQsMiw0LDIuNCw0LDN2MjZjMCwwLjYsMC40LDEsMSwxaDIyYzAuNiww
+        LDEtMC40LDEtMVYzQzI4LDIuNCwyNy42LDIsMjcsMnoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxs
+        b3ciIC8+DQogICAgPHBhdGggZD0iTTIwLDJWMWMwLTAuNi0wLjQtMS0xLTFoLTZjLTAuNiwwLTEsMC40
+        LTEsMXYxaC0ydjRoMTJWMkgyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCiAgICA8
+        cGF0aCBkPSJNMjIsMTBsLTgsOGwtNC00djRjMS43LDEuOCw0LDQsNCw0bDgtOFYxMHoiIGZpbGw9IiMw
+        MzlDMjMiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="SuKien_ChuaThanhToanSuKien_bnt.Caption" xml:space="preserve">
+    <value>Chưa thanh toán</value>
+  </data>
+  <data name="SuKien_ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4CAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iUGFzdGUiPg0KICA8cGF0aCBkPSJNMTIsMjR2NEg1Yy0wLjYsMC0xLTAu
+        NC0xLTFWM2MwLTAuNiwwLjQtMSwxLTFoM3YyMkgxMnogTTI1LDJoLTN2OGg0VjIuOEMyNiwyLjQsMjUu
+        NiwyLDI1LDJ6IiBmaWxsPSIjRkZCMTE1IiBjbGFzcz0iWWVsbG93IiAvPg0KICA8cGF0aCBkPSJNMjks
+        MTJIMTVjLTAuNiwwLTEsMC40LTEsMXYxNmMwLDAuNiwwLjQsMSwxLDFoMTRjMC42LDAsMS0wLjQsMS0x
+        VjEzQzMwLDEyLjQsMjkuNiwxMiwyOSwxMnogTTI4LDI4SDE2VjE0ICBoMTJWMjh6IE0yNiwyMGgtOHYt
+        Mmg4VjIweiBNMjYsMjRoLTh2LTJoOFYyNHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4N
+        CiAgPHBhdGggZD0iTTE4LDJWMWMwLTAuNi0wLjQtMS0xLTFoLTRjLTAuNiwwLTEsMC40LTEsMXYxaC0y
+        djNjMCwwLjYsMC40LDEsMSwxaDhjMC42LDAsMS0wLjQsMS0xVjJIMTh6IiBmaWxsPSIjNzI3MjcyIiBj
+        bGFzcz0iQmxhY2siIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="SuKien_GuiVeSuKien_bnt.Caption" xml:space="preserve">
+    <value>Gửi vé</value>
+  </data>
+  <data name="SuKien_GuiVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAF4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJTZW5kIj4NCiAgICA8cG9seWdvbiBw
+        b2ludHM9IjIsMjAgOCwyMi40IDI0LDEwIDEyLDI0IDEyLDMwIDE2LjMsMjUuNyAyMiwyOCAzMCwyICAi
+        IGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="SuKien_CheckInSuKien_bnt.Caption" xml:space="preserve">
+    <value>Check In</value>
+  </data>
+  <data name="SuKien_CheckInSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAIEFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJJdGVtVHlwZUNoZWNrZWQiPg0KICAg
+        IDxnPg0KICAgICAgPGc+DQogICAgICAgIDxyZWN0IHg9IjIwIiB5PSI4IiB3aWR0aD0iMTAiIGhlaWdo
+        dD0iNCIgcng9IjAiIHJ5PSIwIiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogICAgICAg
+        IDxyZWN0IHg9IjIwIiB5PSIyMiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjQiIHJ4PSIwIiByeT0iMCIgZmls
+        bD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICAgICAgICA8cGF0aCBkPSJNMTUsMThIM2MtMC41
+        LDAtMSwwLjUtMSwxdjEyYzAsMC41LDAuNSwxLDEsMWgxMmMwLjUsMCwxLTAuNSwxLTFWMTlDMTYsMTgu
+        NSwxNS41LDE4LDE1LDE4eiBNMTQsMzBINFYyMCAgICAgaDEwVjMweiIgZmlsbD0iIzcyNzI3MiIgY2xh
+        c3M9IkJsYWNrIiAvPg0KICAgICAgICA8cGF0aCBkPSJNMTQsMTAuOFYxNEg0VjRoOC4ybDItMkgzQzIu
+        NSwyLDIsMi41LDIsM3YxMmMwLDAuNSwwLjUsMSwxLDFoMTJjMC41LDAsMS0wLjUsMS0xVjguOEwxNCwx
+        MC44eiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICAgICAgPC9nPg0KICAgICAgPGc+
+        DQogICAgICAgIDxyZWN0IHg9IjIwIiB5PSI4IiB3aWR0aD0iMTAiIGhlaWdodD0iNCIgcng9IjAiIHJ5
+        PSIwIiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogICAgICAgIDxyZWN0IHg9IjIwIiB5
+        PSIyMiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjQiIHJ4PSIwIiByeT0iMCIgZmlsbD0iIzcyNzI3MiIgY2xh
+        c3M9IkJsYWNrIiAvPg0KICAgICAgICA8cGF0aCBkPSJNMTUsMThIM2MtMC41LDAtMSwwLjUtMSwxdjEy
+        YzAsMC41LDAuNSwxLDEsMWgxMmMwLjUsMCwxLTAuNSwxLTFWMTlDMTYsMTguNSwxNS41LDE4LDE1LDE4
+        eiBNMTQsMzBINFYyMCAgICAgaDEwVjMweiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0K
+        ICAgICAgICA8cGF0aCBkPSJNMTQsMTAuOFYxNEg0VjRoOC4ybDItMkgzQzIuNSwyLDIsMi41LDIsM3Yx
+        MmMwLDAuNSwwLjUsMSwxLDFoMTJjMC41LDAsMS0wLjUsMS0xVjguOEwxNCwxMC44eiIgZmlsbD0iIzcy
+        NzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICAgICAgPC9nPg0KICAgIDwvZz4NCiAgICA8cG9seWdvbiBw
+        b2ludHM9IjYsNSA2LDggMTAsMTIgMTgsNCAxOCwxIDEwLDkgICIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9
+        IkdyZWVuIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="SuKien_HuyVeSuKien_bnt.Caption" xml:space="preserve">
+    <value>Hủy vé</value>
+  </data>
+  <data name="SuKien_HuyVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHEBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIC8+DQogIDxnIGlkPSJVbmRvXzFfIj4NCiAg
+        ICA8cGF0aCBkPSJNMTQsMTJWOS42VjZMNCwxNmwxMCwxMHYtNmM3LjcsMCwxNCwyLjcsMTQsNkMyOCwx
+        OC4zLDIxLjcsMTIsMTQsMTJ6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9nPg0K
+        PC9zdmc+Cw==
+</value>
+  </data>
+  <data name="BarButtonItem2.Caption" xml:space="preserve">
+    <value>Bộ môn</value>
+  </data>
+  <data name="BarButtonItem4.Caption" xml:space="preserve">
+    <value>Lớp học</value>
+  </data>
+  <data name="BarButtonItem5.Caption" xml:space="preserve">
+    <value>Khóa học</value>
+  </data>
+  <data name="BarButtonItem6.Caption" xml:space="preserve">
+    <value>Loại sản phẩm</value>
+  </data>
+  <data name="BarButtonItem7.Caption" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="BarButtonItem8.Caption" xml:space="preserve">
+    <value>Đơn đặt hàng</value>
+  </data>
+  <data name="BarButtonItem9.Caption" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="BarButtonItem10.Caption" xml:space="preserve">
+    <value>Trả hàng</value>
+  </data>
+  <data name="BarButtonItem11.Caption" xml:space="preserve">
+    <value>Đơn hàng mua</value>
+  </data>
+  <data name="BarButtonItem12.Caption" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="BarButtonItem13.Caption" xml:space="preserve">
+    <value>BarButtonItem13</value>
+  </data>
+  <data name="BarButtonItem14.Caption" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="BarButtonItem15.Caption" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="BarButtonItem16.Caption" xml:space="preserve">
+    <value>Trả hàng</value>
+  </data>
+  <data name="BarButtonItem17.Caption" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+  <data name="BarButtonItem18.Caption" xml:space="preserve">
+    <value>Nợ phải trả</value>
+  </data>
+  <data name="BarButtonItem19.Caption" xml:space="preserve">
+    <value>Nợ phải thu</value>
+  </data>
+  <data name="BarSubItem1.Caption" xml:space="preserve">
+    <value>Nhập liệu danh mục</value>
+  </data>
+  <data name="BarSubItem1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOQCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJQYW5lbFJpZ2h0Ij4NCiAgICA8cGF0
+        aCBkPSJNMjgsMTJoLTZ2LTJoNlYxMnogTTI4LDE0aC02djJoNlYxNHogTTI4LDE4aC02djJoNlYxOHog
+        TTI4LDIyaC02djJoNlYyMnoiIGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICAgIDxnIG9w
+        YWNpdHk9IjAuNSIgY2xhc3M9InN0MCI+DQogICAgICA8cGF0aCBkPSJNMTYsMTJoLTZ2LTJoNlYxMnog
+        TTE2LDE0aC02djJoNlYxNHogTTE2LDE4aC02djJoNlYxOHogTTE2LDIyaC02djJoNlYyMnoiIGZpbGw9
+        IiM3MjcyNzIiIG9wYWNpdHk9IjAuNSIgY2xhc3M9IkJsYWNrIiAvPg0KICAgIDwvZz4NCiAgICA8cGF0
+        aCBkPSJNMzEsMEgxQzAuNSwwLDAsMC41LDAsMXYyOGMwLDAuNSwwLjUsMSwxLDFoNWgyaDIzYzAuNSww
+        LDEtMC41LDEtMVYxQzMyLDAuNSwzMS41LDAsMzEsMHogTTIsMjhWNmg0djIySDJ6ICAgIE0xOCwyOEg4
+        VjZoMTBWMjh6IE0zMCwyOEgyMFY2aDEwVjI4eiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAv
+        Pg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="BarButtonItem23.Caption" xml:space="preserve">
+    <value>Kho hàng</value>
+  </data>
+  <data name="BarButtonItem20.Caption" xml:space="preserve">
+    <value>Đăng ký lớp</value>
+  </data>
+  <data name="BarButtonItem21.Caption" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="BarButtonItem22.Caption" xml:space="preserve">
+    <value>Danh sách</value>
+  </data>
+  <data name="BarButtonItem24.Caption" xml:space="preserve">
+    <value>Lớp đang học</value>
+  </data>
+  <data name="BarButtonItem25.Caption" xml:space="preserve">
+    <value>Phân lớp</value>
+  </data>
+  <data name="BarButtonItem26.Caption" xml:space="preserve">
+    <value>Danh sách</value>
+  </data>
+  <data name="BarButtonItem27.Caption" xml:space="preserve">
+    <value>Lớp đã kết thúc</value>
+  </data>
+  <data name="BarButtonItem28.Caption" xml:space="preserve">
+    <value>Doanh thu</value>
+  </data>
+  <data name="BarButtonItem29.Caption" xml:space="preserve">
+    <value>Tồn kho</value>
+  </data>
+  <data name="MainControlRibbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="dbs.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="MainControlRibbon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="RibbonPageGroup_CoSoDuLieu.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -327,10 +967,36 @@
         IGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="dbs.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_CoSoDuLieu.Text" xml:space="preserve">
     <value>Cơ sở dữ liệu</value>
   </data>
-  <data name="Users.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="RibbonPageGroup_CauHinhChung.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMADAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIC8+DQogIDxnIGlkPSJJbml0aWFsU3RhdGUi
+        Pg0KICAgIDxwYXRoIGQ9Ik0xNiwyNmMwLjIsMC43LDAuNSwxLjQsMC44LDJIM2MtMC42LDAtMS0wLjQt
+        MS0xVjEyaDJ2MTRIMTZ6IE0yNiwxMnY0YzAuNywwLjIsMS40LDAuNSwyLDAuOFYxMkgyNnoiIGZpbGw9
+        IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCiAgICA8cGF0aCBkPSJNMzIsMjV2LTJsLTIuMi0wLjRj
+        LTAuMi0wLjYtMC40LTEuMy0wLjgtMS44bDEuMy0xLjhsLTEuNC0xLjRsLTEuOCwxLjNjLTAuNS0wLjMt
+        MS4yLTAuNi0xLjgtMC43TDI1LDE2aC0yICAgbC0wLjQsMi4yYy0wLjYsMC4yLTEuMywwLjQtMS44LDAu
+        N0wxOSwxNy42TDE3LjYsMTlsMS4zLDEuOGMtMC4zLDAuNS0wLjYsMS4yLTAuOCwxLjhMMTYsMjN2Mmwy
+        LjIsMC40YzAuMiwwLjYsMC40LDEuMywwLjgsMS44ICAgTDE3LjcsMjlsMS40LDEuNGwxLjgtMS4zYzAu
+        NSwwLjMsMS4yLDAuNiwxLjgsMC43TDIzLDMyaDJsMC40LTIuMmMwLjYtMC4yLDEuMy0wLjQsMS44LTAu
+        N2wxLjgsMS4zbDEuNC0xLjRsLTEuMy0xLjggICBjMC4zLTAuNSwwLjYtMS4yLDAuOC0xLjhMMzIsMjV6
+        IE0yNCwyNmMtMS4xLDAtMi0wLjktMi0yczAuOS0yLDItMnMyLDAuOSwyLDJTMjUuMSwyNiwyNCwyNnog
+        TTI3LDJIM0MyLjUsMiwyLDIuNSwyLDN2OWgyNlYzICAgQzI4LDIuNSwyNy41LDIsMjcsMnogTTksOUw2
+        LDZoNkw5LDl6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="RibbonPageGroup_CauHinhChung.Text" xml:space="preserve">
+    <value>Cấu hình chung</value>
+  </data>
+  <data name="RibbonPageGroup_NhanSu.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -350,44 +1016,77 @@
         PC9zdmc+Cw==
 </value>
   </data>
-  <data name="Users.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_NhanSu.Text" xml:space="preserve">
     <value>Nhân sự</value>
   </data>
-  <data name="Emails.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_CauHinhEmail.Text" xml:space="preserve">
     <value>Cấu hình email</value>
   </data>
-  <data name="RibbonPageGroup4.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_CauHinhSMS.Text" xml:space="preserve">
     <value>Cấu hình SMS</value>
   </data>
   <data name="rbpHeThong.Text" xml:space="preserve">
     <value>Hệ thống</value>
   </data>
-  <data name="RibbonPageGroup2.Text" xml:space="preserve">
-    <value>RibbonPageGroup2</value>
+  <data name="RibbonPageGroup_KhoiTaoSuKien.Text" xml:space="preserve">
+    <value>Khởi tạo sự kiện</value>
+  </data>
+  <data name="RibbonPageGroup_DangKySuKien.Text" xml:space="preserve">
+    <value>Đăng ký tham dự</value>
+  </data>
+  <data name="RibbonPageGroup_ThongkeSuKien.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="RibbonPageGroup_TienIchSuKien.Text" xml:space="preserve">
+    <value>Các tiện ích</value>
   </data>
   <data name="rbpSuKien.Text" xml:space="preserve">
     <value>Quản lý sự kiện</value>
   </data>
   <data name="RibbonPageGroup3.Text" xml:space="preserve">
-    <value>RibbonPageGroup3</value>
+    <value>Các lớp học</value>
+  </data>
+  <data name="RibbonPageGroup2.Text" xml:space="preserve">
+    <value>Giáo Viên</value>
+  </data>
+  <data name="RibbonPageGroup4.Text" xml:space="preserve">
+    <value>Học Viên</value>
+  </data>
+  <data name="RibbonPageGroup9.Text" xml:space="preserve">
+    <value>Thống kê</value>
   </data>
   <data name="rbpClub.Text" xml:space="preserve">
     <value>Quản lý Club</value>
   </data>
   <data name="RibbonPageGroup1.Text" xml:space="preserve">
-    <value>RibbonPageGroup1</value>
+    <value>Danh mục</value>
+  </data>
+  <data name="RibbonPageGroup7.Text" xml:space="preserve">
+    <value>Mua hàng</value>
+  </data>
+  <data name="RibbonPageGroup6.Text" xml:space="preserve">
+    <value>Bán hàng</value>
+  </data>
+  <data name="RibbonPageGroup5.Text" xml:space="preserve">
+    <value>Báo cáo công nợ</value>
+  </data>
+  <data name="RibbonPageGroup8.Text" xml:space="preserve">
+    <value>Thống kê</value>
   </data>
   <data name="rbpBanHang.Text" xml:space="preserve">
     <value>Quản lý bán hàng</value>
   </data>
-  <data name="RibbonControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1023, 255</value>
+  <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1331, 273</value>
   </data>
   <data name="RibbonStatusBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 481</value>
+    <value>0, 685</value>
+  </data>
+  <data name="RibbonStatusBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RibbonStatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1023, 42</value>
+    <value>1331, 51</value>
   </data>
   <data name="&gt;&gt;RibbonStatusBar.Name" xml:space="preserve">
     <value>RibbonStatusBar</value>
@@ -401,17 +1100,17 @@
   <data name="&gt;&gt;RibbonStatusBar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;RibbonControl.Name" xml:space="preserve">
-    <value>RibbonControl</value>
+  <data name="&gt;&gt;MainControlRibbon.Name" xml:space="preserve">
+    <value>MainControlRibbon</value>
   </data>
-  <data name="&gt;&gt;RibbonControl.Type" xml:space="preserve">
+  <data name="&gt;&gt;MainControlRibbon.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonControl.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MainControlRibbon.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;RibbonControl.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;MainControlRibbon.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="BarButtonItem1.Caption" xml:space="preserve">
     <value>BarButtonItem1</value>
@@ -420,39 +1119,84 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 19</value>
+    <value>9, 23</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1023, 523</value>
+    <value>1331, 736</value>
   </data>
-  <data name="&gt;&gt;dbKhoiTao.Name" xml:space="preserve">
-    <value>dbKhoiTao</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
   </data>
-  <data name="&gt;&gt;dbKhoiTao.Type" xml:space="preserve">
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dance Passion</value>
+  </data>
+  <data name="&gt;&gt;TaiKhoan.Name" xml:space="preserve">
+    <value>TaiKhoan</value>
+  </data>
+  <data name="&gt;&gt;TaiKhoan.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DangNhap.Name" xml:space="preserve">
+    <value>DangNhap</value>
+  </data>
+  <data name="&gt;&gt;DangNhap.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DangXuat.Name" xml:space="preserve">
+    <value>DangXuat</value>
+  </data>
+  <data name="&gt;&gt;DangXuat.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;HoSo.Name" xml:space="preserve">
+    <value>HoSo</value>
+  </data>
+  <data name="&gt;&gt;HoSo.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewItemSeparator1.Name" xml:space="preserve">
+    <value>BackstageViewItemSeparator1</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewItemSeparator1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewItemSeparator2.Name" xml:space="preserve">
+    <value>BackstageViewItemSeparator2</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewItemSeparator2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;KhoiTao_dbs_btn.Name" xml:space="preserve">
+    <value>KhoiTao_dbs_btn</value>
+  </data>
+  <data name="&gt;&gt;KhoiTao_dbs_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;dbKetNoi.Name" xml:space="preserve">
-    <value>dbKetNoi</value>
+  <data name="&gt;&gt;KetNoi_dbs_btn.Name" xml:space="preserve">
+    <value>KetNoi_dbs_btn</value>
   </data>
-  <data name="&gt;&gt;dbKetNoi.Type" xml:space="preserve">
+  <data name="&gt;&gt;KetNoi_dbs_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;dbLuuTru.Name" xml:space="preserve">
-    <value>dbLuuTru</value>
+  <data name="&gt;&gt;LuuTru_dbs_btn.Name" xml:space="preserve">
+    <value>LuuTru_dbs_btn</value>
   </data>
-  <data name="&gt;&gt;dbLuuTru.Type" xml:space="preserve">
+  <data name="&gt;&gt;LuuTru_dbs_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;userGroup.Name" xml:space="preserve">
-    <value>userGroup</value>
+  <data name="&gt;&gt;NhomNhanVien_NhanVien_btn.Name" xml:space="preserve">
+    <value>NhomNhanVien_NhanVien_btn</value>
   </data>
-  <data name="&gt;&gt;userGroup.Type" xml:space="preserve">
+  <data name="&gt;&gt;NhomNhanVien_NhanVien_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;user.Name" xml:space="preserve">
-    <value>user</value>
+  <data name="&gt;&gt;NhanVien_NhanVien_btn.Name" xml:space="preserve">
+    <value>NhanVien_NhanVien_btn</value>
   </data>
-  <data name="&gt;&gt;user.Type" xml:space="preserve">
+  <data name="&gt;&gt;NhanVien_NhanVien_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;roles.Name" xml:space="preserve">
@@ -461,34 +1205,280 @@
   <data name="&gt;&gt;roles.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gmail.Name" xml:space="preserve">
-    <value>gmail</value>
+  <data name="&gt;&gt;gmail_email_btn.Name" xml:space="preserve">
+    <value>gmail_email_btn</value>
   </data>
-  <data name="&gt;&gt;gmail.Type" xml:space="preserve">
+  <data name="&gt;&gt;gmail_email_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;outlook.Name" xml:space="preserve">
-    <value>outlook</value>
+  <data name="&gt;&gt;outlook_email_btn.Name" xml:space="preserve">
+    <value>outlook_email_btn</value>
   </data>
-  <data name="&gt;&gt;outlook.Type" xml:space="preserve">
+  <data name="&gt;&gt;outlook_email_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;smsDCOM.Name" xml:space="preserve">
-    <value>smsDCOM</value>
+  <data name="&gt;&gt;Dcom_SMS_btn.Name" xml:space="preserve">
+    <value>Dcom_SMS_btn</value>
   </data>
-  <data name="&gt;&gt;smsDCOM.Type" xml:space="preserve">
+  <data name="&gt;&gt;Dcom_SMS_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;smsTwilio.Name" xml:space="preserve">
-    <value>smsTwilio</value>
+  <data name="&gt;&gt;Twilio_SMS_btn.Name" xml:space="preserve">
+    <value>Twilio_SMS_btn</value>
   </data>
-  <data name="&gt;&gt;smsTwilio.Type" xml:space="preserve">
+  <data name="&gt;&gt;Twilio_SMS_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;eSMS.Name" xml:space="preserve">
-    <value>eSMS</value>
+  <data name="&gt;&gt;eSMS__SMS_btn.Name" xml:space="preserve">
+    <value>eSMS__SMS_btn</value>
   </data>
-  <data name="&gt;&gt;eSMS.Type" xml:space="preserve">
+  <data name="&gt;&gt;eSMS__SMS_btn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DoanhNghiep_CauHinh_btn.Name" xml:space="preserve">
+    <value>DoanhNghiep_CauHinh_btn</value>
+  </data>
+  <data name="&gt;&gt;DoanhNghiep_CauHinh_btn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CongCu__CauHinh_btn.Name" xml:space="preserve">
+    <value>CongCu__CauHinh_btn</value>
+  </data>
+  <data name="&gt;&gt;CongCu__CauHinh_btn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem3.Name" xml:space="preserve">
+    <value>BarButtonItem3</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;QuyenHan_NhanVien_btn.Name" xml:space="preserve">
+    <value>QuyenHan_NhanVien_btn</value>
+  </data>
+  <data name="&gt;&gt;QuyenHan_NhanVien_btn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_LoaiSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_LoaiSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_LoaiSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_TaoSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_TaoSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_TaoSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_VeSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_VeSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_VeSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_DangKySuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_DangKySuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_DangKySuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_ThanhToanSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_ThanhToanSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_ThanhToanSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_TongVeSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_TongVeSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_TongVeSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_DaThanhToanSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_DaThanhToanSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_DaThanhToanSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_ChuaThanhToanSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_ChuaThanhToanSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_ChuaThanhToanSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_GuiVeSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_GuiVeSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_GuiVeSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_CheckInSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_CheckInSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_CheckInSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuKien_HuyVeSuKien_bnt.Name" xml:space="preserve">
+    <value>SuKien_HuyVeSuKien_bnt</value>
+  </data>
+  <data name="&gt;&gt;SuKien_HuyVeSuKien_bnt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem2.Name" xml:space="preserve">
+    <value>BarButtonItem2</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem4.Name" xml:space="preserve">
+    <value>BarButtonItem4</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem5.Name" xml:space="preserve">
+    <value>BarButtonItem5</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem6.Name" xml:space="preserve">
+    <value>BarButtonItem6</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem7.Name" xml:space="preserve">
+    <value>BarButtonItem7</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem8.Name" xml:space="preserve">
+    <value>BarButtonItem8</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem9.Name" xml:space="preserve">
+    <value>BarButtonItem9</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem10.Name" xml:space="preserve">
+    <value>BarButtonItem10</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem11.Name" xml:space="preserve">
+    <value>BarButtonItem11</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem12.Name" xml:space="preserve">
+    <value>BarButtonItem12</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem13.Name" xml:space="preserve">
+    <value>BarButtonItem13</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem14.Name" xml:space="preserve">
+    <value>BarButtonItem14</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem15.Name" xml:space="preserve">
+    <value>BarButtonItem15</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem16.Name" xml:space="preserve">
+    <value>BarButtonItem16</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem17.Name" xml:space="preserve">
+    <value>BarButtonItem17</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem18.Name" xml:space="preserve">
+    <value>BarButtonItem18</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem19.Name" xml:space="preserve">
+    <value>BarButtonItem19</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem1.Name" xml:space="preserve">
+    <value>BarSubItem1</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem23.Name" xml:space="preserve">
+    <value>BarButtonItem23</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem23.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem20.Name" xml:space="preserve">
+    <value>BarButtonItem20</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem20.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem21.Name" xml:space="preserve">
+    <value>BarButtonItem21</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem21.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem22.Name" xml:space="preserve">
+    <value>BarButtonItem22</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem22.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem24.Name" xml:space="preserve">
+    <value>BarButtonItem24</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem24.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem25.Name" xml:space="preserve">
+    <value>BarButtonItem25</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem25.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem26.Name" xml:space="preserve">
+    <value>BarButtonItem26</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem26.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem27.Name" xml:space="preserve">
+    <value>BarButtonItem27</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem27.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rbpHeThong.Name" xml:space="preserve">
@@ -497,28 +1487,34 @@
   <data name="&gt;&gt;rbpHeThong.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;dbs.Name" xml:space="preserve">
-    <value>dbs</value>
+  <data name="&gt;&gt;RibbonPageGroup_CoSoDuLieu.Name" xml:space="preserve">
+    <value>RibbonPageGroup_CoSoDuLieu</value>
   </data>
-  <data name="&gt;&gt;dbs.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_CoSoDuLieu.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;Users.Name" xml:space="preserve">
-    <value>Users</value>
+  <data name="&gt;&gt;RibbonPageGroup_CauHinhChung.Name" xml:space="preserve">
+    <value>RibbonPageGroup_CauHinhChung</value>
   </data>
-  <data name="&gt;&gt;Users.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_CauHinhChung.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;Emails.Name" xml:space="preserve">
-    <value>Emails</value>
+  <data name="&gt;&gt;RibbonPageGroup_NhanSu.Name" xml:space="preserve">
+    <value>RibbonPageGroup_NhanSu</value>
   </data>
-  <data name="&gt;&gt;Emails.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_NhanSu.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup4.Name" xml:space="preserve">
-    <value>RibbonPageGroup4</value>
+  <data name="&gt;&gt;RibbonPageGroup_CauHinhEmail.Name" xml:space="preserve">
+    <value>RibbonPageGroup_CauHinhEmail</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup4.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_CauHinhEmail.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_CauHinhSMS.Name" xml:space="preserve">
+    <value>RibbonPageGroup_CauHinhSMS</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_CauHinhSMS.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rbpSuKien.Name" xml:space="preserve">
@@ -527,10 +1523,28 @@
   <data name="&gt;&gt;rbpSuKien.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup2.Name" xml:space="preserve">
-    <value>RibbonPageGroup2</value>
+  <data name="&gt;&gt;RibbonPageGroup_KhoiTaoSuKien.Name" xml:space="preserve">
+    <value>RibbonPageGroup_KhoiTaoSuKien</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup2.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_KhoiTaoSuKien.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_DangKySuKien.Name" xml:space="preserve">
+    <value>RibbonPageGroup_DangKySuKien</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_DangKySuKien.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_ThongkeSuKien.Name" xml:space="preserve">
+    <value>RibbonPageGroup_ThongkeSuKien</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_ThongkeSuKien.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_TienIchSuKien.Name" xml:space="preserve">
+    <value>RibbonPageGroup_TienIchSuKien</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup_TienIchSuKien.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rbpClub.Name" xml:space="preserve">
@@ -545,6 +1559,24 @@
   <data name="&gt;&gt;RibbonPageGroup3.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;RibbonPageGroup2.Name" xml:space="preserve">
+    <value>RibbonPageGroup2</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup4.Name" xml:space="preserve">
+    <value>RibbonPageGroup4</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup9.Name" xml:space="preserve">
+    <value>RibbonPageGroup9</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup9.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;rbpBanHang.Name" xml:space="preserve">
     <value>rbpBanHang</value>
   </data>
@@ -557,10 +1589,46 @@
   <data name="&gt;&gt;RibbonPageGroup1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;RibbonPageGroup7.Name" xml:space="preserve">
+    <value>RibbonPageGroup7</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup7.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup6.Name" xml:space="preserve">
+    <value>RibbonPageGroup6</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup6.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup5.Name" xml:space="preserve">
+    <value>RibbonPageGroup5</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup5.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup8.Name" xml:space="preserve">
+    <value>RibbonPageGroup8</value>
+  </data>
+  <data name="&gt;&gt;RibbonPageGroup8.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;BarButtonItem1.Name" xml:space="preserve">
     <value>BarButtonItem1</value>
   </data>
   <data name="&gt;&gt;BarButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem28.Name" xml:space="preserve">
+    <value>BarButtonItem28</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem28.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem29.Name" xml:space="preserve">
+    <value>BarButtonItem29</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem29.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
