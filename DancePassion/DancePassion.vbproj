@@ -209,6 +209,12 @@
     <Compile Include="form\SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="form\users\LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\users\LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form\WaitForm.Designer.vb">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </Compile>
@@ -221,6 +227,9 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="global\DB.vb" />
+    <Compile Include="global\DBRun.vb" />
+    <Compile Include="global\DBUtils.vb" />
     <Compile Include="global\MYSQLSERVER.vb" />
     <Compile Include="global\SQLiteDatabase.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -237,6 +246,13 @@
     <Compile Include="pros\config\cfgMail.vb" />
     <Compile Include="pros\config\SMSconfig.vb" />
     <Compile Include="pros\Product_type.vb" />
+    <Compile Include="pros\Users\Users.vb" />
+    <Compile Include="uc\users\UserProfiles.Designer.vb">
+      <DependentUpon>UserProfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\users\UserProfiles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +274,9 @@
     <EmbeddedResource Include="form\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\users\LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\WaitForm.resx">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +289,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\users\UserProfiles.resx">
+      <DependentUpon>UserProfiles.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="My Project\app.manifest" />
@@ -290,9 +312,7 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="uc\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
@@ -385,6 +405,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\log-out1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dangkylop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giaovien.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hocvien.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khoahoc.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lopdanghoc.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lophoc.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lopketthuc.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phanlop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_invoice.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_category.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danhmucloaiSP.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donvi.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khohang.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donhangmua.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhacungcap.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thanhtoanNCC.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tranhacungcap.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donhangban.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khachhang.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khachhangtra.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhantien.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doanhthu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nophaithu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nophaitra.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tonkho.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_document.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_customer.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets')" />

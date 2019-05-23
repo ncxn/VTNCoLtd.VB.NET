@@ -3,7 +3,7 @@ Public Class MYSQLSERVER
     Public Property Server As String = "173.254.231.108"
     Public Property UserName As String = "root"
     Public Property Password As String = "mmttmhh"
-    Public Property Database As String = "dp"
+    Public Property Database As String = "dps"
     Public Property conn As New MySqlConnection(connstr)
     Public Function connstr() As String
         connstr = CType("server=" & Server & ";" & "userid=" & UserName & ";" & "password=" & Password & ";" & "database=" & Database, String)

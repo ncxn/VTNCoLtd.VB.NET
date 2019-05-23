@@ -170,15 +170,36 @@
         5UGCYf4ArM8KCJqLfeQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BackstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 79</value>
+  <data name="BackstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 63</value>
   </data>
-  <data name="BackstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1146, 383</value>
+  <data name="BackstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1028, 298</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BackstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="BackstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.Name" xml:space="preserve">
+    <value>BackstageViewClientControl2</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.Parent" xml:space="preserve">
+    <value>Slide_menu</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="BackstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 62</value>
+  </data>
+  <data name="BackstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 300</value>
+  </data>
+  <data name="BackstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;BackstageViewClientControl1.Name" xml:space="preserve">
     <value>BackstageViewClientControl1</value>
@@ -190,43 +211,19 @@
     <value>Slide_menu</value>
   </data>
   <data name="&gt;&gt;BackstageViewClientControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Slide_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="TaiKhoan.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt, style=Bold</value>
-  </data>
-  <data name="TaiKhoan.Appearance.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
-    <value>Bold</value>
-  </data>
-  <data name="TaiKhoan.Caption" xml:space="preserve">
+  <data name="TaiKhoanCaNhan.Caption" xml:space="preserve">
     <value>Tài khoản</value>
-  </data>
-  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="TaiKhoan.ImageOptions.ItemNormal.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAJICAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJDdXN0b21lcl8xXyI+DQogICAgPHBh
-        dGggZD0iTTEwLDkuOWMtMC4xLDAuNSwwLjIsMC45LDAuNCwxLjRzLTAuMSwxLjcsMC45LDEuNmMwLDAs
-        MCwwLjEsMCwwLjJjMC42LDIuMywyLDQuOSw0LjcsNC45czQuMi0yLjYsNC43LTQuOSAgIFYxM2MxLDAu
-        MSwwLjYtMS4xLDAuOS0xLjZjMC4yLTAuNSwwLjQtMC45LDAuMy0xLjRjLTAuMS0wLjQtMC40LTAuNC0w
-        LjUtMC4zQzIzLjIsNC44LDIwLjMsNSwyMC4zLDVTMjAsMiwxNC44LDIgICBDMTAsMiw5LjQsNiwxMC41
-        LDkuNkMxMC40LDkuNiwxMC4xLDkuNywxMCw5Ljl6IE0yMCwxOGMtMC44LDEuNS0yLjEsNC00LDRzLTMu
-        Mi0yLjUtNC00Yy0yLjMsMy41LTgsMS04LDguNVYzMGgyNHYtMy41ICAgQzI4LDE5LjEsMjIuMywyMS40
-        LDIwLDE4eiIgZmlsbD0iIzExNzdENyIgY2xhc3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
-</value>
   </data>
   <data name="DangNhap.Caption" xml:space="preserve">
     <value>Đăng nhập</value>
   </data>
+  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="DangNhap.ImageOptions.ItemNormal.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
@@ -260,32 +257,17 @@
         IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="HoSo.Caption" xml:space="preserve">
-    <value>Hồ sơ</value>
-  </data>
-  <data name="HoSo.ImageOptions.ItemNormal.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAF8CAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJEb2N1bWVudF8xXyI+DQogICAgPHBh
-        dGggZD0iTTE1LDIwbDktOWw1LDVsLTksOUwxNSwyMHogTTMxLjcsMTEuOWwtMy42LTMuNmMtMC40LTAu
-        NC0xLTAuNC0xLjQsMEwyNSwxMGw1LDVsMS43LTEuNyAgIEMzMi4xLDEyLjksMzIuMSwxMi4zLDMxLjcs
-        MTEuOXogTTE0LDI2aDVsLTUtNVYyNnoiIGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICAg
-        IDxwYXRoIGQ9Ik0yNCwyMy44VjI4aC00LjJIMTJINlY0aDE4djQuMmwyLTJWM2MwLTAuNS0wLjUtMS0x
-        LTFINUM0LjQsMiw0LDIuNSw0LDN2MjZjMCwwLjUsMC41LDEsMSwxaDIwICAgYzAuNSwwLDEtMC41LDEt
-        MXYtNy4yTDI0LDIzLjh6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwv
-        c3ZnPgs=
-</value>
+  <data name="Sua.Caption" xml:space="preserve">
+    <value>Sửa hồ sơ</value>
   </data>
   <data name="Slide_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 273</value>
+    <value>0, 246</value>
+  </data>
+  <data name="Slide_menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="Slide_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 463</value>
+    <value>1183, 362</value>
   </data>
   <data name="Slide_menu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -305,6 +287,55 @@
   <data name="&gt;&gt;Slide_menu.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="MainControlRibbon.ApplicationButtonImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="MainControlRibbon.ApplicationButtonImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
@@ -321,6 +352,9 @@
         LjUsMC0xLTAuNS0xLTFWMTBoMnYxOGgyNFYxMEgzMHogTTI0LDE0SDE0djJoMTBWMTR6IE0yNCwyMkgx
         NHYyaDEwVjIyeiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
+  </data>
+  <data name="MainControlRibbon.ApplicationButtonText" xml:space="preserve">
+    <value>Tài khoản</value>
   </data>
   <data name="MainControlRibbon.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
@@ -586,10 +620,10 @@
         MiwyNywyMnoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="SuKien_LoaiSuKien_bnt.Caption" xml:space="preserve">
+  <data name="LoaiSuKien_bnt.Caption" xml:space="preserve">
     <value>Loại sự kiện</value>
   </data>
-  <data name="SuKien_LoaiSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LoaiSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -618,10 +652,10 @@
         bD0iI0QxMUMxQyIgY2xhc3M9IlJlZCIgLz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="SuKien_TaoSuKien_bnt.Caption" xml:space="preserve">
+  <data name="TaoSuKien_bnt.Caption" xml:space="preserve">
     <value>Mở sự kiện</value>
   </data>
-  <data name="SuKien_TaoSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TaoSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -641,10 +675,10 @@
         MiIgb3BhY2l0eT0iMC41IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="SuKien_VeSuKien_bnt.Caption" xml:space="preserve">
+  <data name="VeSuKien_bnt.Caption" xml:space="preserve">
     <value>Vé sự kiện</value>
   </data>
-  <data name="SuKien_VeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="VeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -663,10 +697,10 @@
         bD0iIzcyNzI3MiIgb3BhY2l0eT0iMC43NSIgY2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="SuKien_DangKySuKien_bnt.Caption" xml:space="preserve">
+  <data name="DangKySuKien_bnt.Caption" xml:space="preserve">
     <value>Đăng ký</value>
   </data>
-  <data name="SuKien_DangKySuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="DangKySuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -680,10 +714,10 @@
         LDIyeiIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVuIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="SuKien_ThanhToanSuKien_bnt.Caption" xml:space="preserve">
+  <data name="ThanhToanSuKien_bnt.Caption" xml:space="preserve">
     <value>Thanh toán</value>
   </data>
-  <data name="SuKien_ThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -714,10 +748,10 @@
         MjMiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="SuKien_TongVeSuKien_bnt.Caption" xml:space="preserve">
+  <data name="TongVeSuKien_bnt.Caption" xml:space="preserve">
     <value>Tổng vé đăng ký</value>
   </data>
-  <data name="SuKien_TongVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TongVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -731,10 +765,10 @@
         c3M9IlllbGxvdyIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="SuKien_DaThanhToanSuKien_bnt.Caption" xml:space="preserve">
+  <data name="DaThanhToanSuKien_bnt.Caption" xml:space="preserve">
     <value>Đã thanh toán</value>
   </data>
-  <data name="SuKien_DaThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="DaThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -751,10 +785,10 @@
         MzlDMjMiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="SuKien_ChuaThanhToanSuKien_bnt.Caption" xml:space="preserve">
+  <data name="ChuaThanhToanSuKien_bnt.Caption" xml:space="preserve">
     <value>Chưa thanh toán</value>
   </data>
-  <data name="SuKien_ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -773,10 +807,10 @@
         bGFzcz0iQmxhY2siIC8+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="SuKien_GuiVeSuKien_bnt.Caption" xml:space="preserve">
+  <data name="GuiVeSuKien_bnt.Caption" xml:space="preserve">
     <value>Gửi vé</value>
   </data>
-  <data name="SuKien_GuiVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="GuiVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -789,10 +823,10 @@
         IGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="SuKien_CheckInSuKien_bnt.Caption" xml:space="preserve">
+  <data name="CheckInSuKien_bnt.Caption" xml:space="preserve">
     <value>Check In</value>
   </data>
-  <data name="SuKien_CheckInSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CheckInSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -823,10 +857,10 @@
         IkdyZWVuIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="SuKien_HuyVeSuKien_bnt.Caption" xml:space="preserve">
+  <data name="HuyVeSuKien_bnt.Caption" xml:space="preserve">
     <value>Hủy vé</value>
   </data>
-  <data name="SuKien_HuyVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="HuyVeSuKien_bnt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -840,61 +874,61 @@
         PC9zdmc+Cw==
 </value>
   </data>
-  <data name="BarButtonItem2.Caption" xml:space="preserve">
+  <data name="Club_Bomon_btn.Caption" xml:space="preserve">
     <value>Bộ môn</value>
   </data>
-  <data name="BarButtonItem4.Caption" xml:space="preserve">
+  <data name="Club_LopHoc_btn.Caption" xml:space="preserve">
     <value>Lớp học</value>
   </data>
-  <data name="BarButtonItem5.Caption" xml:space="preserve">
+  <data name="Club_KhoaHoc_btn.Caption" xml:space="preserve">
     <value>Khóa học</value>
   </data>
-  <data name="BarButtonItem6.Caption" xml:space="preserve">
+  <data name="BH_LoaiSP_btn.Caption" xml:space="preserve">
     <value>Loại sản phẩm</value>
   </data>
-  <data name="BarButtonItem7.Caption" xml:space="preserve">
+  <data name="BH_DanhMuc_SP_btn.Caption" xml:space="preserve">
     <value>Sản phẩm</value>
   </data>
-  <data name="BarButtonItem8.Caption" xml:space="preserve">
+  <data name="BH_DonHang_btn.Caption" xml:space="preserve">
     <value>Đơn đặt hàng</value>
   </data>
-  <data name="BarButtonItem9.Caption" xml:space="preserve">
+  <data name="BH_ThanhToan_btn.Caption" xml:space="preserve">
     <value>Thanh toán</value>
   </data>
-  <data name="BarButtonItem10.Caption" xml:space="preserve">
+  <data name="BH_TraHang_btn.Caption" xml:space="preserve">
     <value>Trả hàng</value>
   </data>
-  <data name="BarButtonItem11.Caption" xml:space="preserve">
+  <data name="BH_DonHangMua_btn.Caption" xml:space="preserve">
     <value>Đơn hàng mua</value>
   </data>
-  <data name="BarButtonItem12.Caption" xml:space="preserve">
+  <data name="BH_DonVi_btn.Caption" xml:space="preserve">
     <value>Đơn vị</value>
   </data>
   <data name="BarButtonItem13.Caption" xml:space="preserve">
     <value>BarButtonItem13</value>
   </data>
-  <data name="BarButtonItem14.Caption" xml:space="preserve">
+  <data name="BH_ds_NCC_btn.Caption" xml:space="preserve">
     <value>Nhà cung cấp</value>
   </data>
-  <data name="BarButtonItem15.Caption" xml:space="preserve">
+  <data name="BH_ThanhToan_NCC_btn.Caption" xml:space="preserve">
     <value>Thanh toán</value>
   </data>
-  <data name="BarButtonItem16.Caption" xml:space="preserve">
-    <value>Trả hàng</value>
+  <data name="BH_TraHang_NCC_btn.Caption" xml:space="preserve">
+    <value>Trả hàng NCC</value>
   </data>
-  <data name="BarButtonItem17.Caption" xml:space="preserve">
+  <data name="BH_ds_KhachHang_btn.Caption" xml:space="preserve">
     <value>Khách hàng</value>
   </data>
-  <data name="BarButtonItem18.Caption" xml:space="preserve">
+  <data name="BH_NoPhaiTra_btn.Caption" xml:space="preserve">
     <value>Nợ phải trả</value>
   </data>
-  <data name="BarButtonItem19.Caption" xml:space="preserve">
+  <data name="BH_NoPhaiThu_btn.Caption" xml:space="preserve">
     <value>Nợ phải thu</value>
   </data>
-  <data name="BarSubItem1.Caption" xml:space="preserve">
+  <data name="BH_SUB_DanhMuc.Caption" xml:space="preserve">
     <value>Nhập liệu danh mục</value>
   </data>
-  <data name="BarSubItem1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BH_SUB_DanhMuc.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -914,41 +948,41 @@
         Pg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="BarButtonItem23.Caption" xml:space="preserve">
+  <data name="BH_KhoHang_btn.Caption" xml:space="preserve">
     <value>Kho hàng</value>
   </data>
-  <data name="BarButtonItem20.Caption" xml:space="preserve">
+  <data name="Club_DangKyLop.Caption" xml:space="preserve">
     <value>Đăng ký lớp</value>
   </data>
-  <data name="BarButtonItem21.Caption" xml:space="preserve">
+  <data name="Club_ThanhToan.Caption" xml:space="preserve">
     <value>Thanh toán</value>
   </data>
-  <data name="BarButtonItem22.Caption" xml:space="preserve">
-    <value>Danh sách</value>
+  <data name="Club_dsHLV_btn.Caption" xml:space="preserve">
+    <value>Danh sách HLV</value>
   </data>
-  <data name="BarButtonItem24.Caption" xml:space="preserve">
+  <data name="Club_LopDangHoc.Caption" xml:space="preserve">
     <value>Lớp đang học</value>
   </data>
-  <data name="BarButtonItem25.Caption" xml:space="preserve">
+  <data name="Club_PhanLop_btn.Caption" xml:space="preserve">
     <value>Phân lớp</value>
   </data>
-  <data name="BarButtonItem26.Caption" xml:space="preserve">
-    <value>Danh sách</value>
+  <data name="Club_dsHocVien.Caption" xml:space="preserve">
+    <value>Danh sách học viên</value>
   </data>
-  <data name="BarButtonItem27.Caption" xml:space="preserve">
+  <data name="Club_LopDaHoc.Caption" xml:space="preserve">
     <value>Lớp đã kết thúc</value>
   </data>
-  <data name="BarButtonItem28.Caption" xml:space="preserve">
+  <data name="BH_DoanhThu_btn.Caption" xml:space="preserve">
     <value>Doanh thu</value>
   </data>
-  <data name="BarButtonItem29.Caption" xml:space="preserve">
+  <data name="BH_TonKho_btn.Caption" xml:space="preserve">
     <value>Tồn kho</value>
   </data>
   <data name="MainControlRibbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="MainControlRibbon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="RibbonPageGroup_CoSoDuLieu.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1077,16 +1111,16 @@
     <value>Quản lý bán hàng</value>
   </data>
   <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 273</value>
+    <value>1183, 246</value>
   </data>
   <data name="RibbonStatusBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 685</value>
+    <value>0, 559</value>
   </data>
   <data name="RibbonStatusBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="RibbonStatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 51</value>
+    <value>1183, 49</value>
   </data>
   <data name="&gt;&gt;RibbonStatusBar.Name" xml:space="preserve">
     <value>RibbonStatusBar</value>
@@ -1119,24 +1153,27 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 23</value>
+    <value>8, 19</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 736</value>
+    <value>1183, 608</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Dance Passion</value>
   </data>
-  <data name="&gt;&gt;TaiKhoan.Name" xml:space="preserve">
-    <value>TaiKhoan</value>
+  <data name="&gt;&gt;TaiKhoanCaNhan.Name" xml:space="preserve">
+    <value>TaiKhoanCaNhan</value>
   </data>
-  <data name="&gt;&gt;TaiKhoan.Type" xml:space="preserve">
+  <data name="&gt;&gt;TaiKhoanCaNhan.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;DangNhap.Name" xml:space="preserve">
@@ -1151,11 +1188,11 @@
   <data name="&gt;&gt;DangXuat.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;HoSo.Name" xml:space="preserve">
-    <value>HoSo</value>
+  <data name="&gt;&gt;Sua.Name" xml:space="preserve">
+    <value>Sua</value>
   </data>
-  <data name="&gt;&gt;HoSo.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;Sua.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;BackstageViewItemSeparator1.Name" xml:space="preserve">
     <value>BackstageViewItemSeparator1</value>
@@ -1259,130 +1296,130 @@
   <data name="&gt;&gt;QuyenHan_NhanVien_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_LoaiSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_LoaiSuKien_bnt</value>
+  <data name="&gt;&gt;LoaiSuKien_bnt.Name" xml:space="preserve">
+    <value>LoaiSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_LoaiSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;LoaiSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_TaoSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_TaoSuKien_bnt</value>
+  <data name="&gt;&gt;TaoSuKien_bnt.Name" xml:space="preserve">
+    <value>TaoSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_TaoSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;TaoSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_VeSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_VeSuKien_bnt</value>
+  <data name="&gt;&gt;VeSuKien_bnt.Name" xml:space="preserve">
+    <value>VeSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_VeSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;VeSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_DangKySuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_DangKySuKien_bnt</value>
+  <data name="&gt;&gt;DangKySuKien_bnt.Name" xml:space="preserve">
+    <value>DangKySuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_DangKySuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;DangKySuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_ThanhToanSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_ThanhToanSuKien_bnt</value>
+  <data name="&gt;&gt;ThanhToanSuKien_bnt.Name" xml:space="preserve">
+    <value>ThanhToanSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_ThanhToanSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;ThanhToanSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_TongVeSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_TongVeSuKien_bnt</value>
+  <data name="&gt;&gt;TongVeSuKien_bnt.Name" xml:space="preserve">
+    <value>TongVeSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_TongVeSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;TongVeSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_DaThanhToanSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_DaThanhToanSuKien_bnt</value>
+  <data name="&gt;&gt;DaThanhToanSuKien_bnt.Name" xml:space="preserve">
+    <value>DaThanhToanSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_DaThanhToanSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;DaThanhToanSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_ChuaThanhToanSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_ChuaThanhToanSuKien_bnt</value>
+  <data name="&gt;&gt;ChuaThanhToanSuKien_bnt.Name" xml:space="preserve">
+    <value>ChuaThanhToanSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_ChuaThanhToanSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;ChuaThanhToanSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_GuiVeSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_GuiVeSuKien_bnt</value>
+  <data name="&gt;&gt;GuiVeSuKien_bnt.Name" xml:space="preserve">
+    <value>GuiVeSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_GuiVeSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;GuiVeSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_CheckInSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_CheckInSuKien_bnt</value>
+  <data name="&gt;&gt;CheckInSuKien_bnt.Name" xml:space="preserve">
+    <value>CheckInSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_CheckInSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;CheckInSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;SuKien_HuyVeSuKien_bnt.Name" xml:space="preserve">
-    <value>SuKien_HuyVeSuKien_bnt</value>
+  <data name="&gt;&gt;HuyVeSuKien_bnt.Name" xml:space="preserve">
+    <value>HuyVeSuKien_bnt</value>
   </data>
-  <data name="&gt;&gt;SuKien_HuyVeSuKien_bnt.Type" xml:space="preserve">
+  <data name="&gt;&gt;HuyVeSuKien_bnt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem2.Name" xml:space="preserve">
-    <value>BarButtonItem2</value>
+  <data name="&gt;&gt;Club_Bomon_btn.Name" xml:space="preserve">
+    <value>Club_Bomon_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_Bomon_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem4.Name" xml:space="preserve">
-    <value>BarButtonItem4</value>
+  <data name="&gt;&gt;Club_LopHoc_btn.Name" xml:space="preserve">
+    <value>Club_LopHoc_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem4.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_LopHoc_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem5.Name" xml:space="preserve">
-    <value>BarButtonItem5</value>
+  <data name="&gt;&gt;Club_KhoaHoc_btn.Name" xml:space="preserve">
+    <value>Club_KhoaHoc_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem5.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_KhoaHoc_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem6.Name" xml:space="preserve">
-    <value>BarButtonItem6</value>
+  <data name="&gt;&gt;BH_LoaiSP_btn.Name" xml:space="preserve">
+    <value>BH_LoaiSP_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem6.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_LoaiSP_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem7.Name" xml:space="preserve">
-    <value>BarButtonItem7</value>
+  <data name="&gt;&gt;BH_DanhMuc_SP_btn.Name" xml:space="preserve">
+    <value>BH_DanhMuc_SP_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem7.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_DanhMuc_SP_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem8.Name" xml:space="preserve">
-    <value>BarButtonItem8</value>
+  <data name="&gt;&gt;BH_DonHang_btn.Name" xml:space="preserve">
+    <value>BH_DonHang_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem8.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_DonHang_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem9.Name" xml:space="preserve">
-    <value>BarButtonItem9</value>
+  <data name="&gt;&gt;BH_ThanhToan_btn.Name" xml:space="preserve">
+    <value>BH_ThanhToan_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem9.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_ThanhToan_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem10.Name" xml:space="preserve">
-    <value>BarButtonItem10</value>
+  <data name="&gt;&gt;BH_TraHang_btn.Name" xml:space="preserve">
+    <value>BH_TraHang_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem10.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_TraHang_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem11.Name" xml:space="preserve">
-    <value>BarButtonItem11</value>
+  <data name="&gt;&gt;BH_DonHangMua_btn.Name" xml:space="preserve">
+    <value>BH_DonHangMua_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem11.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_DonHangMua_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem12.Name" xml:space="preserve">
-    <value>BarButtonItem12</value>
+  <data name="&gt;&gt;BH_DonVi_btn.Name" xml:space="preserve">
+    <value>BH_DonVi_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem12.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_DonVi_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;BarButtonItem13.Name" xml:space="preserve">
@@ -1391,94 +1428,106 @@
   <data name="&gt;&gt;BarButtonItem13.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem14.Name" xml:space="preserve">
-    <value>BarButtonItem14</value>
+  <data name="&gt;&gt;BH_ds_NCC_btn.Name" xml:space="preserve">
+    <value>BH_ds_NCC_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem14.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_ds_NCC_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem15.Name" xml:space="preserve">
-    <value>BarButtonItem15</value>
+  <data name="&gt;&gt;BH_ThanhToan_NCC_btn.Name" xml:space="preserve">
+    <value>BH_ThanhToan_NCC_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem15.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_ThanhToan_NCC_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem16.Name" xml:space="preserve">
-    <value>BarButtonItem16</value>
+  <data name="&gt;&gt;BH_TraHang_NCC_btn.Name" xml:space="preserve">
+    <value>BH_TraHang_NCC_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem16.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_TraHang_NCC_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem17.Name" xml:space="preserve">
-    <value>BarButtonItem17</value>
+  <data name="&gt;&gt;BH_ds_KhachHang_btn.Name" xml:space="preserve">
+    <value>BH_ds_KhachHang_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem17.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_ds_KhachHang_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem18.Name" xml:space="preserve">
-    <value>BarButtonItem18</value>
+  <data name="&gt;&gt;BH_NoPhaiTra_btn.Name" xml:space="preserve">
+    <value>BH_NoPhaiTra_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem18.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_NoPhaiTra_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem19.Name" xml:space="preserve">
-    <value>BarButtonItem19</value>
+  <data name="&gt;&gt;BH_NoPhaiThu_btn.Name" xml:space="preserve">
+    <value>BH_NoPhaiThu_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem19.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_NoPhaiThu_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarSubItem1.Name" xml:space="preserve">
-    <value>BarSubItem1</value>
+  <data name="&gt;&gt;BH_SUB_DanhMuc.Name" xml:space="preserve">
+    <value>BH_SUB_DanhMuc</value>
   </data>
-  <data name="&gt;&gt;BarSubItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_SUB_DanhMuc.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem23.Name" xml:space="preserve">
-    <value>BarButtonItem23</value>
+  <data name="&gt;&gt;BH_KhoHang_btn.Name" xml:space="preserve">
+    <value>BH_KhoHang_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem23.Type" xml:space="preserve">
+  <data name="&gt;&gt;BH_KhoHang_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem20.Name" xml:space="preserve">
-    <value>BarButtonItem20</value>
+  <data name="&gt;&gt;Club_DangKyLop.Name" xml:space="preserve">
+    <value>Club_DangKyLop</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem20.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_DangKyLop.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem21.Name" xml:space="preserve">
-    <value>BarButtonItem21</value>
+  <data name="&gt;&gt;Club_ThanhToan.Name" xml:space="preserve">
+    <value>Club_ThanhToan</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem21.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_ThanhToan.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem22.Name" xml:space="preserve">
-    <value>BarButtonItem22</value>
+  <data name="&gt;&gt;Club_dsHLV_btn.Name" xml:space="preserve">
+    <value>Club_dsHLV_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem22.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_dsHLV_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem24.Name" xml:space="preserve">
-    <value>BarButtonItem24</value>
+  <data name="&gt;&gt;Club_LopDangHoc.Name" xml:space="preserve">
+    <value>Club_LopDangHoc</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem24.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_LopDangHoc.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem25.Name" xml:space="preserve">
-    <value>BarButtonItem25</value>
+  <data name="&gt;&gt;Club_PhanLop_btn.Name" xml:space="preserve">
+    <value>Club_PhanLop_btn</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem25.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_PhanLop_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem26.Name" xml:space="preserve">
-    <value>BarButtonItem26</value>
+  <data name="&gt;&gt;Club_dsHocVien.Name" xml:space="preserve">
+    <value>Club_dsHocVien</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem26.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_dsHocVien.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem27.Name" xml:space="preserve">
-    <value>BarButtonItem27</value>
+  <data name="&gt;&gt;Club_LopDaHoc.Name" xml:space="preserve">
+    <value>Club_LopDaHoc</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem27.Type" xml:space="preserve">
+  <data name="&gt;&gt;Club_LopDaHoc.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BH_DoanhThu_btn.Name" xml:space="preserve">
+    <value>BH_DoanhThu_btn</value>
+  </data>
+  <data name="&gt;&gt;BH_DoanhThu_btn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BH_TonKho_btn.Name" xml:space="preserve">
+    <value>BH_TonKho_btn</value>
+  </data>
+  <data name="&gt;&gt;BH_TonKho_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rbpHeThong.Name" xml:space="preserve">
@@ -1617,18 +1666,6 @@
     <value>BarButtonItem1</value>
   </data>
   <data name="&gt;&gt;BarButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;BarButtonItem28.Name" xml:space="preserve">
-    <value>BarButtonItem28</value>
-  </data>
-  <data name="&gt;&gt;BarButtonItem28.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;BarButtonItem29.Name" xml:space="preserve">
-    <value>BarButtonItem29</value>
-  </data>
-  <data name="&gt;&gt;BarButtonItem29.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

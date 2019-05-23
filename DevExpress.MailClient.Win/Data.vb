@@ -956,6 +956,7 @@ Namespace DevExpress.MailClient.Win
         Private Shared Function CreateDataTable(ByVal table As String) As DataTable
             Dim dataSet As New DataSet()
             Dim dataFile As String = FilesHelper.FindingFileName(Application.StartupPath, "Data\MailDevAv.xml")
+            MessageBox.Show(dataFile)
             If dataFile <> String.Empty Then
                 Dim fi As New FileInfo(dataFile)
                 dataSet.ReadXml(fi.FullName)

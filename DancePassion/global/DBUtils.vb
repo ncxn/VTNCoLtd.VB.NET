@@ -1,0 +1,33 @@
+﻿Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Text
+Imports System.Threading.Tasks
+Imports MySql.Data.MySqlClient
+Imports System.Data.SqlClient
+Imports System.Data.SQLite
+
+
+Public Class DBUtils
+        Public Shared Function MYSQL() As MySqlConnection
+            Dim host As String = "173.254.231.108"
+            Dim port As Integer = 3306
+            Dim database As String = "dps"
+            Dim username As String = "root"
+            Dim password As String = "mmttmhh"
+            Return DB.GetDBConnection(host, port, database, username, password)
+        End Function
+        Public Shared Function MSSQL() As SqlConnection
+            Dim datasource As String = "MY-SERVER\SQLEXPRESS"
+            Dim database As String = "sample"
+            Dim username As String = "sa"
+            Dim password As String = "1234"
+            Return DB.GetDBConnection(datasource, database, username, password)
+        End Function
+        Public Shared Function SQLite() As SQLiteConnection
+            Dim datasource As String = "data\db.db3"
+            Dim version As String = "3"
+            Return DB.GetDBConnection(datasource, version)
+        End Function
+    End Class
+
