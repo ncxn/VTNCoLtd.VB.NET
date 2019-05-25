@@ -130,17 +130,14 @@
   <data name="bo_invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo_invoice.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="lophoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lophoc.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="doanhthu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\doanhthu.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="differentoddevenpages" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\differentoddevenpages.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Data_copy_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data copy-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="donvi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\donvi.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="giaovien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giaovien.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -153,9 +150,6 @@
   </data>
   <data name="groupbyresource" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\groupbyresource.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="Data_replace__WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data replace -WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tranhacungcap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tranhacungcap.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -187,6 +181,9 @@
   <data name="Data_Find_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Data Find-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="donhangmua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\donhangmua.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="Data_down_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Data down-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,11 +199,17 @@
   <data name="properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\properties.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="Data_replace__WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data replace -WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="khachhangtra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khachhangtra.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Data_information_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Data information-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bo_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bo_customer.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="products" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\products.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -226,8 +229,8 @@
   <data name="tonkho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tonkho.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Data_delete_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data delete-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hocvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hocvien.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bo_sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo_sale.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -244,11 +247,11 @@
   <data name="eSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eSMS1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="donvi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\donvi.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="lophoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lophoc.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="donhangmua" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\donhangmua.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Data_delete_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data delete-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="danhmucloaiSP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\danhmucloaiSP.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -262,8 +265,8 @@
   <data name="outlook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\outlook1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="hocvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hocvien.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Data_copy_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data copy-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bo_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo_category.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -271,7 +274,7 @@
   <data name="thanhtoanNCC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thanhtoanNCC.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="bo_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bo_customer.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="movedown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movedown.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

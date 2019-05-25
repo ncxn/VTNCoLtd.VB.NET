@@ -170,34 +170,17 @@
         5UGCYf4ArM8KCJqLfeQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BackstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 63</value>
-  </data>
-  <data name="BackstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1028, 298</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BackstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;BackstageViewClientControl2.Name" xml:space="preserve">
-    <value>BackstageViewClientControl2</value>
-  </data>
-  <data name="&gt;&gt;BackstageViewClientControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;BackstageViewClientControl2.Parent" xml:space="preserve">
-    <value>Slide_menu</value>
-  </data>
-  <data name="&gt;&gt;BackstageViewClientControl2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BackstageViewClientControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="BackstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 62</value>
+    <value>189, 63</value>
   </data>
   <data name="BackstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 300</value>
+    <value>1001, 297</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BackstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -211,9 +194,29 @@
     <value>Slide_menu</value>
   </data>
   <data name="&gt;&gt;BackstageViewClientControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BackstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 63</value>
+  </data>
+  <data name="BackstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1001, 297</value>
+  </data>
+  <data name="BackstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.Name" xml:space="preserve">
+    <value>BackstageViewClientControl2</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.Parent" xml:space="preserve">
+    <value>Slide_menu</value>
+  </data>
+  <data name="&gt;&gt;BackstageViewClientControl2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Slide_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -261,13 +264,13 @@
     <value>Sửa hồ sơ</value>
   </data>
   <data name="Slide_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 246</value>
+    <value>0, 247</value>
   </data>
   <data name="Slide_menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="Slide_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 362</value>
+    <value>1191, 361</value>
   </data>
   <data name="Slide_menu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -335,26 +338,6 @@
         F3jI8Oaw006amEe8Q4y+K+xCVTm7kCX0/eUpyMrCTiy2TVhArFvZpPkEaxz2qpUgpAjmcAz2W/JP2Dhb
         YzbnA2IOwfwxv8w/S5gS57g/AGl5Af+OTEZOAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="MainControlRibbon.ApplicationButtonImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFoCAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJNZW51Ij4NCiAgICA8cGF0aCBkPSJN
-        MiwxMFYzYzAtMC41LDAuNS0xLDEtMWgyNmMwLjUsMCwxLDAuNSwxLDF2N0gyeiBNOSwxMmMtMS43LDAt
-        MywxLjMtMywzczEuMywzLDMsM3MzLTEuMywzLTNTMTAuNywxMiw5LDEyeiAgICBNOSwyMGMtMS43LDAt
-        MywxLjMtMywzczEuMywzLDMsM3MzLTEuMywzLTNTMTAuNywyMCw5LDIweiIgZmlsbD0iIzExNzdENyIg
-        Y2xhc3M9IkJsdWUiIC8+DQogICAgPHBhdGggZD0iTTMwLDEwdjE5YzAsMC41LTAuNSwxLTEsMUgzYy0w
-        LjUsMC0xLTAuNS0xLTFWMTBoMnYxOGgyNFYxMEgzMHogTTI0LDE0SDE0djJoMTBWMTR6IE0yNCwyMkgx
-        NHYyaDEwVjIyeiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="MainControlRibbon.ApplicationButtonText" xml:space="preserve">
-    <value>Tài khoản</value>
   </data>
   <data name="MainControlRibbon.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
@@ -1111,16 +1094,16 @@
     <value>Quản lý bán hàng</value>
   </data>
   <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 246</value>
+    <value>1191, 247</value>
   </data>
   <data name="RibbonStatusBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 559</value>
+    <value>0, 568</value>
   </data>
   <data name="RibbonStatusBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="RibbonStatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 49</value>
+    <value>1191, 40</value>
   </data>
   <data name="&gt;&gt;RibbonStatusBar.Name" xml:space="preserve">
     <value>RibbonStatusBar</value>
@@ -1156,7 +1139,7 @@
     <value>8, 19</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 608</value>
+    <value>1191, 608</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>

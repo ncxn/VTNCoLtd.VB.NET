@@ -22,8 +22,8 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.MainControlRibbon = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.Slide_menu = New DevExpress.XtraBars.Ribbon.BackstageViewControl()
-        Me.BackstageViewClientControl2 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
         Me.BackstageViewClientControl1 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
+        Me.BackstageViewClientControl2 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
         Me.TaiKhoanCaNhan = New DevExpress.XtraBars.Ribbon.BackstageViewTabItem()
         Me.DangNhap = New DevExpress.XtraBars.Ribbon.BackstageViewButtonItem()
         Me.DangXuat = New DevExpress.XtraBars.Ribbon.BackstageViewButtonItem()
@@ -119,13 +119,13 @@ Partial Class frmMain
         Me.MainControlRibbon.ApplicationButtonAnimationLength = 0
         Me.MainControlRibbon.ApplicationButtonDropDownControl = Me.Slide_menu
         Me.MainControlRibbon.ApplicationButtonImageOptions.Image = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.Image"), System.Drawing.Image)
-        Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImage = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.movedown
         Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImageSize = New System.Drawing.Size(32, 32)
         Me.MainControlRibbon.ApplicationButtonKeyTip = "ĐĂNG NHẬP VÀO TÀI KHOẢN"
-        resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.AutoSizeItems = True
         Me.MainControlRibbon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MainControlRibbon.ExpandCollapseItem.Id = 0
+        resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.KhoiTao_dbs_btn, Me.KetNoi_dbs_btn, Me.LuuTru_dbs_btn, Me.NhomNhanVien_NhanVien_btn, Me.NhanVien_NhanVien_btn, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.QuyenHan_NhanVien_btn, Me.LoaiSuKien_bnt, Me.TaoSuKien_bnt, Me.VeSuKien_bnt, Me.DangKySuKien_bnt, Me.ThanhToanSuKien_bnt, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.GuiVeSuKien_bnt, Me.CheckInSuKien_bnt, Me.HuyVeSuKien_bnt, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn})
@@ -141,8 +141,8 @@ Partial Class frmMain
         Me.Slide_menu.Appearance.Image = CType(resources.GetObject("Slide_menu.Appearance.Image"), System.Drawing.Image)
         Me.Slide_menu.Appearance.Options.UseFont = True
         Me.Slide_menu.Appearance.Options.UseImage = True
-        Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl2)
         Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl1)
+        Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl2)
         resources.ApplyResources(Me.Slide_menu, "Slide_menu")
         Me.Slide_menu.Items.Add(Me.TaiKhoanCaNhan)
         Me.Slide_menu.Items.Add(Me.DangNhap)
@@ -156,20 +156,20 @@ Partial Class frmMain
         Me.Slide_menu.SelectedTabIndex = 0
         Me.Slide_menu.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013
         '
-        'BackstageViewClientControl2
-        '
-        resources.ApplyResources(Me.BackstageViewClientControl2, "BackstageViewClientControl2")
-        Me.BackstageViewClientControl2.Name = "BackstageViewClientControl2"
-        '
         'BackstageViewClientControl1
         '
         resources.ApplyResources(Me.BackstageViewClientControl1, "BackstageViewClientControl1")
         Me.BackstageViewClientControl1.Name = "BackstageViewClientControl1"
         '
+        'BackstageViewClientControl2
+        '
+        resources.ApplyResources(Me.BackstageViewClientControl2, "BackstageViewClientControl2")
+        Me.BackstageViewClientControl2.Name = "BackstageViewClientControl2"
+        '
         'TaiKhoanCaNhan
         '
         resources.ApplyResources(Me.TaiKhoanCaNhan, "TaiKhoanCaNhan")
-        Me.TaiKhoanCaNhan.ContentControl = Me.BackstageViewClientControl2
+        Me.TaiKhoanCaNhan.ContentControl = Me.BackstageViewClientControl1
         Me.TaiKhoanCaNhan.ImageOptions.ItemNormal.SvgImage = Global.DancePassion.My.Resources.Resources.bo_customer
         Me.TaiKhoanCaNhan.Name = "TaiKhoanCaNhan"
         Me.TaiKhoanCaNhan.Selected = True
@@ -189,7 +189,7 @@ Partial Class frmMain
         'Sua
         '
         resources.ApplyResources(Me.Sua, "Sua")
-        Me.Sua.ContentControl = Me.BackstageViewClientControl1
+        Me.Sua.ContentControl = Me.BackstageViewClientControl2
         Me.Sua.ImageOptions.ItemNormal.SvgImage = Global.DancePassion.My.Resources.Resources.bo_document
         Me.Sua.Name = "Sua"
         '
