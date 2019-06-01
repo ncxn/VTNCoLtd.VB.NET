@@ -2,7 +2,7 @@
 
 #Region "DTO-Users"
 'table users
-Public Class DTO
+Public Class UsersDTO
     Private _user_name As String
     Private _user_first_name As String
     Private _user_last_name As String
@@ -98,19 +98,31 @@ End Class
 #End Region
 
 #Region "DAL"
-Public Class DAL
+Public Class UsersDAL
     Public Function getUsers() As DataTable
         Dim dtUsers As DataTable = DBrun.getInstance.GetDataTable("select * from tblUsers")
         Return dtUsers
     End Function
-    Public Function insertUsers(Users As DTO) As Boolean
+    Public Function insertUsers(Users As UsersDTO) As Boolean
         Dim SQL As String = String.Format("INSERT INTO tblUsers
-	(id, user_name, user_first_name, user_last_name, user_email, user_password, user_status, user_created_at, user_updated_at)
-	VALUES (@, @, @, @, @, @, @, NOW(), NOW())")
-        Users.
+	        (user_name, user_first_name, user_last_name, user_email, user_password, user_status, user_created_at, user_updated_at)
+	        VALUES (@user_name, @user_first_name, @user_last_name, @user_email, @user_password, @user_status, @user_created_at, @user_updated_at)")
+        Dim para As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
+        Dim result As Int32 = DBrun.getInstance.ExecuteNonQuery(SQL, para)
+        Return result > 0
+    End Function
+    Public Function updateUsers(Users As UsersDTO) As Boolean
+        Dim SQL As String = String.Format("INSERT INTO tblUsers
+	        (user_name, user_first_name, user_last_name, user_email, user_password, user_status, user_created_at, user_updated_at)
+	        VALUES (@user_name, @user_first_name, @user_last_name, @user_email, @user_password, @user_status, @user_created_at, @user_updated_at)")
+        Dim para As Object = {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
+        Dim result As Int32 = DBrun.getInstance.ExecuteNonQuery(SQL, para)
+        Return result > 0
     End Function
 End Class
 #End Region
+
+#Region "User-BUS"
 Public Class Users
 
     Private Shared Singleton As Users
@@ -126,3 +138,4 @@ Public Class Users
         Return result.Rows.Count > 0
     End Function
 End Class
+#End Region

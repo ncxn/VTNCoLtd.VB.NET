@@ -118,7 +118,7 @@ Partial Class UserProfiles
         Me.UserPic.Name = "UserPic"
         Me.UserPic.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.UserPic.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.[Auto]
-        Me.UserPic.Size = New System.Drawing.Size(150, 134)
+        Me.UserPic.Size = New System.Drawing.Size(150, 138)
         Me.UserPic.StyleController = Me.LayoutControl1
         Me.UserPic.TabIndex = 4
         '
@@ -151,15 +151,15 @@ Partial Class UserProfiles
         Me.txtJoin.Name = "txtJoin"
         Me.txtJoin.Properties.AutoHeight = False
         Me.txtJoin.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.txtJoin.Size = New System.Drawing.Size(241, 26)
+        Me.txtJoin.Size = New System.Drawing.Size(241, 30)
         Me.txtJoin.StyleController = Me.LayoutControl1
         Me.txtJoin.TabIndex = 12
         '
         'userStatus
         '
         Me.userStatus.Enabled = False
-        Me.userStatus.Location = New System.Drawing.Point(271, 195)
-        Me.userStatus.Margin = New System.Windows.Forms.Padding(0, 0, 0, 0)
+        Me.userStatus.Location = New System.Drawing.Point(271, 199)
+        Me.userStatus.Margin = New System.Windows.Forms.Padding(0)
         Me.userStatus.Name = "userStatus"
         Me.userStatus.Properties.Caption = "Trạng thái"
         Me.userStatus.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
@@ -183,7 +183,7 @@ Partial Class UserProfiles
         Me.userPicLayout.MinSize = New System.Drawing.Size(150, 24)
         Me.userPicLayout.Name = "userPicLayout"
         Me.userPicLayout.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-        Me.userPicLayout.Size = New System.Drawing.Size(150, 134)
+        Me.userPicLayout.Size = New System.Drawing.Size(150, 138)
         Me.userPicLayout.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.userPicLayout.TextSize = New System.Drawing.Size(0, 0)
         Me.userPicLayout.TextVisible = False
@@ -249,7 +249,7 @@ Partial Class UserProfiles
         Me.LayoutControlItem3.OptionsPrint.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.LayoutControlItem3.OptionsPrint.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
         Me.LayoutControlItem3.Padding = New DevExpress.XtraLayout.Utils.Padding(10, 2, 2, 2)
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(358, 30)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(358, 34)
         Me.LayoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem3.Text = "Tham gia:"
         Me.LayoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
@@ -298,7 +298,7 @@ Partial Class UserProfiles
         'LayoutControlItem4
         '
         Me.LayoutControlItem4.Control = Me.userStatus
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(254, 185)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(254, 189)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
         Me.LayoutControlItem4.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 0, 0, 0)
         Me.LayoutControlItem4.Size = New System.Drawing.Size(179, 44)
@@ -333,6 +333,8 @@ Partial Class UserProfiles
         '
         'UserProfiles
         '
+        Me.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.Appearance.Options.UseBackColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.LayoutControl1)

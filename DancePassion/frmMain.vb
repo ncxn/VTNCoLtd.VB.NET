@@ -23,6 +23,9 @@ Public Class frmMain
     End Sub
 
     Private Sub TaiKhoanCaNhan_SelectedChanged(sender As Object, e As BackstageViewItemEventArgs) Handles TaiKhoanCaNhan.SelectedChanged
+        Dim ucUser As New UserProfiles
+        ucUser.Parent = BackstageViewClientControl1
+        ucUser.Dock = DockStyle.Fill
         TaiKhoanCaNhan.ContentControl.Controls.Add(New UserProfiles)
 
     End Sub
