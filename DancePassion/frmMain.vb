@@ -1,5 +1,6 @@
 ﻿Imports System.Threading
 Imports DevExpress.XtraBars.Ribbon
+Imports MySql.Data.MySqlClient
 
 Public Class frmMain
 
@@ -16,6 +17,22 @@ Public Class frmMain
         '    Slide_menu.Items.Add(button1)
         '    Slide_menu.Items.Add(tab1)
         '    Slide_menu.Items.Insert(1, New BackstageViewItemSeparator())
+        Dim con As MySqlConnection = DBUtils.MYSQL()
+        con.Open()
+
+        Using cmd As New MySqlCommand("getRoles", con)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@role_name_var", "Admin")
+            Using sda As New MySqlDataAdapter(cmd)
+                Dim dt As New DataTable()
+                sda.Fill(dt)
+                For Each row As DataRow In dt.Rows
+                    MessageBox.Show(row(1).ToString)
+                Next row
+            End Using
+        End Using
+        con.Close()
+
     End Sub
 
     Private Sub DangNhap_ItemClick(sender As Object, e As DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs) Handles DangNhap.ItemClick
