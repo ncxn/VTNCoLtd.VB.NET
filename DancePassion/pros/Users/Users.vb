@@ -3,6 +3,7 @@
 #Region "DTO-Users"
 'table users
 Public Class UsersDTO
+    Private _user_id As Integer
     Private _user_name As String
     Private _user_first_name As String
     Private _user_last_name As String
@@ -11,17 +12,6 @@ Public Class UsersDTO
     Private _user_status As Boolean
     Private _user_created_at As Date
     Private _user_updated_at As Date
-
-    Public Sub New(user_name As String, user_first_name As String, user_last_name As String, user_email As String, user_password As String, user_status As Boolean, user_created_at As Date, user_updated_at As Date)
-        Me.User_email = user_name
-        Me.User_first_name = user_first_name
-        Me.User_last_name = user_last_name
-        Me.User_email = user_email
-        Me.User_password = user_password
-        Me.User_status = user_status
-        Me.User_created_at = user_created_at
-        Me.User_updated_at = user_updated_at
-    End Sub
 
     Public Property User_name As String
         Get
@@ -94,47 +84,63 @@ Public Class UsersDTO
             _user_updated_at = value
         End Set
     End Property
+
+    Public Property User_id As Integer
+        Get
+            Return _user_id
+        End Get
+        Set(value As Integer)
+            _user_id = value
+        End Set
+    End Property
 End Class
 #End Region
 
 #Region "DAL"
 Public Class UsersDAL
-    Public Function getUsers() As DataTable
-        Dim dtUsers As DataTable = DBrun.getInstance.GetDataTable("select * from tblUsers")
+    Public Function GetUsers() As DataTable
+        Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("select * from tblUsers")
         Return dtUsers
     End Function
-    Public Function insertUsers(Users As UsersDTO) As Boolean
+    Public Function InsertUsers(Users As UsersDTO) As Boolean
         Dim SQL As String = String.Format("INSERT INTO tblUsers
 	        (user_name, user_first_name, user_last_name, user_email, user_password, user_status, user_created_at, user_updated_at)
 	        VALUES (@user_name, @user_first_name, @user_last_name, @user_email, @user_password, @user_status, @user_created_at, @user_updated_at)")
         Dim para As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim result As Int32 = DBrun.getInstance.ExecuteNonQuery(SQL, para)
+        Dim result As Int32 = DBHelper.GetInstance.ExecuteNonQuery(SQL, para)
         Return result > 0
     End Function
-    Public Function updateUsers(Users As UsersDTO) As Boolean
-        Dim SQL As String = String.Format("INSERT INTO tblUsers
-	        (user_name, user_first_name, user_last_name, user_email, user_password, user_status, user_created_at, user_updated_at)
-	        VALUES (@user_name, @user_first_name, @user_last_name, @user_email, @user_password, @user_status, @user_created_at, @user_updated_at)")
+    Public Function UpdateUsers(Users As UsersDTO) As Boolean
+        Dim SQL As String = String.Format("UPDATE tblUsers
+                                           SET user_name = @user_name,
+                                               user_first_name = @user_first_name,
+                                               user_last_name = @user_last_name,
+                                               user_password = @user_password,
+                                               user_email = @user_email,
+                                               user_status = @user_status,
+                                               user_updated_at = @user_updated_at,
+                                               user_created_at = @user_created_at
+                                           WHERE user_id = @user_id")
         Dim para As Object = {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim result As Int32 = DBrun.getInstance.ExecuteNonQuery(SQL, para)
+        Dim result As Int32 = DBHelper.GetInstance.ExecuteNonQuery(SQL, para)
         Return result > 0
     End Function
 End Class
 #End Region
 
 #Region "User-BUS"
-Public Class Users
+Public Class UsersBUS
 
-    Private Shared Singleton As Users
-    Public Shared Function getInstance() As Users
+    Private Shared Singleton As UsersBUS
+    Public Shared Function getInstance() As UsersBUS
         If (Singleton Is Nothing) Then
-            Singleton = New Users()
+            Singleton = New UsersBUS()
         End If
         Return Singleton
     End Function
     Public Function Login(ByVal userName As String, ByVal passWord As String) As Boolean
         Dim query As String = "Select * from tblUsers where user_name = @userName AND password = @passWord"
-        Dim result As DataTable = DBrun.getInstance.GetDataTable(query, New Object() {userName, passWord})
+        Dim result As DataTable = DBHelper.GetInstance.GetDataTable(query, New Object() {userName, passWord})
         Return result.Rows.Count > 0
     End Function
 End Class

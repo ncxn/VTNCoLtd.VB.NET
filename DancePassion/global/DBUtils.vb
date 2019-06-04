@@ -15,19 +15,19 @@ Public Class DBUtils
             Dim database As String = "dps"
             Dim username As String = "root"
             Dim password As String = "mmttmhh"
-            Return DB.GetDBConnection(host, port, database, username, password)
-        End Function
-        Public Shared Function MSSQL() As SqlConnection
-            Dim datasource As String = "MY-SERVER\SQLEXPRESS"
-            Dim database As String = "sample"
-            Dim username As String = "sa"
-            Dim password As String = "1234"
-            Return DB.GetDBConnection(datasource, database, username, password)
-        End Function
-        Public Shared Function SQLite() As SQLiteConnection
-            Dim datasource As String = "data\db.db3"
-            Dim version As String = "3"
-            Return DB.GetDBConnection(datasource, version)
-        End Function
+        Return DBConnection.GetDBConnection(host, port, database, username, password)
+    End Function
+    Public Shared Function MSSQL() As SqlConnection
+        Dim datasource As String = "MY-SERVER\SQLEXPRESS"
+        Dim database As String = "sample"
+        Dim username As String = "sa"
+        Dim password As String = "1234"
+        Return DBConnection.GetDBConnection(datasource, database, username, password)
+    End Function
+    Public Shared Function SQLite() As SQLiteConnection
+        Dim datasource As String = "data\db.db3"
+        Dim version As String = "3"
+        Return DBConnection.GetDBConnection(datasource, version)
+    End Function
     End Class
 

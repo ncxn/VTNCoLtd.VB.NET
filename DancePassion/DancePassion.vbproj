@@ -87,10 +87,12 @@
     <Reference Include="DevExpress.Utils.v18.2" />
     <Reference Include="DevExpress.XtraBars.v18.2" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -171,18 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="form\Account.Designer.vb">
-      <DependentUpon>Account.vb</DependentUpon>
-    </Compile>
-    <Compile Include="form\Account.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="form\config\infoOfOrg.Designer.vb">
       <DependentUpon>infoOfOrg.vb</DependentUpon>
     </Compile>
@@ -207,16 +197,28 @@
     <Compile Include="form\config\Setting.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="form\FrmBase.Designer.vb">
+      <DependentUpon>FrmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\FrmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form\SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
     <Compile Include="form\SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\users\LogIn.Designer.vb">
-      <DependentUpon>LogIn.vb</DependentUpon>
+    <Compile Include="form\users\FrmUsersLogIn.Designer.vb">
+      <DependentUpon>FrmUsersLogIn.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\users\LogIn.vb">
+    <Compile Include="form\users\FrmUsersLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\users\FrmUsers.Designer.vb">
+      <DependentUpon>FrmUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\users\FrmUsers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form\WaitForm.Designer.vb">
@@ -225,14 +227,14 @@
     <Compile Include="form\WaitForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.vb">
-      <DependentUpon>frmMain.vb</DependentUpon>
+    <Compile Include="FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.vb">
+    <Compile Include="FrmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="global\DB.vb" />
-    <Compile Include="global\DBRun.vb" />
+    <Compile Include="global\DBConnection.vb" />
+    <Compile Include="global\DBHelper.vb" />
     <Compile Include="global\DBUtils.vb" />
     <Compile Include="global\MYSQLSERVER.vb" />
     <Compile Include="global\SQLiteDatabase.vb" />
@@ -246,23 +248,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="pros\config\cfgMails.bk.vb" />
     <Compile Include="pros\config\cfgMail.vb" />
     <Compile Include="pros\config\SMSconfig.vb" />
     <Compile Include="pros\Product_type.vb" />
     <Compile Include="pros\users\Users.vb" />
+    <Compile Include="uc\roles\UCRoles.Designer.vb">
+      <DependentUpon>UCRoles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\roles\UCRoles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\roles\UCRolesUpdate.Designer.vb">
+      <DependentUpon>UCRolesUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\roles\UCRolesUpdate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\UCBase.Designer.vb">
+      <DependentUpon>UCBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\UCBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\users\UcUsers.Designer.vb">
+      <DependentUpon>UcUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\users\UcUsers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\users\UCUsersUpdate.Designer.vb">
+      <DependentUpon>UCUsersUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\users\UCUsersUpdate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="uc\users\UserProfiles.Designer.vb">
       <DependentUpon>UserProfiles.vb</DependentUpon>
     </Compile>
     <Compile Include="uc\users\UserProfiles.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="form\Account.resx">
-      <DependentUpon>Account.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="form\config\infoOfOrg.resx">
       <DependentUpon>infoOfOrg.vb</DependentUpon>
     </EmbeddedResource>
@@ -275,17 +300,23 @@
     <EmbeddedResource Include="form\config\SMSconfig.resx">
       <DependentUpon>SMSconfig.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\FrmBase.resx">
+      <DependentUpon>FrmBase.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\users\LogIn.resx">
-      <DependentUpon>LogIn.vb</DependentUpon>
+    <EmbeddedResource Include="form\users\FrmUsersLogIn.resx">
+      <DependentUpon>FrmUsersLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\users\FrmUsers.resx">
+      <DependentUpon>FrmUsers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\WaitForm.resx">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.vb</DependentUpon>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -293,6 +324,21 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\roles\UCRoles.resx">
+      <DependentUpon>UCRoles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\roles\UCRolesUpdate.resx">
+      <DependentUpon>UCRolesUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\UCBase.resx">
+      <DependentUpon>UCBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\users\UcUsers.resx">
+      <DependentUpon>UcUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\users\UCUsersUpdate.resx">
+      <DependentUpon>UCUsersUpdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uc\users\UserProfiles.resx">
       <DependentUpon>UserProfiles.vb</DependentUpon>
@@ -498,6 +544,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bo_customer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showformulas.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertgroupfooter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updatetableofcontents.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removegroupheader.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertgroupheader.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addparagraphtotableofcontents.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pivottablecalculationsfieldsitemssetsgroup.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addparagraphtotableofcontents1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updatetableofcontents1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletequery.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletegroupheader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletegroupheader_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removegroupheader1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletetable.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets')" />

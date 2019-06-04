@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmMain
+Partial Class FrmMain
     Inherits DevExpress.XtraBars.Ribbon.RibbonForm
 
     'Form overrides dispose to clean up the component list.
@@ -19,7 +19,8 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
         Me.MainControlRibbon = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.Slide_menu = New DevExpress.XtraBars.Ribbon.BackstageViewControl()
         Me.BackstageViewClientControl1 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
@@ -108,9 +109,13 @@ Partial Class frmMain
         Me.RibbonPageGroup8 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
+        Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
+        Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Slide_menu.SuspendLayout()
+        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainControlRibbon
@@ -130,6 +135,7 @@ Partial Class frmMain
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.KhoiTao_dbs_btn, Me.KetNoi_dbs_btn, Me.LuuTru_dbs_btn, Me.NhomNhanVien_NhanVien_btn, Me.NhanVien_NhanVien_btn, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.QuyenHan_NhanVien_btn, Me.LoaiSuKien_bnt, Me.TaoSuKien_bnt, Me.VeSuKien_bnt, Me.DangKySuKien_bnt, Me.ThanhToanSuKien_bnt, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.GuiVeSuKien_bnt, Me.CheckInSuKien_bnt, Me.HuyVeSuKien_bnt, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn})
         Me.MainControlRibbon.MaxItemId = 45
+        Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
         Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.rbpHeThong, Me.rbpSuKien, Me.rbpClub, Me.rbpBanHang})
         Me.MainControlRibbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019
@@ -143,13 +149,13 @@ Partial Class frmMain
         Me.Slide_menu.Appearance.Options.UseImage = True
         Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl1)
         Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl2)
-        resources.ApplyResources(Me.Slide_menu, "Slide_menu")
         Me.Slide_menu.Items.Add(Me.TaiKhoanCaNhan)
         Me.Slide_menu.Items.Add(Me.DangNhap)
         Me.Slide_menu.Items.Add(Me.DangXuat)
         Me.Slide_menu.Items.Add(Me.Sua)
         Me.Slide_menu.Items.Add(Me.BackstageViewItemSeparator1)
         Me.Slide_menu.Items.Add(Me.BackstageViewItemSeparator2)
+        resources.ApplyResources(Me.Slide_menu, "Slide_menu")
         Me.Slide_menu.Name = "Slide_menu"
         Me.Slide_menu.OwnerControl = Me.MainControlRibbon
         Me.Slide_menu.SelectedTab = Me.TaiKhoanCaNhan
@@ -787,7 +793,19 @@ Partial Class frmMain
         Me.BarButtonItem1.Id = 1
         Me.BarButtonItem1.Name = "BarButtonItem1"
         '
-        'frmMain
+        'DocumentManager1
+        '
+        Me.DocumentManager1.MdiParent = Me
+        Me.DocumentManager1.MenuManager = Me.MainControlRibbon
+        Me.DocumentManager1.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
+        Me.DocumentManager1.ShowThumbnailsInTaskBar = DevExpress.Utils.DefaultBoolean.[True]
+        Me.DocumentManager1.View = Me.TabbedView1
+        Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
+        '
+        'TabbedView1
+        '
+        '
+        'FrmMain
         '
         Me.AllowFormGlass = DevExpress.Utils.DefaultBoolean.[True]
         Me.Appearance.Options.UseFont = True
@@ -797,13 +815,16 @@ Partial Class frmMain
         Me.Controls.Add(Me.Slide_menu)
         Me.Controls.Add(Me.MainControlRibbon)
         Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
-        Me.Name = "frmMain"
+        Me.IsMdiContainer = True
+        Me.Name = "FrmMain"
         Me.Ribbon = Me.MainControlRibbon
         Me.StatusBar = Me.RibbonStatusBar
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Slide_menu.ResumeLayout(False)
+        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -897,4 +918,6 @@ Partial Class frmMain
     Friend WithEvents Sua As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
     Friend WithEvents BackstageViewClientControl2 As DevExpress.XtraBars.Ribbon.BackstageViewClientControl
     Friend WithEvents TaiKhoanCaNhan As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
+    Friend WithEvents DocumentManager1 As DevExpress.XtraBars.Docking2010.DocumentManager
+    Friend WithEvents TabbedView1 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
 End Class

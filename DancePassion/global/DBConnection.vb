@@ -7,7 +7,7 @@ Imports MySql.Data.MySqlClient
 Imports System.Data.SqlClient
 Imports System.Data.SQLite
 
-Public Class DB
+Public Class DBConnection
     Public Shared Function GetDBConnection(ByVal host As String, ByVal port As Integer, ByVal database As String, ByVal username As String, ByVal password As String) As MySqlConnection
         Dim connString As String = "Server=" & host & ";Database=" & database & ";port=" & port & ";User Id=" & username & ";password=" & password
         Dim conn As MySqlConnection = New MySqlConnection(connString)
