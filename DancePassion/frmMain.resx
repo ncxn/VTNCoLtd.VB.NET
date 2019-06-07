@@ -200,7 +200,7 @@
     <value>189, 62</value>
   </data>
   <data name="BackstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 299</value>
+    <value>330, 299</value>
   </data>
   <data name="BackstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1024,7 +1024,7 @@
         IGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="RibbonPageGroup_CoSoDuLieu.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_Database.Text" xml:space="preserve">
     <value>Cơ sở dữ liệu</value>
   </data>
   <data name="RibbonPageGroup_CauHinhChung.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1050,7 +1050,7 @@
         LDZoNkw5LDl6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="RibbonPageGroup_CauHinhChung.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_Configuration.Text" xml:space="preserve">
     <value>Cấu hình chung</value>
   </data>
   <data name="RibbonPageGroup_NhanSu.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1073,16 +1073,16 @@
         PC9zdmc+Cw==
 </value>
   </data>
-  <data name="RibbonPageGroup_NhanSu.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_Peoples.Text" xml:space="preserve">
     <value>Nhân sự</value>
   </data>
-  <data name="RibbonPageGroup_CauHinhEmail.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_Emails.Text" xml:space="preserve">
     <value>Cấu hình email</value>
   </data>
-  <data name="RibbonPageGroup_CauHinhSMS.Text" xml:space="preserve">
+  <data name="RibbonPageGroup_SMS.Text" xml:space="preserve">
     <value>Cấu hình SMS</value>
   </data>
-  <data name="rbpHeThong.Text" xml:space="preserve">
+  <data name="RbpSystem.Text" xml:space="preserve">
     <value>Hệ thống</value>
   </data>
   <data name="RibbonPageGroup_KhoiTaoSuKien.Text" xml:space="preserve">
@@ -1097,7 +1097,7 @@
   <data name="RibbonPageGroup_TienIchSuKien.Text" xml:space="preserve">
     <value>Các tiện ích</value>
   </data>
-  <data name="rbpSuKien.Text" xml:space="preserve">
+  <data name="RbpEventManager.Text" xml:space="preserve">
     <value>Quản lý sự kiện</value>
   </data>
   <data name="RibbonPageGroup3.Text" xml:space="preserve">
@@ -1112,7 +1112,7 @@
   <data name="RibbonPageGroup9.Text" xml:space="preserve">
     <value>Thống kê</value>
   </data>
-  <data name="rbpClub.Text" xml:space="preserve">
+  <data name="RbpClubManager.Text" xml:space="preserve">
     <value>Quản lý Club</value>
   </data>
   <data name="RibbonPageGroup1.Text" xml:space="preserve">
@@ -1130,7 +1130,7 @@
   <data name="RibbonPageGroup8.Text" xml:space="preserve">
     <value>Thống kê</value>
   </data>
-  <data name="rbpBanHang.Text" xml:space="preserve">
+  <data name="RbpSalesManager.Text" xml:space="preserve">
     <value>Quản lý bán hàng</value>
   </data>
   <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
@@ -1172,7 +1172,7 @@
   <data name="BarButtonItem1.Caption" xml:space="preserve">
     <value>BarButtonItem1</value>
   </data>
-  <metadata name="DocumentManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="DocumentManagerOnMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1556,46 +1556,46 @@
   <data name="&gt;&gt;BH_TonKho_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rbpHeThong.Name" xml:space="preserve">
-    <value>rbpHeThong</value>
+  <data name="&gt;&gt;RbpSystem.Name" xml:space="preserve">
+    <value>RbpSystem</value>
   </data>
-  <data name="&gt;&gt;rbpHeThong.Type" xml:space="preserve">
+  <data name="&gt;&gt;RbpSystem.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CoSoDuLieu.Name" xml:space="preserve">
-    <value>RibbonPageGroup_CoSoDuLieu</value>
+  <data name="&gt;&gt;RibbonPageGroup_Database.Name" xml:space="preserve">
+    <value>RibbonPageGroup_Database</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CoSoDuLieu.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_Database.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CauHinhChung.Name" xml:space="preserve">
-    <value>RibbonPageGroup_CauHinhChung</value>
+  <data name="&gt;&gt;RibbonPageGroup_Configuration.Name" xml:space="preserve">
+    <value>RibbonPageGroup_Configuration</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CauHinhChung.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_Configuration.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_NhanSu.Name" xml:space="preserve">
-    <value>RibbonPageGroup_NhanSu</value>
+  <data name="&gt;&gt;RibbonPageGroup_Peoples.Name" xml:space="preserve">
+    <value>RibbonPageGroup_Peoples</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_NhanSu.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_Peoples.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CauHinhEmail.Name" xml:space="preserve">
-    <value>RibbonPageGroup_CauHinhEmail</value>
+  <data name="&gt;&gt;RibbonPageGroup_Emails.Name" xml:space="preserve">
+    <value>RibbonPageGroup_Emails</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CauHinhEmail.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_Emails.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CauHinhSMS.Name" xml:space="preserve">
-    <value>RibbonPageGroup_CauHinhSMS</value>
+  <data name="&gt;&gt;RibbonPageGroup_SMS.Name" xml:space="preserve">
+    <value>RibbonPageGroup_SMS</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_CauHinhSMS.Type" xml:space="preserve">
+  <data name="&gt;&gt;RibbonPageGroup_SMS.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rbpSuKien.Name" xml:space="preserve">
-    <value>rbpSuKien</value>
+  <data name="&gt;&gt;RbpEventManager.Name" xml:space="preserve">
+    <value>RbpEventManager</value>
   </data>
-  <data name="&gt;&gt;rbpSuKien.Type" xml:space="preserve">
+  <data name="&gt;&gt;RbpEventManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RibbonPageGroup_KhoiTaoSuKien.Name" xml:space="preserve">
@@ -1622,10 +1622,10 @@
   <data name="&gt;&gt;RibbonPageGroup_TienIchSuKien.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rbpClub.Name" xml:space="preserve">
-    <value>rbpClub</value>
+  <data name="&gt;&gt;RbpClubManager.Name" xml:space="preserve">
+    <value>RbpClubManager</value>
   </data>
-  <data name="&gt;&gt;rbpClub.Type" xml:space="preserve">
+  <data name="&gt;&gt;RbpClubManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RibbonPageGroup3.Name" xml:space="preserve">
@@ -1652,10 +1652,10 @@
   <data name="&gt;&gt;RibbonPageGroup9.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rbpBanHang.Name" xml:space="preserve">
-    <value>rbpBanHang</value>
+  <data name="&gt;&gt;RbpSalesManager.Name" xml:space="preserve">
+    <value>RbpSalesManager</value>
   </data>
-  <data name="&gt;&gt;rbpBanHang.Type" xml:space="preserve">
+  <data name="&gt;&gt;RbpSalesManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RibbonPageGroup1.Name" xml:space="preserve">
@@ -1694,16 +1694,16 @@
   <data name="&gt;&gt;BarButtonItem1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;DocumentManager1.Name" xml:space="preserve">
-    <value>DocumentManager1</value>
+  <data name="&gt;&gt;DocumentManagerOnMain.Name" xml:space="preserve">
+    <value>DocumentManagerOnMain</value>
   </data>
-  <data name="&gt;&gt;DocumentManager1.Type" xml:space="preserve">
+  <data name="&gt;&gt;DocumentManagerOnMain.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Docking2010.DocumentManager, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;TabbedView1.Name" xml:space="preserve">
-    <value>TabbedView1</value>
+  <data name="&gt;&gt;TabbedViewOnMain.Name" xml:space="preserve">
+    <value>TabbedViewOnMain</value>
   </data>
-  <data name="&gt;&gt;TabbedView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;TabbedViewOnMain.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

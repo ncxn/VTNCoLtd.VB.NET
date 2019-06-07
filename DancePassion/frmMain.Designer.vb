@@ -85,23 +85,23 @@ Partial Class FrmMain
         Me.Club_LopDaHoc = New DevExpress.XtraBars.BarButtonItem()
         Me.BH_DoanhThu_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.BH_TonKho_btn = New DevExpress.XtraBars.BarButtonItem()
-        Me.rbpHeThong = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPageGroup_CoSoDuLieu = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPageGroup_CauHinhChung = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPageGroup_NhanSu = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPageGroup_CauHinhEmail = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPageGroup_CauHinhSMS = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.rbpSuKien = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RbpSystem = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RibbonPageGroup_Database = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup_Configuration = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup_Peoples = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup_Emails = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup_SMS = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RbpEventManager = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup_KhoiTaoSuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_DangKySuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_ThongkeSuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_TienIchSuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.rbpClub = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RbpClubManager = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup4 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup9 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.rbpBanHang = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RbpSalesManager = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup7 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup6 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -109,13 +109,13 @@ Partial Class FrmMain
         Me.RibbonPageGroup8 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
-        Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
-        Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+        Me.DocumentManagerOnMain = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
+        Me.TabbedViewOnMain = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Slide_menu.SuspendLayout()
-        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DocumentManagerOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainControlRibbon
@@ -137,7 +137,7 @@ Partial Class FrmMain
         Me.MainControlRibbon.MaxItemId = 45
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
-        Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.rbpHeThong, Me.rbpSuKien, Me.rbpClub, Me.rbpBanHang})
+        Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpSystem, Me.RbpEventManager, Me.RbpClubManager, Me.RbpSalesManager})
         Me.MainControlRibbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019
         Me.MainControlRibbon.StatusBar = Me.RibbonStatusBar
         '
@@ -598,67 +598,67 @@ Partial Class FrmMain
         Me.BH_TonKho_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.tonkho
         Me.BH_TonKho_btn.Name = "BH_TonKho_btn"
         '
-        'rbpHeThong
+        'RbpSystem
         '
-        Me.rbpHeThong.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_CoSoDuLieu, Me.RibbonPageGroup_CauHinhChung, Me.RibbonPageGroup_NhanSu, Me.RibbonPageGroup_CauHinhEmail, Me.RibbonPageGroup_CauHinhSMS})
-        Me.rbpHeThong.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.properties
-        Me.rbpHeThong.Name = "rbpHeThong"
-        resources.ApplyResources(Me.rbpHeThong, "rbpHeThong")
+        Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_Database, Me.RibbonPageGroup_Configuration, Me.RibbonPageGroup_Peoples, Me.RibbonPageGroup_Emails, Me.RibbonPageGroup_SMS})
+        Me.RbpSystem.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.properties
+        Me.RbpSystem.Name = "RbpSystem"
+        resources.ApplyResources(Me.RbpSystem, "RbpSystem")
         '
-        'RibbonPageGroup_CoSoDuLieu
+        'RibbonPageGroup_Database
         '
-        Me.RibbonPageGroup_CoSoDuLieu.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_CoSoDuLieu.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.RibbonPageGroup_CoSoDuLieu.ItemLinks.Add(Me.KhoiTao_dbs_btn)
-        Me.RibbonPageGroup_CoSoDuLieu.ItemLinks.Add(Me.KetNoi_dbs_btn)
-        Me.RibbonPageGroup_CoSoDuLieu.ItemLinks.Add(Me.LuuTru_dbs_btn)
-        Me.RibbonPageGroup_CoSoDuLieu.Name = "RibbonPageGroup_CoSoDuLieu"
-        Me.RibbonPageGroup_CoSoDuLieu.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_CoSoDuLieu, "RibbonPageGroup_CoSoDuLieu")
+        Me.RibbonPageGroup_Database.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_CoSoDuLieu.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RibbonPageGroup_Database.ItemLinks.Add(Me.KhoiTao_dbs_btn)
+        Me.RibbonPageGroup_Database.ItemLinks.Add(Me.KetNoi_dbs_btn)
+        Me.RibbonPageGroup_Database.ItemLinks.Add(Me.LuuTru_dbs_btn)
+        Me.RibbonPageGroup_Database.Name = "RibbonPageGroup_Database"
+        Me.RibbonPageGroup_Database.ShowCaptionButton = False
+        resources.ApplyResources(Me.RibbonPageGroup_Database, "RibbonPageGroup_Database")
         '
-        'RibbonPageGroup_CauHinhChung
+        'RibbonPageGroup_Configuration
         '
-        Me.RibbonPageGroup_CauHinhChung.AllowTextClipping = False
-        Me.RibbonPageGroup_CauHinhChung.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_CauHinhChung.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.RibbonPageGroup_CauHinhChung.ItemLinks.Add(Me.DoanhNghiep_CauHinh_btn)
-        Me.RibbonPageGroup_CauHinhChung.ItemLinks.Add(Me.CongCu__CauHinh_btn)
-        Me.RibbonPageGroup_CauHinhChung.Name = "RibbonPageGroup_CauHinhChung"
-        Me.RibbonPageGroup_CauHinhChung.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_CauHinhChung, "RibbonPageGroup_CauHinhChung")
+        Me.RibbonPageGroup_Configuration.AllowTextClipping = False
+        Me.RibbonPageGroup_Configuration.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_CauHinhChung.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.DoanhNghiep_CauHinh_btn)
+        Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.CongCu__CauHinh_btn)
+        Me.RibbonPageGroup_Configuration.Name = "RibbonPageGroup_Configuration"
+        Me.RibbonPageGroup_Configuration.ShowCaptionButton = False
+        resources.ApplyResources(Me.RibbonPageGroup_Configuration, "RibbonPageGroup_Configuration")
         '
-        'RibbonPageGroup_NhanSu
+        'RibbonPageGroup_Peoples
         '
-        Me.RibbonPageGroup_NhanSu.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_NhanSu.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.RibbonPageGroup_NhanSu.ItemLinks.Add(Me.NhomNhanVien_NhanVien_btn)
-        Me.RibbonPageGroup_NhanSu.ItemLinks.Add(Me.NhanVien_NhanVien_btn)
-        Me.RibbonPageGroup_NhanSu.ItemLinks.Add(Me.QuyenHan_NhanVien_btn)
-        Me.RibbonPageGroup_NhanSu.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.ThreeRows
-        Me.RibbonPageGroup_NhanSu.Name = "RibbonPageGroup_NhanSu"
-        Me.RibbonPageGroup_NhanSu.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_NhanSu, "RibbonPageGroup_NhanSu")
+        Me.RibbonPageGroup_Peoples.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_NhanSu.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.NhomNhanVien_NhanVien_btn)
+        Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.NhanVien_NhanVien_btn)
+        Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.QuyenHan_NhanVien_btn)
+        Me.RibbonPageGroup_Peoples.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.ThreeRows
+        Me.RibbonPageGroup_Peoples.Name = "RibbonPageGroup_Peoples"
+        Me.RibbonPageGroup_Peoples.ShowCaptionButton = False
+        resources.ApplyResources(Me.RibbonPageGroup_Peoples, "RibbonPageGroup_Peoples")
         '
-        'RibbonPageGroup_CauHinhEmail
+        'RibbonPageGroup_Emails
         '
-        Me.RibbonPageGroup_CauHinhEmail.ItemLinks.Add(Me.gmail_email_btn)
-        Me.RibbonPageGroup_CauHinhEmail.ItemLinks.Add(Me.outlook_email_btn)
-        Me.RibbonPageGroup_CauHinhEmail.Name = "RibbonPageGroup_CauHinhEmail"
-        Me.RibbonPageGroup_CauHinhEmail.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_CauHinhEmail, "RibbonPageGroup_CauHinhEmail")
+        Me.RibbonPageGroup_Emails.ItemLinks.Add(Me.gmail_email_btn)
+        Me.RibbonPageGroup_Emails.ItemLinks.Add(Me.outlook_email_btn)
+        Me.RibbonPageGroup_Emails.Name = "RibbonPageGroup_Emails"
+        Me.RibbonPageGroup_Emails.ShowCaptionButton = False
+        resources.ApplyResources(Me.RibbonPageGroup_Emails, "RibbonPageGroup_Emails")
         '
-        'RibbonPageGroup_CauHinhSMS
+        'RibbonPageGroup_SMS
         '
-        Me.RibbonPageGroup_CauHinhSMS.ItemLinks.Add(Me.Dcom_SMS_btn)
-        Me.RibbonPageGroup_CauHinhSMS.ItemLinks.Add(Me.Twilio_SMS_btn)
-        Me.RibbonPageGroup_CauHinhSMS.ItemLinks.Add(Me.eSMS__SMS_btn)
-        Me.RibbonPageGroup_CauHinhSMS.Name = "RibbonPageGroup_CauHinhSMS"
-        Me.RibbonPageGroup_CauHinhSMS.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_CauHinhSMS, "RibbonPageGroup_CauHinhSMS")
+        Me.RibbonPageGroup_SMS.ItemLinks.Add(Me.Dcom_SMS_btn)
+        Me.RibbonPageGroup_SMS.ItemLinks.Add(Me.Twilio_SMS_btn)
+        Me.RibbonPageGroup_SMS.ItemLinks.Add(Me.eSMS__SMS_btn)
+        Me.RibbonPageGroup_SMS.Name = "RibbonPageGroup_SMS"
+        Me.RibbonPageGroup_SMS.ShowCaptionButton = False
+        resources.ApplyResources(Me.RibbonPageGroup_SMS, "RibbonPageGroup_SMS")
         '
-        'rbpSuKien
+        'RbpEventManager
         '
-        Me.rbpSuKien.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_KhoiTaoSuKien, Me.RibbonPageGroup_DangKySuKien, Me.RibbonPageGroup_ThongkeSuKien, Me.RibbonPageGroup_TienIchSuKien})
-        Me.rbpSuKien.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.differentoddevenpages
-        Me.rbpSuKien.Name = "rbpSuKien"
-        resources.ApplyResources(Me.rbpSuKien, "rbpSuKien")
+        Me.RbpEventManager.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_KhoiTaoSuKien, Me.RibbonPageGroup_DangKySuKien, Me.RibbonPageGroup_ThongkeSuKien, Me.RibbonPageGroup_TienIchSuKien})
+        Me.RbpEventManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.differentoddevenpages
+        Me.RbpEventManager.Name = "RbpEventManager"
+        resources.ApplyResources(Me.RbpEventManager, "RbpEventManager")
         '
         'RibbonPageGroup_KhoiTaoSuKien
         '
@@ -694,12 +694,12 @@ Partial Class FrmMain
         Me.RibbonPageGroup_TienIchSuKien.Name = "RibbonPageGroup_TienIchSuKien"
         resources.ApplyResources(Me.RibbonPageGroup_TienIchSuKien, "RibbonPageGroup_TienIchSuKien")
         '
-        'rbpClub
+        'RbpClubManager
         '
-        Me.rbpClub.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup3, Me.RibbonPageGroup2, Me.RibbonPageGroup4, Me.RibbonPageGroup9})
-        Me.rbpClub.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.groupbyresource
-        Me.rbpClub.Name = "rbpClub"
-        resources.ApplyResources(Me.rbpClub, "rbpClub")
+        Me.RbpClubManager.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup3, Me.RibbonPageGroup2, Me.RibbonPageGroup4, Me.RibbonPageGroup9})
+        Me.RbpClubManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.groupbyresource
+        Me.RbpClubManager.Name = "RbpClubManager"
+        resources.ApplyResources(Me.RbpClubManager, "RbpClubManager")
         '
         'RibbonPageGroup3
         '
@@ -731,12 +731,12 @@ Partial Class FrmMain
         Me.RibbonPageGroup9.Name = "RibbonPageGroup9"
         resources.ApplyResources(Me.RibbonPageGroup9, "RibbonPageGroup9")
         '
-        'rbpBanHang
+        'RbpSalesManager
         '
-        Me.rbpBanHang.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1, Me.RibbonPageGroup7, Me.RibbonPageGroup6, Me.RibbonPageGroup5, Me.RibbonPageGroup8})
-        Me.rbpBanHang.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.bo_sale
-        Me.rbpBanHang.Name = "rbpBanHang"
-        resources.ApplyResources(Me.rbpBanHang, "rbpBanHang")
+        Me.RbpSalesManager.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1, Me.RibbonPageGroup7, Me.RibbonPageGroup6, Me.RibbonPageGroup5, Me.RibbonPageGroup8})
+        Me.RbpSalesManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.bo_sale
+        Me.RbpSalesManager.Name = "RbpSalesManager"
+        resources.ApplyResources(Me.RbpSalesManager, "RbpSalesManager")
         '
         'RibbonPageGroup1
         '
@@ -793,16 +793,16 @@ Partial Class FrmMain
         Me.BarButtonItem1.Id = 1
         Me.BarButtonItem1.Name = "BarButtonItem1"
         '
-        'DocumentManager1
+        'DocumentManagerOnMain
         '
-        Me.DocumentManager1.MdiParent = Me
-        Me.DocumentManager1.MenuManager = Me.MainControlRibbon
-        Me.DocumentManager1.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
-        Me.DocumentManager1.ShowThumbnailsInTaskBar = DevExpress.Utils.DefaultBoolean.[True]
-        Me.DocumentManager1.View = Me.TabbedView1
-        Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
+        Me.DocumentManagerOnMain.MdiParent = Me
+        Me.DocumentManagerOnMain.MenuManager = Me.MainControlRibbon
+        Me.DocumentManagerOnMain.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
+        Me.DocumentManagerOnMain.ShowThumbnailsInTaskBar = DevExpress.Utils.DefaultBoolean.[True]
+        Me.DocumentManagerOnMain.View = Me.TabbedViewOnMain
+        Me.DocumentManagerOnMain.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedViewOnMain})
         '
-        'TabbedView1
+        'TabbedViewOnMain
         '
         '
         'FrmMain
@@ -823,8 +823,8 @@ Partial Class FrmMain
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Slide_menu.ResumeLayout(False)
-        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DocumentManagerOnMain, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -836,27 +836,27 @@ Partial Class FrmMain
     Friend WithEvents KhoiTao_dbs_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents KetNoi_dbs_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents LuuTru_dbs_btn As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents rbpBanHang As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents RbpSalesManager As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents rbpSuKien As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents RbpEventManager As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup_KhoiTaoSuKien As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents rbpClub As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents RbpClubManager As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents rbpHeThong As DevExpress.XtraBars.Ribbon.RibbonPage
-    Friend WithEvents RibbonPageGroup_CoSoDuLieu As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RbpSystem As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents RibbonPageGroup_Database As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents NhomNhanVien_NhanVien_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents NhanVien_NhanVien_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents roles As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents RibbonPageGroup_NhanSu As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents RibbonPageGroup_CauHinhEmail As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RibbonPageGroup_Peoples As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RibbonPageGroup_Emails As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents gmail_email_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents outlook_email_btn As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents RibbonPageGroup_CauHinhSMS As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RibbonPageGroup_SMS As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents Dcom_SMS_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents Twilio_SMS_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents eSMS__SMS_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents DoanhNghiep_CauHinh_btn As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents RibbonPageGroup_CauHinhChung As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RibbonPageGroup_Configuration As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents Slide_menu As DevExpress.XtraBars.Ribbon.BackstageViewControl
     Friend WithEvents DangNhap As DevExpress.XtraBars.Ribbon.BackstageViewButtonItem
     Friend WithEvents DangXuat As DevExpress.XtraBars.Ribbon.BackstageViewButtonItem
@@ -918,6 +918,6 @@ Partial Class FrmMain
     Friend WithEvents Sua As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
     Friend WithEvents BackstageViewClientControl2 As DevExpress.XtraBars.Ribbon.BackstageViewClientControl
     Friend WithEvents TaiKhoanCaNhan As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
-    Friend WithEvents DocumentManager1 As DevExpress.XtraBars.Docking2010.DocumentManager
-    Friend WithEvents TabbedView1 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
+    Friend WithEvents DocumentManagerOnMain As DevExpress.XtraBars.Docking2010.DocumentManager
+    Friend WithEvents TabbedViewOnMain As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
 End Class

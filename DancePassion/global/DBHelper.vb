@@ -32,7 +32,7 @@ Public Class DBHelper
             For Each item As String In listPara
                 If item.Contains("@"c) Then
                     command.Parameters.AddWithValue(item, parameter(i))
-                    i += 1
+                    i = i + 1
                 End If
             Next
         End If
@@ -57,7 +57,7 @@ Public Class DBHelper
 
                     If item.Contains("@"c) Then
                         command.Parameters.AddWithValue(item, parameter(i))
-                        i += 1
+                        i = i + 1
                     End If
                 Next
             End If
@@ -84,7 +84,7 @@ Public Class DBHelper
 
                     If item.Contains("@"c) Then
                         command.Parameters.AddWithValue(item, parameter(i))
-                        i += 1
+                        i = i + 1
                     End If
                 Next
             End If
@@ -94,6 +94,30 @@ Public Class DBHelper
         End Using
 
         Return data
+    End Function
+    Public Function ExecuteReader(ByVal query As String, ByVal Optional parameter As Object() = Nothing) As Object
+
+        Dim data As MySqlDataReader
+        Dim command As MySqlCommand = New MySqlCommand(query, connMYSQL)
+
+        If parameter IsNot Nothing Then
+            Dim listPara As String() = query.Split(" "c)
+            Dim i As Integer = 0
+
+            For Each item As String In listPara
+
+                If item.Contains("@"c) Then
+                    command.Parameters.AddWithValue(item, parameter(i))
+                    i = i + 1
+                End If
+            Next
+        End If
+
+        connMYSQL.Open()
+        data = command.ExecuteReader(CommandBehavior.CloseConnection)
+
+        Return data
+
     End Function
 End Class
 

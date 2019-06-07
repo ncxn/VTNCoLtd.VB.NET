@@ -1,7 +1,11 @@
 ﻿Imports System.Security.Cryptography
+Imports MySql.Data.MySqlClient
 
 #Region "DTO-Users"
 'table users
+Public Class UserCollection
+    Inherits List(Of UsersDTO)
+End Class
 Public Class UsersDTO
     Private _user_id As Integer
     Private _user_name As String
@@ -102,12 +106,59 @@ Public Class UsersDAL
         Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("select * from tblUsers")
         Return dtUsers
     End Function
+    Public Function GetListUsers() As UserCollection
+        Dim UserList As New UserCollection
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.ExecuteReader("select * from tblUsers")
+
+        While Reader.Read()
+            Dim objUser As New UsersDTO With {
+                .User_id = Reader("User_id").ToString(),
+                .User_name = Reader("User_name").ToString(),
+                .User_first_name = Reader("User_first_name").ToString(),
+                .User_last_name = Reader("User_last_name").ToString(),
+                .User_email = Reader("User_email").ToString(),
+                .User_password = Reader("User_password").ToString(),
+                .User_status = CInt(Reader("User_password")),
+                .User_created_at = CDate(Reader("User_created_at")),
+                .User_updated_at = CDate(Reader("User_updated_at"))
+            }
+            UserList.Add(objUser)
+        End While
+
+        Reader.Close()
+        Return UserList
+
+    End Function
+
+    Public Function GetListUserByID(ID As Integer) As UserCollection
+        Dim UserList As New UserCollection
+        Dim Reader As Object = DBHelper.GetInstance.ExecuteReader("select * from tblUsers where ID = @ID", New Object() {ID})
+
+        While Reader.Read()
+            Dim objUser As New UsersDTO With {
+                .User_id = Reader("User_id").ToString(),
+                .User_name = Reader("User_name").ToString(),
+                .User_first_name = Reader("User_first_name").ToString(),
+                .User_last_name = Reader("User_last_name").ToString(),
+                .User_email = Reader("User_email").ToString(),
+                .User_password = Reader("User_password").ToString(),
+                .User_status = CInt(Reader("User_password")),
+                .User_created_at = CDate(Reader("User_created_at")),
+                .User_updated_at = CDate(Reader("User_updated_at"))
+            }
+            UserList.Add(objUser)
+        End While
+
+        Reader.Close()
+        Return UserList
+
+    End Function
     Public Function InsertUsers(Users As UsersDTO) As Boolean
         Dim SQL As String = String.Format("INSERT INTO tblUsers
 	        (user_name, user_first_name, user_last_name, user_email, user_password, user_status, user_created_at, user_updated_at)
 	        VALUES (@user_name, @user_first_name, @user_last_name, @user_email, @user_password, @user_status, @user_created_at, @user_updated_at)")
         Dim para As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim result As Int32 = DBHelper.GetInstance.ExecuteNonQuery(SQL, para)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(SQL, para)
         Return result > 0
     End Function
     Public Function UpdateUsers(Users As UsersDTO) As Boolean
@@ -122,7 +173,7 @@ Public Class UsersDAL
                                                user_created_at = @user_created_at
                                            WHERE user_id = @user_id")
         Dim para As Object = {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim result As Int32 = DBHelper.GetInstance.ExecuteNonQuery(SQL, para)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(SQL, para)
         Return result > 0
     End Function
 End Class
@@ -132,7 +183,7 @@ End Class
 Public Class UsersBUS
 
     Private Shared Singleton As UsersBUS
-    Public Shared Function getInstance() As UsersBUS
+    Public Shared Function GetInstance() As UsersBUS
         If (Singleton Is Nothing) Then
             Singleton = New UsersBUS()
         End If

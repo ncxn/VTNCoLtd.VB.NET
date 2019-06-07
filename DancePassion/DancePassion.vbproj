@@ -173,58 +173,58 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="form\config\infoOfOrg.Designer.vb">
+    <Compile Include="Forms\config\infoOfOrg.Designer.vb">
       <DependentUpon>infoOfOrg.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\config\infoOfOrg.vb">
+    <Compile Include="Forms\config\infoOfOrg.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\config\Mails.Designer.vb">
+    <Compile Include="Forms\config\Mails.Designer.vb">
       <DependentUpon>Mails.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\config\Mails.vb">
+    <Compile Include="Forms\config\Mails.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\config\SMSconfig.Designer.vb">
+    <Compile Include="Forms\config\SMSconfig.Designer.vb">
       <DependentUpon>SMSconfig.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\config\SMSconfig.vb">
+    <Compile Include="Forms\config\SMSconfig.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\config\Setting.Designer.vb">
+    <Compile Include="Forms\config\Setting.Designer.vb">
       <DependentUpon>Setting.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\config\Setting.vb">
+    <Compile Include="Forms\config\Setting.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\FrmBase.Designer.vb">
+    <Compile Include="Forms\FrmBase.Designer.vb">
       <DependentUpon>FrmBase.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\FrmBase.vb">
+    <Compile Include="Forms\FrmBase.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\SplashScreen.Designer.vb">
+    <Compile Include="Forms\SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\SplashScreen.vb">
+    <Compile Include="Forms\SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\users\FrmUsersLogIn.Designer.vb">
+    <Compile Include="Forms\users\FrmUsersLogIn.Designer.vb">
       <DependentUpon>FrmUsersLogIn.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\users\FrmUsersLogIn.vb">
+    <Compile Include="Forms\users\FrmUsersLogIn.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\users\FrmUsers.Designer.vb">
+    <Compile Include="Forms\users\FrmUsers.Designer.vb">
       <DependentUpon>FrmUsers.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\users\FrmUsers.vb">
+    <Compile Include="Forms\users\FrmUsers.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\WaitForm.Designer.vb">
+    <Compile Include="Forms\WaitForm.Designer.vb">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\WaitForm.vb">
+    <Compile Include="Forms\WaitForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.vb">
@@ -233,11 +233,9 @@
     <Compile Include="FrmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="global\DBConnection.vb" />
-    <Compile Include="global\DBHelper.vb" />
-    <Compile Include="global\DBUtils.vb" />
-    <Compile Include="global\MYSQLSERVER.vb" />
-    <Compile Include="global\SQLiteDatabase.vb" />
+    <Compile Include="Global\DBConnection.vb" />
+    <Compile Include="Global\DBHelper.vb" />
+    <Compile Include="Global\DBUtils.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -248,71 +246,70 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="pros\config\cfgMail.vb" />
-    <Compile Include="pros\config\SMSconfig.vb" />
-    <Compile Include="pros\Product_type.vb" />
-    <Compile Include="pros\users\Users.vb" />
-    <Compile Include="uc\roles\UCRoles.Designer.vb">
+    <Compile Include="Programmes\config\cfgMail.vb" />
+    <Compile Include="Programmes\config\SMSconfig.vb" />
+    <Compile Include="Programmes\users\Users.vb" />
+    <Compile Include="User Controls\roles\UCRoles.Designer.vb">
       <DependentUpon>UCRoles.vb</DependentUpon>
     </Compile>
-    <Compile Include="uc\roles\UCRoles.vb">
+    <Compile Include="User Controls\roles\UCRoles.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc\roles\UCRolesUpdate.Designer.vb">
+    <Compile Include="User Controls\roles\UCRolesUpdate.Designer.vb">
       <DependentUpon>UCRolesUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="uc\roles\UCRolesUpdate.vb">
+    <Compile Include="User Controls\roles\UCRolesUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc\UCBase.Designer.vb">
+    <Compile Include="User Controls\UCBase.Designer.vb">
       <DependentUpon>UCBase.vb</DependentUpon>
     </Compile>
-    <Compile Include="uc\UCBase.vb">
+    <Compile Include="User Controls\UCBase.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc\users\UcUsers.Designer.vb">
+    <Compile Include="User Controls\users\UcUsers.Designer.vb">
       <DependentUpon>UcUsers.vb</DependentUpon>
     </Compile>
-    <Compile Include="uc\users\UcUsers.vb">
+    <Compile Include="User Controls\users\UcUsers.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc\users\UCUsersUpdate.Designer.vb">
+    <Compile Include="User Controls\users\UCUsersUpdate.Designer.vb">
       <DependentUpon>UCUsersUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="uc\users\UCUsersUpdate.vb">
+    <Compile Include="User Controls\users\UCUsersUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc\users\UserProfiles.Designer.vb">
+    <Compile Include="User Controls\users\UserProfiles.Designer.vb">
       <DependentUpon>UserProfiles.vb</DependentUpon>
     </Compile>
-    <Compile Include="uc\users\UserProfiles.vb">
+    <Compile Include="User Controls\users\UserProfiles.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <EmbeddedResource Include="form\config\infoOfOrg.resx">
+    <EmbeddedResource Include="Forms\config\infoOfOrg.resx">
       <DependentUpon>infoOfOrg.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\config\Mails.resx">
+    <EmbeddedResource Include="Forms\config\Mails.resx">
       <DependentUpon>Mails.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\config\Setting.resx">
+    <EmbeddedResource Include="Forms\config\Setting.resx">
       <DependentUpon>Setting.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\config\SMSconfig.resx">
+    <EmbeddedResource Include="Forms\config\SMSconfig.resx">
       <DependentUpon>SMSconfig.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\FrmBase.resx">
+    <EmbeddedResource Include="Forms\FrmBase.resx">
       <DependentUpon>FrmBase.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\SplashScreen.resx">
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\users\FrmUsersLogIn.resx">
+    <EmbeddedResource Include="Forms\users\FrmUsersLogIn.resx">
       <DependentUpon>FrmUsersLogIn.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\users\FrmUsers.resx">
+    <EmbeddedResource Include="Forms\users\FrmUsers.resx">
       <DependentUpon>FrmUsers.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\WaitForm.resx">
+    <EmbeddedResource Include="Forms\WaitForm.resx">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
@@ -325,22 +322,22 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc\roles\UCRoles.resx">
+    <EmbeddedResource Include="User Controls\roles\UCRoles.resx">
       <DependentUpon>UCRoles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc\roles\UCRolesUpdate.resx">
+    <EmbeddedResource Include="User Controls\roles\UCRolesUpdate.resx">
       <DependentUpon>UCRolesUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc\UCBase.resx">
+    <EmbeddedResource Include="User Controls\UCBase.resx">
       <DependentUpon>UCBase.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc\users\UcUsers.resx">
+    <EmbeddedResource Include="User Controls\users\UcUsers.resx">
       <DependentUpon>UcUsers.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc\users\UCUsersUpdate.resx">
+    <EmbeddedResource Include="User Controls\users\UCUsersUpdate.resx">
       <DependentUpon>UCUsersUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc\users\UserProfiles.resx">
+    <EmbeddedResource Include="User Controls\users\UserProfiles.resx">
       <DependentUpon>UserProfiles.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
