@@ -9,20 +9,51 @@ Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
 
 Public Class DBHelper
-    Private Sub New()
-    End Sub
 
     Private Shared Singleton As DBHelper
     Private ReadOnly connMYSQL As MySqlConnection = DBUtils.MYSQL()
     Private ReadOnly connMSSQL As SqlConnection = DBUtils.MSSQL()
     Private ReadOnly connSQLite As SQLiteConnection = DBUtils.SQLite()
     Private ReadOnly data As DataTable = New DataTable()
+    Private cmd As MySqlCommand
+    Private _sqlTran As MySqlTransaction
     Public Shared Function GetInstance() As DBHelper
         If (Singleton Is Nothing) Then
             Singleton = New DBHelper()
         End If
         Return Singleton
     End Function
+
+    Private Sub Open()
+        connMYSQL.Open()
+    End Sub
+
+    Private Sub Close()
+        connMYSQL.Close()
+    End Sub
+
+    Public Sub BeginTransaction()
+        connMYSQL.Open()
+        _sqlTran = connMYSQL.BeginTransaction()
+    End Sub
+
+    Public Sub CommitTransaction()
+        _sqlTran.Commit()
+        connMYSQL.Close()
+    End Sub
+
+    Public Sub RollbackTransaction()
+        _sqlTran.Rollback()
+        connMYSQL.Close()
+    End Sub
+
+    Public Sub CreateNewSqlCommand()
+        cmd = New MySqlCommand With {
+            .CommandType = CommandType.StoredProcedure,
+            .Connection = connMYSQL
+        }
+    End Sub
+
     Public Function GetDataTable(ByVal query As String, ByVal Optional parameter As Object() = Nothing) As DataTable
         connMYSQL.Open()
         Dim command As MySqlCommand = New MySqlCommand(query, connMYSQL)

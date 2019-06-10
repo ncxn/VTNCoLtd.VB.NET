@@ -65,17 +65,7 @@ Public Class FrmMain
     End Sub
 
     Private Sub Test()
-        'Dim connMYSQL As MySqlConnection = DBUtils.MYSQL()
-        'Dim myCommand As New MySqlCommand("select * from tblUsers", connMYSQL)
-        'connMYSQL.Open()
-        'Dim myReader As MySqlDataReader
-        'myReader = myCommand.ExecuteReader()
-        'connMYSQL.Close()
-        Dim fn As New UsersDAL
-        Dim UserList As UserCollection = fn.GetListUsers()
-        For Each user In UserList
-            MessageBox.Show(user.User_name.ToString())
-        Next
+
 
     End Sub
 End Class
