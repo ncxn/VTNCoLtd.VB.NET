@@ -10,7 +10,7 @@
             Case user_status.Locked
                 sMessage = "Người dùng này đã bị khóa"
             Case user_status.OK
-                Users.CurrentUser = objUser
+                CurrentUsers.CurrentUser = objUser
                 sMessage = "Đăng nhập thành công"
                 'Return
         End Select

@@ -14,8 +14,9 @@ Public Class DBUtils
             Dim port As Integer = 3306
             Dim database As String = "dps"
             Dim username As String = "root"
-            Dim password As String = "mmttmhh"
-        Return DBConnection.GetDBConnection(host, port, database, username, password)
+        Dim password As String = "mmttmhh"
+        Dim charset As String = "utf8"
+        Return DBConnection.GetDBConnection(host, port, database, username, password, charset)
     End Function
     Public Shared Function MSSQL() As SqlConnection
         Dim datasource As String = "MY-SERVER\SQLEXPRESS"

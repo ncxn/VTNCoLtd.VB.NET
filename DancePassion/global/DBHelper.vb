@@ -7,6 +7,7 @@ Imports System.Threading.Tasks
 Imports System.Data.SQLite
 Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
+Imports System.Runtime.InteropServices
 
 Public Class DBHelper
 
@@ -14,9 +15,10 @@ Public Class DBHelper
     Private ReadOnly connMYSQL As MySqlConnection = DBUtils.MYSQL()
     Private ReadOnly connMSSQL As SqlConnection = DBUtils.MSSQL()
     Private ReadOnly connSQLite As SQLiteConnection = DBUtils.SQLite()
-    Private ReadOnly data As DataTable = New DataTable()
-    Private cmd As MySqlCommand
-    Private _sqlTran As MySqlTransaction
+    Private ReadOnly dt As DataTable = New DataTable()
+    Private ReadOnly ds As DataSet = New DataSet()
+    'Private cmd As MySqlCommand
+    Private transactionScope As MySqlTransaction
     Public Shared Function GetInstance() As DBHelper
         If (Singleton Is Nothing) Then
             Singleton = New DBHelper()
@@ -24,131 +26,252 @@ Public Class DBHelper
         Return Singleton
     End Function
 
-    Private Sub Open()
+    Private Sub OpenConnection()
         connMYSQL.Open()
     End Sub
 
-    Private Sub Close()
+    Private Sub CloseConnection()
         connMYSQL.Close()
     End Sub
 
     Public Sub BeginTransaction()
-        connMYSQL.Open()
-        _sqlTran = connMYSQL.BeginTransaction()
+        OpenConnection()
+        transactionScope = connMYSQL.BeginTransaction()
     End Sub
 
     Public Sub CommitTransaction()
-        _sqlTran.Commit()
-        connMYSQL.Close()
+        transactionScope.Commit()
+        CloseConnection()
     End Sub
 
     Public Sub RollbackTransaction()
-        _sqlTran.Rollback()
-        connMYSQL.Close()
+        transactionScope.Rollback()
+        CloseConnection()
     End Sub
 
-    Public Sub CreateNewSqlCommand()
-        cmd = New MySqlCommand With {
-            .CommandType = CommandType.StoredProcedure,
+    Private Function GetCommand(ByVal commandText As String, ByVal commandType As CommandType) As MySqlCommand
+        Dim cmd = New MySqlCommand With {
+            .CommandText = commandText,
+            .CommandType = commandType,
             .Connection = connMYSQL
         }
-    End Sub
 
-    Public Function GetDataTable(ByVal query As String, ByVal Optional parameter As Object() = Nothing) As DataTable
-        connMYSQL.Open()
-        Dim command As MySqlCommand = New MySqlCommand(query, connMYSQL)
-        If parameter IsNot Nothing Then
-            Dim listPara As String() = query.Split(" "c)
-            Dim i As Integer = 0
-            For Each item As String In listPara
-                If item.Contains("@"c) Then
-                    command.Parameters.AddWithValue(item, parameter(i))
-                    i = i + 1
-                End If
-            Next
-        End If
-        Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(command)
-        adapter.Fill(data)
-        connMYSQL.Close()
-        Return data
+        Return cmd
+    End Function
+    Private Function GetCommandWithTransaction(ByVal commandText As String, ByVal commandType As CommandType) As MySqlCommand
+        Dim cmd = New MySqlCommand With {
+            .CommandText = commandText,
+            .CommandType = commandType,
+            .Connection = connMYSQL,
+            .Transaction = transactionScope
+        }
+
+        Return cmd
     End Function
 
-    Public Function ExecuteNonQuery(ByVal query As String, ByVal Optional parameter As Object() = Nothing) As Integer
-        Dim data As Integer = 0
+    Private Function AddParameter(ByVal name As String, ByVal value As Object) As MySqlParameter
+        Try
+            Dim Parameter = New MySqlParameter With {
+                .ParameterName = name,
+                .Value = value,
+                .Direction = ParameterDirection.Input
+            }
 
-        Using conn As MySqlConnection = DBUtils.MYSQL()
-            conn.Open()
-            Dim command As MySqlCommand = New MySqlCommand(query, conn)
+            Return Parameter
+        Catch ex As Exception
+            Throw New Exception("Invalid parameter")
+        End Try
+    End Function
 
-            If parameter IsNot Nothing Then
-                Dim listPara As String() = query.Split(" "c)
+    Public Function GetParameter(ByVal name() As String, ByVal value() As Object) As List(Of MySqlParameter)
+        Try
+            Dim parameters = New List(Of MySqlParameter)
+
+            For index = 0 To name.Count - 1
+                parameters.Add(AddParameter(name(index), value(index)))
+            Next
+            Return parameters
+        Catch ex As Exception
+            Throw New Exception("Invalid parameter")
+        End Try
+    End Function
+
+    Public Function GetDataTable(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As DataTable
+        OpenConnection()
+
+        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
+
+            If parameters IsNot Nothing Then
+                For Each parameter In parameters
+                    cmd.Parameters.Add(parameter)
+                Next
+            End If
+
+            Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+            adapter.Fill(dt)
+            Return dt
+
+        End Using
+
+        CloseConnection()
+    End Function
+
+    Public Function GetDataSet(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As DataSet
+        OpenConnection()
+
+        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
+
+            If parameters IsNot Nothing Then
+
+                For Each parameter In parameters
+                    cmd.Parameters.Add(parameter)
+                Next
+            End If
+
+            Dim ds = New DataSet()
+            Dim dataAdaper = New MySqlDataAdapter(cmd)
+            dataAdaper.Fill(ds)
+            Return ds
+
+        End Using
+
+        CloseConnection()
+
+    End Function
+
+    Public Function GetDataReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As MySqlDataReader
+        OpenConnection()
+
+        Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+
+        If parameters IsNot Nothing Then
+            For Each parameter In parameters
+                cmd.Parameters.Add(parameter)
+            Next
+        End If
+
+        Return cmd.ExecuteReader(CommandBehavior.CloseConnection)
+    End Function
+
+    Public Function GetScalarValue(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As Object
+        OpenConnection()
+
+        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
+            If parameters IsNot Nothing Then
+                For Each parameter In parameters
+                    cmd.Parameters.Add(parameter)
+                Next
+            End If
+
+            Return cmd.ExecuteScalar()
+        End Using
+
+        CloseConnection()
+    End Function
+
+    Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As Integer
+
+        Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+        If parameters IsNot Nothing Then
+            For Each parameter In parameters
+                cmd.Parameters.Add(parameter)
+            Next
+        End If
+
+        OpenConnection()
+        Return cmd.ExecuteNonQuery()
+        CloseConnection()
+    End Function
+
+    Public Function ExecuteNonQuerytWithTransaction(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As Integer
+        Dim result As Integer = 0
+        BeginTransaction()
+
+        Dim cmd As MySqlCommand = GetCommandWithTransaction(commandText, commandType)
+
+        If parameters IsNot Nothing Then
+            For Each parameter In parameters
+                cmd.Parameters.Add(parameter)
+            Next
+        End If
+
+        Try
+            result = cmd.ExecuteNonQuery()
+            CommitTransaction()
+        Catch ex As Exception
+            RollbackTransaction()
+            result = 0
+        End Try
+
+        Return Result
+    End Function
+
+    Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Integer
+        OpenConnection()
+        Dim result As Integer = 0
+
+        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
+            If parameters IsNot Nothing Then
+                Dim listPara As String() = commandText.Split(" "c)
                 Dim i As Integer = 0
 
                 For Each item As String In listPara
 
                     If item.Contains("@"c) Then
-                        command.Parameters.AddWithValue(item, parameter(i))
+                        cmd.Parameters.AddWithValue(item, parameters(i))
                         i = i + 1
                     End If
                 Next
             End If
-
-            data = command.ExecuteNonQuery()
-            conn.Close()
+            result = cmd.ExecuteNonQuery()
         End Using
-
-        Return data
+        CloseConnection()
+        Return result
     End Function
 
-    Public Function ExecuteScalar(ByVal query As String, ByVal Optional parameter As Object() = Nothing) As Object
-        Dim data As Object = 0
+    Public Function ExecuteScalar(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
+        OpenConnection()
+        Dim Result As Object = 0
 
-        Using conn As MySqlConnection = DBUtils.MYSQL()
-            conn.Open()
-            Dim command As MySqlCommand = New MySqlCommand(query, conn)
-
-            If parameter IsNot Nothing Then
-                Dim listPara As String() = query.Split(" "c)
+        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
+            If parameters IsNot Nothing Then
+                Dim listPara As String() = commandText.Split(" "c)
                 Dim i As Integer = 0
 
                 For Each item As String In listPara
 
                     If item.Contains("@"c) Then
-                        command.Parameters.AddWithValue(item, parameter(i))
+                        cmd.Parameters.AddWithValue(item, parameters(i))
                         i = i + 1
                     End If
                 Next
             End If
-
-            data = command.ExecuteScalar()
-            conn.Close()
+            Result = cmd.ExecuteScalar()
         End Using
-
-        Return data
+        OpenConnection()
+        Return Result
     End Function
-    Public Function ExecuteReader(ByVal query As String, ByVal Optional parameter As Object() = Nothing) As Object
+    Public Function ExecuteReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
 
-        Dim data As MySqlDataReader
-        Dim command As MySqlCommand = New MySqlCommand(query, connMYSQL)
+        Dim Result As MySqlDataReader
+        Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
 
-        If parameter IsNot Nothing Then
-            Dim listPara As String() = query.Split(" "c)
+        If parameters IsNot Nothing Then
+            Dim listPara As String() = commandText.Split(" "c)
             Dim i As Integer = 0
 
             For Each item As String In listPara
 
                 If item.Contains("@"c) Then
-                    command.Parameters.AddWithValue(item, parameter(i))
+                    cmd.Parameters.AddWithValue(item, parameters(i))
                     i = i + 1
                 End If
             Next
         End If
 
-        connMYSQL.Open()
-        data = command.ExecuteReader(CommandBehavior.CloseConnection)
+        OpenConnection()
+        Result = cmd.ExecuteReader(CommandBehavior.CloseConnection)
 
-        Return data
-
+        Return Result
     End Function
 End Class
-

@@ -65,7 +65,30 @@ Public Class FrmMain
     End Sub
 
     Private Sub Test()
+        Dim user As New UsersDTO With {
+            .User_name = "Ông nội 1",
+            .User_first_name = "thử",
+            .User_last_name = "nghiệm",
+            .User_email = "e@domain.com",
+            .User_password = "111",
+            .User_status = 1,
+            .User_created_at = Now(),
+            .User_updated_at = Now
+            }
 
-
+        Dim fn As New UsersDAL
+        If fn.InsertUsers(user) Then
+            MessageBox.Show("thành công nhé ku")
+        End If
+        'If DBHelper.GetInstance.ExecuteNonQuerytWithTransaction("INSERT INTO tblUsers_Roles(user_id, role_name) VALUES (3,'SAdmin')", CommandType.Text) Then
+        '    'Dim user As New UsersDTO
+        '    'While dbReader.Read()
+        '    MessageBox.Show("thành công")
+        '    'End While
+        '    'dbReader.Close()
+        '    'End While
+        'Else
+        '    MessageBox.Show("Thất bại")
+        'End If
     End Sub
 End Class
