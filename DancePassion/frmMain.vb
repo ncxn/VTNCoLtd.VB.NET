@@ -66,7 +66,7 @@ Public Class FrmMain
 
     Private Sub Test()
         Dim user As New UsersDTO With {
-            .User_name = "Ông nội 1",
+            .User_name = "Ông nội",
             .User_first_name = "thử",
             .User_last_name = "nghiệm",
             .User_email = "e@domain.com",
@@ -79,6 +79,8 @@ Public Class FrmMain
         Dim fn As New UsersDAL
         If fn.InsertUsers(user) Then
             MessageBox.Show("thành công nhé ku")
+        Else
+            MessageBox.Show("Thất bại nặng nề")
         End If
         'If DBHelper.GetInstance.ExecuteNonQuerytWithTransaction("INSERT INTO tblUsers_Roles(user_id, role_name) VALUES (3,'SAdmin')", CommandType.Text) Then
         '    'Dim user As New UsersDTO

@@ -10,14 +10,13 @@ Imports MySql.Data.MySqlClient
 Imports System.Runtime.InteropServices
 
 Public Class DBHelper
-
+    Dim DBUtils As New DBUtils
     Private Shared Singleton As DBHelper
-    Private ReadOnly connMYSQL As MySqlConnection = DBUtils.MYSQL()
-    Private ReadOnly connMSSQL As SqlConnection = DBUtils.MSSQL()
-    Private ReadOnly connSQLite As SQLiteConnection = DBUtils.SQLite()
+    Private ReadOnly connMYSQL As MySqlConnection = DBUtils.GetInstance.MYSQL()
+    Private ReadOnly connMSSQL As SqlConnection = DBUtils.GetInstance.MSSQL()
+    Private ReadOnly connSQLite As SQLiteConnection = DBUtils.GetInstance.SQLite()
     Private ReadOnly dt As DataTable = New DataTable()
     Private ReadOnly ds As DataSet = New DataSet()
-    'Private cmd As MySqlCommand
     Private transactionScope As MySqlTransaction
     Public Shared Function GetInstance() As DBHelper
         If (Singleton Is Nothing) Then
@@ -26,12 +25,16 @@ Public Class DBHelper
         Return Singleton
     End Function
 
-    Private Sub OpenConnection()
-        connMYSQL.Open()
+    Public Sub OpenConnection()
+        If connMYSQL.State = ConnectionState.Closed Then
+            connMYSQL.Open()
+        End If
     End Sub
 
-    Private Sub CloseConnection()
-        connMYSQL.Close()
+    Public Sub CloseConnection()
+        If connMYSQL.State = ConnectionState.Open Then
+            connMYSQL.Close()
+        End If
     End Sub
 
     Public Sub BeginTransaction()
@@ -96,15 +99,16 @@ Public Class DBHelper
         End Try
     End Function
 
-    Public Function GetDataTable(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As DataTable
+    Public Function GetDataTable(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As DataTable
         OpenConnection()
 
         Using cmd As MySqlCommand = GetCommand(commandText, commandType)
 
             If parameters IsNot Nothing Then
-                For Each parameter In parameters
-                    cmd.Parameters.Add(parameter)
-                Next
+                'For Each parameter In parameters
+                '    cmd.Parameters.Add(parameter)
+                'Next
+                cmd.Parameters.Add(parameters.ToArray())
             End If
 
             Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(cmd)
@@ -116,16 +120,16 @@ Public Class DBHelper
         CloseConnection()
     End Function
 
-    Public Function GetDataSet(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As DataSet
+    Public Function GetDataSet(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As DataSet
         OpenConnection()
 
         Using cmd As MySqlCommand = GetCommand(commandText, commandType)
 
             If parameters IsNot Nothing Then
-
-                For Each parameter In parameters
-                    cmd.Parameters.Add(parameter)
-                Next
+                cmd.Parameters.AddRange(parameters.ToArray())
+                'For Each parameter In parameters
+                '    cmd.Parameters.Add(parameters.ToArray)
+                ''Next
             End If
 
             Dim ds = New DataSet()
@@ -139,43 +143,45 @@ Public Class DBHelper
 
     End Function
 
-    Public Function GetDataReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As MySqlDataReader
+    Public Function GetDataReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As MySqlDataReader
         OpenConnection()
 
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
 
         If parameters IsNot Nothing Then
-            For Each parameter In parameters
-                cmd.Parameters.Add(parameter)
-            Next
+            'For Each parameter In parameters
+            '    cmd.Parameters.Add(parameter)
+            'Next
+            cmd.Parameters.AddRange(parameters.ToArray())
         End If
 
         Return cmd.ExecuteReader(CommandBehavior.CloseConnection)
     End Function
 
-    Public Function GetScalarValue(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As Object
+    Public Function GetScalarValue(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter()) = Nothing) As Object
         OpenConnection()
 
         Using cmd As MySqlCommand = GetCommand(commandText, commandType)
             If parameters IsNot Nothing Then
-                For Each parameter In parameters
-                    cmd.Parameters.Add(parameter)
-                Next
+                'For Each parameter In parameters
+                '    cmd.Parameters.AddRange(parameter.ToArray)
+                'Next
+                cmd.Parameters.AddRange(parameters.ToArray)
             End If
-
             Return cmd.ExecuteScalar()
         End Using
 
         CloseConnection()
     End Function
 
-    Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As Integer
+    Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
 
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
         If parameters IsNot Nothing Then
-            For Each parameter In parameters
-                cmd.Parameters.Add(parameter)
-            Next
+            '    For Each parameter In parameters
+            '        cmd.Parameters.Add(parameter)
+            '    Next
+            cmd.Parameters.AddRange(parameters.ToArray())
         End If
 
         OpenConnection()
@@ -183,16 +189,17 @@ Public Class DBHelper
         CloseConnection()
     End Function
 
-    Public Function ExecuteNonQuerytWithTransaction(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As MySqlParameter() = Nothing) As Integer
+    Public Function ExecuteNonQuerytWithTransaction(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
         Dim result As Integer = 0
         BeginTransaction()
 
         Dim cmd As MySqlCommand = GetCommandWithTransaction(commandText, commandType)
 
         If parameters IsNot Nothing Then
-            For Each parameter In parameters
-                cmd.Parameters.Add(parameter)
-            Next
+            'For Each parameter In parameters
+            '    cmd.Parameters.Add(parameter)
+            'Next
+            cmd.Parameters.Add(parameters.ToArray())
         End If
 
         Try
@@ -201,9 +208,11 @@ Public Class DBHelper
         Catch ex As Exception
             RollbackTransaction()
             result = 0
+        Finally
+            CloseConnection()
         End Try
 
-        Return Result
+        Return result
     End Function
 
     Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Integer

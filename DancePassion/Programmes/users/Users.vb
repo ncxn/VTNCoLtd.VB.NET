@@ -119,6 +119,7 @@ Public Enum User_status
     OK = 1
     Locked = 2
     NotExists = 3
+    Wrongpass = 4
 End Enum
 #End Region
 #Region "Data Access"
@@ -184,7 +185,12 @@ Public Class UsersDAL
 
     Public Function GetUserByUserName(user_name As String) As UsersDTO
         Dim ObjectUser As New UsersDTO
-        Dim Reader As Object = DBHelper.GetInstance.ExecuteReader("select * from tblUsers where User_name = @user_name", CommandType.Text, New Object() {user_name})
+        Dim strProc As String = "procFindUserByUserName"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("@p_user_name", user_name)
+        }
+
+        Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
 
         If Reader.Read() Then
             With ObjectUser
@@ -208,10 +214,10 @@ Public Class UsersDAL
     Public Function InsertUsers(Users As UsersDTO) As Boolean
         Dim strSQL = "procInsertUsers"
 
-        Dim paraName() As String = {"@user_name", "@user_first_name", "@user_last_name", "@user_email", "@user_password", "@user_status", "@user_created_at", "@user_updated_at"}
+        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
         Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
         Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
-        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters.ToArray)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
     Public Function UpdateUsers(Users As UsersDTO) As Boolean
@@ -230,9 +236,9 @@ Public Class UsersDAL
         Return result > 0
     End Function
     Public Function Login(ByVal userName As String, ByVal passWord As String, ByRef status As User_status) As UsersDTO
-        'Dim query As String = "Select * from tblUsers where user_name = @userName AND user_password = @passWord"
+
         Dim objUser As UsersDTO = GetUserByUserName(userName)
-        If objUser IsNot Nothing Then
+        If objUser.User_name IsNot Nothing Then
             If objUser.User_password = passWord Then
                 If objUser.User_status = 1 Then
                     status = User_status.OK
@@ -240,7 +246,7 @@ Public Class UsersDAL
                     status = User_status.Locked
                 End If
             Else
-                status = User_status.NotExists
+                status = User_status.Wrongpass
             End If
         Else
             status = User_status.NotExists
