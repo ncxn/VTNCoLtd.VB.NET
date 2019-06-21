@@ -19,41 +19,43 @@ Partial Class UCRoles
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.DockManager1 = New DevExpress.XtraBars.Docking.DockManager(Me.components)
-        Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
-        Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
-        CType(Me.DockManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GridControlRoles = New DevExpress.XtraGrid.GridControl()
+        Me.GridViewRoles = New DevExpress.XtraGrid.Views.Grid.GridView()
+        CType(Me.GridControlRoles, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewRoles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DockManager1
+        'GridControlRoles
         '
-        Me.DockManager1.Form = Me
-        Me.DockManager1.TopZIndexControls.AddRange(New String() {"DevExpress.XtraBars.BarDockControl", "DevExpress.XtraBars.StandaloneBarDockControl", "System.Windows.Forms.StatusBar", "System.Windows.Forms.MenuStrip", "System.Windows.Forms.StatusStrip", "DevExpress.XtraBars.Ribbon.RibbonStatusBar", "DevExpress.XtraBars.Ribbon.RibbonControl", "DevExpress.XtraBars.Navigation.OfficeNavigationBar", "DevExpress.XtraBars.Navigation.TileNavPane", "DevExpress.XtraBars.TabFormControl", "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl"})
+        Me.GridControlRoles.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControlRoles.Location = New System.Drawing.Point(0, 239)
+        Me.GridControlRoles.MainView = Me.GridViewRoles
+        Me.GridControlRoles.MenuManager = Me.RibbonControlBaseOnUserControl
+        Me.GridControlRoles.Name = "GridControlRoles"
+        Me.GridControlRoles.Size = New System.Drawing.Size(827, 205)
+        Me.GridControlRoles.TabIndex = 1
+        Me.GridControlRoles.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewRoles})
         '
-        'DocumentManager1
+        'GridViewRoles
         '
-        Me.DocumentManager1.ContainerControl = Me
-        Me.DocumentManager1.View = Me.TabbedView1
-        Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
+        Me.GridViewRoles.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.GridViewRoles.GridControl = Me.GridControlRoles
+        Me.GridViewRoles.Name = "GridViewRoles"
         '
         'UCRoles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.GridControlRoles)
         Me.Name = "UCRoles"
         Me.Size = New System.Drawing.Size(827, 444)
-        CType(Me.DockManager1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Controls.SetChildIndex(Me.GridControlRoles, 0)
+        CType(Me.GridControlRoles, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridViewRoles, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents DockManager1 As DevExpress.XtraBars.Docking.DockManager
-    Friend WithEvents DocumentManager1 As DevExpress.XtraBars.Docking2010.DocumentManager
-    Friend WithEvents TabbedView1 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
+    Friend WithEvents GridControlRoles As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GridViewRoles As DevExpress.XtraGrid.Views.Grid.GridView
 End Class

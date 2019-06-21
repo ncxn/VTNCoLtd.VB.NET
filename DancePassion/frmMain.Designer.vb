@@ -109,13 +109,17 @@ Partial Class FrmMain
         Me.RibbonPageGroup8 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
-        Me.DocumentManagerOnMain = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
-        Me.TabbedViewOnMain = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+        Me.NativeMdiViewOnMain = New DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView(Me.components)
+        Me.WindowsUIViewOnMain = New DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView(Me.components)
+        Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
+        Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Slide_menu.SuspendLayout()
-        CType(Me.DocumentManagerOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NativeMdiViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WindowsUIViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainControlRibbon
@@ -128,6 +132,7 @@ Partial Class FrmMain
         Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImageSize = New System.Drawing.Size(32, 32)
         Me.MainControlRibbon.ApplicationButtonKeyTip = "ĐĂNG NHẬP VÀO TÀI KHOẢN"
         Me.MainControlRibbon.AutoSizeItems = True
+        Me.MainControlRibbon.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal
         Me.MainControlRibbon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MainControlRibbon.ExpandCollapseItem.Id = 0
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
@@ -607,7 +612,7 @@ Partial Class FrmMain
         '
         'RibbonPageGroup_Database
         '
-        Me.RibbonPageGroup_Database.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_CoSoDuLieu.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RibbonPageGroup_Database.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Database.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.RibbonPageGroup_Database.ItemLinks.Add(Me.KhoiTao_dbs_btn)
         Me.RibbonPageGroup_Database.ItemLinks.Add(Me.KetNoi_dbs_btn)
         Me.RibbonPageGroup_Database.ItemLinks.Add(Me.LuuTru_dbs_btn)
@@ -618,7 +623,7 @@ Partial Class FrmMain
         'RibbonPageGroup_Configuration
         '
         Me.RibbonPageGroup_Configuration.AllowTextClipping = False
-        Me.RibbonPageGroup_Configuration.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_CauHinhChung.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RibbonPageGroup_Configuration.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Configuration.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.DoanhNghiep_CauHinh_btn)
         Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.CongCu__CauHinh_btn)
         Me.RibbonPageGroup_Configuration.Name = "RibbonPageGroup_Configuration"
@@ -627,7 +632,7 @@ Partial Class FrmMain
         '
         'RibbonPageGroup_Peoples
         '
-        Me.RibbonPageGroup_Peoples.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_NhanSu.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RibbonPageGroup_Peoples.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Peoples.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.NhomNhanVien_NhanVien_btn)
         Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.NhanVien_NhanVien_btn)
         Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.QuyenHan_NhanVien_btn)
@@ -793,17 +798,13 @@ Partial Class FrmMain
         Me.BarButtonItem1.Id = 1
         Me.BarButtonItem1.Name = "BarButtonItem1"
         '
-        'DocumentManagerOnMain
+        'DocumentManager1
         '
-        Me.DocumentManagerOnMain.MdiParent = Me
-        Me.DocumentManagerOnMain.MenuManager = Me.MainControlRibbon
-        Me.DocumentManagerOnMain.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
-        Me.DocumentManagerOnMain.ShowThumbnailsInTaskBar = DevExpress.Utils.DefaultBoolean.[True]
-        Me.DocumentManagerOnMain.View = Me.TabbedViewOnMain
-        Me.DocumentManagerOnMain.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedViewOnMain})
-        '
-        'TabbedViewOnMain
-        '
+        Me.DocumentManager1.MdiParent = Me
+        Me.DocumentManager1.MenuManager = Me.MainControlRibbon
+        Me.DocumentManager1.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
+        Me.DocumentManager1.View = Me.TabbedView1
+        Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
         '
         'FrmMain
         '
@@ -823,14 +824,14 @@ Partial Class FrmMain
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Slide_menu.ResumeLayout(False)
-        CType(Me.DocumentManagerOnMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NativeMdiViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WindowsUIViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents MainControlRibbon As DevExpress.XtraBars.Ribbon.RibbonControl
     Friend WithEvents RibbonStatusBar As DevExpress.XtraBars.Ribbon.RibbonStatusBar
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents KhoiTao_dbs_btn As DevExpress.XtraBars.BarButtonItem
@@ -918,6 +919,9 @@ Partial Class FrmMain
     Friend WithEvents Sua As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
     Friend WithEvents BackstageViewClientControl2 As DevExpress.XtraBars.Ribbon.BackstageViewClientControl
     Friend WithEvents TaiKhoanCaNhan As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
-    Friend WithEvents DocumentManagerOnMain As DevExpress.XtraBars.Docking2010.DocumentManager
-    Friend WithEvents TabbedViewOnMain As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
+    Friend WithEvents NativeMdiViewOnMain As DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView
+    Friend WithEvents WindowsUIViewOnMain As DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView
+    Private WithEvents MainControlRibbon As DevExpress.XtraBars.Ribbon.RibbonControl
+    Friend WithEvents DocumentManager1 As DevExpress.XtraBars.Docking2010.DocumentManager
+    Friend WithEvents TabbedView1 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
 End Class

@@ -1,7 +1,7 @@
 ﻿Imports System.Security.Cryptography
 Imports MySql.Data.MySqlClient
 
-#Region "DTO Users"
+#Region " DTO Users"
 'table users
 Public Class UsersDTO
     Private _user_id As Integer
@@ -94,12 +94,13 @@ Public Class UsersDTO
             _user_id = value
         End Set
     End Property
+
 End Class
 #End Region
-#Region "Current User"
-Public Class CurrentUsers
+#Region " Current User"
+Public Class CurrentUser
     Private Shared _CurrentUser As UsersDTO
-    Public Shared Property CurrentUser As UsersDTO
+    Public Shared Property User As UsersDTO
         Get
             Return _CurrentUser
         End Get
@@ -109,51 +110,50 @@ Public Class CurrentUsers
     End Property
 End Class
 #End Region
-#Region "User Collection"
+#Region " User Collection"
 Public Class UserCollection
     Inherits List(Of UsersDTO)
 End Class
 #End Region
-#Region "User Status"
+#Region " User Status"
 Public Enum User_status
-    OK = 1
+    Exits = 0
+    Active = 1
     Locked = 2
     NotExists = 3
-    Wrongpass = 4
+    WrongPass = 4
 End Enum
 #End Region
-#Region "Data Access"
-Public Class UsersDAL
-    Private Shared Singleton As UsersDAL
-    Public Shared Function GetInstance() As UsersDAL
+#Region " Data Access User"
+Public Class Users
+    Private Shared Singleton As Users
+    Public Shared Function GetInstance() As Users
         If Singleton Is Nothing Then
-            Singleton = New UsersDAL()
+            Singleton = New Users()
         End If
         Return Singleton
     End Function
-    Public Function GetUsers() As DataTable
-        Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("select * from tblUsers", CommandType.Text)
+    Public Function GetDataTableUsers() As DataTable
+        Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllUsers", CommandType.StoredProcedure)
         Return dtUsers
     End Function
     Public Function GetListUsers() As UserCollection
         Dim UserList As New UserCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.ExecuteReader("select * from tblUsers", CommandType.Text)
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllUsers", CommandType.StoredProcedure)
 
         While Reader.Read()
             Dim objUser As New UsersDTO With {
-                .User_id = Reader("User_id").ToString(),
-                .User_name = Reader("User_name").ToString(),
-                .User_first_name = Reader("User_first_name").ToString(),
-                .User_last_name = Reader("User_last_name").ToString(),
-                .User_email = Reader("User_email").ToString(),
-                .User_password = Reader("User_password").ToString(),
-                .User_status = CInt(Reader("User_password")),
-                .User_created_at = CDate(Reader("User_created_at")),
-                .User_updated_at = CDate(Reader("User_updated_at"))
+                .User_id = Reader("user_id").ToString(),
+                .User_name = Reader("user_name").ToString(),
+                .User_first_name = Reader("user_first_name").ToString(),
+                .User_last_name = Reader("user_last_name").ToString(),
+                .User_email = Reader("user_email").ToString(),
+                .User_status = CInt(Reader("user_status")),
+                .User_created_at = CDate(Reader("user_created_at")),
+                .User_updated_at = CDate(Reader("user_updated_at"))
             }
             UserList.Add(objUser)
         End While
-
         Reader.Close()
 
         Return UserList
@@ -162,8 +162,11 @@ Public Class UsersDAL
 
     Public Function GetUserByID(user_id As Integer) As UsersDTO
         Dim ObjectUser As New UsersDTO
-        Dim Reader As Object = DBHelper.GetInstance.ExecuteReader("select * from tblUsers where User_id = @User_id", CommandType.Text, New Object() {user_id})
-
+        Dim strProc As String = "procGetUserByID"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("@p_user_id", user_id)
+        }
+        Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
         If Reader.Read() Then
             With ObjectUser
                 .User_id = Reader("User_id").ToString()
@@ -177,15 +180,15 @@ Public Class UsersDAL
                 .User_updated_at = CDate(Reader("User_updated_at"))
             End With
         End If
-
         Reader.Close()
-        Return objectUser
+
+        Return ObjectUser
 
     End Function
 
     Public Function GetUserByUserName(user_name As String) As UsersDTO
         Dim ObjectUser As New UsersDTO
-        Dim strProc As String = "procFindUserByUserName"
+        Dim strProc As String = "procGetUserByUserName"
         Dim parameters As New List(Of MySqlParameter) From {
             New MySqlParameter("@p_user_name", user_name)
         }
@@ -206,8 +209,8 @@ Public Class UsersDAL
 
             End With
         End If
-
         Reader.Close()
+
         Return ObjectUser
 
     End Function
@@ -221,18 +224,13 @@ Public Class UsersDAL
         Return result > 0
     End Function
     Public Function UpdateUsers(Users As UsersDTO) As Boolean
-        Dim SQL As String = String.Format("UPDATE tblUsers
-                                           SET user_name = @user_name,
-                                               user_first_name = @user_first_name,
-                                               user_last_name = @user_last_name,
-                                               user_password = @user_password,
-                                               user_email = @user_email,
-                                               user_status = @user_status,
-                                               user_updated_at = @user_updated_at,
-                                               user_created_at = @user_created_at
-                                           WHERE user_id = @user_id")
-        Dim para As Object = {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(SQL, para)
+        Dim strSQL = "procInsertUsers"
+
+        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
+        Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
+        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
         Return result > 0
     End Function
     Public Function Login(ByVal userName As String, ByVal passWord As String, ByRef status As User_status) As UsersDTO
@@ -241,12 +239,12 @@ Public Class UsersDAL
         If objUser.User_name IsNot Nothing Then
             If objUser.User_password = passWord Then
                 If objUser.User_status = 1 Then
-                    status = User_status.OK
+                    status = User_status.Active
                 Else
                     status = User_status.Locked
                 End If
             Else
-                status = User_status.Wrongpass
+                status = User_status.WrongPass
             End If
         Else
             status = User_status.NotExists
@@ -254,19 +252,5 @@ Public Class UsersDAL
 
         Return objUser
     End Function
-End Class
-#End Region
-
-#Region "User BUS"
-Public Class Users
-
-    Private Shared Singleton As Users
-    Public Shared Function GetInstance() As Users
-        If (Singleton Is Nothing) Then
-            Singleton = New Users()
-        End If
-        Return Singleton
-    End Function
-
 End Class
 #End Region

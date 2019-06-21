@@ -1007,7 +1007,7 @@
   <data name="MainControlRibbon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
-  <data name="RibbonPageGroup_CoSoDuLieu.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="RibbonPageGroup_Database.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -1027,7 +1027,7 @@
   <data name="RibbonPageGroup_Database.Text" xml:space="preserve">
     <value>Cơ sở dữ liệu</value>
   </data>
-  <data name="RibbonPageGroup_CauHinhChung.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="RibbonPageGroup_Configuration.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -1053,7 +1053,7 @@
   <data name="RibbonPageGroup_Configuration.Text" xml:space="preserve">
     <value>Cấu hình chung</value>
   </data>
-  <data name="RibbonPageGroup_NhanSu.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="RibbonPageGroup_Peoples.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -1172,7 +1172,7 @@
   <data name="BarButtonItem1.Caption" xml:space="preserve">
     <value>BarButtonItem1</value>
   </data>
-  <metadata name="DocumentManagerOnMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="DocumentManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1694,16 +1694,28 @@
   <data name="&gt;&gt;BarButtonItem1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;DocumentManagerOnMain.Name" xml:space="preserve">
-    <value>DocumentManagerOnMain</value>
+  <data name="&gt;&gt;NativeMdiViewOnMain.Name" xml:space="preserve">
+    <value>NativeMdiViewOnMain</value>
   </data>
-  <data name="&gt;&gt;DocumentManagerOnMain.Type" xml:space="preserve">
+  <data name="&gt;&gt;NativeMdiViewOnMain.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;WindowsUIViewOnMain.Name" xml:space="preserve">
+    <value>WindowsUIViewOnMain</value>
+  </data>
+  <data name="&gt;&gt;WindowsUIViewOnMain.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocumentManager1.Name" xml:space="preserve">
+    <value>DocumentManager1</value>
+  </data>
+  <data name="&gt;&gt;DocumentManager1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Docking2010.DocumentManager, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;TabbedViewOnMain.Name" xml:space="preserve">
-    <value>TabbedViewOnMain</value>
+  <data name="&gt;&gt;TabbedView1.Name" xml:space="preserve">
+    <value>TabbedView1</value>
   </data>
-  <data name="&gt;&gt;TabbedViewOnMain.Type" xml:space="preserve">
+  <data name="&gt;&gt;TabbedView1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

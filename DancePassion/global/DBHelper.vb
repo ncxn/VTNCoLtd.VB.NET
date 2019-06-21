@@ -13,10 +13,8 @@ Public Class DBHelper
     Dim DBUtils As New DBUtils
     Private Shared Singleton As DBHelper
     Private ReadOnly connMYSQL As MySqlConnection = DBUtils.GetInstance.MYSQL()
-    Private ReadOnly connMSSQL As SqlConnection = DBUtils.GetInstance.MSSQL()
-    Private ReadOnly connSQLite As SQLiteConnection = DBUtils.GetInstance.SQLite()
-    Private ReadOnly dt As DataTable = New DataTable()
-    Private ReadOnly ds As DataSet = New DataSet()
+    'Private ReadOnly connMSSQL As SqlConnection = DBUtils.GetInstance.MSSQL()
+    'Private ReadOnly connSQLite As SQLiteConnection = DBUtils.GetInstance.SQLite()
     Private transactionScope As MySqlTransaction
     Public Shared Function GetInstance() As DBHelper
         If (Singleton Is Nothing) Then
@@ -100,24 +98,21 @@ Public Class DBHelper
     End Function
 
     Public Function GetDataTable(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As DataTable
-        OpenConnection()
-
-        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
-
-            If parameters IsNot Nothing Then
-                'For Each parameter In parameters
-                '    cmd.Parameters.Add(parameter)
-                'Next
-                cmd.Parameters.Add(parameters.ToArray())
-            End If
-
-            Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+        Dim dt As DataTable = New DataTable()
+        Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+        If parameters IsNot Nothing Then
+            cmd.Parameters.Add(parameters.ToArray())
+        End If
+        Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+        Try
+            OpenConnection()
             adapter.Fill(dt)
-            Return dt
-
-        End Using
-
-        CloseConnection()
+        Catch ex As Exception
+            Throw New Exception("Can not fill data to datatable")
+        Finally
+            CloseConnection()
+        End Try
+        Return dt
     End Function
 
     Public Function GetDataSet(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As DataSet
@@ -162,14 +157,14 @@ Public Class DBHelper
         OpenConnection()
 
         Using cmd As MySqlCommand = GetCommand(commandText, commandType)
-            If parameters IsNot Nothing Then
-                'For Each parameter In parameters
-                '    cmd.Parameters.AddRange(parameter.ToArray)
-                'Next
-                cmd.Parameters.AddRange(parameters.ToArray)
-            End If
-            Return cmd.ExecuteScalar()
-        End Using
+                If parameters IsNot Nothing Then
+                    'For Each parameter In parameters
+                    '    cmd.Parameters.AddRange(parameter.ToArray)
+                    'Next
+                    cmd.Parameters.AddRange(parameters.ToArray)
+                End If
+                Return cmd.ExecuteScalar()
+            End Using
 
         CloseConnection()
     End Function

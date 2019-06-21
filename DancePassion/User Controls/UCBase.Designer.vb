@@ -19,79 +19,172 @@ Partial Class UCBase
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
-        Me.BarBtn_Add = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarBtn_Update = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarBtn_Delete = New DevExpress.XtraBars.BarButtonItem()
+        Me.RibbonControlBaseOnUserControl = New DevExpress.XtraBars.Ribbon.RibbonControl()
+        Me.BtnAdd = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnEdit = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnDelete = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnOK = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnCancel = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnPrint = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnExcel = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnEmail = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnOkAndNew = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnRefresh = New DevExpress.XtraBars.BarButtonItem()
         Me.RbpChucNang = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RbpGCongCu = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RbpGMoRong = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RbpGXacNhan = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        CType(Me.RibbonControlBaseOnUserControl, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'RibbonControl1
+        'RibbonControlBaseOnUserControl
         '
-        Me.RibbonControl1.ExpandCollapseItem.Id = 0
-        Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.BarBtn_Add, Me.BarBtn_Update, Me.BarBtn_Delete})
-        Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl1.MaxItemId = 4
-        Me.RibbonControl1.Name = "RibbonControl1"
-        Me.RibbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpChucNang})
-        Me.RibbonControl1.Size = New System.Drawing.Size(827, 239)
+        Me.RibbonControlBaseOnUserControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal
+        Me.RibbonControlBaseOnUserControl.ExpandCollapseItem.Id = 0
+        Me.RibbonControlBaseOnUserControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControlBaseOnUserControl.ExpandCollapseItem, Me.BtnAdd, Me.BtnEdit, Me.BtnDelete, Me.BtnOK, Me.BtnCancel, Me.BtnPrint, Me.BtnExcel, Me.BtnEmail, Me.BtnOkAndNew, Me.BtnRefresh})
+        Me.RibbonControlBaseOnUserControl.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonControlBaseOnUserControl.MaxItemId = 11
+        Me.RibbonControlBaseOnUserControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
+        Me.RibbonControlBaseOnUserControl.Name = "RibbonControlBaseOnUserControl"
+        Me.RibbonControlBaseOnUserControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpChucNang})
+        Me.RibbonControlBaseOnUserControl.Size = New System.Drawing.Size(827, 239)
         '
-        'BarBtn_Add
+        'BtnAdd
         '
-        Me.BarBtn_Add.Caption = "Thêm"
-        Me.BarBtn_Add.Id = 1
-        Me.BarBtn_Add.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.addparagraphtotableofcontents1
-        Me.BarBtn_Add.Name = "BarBtn_Add"
+        Me.BtnAdd.Caption = "Thêm"
+        Me.BtnAdd.Id = 1
+        Me.BtnAdd.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.addparagraphtotableofcontents1
+        Me.BtnAdd.Name = "BtnAdd"
         '
-        'BarBtn_Update
+        'BtnEdit
         '
-        Me.BarBtn_Update.Caption = "Sửa"
-        Me.BarBtn_Update.Id = 2
-        Me.BarBtn_Update.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.updatetableofcontents1
-        Me.BarBtn_Update.Name = "BarBtn_Update"
+        Me.BtnEdit.Caption = "Sửa"
+        Me.BtnEdit.Id = 2
+        Me.BtnEdit.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.editquery
+        Me.BtnEdit.Name = "BtnEdit"
         '
-        'BarBtn_Delete
+        'BtnDelete
         '
-        Me.BarBtn_Delete.Caption = "Xóa"
-        Me.BarBtn_Delete.Id = 3
-        Me.BarBtn_Delete.ImageOptions.Image = Global.DancePassion.My.Resources.Resources.deletegroupheader_32x321
-        Me.BarBtn_Delete.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.deletetable
-        Me.BarBtn_Delete.Name = "BarBtn_Delete"
+        Me.BtnDelete.Caption = "Xóa"
+        Me.BtnDelete.Id = 3
+        Me.BtnDelete.ImageOptions.Image = Global.DancePassion.My.Resources.Resources.deletegroupheader_32x321
+        Me.BtnDelete.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.deletetable
+        Me.BtnDelete.Name = "BtnDelete"
+        '
+        'BtnOK
+        '
+        Me.BtnOK.Caption = "Chấp nhận"
+        Me.BtnOK.Hint = "Chấp nhận và thoát"
+        Me.BtnOK.Id = 4
+        Me.BtnOK.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.markcomplete
+        Me.BtnOK.Name = "BtnOK"
+        Me.BtnOK.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        '
+        'BtnCancel
+        '
+        Me.BtnCancel.Caption = "Bỏ qua"
+        Me.BtnCancel.Hint = "Thoát màn hình hiện tại"
+        Me.BtnCancel.Id = 5
+        Me.BtnCancel.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.delete
+        Me.BtnCancel.Name = "BtnCancel"
+        '
+        'BtnPrint
+        '
+        Me.BtnPrint.Caption = "Máy In"
+        Me.BtnPrint.Id = 6
+        Me.BtnPrint.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.printlayoutview
+        Me.BtnPrint.Name = "BtnPrint"
+        '
+        'BtnExcel
+        '
+        Me.BtnExcel.Caption = "Xuất Excel"
+        Me.BtnExcel.Id = 7
+        Me.BtnExcel.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.export
+        Me.BtnExcel.Name = "BtnExcel"
+        '
+        'BtnEmail
+        '
+        Me.BtnEmail.Caption = "Gửi Email"
+        Me.BtnEmail.Id = 8
+        Me.BtnEmail.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.mailmerge
+        Me.BtnEmail.Name = "BtnEmail"
+        '
+        'BtnOkAndNew
+        '
+        Me.BtnOkAndNew.Caption = "Tiếp tục"
+        Me.BtnOkAndNew.Hint = "Lưu và thêm mới"
+        Me.BtnOkAndNew.Id = 9
+        Me.BtnOkAndNew.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.actions_add
+        Me.BtnOkAndNew.Name = "BtnOkAndNew"
+        '
+        'BtnRefresh
+        '
+        Me.BtnRefresh.Caption = "Làm mới"
+        Me.BtnRefresh.Id = 10
+        Me.BtnRefresh.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.resetlayoutoptions
+        Me.BtnRefresh.Name = "BtnRefresh"
         '
         'RbpChucNang
         '
-        Me.RbpChucNang.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpGCongCu})
+        Me.RbpChucNang.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpGCongCu, Me.RbpGMoRong, Me.RbpGXacNhan})
         Me.RbpChucNang.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.pivottablecalculationsfieldsitemssetsgroup
         Me.RbpChucNang.Name = "RbpChucNang"
         Me.RbpChucNang.Text = "Chức năng"
         '
         'RbpGCongCu
         '
-        Me.RbpGCongCu.ItemLinks.Add(Me.BarBtn_Add)
-        Me.RbpGCongCu.ItemLinks.Add(Me.BarBtn_Update)
-        Me.RbpGCongCu.ItemLinks.Add(Me.BarBtn_Delete)
+        Me.RbpGCongCu.ItemLinks.Add(Me.BtnAdd)
+        Me.RbpGCongCu.ItemLinks.Add(Me.BtnEdit)
+        Me.RbpGCongCu.ItemLinks.Add(Me.BtnDelete)
+        Me.RbpGCongCu.ItemLinks.Add(Me.BtnRefresh)
         Me.RbpGCongCu.Name = "RbpGCongCu"
+        Me.RbpGCongCu.ShowCaptionButton = False
         Me.RbpGCongCu.Text = "Công cụ"
+        '
+        'RbpGMoRong
+        '
+        Me.RbpGMoRong.ItemLinks.Add(Me.BtnPrint)
+        Me.RbpGMoRong.ItemLinks.Add(Me.BtnExcel)
+        Me.RbpGMoRong.ItemLinks.Add(Me.BtnEmail)
+        Me.RbpGMoRong.Name = "RbpGMoRong"
+        Me.RbpGMoRong.ShowCaptionButton = False
+        Me.RbpGMoRong.Text = "Mở rộng"
+        '
+        'RbpGXacNhan
+        '
+        Me.RbpGXacNhan.ItemLinks.Add(Me.BtnOK)
+        Me.RbpGXacNhan.ItemLinks.Add(Me.BtnOkAndNew)
+        Me.RbpGXacNhan.ItemLinks.Add(Me.BtnCancel)
+        Me.RbpGXacNhan.Name = "RbpGXacNhan"
+        Me.RbpGXacNhan.ShowCaptionButton = False
+        Me.RbpGXacNhan.Text = "Xác nhận"
         '
         'UCBase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.RibbonControl1)
+        Me.Controls.Add(Me.RibbonControlBaseOnUserControl)
         Me.Name = "UCBase"
-        Me.Size = New System.Drawing.Size(827, 332)
-        CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Size = New System.Drawing.Size(827, 238)
+        CType(Me.RibbonControlBaseOnUserControl, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents RibbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+    Friend WithEvents RibbonControlBaseOnUserControl As DevExpress.XtraBars.Ribbon.RibbonControl
     Friend WithEvents RbpChucNang As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RbpGCongCu As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents BarBtn_Add As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarBtn_Update As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarBtn_Delete As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnAdd As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnEdit As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnDelete As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnOK As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents RbpGXacNhan As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents BtnCancel As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents RbpGMoRong As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents BtnPrint As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnExcel As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnEmail As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnOkAndNew As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnRefresh As DevExpress.XtraBars.BarButtonItem
 End Class

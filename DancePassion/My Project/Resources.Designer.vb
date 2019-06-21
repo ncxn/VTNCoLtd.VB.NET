@@ -73,6 +73,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
+        Friend ReadOnly Property actions_add() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("actions_add", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property addcalculatedfield() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("addcalculatedfield", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
         Friend ReadOnly Property addparagraphtotableofcontents() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("addparagraphtotableofcontents", resourceCulture)
@@ -146,6 +166,16 @@ Namespace My.Resources
         Friend ReadOnly Property bomon() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("bomon", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property checkbox() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("checkbox", resourceCulture)
                 Return CType(obj,DevExpress.Utils.Svg.SvgImage)
             End Get
         End Property
@@ -291,6 +321,26 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property delete() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("delete", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property delete1() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("delete1", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property deletegroupheader_32x32() As System.Drawing.Bitmap
@@ -383,9 +433,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
+        Friend ReadOnly Property editquery() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("editquery", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
         Friend ReadOnly Property eSMS() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("eSMS", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property export() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("export", resourceCulture)
                 Return CType(obj,DevExpress.Utils.Svg.SvgImage)
             End Get
         End Property
@@ -523,6 +593,36 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
+        Friend ReadOnly Property mailmerge() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mailmerge", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property markcomplete() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("markcomplete", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property markcomplete1() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("markcomplete1", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
         Friend ReadOnly Property movedown() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("movedown", resourceCulture)
@@ -603,6 +703,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
+        Friend ReadOnly Property printlayoutview() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("printlayoutview", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
         Friend ReadOnly Property products() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("products", resourceCulture)
@@ -646,6 +756,16 @@ Namespace My.Resources
         Friend ReadOnly Property removegroupheader1() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("removegroupheader1", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property resetlayoutoptions() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("resetlayoutoptions", resourceCulture)
                 Return CType(obj,DevExpress.Utils.Svg.SvgImage)
             End Get
         End Property

@@ -36,12 +36,14 @@ Partial Class WaitForm
         Me.progressPanel1.AppearanceDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.progressPanel1.AppearanceDescription.Options.UseFont = True
         Me.progressPanel1.BarAnimationElementThickness = 2
+        Me.progressPanel1.Caption = "Đang xử lý"
+        Me.progressPanel1.Description = "Vui lòng đợi ...."
         Me.progressPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.progressPanel1.ImageHorzOffset = 20
-        Me.progressPanel1.Location = New System.Drawing.Point(0, 21)
-        Me.progressPanel1.Margin = New System.Windows.Forms.Padding(0, 4, 0, 4)
+        Me.progressPanel1.Location = New System.Drawing.Point(0, 17)
+        Me.progressPanel1.Margin = New System.Windows.Forms.Padding(0, 3, 0, 3)
         Me.progressPanel1.Name = "progressPanel1"
-        Me.progressPanel1.Size = New System.Drawing.Size(328, 48)
+        Me.progressPanel1.Size = New System.Drawing.Size(246, 39)
         Me.progressPanel1.TabIndex = 0
         Me.progressPanel1.Text = "progressPanel1"
         '
@@ -55,24 +57,22 @@ Partial Class WaitForm
         Me.tableLayoutPanel1.Controls.Add(Me.progressPanel1, 0, 0)
         Me.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.tableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tableLayoutPanel1.Name = "tableLayoutPanel1"
-        Me.tableLayoutPanel1.Padding = New System.Windows.Forms.Padding(0, 17, 0, 17)
+        Me.tableLayoutPanel1.Padding = New System.Windows.Forms.Padding(0, 14, 0, 14)
         Me.tableLayoutPanel1.RowCount = 1
         Me.tableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tableLayoutPanel1.Size = New System.Drawing.Size(328, 90)
+        Me.tableLayoutPanel1.Size = New System.Drawing.Size(246, 73)
         Me.tableLayoutPanel1.TabIndex = 1
         '
         'WaitForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(328, 90)
+        Me.ClientSize = New System.Drawing.Size(246, 73)
         Me.Controls.Add(Me.tableLayoutPanel1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "WaitForm"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ShowOnTopMode = DevExpress.XtraWaitForm.ShowFormOnTopMode.ObsoleteAboveParent

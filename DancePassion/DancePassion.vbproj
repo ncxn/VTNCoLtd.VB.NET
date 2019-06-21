@@ -246,9 +246,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Programmes\config\cfgMail.vb" />
-    <Compile Include="Programmes\config\SMSconfig.vb" />
-    <Compile Include="Programmes\users\Users.vb" />
+    <Compile Include="Programs\config\cfgMail.vb" />
+    <Compile Include="Programs\config\SMSconfig.vb" />
+    <Compile Include="Programs\users\Users.vb" />
     <Compile Include="User Controls\roles\UCRoles.Designer.vb">
       <DependentUpon>UCRoles.vb</DependentUpon>
     </Compile>
@@ -267,10 +267,22 @@
     <Compile Include="User Controls\UCBase.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\users\UcUsers.Designer.vb">
-      <DependentUpon>UcUsers.vb</DependentUpon>
+    <Compile Include="User Controls\OKOrCancel.Designer.vb">
+      <DependentUpon>OKOrCancel.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\users\UcUsers.vb">
+    <Compile Include="User Controls\OKOrCancel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\users\UCUsers.Designer.vb">
+      <DependentUpon>UCUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\users\UCUsers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\users\UCUsersAdd.Designer.vb">
+      <DependentUpon>UCUsersAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\users\UCUsersAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Controls\users\UCUsersUpdate.Designer.vb">
@@ -331,8 +343,14 @@
     <EmbeddedResource Include="User Controls\UCBase.resx">
       <DependentUpon>UCBase.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\users\UcUsers.resx">
-      <DependentUpon>UcUsers.vb</DependentUpon>
+    <EmbeddedResource Include="User Controls\OKOrCancel.resx">
+      <DependentUpon>OKOrCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\users\UCUsers.resx">
+      <DependentUpon>UCUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\users\UCUsersAdd.resx">
+      <DependentUpon>UCUsersAdd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\users\UCUsersUpdate.resx">
       <DependentUpon>UCUsersUpdate.vb</DependentUpon>
@@ -583,6 +601,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\deletetable.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\markcomplete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printlayoutview.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailmerge.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addcalculatedfield.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\markcomplete1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_add.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editquery.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resetlayoutoptions.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets')" />
