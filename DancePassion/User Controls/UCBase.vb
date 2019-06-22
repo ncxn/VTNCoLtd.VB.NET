@@ -1,4 +1,5 @@
-﻿Imports DevExpress.XtraBars
+﻿Imports System.ComponentModel
+Imports DevExpress.XtraBars
 Imports DevExpress.XtraBars.Ribbon
 
 Public Class UCBase
@@ -21,6 +22,7 @@ Public Class UCBase
 #Region " Định nghĩa các sự kiện"
     ' Tạo một hàm ủy thác 
     Public Delegate Sub EventHandler()
+
     Public Event InsertEvent As EventHandler
     Public Event EditEvent As EventHandler
     Public Event DeleteEvent As EventHandler
@@ -36,29 +38,96 @@ Public Class UCBase
     Public Event CloseEvent As EventHandler
 
 #End Region
+
+#Region " Ribbon"
     Public ReadOnly Property Ribbon() As RibbonControl
         Get
             Return RibbonControlBaseOnUserControl
         End Get
     End Property
-    Sub test()
-        BtnOK.Visibility = BarItemVisibility.Never
-    End Sub
+#End Region
 
 #Region " Định nghĩa thuộc tính"
+    ' Set properties
 
-    Public Property BtnOK_ As Boolean
+    Private _InsertVisible As Boolean = True
+    ''' <summary>
+    ''' Ẩn hiện chức năng thêm dữ liệu
+    ''' </summary>
+    ''' <value>Boolean</value>
+    ''' <returns>True/False</returns>
+    ''' <remarks></remarks>
+    <Category("ButonVisible")>
+    <Browsable(True)>
+    <Description("Thiết lập ẩn hiện chức năng trên form")>
+    Public Property InsertVisible As Boolean
         Set(ByVal value As Boolean)
-            If BtnOK.Visibility = BarItemVisibility.Always Then
-                value = True
+            _InsertVisible = value
+            If value = True Then
+                BtnAdd.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
             Else
-                value = False
+                BtnAdd.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
             End If
         End Set
         Get
-            Return BtnOK_
+            Return _InsertVisible
         End Get
     End Property
+
+    Private _EditVisible As Boolean = True
+    <Category("ButonVisible")>
+    <Browsable(True)>
+    <Description("Thiết lập ẩn hiện chức năng trên form")>
+    Public Property EditVisible As Boolean
+        Set(ByVal value As Boolean)
+            _EditVisible = value
+            If value = True Then
+                BtnEdit.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+            Else
+                BtnEdit.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+            End If
+        End Set
+        Get
+            Return _EditVisible
+        End Get
+    End Property
+
+    'Private _DeleteVisible As Boolean
+    '<Category("ButonVisible")>
+    '<Browsable(True)>
+    '<Description("Thiết lập ẩn hiện chức năng trên form")>
+    'Public Property DeleteVisible As Boolean
+    '    Set(ByVal value As Boolean)
+    '        _DeleteVisible = value
+    '        If value = True Then
+    '            BtnDelete.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+    '        Else
+    '            BtnDelete.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+    '        End If
+    '    End Set
+    '    Get
+    '        Return _DeleteVisible
+    '    End Get
+    'End Property
+
+    'Private _RefreshVisible As Boolean
+    '<Category("ButonVisible")>
+    '<Browsable(True)>
+    '<Description("Thiết lập ẩn hiện chức năng trên form")>
+    'Public Property RefreshVisible As Boolean
+    '    Set(ByVal value As Boolean)
+    '        _RefreshVisible = value
+    '        If value = True Then
+    '            BtnRefresh.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+    '        Else
+    '            BtnRefresh.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+    '        End If
+    '    End Set
+    '    Get
+    '        Return _RefreshVisible
+    '    End Get
+    'End Property
+
 #End Region
     'Public Sub EnableOrDisableButton(control As Control, action As Action, RoleToControls As Roles)
     '    For Each page In Ribbon.Pages

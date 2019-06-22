@@ -8,6 +8,7 @@ Public Class UCUsers
 
         ' Add any initialization after the InitializeComponent() call.
         RbpGXacNhan.Visible = False
+
     End Sub
     Private Sub UCUsers_Load(sender As Object, e As EventArgs) Handles Me.Load
         Loaddata()

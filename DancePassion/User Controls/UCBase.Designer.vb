@@ -78,7 +78,6 @@ Partial Class UCBase
         Me.BtnOK.Id = 4
         Me.BtnOK.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.markcomplete
         Me.BtnOK.Name = "BtnOK"
-        Me.BtnOK.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnCancel
         '
