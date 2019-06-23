@@ -34,8 +34,8 @@ Partial Class FrmMain
         Me.KhoiTao_dbs_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.KetNoi_dbs_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.LuuTru_dbs_btn = New DevExpress.XtraBars.BarButtonItem()
-        Me.NhomNhanVien_NhanVien_btn = New DevExpress.XtraBars.BarButtonItem()
-        Me.NhanVien_NhanVien_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnHumanGroup = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnHuman = New DevExpress.XtraBars.BarButtonItem()
         Me.roles = New DevExpress.XtraBars.BarButtonItem()
         Me.gmail_email_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.outlook_email_btn = New DevExpress.XtraBars.BarButtonItem()
@@ -45,7 +45,7 @@ Partial Class FrmMain
         Me.DoanhNghiep_CauHinh_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.CongCu__CauHinh_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
-        Me.QuyenHan_NhanVien_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnRoles = New DevExpress.XtraBars.BarButtonItem()
         Me.LoaiSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
         Me.TaoSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
         Me.VeSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
@@ -88,7 +88,7 @@ Partial Class FrmMain
         Me.RbpSystem = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup_Database = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_Configuration = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPageGroup_Peoples = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RbpGPeoples = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_Emails = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_SMS = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpEventManager = New DevExpress.XtraBars.Ribbon.RibbonPage()
@@ -138,7 +138,7 @@ Partial Class FrmMain
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.KhoiTao_dbs_btn, Me.KetNoi_dbs_btn, Me.LuuTru_dbs_btn, Me.NhomNhanVien_NhanVien_btn, Me.NhanVien_NhanVien_btn, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.QuyenHan_NhanVien_btn, Me.LoaiSuKien_bnt, Me.TaoSuKien_bnt, Me.VeSuKien_bnt, Me.DangKySuKien_bnt, Me.ThanhToanSuKien_bnt, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.GuiVeSuKien_bnt, Me.CheckInSuKien_bnt, Me.HuyVeSuKien_bnt, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn})
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.KhoiTao_dbs_btn, Me.KetNoi_dbs_btn, Me.LuuTru_dbs_btn, Me.BtnHumanGroup, Me.BtnHuman, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.BtnRoles, Me.LoaiSuKien_bnt, Me.TaoSuKien_bnt, Me.VeSuKien_bnt, Me.DangKySuKien_bnt, Me.ThanhToanSuKien_bnt, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.GuiVeSuKien_bnt, Me.CheckInSuKien_bnt, Me.HuyVeSuKien_bnt, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn})
         Me.MainControlRibbon.MaxItemId = 45
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
@@ -233,19 +233,19 @@ Partial Class FrmMain
         Me.LuuTru_dbs_btn.ImageOptions.SvgImage = CType(resources.GetObject("LuuTru_dbs_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.LuuTru_dbs_btn.Name = "LuuTru_dbs_btn"
         '
-        'NhomNhanVien_NhanVien_btn
+        'BtnHumanGroup
         '
-        resources.ApplyResources(Me.NhomNhanVien_NhanVien_btn, "NhomNhanVien_NhanVien_btn")
-        Me.NhomNhanVien_NhanVien_btn.Id = 9
-        Me.NhomNhanVien_NhanVien_btn.ImageOptions.SvgImage = CType(resources.GetObject("NhomNhanVien_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NhomNhanVien_NhanVien_btn.Name = "NhomNhanVien_NhanVien_btn"
+        resources.ApplyResources(Me.BtnHumanGroup, "BtnHumanGroup")
+        Me.BtnHumanGroup.Id = 9
+        Me.BtnHumanGroup.ImageOptions.SvgImage = CType(resources.GetObject("NhomNhanVien_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnHumanGroup.Name = "BtnHumanGroup"
         '
-        'NhanVien_NhanVien_btn
+        'BtnHuman
         '
-        resources.ApplyResources(Me.NhanVien_NhanVien_btn, "NhanVien_NhanVien_btn")
-        Me.NhanVien_NhanVien_btn.Id = 10
-        Me.NhanVien_NhanVien_btn.ImageOptions.SvgImage = CType(resources.GetObject("NhanVien_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NhanVien_NhanVien_btn.Name = "NhanVien_NhanVien_btn"
+        resources.ApplyResources(Me.BtnHuman, "BtnHuman")
+        Me.BtnHuman.Id = 10
+        Me.BtnHuman.ImageOptions.SvgImage = CType(resources.GetObject("NhanVien_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnHuman.Name = "BtnHuman"
         '
         'roles
         '
@@ -323,12 +323,12 @@ Partial Class FrmMain
         Me.BarButtonItem3.Id = 4
         Me.BarButtonItem3.Name = "BarButtonItem3"
         '
-        'QuyenHan_NhanVien_btn
+        'BtnRoles
         '
-        resources.ApplyResources(Me.QuyenHan_NhanVien_btn, "QuyenHan_NhanVien_btn")
-        Me.QuyenHan_NhanVien_btn.Id = 5
-        Me.QuyenHan_NhanVien_btn.ImageOptions.SvgImage = CType(resources.GetObject("QuyenHan_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.QuyenHan_NhanVien_btn.Name = "QuyenHan_NhanVien_btn"
+        resources.ApplyResources(Me.BtnRoles, "BtnRoles")
+        Me.BtnRoles.Id = 5
+        Me.BtnRoles.ImageOptions.SvgImage = CType(resources.GetObject("QuyenHan_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnRoles.Name = "BtnRoles"
         '
         'LoaiSuKien_bnt
         '
@@ -605,7 +605,7 @@ Partial Class FrmMain
         '
         'RbpSystem
         '
-        Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_Database, Me.RibbonPageGroup_Configuration, Me.RibbonPageGroup_Peoples, Me.RibbonPageGroup_Emails, Me.RibbonPageGroup_SMS})
+        Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_Database, Me.RibbonPageGroup_Configuration, Me.RbpGPeoples, Me.RibbonPageGroup_Emails, Me.RibbonPageGroup_SMS})
         Me.RbpSystem.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.properties
         Me.RbpSystem.Name = "RbpSystem"
         resources.ApplyResources(Me.RbpSystem, "RbpSystem")
@@ -630,16 +630,16 @@ Partial Class FrmMain
         Me.RibbonPageGroup_Configuration.ShowCaptionButton = False
         resources.ApplyResources(Me.RibbonPageGroup_Configuration, "RibbonPageGroup_Configuration")
         '
-        'RibbonPageGroup_Peoples
+        'RbpGPeoples
         '
-        Me.RibbonPageGroup_Peoples.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Peoples.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.NhomNhanVien_NhanVien_btn)
-        Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.NhanVien_NhanVien_btn)
-        Me.RibbonPageGroup_Peoples.ItemLinks.Add(Me.QuyenHan_NhanVien_btn)
-        Me.RibbonPageGroup_Peoples.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.ThreeRows
-        Me.RibbonPageGroup_Peoples.Name = "RibbonPageGroup_Peoples"
-        Me.RibbonPageGroup_Peoples.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_Peoples, "RibbonPageGroup_Peoples")
+        Me.RbpGPeoples.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Peoples.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RbpGPeoples.ItemLinks.Add(Me.BtnHumanGroup)
+        Me.RbpGPeoples.ItemLinks.Add(Me.BtnHuman)
+        Me.RbpGPeoples.ItemLinks.Add(Me.BtnRoles)
+        Me.RbpGPeoples.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.ThreeRows
+        Me.RbpGPeoples.Name = "RbpGPeoples"
+        Me.RbpGPeoples.ShowCaptionButton = False
+        resources.ApplyResources(Me.RbpGPeoples, "RbpGPeoples")
         '
         'RibbonPageGroup_Emails
         '
@@ -806,6 +806,9 @@ Partial Class FrmMain
         Me.DocumentManager1.View = Me.TabbedView1
         Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
         '
+        'TabbedView1
+        '
+        '
         'FrmMain
         '
         Me.AllowFormGlass = DevExpress.Utils.DefaultBoolean.[True]
@@ -845,10 +848,10 @@ Partial Class FrmMain
     Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RbpSystem As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup_Database As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents NhomNhanVien_NhanVien_btn As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents NhanVien_NhanVien_btn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnHumanGroup As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnHuman As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents roles As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents RibbonPageGroup_Peoples As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RbpGPeoples As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RibbonPageGroup_Emails As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents gmail_email_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents outlook_email_btn As DevExpress.XtraBars.BarButtonItem
@@ -865,7 +868,7 @@ Partial Class FrmMain
     Friend WithEvents BackstageViewItemSeparator2 As DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator
     Friend WithEvents CongCu__CauHinh_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents QuyenHan_NhanVien_btn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnRoles As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents LoaiSuKien_bnt As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents TaoSuKien_bnt As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents VeSuKien_bnt As DevExpress.XtraBars.BarButtonItem

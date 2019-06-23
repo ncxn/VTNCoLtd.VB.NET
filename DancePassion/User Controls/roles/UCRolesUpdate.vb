@@ -23,7 +23,7 @@ Public Class UCRolesUpdate
 
         End Select
     End Sub
-    Private Sub BtnCancel_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnCancel.ItemClick
+    Private Sub BtnCancel_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnCANCEL.ItemClick
         FrmMain.RemoveDocumetns()
     End Sub
 End Class

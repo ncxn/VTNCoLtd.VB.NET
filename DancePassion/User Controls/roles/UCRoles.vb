@@ -14,11 +14,11 @@ Public Class UCRoles
     Private Sub UCRoles_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadData()
     End Sub
-    Private Sub BtnAdd_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnAdd.ItemClick
+    Private Sub BtnAdd_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCREATE.ItemClick
         FrmMain.AddDocs(New UCRolesUpdate, "Thêm nhóm")
         DataModeRoles = 0
     End Sub
-    Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEdit.ItemClick
+    Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEDIT.ItemClick
         FrmMain.AddDocs(New UCRolesUpdate, "Sửa nhóm")
         DataModeRoles = 1
     End Sub

@@ -13,12 +13,12 @@ Public Class UCUsers
     Private Sub UCUsers_Load(sender As Object, e As EventArgs) Handles Me.Load
         Loaddata()
     End Sub
-    Private Sub BtnAdd_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnAdd.ItemClick
+    Private Sub BtnAdd_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCREATE.ItemClick
         'SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
         FrmMain.AddDocs(New UCUsersAdd, "Thêm thành viên")
         'SplashScreenManager.CloseForm()
     End Sub
-    Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEdit.ItemClick
+    Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEDIT.ItemClick
         'SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
         FrmMain.AddDocs(New UCUsersUpdate, "Sửa thành viên")
         ' SplashScreenManager.CloseForm()

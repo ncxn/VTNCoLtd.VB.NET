@@ -14,12 +14,12 @@ Namespace SMS
     Public Class DCOM
         Private WithEvents SMSPort As SerialPort
 
-        Private SMSThread As Thread
+        Private ReadOnly SMSThread As Thread
         Private ReadThread As Thread
         Shared _Continue As Boolean = False
         Shared _ContSMS As Boolean = False
         Private _Wait As Boolean = False
-        Shared _ReadPort As Boolean = False
+        Shared ReadOnly _ReadPort As Boolean = False
         Public Event Sending(ByVal Done As Boolean)
         Public Event DataReceived(ByVal Message As String)
 
@@ -115,7 +115,7 @@ Namespace SMS
                 SMSPort.Close()
             End If
         End Sub
-        Public Function test() As Boolean
+        Public Function Test() As Boolean
             Dim _sms As DCOM = New DCOM("COMM1")
             _sms.Open()
             _sms.SendSMS("84972501502", "SMS Testing")

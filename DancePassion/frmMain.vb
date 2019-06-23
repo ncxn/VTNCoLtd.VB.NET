@@ -105,12 +105,12 @@ Public Class FrmMain
 #End Region
 
 #Region " Ribbon Item (Button/Group Pages) "
-    Private Sub NhomNhanVien_NhanVien_btn_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles NhomNhanVien_NhanVien_btn.ItemClick
+    Private Sub NhomNhanVien_NhanVien_btn_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnHumanGroup.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
         AddDocs(New UCRoles, "Nhóm nhân viên")
         SplashScreenManager.CloseForm()
     End Sub
-    Private Sub NhanVien_NhanVien_btn_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles NhanVien_NhanVien_btn.ItemClick
+    Private Sub NhanVien_NhanVien_btn_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnHuman.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
         AddDocs(New UCUsers, "Nhân viên")
         SplashScreenManager.CloseForm()

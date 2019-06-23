@@ -175,10 +175,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="BackstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 63</value>
+    <value>232, 79</value>
+  </data>
+  <data name="BackstageViewClientControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="BackstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 297</value>
+    <value>351, 357</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BackstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
@@ -197,10 +200,13 @@
     <value>1</value>
   </data>
   <data name="BackstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 62</value>
+    <value>232, 79</value>
+  </data>
+  <data name="BackstageViewClientControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="BackstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 299</value>
+    <value>351, 357</value>
   </data>
   <data name="BackstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -261,13 +267,13 @@
     <value>Sửa hồ sơ</value>
   </data>
   <data name="Slide_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 247</value>
+    <value>0, 299</value>
   </data>
   <data name="Slide_menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="Slide_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>519, 361</value>
+    <value>584, 437</value>
   </data>
   <data name="Slide_menu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -405,7 +411,7 @@
         c3M9IlllbGxvdyIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="NhomNhanVien_NhanVien_btn.Caption" xml:space="preserve">
+  <data name="BtnHumanGroup.Caption" xml:space="preserve">
     <value>Nhóm nhân viên</value>
   </data>
   <data name="NhomNhanVien_NhanVien_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -437,7 +443,7 @@
         MTQsMjJ6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="NhanVien_NhanVien_btn.Caption" xml:space="preserve">
+  <data name="BtnHuman.Caption" xml:space="preserve">
     <value>Nhân viên</value>
   </data>
   <data name="NhanVien_NhanVien_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -595,15 +601,15 @@
         dEluZGVudAhNYXhXaWR0aBJPd25lckFsbG93SHRtbFRleHQEVGV4dAQEBAAAAAEfRGV2RXhwcmVzcy5V
         dGlscy5EZWZhdWx0Qm9vbGVhbgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbg0AAAAoRGV2RXhwcmVzcy5V
         dGlscy5Ub29sVGlwSXRlbUltYWdlT3B0aW9ucwIAAAAICAECAAAAAfL////8////AgAAAAoJDwAAAAAA
-        AAA8AQAAAQYQAAAACkPDtG5nIGPhu6UFCAAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVtBwAA
+        AACLAQAAAQYQAAAACkPDtG5nIGPhu6UFCAAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVtBwAA
         AA1BbGxvd0h0bWxUZXh0BEljb24MSW1hZ2VPcHRpb25zCkxlZnRJbmRlbnQITWF4V2lkdGgST3duZXJB
         bGxvd0h0bWxUZXh0BFRleHQEBAQAAAABH0RldkV4cHJlc3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4DAAAA
         E1N5c3RlbS5EcmF3aW5nLkljb24NAAAAKERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9w
-        dGlvbnMCAAAACAgBAgAAAAHv/////P///wIAAAAKCRIAAAAGAAAAPAEAAAEGEwAAAIYBTmjhuq1wIHh1
+        dGlvbnMCAAAACAgBAgAAAAHv/////P///wIAAAAKCRIAAAAGAAAAiwEAAAEGEwAAAIYBTmjhuq1wIHh1
         4bqldCBk4buvIGxp4buHdSBjaG8gdG/DoG4gaOG7hyB0aOG7kW5nLg0KU+G7rSBk4bulbmcgY8OhYyBm
         b3JtIG3huqt1IGPDsyBz4bq1biDEkcaw4bujYyBjdW5nIGPhuqVwIGLhu59pIG5ow6AgcGjDoXQgdHJp
         4buDbi4FCgAAACVEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBTZXBhcmF0b3JJdGVtAAAAAAIAAAABDAAA
-        AAYAAAAB7P////z///8CAAAACgkVAAAABgAAADwBAAABBhYAAAAKVlROY28uLEx0ZAUPAAAAKERldkV4
+        AAYAAAAB7P////z///8CAAAACgkVAAAABgAAAIsBAAABBhYAAAAKVlROY28uLEx0ZAUPAAAAKERldkV4
         cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9wdGlvbnMFAAAACEltYWdlVXJpDFN2Z0ltYWdlU2l6
         ZQlBbGlnbm1lbnQKSW1hZ2VJbmRleBNJbWFnZVRvVGV4dERpc3RhbmNlAQQEAAATU3lzdGVtLkRyYXdp
         bmcuU2l6ZQ0AAAAmRGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgCAAAA
@@ -617,7 +623,7 @@
   <data name="BarButtonItem3.Caption" xml:space="preserve">
     <value>Nhóm</value>
   </data>
-  <data name="QuyenHan_NhanVien_btn.Caption" xml:space="preserve">
+  <data name="BtnRoles.Caption" xml:space="preserve">
     <value>Quyền hạn</value>
   </data>
   <data name="QuyenHan_NhanVien_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1005,7 +1011,7 @@
     <value>0, 0</value>
   </data>
   <data name="MainControlRibbon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RibbonPageGroup_Database.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1073,7 +1079,7 @@
         PC9zdmc+Cw==
 </value>
   </data>
-  <data name="RibbonPageGroup_Peoples.Text" xml:space="preserve">
+  <data name="RbpGPeoples.Text" xml:space="preserve">
     <value>Nhân sự</value>
   </data>
   <data name="RibbonPageGroup_Emails.Text" xml:space="preserve">
@@ -1134,16 +1140,16 @@
     <value>Quản lý bán hàng</value>
   </data>
   <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1191, 247</value>
+    <value>1340, 280</value>
   </data>
   <data name="RibbonStatusBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 568</value>
+    <value>0, 699</value>
   </data>
   <data name="RibbonStatusBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RibbonStatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1191, 40</value>
+    <value>1340, 37</value>
   </data>
   <data name="&gt;&gt;RibbonStatusBar.Name" xml:space="preserve">
     <value>RibbonStatusBar</value>
@@ -1179,16 +1185,16 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 19</value>
+    <value>9, 23</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1191, 608</value>
+    <value>1340, 736</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1250,16 +1256,16 @@
   <data name="&gt;&gt;LuuTru_dbs_btn.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;NhomNhanVien_NhanVien_btn.Name" xml:space="preserve">
-    <value>NhomNhanVien_NhanVien_btn</value>
+  <data name="&gt;&gt;BtnHumanGroup.Name" xml:space="preserve">
+    <value>BtnHumanGroup</value>
   </data>
-  <data name="&gt;&gt;NhomNhanVien_NhanVien_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnHumanGroup.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;NhanVien_NhanVien_btn.Name" xml:space="preserve">
-    <value>NhanVien_NhanVien_btn</value>
+  <data name="&gt;&gt;BtnHuman.Name" xml:space="preserve">
+    <value>BtnHuman</value>
   </data>
-  <data name="&gt;&gt;NhanVien_NhanVien_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnHuman.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;roles.Name" xml:space="preserve">
@@ -1316,10 +1322,10 @@
   <data name="&gt;&gt;BarButtonItem3.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;QuyenHan_NhanVien_btn.Name" xml:space="preserve">
-    <value>QuyenHan_NhanVien_btn</value>
+  <data name="&gt;&gt;BtnRoles.Name" xml:space="preserve">
+    <value>BtnRoles</value>
   </data>
-  <data name="&gt;&gt;QuyenHan_NhanVien_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnRoles.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;LoaiSuKien_bnt.Name" xml:space="preserve">
@@ -1574,10 +1580,10 @@
   <data name="&gt;&gt;RibbonPageGroup_Configuration.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_Peoples.Name" xml:space="preserve">
-    <value>RibbonPageGroup_Peoples</value>
+  <data name="&gt;&gt;RbpGPeoples.Name" xml:space="preserve">
+    <value>RbpGPeoples</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_Peoples.Type" xml:space="preserve">
+  <data name="&gt;&gt;RbpGPeoples.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RibbonPageGroup_Emails.Name" xml:space="preserve">

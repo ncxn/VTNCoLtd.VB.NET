@@ -248,6 +248,7 @@
     </Compile>
     <Compile Include="Programs\config\cfgMail.vb" />
     <Compile Include="Programs\config\SMSconfig.vb" />
+    <Compile Include="Programs\controls\controls.vb" />
     <Compile Include="Programs\users\Users.vb" />
     <Compile Include="User Controls\roles\UCRoles.Designer.vb">
       <DependentUpon>UCRoles.vb</DependentUpon>
