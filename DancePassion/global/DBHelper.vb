@@ -116,26 +116,24 @@ Public Class DBHelper
     End Function
 
     Public Function GetDataSet(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As DataSet
-        OpenConnection()
 
-        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
+        Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
 
-            If parameters IsNot Nothing Then
-                cmd.Parameters.AddRange(parameters.ToArray())
-                'For Each parameter In parameters
-                '    cmd.Parameters.Add(parameters.ToArray)
-                ''Next
-            End If
+        If parameters IsNot Nothing Then
+            cmd.Parameters.AddRange(parameters.ToArray())
+        End If
 
-            Dim ds = New DataSet()
-            Dim dataAdaper = New MySqlDataAdapter(cmd)
+        Dim ds = New DataSet()
+        Dim dataAdaper = New MySqlDataAdapter(cmd)
+        Try
+            OpenConnection()
             dataAdaper.Fill(ds)
-            Return ds
-
-        End Using
-
-        CloseConnection()
-
+        Catch ex As Exception
+            Throw New Exception("Không thể fill data to dataset")
+        Finally
+            CloseConnection()
+        End Try
+        Return ds
     End Function
 
     Public Function GetDataReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As MySqlDataReader
@@ -144,9 +142,6 @@ Public Class DBHelper
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
 
         If parameters IsNot Nothing Then
-            'For Each parameter In parameters
-            '    cmd.Parameters.Add(parameter)
-            'Next
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
 
@@ -154,18 +149,12 @@ Public Class DBHelper
     End Function
 
     Public Function GetScalarValue(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter()) = Nothing) As Object
+        Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+        If parameters IsNot Nothing Then
+            cmd.Parameters.AddRange(parameters.ToArray())
+        End If
         OpenConnection()
-
-        Using cmd As MySqlCommand = GetCommand(commandText, commandType)
-                If parameters IsNot Nothing Then
-                    'For Each parameter In parameters
-                    '    cmd.Parameters.AddRange(parameter.ToArray)
-                    'Next
-                    cmd.Parameters.AddRange(parameters.ToArray)
-                End If
-                Return cmd.ExecuteScalar()
-            End Using
-
+        Return cmd.ExecuteScalar()
         CloseConnection()
     End Function
 
@@ -173,9 +162,6 @@ Public Class DBHelper
 
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
         If parameters IsNot Nothing Then
-            '    For Each parameter In parameters
-            '        cmd.Parameters.Add(parameter)
-            '    Next
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
 
@@ -187,13 +173,8 @@ Public Class DBHelper
     Public Function ExecuteNonQuerytWithTransaction(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
         Dim result As Integer = 0
         BeginTransaction()
-
         Dim cmd As MySqlCommand = GetCommandWithTransaction(commandText, commandType)
-
         If parameters IsNot Nothing Then
-            'For Each parameter In parameters
-            '    cmd.Parameters.Add(parameter)
-            'Next
             cmd.Parameters.Add(parameters.ToArray())
         End If
 
@@ -209,7 +190,9 @@ Public Class DBHelper
 
         Return result
     End Function
-
+    ' Dưới là các function áp dụng cho commandtext = text, ví dụ:
+    ' "Select * from tblUser where userID = @userID and password = @password" 
+    ' Parameter phải dạng array và các phẩn tử phải có khoảng trắng (quan trọng)
     Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Integer
         OpenConnection()
         Dim result As Integer = 0

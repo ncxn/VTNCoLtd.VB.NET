@@ -7,22 +7,10 @@ Public Class UCRolesUpdate
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        RbpGCongCu.Visible = False
-        RbpGMoRong.Visible = False
+        RbpGTools.Visible = False
+        RbpGExtend.Visible = False
     End Sub
-    Private Sub BtnOK_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnOK.ItemClick
 
-        Select Case UCRoles.DataModeRoles
-            Case 0
-                MessageBox.Show("Thêm mới")
-            Case 1
-                MessageBox.Show("Sửa")
-            Case 2
-                MessageBox.Show("Xem")
-            Case Else
-
-        End Select
-    End Sub
     Private Sub BtnCancel_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnCANCEL.ItemClick
         FrmMain.RemoveDocumetns()
     End Sub

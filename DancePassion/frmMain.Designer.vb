@@ -46,17 +46,17 @@ Partial Class FrmMain
         Me.CongCu__CauHinh_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnRoles = New DevExpress.XtraBars.BarButtonItem()
-        Me.LoaiSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
-        Me.TaoSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
-        Me.VeSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
-        Me.DangKySuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
-        Me.ThanhToanSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnEventCategory = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnEventCreate = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnEventTicket = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnRegister = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnPayment = New DevExpress.XtraBars.BarButtonItem()
         Me.TongVeSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
         Me.DaThanhToanSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
         Me.ChuaThanhToanSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
-        Me.GuiVeSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnSentTicket = New DevExpress.XtraBars.BarButtonItem()
         Me.CheckInSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
-        Me.HuyVeSuKien_bnt = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnCancelTicket = New DevExpress.XtraBars.BarButtonItem()
         Me.Club_Bomon_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Club_LopHoc_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Club_KhoaHoc_btn = New DevExpress.XtraBars.BarButtonItem()
@@ -85,15 +85,18 @@ Partial Class FrmMain
         Me.Club_LopDaHoc = New DevExpress.XtraBars.BarButtonItem()
         Me.BH_DoanhThu_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.BH_TonKho_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnControls = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnFunctions = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnFunctionsOnControl = New DevExpress.XtraBars.BarButtonItem()
         Me.RbpSystem = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup_Database = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_Configuration = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpGPeoples = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_Emails = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_SMS = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RbpEventManager = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPageGroup_KhoiTaoSuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPageGroup_DangKySuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RbpEventManagement = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RbpgCreateEvent = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RbpgEventRegister = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_ThongkeSuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_TienIchSuKien = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpClubManager = New DevExpress.XtraBars.Ribbon.RibbonPage()
@@ -107,7 +110,9 @@ Partial Class FrmMain
         Me.RibbonPageGroup6 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup5 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup8 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
+        Me.RbpDev = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RbpgFunctionManager = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonStatusBarOnMain = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.NativeMdiViewOnMain = New DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView(Me.components)
         Me.WindowsUIViewOnMain = New DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView(Me.components)
@@ -138,13 +143,13 @@ Partial Class FrmMain
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.KhoiTao_dbs_btn, Me.KetNoi_dbs_btn, Me.LuuTru_dbs_btn, Me.BtnHumanGroup, Me.BtnHuman, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.BtnRoles, Me.LoaiSuKien_bnt, Me.TaoSuKien_bnt, Me.VeSuKien_bnt, Me.DangKySuKien_bnt, Me.ThanhToanSuKien_bnt, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.GuiVeSuKien_bnt, Me.CheckInSuKien_bnt, Me.HuyVeSuKien_bnt, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn})
-        Me.MainControlRibbon.MaxItemId = 45
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.KhoiTao_dbs_btn, Me.KetNoi_dbs_btn, Me.LuuTru_dbs_btn, Me.BtnHumanGroup, Me.BtnHuman, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.BtnRoles, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.BtnControls, Me.BtnFunctions, Me.BtnFunctionsOnControl})
+        Me.MainControlRibbon.MaxItemId = 48
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
-        Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpSystem, Me.RbpEventManager, Me.RbpClubManager, Me.RbpSalesManager})
+        Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpSystem, Me.RbpEventManagement, Me.RbpClubManager, Me.RbpSalesManager, Me.RbpDev})
         Me.MainControlRibbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019
-        Me.MainControlRibbon.StatusBar = Me.RibbonStatusBar
+        Me.MainControlRibbon.StatusBar = Me.RibbonStatusBarOnMain
         '
         'Slide_menu
         '
@@ -237,14 +242,14 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.BtnHumanGroup, "BtnHumanGroup")
         Me.BtnHumanGroup.Id = 9
-        Me.BtnHumanGroup.ImageOptions.SvgImage = CType(resources.GetObject("NhomNhanVien_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnHumanGroup.ImageOptions.SvgImage = CType(resources.GetObject("BtnHumanGroup.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BtnHumanGroup.Name = "BtnHumanGroup"
         '
         'BtnHuman
         '
         resources.ApplyResources(Me.BtnHuman, "BtnHuman")
         Me.BtnHuman.Id = 10
-        Me.BtnHuman.ImageOptions.SvgImage = CType(resources.GetObject("NhanVien_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnHuman.ImageOptions.SvgImage = CType(resources.GetObject("BtnHuman.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BtnHuman.Name = "BtnHuman"
         '
         'roles
@@ -327,43 +332,43 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.BtnRoles, "BtnRoles")
         Me.BtnRoles.Id = 5
-        Me.BtnRoles.ImageOptions.SvgImage = CType(resources.GetObject("QuyenHan_NhanVien_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnRoles.ImageOptions.SvgImage = CType(resources.GetObject("BtnRoles.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BtnRoles.Name = "BtnRoles"
         '
-        'LoaiSuKien_bnt
+        'BtnEventCategory
         '
-        resources.ApplyResources(Me.LoaiSuKien_bnt, "LoaiSuKien_bnt")
-        Me.LoaiSuKien_bnt.Id = 6
-        Me.LoaiSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("LoaiSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.LoaiSuKien_bnt.Name = "LoaiSuKien_bnt"
+        resources.ApplyResources(Me.BtnEventCategory, "BtnEventCategory")
+        Me.BtnEventCategory.Id = 6
+        Me.BtnEventCategory.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventCategory.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnEventCategory.Name = "BtnEventCategory"
         '
-        'TaoSuKien_bnt
+        'BtnEventCreate
         '
-        resources.ApplyResources(Me.TaoSuKien_bnt, "TaoSuKien_bnt")
-        Me.TaoSuKien_bnt.Id = 7
-        Me.TaoSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("TaoSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.TaoSuKien_bnt.Name = "TaoSuKien_bnt"
+        resources.ApplyResources(Me.BtnEventCreate, "BtnEventCreate")
+        Me.BtnEventCreate.Id = 7
+        Me.BtnEventCreate.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventCreate.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnEventCreate.Name = "BtnEventCreate"
         '
-        'VeSuKien_bnt
+        'BtnEventTicket
         '
-        resources.ApplyResources(Me.VeSuKien_bnt, "VeSuKien_bnt")
-        Me.VeSuKien_bnt.Id = 8
-        Me.VeSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("VeSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.VeSuKien_bnt.Name = "VeSuKien_bnt"
+        resources.ApplyResources(Me.BtnEventTicket, "BtnEventTicket")
+        Me.BtnEventTicket.Id = 8
+        Me.BtnEventTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventTicket.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnEventTicket.Name = "BtnEventTicket"
         '
-        'DangKySuKien_bnt
+        'BtnRegister
         '
-        resources.ApplyResources(Me.DangKySuKien_bnt, "DangKySuKien_bnt")
-        Me.DangKySuKien_bnt.Id = 9
-        Me.DangKySuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("DangKySuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.DangKySuKien_bnt.Name = "DangKySuKien_bnt"
+        resources.ApplyResources(Me.BtnRegister, "BtnRegister")
+        Me.BtnRegister.Id = 9
+        Me.BtnRegister.ImageOptions.SvgImage = CType(resources.GetObject("BtnRegister.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnRegister.Name = "BtnRegister"
         '
-        'ThanhToanSuKien_bnt
+        'BtnPayment
         '
-        resources.ApplyResources(Me.ThanhToanSuKien_bnt, "ThanhToanSuKien_bnt")
-        Me.ThanhToanSuKien_bnt.Id = 10
-        Me.ThanhToanSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("ThanhToanSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.ThanhToanSuKien_bnt.Name = "ThanhToanSuKien_bnt"
+        resources.ApplyResources(Me.BtnPayment, "BtnPayment")
+        Me.BtnPayment.Id = 10
+        Me.BtnPayment.ImageOptions.SvgImage = CType(resources.GetObject("BtnPayment.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnPayment.Name = "BtnPayment"
         '
         'TongVeSuKien_bnt
         '
@@ -386,12 +391,12 @@ Partial Class FrmMain
         Me.ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.ChuaThanhToanSuKien_bnt.Name = "ChuaThanhToanSuKien_bnt"
         '
-        'GuiVeSuKien_bnt
+        'BtnSentTicket
         '
-        resources.ApplyResources(Me.GuiVeSuKien_bnt, "GuiVeSuKien_bnt")
-        Me.GuiVeSuKien_bnt.Id = 14
-        Me.GuiVeSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("GuiVeSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.GuiVeSuKien_bnt.Name = "GuiVeSuKien_bnt"
+        resources.ApplyResources(Me.BtnSentTicket, "BtnSentTicket")
+        Me.BtnSentTicket.Id = 14
+        Me.BtnSentTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnSentTicket.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnSentTicket.Name = "BtnSentTicket"
         '
         'CheckInSuKien_bnt
         '
@@ -400,12 +405,12 @@ Partial Class FrmMain
         Me.CheckInSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("CheckInSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.CheckInSuKien_bnt.Name = "CheckInSuKien_bnt"
         '
-        'HuyVeSuKien_bnt
+        'BtnCancelTicket
         '
-        resources.ApplyResources(Me.HuyVeSuKien_bnt, "HuyVeSuKien_bnt")
-        Me.HuyVeSuKien_bnt.Id = 16
-        Me.HuyVeSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("HuyVeSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.HuyVeSuKien_bnt.Name = "HuyVeSuKien_bnt"
+        resources.ApplyResources(Me.BtnCancelTicket, "BtnCancelTicket")
+        Me.BtnCancelTicket.Id = 16
+        Me.BtnCancelTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnCancelTicket.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnCancelTicket.Name = "BtnCancelTicket"
         '
         'Club_Bomon_btn
         '
@@ -603,6 +608,27 @@ Partial Class FrmMain
         Me.BH_TonKho_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.tonkho
         Me.BH_TonKho_btn.Name = "BH_TonKho_btn"
         '
+        'BtnControls
+        '
+        resources.ApplyResources(Me.BtnControls, "BtnControls")
+        Me.BtnControls.Id = 45
+        Me.BtnControls.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.bo_statemachine
+        Me.BtnControls.Name = "BtnControls"
+        '
+        'BtnFunctions
+        '
+        resources.ApplyResources(Me.BtnFunctions, "BtnFunctions")
+        Me.BtnFunctions.Id = 46
+        Me.BtnFunctions.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.superscript
+        Me.BtnFunctions.Name = "BtnFunctions"
+        '
+        'BtnFunctionsOnControl
+        '
+        resources.ApplyResources(Me.BtnFunctionsOnControl, "BtnFunctionsOnControl")
+        Me.BtnFunctionsOnControl.Id = 47
+        Me.BtnFunctionsOnControl.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.listnumbers
+        Me.BtnFunctionsOnControl.Name = "BtnFunctionsOnControl"
+        '
         'RbpSystem
         '
         Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_Database, Me.RibbonPageGroup_Configuration, Me.RbpGPeoples, Me.RibbonPageGroup_Emails, Me.RibbonPageGroup_SMS})
@@ -632,11 +658,10 @@ Partial Class FrmMain
         '
         'RbpGPeoples
         '
-        Me.RbpGPeoples.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Peoples.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RbpGPeoples.ImageOptions.SvgImage = CType(resources.GetObject("RbpGPeoples.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.RbpGPeoples.ItemLinks.Add(Me.BtnHumanGroup)
         Me.RbpGPeoples.ItemLinks.Add(Me.BtnHuman)
         Me.RbpGPeoples.ItemLinks.Add(Me.BtnRoles)
-        Me.RbpGPeoples.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.ThreeRows
         Me.RbpGPeoples.Name = "RbpGPeoples"
         Me.RbpGPeoples.ShowCaptionButton = False
         resources.ApplyResources(Me.RbpGPeoples, "RbpGPeoples")
@@ -658,31 +683,31 @@ Partial Class FrmMain
         Me.RibbonPageGroup_SMS.ShowCaptionButton = False
         resources.ApplyResources(Me.RibbonPageGroup_SMS, "RibbonPageGroup_SMS")
         '
-        'RbpEventManager
+        'RbpEventManagement
         '
-        Me.RbpEventManager.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_KhoiTaoSuKien, Me.RibbonPageGroup_DangKySuKien, Me.RibbonPageGroup_ThongkeSuKien, Me.RibbonPageGroup_TienIchSuKien})
-        Me.RbpEventManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.differentoddevenpages
-        Me.RbpEventManager.Name = "RbpEventManager"
-        resources.ApplyResources(Me.RbpEventManager, "RbpEventManager")
+        Me.RbpEventManagement.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgCreateEvent, Me.RbpgEventRegister, Me.RibbonPageGroup_ThongkeSuKien, Me.RibbonPageGroup_TienIchSuKien})
+        Me.RbpEventManagement.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.differentoddevenpages
+        Me.RbpEventManagement.Name = "RbpEventManagement"
+        resources.ApplyResources(Me.RbpEventManagement, "RbpEventManagement")
         '
-        'RibbonPageGroup_KhoiTaoSuKien
+        'RbpgCreateEvent
         '
-        Me.RibbonPageGroup_KhoiTaoSuKien.ItemLinks.Add(Me.LoaiSuKien_bnt)
-        Me.RibbonPageGroup_KhoiTaoSuKien.ItemLinks.Add(Me.TaoSuKien_bnt)
-        Me.RibbonPageGroup_KhoiTaoSuKien.ItemLinks.Add(Me.VeSuKien_bnt)
-        Me.RibbonPageGroup_KhoiTaoSuKien.Name = "RibbonPageGroup_KhoiTaoSuKien"
-        Me.RibbonPageGroup_KhoiTaoSuKien.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_KhoiTaoSuKien, "RibbonPageGroup_KhoiTaoSuKien")
+        Me.RbpgCreateEvent.ItemLinks.Add(Me.BtnEventCategory)
+        Me.RbpgCreateEvent.ItemLinks.Add(Me.BtnEventCreate)
+        Me.RbpgCreateEvent.ItemLinks.Add(Me.BtnEventTicket)
+        Me.RbpgCreateEvent.Name = "RbpgCreateEvent"
+        Me.RbpgCreateEvent.ShowCaptionButton = False
+        resources.ApplyResources(Me.RbpgCreateEvent, "RbpgCreateEvent")
         '
-        'RibbonPageGroup_DangKySuKien
+        'RbpgEventRegister
         '
-        Me.RibbonPageGroup_DangKySuKien.ItemLinks.Add(Me.DangKySuKien_bnt)
-        Me.RibbonPageGroup_DangKySuKien.ItemLinks.Add(Me.ThanhToanSuKien_bnt)
-        Me.RibbonPageGroup_DangKySuKien.ItemLinks.Add(Me.GuiVeSuKien_bnt)
-        Me.RibbonPageGroup_DangKySuKien.ItemLinks.Add(Me.HuyVeSuKien_bnt)
-        Me.RibbonPageGroup_DangKySuKien.Name = "RibbonPageGroup_DangKySuKien"
-        Me.RibbonPageGroup_DangKySuKien.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_DangKySuKien, "RibbonPageGroup_DangKySuKien")
+        Me.RbpgEventRegister.ItemLinks.Add(Me.BtnRegister)
+        Me.RbpgEventRegister.ItemLinks.Add(Me.BtnPayment)
+        Me.RbpgEventRegister.ItemLinks.Add(Me.BtnSentTicket)
+        Me.RbpgEventRegister.ItemLinks.Add(Me.BtnCancelTicket)
+        Me.RbpgEventRegister.Name = "RbpgEventRegister"
+        Me.RbpgEventRegister.ShowCaptionButton = False
+        resources.ApplyResources(Me.RbpgEventRegister, "RbpgEventRegister")
         '
         'RibbonPageGroup_ThongkeSuKien
         '
@@ -786,11 +811,26 @@ Partial Class FrmMain
         Me.RibbonPageGroup8.ShowCaptionButton = False
         resources.ApplyResources(Me.RibbonPageGroup8, "RibbonPageGroup8")
         '
-        'RibbonStatusBar
+        'RbpDev
         '
-        resources.ApplyResources(Me.RibbonStatusBar, "RibbonStatusBar")
-        Me.RibbonStatusBar.Name = "RibbonStatusBar"
-        Me.RibbonStatusBar.Ribbon = Me.MainControlRibbon
+        Me.RbpDev.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgFunctionManager})
+        Me.RbpDev.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.showallfieldcodes
+        Me.RbpDev.Name = "RbpDev"
+        resources.ApplyResources(Me.RbpDev, "RbpDev")
+        '
+        'RbpgFunctionManager
+        '
+        Me.RbpgFunctionManager.ItemLinks.Add(Me.BtnControls)
+        Me.RbpgFunctionManager.ItemLinks.Add(Me.BtnFunctions)
+        Me.RbpgFunctionManager.ItemLinks.Add(Me.BtnFunctionsOnControl)
+        Me.RbpgFunctionManager.Name = "RbpgFunctionManager"
+        resources.ApplyResources(Me.RbpgFunctionManager, "RbpgFunctionManager")
+        '
+        'RibbonStatusBarOnMain
+        '
+        resources.ApplyResources(Me.RibbonStatusBarOnMain, "RibbonStatusBarOnMain")
+        Me.RibbonStatusBarOnMain.Name = "RibbonStatusBarOnMain"
+        Me.RibbonStatusBarOnMain.Ribbon = Me.MainControlRibbon
         '
         'BarButtonItem1
         '
@@ -815,14 +855,14 @@ Partial Class FrmMain
         Me.Appearance.Options.UseFont = True
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.RibbonStatusBar)
+        Me.Controls.Add(Me.RibbonStatusBarOnMain)
         Me.Controls.Add(Me.Slide_menu)
         Me.Controls.Add(Me.MainControlRibbon)
         Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
         Me.IsMdiContainer = True
         Me.Name = "FrmMain"
         Me.Ribbon = Me.MainControlRibbon
-        Me.StatusBar = Me.RibbonStatusBar
+        Me.StatusBar = Me.RibbonStatusBarOnMain
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).EndInit()
@@ -835,15 +875,15 @@ Partial Class FrmMain
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents RibbonStatusBar As DevExpress.XtraBars.Ribbon.RibbonStatusBar
+    Friend WithEvents RibbonStatusBarOnMain As DevExpress.XtraBars.Ribbon.RibbonStatusBar
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents KhoiTao_dbs_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents KetNoi_dbs_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents LuuTru_dbs_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RbpSalesManager As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents RbpEventManager As DevExpress.XtraBars.Ribbon.RibbonPage
-    Friend WithEvents RibbonPageGroup_KhoiTaoSuKien As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RbpEventManagement As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents RbpgCreateEvent As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RbpClubManager As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RbpSystem As DevExpress.XtraBars.Ribbon.RibbonPage
@@ -869,20 +909,20 @@ Partial Class FrmMain
     Friend WithEvents CongCu__CauHinh_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnRoles As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents LoaiSuKien_bnt As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents TaoSuKien_bnt As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents VeSuKien_bnt As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents DangKySuKien_bnt As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents ThanhToanSuKien_bnt As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnEventCategory As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnEventCreate As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnEventTicket As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnRegister As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnPayment As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents TongVeSuKien_bnt As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents DaThanhToanSuKien_bnt As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents ChuaThanhToanSuKien_bnt As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents RibbonPageGroup_DangKySuKien As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RbpgEventRegister As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RibbonPageGroup_ThongkeSuKien As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents GuiVeSuKien_bnt As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnSentTicket As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents CheckInSuKien_bnt As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RibbonPageGroup_TienIchSuKien As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents HuyVeSuKien_bnt As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnCancelTicket As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents Club_Bomon_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents Club_LopHoc_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents Club_KhoaHoc_btn As DevExpress.XtraBars.BarButtonItem
@@ -927,4 +967,9 @@ Partial Class FrmMain
     Private WithEvents MainControlRibbon As DevExpress.XtraBars.Ribbon.RibbonControl
     Friend WithEvents DocumentManager1 As DevExpress.XtraBars.Docking2010.DocumentManager
     Friend WithEvents TabbedView1 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
+    Friend WithEvents RbpDev As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents RbpgFunctionManager As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents BtnControls As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnFunctions As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnFunctionsOnControl As DevExpress.XtraBars.BarButtonItem
 End Class

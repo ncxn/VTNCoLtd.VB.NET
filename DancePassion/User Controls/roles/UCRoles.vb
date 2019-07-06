@@ -1,14 +1,14 @@
 ﻿Imports DevExpress.XtraSplashScreen
 
 Public Class UCRoles
-    Public Shared DataModeRoles As DataMode
+
     Public Sub New()
 
         ' This call is required by the designer.
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        RbpGXacNhan.Visible = False
+        RbpGConfirm.Visible = False
     End Sub
 
     Private Sub UCRoles_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -16,11 +16,9 @@ Public Class UCRoles
     End Sub
     Private Sub BtnAdd_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCREATE.ItemClick
         FrmMain.AddDocs(New UCRolesUpdate, "Thêm nhóm")
-        DataModeRoles = 0
     End Sub
     Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEDIT.ItemClick
         FrmMain.AddDocs(New UCRolesUpdate, "Sửa nhóm")
-        DataModeRoles = 1
     End Sub
     Private Sub LoadData()
         Dim data = DBHelper.GetInstance.GetDataTable("procGetAllRoles", CommandType.StoredProcedure)

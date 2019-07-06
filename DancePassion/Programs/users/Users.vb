@@ -1,4 +1,5 @@
 ﻿Imports System.Security.Cryptography
+Imports System.Text
 Imports MySql.Data.MySqlClient
 
 #Region " DTO Users"
@@ -190,7 +191,7 @@ Public Class Users
         Dim ObjectUser As New UsersDTO
         Dim strProc As String = "procGetUserByUserName"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_user_name", user_name)
+            New MySqlParameter("p_user_name", user_name)
         }
 
         Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
@@ -237,7 +238,7 @@ Public Class Users
 
         Dim objUser As UsersDTO = GetUserByUserName(userName)
         If objUser.User_name IsNot Nothing Then
-            If objUser.User_password = passWord Then
+            If objUser.User_password = Security.GetMD5(passWord) Then
                 If objUser.User_status = 1 Then
                     status = User_status.Active
                 Else
@@ -252,5 +253,6 @@ Public Class Users
 
         Return objUser
     End Function
+
 End Class
 #End Region

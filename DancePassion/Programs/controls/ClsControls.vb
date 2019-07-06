@@ -6,6 +6,9 @@ Imports MySql.Data.MySqlClient
 Public Class ControlsDTO
     Private _controls_name As String
     Private _controls_description As String
+    Private _controls_parent As String
+    Private _controls_type As String
+    Private _controls_sort As Integer
     Public Property Controls_name As String
         Get
             Return _controls_name
@@ -21,6 +24,33 @@ Public Class ControlsDTO
         End Get
         Set(value As String)
             _controls_description = value
+        End Set
+    End Property
+
+    Public Property Controls_parent As String
+        Get
+            Return _controls_parent
+        End Get
+        Set(value As String)
+            _controls_parent = value
+        End Set
+    End Property
+
+    Public Property Controls_type As String
+        Get
+            Return _controls_type
+        End Get
+        Set(value As String)
+            _controls_type = value
+        End Set
+    End Property
+
+    Public Property Controls_sort As Integer
+        Get
+            Return _controls_sort
+        End Get
+        Set(value As Integer)
+            _controls_sort = value
         End Set
     End Property
 End Class
@@ -41,17 +71,21 @@ End Enum
 #End Region
 
 #Region " Data Access for controls"
-Public Class Controls
-    Private Shared Singleton As Controls
-    Public Shared Function GetInstance() As Controls
+Public Class ClsControls
+    Private Shared Singleton As ClsControls
+    Public Shared Function GetInstance() As ClsControls
         If Singleton Is Nothing Then
-            Singleton = New Controls()
+            Singleton = New ClsControls()
         End If
         Return Singleton
     End Function
     Public Function GetDataTable() As DataTable
-        Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllControls", CommandType.StoredProcedure)
-        Return dtUsers
+        Dim dtControls As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllControls", CommandType.StoredProcedure)
+        Return dtControls
+    End Function
+    Public Function GetDataSet() As DataSet
+        Dim dsControls As DataSet = DBHelper.GetInstance.GetDataSet("procGetAllControls", CommandType.StoredProcedure)
+        Return dsControls
     End Function
     Public Function GetList() As ControlsCollection
         Dim ControlsList As New ControlsCollection
@@ -59,8 +93,10 @@ Public Class Controls
 
         While Reader.Read()
             Dim objUser As New ControlsDTO With {
-                .Controls_name = Reader("controls_name").ToString(),
-                .Controls_description = Reader("controls_description").ToString()
+                .Controls_name = Reader(0).ToString(),
+                .Controls_description = Reader(1).ToString(),
+                .Controls_parent = Reader(2).ToString(),
+                .Controls_type = Reader(3).ToString()
             }
             ControlsList.Add(objUser)
         End While

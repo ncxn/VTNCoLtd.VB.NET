@@ -9,8 +9,8 @@ Public Class UCUsersAdd
         ' Thủ tục phân quyền: khi form hiện lên thì lấy định nghĩa các action trong phần phân quyền.
         ' GenerateAction(me)
         'RbpChucNang.Visible = False
-        RbpGCongCu.Visible = False
-        RbpGMoRong.Visible = False
+        RbpGTools.Visible = False
+        RbpGExtend.Visible = False
 
     End Sub
     Private Sub BtnOK_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnOK.ItemClick

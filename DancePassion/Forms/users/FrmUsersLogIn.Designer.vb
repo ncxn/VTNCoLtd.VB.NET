@@ -31,7 +31,7 @@ Partial Class FrmUsersLogIn
         '
         Me.txtUserName.Location = New System.Drawing.Point(12, 88)
         Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(266, 40)
+        Me.txtUserName.Size = New System.Drawing.Size(380, 40)
         Me.txtUserName.TabIndex = 0
         '
         'txtPassWord
@@ -40,30 +40,30 @@ Partial Class FrmUsersLogIn
         Me.txtPassWord.Name = "txtPassWord"
         Me.txtPassWord.Properties.NullValuePromptShowForEmptyValue = True
         Me.txtPassWord.Properties.UseSystemPasswordChar = True
-        Me.txtPassWord.Size = New System.Drawing.Size(266, 40)
+        Me.txtPassWord.Size = New System.Drawing.Size(380, 40)
         Me.txtPassWord.TabIndex = 1
         '
         'btnOK
         '
         Me.btnOK.Location = New System.Drawing.Point(12, 193)
         Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(120, 38)
+        Me.btnOK.Size = New System.Drawing.Size(180, 38)
         Me.btnOK.TabIndex = 2
         Me.btnOK.Text = "Đăng nhập"
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(158, 193)
+        Me.btnCancel.Location = New System.Drawing.Point(212, 193)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(120, 38)
+        Me.btnCancel.Size = New System.Drawing.Size(180, 38)
         Me.btnCancel.TabIndex = 3
         Me.btnCancel.Text = "Thoát"
         '
-        'LogIn
+        'FrmUsersLogIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(290, 262)
+        Me.ClientSize = New System.Drawing.Size(403, 262)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnOK)
         Me.Controls.Add(Me.txtPassWord)
@@ -71,7 +71,7 @@ Partial Class FrmUsersLogIn
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "LogIn"
+        Me.Name = "FrmUsersLogIn"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Đăng nhập"
         CType(Me.txtUserName.Properties, System.ComponentModel.ISupportInitialize).EndInit()

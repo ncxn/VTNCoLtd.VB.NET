@@ -6,8 +6,8 @@
 
         ' Add any initialization after the InitializeComponent() call.
         'RbpChucNang.Visible = False
-        RbpGCongCu.Visible = False
-        RbpGMoRong.Visible = False
+        RbpGTools.Visible = False
+        RbpGExtend.Visible = False
 
     End Sub
 End Class

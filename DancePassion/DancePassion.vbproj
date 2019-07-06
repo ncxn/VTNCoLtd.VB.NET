@@ -93,6 +93,7 @@
     </Reference>
     <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -233,9 +234,11 @@
     <Compile Include="FrmMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Global\ClsDelegate.vb" />
     <Compile Include="Global\DBConnection.vb" />
     <Compile Include="Global\DBHelper.vb" />
     <Compile Include="Global\DBUtils.vb" />
+    <Compile Include="Global\Security.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -248,8 +251,26 @@
     </Compile>
     <Compile Include="Programs\config\cfgMail.vb" />
     <Compile Include="Programs\config\SMSconfig.vb" />
-    <Compile Include="Programs\controls\controls.vb" />
+    <Compile Include="Programs\controls\ClsAccess.vb" />
+    <Compile Include="Programs\controls\ClsControls.vb" />
+    <Compile Include="Programs\controls\ClsControlsAccess.vb" />
+    <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="Programs\roleManager\ClsRoleManager.vb" />
+    <Compile Include="Programs\roles\Roles.vb" />
+    <Compile Include="Programs\userroles\ClsUserToRoles.vb" />
     <Compile Include="Programs\users\Users.vb" />
+    <Compile Include="User Controls\devManager\UCControlsManager.Designer.vb">
+      <DependentUpon>UCControlsManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\devManager\UCControlsManager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\roleManager\UCRoleManager.Designer.vb">
+      <DependentUpon>UCRoleManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\roleManager\UCRoleManager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\roles\UCRoles.Designer.vb">
       <DependentUpon>UCRoles.vb</DependentUpon>
     </Compile>
@@ -334,6 +355,12 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\devManager\UCControlsManager.resx">
+      <DependentUpon>UCControlsManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\roleManager\UCRoleManager.resx">
+      <DependentUpon>UCRoleManager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\roles\UCRoles.resx">
       <DependentUpon>UCRoles.vb</DependentUpon>
@@ -639,6 +666,19 @@
   <ItemGroup>
     <None Include="Resources\resetlayoutoptions.svg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showallfieldcodes.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_statemachine.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\superscript.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listnumbers.svg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
