@@ -251,9 +251,9 @@
     </Compile>
     <Compile Include="Programs\config\cfgMail.vb" />
     <Compile Include="Programs\config\SMSconfig.vb" />
-    <Compile Include="Programs\controls\ClsAccess.vb" />
-    <Compile Include="Programs\controls\ClsControls.vb" />
-    <Compile Include="Programs\controls\ClsControlsAccess.vb" />
+    <Compile Include="Programs\DevManager\ClsAccess.vb" />
+    <Compile Include="Programs\DevManager\ClsControls.vb" />
+    <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
     <Compile Include="Programs\roleManager\ClsRoleManager.vb" />
     <Compile Include="Programs\roles\Roles.vb" />

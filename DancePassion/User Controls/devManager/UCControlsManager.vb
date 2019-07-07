@@ -9,7 +9,7 @@ Public Class UCControlsManager
 
         ' Mở rộng.
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
-        Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
+        'Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
     End Sub
     Private Sub ControlsManager_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadData()
@@ -29,6 +29,13 @@ Public Class UCControlsManager
             End If
         Next
     End Sub
+
+    Private Sub GrvControls_LostFocus(sender As Object, e As EventArgs) Handles GrvControls.LostFocus
+        SendKeys.Send("{ENTER}")
+    End Sub
+    Private Sub GrvControls_BeforeLeaveRow(sender As Object, e As RowAllowEventArgs) Handles GrvControls.BeforeLeaveRow
+        GrvControls.CloseEditor()
+    End Sub
 #End Region
 #Region " Sửa dòng"
     Private Sub GetNewRowsModified()
@@ -44,6 +51,7 @@ Public Class UCControlsManager
     Private Sub GrdControls_ProcessGridKey(sender As Object, e As KeyEventArgs) Handles GrdControls.ProcessGridKey
         Select Case e.KeyData
             Case Keys.Insert
+                SendKeys.Send("{ENTER}")
                 InsertRow()
             Case Keys.Delete
                 DeleteRow()

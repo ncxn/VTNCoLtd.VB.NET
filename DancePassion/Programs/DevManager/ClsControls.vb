@@ -63,12 +63,6 @@ Public Class ControlsCollection
 End Class
 #End Region
 
-#Region " Controls Status"
-Public Enum Controls_status
-    C_TRUE = 1
-    C_FALSE = 0
-End Enum
-#End Region
 
 #Region " Data Access for controls"
 Public Class ClsControls
@@ -89,7 +83,7 @@ Public Class ClsControls
     End Function
     Public Function GetList() As ControlsCollection
         Dim ControlsList As New ControlsCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllControls", CommandType.StoredProcedure)
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllControlsWithTypeMenu", CommandType.StoredProcedure)
 
         While Reader.Read()
             Dim objUser As New ControlsDTO With {
@@ -132,34 +126,6 @@ Public Class ClsControls
 
     End Function
 
-    Public Function GetUserByUserName(user_name As String) As UsersDTO
-        Dim ObjectUser As New UsersDTO
-        Dim strProc As String = "procGetUserByUserName"
-        Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_user_name", user_name)
-        }
-
-        Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
-
-        If Reader.Read() Then
-            With ObjectUser
-                .User_id = Reader("User_id").ToString()
-                .User_name = Reader("User_name").ToString()
-                .User_first_name = Reader("User_first_name").ToString()
-                .User_last_name = Reader("User_last_name").ToString()
-                .User_email = Reader("User_email").ToString()
-                .User_password = Reader("User_password").ToString()
-                .User_status = CInt(Reader("User_status"))
-                .User_created_at = CDate(Reader("User_created_at"))
-                .User_updated_at = CDate(Reader("User_updated_at"))
-
-            End With
-        End If
-        Reader.Close()
-
-        Return ObjectUser
-
-    End Function
     Public Function InsertUsers(Users As UsersDTO) As Boolean
         Dim strSQL = "procInsertUsers"
 
@@ -179,24 +145,6 @@ Public Class ClsControls
         Return result > 0
         Return result > 0
     End Function
-    Public Function Login(ByVal userName As String, ByVal passWord As String, ByRef status As User_status) As UsersDTO
 
-        Dim objUser As UsersDTO = GetUserByUserName(userName)
-        If objUser.User_name IsNot Nothing Then
-            If objUser.User_password = passWord Then
-                If objUser.User_status = 1 Then
-                    status = User_status.Active
-                Else
-                    status = User_status.Locked
-                End If
-            Else
-                status = User_status.WrongPass
-            End If
-        Else
-            status = User_status.NotExists
-        End If
-
-        Return objUser
-    End Function
 End Class
 #End Region

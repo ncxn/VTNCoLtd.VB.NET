@@ -105,6 +105,7 @@ Public Class UCRoleManager
         TrlControls.OptionsBehavior.Editable = False
         TrlControls.CollapseAll()
         TrlControls.Columns("Controls_type").Visible = False
+        TrlControls.Columns("Controls_sort").Visible = False
         TrlControls.Columns("Controls_description").Caption = "Chọn chức năng"
     End Sub
 
