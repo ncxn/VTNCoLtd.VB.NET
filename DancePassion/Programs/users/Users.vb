@@ -232,7 +232,7 @@ Public Class Users
         Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
-        Return result > 0
+
     End Function
     Public Function Login(ByVal userName As String, ByVal passWord As String, ByRef status As User_status) As UsersDTO
 

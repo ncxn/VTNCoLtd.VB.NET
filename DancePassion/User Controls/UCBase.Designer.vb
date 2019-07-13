@@ -30,11 +30,11 @@ Partial Class UCBase
         Me.BtnEMAIL = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnOKANDNEW = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnREFRESH = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarStaticItem1 = New DevExpress.XtraBars.BarStaticItem()
         Me.RbpFunction = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RbpGTools = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpGExtend = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpGConfirm = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.BaseStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         CType(Me.RibbonControlBaseOnUserControl, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,13 +42,14 @@ Partial Class UCBase
         '
         Me.RibbonControlBaseOnUserControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal
         Me.RibbonControlBaseOnUserControl.ExpandCollapseItem.Id = 0
-        Me.RibbonControlBaseOnUserControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControlBaseOnUserControl.ExpandCollapseItem, Me.BtnCREATE, Me.BtnEDIT, Me.BtnDELETE, Me.BtnOK, Me.BtnCANCEL, Me.BtnPRINT, Me.BtnEXCEL, Me.BtnEMAIL, Me.BtnOKANDNEW, Me.BtnREFRESH, Me.BarStaticItem1})
+        Me.RibbonControlBaseOnUserControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControlBaseOnUserControl.ExpandCollapseItem, Me.BtnCREATE, Me.BtnEDIT, Me.BtnDELETE, Me.BtnOK, Me.BtnCANCEL, Me.BtnPRINT, Me.BtnEXCEL, Me.BtnEMAIL, Me.BtnOKANDNEW, Me.BtnREFRESH})
         Me.RibbonControlBaseOnUserControl.Location = New System.Drawing.Point(0, 0)
         Me.RibbonControlBaseOnUserControl.MaxItemId = 12
         Me.RibbonControlBaseOnUserControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.RibbonControlBaseOnUserControl.Name = "RibbonControlBaseOnUserControl"
         Me.RibbonControlBaseOnUserControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpFunction})
         Me.RibbonControlBaseOnUserControl.Size = New System.Drawing.Size(827, 239)
+        Me.RibbonControlBaseOnUserControl.StatusBar = Me.BaseStatusBar
         '
         'BtnCREATE
         '
@@ -124,12 +125,6 @@ Partial Class UCBase
         Me.BtnREFRESH.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.resetlayoutoptions
         Me.BtnREFRESH.Name = "BtnREFRESH"
         '
-        'BarStaticItem1
-        '
-        Me.BarStaticItem1.Caption = "Trạng thái:"
-        Me.BarStaticItem1.Id = 11
-        Me.BarStaticItem1.Name = "BarStaticItem1"
-        '
         'RbpFunction
         '
         Me.RbpFunction.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpGTools, Me.RbpGExtend, Me.RbpGConfirm})
@@ -165,13 +160,21 @@ Partial Class UCBase
         Me.RbpGConfirm.ShowCaptionButton = False
         Me.RbpGConfirm.Text = "Xác nhận"
         '
+        'BaseStatusBar
+        '
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 243)
+        Me.BaseStatusBar.Name = "BaseStatusBar"
+        Me.BaseStatusBar.Ribbon = Me.RibbonControlBaseOnUserControl
+        Me.BaseStatusBar.Size = New System.Drawing.Size(827, 40)
+        '
         'UCBase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.BaseStatusBar)
         Me.Controls.Add(Me.RibbonControlBaseOnUserControl)
         Me.Name = "UCBase"
-        Me.Size = New System.Drawing.Size(827, 259)
+        Me.Size = New System.Drawing.Size(827, 283)
         CType(Me.RibbonControlBaseOnUserControl, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -193,5 +196,5 @@ Partial Class UCBase
     Friend WithEvents BtnEMAIL As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnOKANDNEW As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnREFRESH As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarStaticItem1 As DevExpress.XtraBars.BarStaticItem
+    Public WithEvents BaseStatusBar As DevExpress.XtraBars.Ribbon.RibbonStatusBar
 End Class

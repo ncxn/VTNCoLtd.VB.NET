@@ -31,9 +31,9 @@ Partial Class FrmMain
         Me.Sua = New DevExpress.XtraBars.Ribbon.BackstageViewTabItem()
         Me.BackstageViewItemSeparator1 = New DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator()
         Me.BackstageViewItemSeparator2 = New DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator()
-        Me.KhoiTao_dbs_btn = New DevExpress.XtraBars.BarButtonItem()
-        Me.KetNoi_dbs_btn = New DevExpress.XtraBars.BarButtonItem()
-        Me.LuuTru_dbs_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnCreateDB = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnConnectDB = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnBackupDB = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnHumanGroup = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnHuman = New DevExpress.XtraBars.BarButtonItem()
         Me.roles = New DevExpress.XtraBars.BarButtonItem()
@@ -89,7 +89,7 @@ Partial Class FrmMain
         Me.BtnFunctions = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnFunctionsOnControl = New DevExpress.XtraBars.BarButtonItem()
         Me.RbpSystem = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPageGroup_Database = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RbpgDatabase = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_Configuration = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpGPeoples = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_Emails = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -143,7 +143,7 @@ Partial Class FrmMain
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.KhoiTao_dbs_btn, Me.KetNoi_dbs_btn, Me.LuuTru_dbs_btn, Me.BtnHumanGroup, Me.BtnHuman, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.BtnRoles, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.BtnControls, Me.BtnFunctions, Me.BtnFunctionsOnControl})
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.BtnHumanGroup, Me.BtnHuman, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.BtnRoles, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.BtnControls, Me.BtnFunctions, Me.BtnFunctionsOnControl})
         Me.MainControlRibbon.MaxItemId = 48
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
@@ -217,26 +217,26 @@ Partial Class FrmMain
         '
         Me.BackstageViewItemSeparator2.Name = "BackstageViewItemSeparator2"
         '
-        'KhoiTao_dbs_btn
+        'BtnCreateDB
         '
-        resources.ApplyResources(Me.KhoiTao_dbs_btn, "KhoiTao_dbs_btn")
-        Me.KhoiTao_dbs_btn.Id = 5
-        Me.KhoiTao_dbs_btn.ImageOptions.SvgImage = CType(resources.GetObject("KhoiTao_dbs_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.KhoiTao_dbs_btn.Name = "KhoiTao_dbs_btn"
+        resources.ApplyResources(Me.BtnCreateDB, "BtnCreateDB")
+        Me.BtnCreateDB.Id = 5
+        Me.BtnCreateDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnCreateDB.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnCreateDB.Name = "BtnCreateDB"
         '
-        'KetNoi_dbs_btn
+        'BtnConnectDB
         '
-        resources.ApplyResources(Me.KetNoi_dbs_btn, "KetNoi_dbs_btn")
-        Me.KetNoi_dbs_btn.Id = 6
-        Me.KetNoi_dbs_btn.ImageOptions.SvgImage = CType(resources.GetObject("KetNoi_dbs_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.KetNoi_dbs_btn.Name = "KetNoi_dbs_btn"
+        resources.ApplyResources(Me.BtnConnectDB, "BtnConnectDB")
+        Me.BtnConnectDB.Id = 6
+        Me.BtnConnectDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnConnectDB.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnConnectDB.Name = "BtnConnectDB"
         '
-        'LuuTru_dbs_btn
+        'BtnBackupDB
         '
-        resources.ApplyResources(Me.LuuTru_dbs_btn, "LuuTru_dbs_btn")
-        Me.LuuTru_dbs_btn.Id = 7
-        Me.LuuTru_dbs_btn.ImageOptions.SvgImage = CType(resources.GetObject("LuuTru_dbs_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.LuuTru_dbs_btn.Name = "LuuTru_dbs_btn"
+        resources.ApplyResources(Me.BtnBackupDB, "BtnBackupDB")
+        Me.BtnBackupDB.Id = 7
+        Me.BtnBackupDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnBackupDB.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnBackupDB.Name = "BtnBackupDB"
         '
         'BtnHumanGroup
         '
@@ -631,20 +631,20 @@ Partial Class FrmMain
         '
         'RbpSystem
         '
-        Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup_Database, Me.RibbonPageGroup_Configuration, Me.RbpGPeoples, Me.RibbonPageGroup_Emails, Me.RibbonPageGroup_SMS})
+        Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgDatabase, Me.RibbonPageGroup_Configuration, Me.RbpGPeoples, Me.RibbonPageGroup_Emails, Me.RibbonPageGroup_SMS})
         Me.RbpSystem.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.properties
         Me.RbpSystem.Name = "RbpSystem"
         resources.ApplyResources(Me.RbpSystem, "RbpSystem")
         '
-        'RibbonPageGroup_Database
+        'RbpgDatabase
         '
-        Me.RibbonPageGroup_Database.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Database.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.RibbonPageGroup_Database.ItemLinks.Add(Me.KhoiTao_dbs_btn)
-        Me.RibbonPageGroup_Database.ItemLinks.Add(Me.KetNoi_dbs_btn)
-        Me.RibbonPageGroup_Database.ItemLinks.Add(Me.LuuTru_dbs_btn)
-        Me.RibbonPageGroup_Database.Name = "RibbonPageGroup_Database"
-        Me.RibbonPageGroup_Database.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_Database, "RibbonPageGroup_Database")
+        Me.RbpgDatabase.ImageOptions.SvgImage = CType(resources.GetObject("RbpgDatabase.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RbpgDatabase.ItemLinks.Add(Me.BtnCreateDB)
+        Me.RbpgDatabase.ItemLinks.Add(Me.BtnConnectDB)
+        Me.RbpgDatabase.ItemLinks.Add(Me.BtnBackupDB)
+        Me.RbpgDatabase.Name = "RbpgDatabase"
+        Me.RbpgDatabase.ShowCaptionButton = False
+        resources.ApplyResources(Me.RbpgDatabase, "RbpgDatabase")
         '
         'RibbonPageGroup_Configuration
         '
@@ -877,9 +877,9 @@ Partial Class FrmMain
     End Sub
     Friend WithEvents RibbonStatusBarOnMain As DevExpress.XtraBars.Ribbon.RibbonStatusBar
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents KhoiTao_dbs_btn As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents KetNoi_dbs_btn As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents LuuTru_dbs_btn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnCreateDB As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnConnectDB As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnBackupDB As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RbpSalesManager As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RbpEventManagement As DevExpress.XtraBars.Ribbon.RibbonPage
@@ -887,7 +887,7 @@ Partial Class FrmMain
     Friend WithEvents RbpClubManager As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RbpSystem As DevExpress.XtraBars.Ribbon.RibbonPage
-    Friend WithEvents RibbonPageGroup_Database As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RbpgDatabase As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents BtnHumanGroup As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnHuman As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents roles As DevExpress.XtraBars.BarButtonItem

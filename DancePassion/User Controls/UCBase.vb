@@ -1,4 +1,5 @@
-﻿Imports DevExpress.XtraBars.Ribbon
+﻿Imports DevExpress.XtraBars
+Imports DevExpress.XtraBars.Ribbon
 
 Public Class UCBase
 #Region " Khởi tạo"
@@ -16,6 +17,11 @@ Public Class UCBase
     Public ReadOnly Property BaseRibbon() As RibbonControl
         Get
             Return RibbonControlBaseOnUserControl
+        End Get
+    End Property
+    Public ReadOnly Property OK() As BarButtonItem
+        Get
+            Return BtnOK
         End Get
     End Property
 #End Region

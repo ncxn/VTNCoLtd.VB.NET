@@ -244,6 +244,9 @@
   <data name="nhacungcap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nhacungcap.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="listnumbers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listnumbers.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="deletetable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deletetable.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -343,6 +346,9 @@
   <data name="actions_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\actions_add.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="removegroupheader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\removegroupheader.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -364,7 +370,7 @@
   <data name="eSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eSMS1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="listnumbers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\listnumbers.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="functionscompatibility" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\functionscompatibility.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

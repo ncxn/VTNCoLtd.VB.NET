@@ -175,7 +175,7 @@ Public Class DBHelper
         BeginTransaction()
         Dim cmd As MySqlCommand = GetCommandWithTransaction(commandText, commandType)
         If parameters IsNot Nothing Then
-            cmd.Parameters.Add(parameters.ToArray())
+            cmd.Parameters.AddRange(parameters.ToArray())
         End If
 
         Try

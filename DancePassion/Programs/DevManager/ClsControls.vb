@@ -63,7 +63,6 @@ Public Class ControlsCollection
 End Class
 #End Region
 
-
 #Region " Data Access for controls"
 Public Class ClsControls
     Private Shared Singleton As ClsControls
@@ -100,7 +99,7 @@ Public Class ClsControls
 
     End Function
 
-    Public Function GetUserByID(user_id As Integer) As UsersDTO
+    Public Function Insert(user_id As Integer) As UsersDTO
         Dim ObjectUser As New UsersDTO
         Dim strProc As String = "procGetUserByID"
         Dim parameters As New List(Of MySqlParameter) From {
@@ -126,25 +125,72 @@ Public Class ClsControls
 
     End Function
 
-    Public Function InsertUsers(Users As UsersDTO) As Boolean
-        Dim strSQL = "procInsertUsers"
+    Public Function InsertControls(Controls As ControlsDTO) As Boolean
+        Dim strSQL = "procInsertControls"
 
-        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
-        Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
+        Dim paraName() As String = {"p_controls_name", "p_controls_description", "p_controls_parent", "p_controls_type", "p_controls_sort"}
+        Dim paraValue As Object = New Object() {Controls.Controls_name, Controls.Controls_description, Controls.Controls_parent, Controls.Controls_type, Controls.Controls_sort}
         Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
-    Public Function UpdateUsers(Users As UsersDTO) As Boolean
-        Dim strSQL = "procInsertUsers"
 
-        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
-        Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
-        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
-        Return result > 0
+    Public Function BulkInsertControls(Controls As ControlsCollection) As Boolean
+        Dim strSQL = "procInsertControls"
+        Dim result As Integer = 0
+        Dim paraName() As String = {"p_controls_name", "p_controls_description", "p_controls_parent", "p_controls_type", "p_controls_sort"}
+
+        For i As Integer = 0 To Controls.Count - 1
+            Dim paraValue As Object = New Object() {Controls(i).Controls_name, Controls(i).Controls_description, Controls(i).Controls_parent, Controls(i).Controls_type, Controls(i).Controls_sort}
+            Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+        Next
+
         Return result > 0
     End Function
 
+    Public Function UpdateControls(Controls As ControlsDTO) As Boolean
+        Dim strSQL = "procUpdateControls"
+        Dim paraName() As String = {"p_controls_name", "p_controls_description", "p_controls_parent", "p_controls_type", "p_controls_sort"}
+        Dim paraValue As Object = New Object() {Controls.Controls_name, Controls.Controls_description, Controls.Controls_parent, Controls.Controls_type, Controls.Controls_sort}
+        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
+    Public Function BulkUpdateControls(Controls As ControlsCollection) As Boolean
+        Dim strSQL = "procUpdateControls"
+        Dim result As Integer = 0
+        Dim paraName() As String = {"p_controls_name", "p_controls_description", "p_controls_parent", "p_controls_type", "p_controls_sort"}
+
+        For i As Integer = 0 To Controls.Count - 1
+            Dim paraValue As Object = New Object() {Controls(i).Controls_name, Controls(i).Controls_description, Controls(i).Controls_parent, Controls(i).Controls_type, Controls(i).Controls_sort}
+            Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+        Next
+
+        Return result > 0
+    End Function
+    Public Function DeleteControls(Controls As ControlsDTO) As Boolean
+        Dim strSQL = "procDeleteControls"
+
+        Dim paraName() As String = {"p_controls_name"}
+        Dim paraValue As Object = New Object() {Controls.Controls_name}
+        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
+    Public Function BulkDeleteControls(Controls As ControlsCollection) As Boolean
+        Dim strSQL = "procDeleteControls"
+        Dim result As Integer = 0
+        Dim paraName() As String = {"p_controls_name"}
+
+        For i As Integer = 0 To Controls.Count - 1
+            Dim paraValue As Object = New Object() {Controls(i).Controls_name}
+            Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+        Next
+
+        Return result > 0
+    End Function
 End Class
 #End Region

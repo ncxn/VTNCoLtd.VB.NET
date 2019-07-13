@@ -339,10 +339,10 @@
   <data name="MainControlRibbon.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
   </data>
-  <data name="KhoiTao_dbs_btn.Caption" xml:space="preserve">
+  <data name="BtnCreateDB.Caption" xml:space="preserve">
     <value>Khởi tạo</value>
   </data>
-  <data name="KhoiTao_dbs_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnCreateDB.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -360,10 +360,10 @@
         IDMwLDI2ICIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVuIiAvPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="KetNoi_dbs_btn.Caption" xml:space="preserve">
+  <data name="BtnConnectDB.Caption" xml:space="preserve">
     <value>Kết nối</value>
   </data>
-  <data name="KetNoi_dbs_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnConnectDB.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -384,10 +384,10 @@
         IC8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="LuuTru_dbs_btn.Caption" xml:space="preserve">
+  <data name="BtnBackupDB.Caption" xml:space="preserve">
     <value>Lưu trữ</value>
   </data>
-  <data name="LuuTru_dbs_btn.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnBackupDB.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -971,6 +971,9 @@
         Pg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
+  <data name="BH_KhoHang_btn.Caption" xml:space="preserve">
+    <value>Kho hàng</value>
+  </data>
   <data name="Club_DangKyLop.Caption" xml:space="preserve">
     <value>Đăng ký lớp</value>
   </data>
@@ -979,9 +982,6 @@
   </data>
   <data name="Club_dsHLV_btn.Caption" xml:space="preserve">
     <value>Danh sách HLV</value>
-  </data>
-  <data name="BH_KhoHang_btn.Caption" xml:space="preserve">
-    <value>Kho hàng</value>
   </data>
   <data name="Club_LopDangHoc.Caption" xml:space="preserve">
     <value>Lớp đang học</value>
@@ -1016,58 +1016,7 @@
   <data name="MainControlRibbon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
-  <data name="RbpSystem.Text" xml:space="preserve">
-    <value>Hệ thống</value>
-  </data>
-  <data name="RbpEventManagement.Text" xml:space="preserve">
-    <value>Quản lý sự kiện</value>
-  </data>
-  <data name="RbpClubManager.Text" xml:space="preserve">
-    <value>Quản lý Club</value>
-  </data>
-  <data name="RbpSalesManager.Text" xml:space="preserve">
-    <value>Quản lý bán hàng</value>
-  </data>
-  <data name="RbpDev.Text" xml:space="preserve">
-    <value>Nhà phát triển</value>
-  </data>
-  <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1191, 247</value>
-  </data>
-  <data name="RibbonStatusBarOnMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 568</value>
-  </data>
-  <data name="RibbonStatusBarOnMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="RibbonStatusBarOnMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1191, 40</value>
-  </data>
-  <data name="&gt;&gt;RibbonStatusBarOnMain.Name" xml:space="preserve">
-    <value>RibbonStatusBarOnMain</value>
-  </data>
-  <data name="&gt;&gt;RibbonStatusBarOnMain.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;RibbonStatusBarOnMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;RibbonStatusBarOnMain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MainControlRibbon.Name" xml:space="preserve">
-    <value>MainControlRibbon</value>
-  </data>
-  <data name="&gt;&gt;MainControlRibbon.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;MainControlRibbon.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MainControlRibbon.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RibbonPageGroup_Database.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="RbpgDatabase.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -1084,7 +1033,7 @@
         IGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="RibbonPageGroup_Database.Text" xml:space="preserve">
+  <data name="RbpgDatabase.Text" xml:space="preserve">
     <value>Cơ sở dữ liệu</value>
   </data>
   <data name="RibbonPageGroup_Configuration.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1142,6 +1091,9 @@
   <data name="RibbonPageGroup_SMS.Text" xml:space="preserve">
     <value>Cấu hình SMS</value>
   </data>
+  <data name="RbpSystem.Text" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
   <data name="RbpgCreateEvent.Text" xml:space="preserve">
     <value>Khởi tạo sự kiện</value>
   </data>
@@ -1154,6 +1106,9 @@
   <data name="RibbonPageGroup_TienIchSuKien.Text" xml:space="preserve">
     <value>Các tiện ích</value>
   </data>
+  <data name="RbpEventManagement.Text" xml:space="preserve">
+    <value>Quản lý sự kiện</value>
+  </data>
   <data name="RibbonPageGroup3.Text" xml:space="preserve">
     <value>Các lớp học</value>
   </data>
@@ -1165,6 +1120,9 @@
   </data>
   <data name="RibbonPageGroup9.Text" xml:space="preserve">
     <value>Thống kê</value>
+  </data>
+  <data name="RbpClubManager.Text" xml:space="preserve">
+    <value>Quản lý Club</value>
   </data>
   <data name="RibbonPageGroup1.Text" xml:space="preserve">
     <value>Danh mục</value>
@@ -1181,8 +1139,50 @@
   <data name="RibbonPageGroup8.Text" xml:space="preserve">
     <value>Thống kê</value>
   </data>
+  <data name="RbpSalesManager.Text" xml:space="preserve">
+    <value>Quản lý bán hàng</value>
+  </data>
   <data name="RbpgFunctionManager.Text" xml:space="preserve">
     <value>Quản Lý Chức Năng</value>
+  </data>
+  <data name="RbpDev.Text" xml:space="preserve">
+    <value>Nhà phát triển</value>
+  </data>
+  <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1191, 247</value>
+  </data>
+  <data name="RibbonStatusBarOnMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 568</value>
+  </data>
+  <data name="RibbonStatusBarOnMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="RibbonStatusBarOnMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1191, 40</value>
+  </data>
+  <data name="&gt;&gt;RibbonStatusBarOnMain.Name" xml:space="preserve">
+    <value>RibbonStatusBarOnMain</value>
+  </data>
+  <data name="&gt;&gt;RibbonStatusBarOnMain.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonStatusBarOnMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RibbonStatusBarOnMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MainControlRibbon.Name" xml:space="preserve">
+    <value>MainControlRibbon</value>
+  </data>
+  <data name="&gt;&gt;MainControlRibbon.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;MainControlRibbon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainControlRibbon.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="BarButtonItem1.Caption" xml:space="preserve">
     <value>BarButtonItem1</value>
@@ -1247,22 +1247,22 @@
   <data name="&gt;&gt;BackstageViewItemSeparator2.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;KhoiTao_dbs_btn.Name" xml:space="preserve">
-    <value>KhoiTao_dbs_btn</value>
+  <data name="&gt;&gt;BtnCreateDB.Name" xml:space="preserve">
+    <value>BtnCreateDB</value>
   </data>
-  <data name="&gt;&gt;KhoiTao_dbs_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnCreateDB.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;KetNoi_dbs_btn.Name" xml:space="preserve">
-    <value>KetNoi_dbs_btn</value>
+  <data name="&gt;&gt;BtnConnectDB.Name" xml:space="preserve">
+    <value>BtnConnectDB</value>
   </data>
-  <data name="&gt;&gt;KetNoi_dbs_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnConnectDB.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;LuuTru_dbs_btn.Name" xml:space="preserve">
-    <value>LuuTru_dbs_btn</value>
+  <data name="&gt;&gt;BtnBackupDB.Name" xml:space="preserve">
+    <value>BtnBackupDB</value>
   </data>
-  <data name="&gt;&gt;LuuTru_dbs_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnBackupDB.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;BtnHumanGroup.Name" xml:space="preserve">
@@ -1595,10 +1595,10 @@
   <data name="&gt;&gt;RbpSystem.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_Database.Name" xml:space="preserve">
-    <value>RibbonPageGroup_Database</value>
+  <data name="&gt;&gt;RbpgDatabase.Name" xml:space="preserve">
+    <value>RbpgDatabase</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_Database.Type" xml:space="preserve">
+  <data name="&gt;&gt;RbpgDatabase.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RibbonPageGroup_Configuration.Name" xml:space="preserve">

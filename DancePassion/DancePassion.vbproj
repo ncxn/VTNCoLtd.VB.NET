@@ -259,6 +259,12 @@
     <Compile Include="Programs\roles\Roles.vb" />
     <Compile Include="Programs\userroles\ClsUserToRoles.vb" />
     <Compile Include="Programs\users\Users.vb" />
+    <Compile Include="User Controls\devManager\UcAccess.Designer.vb">
+      <DependentUpon>UcAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\devManager\UcAccess.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\devManager\UCControlsManager.Designer.vb">
       <DependentUpon>UCControlsManager.vb</DependentUpon>
     </Compile>
@@ -355,6 +361,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\devManager\UcAccess.resx">
+      <DependentUpon>UcAccess.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\devManager\UCControlsManager.resx">
       <DependentUpon>UCControlsManager.vb</DependentUpon>
@@ -678,7 +687,12 @@
   <ItemGroup>
     <None Include="Resources\listnumbers.svg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\about.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\functionscompatibility.svg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.110.0\build\net46\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

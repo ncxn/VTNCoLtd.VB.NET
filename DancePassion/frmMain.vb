@@ -9,12 +9,14 @@ Imports DevExpress.XtraBars.Docking2010
 Imports DevExpress.XtraBars.Docking2010.Views
 Imports DevExpress.XtraBars.Docking2010.Views.Tabbed
 Imports DevExpress.XtraBars.Ribbon
+Imports DevExpress.XtraEditors
 Imports DevExpress.XtraSplashScreen
 Imports MySql.Data.MySqlClient
 
 Public Class FrmMain
     ' Biến toàn cục cho Private Sub, sử dụng kỹ thuật Delegate, Bên dưới gọi Menuhanlder() bất cứ đâu sẽ trỏ đến RoleMenu()
     Public MenuHanlder As New ClsDelegate.MenuDelegate(AddressOf RoleMenu)
+
 #Region " Constructor"
 
     Public Sub New()
@@ -103,6 +105,13 @@ Public Class FrmMain
         Dim childRibbon As RibbonControl = e.MergedChild
         parentRRibbon.StatusBar.MergeStatusBar(childRibbon.StatusBar)
     End Sub
+
+    Private Sub MainControlRibbon_UnMerge(sender As Object, e As RibbonMergeEventArgs) Handles MainControlRibbon.UnMerge
+        Dim parentRRibbon As RibbonControl = TryCast(sender, RibbonControl)
+        Dim childRibbon As RibbonControl = e.MergedChild
+        parentRRibbon.StatusBar.UnMergeStatusBar()
+    End Sub
+
 #End Region
 
 #Region " BackstageView"
@@ -143,6 +152,11 @@ Public Class FrmMain
         AddDocs(New UCControlsManager, "Quản lý controls")
         SplashScreenManager.CloseForm()
     End Sub
+    Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctions.ItemClick
+        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        AddDocs(New UcAccess, "Chức năng trên Form")
+        SplashScreenManager.CloseForm()
+    End Sub
 #End Region
 
 #Region " Role manager"
@@ -173,6 +187,8 @@ Public Class FrmMain
             Next
         Next
     End Sub
+
+
 #End Region
 
 End Class

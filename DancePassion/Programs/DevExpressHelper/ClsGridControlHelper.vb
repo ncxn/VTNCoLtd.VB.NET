@@ -27,8 +27,10 @@ Public Class ClsGridControlHelper
             If _View.IsNewItemRow(_View.FocusedRowHandle) Then
                 _View.UpdateCurrentRow()
             End If
-            If _View.IsLastRow Then
+            If _View.IsLastRow And _View.ActiveEditor Is Nothing Then
                 Return AddNewRow()
+            Else
+                _View.CloseEditor()
             End If
         End If
         Return False
