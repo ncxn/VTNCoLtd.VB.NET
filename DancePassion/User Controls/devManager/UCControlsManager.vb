@@ -1,12 +1,15 @@
 ﻿Imports System.ComponentModel
 Imports DevExpress.Data
+Imports DevExpress.XtraEditors
 Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraEditors.Repository
 Imports DevExpress.XtraGrid.Columns
 Imports DevExpress.XtraGrid.Views.Base
 Imports DevExpress.XtraGrid.Views.Grid
+Imports DevExpress.XtraSplashScreen
 
 Public Class UCControlsManager
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -16,11 +19,13 @@ Public Class UCControlsManager
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
         Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
     End Sub
-#Region " Controls Manager action"
+
+#Region " Controls Manager Action"
     Private Sub ControlsManager_Load(sender As Object, e As EventArgs) Handles Me.Load
         BtnOK.Caption = "Lưu dữ liệu"
-
+        ' Dữ liệu trên lưới
         LoadData()
+        ' Thêm một dropdown cho cột cấp cha
         AddLookUpEdit()
     End Sub
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
@@ -28,6 +33,18 @@ Public Class UCControlsManager
     End Sub
     Private Sub BtnCancel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
         FrmMain.RemoveDocumetns()
+    End Sub
+    Private Sub BtnCreate_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCREATE.ItemClick
+        FrmMain.AddDocs(New UcControlAdd, "Thêm Control")
+    End Sub
+    Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEDIT.ItemClick
+        Dim uc As New UcControlUpdate With {
+            .CurrentRecord = GetCurrentControlDTO()
+        }
+        FrmMain.AddDocs(uc, "Sửa Control")
+    End Sub
+    Private Sub BtnRefresh_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnREFRESH.ItemClick
+        LoadData()
     End Sub
 #End Region
 
@@ -38,6 +55,8 @@ Public Class UCControlsManager
             GrvControls.AddNewRow()
             GrvControls.OptionsNavigation.AutoFocusNewRow = True
             GrvControls.FocusedColumn = GrvControls.VisibleColumns(0)
+        Else
+            GrvControls.UpdateCurrentRow()
         End If
     End Sub
 
@@ -97,26 +116,8 @@ Public Class UCControlsManager
 #End Region
 
 #Region " Xóa dòng"
-    ' Thủ tục chọn key id (controls_name) để thực hiện các lệnh trên DB
-    Private Function GetCurrentControlDTO() As ControlsDTO
 
-        Dim SelectedRow = GrvControls.GetFocusedDataRow()
-        Dim dataControls As New ControlsDTO
-        If SelectedRow IsNot Nothing Then
-            With dataControls
-                .Controls_name = SelectedRow(0).ToString
-                .Controls_description = SelectedRow(1).ToString
-                .Controls_parent = SelectedRow(2).ToString
-                .Controls_type = SelectedRow(3).ToString
-                .Controls_sort = SelectedRow(4).ToString
-            End With
-        End If
-
-        Return dataControls
-
-    End Function
-
-    ' Thủ tục xóa dòng
+    ' Thủ tục xóa dòng: chỉ áp dụng khi dùng command builder
     Private Function GetRowsDeleted() As ControlsCollection
         Dim listControls As New ControlsCollection
         Dim dr As DataRow
@@ -136,13 +137,9 @@ Public Class UCControlsManager
         Next
         Return listControls
     End Function
-    Private Sub GrvControls_RowDeleted(sender As Object, e As RowDeletedEventArgs) Handles GrvControls.RowDeleted
-        For Each i In e.Row
-            Debug.WriteLine(i.ToString)
-        Next
 
-    End Sub
     Private Sub DeleteRow()
+        ClsControls.GetInstance.DeleteControls(GetCurrentControlDTO)
         GrvControls.DeleteRow(GrvControls.FocusedRowHandle)
     End Sub
 
@@ -195,36 +192,41 @@ Public Class UCControlsManager
         If GrvControls.FocusedColumn Is GrvControls.Columns("Tên Controls") Then e.Cancel = Not GrvControls.IsNewItemRow(GrvControls.FocusedRowHandle)
     End Sub
 
-    ' Kiểm soát style 
-    Private Sub GrvControls_RowStyle(sender As Object, e As RowStyleEventArgs) Handles GrvControls.RowStyle
-
-        If (GrvControls.GetRowCellValue(e.RowHandle, "Deleted") IsNot Nothing) Then
-
-            e.Appearance.BackColor = Color.Gray
-
-        End If
-
-    End Sub
-
     ' Load dữ liệu lên gridview.
     Private Sub LoadData()
         GrdControls.DataSource = ClsControls.GetInstance.GetDataTable()
         GrdControls.ForceInitialize()
     End Sub
 
-    ' Caaph nhật cơ sở dữ liệu sau khi thao tác trên gridviwe 
-    Private Sub UpdateDB()
+    ' Lấy record hiện tại trên grid
+    Private Function GetCurrentControlDTO() As ControlsDTO
 
+        Dim SelectedRow = GrvControls.GetFocusedDataRow()
+        Dim dataControls As New ControlsDTO
+        If SelectedRow IsNot Nothing Then
+            With dataControls
+                .Controls_name = SelectedRow(0).ToString
+                .Controls_description = SelectedRow(1).ToString
+                .Controls_parent = SelectedRow(2).ToString
+                .Controls_type = SelectedRow(3).ToString
+                .Controls_sort = SelectedRow(4).ToString
+            End With
+        End If
+
+        Return dataControls
+
+    End Function
+
+    ' Cập nhật cơ sở dữ liệu sau khi thao tác trên gridviwe 
+    Private Sub UpdateDB()
         If GetNewRowsAdded() IsNot Nothing Then
             ClsControls.GetInstance.BulkInsertControls(GetNewRowsAdded())
         End If
         If GetNewRowsEdited() IsNot Nothing Then
             ClsControls.GetInstance.BulkUpdateControls(GetNewRowsEdited())
         End If
-        If GetRowsDeleted() IsNot Nothing Then
-            ClsControls.GetInstance.BulkDeleteControls(GetRowsDeleted())
-        End If
     End Sub
+
     ' Add lookup edit cho cột cấp cha
     Private Sub AddLookUpEdit()
         Dim edit As RepositoryItemLookUpEdit = New RepositoryItemLookUpEdit With {
@@ -242,7 +244,6 @@ Public Class UCControlsManager
         GrvControls.Columns("Cấp cha").ColumnEdit = edit
 
     End Sub
-
 
 #End Region
 End Class

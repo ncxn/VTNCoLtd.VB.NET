@@ -7,7 +7,7 @@ Public Class UCUsersAdd
         InitializeComponent()
 
         ' Thủ tục phân quyền: khi form hiện lên thì lấy định nghĩa các action trong phần phân quyền.
-        ' GenerateAction(me)
+        'GenerateAction(Me)
         'RbpChucNang.Visible = False
         RbpGTools.Visible = False
         RbpGExtend.Visible = False

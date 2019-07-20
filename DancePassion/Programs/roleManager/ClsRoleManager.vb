@@ -133,13 +133,9 @@ Public Class ClsRoleManager
     ''' Return Access Controls by Role name, ex : Role{Ctrl(act1,act2...)}
     ''' </summary>
     Public Function GetAccessByRoleAndControls(Roles_name As String, Controls_name As String, RolesControlsAccessList As RolesControlsAccessCollection) As List(Of RolesControlsAccessDTO)
-
         Dim ObjAccess As New List(Of RolesControlsAccessDTO)
-
         ObjAccess = RolesControlsAccessList.FindAll(Function(Fx) Fx.Roles_name = Roles_name And Fx.Controls_name = Controls_name)
-
         Return ObjAccess
-
     End Function
     ''' <summary>
     ''' Return True if User has a role on control.

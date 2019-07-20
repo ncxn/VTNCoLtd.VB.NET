@@ -255,6 +255,12 @@
     <Compile Include="Programs\DevManager\ClsControls.vb" />
     <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="User Controls\devManager\UcControlAdd.Designer.vb">
+      <DependentUpon>UcControlAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\devManager\UcControlAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Programs\roleManager\ClsRoleManager.vb" />
     <Compile Include="Programs\roles\Roles.vb" />
     <Compile Include="Programs\userroles\ClsUserToRoles.vb" />
@@ -269,6 +275,12 @@
       <DependentUpon>UCControlsManager.vb</DependentUpon>
     </Compile>
     <Compile Include="User Controls\devManager\UCControlsManager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\devManager\UcControlUpdate.Designer.vb">
+      <DependentUpon>UcControlUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\devManager\UcControlUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Controls\roleManager\UCRoleManager.Designer.vb">
@@ -289,16 +301,10 @@
     <Compile Include="User Controls\roles\UCRolesUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\UCBase.Designer.vb">
-      <DependentUpon>UCBase.vb</DependentUpon>
+    <Compile Include="User Controls\UcBase.Designer.vb">
+      <DependentUpon>UcBase.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\UCBase.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Controls\OKOrCancel.Designer.vb">
-      <DependentUpon>OKOrCancel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="User Controls\OKOrCancel.vb">
+    <Compile Include="User Controls\UcBase.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Controls\users\UCUsers.Designer.vb">
@@ -365,8 +371,14 @@
     <EmbeddedResource Include="User Controls\devManager\UcAccess.resx">
       <DependentUpon>UcAccess.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\devManager\UcControlAdd.resx">
+      <DependentUpon>UcControlAdd.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls\devManager\UCControlsManager.resx">
       <DependentUpon>UCControlsManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\devManager\UcControlUpdate.resx">
+      <DependentUpon>UcControlUpdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\roleManager\UCRoleManager.resx">
       <DependentUpon>UCRoleManager.vb</DependentUpon>
@@ -377,11 +389,8 @@
     <EmbeddedResource Include="User Controls\roles\UCRolesUpdate.resx">
       <DependentUpon>UCRolesUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\UCBase.resx">
-      <DependentUpon>UCBase.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\OKOrCancel.resx">
-      <DependentUpon>OKOrCancel.vb</DependentUpon>
+    <EmbeddedResource Include="User Controls\UcBase.resx">
+      <DependentUpon>UcBase.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\users\UCUsers.resx">
       <DependentUpon>UCUsers.vb</DependentUpon>
