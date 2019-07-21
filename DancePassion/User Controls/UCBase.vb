@@ -1,7 +1,7 @@
 ﻿Imports DevExpress.XtraBars
 Imports DevExpress.XtraBars.Ribbon
 
-Public Class UCBase
+Public Class UcBase
 #Region " Khởi tạo"
     Public Sub New()
 

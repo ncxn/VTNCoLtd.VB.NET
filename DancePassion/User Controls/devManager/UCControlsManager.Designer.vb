@@ -28,76 +28,60 @@ Partial Class UCControlsManager
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UCControlsManager))
         Me.GrdControls = New DevExpress.XtraGrid.GridControl()
         Me.GrvControls = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.BarStaticItem1 = New DevExpress.XtraBars.BarStaticItem()
-        Me.BarStaticItem2 = New DevExpress.XtraBars.BarStaticItem()
-        Me.BarStaticItem3 = New DevExpress.XtraBars.BarStaticItem()
+        Me.StsDesc = New DevExpress.XtraBars.BarStaticItem()
         CType(Me.GrdControls, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GrvControls, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BaseStatusBar
         '
-        Me.BaseStatusBar.ItemLinks.Add(Me.BarStaticItem3)
-        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 485)
+        Me.BaseStatusBar.ItemLinks.Add(Me.StsDesc)
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 612)
+        Me.BaseStatusBar.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         '
         'GrdControls
         '
         Me.GrdControls.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GrdControls.Location = New System.Drawing.Point(0, 239)
+        Me.GrdControls.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GrdControls.Location = New System.Drawing.Point(0, 262)
         Me.GrdControls.MainView = Me.GrvControls
+        Me.GrdControls.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GrdControls.MenuManager = Me.RibbonControlBaseOnUserControl
         Me.GrdControls.Name = "GrdControls"
-        Me.GrdControls.Size = New System.Drawing.Size(827, 246)
+        Me.GrdControls.Size = New System.Drawing.Size(930, 350)
         Me.GrdControls.TabIndex = 1
         Me.GrdControls.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GrvControls})
         '
         'GrvControls
         '
+        Me.GrvControls.DetailHeight = 432
         Me.GrvControls.GridControl = Me.GrdControls
         Me.GrvControls.Name = "GrvControls"
+
+
         '
-        'BarStaticItem1
+        'StsDesc
         '
-        Me.BarStaticItem1.Caption = "kaka"
-        Me.BarStaticItem1.Id = 13
-        Me.BarStaticItem1.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.about
-        Me.BarStaticItem1.MergeType = DevExpress.XtraBars.BarMenuMerge.Replace
-        Me.BarStaticItem1.Name = "BarStaticItem1"
-        ToolTipTitleItem2.Text = "Các chức năng lưu ý"
-        ToolTipItem2.LeftIndent = 6
-        ToolTipItem2.Text = "1. Nhấn Insert để thêm dòng mới" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2. Nhấn Delete để xóa dòng" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "3. Khi xong các thao" &
-    " tác cần nhấn Chấp nhận để lưu vào cơ sở dữ liệu"
-        SuperToolTip2.Items.Add(ToolTipTitleItem2)
-        SuperToolTip2.Items.Add(ToolTipItem2)
-        Me.BarStaticItem1.SuperTip = SuperToolTip2
-        '
-        'BarStaticItem2
-        '
-        Me.BarStaticItem2.Caption = "Hướng dẫn"
-        Me.BarStaticItem2.Id = 12
-        Me.BarStaticItem2.Name = "BarStaticItem2"
-        '
-        'BarStaticItem3
-        '
-        Me.BarStaticItem3.Caption = "Chú thích"
-        Me.BarStaticItem3.Id = 12
-        Me.BarStaticItem3.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.functionscompatibility
-        Me.BarStaticItem3.Name = "BarStaticItem3"
+        Me.StsDesc.Caption = "Chú thích"
+        Me.StsDesc.Id = 12
+        Me.StsDesc.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.functionscompatibility
+        Me.StsDesc.Name = "StsDesc"
         ToolTipTitleItem1.Text = "Hướng dẫn:"
         ToolTipItem1.ImageOptions.SvgImage = CType(resources.GetObject("resource.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         ToolTipItem1.LeftIndent = 6
         ToolTipItem1.Text = resources.GetString("ToolTipItem1.Text")
         SuperToolTip1.Items.Add(ToolTipTitleItem1)
         SuperToolTip1.Items.Add(ToolTipItem1)
-        Me.BarStaticItem3.SuperTip = SuperToolTip1
+        Me.StsDesc.SuperTip = SuperToolTip1
         '
         'UCControlsManager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.GrdControls)
+        Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Name = "UCControlsManager"
-        Me.Size = New System.Drawing.Size(827, 525)
+        Me.Size = New System.Drawing.Size(930, 649)
         Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
         Me.Controls.SetChildIndex(Me.GrdControls, 0)
         CType(Me.GrdControls, System.ComponentModel.ISupportInitialize).EndInit()
@@ -109,7 +93,5 @@ Partial Class UCControlsManager
 
     Friend WithEvents GrdControls As DevExpress.XtraGrid.GridControl
     Friend WithEvents GrvControls As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents BarStaticItem1 As DevExpress.XtraBars.BarStaticItem
-    Friend WithEvents BarStaticItem2 As DevExpress.XtraBars.BarStaticItem
-    Friend WithEvents BarStaticItem3 As DevExpress.XtraBars.BarStaticItem
+    Friend WithEvents StsDesc As DevExpress.XtraBars.BarStaticItem
 End Class

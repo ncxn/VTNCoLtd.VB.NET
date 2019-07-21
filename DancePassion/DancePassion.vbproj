@@ -255,6 +255,18 @@
     <Compile Include="Programs\DevManager\ClsControls.vb" />
     <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="User Controls\devManager\UcAccessAdd.Designer.vb">
+      <DependentUpon>UcAccessAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\devManager\UcAccessAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\devManager\UcAccessUpdate.Designer.vb">
+      <DependentUpon>UcAccessUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\devManager\UcAccessUpdate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\devManager\UcControlAdd.Designer.vb">
       <DependentUpon>UcControlAdd.vb</DependentUpon>
     </Compile>
@@ -265,10 +277,10 @@
     <Compile Include="Programs\roles\Roles.vb" />
     <Compile Include="Programs\userroles\ClsUserToRoles.vb" />
     <Compile Include="Programs\users\Users.vb" />
-    <Compile Include="User Controls\devManager\UcAccess.Designer.vb">
-      <DependentUpon>UcAccess.vb</DependentUpon>
+    <Compile Include="User Controls\devManager\UcAccessManager.Designer.vb">
+      <DependentUpon>UcAccessManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcAccess.vb">
+    <Compile Include="User Controls\devManager\UcAccessManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Controls\devManager\UCControlsManager.Designer.vb">
@@ -368,8 +380,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcAccess.resx">
-      <DependentUpon>UcAccess.vb</DependentUpon>
+    <EmbeddedResource Include="User Controls\devManager\UcAccessAdd.resx">
+      <DependentUpon>UcAccessAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\devManager\UcAccessManager.resx">
+      <DependentUpon>UcAccessManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\devManager\UcAccessUpdate.resx">
+      <DependentUpon>UcAccessUpdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\devManager\UcControlAdd.resx">
       <DependentUpon>UcControlAdd.vb</DependentUpon>

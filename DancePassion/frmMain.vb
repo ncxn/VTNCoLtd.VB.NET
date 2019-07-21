@@ -149,12 +149,12 @@ Public Class FrmMain
     End Sub
     Private Sub BtnControls_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnControls.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        AddDocs(New UCControlsManager, "Quản lý controls")
+        AddDocs(New UCControlsManager, "Quản lý Controls")
         SplashScreenManager.CloseForm()
     End Sub
     Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctions.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        AddDocs(New UcAccess, "Chức năng trên Form")
+        AddDocs(New UcAccessManager, "Chức năng trên Form")
         SplashScreenManager.CloseForm()
     End Sub
 #End Region

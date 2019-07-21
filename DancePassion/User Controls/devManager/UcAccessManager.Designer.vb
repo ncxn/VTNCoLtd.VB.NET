@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UcAccess
+Partial Class UcAccessManager
     Inherits UCBase
 
     'UserControl overrides dispose to clean up the component list.
@@ -14,14 +14,6 @@ Partial Class UcAccess
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    Public Sub New()
-
-        ' This call is required by the designer.
-        InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
-
-    End Sub
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  

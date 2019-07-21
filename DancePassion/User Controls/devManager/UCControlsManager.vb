@@ -9,7 +9,7 @@ Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraSplashScreen
 
 Public Class UCControlsManager
-
+    Public Shared controlColection As ControlsCollection
     Public Sub New()
 
         ' This call is required by the designer.
@@ -18,6 +18,7 @@ Public Class UCControlsManager
         ' Mở rộng.
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
         Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
+        controlColection = ClsControls.GetInstance.GetList()
     End Sub
 
 #Region " Controls Manager Action"
@@ -229,17 +230,17 @@ Public Class UCControlsManager
 
     ' Add lookup edit cho cột cấp cha
     Private Sub AddLookUpEdit()
-        Dim edit As RepositoryItemLookUpEdit = New RepositoryItemLookUpEdit With {
+        Dim edit As RepositoryItemSearchLookUpEdit = New RepositoryItemSearchLookUpEdit With {
             .DataSource = ClsControls.GetInstance.GetList(),
             .ValueMember = "Controls_name",
             .DisplayMember = "Controls_name"
         }
-        edit.Columns.Add(New LookUpColumnInfo("Controls_name", "Mã"))
-        edit.Columns.Add(New LookUpColumnInfo("Controls_description", "Tên control"))
-        edit.SearchMode = SearchMode.AutoFilter
-        edit.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains
-        edit.AutoSearchColumnIndex = 1
-        edit.PopupWidth = 500
+        'edit.Columns.Add(New LookUpColumnInfo("Controls_name", "Mã"))
+        'edit.Columns.Add(New LookUpColumnInfo("Controls_description", "Tên control"))
+        'edit.SearchMode = SearchMode.AutoFilter
+        'edit.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains
+        'edit.AutoSearchColumnIndex = 1
+        'edit.PopupWidth = 500
         GrdControls.RepositoryItems.Add(edit)
         GrvControls.Columns("Cấp cha").ColumnEdit = edit
 

@@ -1,4 +1,6 @@
-﻿Public Class AccessDTO
+﻿Imports MySql.Data.MySqlClient
+
+Public Class AccessDTO
     Private _access_name As String
     Private _access_desc As String
 
@@ -42,8 +44,8 @@ Public Class ClsAccess
 
         While Reader.Read()
             Dim objAccess As New AccessDTO With {
-                .access_name = Reader(0).ToString(),
-                .access_desc = Reader(1).ToString()
+                .Access_name = Reader(0).ToString(),
+                .Access_desc = Reader(1).ToString()
             }
             AccessList.Add(objAccess)
         End While
@@ -51,5 +53,37 @@ Public Class ClsAccess
 
         Return AccessList
 
+    End Function
+
+    Public Function Insert(AccessDTO As AccessDTO) As Boolean
+        Dim strSQL = "procAccess_Insert"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("p_access_name", AccessDTO.Access_name),
+            New MySqlParameter("p_access_desc", AccessDTO.Access_desc)
+        }
+
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
+    Public Function Update(AccessDTO As AccessDTO) As Boolean
+        Dim strSQL = "procAccess_Update"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("@p_access_name", AccessDTO.Access_name),
+            New MySqlParameter("@p_access_desc", AccessDTO.Access_desc)
+        }
+
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
+
+    Public Function Delete(AccessDTO As AccessDTO) As Boolean
+        Dim strSQL = "procAccess_Delete"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("@p_access_name", AccessDTO.Access_name),
+            New MySqlParameter("@p_access_desc", AccessDTO.Access_desc)
+        }
+
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
     End Function
 End Class
