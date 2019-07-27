@@ -16,9 +16,14 @@
 
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
         UpdateDB()
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
     Private Sub BtnCancel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
-        FrmMain.RemoveDocumetns()
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
 #End Region
 

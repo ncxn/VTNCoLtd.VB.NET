@@ -15,7 +15,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class FrmMain
     ' Biến toàn cục cho Private Sub, sử dụng kỹ thuật Delegate, Bên dưới gọi Menuhanlder() bất cứ đâu sẽ trỏ đến RoleMenu()
-    Public MenuHanlder As New ClsDelegate.MenuDelegate(AddressOf RoleMenu)
+    Public MenuHanlder As New ClsDelegate.RolesMenu(AddressOf RoleMenu)
 
 #Region " Constructor"
 
@@ -54,7 +54,7 @@ Public Class FrmMain
         End Get
     End Property
 
-    Public Sub AddDocs(uc As UserControl, caption As String)
+    Private Sub AddDocs(uc As UserControl, caption As String)
         Dim docs As BaseDocument
         uc.Text = caption
         For Each docs In View.Documents
@@ -66,7 +66,7 @@ Public Class FrmMain
         View.AddDocument(uc)
     End Sub
 
-    Public Sub RemoveDocumetns()
+    Private Sub RemoveDocumetns()
         BeginInvoke(New Action(Sub() Message()))
         View.Controller.Close(View.ActiveDocument)
     End Sub
@@ -76,7 +76,7 @@ Public Class FrmMain
 
     Private Sub TabbedView1_DocumentActivated(sender As Object, e As DocumentEventArgs) Handles TabbedView1.DocumentActivated
         If Not e.Document.IsFloating Then
-            MergeMainRibbon(TryCast(e.Document.Control, UCBase))
+            MergeMainRibbon(TryCast(e.Document.Control, UcBase))
         End If
     End Sub
 
@@ -121,56 +121,96 @@ Public Class FrmMain
     End Sub
 
     Private Sub TaiKhoanCaNhan_SelectedChanged(sender As Object, e As BackstageViewItemEventArgs) Handles TaiKhoanCaNhan.SelectedChanged
-        Dim ucUser As New UserProfiles With {
+        Dim ucUser As New UcUserProfiles With {
             .Parent = BackstageViewClientControl1,
             .Dock = DockStyle.Fill
         }
-        TaiKhoanCaNhan.ContentControl.Controls.Add(New UserProfiles)
+        TaiKhoanCaNhan.ContentControl.Controls.Add(New UcUserProfiles)
 
     End Sub
 #End Region
 
-#Region " Ribbon Item (Button/Group Pages) "
-    Private Sub NhomNhanVien_NhanVien_btn_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnHumanGroup.ItemClick
+#Region " Ribbon Button"
+
+#Region "Hệ thống"
+#Region " Nhân sự"
+    Private Sub BtnHumanGroup_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcRolesManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        AddDocs(New UCRoles, "Nhóm nhân viên")
+        Dim uc As New UcRolesManager With {
+            .AddDocs = AddressOf AddDocs,
+            .RemoveTab = AddressOf RemoveDocumetns
+        }
+        AddDocs(uc, "Nhóm nhân viên")
         SplashScreenManager.CloseForm()
     End Sub
-    Private Sub NhanVien_NhanVien_btn_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnHuman.ItemClick
+    Private Sub BtnHuman_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcUsersManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        AddDocs(New UCUsers, "Nhân viên")
+        Dim uc As New UcUsersManager With {
+            .AddDocs = AddressOf AddDocs,
+            .RemoveTab = AddressOf RemoveDocumetns
+        }
+        AddDocs(uc, "Nhân viên")
         SplashScreenManager.CloseForm()
     End Sub
 
-    Private Sub BtnRoles_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnRoles.ItemClick
+    Private Sub BtnRoles_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcRoleManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        AddDocs(New UCRoleManager, "Phân quyền")
+        Dim uc As New UcRoleManager With {
+            .AddDocs = AddressOf AddDocs,
+            .RemoveTab = AddressOf RemoveDocumetns
+        }
+        AddDocs(uc, "Phân quyền")
         SplashScreenManager.CloseForm()
     End Sub
+#End Region
+
+#End Region
+
+#Region " Phát triển"
     Private Sub BtnControls_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnControls.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        AddDocs(New UCControlsManager, "Quản lý Controls")
+        Dim uc As New UCControlsManager With {
+            .AddDocs = AddressOf AddDocs,
+            .RemoveTab = AddressOf RemoveDocumetns
+        }
+        AddDocs(uc, "Quản lý Controls")
         SplashScreenManager.CloseForm()
     End Sub
     Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctions.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        AddDocs(New UcAccessManager, "Chức năng trên Form")
+        Dim uc As New UcAccessManager With {
+            .AddDocs = AddressOf AddDocs,
+            .RemoveTab = AddressOf RemoveDocumetns
+        }
+        AddDocs(uc, "Quản lý Action")
         SplashScreenManager.CloseForm()
     End Sub
+    Private Sub BtnFunctionsOnControl_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctionsOnControl.ItemClick
+        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim uc As New UcControlsAccessManager With {
+            .AddDocs = AddressOf AddDocs,
+            .RemoveTab = AddressOf RemoveDocumetns
+        }
+        AddDocs(uc, "Quản lý chức năng")
+        SplashScreenManager.CloseForm()
+    End Sub
+#End Region
+
 #End Region
 
 #Region " Role manager"
     Private Sub RoleMenu()
 
         For Each pag As RibbonPage In MainControlRibbon.Pages
-            If ClsRoleManager.GetInstance.HasRole(pag.Name.ToString) Then
+
+            If ClsRoleManager.GetInstance.HasRoleOnMenu(pag.Name.ToString) Then
                 pag.Visible = True
             Else
                 pag.Visible = False
             End If
 
             For Each pagGroup As RibbonPageGroup In pag.Groups
-                If ClsRoleManager.GetInstance.HasRole(pagGroup.Name.ToString) Then
+                If ClsRoleManager.GetInstance.HasRoleOnMenu(pagGroup.Name.ToString) Then
                     pagGroup.Visible = True
                 Else
                     pagGroup.Visible = False
@@ -178,7 +218,7 @@ Public Class FrmMain
 
                 For Each itemLink As BarItemLink In pagGroup.ItemLinks
 
-                    If ClsRoleManager.GetInstance.HasRole(itemLink.Item.Name.ToString) Then
+                    If ClsRoleManager.GetInstance.HasRoleOnMenu(itemLink.Item.Name.ToString) Then
                         itemLink.Item.Visibility = BarItemVisibility.Always
                     Else
                         itemLink.Item.Visibility = BarItemVisibility.Never

@@ -116,6 +116,7 @@ Public Class UserCollection
     Inherits List(Of UsersDTO)
 End Class
 #End Region
+
 #Region " User Status"
 Public Enum User_status
     Exits = 0
@@ -126,11 +127,11 @@ Public Enum User_status
 End Enum
 #End Region
 #Region " Data Access User"
-Public Class Users
-    Private Shared Singleton As Users
-    Public Shared Function GetInstance() As Users
+Public Class ClsUsers
+    Private Shared Singleton As ClsUsers
+    Public Shared Function GetInstance() As ClsUsers
         If Singleton Is Nothing Then
-            Singleton = New Users()
+            Singleton = New ClsUsers()
         End If
         Return Singleton
     End Function

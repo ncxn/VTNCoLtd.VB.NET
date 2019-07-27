@@ -405,10 +405,10 @@
         c3M9IlllbGxvdyIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="BtnHumanGroup.Caption" xml:space="preserve">
+  <data name="UcRolesManager.Caption" xml:space="preserve">
     <value>Nhóm nhân viên</value>
   </data>
-  <data name="BtnHumanGroup.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="UcRolesManager.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -437,7 +437,7 @@
         MTQsMjJ6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="BtnHuman.Caption" xml:space="preserve">
+  <data name="UcUsersManager.Caption" xml:space="preserve">
     <value>Nhân viên</value>
   </data>
   <data name="BtnHuman.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -617,7 +617,7 @@
   <data name="BarButtonItem3.Caption" xml:space="preserve">
     <value>Nhóm</value>
   </data>
-  <data name="BtnRoles.Caption" xml:space="preserve">
+  <data name="UcRoleManager.Caption" xml:space="preserve">
     <value>Quyền hạn</value>
   </data>
   <data name="BtnRoles.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -971,9 +971,6 @@
         Pg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="BH_KhoHang_btn.Caption" xml:space="preserve">
-    <value>Kho hàng</value>
-  </data>
   <data name="Club_DangKyLop.Caption" xml:space="preserve">
     <value>Đăng ký lớp</value>
   </data>
@@ -982,6 +979,9 @@
   </data>
   <data name="Club_dsHLV_btn.Caption" xml:space="preserve">
     <value>Danh sách HLV</value>
+  </data>
+  <data name="BH_KhoHang_btn.Caption" xml:space="preserve">
+    <value>Kho hàng</value>
   </data>
   <data name="Club_LopDangHoc.Caption" xml:space="preserve">
     <value>Lớp đang học</value>
@@ -1094,56 +1094,14 @@
   <data name="RbpSystem.Text" xml:space="preserve">
     <value>Hệ thống</value>
   </data>
-  <data name="RbpgCreateEvent.Text" xml:space="preserve">
-    <value>Khởi tạo sự kiện</value>
-  </data>
-  <data name="RbpgEventRegister.Text" xml:space="preserve">
-    <value>Đăng ký tham dự</value>
-  </data>
-  <data name="RibbonPageGroup_ThongkeSuKien.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
-  <data name="RibbonPageGroup_TienIchSuKien.Text" xml:space="preserve">
-    <value>Các tiện ích</value>
-  </data>
   <data name="RbpEventManagement.Text" xml:space="preserve">
     <value>Quản lý sự kiện</value>
-  </data>
-  <data name="RibbonPageGroup3.Text" xml:space="preserve">
-    <value>Các lớp học</value>
-  </data>
-  <data name="RibbonPageGroup2.Text" xml:space="preserve">
-    <value>Giáo Viên</value>
-  </data>
-  <data name="RibbonPageGroup4.Text" xml:space="preserve">
-    <value>Học Viên</value>
-  </data>
-  <data name="RibbonPageGroup9.Text" xml:space="preserve">
-    <value>Thống kê</value>
   </data>
   <data name="RbpClubManager.Text" xml:space="preserve">
     <value>Quản lý Club</value>
   </data>
-  <data name="RibbonPageGroup1.Text" xml:space="preserve">
-    <value>Danh mục</value>
-  </data>
-  <data name="RibbonPageGroup7.Text" xml:space="preserve">
-    <value>Mua hàng</value>
-  </data>
-  <data name="RibbonPageGroup6.Text" xml:space="preserve">
-    <value>Bán hàng</value>
-  </data>
-  <data name="RibbonPageGroup5.Text" xml:space="preserve">
-    <value>Báo cáo công nợ</value>
-  </data>
-  <data name="RibbonPageGroup8.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
   <data name="RbpSalesManager.Text" xml:space="preserve">
     <value>Quản lý bán hàng</value>
-  </data>
-  <data name="RbpgFunctionManager.Text" xml:space="preserve">
-    <value>Quản Lý Chức Năng</value>
   </data>
   <data name="RbpDev.Text" xml:space="preserve">
     <value>Nhà phát triển</value>
@@ -1183,6 +1141,48 @@
   </data>
   <data name="&gt;&gt;MainControlRibbon.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="RbpgCreateEvent.Text" xml:space="preserve">
+    <value>Khởi tạo sự kiện</value>
+  </data>
+  <data name="RbpgEventRegister.Text" xml:space="preserve">
+    <value>Đăng ký tham dự</value>
+  </data>
+  <data name="RibbonPageGroup_ThongkeSuKien.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="RibbonPageGroup_TienIchSuKien.Text" xml:space="preserve">
+    <value>Các tiện ích</value>
+  </data>
+  <data name="RibbonPageGroup3.Text" xml:space="preserve">
+    <value>Các lớp học</value>
+  </data>
+  <data name="RibbonPageGroup2.Text" xml:space="preserve">
+    <value>Giáo Viên</value>
+  </data>
+  <data name="RibbonPageGroup4.Text" xml:space="preserve">
+    <value>Học Viên</value>
+  </data>
+  <data name="RibbonPageGroup9.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="RibbonPageGroup1.Text" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="RibbonPageGroup7.Text" xml:space="preserve">
+    <value>Mua hàng</value>
+  </data>
+  <data name="RibbonPageGroup6.Text" xml:space="preserve">
+    <value>Bán hàng</value>
+  </data>
+  <data name="RibbonPageGroup5.Text" xml:space="preserve">
+    <value>Báo cáo công nợ</value>
+  </data>
+  <data name="RibbonPageGroup8.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="RbpgFunctionManager.Text" xml:space="preserve">
+    <value>Quản Lý Chức Năng</value>
   </data>
   <data name="BarButtonItem1.Caption" xml:space="preserve">
     <value>BarButtonItem1</value>
@@ -1265,16 +1265,16 @@
   <data name="&gt;&gt;BtnBackupDB.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BtnHumanGroup.Name" xml:space="preserve">
-    <value>BtnHumanGroup</value>
+  <data name="&gt;&gt;UcRolesManager.Name" xml:space="preserve">
+    <value>UcRolesManager</value>
   </data>
-  <data name="&gt;&gt;BtnHumanGroup.Type" xml:space="preserve">
+  <data name="&gt;&gt;UcRolesManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BtnHuman.Name" xml:space="preserve">
-    <value>BtnHuman</value>
+  <data name="&gt;&gt;UcUsersManager.Name" xml:space="preserve">
+    <value>UcUsersManager</value>
   </data>
-  <data name="&gt;&gt;BtnHuman.Type" xml:space="preserve">
+  <data name="&gt;&gt;UcUsersManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;roles.Name" xml:space="preserve">
@@ -1331,10 +1331,10 @@
   <data name="&gt;&gt;BarButtonItem3.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BtnRoles.Name" xml:space="preserve">
-    <value>BtnRoles</value>
+  <data name="&gt;&gt;UcRoleManager.Name" xml:space="preserve">
+    <value>UcRoleManager</value>
   </data>
-  <data name="&gt;&gt;BtnRoles.Type" xml:space="preserve">
+  <data name="&gt;&gt;UcRoleManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;BtnEventCategory.Name" xml:space="preserve">

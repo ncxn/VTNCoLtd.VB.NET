@@ -12,6 +12,8 @@ Public Class UCRolesUpdate
     End Sub
 
     Private Sub BtnCancel_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnCANCEL.ItemClick
-        FrmMain.RemoveDocumetns()
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
 End Class

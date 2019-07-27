@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class UserProfiles
+Partial Class UcUserProfiles
     Inherits DevExpress.XtraEditors.XtraUserControl
 
     'UserControl overrides dispose to clean up the component list.

@@ -138,17 +138,28 @@ Public Class ClsRoleManager
         Return ObjAccess
     End Function
     ''' <summary>
-    ''' Return True if User has a role on control.
+    ''' Return True if User has a role on menu Item.
     ''' </summary>
-    Public Function HasRole(Controls_name As String) As Boolean
+    Public Function HasRoleOnMenu(MenuItem As String) As Boolean
         Dim Role = CurrentRolesControlsAccess.RolesControlsAccess
         If Role IsNot Nothing Then
-            If Role.Exists(Function(Fx) Fx.Controls_name = Controls_name) Then
+            If Role.Exists(Function(Fx) Fx.Controls_name = MenuItem) Then
                 Return True
             Else
                 Return False
             End If
-
+        Else
+            Return False
+        End If
+    End Function
+    Public Function HasRoleOnUserControl(Action As String) As Boolean
+        Dim Role = CurrentRolesControlsAccess.RolesControlsAccess
+        If Role IsNot Nothing Then
+            If Role.Exists(Function(Fx) Fx.Access_name = Action) Then
+                Return True
+            Else
+                Return False
+            End If
         Else
             Return False
         End If

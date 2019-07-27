@@ -20,7 +20,7 @@ Public Class FrmUsersLogIn
         Dim status As User_status = User_status.NotExists
         Dim sMessage As String = String.Empty
 
-        Dim objUser As UsersDTO = Users.GetInstance.Login(txtUserName.Text.Trim(), txtPassWord.Text.Trim(), status)
+        Dim objUser As UsersDTO = ClsUsers.GetInstance.Login(txtUserName.Text.Trim(), txtPassWord.Text.Trim(), status)
 
         Select Case status
             Case User_status.NotExists
@@ -37,6 +37,8 @@ Public Class FrmUsersLogIn
                 CurrentUserRoles.RolesByUserName = ClsUserRoles.GetInstance.GetRolesByCurrentUserName()
                 ' Lấy quyền hạn của user hiện tại thông qua roles (multi)
                 CurrentRolesControlsAccess.RolesControlsAccess = ClsRoleManager.GetInstance.GetControlsAccessByUserName()
+                ' Lấy tập hợp các chức năng trên form
+                CurrentControlsAccess.ControlsAccessColection = ClsControlsAccess.GetInstance.GetList()
                 sMessage = "Đăng nhập thành công"
                 ' Refresh Main menu
                 RefreshMainMenu()

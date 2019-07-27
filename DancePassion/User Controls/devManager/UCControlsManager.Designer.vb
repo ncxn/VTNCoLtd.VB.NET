@@ -19,9 +19,6 @@ Partial Class UCControlsManager
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim SuperToolTip2 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem2 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim ToolTipItem2 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
         Dim SuperToolTip1 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
         Dim ToolTipTitleItem1 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
         Dim ToolTipItem1 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
@@ -36,29 +33,25 @@ Partial Class UCControlsManager
         'BaseStatusBar
         '
         Me.BaseStatusBar.ItemLinks.Add(Me.StsDesc)
-        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 612)
-        Me.BaseStatusBar.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 485)
+        Me.BaseStatusBar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         '
         'GrdControls
         '
         Me.GrdControls.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GrdControls.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GrdControls.Location = New System.Drawing.Point(0, 262)
+        Me.GrdControls.Location = New System.Drawing.Point(0, 239)
         Me.GrdControls.MainView = Me.GrvControls
-        Me.GrdControls.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GrdControls.MenuManager = Me.RibbonControlBaseOnUserControl
         Me.GrdControls.Name = "GrdControls"
-        Me.GrdControls.Size = New System.Drawing.Size(930, 350)
+        Me.GrdControls.Size = New System.Drawing.Size(827, 246)
         Me.GrdControls.TabIndex = 1
         Me.GrdControls.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GrvControls})
         '
         'GrvControls
         '
-        Me.GrvControls.DetailHeight = 432
         Me.GrvControls.GridControl = Me.GrdControls
         Me.GrvControls.Name = "GrvControls"
-
-
+        Me.GrvControls.OptionsView.ShowGroupPanel = False
         '
         'StsDesc
         '
@@ -76,12 +69,12 @@ Partial Class UCControlsManager
         '
         'UCControlsManager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.GrdControls)
-        Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "UCControlsManager"
-        Me.Size = New System.Drawing.Size(930, 649)
+        Me.Size = New System.Drawing.Size(827, 525)
         Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
         Me.Controls.SetChildIndex(Me.GrdControls, 0)
         CType(Me.GrdControls, System.ComponentModel.ISupportInitialize).EndInit()

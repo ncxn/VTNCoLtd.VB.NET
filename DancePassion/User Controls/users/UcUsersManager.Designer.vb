@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UCUsers
+Partial Class UcUsersManager
     'Inherits DevExpress.XtraEditors.XtraUserControl
     Inherits UCBase
     'UserControl overrides dispose to clean up the component list.
@@ -25,6 +25,10 @@ Partial Class UCUsers
         CType(Me.GridViewUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'BaseStatusBar
+        '
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 447)
+        '
         'GridControlUsers
         '
         Me.GridControlUsers.Dock = System.Windows.Forms.DockStyle.Fill
@@ -32,7 +36,7 @@ Partial Class UCUsers
         Me.GridControlUsers.MainView = Me.GridViewUsers
         Me.GridControlUsers.MenuManager = Me.RibbonControlBaseOnUserControl
         Me.GridControlUsers.Name = "GridControlUsers"
-        Me.GridControlUsers.Size = New System.Drawing.Size(827, 248)
+        Me.GridControlUsers.Size = New System.Drawing.Size(827, 208)
         Me.GridControlUsers.TabIndex = 1
         Me.GridControlUsers.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewUsers})
         '
@@ -40,14 +44,16 @@ Partial Class UCUsers
         '
         Me.GridViewUsers.GridControl = Me.GridControlUsers
         Me.GridViewUsers.Name = "GridViewUsers"
+        Me.GridViewUsers.OptionsView.ShowGroupPanel = False
         '
-        'UCUsers
+        'UcUsersManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.GridControlUsers)
-        Me.Name = "UCUsers"
+        Me.Name = "UcUsersManager"
         Me.Size = New System.Drawing.Size(827, 487)
+        Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
         Me.Controls.SetChildIndex(Me.GridControlUsers, 0)
         CType(Me.GridControlUsers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridViewUsers, System.ComponentModel.ISupportInitialize).EndInit()

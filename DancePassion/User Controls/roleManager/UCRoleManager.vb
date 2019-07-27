@@ -2,11 +2,11 @@
 Imports DevExpress.XtraBars.Ribbon
 Imports DevExpress.XtraTreeList
 
-Public Class UCRoleManager
+Public Class UcRoleManager
 
 #Region " Dữ liệu dùng chung"
     ' Mịa dùng MySQL server remote qua tới US chậm vãi nồi. Nên cho nó load khi load form
-    Private ObjControlsAccessList As New ControlsAccessCollection
+    Private ObjControlsAccessList As ControlsAccessCollection
     Private ObjAccessList As New AccessCollection
     Private ObjRoleControlsAccessList As New RolesControlsAccessCollection
     ' Tên nhóm được tạo ra khi người dùng chọn nhóm, éo hiểu sao chơi trực tiếp thì nó không work, vứt lên đây thì ngon lành
@@ -22,7 +22,7 @@ Public Class UCRoleManager
         InitializeComponent()
 
         ' Danh sách controls và các action tương ứng trên controls
-        ObjControlsAccessList = ClsControlsAccess.GetInstance.GetList()
+        ObjControlsAccessList = CurrentControlsAccess.ControlsAccessColection
         ObjRoleControlsAccessList = ClsRoleManager.GetInstance.GetList()
         ObjAccessList = ClsAccess.GetInstance.GetList()
     End Sub
@@ -33,51 +33,16 @@ Public Class UCRoleManager
         ' Dữ liệu cho form search nhóm người dùng
         PopularRole()
         ' Dữ liệu chức năng
-        PopularTreelist()
-        ' Ẩn cái ribbon nào không chứa các item con
-        HideEmptyGroups()
+        PopularAction()
+        ' Ẩn cái ribbon nào không chứa các item
+        HidePageGroup(Me.Name.ToString, ObjControlsAccessList)
     End Sub
 #End Region
 
-#Region " Trình đơn : Ribbon Menu"
-
-    Private Function IsVisible(ByVal itemLink As BarItemLink) As Boolean
-        Return (itemLink.Item.Visibility = BarItemVisibility.Always OrElse itemLink.Item.Visibility = BarItemVisibility.OnlyInRuntime) AndAlso itemLink.Visible
-    End Function
-
-    Private Sub HideEmptyGroups()
-
-        Dim listAccess As List(Of String) = ClsControlsAccess.GetInstance.GetAccessByControls(Name.ToString, ObjControlsAccessList)
-
-        For Each pag As RibbonPage In BaseRibbon.Pages
-
-            For Each pagGroup As RibbonPageGroup In pag.Groups
-                Dim VisibleAll As Boolean = False
-
-                For Each itemLink As BarItemLink In pagGroup.ItemLinks
-                    'Set control
-                    If listAccess.Contains(itemLink.Item.Name.ToString) Then
-                        itemLink.Item.Visibility = BarItemVisibility.Always
-                    Else
-                        itemLink.Item.Visibility = BarItemVisibility.Never
-                    End If
-                    'Check control
-                    If IsVisible(itemLink) Then
-                        VisibleAll = True
-                        Continue For
-                    End If
-                Next
-
-                If Not VisibleAll Then pagGroup.Visible = VisibleAll
-            Next
-        Next
-    End Sub
-#End Region
-
-#Region "Chọn nhóm: Roles = Search lookup edit"
+#Region " Chọn nhóm: Roles = Search lookup edit"
     Private Sub PopularRole()
 
-        SearchRoles.Properties.DataSource = Roles.GetInstance.GetList()
+        SearchRoles.Properties.DataSource = ClsRoles.GetInstance.GetList()
         SearchRoles.Properties.ValueMember = "Role_name"
         SearchRoles.Properties.DisplayMember = "Role_description"
         SearchRoles.Properties.PopulateViewColumns()
@@ -89,15 +54,17 @@ Public Class UCRoleManager
 
     End Sub
     Private Sub SearchRoles_EditValueChanged(sender As Object, e As EventArgs) Handles SearchRoles.EditValueChanged
-        Role = SearchRoles.EditValue.ToString
+        If SearchRoles.EditValue IsNot Nothing Then
+            Role = SearchRoles.EditValue.ToString
+        End If
         PopularActions()
     End Sub
 
 #End Region
 
 #Region " Chức năng :TreeList"
-    Private Sub PopularTreelist()
-        TrlControls.DataSource = clsControls.GetInstance.GetList()
+    Private Sub PopularAction()
+        TrlControls.DataSource = ClsControls.GetInstance.GetList()
         TrlControls.KeyFieldName = "Controls_name"
         TrlControls.ParentFieldName = "Controls_parent"
         TrlControls.SetFocusedNode(TrlControls.GetNodeByVisibleIndex(0))
@@ -140,7 +107,6 @@ Public Class UCRoleManager
     Private Sub ChLAccessControl_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ChLAccessControl.SelectedIndexChanged
         ' MessageBox.Show(ChLAccessControl.Items.ToString)
     End Sub
-
 
 #End Region
 

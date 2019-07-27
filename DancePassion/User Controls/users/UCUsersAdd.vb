@@ -28,7 +28,7 @@ Public Class UCUsersAdd
             .User_updated_at = Now()
         }
 
-        If Users.GetInstance.InsertUsers(user) Then
+        If ClsUsers.GetInstance.InsertUsers(user) Then
             MessageBox.Show("Thành công")
         End If
     End Sub

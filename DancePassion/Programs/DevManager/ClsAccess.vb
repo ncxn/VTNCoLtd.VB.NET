@@ -34,13 +34,13 @@ Public Class ClsAccess
         Return Singleton
     End Function
     Public Function GetDataTable() As DataTable
-        Dim dtControlsAccess As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllAccess", CommandType.StoredProcedure)
+        Dim dtControlsAccess As DataTable = DBHelper.GetInstance.GetDataTable("procAccess_GetAll", CommandType.StoredProcedure)
         Return dtControlsAccess
     End Function
 
     Public Function GetList() As AccessCollection
         Dim AccessList As New AccessCollection
-        Dim Reader = DBHelper.GetInstance.GetDataReader("procGetAllAccess", CommandType.StoredProcedure)
+        Dim Reader = DBHelper.GetInstance.GetDataReader("procAccess_GetAll", CommandType.StoredProcedure)
 
         While Reader.Read()
             Dim objAccess As New AccessDTO With {

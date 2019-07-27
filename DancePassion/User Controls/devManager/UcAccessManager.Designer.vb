@@ -45,13 +45,14 @@ Partial Class UcAccessManager
         '
         Me.GrvAccess.GridControl = Me.GrdAccess
         Me.GrvAccess.Name = "GrvAccess"
+        Me.GrvAccess.OptionsView.ShowGroupPanel = False
         '
-        'UcAccess
+        'UcAccessManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.GrdAccess)
-        Me.Name = "UcAccess"
+        Me.Name = "UcAccessManager"
         Me.Size = New System.Drawing.Size(827, 480)
         Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
         Me.Controls.SetChildIndex(Me.GrdAccess, 0)

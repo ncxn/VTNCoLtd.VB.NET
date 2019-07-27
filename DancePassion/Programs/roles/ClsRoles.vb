@@ -44,11 +44,11 @@ Public Enum RoleStatus
 End Enum
 #End Region
 #Region " Data Access for Roles"
-Public Class Roles
-    Private Shared Singleton As Roles
-    Public Shared Function GetInstance() As Roles
+Public Class ClsRoles
+    Private Shared Singleton As ClsRoles
+    Public Shared Function GetInstance() As ClsRoles
         If Singleton Is Nothing Then
-            Singleton = New Roles()
+            Singleton = New ClsRoles()
         End If
         Return Singleton
     End Function

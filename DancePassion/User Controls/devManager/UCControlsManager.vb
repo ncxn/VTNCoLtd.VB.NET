@@ -9,7 +9,8 @@ Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraSplashScreen
 
 Public Class UCControlsManager
-    Public Shared controlColection As ControlsCollection
+    Public Shared ControlColection As ControlsCollection
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -18,7 +19,7 @@ Public Class UCControlsManager
         ' Mở rộng.
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
         Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
-        controlColection = ClsControls.GetInstance.GetList()
+        ControlColection = ClsControls.GetInstance.GetList()
     End Sub
 
 #Region " Controls Manager Action"
@@ -33,16 +34,22 @@ Public Class UCControlsManager
         UpdateDB()
     End Sub
     Private Sub BtnCancel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
-        FrmMain.RemoveDocumetns()
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
     Private Sub BtnCreate_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCREATE.ItemClick
-        FrmMain.AddDocs(New UcControlAdd, "Thêm Control")
+        If AddDocs IsNot Nothing Then
+            AddDocs(New UcControlAdd, "Thêm Control")
+        End If
     End Sub
     Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEDIT.ItemClick
         Dim uc As New UcControlUpdate With {
             .CurrentRecord = GetCurrentControlDTO()
         }
-        FrmMain.AddDocs(uc, "Sửa Control")
+        If AddDocs IsNot Nothing Then
+            AddDocs(uc, "Sửa Control")
+        End If
     End Sub
     Private Sub BtnRefresh_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnREFRESH.ItemClick
         LoadData()
@@ -147,15 +154,13 @@ Public Class UCControlsManager
 #End Region
 
 #Region " Các thủ tục dùng chung"
-    ' Kiểm soát key press
-    Private Sub GrdControls_ProcessGridKey(sender As Object, e As KeyEventArgs) Handles GrdControls.ProcessGridKey
-        Select Case e.KeyData
-            Case Keys.Insert
-                InsertRow()
-            Case Keys.Delete
-                DeleteRow()
-            Case Else
-        End Select
+    Private Sub GrvControls_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles GrvControls.KeyDown
+        If (e.KeyCode = Keys.Delete And e.Modifiers = Keys.Control) Then
+            DeleteRow()
+        End If
+        If (e.KeyCode = Keys.Insert And e.Modifiers = Keys.Control) Then
+            InsertRow()
+        End If
     End Sub
 
     'Kiểm tra lỗi cho cột sắp xếp
@@ -177,7 +182,7 @@ Public Class UCControlsManager
     End Sub
     Private Sub GrvControls_ValidateRow(ByVal sender As Object, ByVal e As ValidateRowEventArgs) Handles GrvControls.ValidateRow
         Dim View As GridView = CType(sender, GridView)
-        Dim ControlsName As GridColumn = View.Columns("Tên Controls")
+        Dim ControlsName As GridColumn = View.Columns(0)
 
         If String.IsNullOrEmpty(View.GetRowCellValue(e.RowHandle, ControlsName).ToString()) Then
             e.Valid = False
@@ -190,7 +195,13 @@ Public Class UCControlsManager
 
     ' Không cho edit Khóa chính
     Private Sub GrvControls_ShowingEditor(sender As Object, e As CancelEventArgs) Handles GrvControls.ShowingEditor
-        If GrvControls.FocusedColumn Is GrvControls.Columns("Tên Controls") Then e.Cancel = Not GrvControls.IsNewItemRow(GrvControls.FocusedRowHandle)
+        If GrvControls.FocusedColumn Is GrvControls.Columns("Tên Controls") Then
+            If GrvControls.IsNewItemRow(GrvControls.FocusedRowHandle) Then
+                e.Cancel = False
+            Else
+                e.Cancel = True
+            End If
+        End If
     End Sub
 
     ' Load dữ liệu lên gridview.
@@ -233,18 +244,20 @@ Public Class UCControlsManager
         Dim edit As RepositoryItemSearchLookUpEdit = New RepositoryItemSearchLookUpEdit With {
             .DataSource = ClsControls.GetInstance.GetList(),
             .ValueMember = "Controls_name",
-            .DisplayMember = "Controls_name"
+            .DisplayMember = "Controls_description"
         }
-        'edit.Columns.Add(New LookUpColumnInfo("Controls_name", "Mã"))
-        'edit.Columns.Add(New LookUpColumnInfo("Controls_description", "Tên control"))
-        'edit.SearchMode = SearchMode.AutoFilter
-        'edit.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains
-        'edit.AutoSearchColumnIndex = 1
-        'edit.PopupWidth = 500
+        edit.PopulateViewColumns()
+        edit.View.Columns("Controls_name").Caption = "Mã Controls"
+        edit.View.Columns("Controls_description").Caption = "Mô tả"
+        edit.View.Columns(2).Visible = False
+        edit.View.Columns(3).Visible = False
+        edit.View.Columns(4).Visible = False
+
         GrdControls.RepositoryItems.Add(edit)
         GrvControls.Columns("Cấp cha").ColumnEdit = edit
 
     End Sub
 
 #End Region
+
 End Class

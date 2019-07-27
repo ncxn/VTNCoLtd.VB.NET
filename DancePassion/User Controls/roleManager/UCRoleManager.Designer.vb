@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UCRoleManager
+Partial Class UcRoleManager
     'Inherits DevExpress.XtraEditors.XtraUserControl
     Inherits UCBase
     'UserControl overrides dispose to clean up the component list.
@@ -20,7 +20,10 @@ Partial Class UCRoleManager
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UCRoleManager))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UcRoleManager))
+        Dim SuperToolTip2 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem2 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem2 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
         Me.TrlControls = New DevExpress.XtraTreeList.TreeList()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
         Me.ChLAccessControl = New DevExpress.XtraEditors.CheckedListBoxControl()
@@ -34,7 +37,9 @@ Partial Class UCRoleManager
         Me.EmptySpaceItem3 = New DevExpress.XtraLayout.EmptySpaceItem()
         Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.SimpleLabelItem1 = New DevExpress.XtraLayout.SimpleLabelItem()
         Me.DockManager1 = New DevExpress.XtraBars.Docking.DockManager(Me.components)
+        Me.BarStaticItem1 = New DevExpress.XtraBars.BarStaticItem()
         CType(Me.TrlControls, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
@@ -49,8 +54,14 @@ Partial Class UCRoleManager
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SimpleLabelItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DockManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'BaseStatusBar
+        '
+        Me.BaseStatusBar.ItemLinks.Add(Me.BarStaticItem1)
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 492)
         '
         'TrlControls
         '
@@ -77,7 +88,7 @@ Partial Class UCRoleManager
         Me.TrlControls.OptionsView.ShowVertLines = False
         Me.TrlControls.OptionsView.TreeLineStyle = DevExpress.XtraTreeList.LineStyle.Dark
         Me.TrlControls.ParentFieldName = ""
-        Me.TrlControls.Size = New System.Drawing.Size(481, 215)
+        Me.TrlControls.Size = New System.Drawing.Size(481, 175)
         Me.TrlControls.TabIndex = 2
         '
         'LayoutControl1
@@ -90,18 +101,19 @@ Partial Class UCRoleManager
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(683, 106, 650, 400)
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(827, 293)
+        Me.LayoutControl1.Size = New System.Drawing.Size(827, 253)
         Me.LayoutControl1.TabIndex = 2
         Me.LayoutControl1.Text = "LayoutControl1"
         '
         'ChLAccessControl
         '
         Me.ChLAccessControl.CheckOnClick = True
-        Me.ChLAccessControl.Location = New System.Drawing.Point(533, 66)
+        Me.ChLAccessControl.Location = New System.Drawing.Point(532, 103)
+        Me.ChLAccessControl.MultiColumn = True
         Me.ChLAccessControl.Name = "ChLAccessControl"
         Me.ChLAccessControl.PictureChecked = CType(resources.GetObject("ChLAccessControl.PictureChecked"), System.Drawing.Image)
         Me.ChLAccessControl.PictureUnchecked = CType(resources.GetObject("ChLAccessControl.PictureUnchecked"), System.Drawing.Image)
-        Me.ChLAccessControl.Size = New System.Drawing.Size(256, 215)
+        Me.ChLAccessControl.Size = New System.Drawing.Size(257, 138)
         Me.ChLAccessControl.StyleController = Me.LayoutControl1
         Me.ChLAccessControl.TabIndex = 3
         '
@@ -131,9 +143,9 @@ Partial Class UCRoleManager
         '
         Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
         Me.Root.GroupBordersVisible = False
-        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.EmptySpaceItem4, Me.EmptySpaceItem1, Me.EmptySpaceItem3, Me.EmptySpaceItem2, Me.LayoutControlItem3})
+        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.EmptySpaceItem4, Me.EmptySpaceItem1, Me.EmptySpaceItem3, Me.EmptySpaceItem2, Me.LayoutControlItem3, Me.SimpleLabelItem1})
         Me.Root.Name = "Root"
-        Me.Root.Size = New System.Drawing.Size(827, 293)
+        Me.Root.Size = New System.Drawing.Size(827, 253)
         Me.Root.TextVisible = False
         '
         'LayoutControlItem1
@@ -141,7 +153,7 @@ Partial Class UCRoleManager
         Me.LayoutControlItem1.Control = Me.TrlControls
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 54)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(485, 219)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(485, 179)
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem1.TextVisible = False
         '
@@ -175,7 +187,7 @@ Partial Class UCRoleManager
         Me.EmptySpaceItem3.AllowHotTrack = False
         Me.EmptySpaceItem3.Location = New System.Drawing.Point(781, 54)
         Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-        Me.EmptySpaceItem3.Size = New System.Drawing.Size(26, 219)
+        Me.EmptySpaceItem3.Size = New System.Drawing.Size(26, 179)
         Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem2
@@ -183,30 +195,53 @@ Partial Class UCRoleManager
         Me.EmptySpaceItem2.AllowHotTrack = False
         Me.EmptySpaceItem2.Location = New System.Drawing.Point(485, 54)
         Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
-        Me.EmptySpaceItem2.Size = New System.Drawing.Size(36, 219)
+        Me.EmptySpaceItem2.Size = New System.Drawing.Size(35, 179)
         Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.ChLAccessControl
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(521, 54)
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(520, 91)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(260, 219)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(261, 142)
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem3.TextVisible = False
+        '
+        'SimpleLabelItem1
+        '
+        Me.SimpleLabelItem1.AllowHotTrack = False
+        Me.SimpleLabelItem1.Location = New System.Drawing.Point(520, 54)
+        Me.SimpleLabelItem1.Name = "SimpleLabelItem1"
+        Me.SimpleLabelItem1.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 10)
+        Me.SimpleLabelItem1.Size = New System.Drawing.Size(261, 37)
+        Me.SimpleLabelItem1.Text = "Cấp quyền"
+        Me.SimpleLabelItem1.TextSize = New System.Drawing.Size(137, 17)
         '
         'DockManager1
         '
         Me.DockManager1.Form = Me
         Me.DockManager1.TopZIndexControls.AddRange(New String() {"DevExpress.XtraBars.BarDockControl", "DevExpress.XtraBars.StandaloneBarDockControl", "System.Windows.Forms.StatusBar", "System.Windows.Forms.MenuStrip", "System.Windows.Forms.StatusStrip", "DevExpress.XtraBars.Ribbon.RibbonStatusBar", "DevExpress.XtraBars.Ribbon.RibbonControl", "DevExpress.XtraBars.Navigation.OfficeNavigationBar", "DevExpress.XtraBars.Navigation.TileNavPane", "DevExpress.XtraBars.TabFormControl", "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl"})
         '
-        'UCRoleManager
+        'BarStaticItem1
+        '
+        Me.BarStaticItem1.Caption = "Ghi chú:"
+        Me.BarStaticItem1.Id = 12
+        Me.BarStaticItem1.Name = "BarStaticItem1"
+        ToolTipTitleItem2.Text = "Về phân quyền"
+        ToolTipItem2.LeftIndent = 6
+        ToolTipItem2.Text = "1. Chọn nhóm nhân viên" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2. Chọn chức năng" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "3. Chọn cấp quyền"
+        SuperToolTip2.Items.Add(ToolTipTitleItem2)
+        SuperToolTip2.Items.Add(ToolTipItem2)
+        Me.BarStaticItem1.SuperTip = SuperToolTip2
+        '
+        'UcRoleManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.LayoutControl1)
-        Me.Name = "UCRoleManager"
+        Me.Name = "UcRoleManager"
         Me.Size = New System.Drawing.Size(827, 532)
+        Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
         Me.Controls.SetChildIndex(Me.LayoutControl1, 0)
         CType(Me.TrlControls, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -222,6 +257,7 @@ Partial Class UCRoleManager
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SimpleLabelItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DockManager1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -242,4 +278,6 @@ Partial Class UCRoleManager
     Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
     Friend WithEvents ChLAccessControl As DevExpress.XtraEditors.CheckedListBoxControl
     Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents SimpleLabelItem1 As DevExpress.XtraLayout.SimpleLabelItem
+    Friend WithEvents BarStaticItem1 As DevExpress.XtraBars.BarStaticItem
 End Class

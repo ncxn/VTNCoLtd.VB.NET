@@ -21,16 +21,11 @@ Public Class ClsGridControlHelper
         End If
         Return False
     End Function
-
+    ' Check the end cell position
     Private Function CheckAddNewRow() As Boolean
-        If _View.FocusedColumn.VisibleIndex = _View.VisibleColumns.Count - 1 Then
-            If _View.IsNewItemRow(_View.FocusedRowHandle) Then
-                _View.UpdateCurrentRow()
-            End If
-            If _View.IsLastRow And _View.ActiveEditor Is Nothing Then
+        If _View.FocusedColumn.VisibleIndex = _View.VisibleColumns.Count - 1 And _View.IsLastRow Then
+            If _View.ActiveEditor Is Nothing Then
                 Return AddNewRow()
-            Else
-                _View.CloseEditor()
             End If
         End If
         Return False

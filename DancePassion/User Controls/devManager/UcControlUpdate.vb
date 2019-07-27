@@ -18,6 +18,9 @@
 
     Private Sub BtnOk_itemClick() Handles BtnOK.ItemClick
         UpdateDB()
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
 #End Region
 

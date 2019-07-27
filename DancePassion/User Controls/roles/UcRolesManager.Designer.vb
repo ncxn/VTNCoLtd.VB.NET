@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UCRoles
+Partial Class UcRolesManager
     'Inherits DevExpress.XtraEditors.XtraUserControl
     Inherits UCBase
     'UserControl overrides dispose to clean up the component list.
@@ -47,7 +47,7 @@ Partial Class UCRoles
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.GridControlRoles)
-        Me.Name = "UCRoles"
+        Me.Name = "UcRolesManager"
         Me.Size = New System.Drawing.Size(827, 444)
         Me.Controls.SetChildIndex(Me.GridControlRoles, 0)
         CType(Me.GridControlRoles, System.ComponentModel.ISupportInitialize).EndInit()

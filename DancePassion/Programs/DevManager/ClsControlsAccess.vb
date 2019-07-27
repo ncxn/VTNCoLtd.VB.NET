@@ -35,6 +35,18 @@ End Class
 Public Class ControlsAccessCollection
     Inherits List(Of ControlsAccessDTO)
 End Class
+
+Public Class CurrentControlsAccess
+    Private Shared _CurrentControlsAccess As ControlsAccessCollection
+    Public Shared Property ControlsAccessColection As ControlsAccessCollection
+        Get
+            Return _CurrentControlsAccess
+        End Get
+        Set(ByVal value As ControlsAccessCollection)
+            _CurrentControlsAccess = value
+        End Set
+    End Property
+End Class
 #End Region
 
 #Region " Controls Access Status"
@@ -54,13 +66,13 @@ Public Class ClsControlsAccess
         Return Singleton
     End Function
     Public Function GetDataTable() As DataTable
-        Dim dtControlsAccess As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllControlsAccess", CommandType.StoredProcedure)
+        Dim dtControlsAccess As DataTable = DBHelper.GetInstance.GetDataTable("procControlsAccess_GetAll", CommandType.StoredProcedure)
         Return dtControlsAccess
     End Function
 
     Public Function GetList() As ControlsAccessCollection
         Dim ControlsAccessList As New ControlsAccessCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllControlsAccess", CommandType.StoredProcedure)
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procControlsAccess_GetAll", CommandType.StoredProcedure)
 
         While Reader.Read()
             Dim objControlsAccess As New ControlsAccessDTO With {
@@ -108,17 +120,30 @@ Public Class ClsControlsAccess
 
 
     Public Function Insert(ControlsAccess As ControlsAccessDTO) As Boolean
-        Dim strSQL = "procInsertControlsAccess"
+        Dim strSQL = "procControlsAccess_Insert"
         Dim parameters As New List(Of MySqlParameter) From {
             New MySqlParameter("@p_controls_name", ControlsAccess.Controls_name),
             New MySqlParameter("@p_access_name", ControlsAccess.Access_name)
         }
 
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
+    Public Function BulkInsert(ControlsAccess As ControlsAccessCollection) As Boolean
+        Dim strSQL = "procControlsAccess_Insert"
+        Dim result As Integer = 0
+        Dim paraName() As String = {"p_controls_name", "p_access_name"}
+
+        For i As Integer = 0 To ControlsAccess.Count - 1
+            Dim paraValue As Object = New Object() {ControlsAccess(i).Controls_name, ControlsAccess(i).Access_name}
+            Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+        Next
+
         Return result > 0
     End Function
     Public Function Update(ControlsAccess As ControlsAccessDTO) As Boolean
-        Dim strSQL = "procUpdateControlsAccess"
+        Dim strSQL = "procControlsAccess_Update"
         Dim parameters As New List(Of MySqlParameter) From {
             New MySqlParameter("@p_controls_name", ControlsAccess.Controls_name),
             New MySqlParameter("@p_access_name", ControlsAccess.Access_name)
@@ -127,6 +152,28 @@ Public Class ClsControlsAccess
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+    Public Function BulkUpdate(ControlsAccess As ControlsAccessCollection) As Boolean
+        Dim strSQL = "procControlsAccess_Update"
+        Dim result As Integer = 0
+        Dim paraName() As String = {"p_controls_name", "p_access_name"}
 
+        For i As Integer = 0 To ControlsAccess.Count - 1
+            Dim paraValue As Object = New Object() {ControlsAccess(i).Controls_name, ControlsAccess(i).Access_name}
+            Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+        Next
+
+        Return result > 0
+    End Function
+
+    Public Function Delete(ControlsAccess As ControlsAccessDTO) As Boolean
+        Dim strSQL = "procControlsAccess_Delete"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("@p_controls_name", ControlsAccess.Controls_name)
+        }
+
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
 End Class
 #End Region
