@@ -251,6 +251,8 @@
     </Compile>
     <Compile Include="Programs\config\cfgMail.vb" />
     <Compile Include="Programs\config\SMSconfig.vb" />
+    <Compile Include="Programs\DevExpressHelper\ClsDocumentManagerHelper.vb" />
+    <Compile Include="Programs\DevExpressHelper\ClsMessageHelper.vb" />
     <Compile Include="Programs\DevManager\ClsAccess.vb" />
     <Compile Include="Programs\DevManager\ClsControls.vb" />
     <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
@@ -323,6 +325,12 @@
       <DependentUpon>UcBase.vb</DependentUpon>
     </Compile>
     <Compile Include="User Controls\UcBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\users\UcUserChangePass.Designer.vb">
+      <DependentUpon>UcUserChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\users\UcUserChangePass.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Controls\users\UcUsersManager.Designer.vb">
@@ -418,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\UcBase.resx">
       <DependentUpon>UcBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\users\UcUserChangePass.resx">
+      <DependentUpon>UcUserChangePass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\users\UcUsersManager.resx">
       <DependentUpon>UcUsersManager.vb</DependentUpon>

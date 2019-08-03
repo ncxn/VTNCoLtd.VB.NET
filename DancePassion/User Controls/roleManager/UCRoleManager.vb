@@ -1,5 +1,6 @@
 ﻿Imports DevExpress.XtraBars
 Imports DevExpress.XtraBars.Ribbon
+Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraTreeList
 
 Public Class UcRoleManager
@@ -28,14 +29,18 @@ Public Class UcRoleManager
     End Sub
 #End Region
 
-#Region " Khởi động form: Load form"
+#Region " Form"
     Private Sub RoleManager_Load(sender As Object, e As EventArgs) Handles Me.Load
         ' Dữ liệu cho form search nhóm người dùng
         PopularRole()
         ' Dữ liệu chức năng
         PopularAction()
         ' Ẩn cái ribbon nào không chứa các item
-        HidePageGroup(Me.Name.ToString, ObjControlsAccessList)
+        HasRoles(Me.Name)
+
+    End Sub
+    Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
+        UpdateDB()
     End Sub
 #End Region
 
@@ -110,4 +115,58 @@ Public Class UcRoleManager
 
 #End Region
 
+#Region " Xử lý dữ liệu"
+    Private Sub UpdateDB()
+        ' Xóa tất cả action by control trước khi thêm mới (ở đây không dùng update mà là xóa toàn bộ rồi thêm mới)
+        ClsRoleManager.GetInstance.DeleleByRoleAndControl(Role, Control)
+        ClsRoleManager.GetInstance.BulkInsert(GetRolesControlsAccessCollection)
+    End Sub
+
+    Private Function GetRolesControlsAccessCollection() As RolesControlsAccessCollection
+        Dim RolesControlsAccessCollection As New RolesControlsAccessCollection
+
+        For Each Access As AccessDTO In ChLAccessControl.CheckedItems
+
+            Dim RolesControlsAccessDTO As New RolesControlsAccessDTO With {
+                .Roles_name = Role,
+                .Controls_name = Control,
+                .Access_name = Access.Access_name,
+                .Allowed = True}
+            RolesControlsAccessCollection.Add(RolesControlsAccessDTO)
+
+        Next
+        Return RolesControlsAccessCollection
+    End Function
+#End Region
+
+#Region " Quyền hạn"
+    'Private Sub RoleUserControl()
+
+    '    For Each pag As RibbonPage In BaseRibbon.Pages
+
+    '        'If ClsRoleManager.GetInstance.HasRoleOnMenu(pag.Name.ToString) Then
+    '        '    pag.Visible = True
+    '        'Else
+    '        '    pag.Visible = False
+    '        'End If
+
+    '        For Each pagGroup As RibbonPageGroup In pag.Groups
+    '            'If ClsRoleManager.GetInstance.HasRoleOnMenu(pagGroup.Name.ToString) Then
+    '            '    pagGroup.Visible = True
+    '            'Else
+    '            '    pagGroup.Visible = False
+    '            'End If
+
+    '            For Each itemLink As BarItemLink In pagGroup.ItemLinks
+
+    '                If ClsRoleManager.GetInstance.HasRoleOnUserControl(Me.Name.ToString, itemLink.Item.Name.ToString) Then
+    '                    itemLink.Item.Visibility = BarItemVisibility.Always
+    '                Else
+    '                    itemLink.Item.Visibility = BarItemVisibility.Never
+    '                End If
+    '            Next
+    '        Next
+    '    Next
+    'End Sub
+#End Region
 End Class

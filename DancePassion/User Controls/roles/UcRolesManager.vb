@@ -4,9 +4,9 @@ Public Class UcRolesManager
 
     Public Sub New()
         InitializeComponent()
+        HasRoles(Me.Name)
     End Sub
     Private Sub UcRolesManager_Load(sender As Object, e As EventArgs) Handles Me.Load
-        HidePageGroup(Me.Name.ToString, CurrentControlsAccess.ControlsAccessColection)
         LoadData()
     End Sub
 

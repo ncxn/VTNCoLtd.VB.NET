@@ -98,6 +98,7 @@ Public Class UsersDTO
 
 End Class
 #End Region
+
 #Region " Current User"
 Public Class CurrentUser
     Private Shared _CurrentUser As UsersDTO
@@ -111,6 +112,7 @@ Public Class CurrentUser
     End Property
 End Class
 #End Region
+
 #Region " User Collection"
 Public Class UserCollection
     Inherits List(Of UsersDTO)
@@ -126,6 +128,7 @@ Public Enum User_status
     WrongPass = 4
 End Enum
 #End Region
+
 #Region " Data Access User"
 Public Class ClsUsers
     Private Shared Singleton As ClsUsers
@@ -136,12 +139,12 @@ Public Class ClsUsers
         Return Singleton
     End Function
     Public Function GetDataTableUsers() As DataTable
-        Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllUsers", CommandType.StoredProcedure)
+        Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("procUsers_GetAll", CommandType.StoredProcedure)
         Return dtUsers
     End Function
     Public Function GetListUsers() As UserCollection
         Dim UserList As New UserCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllUsers", CommandType.StoredProcedure)
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procUsers_GetAll", CommandType.StoredProcedure)
 
         While Reader.Read()
             Dim objUser As New UsersDTO With {
@@ -216,8 +219,8 @@ Public Class ClsUsers
         Return ObjectUser
 
     End Function
-    Public Function InsertUsers(Users As UsersDTO) As Boolean
-        Dim strSQL = "procInsertUsers"
+    Public Function Insert(Users As UsersDTO) As Boolean
+        Dim strSQL = "procUsers_Insert"
 
         Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
         Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
@@ -225,15 +228,34 @@ Public Class ClsUsers
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
-    Public Function UpdateUsers(Users As UsersDTO) As Boolean
-        Dim strSQL = "procInsertUsers"
+    Public Function Update(Users As UsersDTO) As Boolean
+        Dim strSQL = "procUsers_Update"
 
-        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
-        Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
+        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_status", "p_user_created_at", "p_user_updated_at", "p_user_Id"}
+        Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_status, Users.User_created_at, Users.User_updated_at, Users.User_id}
         Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
 
+    End Function
+
+    Public Function ChangePassWord(User_Name As String, OldPw As String, NewPw As String) As Boolean
+        Dim strSQL = "procUsers_ChangePass"
+        Dim paraName() As String = {"p_user_name", "p_old_password", "p_new_password"}
+        Dim paraValue As Object = New Object() {User_Name, OldPw, NewPw}
+        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
+
+    Public Function HasMatchUserAndPassWord(UserName As String, PassWord As String) As Boolean
+        Dim objUser As UsersDTO = GetUserByUserName(UserName)
+        If objUser.User_name IsNot Nothing Then
+            If objUser.User_password = Security.GetMD5(PassWord) Then
+                Return True
+            End If
+        End If
+        Return False
     End Function
     Public Function Login(ByVal userName As String, ByVal passWord As String, ByRef status As User_status) As UsersDTO
 

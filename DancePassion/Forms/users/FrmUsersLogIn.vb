@@ -36,7 +36,7 @@ Public Class FrmUsersLogIn
                 ' Lấy roles hiện tại của user (multi)
                 CurrentUserRoles.RolesByUserName = ClsUserRoles.GetInstance.GetRolesByCurrentUserName()
                 ' Lấy quyền hạn của user hiện tại thông qua roles (multi)
-                CurrentRolesControlsAccess.RolesControlsAccess = ClsRoleManager.GetInstance.GetControlsAccessByUserName()
+                CurrentRolesControlsAccess.RolesControlsAccess = ClsRoleManager.GetInstance.GetControlsAccessByUserName(CurrentUser.User.User_name)
                 ' Lấy tập hợp các chức năng trên form
                 CurrentControlsAccess.ControlsAccessColection = ClsControlsAccess.GetInstance.GetList()
                 sMessage = "Đăng nhập thành công"

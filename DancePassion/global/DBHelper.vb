@@ -108,7 +108,7 @@ Public Class DBHelper
             OpenConnection()
             adapter.Fill(dt)
         Catch ex As Exception
-            Throw New Exception("Can not fill data to datatable")
+            Throw New Exception(ex.Message)
         Finally
             CloseConnection()
         End Try
@@ -158,7 +158,7 @@ Public Class DBHelper
         CloseConnection()
     End Function
 
-    Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
+    Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, Optional ByVal parameters As List(Of MySqlParameter) = Nothing) As Integer
 
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
         If parameters IsNot Nothing Then
@@ -193,7 +193,7 @@ Public Class DBHelper
     ' Dưới là các function áp dụng cho commandtext = text, ví dụ:
     ' "Select * from tblUser where userID = @userID and password = @password" 
     ' Parameter phải dạng array và các phẩn tử phải có khoảng trắng (quan trọng)
-    Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Integer
+    Public Function ExecuteNonQueryWithText(ByVal commandText As String, ByVal commandType As CommandType, Optional ByVal parameters As Object() = Nothing) As Integer
         OpenConnection()
         Dim result As Integer = 0
 

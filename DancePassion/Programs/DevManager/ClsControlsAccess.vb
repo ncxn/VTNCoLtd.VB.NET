@@ -106,7 +106,7 @@ Public Class ClsControlsAccess
     '''' <summary>
     '''' Return acction for each controls with desc , ex : UCUsers{(View,"Truy cập") , (Create,"Tạo mới"), (Edit,"Sửa")} 
     '''' </summary>
-    Public Function GetAccessByControlsWithDesc(Controls_name As String, ControlsAccessList As ControlsAccessCollection, ObjAccess As AccessCollection)
+    Public Function GetAccessByControlsWithDesc(Controls_name As String, ControlsAccessList As ControlsAccessCollection, ObjAccess As AccessCollection) As AccessCollection
         Dim ObjRS = (From ca In ControlsAccessList
                      Join a In ObjAccess On ca.Access_name Equals a.Access_name
                      Where ca.Controls_name = Controls_name
@@ -115,7 +115,14 @@ Public Class ClsControlsAccess
                       ca.Access_name,
                       a.Access_desc
                       }).ToList()
-        Return ObjRS
+        Dim AccessCollection As New AccessCollection
+        For Each Access In ObjRS
+            Dim AccessDTO As New AccessDTO With {
+                .Access_name = Access.Access_name,
+                .Access_desc = Access.Access_desc}
+            AccessCollection.Add(AccessDTO)
+        Next
+        Return AccessCollection
     End Function
 
 

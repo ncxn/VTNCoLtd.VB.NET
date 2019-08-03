@@ -36,25 +36,25 @@ Public Class FrmMain
 
 #End Region
 
-#Region " Main form load"
+#Region " Form load"
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
         RoleMenu()
     End Sub
 #End Region
 
 #Region " Document manager and Tabled events"
-    Private ReadOnly Property DM As DocumentManager
+    Public ReadOnly Property DM As DocumentManager
         Get
             Return DocumentManager1
         End Get
     End Property
-    Private ReadOnly Property View As TabbedView
+    Public ReadOnly Property View As TabbedView
         Get
             Return TabbedView1
         End Get
     End Property
 
-    Private Sub AddDocs(uc As UserControl, caption As String)
+    Public Sub AddDocs(uc As UserControl, caption As String)
         Dim docs As BaseDocument
         uc.Text = caption
         For Each docs In View.Documents
@@ -66,33 +66,23 @@ Public Class FrmMain
         View.AddDocument(uc)
     End Sub
 
-    Private Sub RemoveDocumetns()
-        BeginInvoke(New Action(Sub() Message()))
+    Public Sub RemoveDocs()
+        ' BeginInvoke(New Action(Sub() Message()))
         View.Controller.Close(View.ActiveDocument)
     End Sub
     Private Sub Message()
         'MessageBox.Show("Đã đóng cử sổ" & " :" & View.ActiveDocument.Caption.ToString())
     End Sub
 
+#End Region
+
+#Region " Merge Ribbon/ Stausbar"
     Private Sub TabbedView1_DocumentActivated(sender As Object, e As DocumentEventArgs) Handles TabbedView1.DocumentActivated
         If Not e.Document.IsFloating Then
             MergeMainRibbon(TryCast(e.Document.Control, UcBase))
         End If
     End Sub
-
-#End Region
-
-#Region " Merge Ribbon/ Stausbar"
-    ' Phải set MainControlRibbon.MdiMergeStyle = Always; DocumentManager.RibbonAndBarsMergeStyle = Always
-    ' Không được dùng SplashScreenManager trong các user control cấp 2, nếu dùng thì không thể active new docs
-    ' -> Do đó merge không có hiệu lực: merge đang thực hiện dựa trên dự kiện activated của documents (éo biết lỗi giề)
-    ' -------------------
-    ' Mô hình:  1. Documents manager trên main form
-    '           2. Một base User Control chứa action (event): New/Edit/Del/Print/Export/View...
-    '           3. Một user Control cấp 2 kế thừa từ base : tùy theo chức năng mà enabled/Disabled các action
-    '           4. Một user Control cấp 3 cũng kế thừa từ base nhưng được gọi từ user control cấp 2
-    '           => tất cả đều gọi trực tiếp trên Documents Manager từ thủ tục AddDocs()
-    Private Sub MergeMainRibbon(ByVal child As UCBase)
+    Private Sub MergeMainRibbon(ByVal child As UcBase)
         If child IsNot Nothing Then
             MainControlRibbon.MergeRibbon(child.BaseRibbon)
         End If
@@ -133,67 +123,50 @@ Public Class FrmMain
 #Region " Ribbon Button"
 
 #Region "Hệ thống"
+
 #Region " Nhân sự"
     Private Sub BtnHumanGroup_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcRolesManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        Dim uc As New UcRolesManager With {
-            .AddDocs = AddressOf AddDocs,
-            .RemoveTab = AddressOf RemoveDocumetns
-        }
+        Dim uc As New UcRolesManager
         AddDocs(uc, "Nhóm nhân viên")
         SplashScreenManager.CloseForm()
     End Sub
     Private Sub BtnHuman_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcUsersManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        Dim uc As New UcUsersManager With {
-            .AddDocs = AddressOf AddDocs,
-            .RemoveTab = AddressOf RemoveDocumetns
-        }
+        Dim uc As New UcUsersManager
         AddDocs(uc, "Nhân viên")
         SplashScreenManager.CloseForm()
     End Sub
 
     Private Sub BtnRoles_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcRoleManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        Dim uc As New UcRoleManager With {
-            .AddDocs = AddressOf AddDocs,
-            .RemoveTab = AddressOf RemoveDocumetns
-        }
+        Dim uc As New UcRoleManager
         AddDocs(uc, "Phân quyền")
         SplashScreenManager.CloseForm()
     End Sub
 #End Region
 
-#End Region
-
 #Region " Phát triển"
-    Private Sub BtnControls_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnControls.ItemClick
+    Private Sub BtnControls_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcControlsManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        Dim uc As New UCControlsManager With {
-            .AddDocs = AddressOf AddDocs,
-            .RemoveTab = AddressOf RemoveDocumetns
-        }
+        Dim uc As New UcControlsManager
         AddDocs(uc, "Quản lý Controls")
         SplashScreenManager.CloseForm()
     End Sub
     Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctions.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        Dim uc As New UcAccessManager With {
-            .AddDocs = AddressOf AddDocs,
-            .RemoveTab = AddressOf RemoveDocumetns
-        }
+        Dim uc As New UcAccessManager
         AddDocs(uc, "Quản lý Action")
         SplashScreenManager.CloseForm()
     End Sub
     Private Sub BtnFunctionsOnControl_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctionsOnControl.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
-        Dim uc As New UcControlsAccessManager With {
-            .AddDocs = AddressOf AddDocs,
-            .RemoveTab = AddressOf RemoveDocumetns
-        }
+        Dim uc As New UcControlsAccessManager
         AddDocs(uc, "Quản lý chức năng")
         SplashScreenManager.CloseForm()
     End Sub
+#End Region
+
 #End Region
 
 #End Region

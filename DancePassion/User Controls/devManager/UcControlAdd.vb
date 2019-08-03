@@ -27,7 +27,7 @@
         .Controls_description = TxtControls_description.Text.ToString(),
         .Controls_parent = TxtControls_parent.Text.ToString(),
         .Controls_type = TxtControls_type.Text.ToString(),
-        .Controls_sort = CInt(TxtControls_sort.ToString)
+        .Controls_sort = CInt(TxtControls_sort.Text)
         }
         ClsControls.GetInstance.InsertControls(CtrlDTO)
     End Sub

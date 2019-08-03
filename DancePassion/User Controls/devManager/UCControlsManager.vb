@@ -8,7 +8,7 @@ Imports DevExpress.XtraGrid.Views.Base
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraSplashScreen
 
-Public Class UCControlsManager
+Public Class UcControlsManager
     Public Shared ControlColection As ControlsCollection
 
     Public Sub New()
@@ -20,9 +20,10 @@ Public Class UCControlsManager
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
         Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
         ControlColection = ClsControls.GetInstance.GetList()
+        'HasRoles(Me.Name)
     End Sub
 
-#Region " Controls Manager Action"
+#Region " Forms"
     Private Sub ControlsManager_Load(sender As Object, e As EventArgs) Handles Me.Load
         BtnOK.Caption = "Lưu dữ liệu"
         ' Dữ liệu trên lưới

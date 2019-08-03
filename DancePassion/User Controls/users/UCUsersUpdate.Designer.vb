@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class UCUsersUpdate
+Partial Class UcUsersUpdate
     'Inherits DevExpress.XtraEditors.XtraUserControl
     Inherits UCBase
     'UserControl overrides dispose to clean up the component list.
@@ -20,102 +20,107 @@ Partial Class UCUsersUpdate
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
-        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit3 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit4 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit5 = New DevExpress.XtraEditors.TextEdit()
+        Me.txtUser_Name = New DevExpress.XtraEditors.TextEdit()
+        Me.txtUser_Status = New DevExpress.XtraEditors.TextEdit()
+        Me.txtUser_LastName = New DevExpress.XtraEditors.TextEdit()
+        Me.txtUser_FirstName = New DevExpress.XtraEditors.TextEdit()
+        Me.txtUser_Email = New DevExpress.XtraEditors.TextEdit()
         Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
-        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtUser_Name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtUser_Status.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtUser_LastName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtUser_FirstName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtUser_Email.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'BaseStatusBar
+        '
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 418)
+        Me.BaseStatusBar.Size = New System.Drawing.Size(592, 40)
         '
         'LayoutControl1
         '
-        Me.LayoutControl1.Controls.Add(Me.TextEdit1)
-        Me.LayoutControl1.Controls.Add(Me.TextEdit2)
-        Me.LayoutControl1.Controls.Add(Me.TextEdit3)
-        Me.LayoutControl1.Controls.Add(Me.TextEdit4)
-        Me.LayoutControl1.Controls.Add(Me.TextEdit5)
+        Me.LayoutControl1.Controls.Add(Me.txtUser_Name)
+        Me.LayoutControl1.Controls.Add(Me.txtUser_Status)
+        Me.LayoutControl1.Controls.Add(Me.txtUser_LastName)
+        Me.LayoutControl1.Controls.Add(Me.txtUser_FirstName)
+        Me.LayoutControl1.Controls.Add(Me.txtUser_Email)
         Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutControl1.Location = New System.Drawing.Point(0, 239)
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(624, 42, 650, 400)
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(592, 219)
+        Me.LayoutControl1.Size = New System.Drawing.Size(592, 179)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
-        'TextEdit1
+        'txtUser_Name
         '
-        Me.TextEdit1.Location = New System.Drawing.Point(108, 12)
-        Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Size = New System.Drawing.Size(455, 40)
-        Me.TextEdit1.StyleController = Me.LayoutControl1
-        Me.TextEdit1.TabIndex = 4
+        Me.txtUser_Name.Location = New System.Drawing.Point(108, 12)
+        Me.txtUser_Name.Name = "txtUser_Name"
+        Me.txtUser_Name.Size = New System.Drawing.Size(455, 40)
+        Me.txtUser_Name.StyleController = Me.LayoutControl1
+        Me.txtUser_Name.TabIndex = 4
         '
-        'TextEdit2
+        'txtUser_Status
         '
-        Me.TextEdit2.Location = New System.Drawing.Point(108, 56)
-        Me.TextEdit2.Name = "TextEdit2"
-        Me.TextEdit2.Size = New System.Drawing.Size(455, 40)
-        Me.TextEdit2.StyleController = Me.LayoutControl1
-        Me.TextEdit2.TabIndex = 5
+        Me.txtUser_Status.Location = New System.Drawing.Point(108, 188)
+        Me.txtUser_Status.Name = "txtUser_Status"
+        Me.txtUser_Status.Size = New System.Drawing.Size(455, 40)
+        Me.txtUser_Status.StyleController = Me.LayoutControl1
+        Me.txtUser_Status.TabIndex = 5
         '
-        'TextEdit3
+        'txtUser_LastName
         '
-        Me.TextEdit3.Location = New System.Drawing.Point(108, 100)
-        Me.TextEdit3.Name = "TextEdit3"
-        Me.TextEdit3.Size = New System.Drawing.Size(455, 40)
-        Me.TextEdit3.StyleController = Me.LayoutControl1
-        Me.TextEdit3.TabIndex = 6
+        Me.txtUser_LastName.Location = New System.Drawing.Point(108, 100)
+        Me.txtUser_LastName.Name = "txtUser_LastName"
+        Me.txtUser_LastName.Size = New System.Drawing.Size(455, 40)
+        Me.txtUser_LastName.StyleController = Me.LayoutControl1
+        Me.txtUser_LastName.TabIndex = 6
         '
-        'TextEdit4
+        'txtUser_FirstName
         '
-        Me.TextEdit4.Location = New System.Drawing.Point(108, 144)
-        Me.TextEdit4.Name = "TextEdit4"
-        Me.TextEdit4.Size = New System.Drawing.Size(455, 40)
-        Me.TextEdit4.StyleController = Me.LayoutControl1
-        Me.TextEdit4.TabIndex = 7
+        Me.txtUser_FirstName.Location = New System.Drawing.Point(108, 144)
+        Me.txtUser_FirstName.Name = "txtUser_FirstName"
+        Me.txtUser_FirstName.Size = New System.Drawing.Size(455, 40)
+        Me.txtUser_FirstName.StyleController = Me.LayoutControl1
+        Me.txtUser_FirstName.TabIndex = 7
         '
-        'TextEdit5
+        'txtUser_Email
         '
-        Me.TextEdit5.Location = New System.Drawing.Point(108, 188)
-        Me.TextEdit5.Name = "TextEdit5"
-        Me.TextEdit5.Size = New System.Drawing.Size(455, 40)
-        Me.TextEdit5.StyleController = Me.LayoutControl1
-        Me.TextEdit5.TabIndex = 8
+        Me.txtUser_Email.Location = New System.Drawing.Point(108, 56)
+        Me.txtUser_Email.Name = "txtUser_Email"
+        Me.txtUser_Email.Size = New System.Drawing.Size(455, 40)
+        Me.txtUser_Email.StyleController = Me.LayoutControl1
+        Me.txtUser_Email.TabIndex = 8
         '
         'Root
         '
         Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
         Me.Root.GroupBordersVisible = False
-        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.EmptySpaceItem1, Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5})
+        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.EmptySpaceItem1, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem2})
         Me.Root.Name = "Root"
         Me.Root.Size = New System.Drawing.Size(575, 250)
         Me.Root.TextVisible = False
         '
         'LayoutControlItem1
         '
-        Me.LayoutControlItem1.Control = Me.TextEdit1
+        Me.LayoutControlItem1.Control = Me.txtUser_Name
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
         Me.LayoutControlItem1.Size = New System.Drawing.Size(555, 44)
@@ -130,18 +135,9 @@ Partial Class UCUsersUpdate
         Me.EmptySpaceItem1.Size = New System.Drawing.Size(555, 10)
         Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
         '
-        'LayoutControlItem2
-        '
-        Me.LayoutControlItem2.Control = Me.TextEdit2
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 44)
-        Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(555, 44)
-        Me.LayoutControlItem2.Text = "Mật khẩu"
-        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(93, 17)
-        '
         'LayoutControlItem3
         '
-        Me.LayoutControlItem3.Control = Me.TextEdit3
+        Me.LayoutControlItem3.Control = Me.txtUser_LastName
         Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 88)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
         Me.LayoutControlItem3.Size = New System.Drawing.Size(555, 44)
@@ -150,7 +146,7 @@ Partial Class UCUsersUpdate
         '
         'LayoutControlItem4
         '
-        Me.LayoutControlItem4.Control = Me.TextEdit4
+        Me.LayoutControlItem4.Control = Me.txtUser_FirstName
         Me.LayoutControlItem4.Location = New System.Drawing.Point(0, 132)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
         Me.LayoutControlItem4.Size = New System.Drawing.Size(555, 44)
@@ -159,46 +155,56 @@ Partial Class UCUsersUpdate
         '
         'LayoutControlItem5
         '
-        Me.LayoutControlItem5.Control = Me.TextEdit5
-        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 176)
+        Me.LayoutControlItem5.Control = Me.txtUser_Email
+        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 44)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
         Me.LayoutControlItem5.Size = New System.Drawing.Size(555, 44)
         Me.LayoutControlItem5.Text = "Email"
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(93, 17)
         '
-        'UCUsersUpdate
+        'LayoutControlItem2
+        '
+        Me.LayoutControlItem2.Control = Me.txtUser_Status
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 176)
+        Me.LayoutControlItem2.Name = "LayoutControlItem2"
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(555, 44)
+        Me.LayoutControlItem2.Text = "Trạng thái"
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(93, 17)
+        '
+        'UcUsersUpdate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.LayoutControl1)
-        Me.Name = "UCUsersUpdate"
+        Me.Name = "UcUsersUpdate"
         Me.Size = New System.Drawing.Size(592, 458)
+        Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
         Me.Controls.SetChildIndex(Me.LayoutControl1, 0)
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtUser_Name.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtUser_Status.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtUser_LastName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtUser_FirstName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtUser_Email.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents LayoutControl1 As DevExpress.XtraLayout.LayoutControl
-    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit4 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit5 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents txtUser_Name As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents txtUser_Status As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents txtUser_LastName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents txtUser_FirstName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents txtUser_Email As DevExpress.XtraEditors.TextEdit
     Friend WithEvents Root As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
@@ -206,4 +212,5 @@ Partial Class UCUsersUpdate
     Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
+    ' Friend WithEvents txtUser_Status As DevExpress.XtraEditors.TextEdit
 End Class

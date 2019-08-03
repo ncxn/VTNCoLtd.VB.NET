@@ -12,6 +12,7 @@ Public Class UcControlsAccessManager
 
         ' Add any initialization after the InitializeComponent() call.
         ObjControlsAccessList = ClsControlsAccess.GetInstance.GetList()
+        'HasRoles(Me.Name)
     End Sub
 #Region " Form Action"
 
@@ -48,7 +49,7 @@ Public Class UcControlsAccessManager
 
 #Region " Xử lý dữ liệu"
     Private Sub PopularControls()
-        Dim soucreControls = ClsControls.GetInstance.GetList()
+        Dim soucreControls = ClsControls.GetInstance.GetDataTable()
         GrdControls.DataSource = soucreControls
         GrvControls.Columns(2).Visible = False
         GrvControls.Columns(3).Visible = False
@@ -62,7 +63,7 @@ Public Class UcControlsAccessManager
     End Sub
 
     Private Sub SetCheckedItemOnAccessListBox()
-        Dim ObjAccessByControl = ClsControlsAccess.GetInstance.GetAccessByControls(GrvControls.GetFocusedRowCellValue("Controls_name").ToString, ObjControlsAccessList)
+        Dim ObjAccessByControl = ClsControlsAccess.GetInstance.GetAccessByControls(GrvControls.GetFocusedRowCellValue("Tên Controls").ToString, ObjControlsAccessList)
 
         ' Duyệt qua từng phần tử trong ListAccess(chức năng) nếu tồn tại trong objAC thì checked, ngược lại thì Unchecked
 
@@ -79,7 +80,7 @@ Public Class UcControlsAccessManager
 
         For Each item As AccessDTO In ChkAccess.CheckedItems
             Dim ControlsAccessDTO As New ControlsAccessDTO With {
-                .Controls_name = GrvControls.GetFocusedRowCellValue("Controls_name").ToString,
+                .Controls_name = GrvControls.GetFocusedRowCellValue("Tên Controls").ToString,
                 .Access_name = item.Access_name.ToString()}
             ControlsAccessCollection.Add(ControlsAccessDTO)
         Next
@@ -87,7 +88,7 @@ Public Class UcControlsAccessManager
     End Function
     Private Function GetControlsAccessDTO() As ControlsAccessDTO
         Dim ControlsAccess As New ControlsAccessDTO With {
-            .Controls_name = GrvControls.GetFocusedRowCellValue("Controls_name").ToString,
+            .Controls_name = GrvControls.GetFocusedRowCellValue("Tên Controls").ToString,
             .Access_name = ""}
 
         Return ControlsAccess

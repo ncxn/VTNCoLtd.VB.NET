@@ -172,7 +172,7 @@ Partial Class UCUsersAdd
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.LayoutControl1)
-        Me.Name = "UCUsersAdd"
+        Me.Name = "UcUsersAdd"
         Me.Size = New System.Drawing.Size(592, 458)
         Me.Controls.SetChildIndex(Me.LayoutControl1, 0)
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -1,16 +1,12 @@
 ﻿Imports DevExpress.XtraBars
 
-Public Class UCUsersAdd
+Public Class UcUsersAdd
     Public Sub New()
 
         ' This call is required by the designer.
         InitializeComponent()
 
-        ' Thủ tục phân quyền: khi form hiện lên thì lấy định nghĩa các action trong phần phân quyền.
-        'GenerateAction(Me)
-        'RbpChucNang.Visible = False
-        RbpGTools.Visible = False
-        RbpGExtend.Visible = False
+        HasAccess(Me.Name)
 
     End Sub
     Private Sub BtnOK_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnOK.ItemClick
@@ -28,7 +24,7 @@ Public Class UCUsersAdd
             .User_updated_at = Now()
         }
 
-        If ClsUsers.GetInstance.InsertUsers(user) Then
+        If ClsUsers.GetInstance.Insert(user) Then
             MessageBox.Show("Thành công")
         End If
     End Sub

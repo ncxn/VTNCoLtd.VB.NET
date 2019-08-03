@@ -2,9 +2,11 @@
 Imports DevExpress.XtraBars.Ribbon
 
 Public Class UcBase
-    Public AddDocs As ClsDelegate.AddTab
-    Public RemoveTab As ClsDelegate.RemoveTab
-    Public HidePageGroup As New ClsDelegate.HideGroup(AddressOf HideEmptyGroups)
+    Public AddDocs As New ClsDelegate.AddTab(AddressOf FrmMain.AddDocs)
+    Public RemoveTab As New ClsDelegate.RemoveTab(AddressOf FrmMain.RemoveDocs)
+    Public HasAccess As New ClsDelegate.CheckRole(AddressOf HasAccessOnControl)
+    Public HasRoles As New ClsDelegate.CheckRole(AddressOf CheckRole)
+
 #Region " Khởi tạo"
     Public Sub New()
 
@@ -22,20 +24,18 @@ Public Class UcBase
             Return RibbonControlBaseOnUserControl
         End Get
     End Property
+#End Region
 
+#Region " Role and Controls"
     Private Function IsVisible(ByVal itemLink As BarItemLink) As Boolean
         Return (itemLink.Item.Visibility = BarItemVisibility.Always OrElse itemLink.Item.Visibility = BarItemVisibility.OnlyInRuntime) AndAlso itemLink.Visible
     End Function
 
-    Private Sub HideEmptyGroups(Controls As String, ObjControlsAccess As ControlsAccessCollection)
-
-        Dim listAccess As List(Of String) = ClsControlsAccess.GetInstance.GetAccessByControls(Controls, ObjControlsAccess)
-
+    Private Sub HasAccessOnControl(Control As String)
+        Dim listAccess As List(Of String) = ClsControlsAccess.GetInstance.GetAccessByControls(Control, CurrentControlsAccess.ControlsAccessColection)
         For Each pag As RibbonPage In BaseRibbon.Pages
-
             For Each pagGroup As RibbonPageGroup In pag.Groups
                 Dim VisibleAll As Boolean = False
-
                 For Each itemLink As BarItemLink In pagGroup.ItemLinks
                     'Set control
                     If listAccess.Contains(itemLink.Item.Name.ToString) Then
@@ -49,11 +49,34 @@ Public Class UcBase
                         Continue For
                     End If
                 Next
-
                 If Not VisibleAll Then pagGroup.Visible = VisibleAll
             Next
         Next
     End Sub
+
+    Private Sub CheckRole(Control As String)
+
+        For Each pag As RibbonPage In BaseRibbon.Pages
+            For Each pagGroup As RibbonPageGroup In pag.Groups
+                Dim VisibleAll As Boolean = False
+                For Each itemLink As BarItemLink In pagGroup.ItemLinks
+                    'Set control
+                    If ClsRoleManager.GetInstance.HasRoleOnUserControl(Control, itemLink.Item.Name.ToString) Then
+                        itemLink.Item.Visibility = BarItemVisibility.Always
+                    Else
+                        itemLink.Item.Visibility = BarItemVisibility.Never
+                    End If
+                    'Check control
+                    If IsVisible(itemLink) Then
+                        VisibleAll = True
+                        Continue For
+                    End If
+                Next
+                If Not VisibleAll Then pagGroup.Visible = VisibleAll
+            Next
+        Next
+    End Sub
+
 #End Region
 
 End Class

@@ -2,6 +2,7 @@
     ' 
     ' Hướng dẫn: https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/delegates/
     '
+
     ' Xử lý các sự kiện trên Main Menu từ các form khác, dùng kỹ thuật Delegate:
     Public Delegate Sub RolesMenu()
 
@@ -11,4 +12,7 @@
 
     ' Ẩn Page Group nếu không có item bên trong
     Public Delegate Sub HideGroup(Controls As String, ControlsAccess As ControlsAccessCollection)
+
+    'Role
+    Public Delegate Sub CheckRole(Controls As String)
 End Class

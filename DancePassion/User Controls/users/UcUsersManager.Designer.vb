@@ -19,49 +19,49 @@ Partial Class UcUsersManager
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GridControlUsers = New DevExpress.XtraGrid.GridControl()
-        Me.GridViewUsers = New DevExpress.XtraGrid.Views.Grid.GridView()
-        CType(Me.GridControlUsers, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridViewUsers, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GrdUsers = New DevExpress.XtraGrid.GridControl()
+        Me.GrvUsers = New DevExpress.XtraGrid.Views.Grid.GridView()
+        CType(Me.GrdUsers, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GrvUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BaseStatusBar
         '
         Me.BaseStatusBar.Location = New System.Drawing.Point(0, 447)
         '
-        'GridControlUsers
+        'GrdUsers
         '
-        Me.GridControlUsers.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControlUsers.Location = New System.Drawing.Point(0, 239)
-        Me.GridControlUsers.MainView = Me.GridViewUsers
-        Me.GridControlUsers.MenuManager = Me.RibbonControlBaseOnUserControl
-        Me.GridControlUsers.Name = "GridControlUsers"
-        Me.GridControlUsers.Size = New System.Drawing.Size(827, 208)
-        Me.GridControlUsers.TabIndex = 1
-        Me.GridControlUsers.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewUsers})
+        Me.GrdUsers.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GrdUsers.Location = New System.Drawing.Point(0, 239)
+        Me.GrdUsers.MainView = Me.GrvUsers
+        Me.GrdUsers.MenuManager = Me.RibbonControlBaseOnUserControl
+        Me.GrdUsers.Name = "GrdUsers"
+        Me.GrdUsers.Size = New System.Drawing.Size(827, 208)
+        Me.GrdUsers.TabIndex = 1
+        Me.GrdUsers.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GrvUsers})
         '
-        'GridViewUsers
+        'GrvUsers
         '
-        Me.GridViewUsers.GridControl = Me.GridControlUsers
-        Me.GridViewUsers.Name = "GridViewUsers"
-        Me.GridViewUsers.OptionsView.ShowGroupPanel = False
+        Me.GrvUsers.GridControl = Me.GrdUsers
+        Me.GrvUsers.Name = "GrvUsers"
+        Me.GrvUsers.OptionsView.ShowGroupPanel = False
         '
         'UcUsersManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.GridControlUsers)
+        Me.Controls.Add(Me.GrdUsers)
         Me.Name = "UcUsersManager"
         Me.Size = New System.Drawing.Size(827, 487)
         Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
-        Me.Controls.SetChildIndex(Me.GridControlUsers, 0)
-        CType(Me.GridControlUsers, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridViewUsers, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Controls.SetChildIndex(Me.GrdUsers, 0)
+        CType(Me.GrdUsers, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GrvUsers, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents GridControlUsers As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridViewUsers As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GrdUsers As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GrvUsers As DevExpress.XtraGrid.Views.Grid.GridView
 End Class
