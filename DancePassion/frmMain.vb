@@ -126,10 +126,10 @@ Public Class FrmMain
 
 #Region " Nhân sự"
     Private Sub BtnHumanGroup_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcRolesManager.ItemClick
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcRolesManager
         AddDocs(uc, "Nhóm nhân viên")
-        SplashScreenManager.CloseForm()
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
     Private Sub BtnHuman_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcUsersManager.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)

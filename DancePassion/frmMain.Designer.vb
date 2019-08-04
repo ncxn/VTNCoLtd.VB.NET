@@ -24,11 +24,10 @@ Partial Class FrmMain
         Me.MainControlRibbon = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.Slide_menu = New DevExpress.XtraBars.Ribbon.BackstageViewControl()
         Me.BackstageViewClientControl1 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
-        Me.BackstageViewClientControl2 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
         Me.TaiKhoanCaNhan = New DevExpress.XtraBars.Ribbon.BackstageViewTabItem()
         Me.DangNhap = New DevExpress.XtraBars.Ribbon.BackstageViewButtonItem()
         Me.DangXuat = New DevExpress.XtraBars.Ribbon.BackstageViewButtonItem()
-        Me.Sua = New DevExpress.XtraBars.Ribbon.BackstageViewTabItem()
+        Me.UcUsersProfile = New DevExpress.XtraBars.Ribbon.BackstageViewButtonItem()
         Me.BackstageViewItemSeparator1 = New DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator()
         Me.BackstageViewItemSeparator2 = New DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator()
         Me.BtnCreateDB = New DevExpress.XtraBars.BarButtonItem()
@@ -133,11 +132,12 @@ Partial Class FrmMain
         Me.MainControlRibbon.ApplicationButtonAnimationLength = 0
         Me.MainControlRibbon.ApplicationButtonDropDownControl = Me.Slide_menu
         Me.MainControlRibbon.ApplicationButtonImageOptions.Image = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.Image"), System.Drawing.Image)
-        Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.movedown
+        Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImage = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImageSize = New System.Drawing.Size(32, 32)
         Me.MainControlRibbon.ApplicationButtonKeyTip = "ĐĂNG NHẬP VÀO TÀI KHOẢN"
         Me.MainControlRibbon.AutoSizeItems = True
         Me.MainControlRibbon.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal
+        Me.MainControlRibbon.CommandLayout = DevExpress.XtraBars.Ribbon.CommandLayout.Simplified
         Me.MainControlRibbon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MainControlRibbon.ExpandCollapseItem.Id = 0
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
@@ -154,19 +154,17 @@ Partial Class FrmMain
         'Slide_menu
         '
         Me.Slide_menu.Appearance.Font = CType(resources.GetObject("Slide_menu.Appearance.Font"), System.Drawing.Font)
-        Me.Slide_menu.Appearance.Image = CType(resources.GetObject("Slide_menu.Appearance.Image"), System.Drawing.Image)
         Me.Slide_menu.Appearance.Options.UseFont = True
-        Me.Slide_menu.Appearance.Options.UseImage = True
         Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl1)
-        Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl2)
+        resources.ApplyResources(Me.Slide_menu, "Slide_menu")
         Me.Slide_menu.Items.Add(Me.TaiKhoanCaNhan)
         Me.Slide_menu.Items.Add(Me.DangNhap)
         Me.Slide_menu.Items.Add(Me.DangXuat)
-        Me.Slide_menu.Items.Add(Me.Sua)
+        Me.Slide_menu.Items.Add(Me.UcUsersProfile)
         Me.Slide_menu.Items.Add(Me.BackstageViewItemSeparator1)
         Me.Slide_menu.Items.Add(Me.BackstageViewItemSeparator2)
-        resources.ApplyResources(Me.Slide_menu, "Slide_menu")
         Me.Slide_menu.Name = "Slide_menu"
+        Me.Slide_menu.Office2013StyleOptions.LeftPaneContentVerticalOffset = 100
         Me.Slide_menu.OwnerControl = Me.MainControlRibbon
         Me.Slide_menu.SelectedTab = Me.TaiKhoanCaNhan
         Me.Slide_menu.SelectedTabIndex = 0
@@ -176,11 +174,6 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.BackstageViewClientControl1, "BackstageViewClientControl1")
         Me.BackstageViewClientControl1.Name = "BackstageViewClientControl1"
-        '
-        'BackstageViewClientControl2
-        '
-        resources.ApplyResources(Me.BackstageViewClientControl2, "BackstageViewClientControl2")
-        Me.BackstageViewClientControl2.Name = "BackstageViewClientControl2"
         '
         'TaiKhoanCaNhan
         '
@@ -202,12 +195,11 @@ Partial Class FrmMain
         Me.DangXuat.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("DangXuat.ImageOptions.ItemNormal.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.DangXuat.Name = "DangXuat"
         '
-        'Sua
+        'UcUsersProfile
         '
-        resources.ApplyResources(Me.Sua, "Sua")
-        Me.Sua.ContentControl = Me.BackstageViewClientControl2
-        Me.Sua.ImageOptions.ItemNormal.SvgImage = Global.DancePassion.My.Resources.Resources.bo_document
-        Me.Sua.Name = "Sua"
+        resources.ApplyResources(Me.UcUsersProfile, "UcUsersProfile")
+        Me.UcUsersProfile.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("UcUsersProfile.ImageOptions.ItemNormal.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcUsersProfile.Name = "UcUsersProfile"
         '
         'BackstageViewItemSeparator1
         '
@@ -856,7 +848,7 @@ Partial Class FrmMain
         '
         'FrmMain
         '
-        Me.AllowFormGlass = DevExpress.Utils.DefaultBoolean.[True]
+        Me.AllowFormGlass = DevExpress.Utils.DefaultBoolean.[False]
         Me.Appearance.Options.UseFont = True
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -964,8 +956,6 @@ Partial Class FrmMain
     Friend WithEvents BH_DoanhThu_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BH_TonKho_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BackstageViewClientControl1 As DevExpress.XtraBars.Ribbon.BackstageViewClientControl
-    Friend WithEvents Sua As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
-    Friend WithEvents BackstageViewClientControl2 As DevExpress.XtraBars.Ribbon.BackstageViewClientControl
     Friend WithEvents TaiKhoanCaNhan As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
     Friend WithEvents NativeMdiViewOnMain As DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView
     Friend WithEvents WindowsUIViewOnMain As DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView
@@ -977,4 +967,5 @@ Partial Class FrmMain
     Friend WithEvents UcControlsManager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnFunctions As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnFunctionsOnControl As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents UcUsersProfile As DevExpress.XtraBars.Ribbon.BackstageViewButtonItem
 End Class

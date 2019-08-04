@@ -19,69 +19,254 @@ Partial Class FrmUsersLogIn
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtUserName = New DevExpress.XtraEditors.TextEdit()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmUsersLogIn))
+        Me.PnLogo = New DevExpress.XtraEditors.PanelControl()
+        Me.PicLogo = New DevExpress.XtraEditors.PictureEdit()
+        Me.PnDetail = New DevExpress.XtraEditors.PanelControl()
         Me.txtPassWord = New DevExpress.XtraEditors.TextEdit()
-        Me.btnOK = New DevExpress.XtraEditors.SimpleButton()
-        Me.btnCancel = New DevExpress.XtraEditors.SimpleButton()
-        CType(Me.txtUserName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtUserName = New DevExpress.XtraEditors.TextEdit()
+        Me.LblTitle = New DevExpress.XtraEditors.LabelControl()
+        Me.LinkLostPass = New DevExpress.XtraEditors.HyperlinkLabelControl()
+        Me.BtnCancel = New DevExpress.XtraEditors.SimpleButton()
+        Me.BtnOK = New DevExpress.XtraEditors.SimpleButton()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LinePw = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineUserName = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        CType(Me.PnLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PnLogo.SuspendLayout()
+        CType(Me.PicLogo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PnDetail, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PnDetail.SuspendLayout()
         CType(Me.txtPassWord.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtUserName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'txtUserName
+        'PnLogo
         '
-        Me.txtUserName.Location = New System.Drawing.Point(12, 88)
-        Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(380, 40)
-        Me.txtUserName.TabIndex = 0
+        Me.PnLogo.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PnLogo.Appearance.Options.UseBackColor = True
+        Me.PnLogo.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PnLogo.Controls.Add(Me.PicLogo)
+        Me.PnLogo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PnLogo.Location = New System.Drawing.Point(0, 0)
+        Me.PnLogo.Name = "PnLogo"
+        Me.PnLogo.Size = New System.Drawing.Size(234, 377)
+        Me.PnLogo.TabIndex = 0
+        '
+        'PicLogo
+        '
+        Me.PicLogo.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PicLogo.EditValue = CType(resources.GetObject("PicLogo.EditValue"), Object)
+        Me.PicLogo.Location = New System.Drawing.Point(49, 128)
+        Me.PicLogo.Margin = New System.Windows.Forms.Padding(4)
+        Me.PicLogo.Name = "PicLogo"
+        Me.PicLogo.Properties.AllowFocused = False
+        Me.PicLogo.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.PicLogo.Properties.Appearance.Options.UseBackColor = True
+        Me.PicLogo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PicLogo.Properties.ShowMenu = False
+        Me.PicLogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch
+        Me.PicLogo.Size = New System.Drawing.Size(127, 120)
+        Me.PicLogo.TabIndex = 0
+        '
+        'PnDetail
+        '
+        Me.PnDetail.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.PnDetail.Appearance.Options.UseBackColor = True
+        Me.PnDetail.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PnDetail.Controls.Add(Me.txtPassWord)
+        Me.PnDetail.Controls.Add(Me.txtUserName)
+        Me.PnDetail.Controls.Add(Me.LblTitle)
+        Me.PnDetail.Controls.Add(Me.LinkLostPass)
+        Me.PnDetail.Controls.Add(Me.BtnCancel)
+        Me.PnDetail.Controls.Add(Me.BtnOK)
+        Me.PnDetail.Controls.Add(Me.ShapeContainer1)
+        Me.PnDetail.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PnDetail.Location = New System.Drawing.Point(234, 0)
+        Me.PnDetail.Name = "PnDetail"
+        Me.PnDetail.Size = New System.Drawing.Size(497, 377)
+        Me.PnDetail.TabIndex = 7
         '
         'txtPassWord
         '
-        Me.txtPassWord.Location = New System.Drawing.Point(12, 134)
+        Me.txtPassWord.EditValue = "Mật khẩu"
+        Me.txtPassWord.Location = New System.Drawing.Point(100, 162)
+        Me.txtPassWord.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPassWord.Name = "txtPassWord"
+        Me.txtPassWord.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtPassWord.Properties.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassWord.Properties.Appearance.ForeColor = System.Drawing.Color.White
+        Me.txtPassWord.Properties.Appearance.Options.UseBackColor = True
+        Me.txtPassWord.Properties.Appearance.Options.UseFont = True
+        Me.txtPassWord.Properties.Appearance.Options.UseForeColor = True
+        Me.txtPassWord.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.txtPassWord.Properties.NullValuePromptShowForEmptyValue = True
-        Me.txtPassWord.Properties.UseSystemPasswordChar = True
-        Me.txtPassWord.Size = New System.Drawing.Size(380, 40)
-        Me.txtPassWord.TabIndex = 1
+        Me.txtPassWord.Size = New System.Drawing.Size(300, 42)
+        Me.txtPassWord.TabIndex = 2
         '
-        'btnOK
+        'txtUserName
         '
-        Me.btnOK.Location = New System.Drawing.Point(12, 193)
-        Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(180, 38)
-        Me.btnOK.TabIndex = 2
-        Me.btnOK.Text = "Đăng nhập"
+        Me.txtUserName.EditValue = "Tên đăng nhập"
+        Me.txtUserName.Location = New System.Drawing.Point(100, 112)
+        Me.txtUserName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtUserName.Name = "txtUserName"
+        Me.txtUserName.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtUserName.Properties.Appearance.BackColor2 = System.Drawing.Color.Transparent
+        Me.txtUserName.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent
+        Me.txtUserName.Properties.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUserName.Properties.Appearance.ForeColor = System.Drawing.Color.White
+        Me.txtUserName.Properties.Appearance.Options.UseBackColor = True
+        Me.txtUserName.Properties.Appearance.Options.UseBorderColor = True
+        Me.txtUserName.Properties.Appearance.Options.UseFont = True
+        Me.txtUserName.Properties.Appearance.Options.UseForeColor = True
+        Me.txtUserName.Properties.Appearance.Options.UseImage = True
+        Me.txtUserName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.txtUserName.Size = New System.Drawing.Size(300, 42)
+        Me.txtUserName.TabIndex = 1
         '
-        'btnCancel
+        'LblTitle
         '
-        Me.btnCancel.Location = New System.Drawing.Point(212, 193)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(180, 38)
-        Me.btnCancel.TabIndex = 3
-        Me.btnCancel.Text = "Thoát"
+        Me.LblTitle.Appearance.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTitle.Appearance.ForeColor = System.Drawing.Color.White
+        Me.LblTitle.Appearance.Options.UseFont = True
+        Me.LblTitle.Appearance.Options.UseForeColor = True
+        Me.LblTitle.Location = New System.Drawing.Point(159, 10)
+        Me.LblTitle.Name = "LblTitle"
+        Me.LblTitle.Size = New System.Drawing.Size(136, 32)
+        Me.LblTitle.TabIndex = 0
+        Me.LblTitle.Text = "ĐĂNG NHẬP"
+        '
+        'LinkLostPass
+        '
+        Me.LinkLostPass.Appearance.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLostPass.Appearance.Options.UseFont = True
+        Me.LinkLostPass.AppearanceHovered.ForeColor = System.Drawing.Color.White
+        Me.LinkLostPass.AppearanceHovered.Options.UseForeColor = True
+        Me.LinkLostPass.LineVisible = True
+        Me.LinkLostPass.Location = New System.Drawing.Point(185, 313)
+        Me.LinkLostPass.Name = "LinkLostPass"
+        Me.LinkLostPass.Size = New System.Drawing.Size(145, 28)
+        Me.LinkLostPass.TabIndex = 5
+        Me.LinkLostPass.Text = "Quên mật khẩu?"
+        '
+        'BtnCancel
+        '
+        Me.BtnCancel.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCancel.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCancel.Appearance.ForeColor = System.Drawing.Color.White
+        Me.BtnCancel.Appearance.Options.UseBackColor = True
+        Me.BtnCancel.Appearance.Options.UseFont = True
+        Me.BtnCancel.Appearance.Options.UseForeColor = True
+        Me.BtnCancel.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnCancel.AppearanceHovered.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCancel.AppearanceHovered.ForeColor = System.Drawing.Color.White
+        Me.BtnCancel.AppearanceHovered.Options.UseBackColor = True
+        Me.BtnCancel.AppearanceHovered.Options.UseFont = True
+        Me.BtnCancel.AppearanceHovered.Options.UseForeColor = True
+        Me.BtnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
+        Me.BtnCancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnCancel.ImageOptions.SvgImage = CType(resources.GetObject("BtnCancel.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnCancel.Location = New System.Drawing.Point(250, 242)
+        Me.BtnCancel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnCancel.Name = "BtnCancel"
+        Me.BtnCancel.Size = New System.Drawing.Size(150, 40)
+        Me.BtnCancel.TabIndex = 4
+        Me.BtnCancel.Text = "Bỏ qua"
+        '
+        'BtnOK
+        '
+        Me.BtnOK.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.BtnOK.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOK.Appearance.ForeColor = System.Drawing.Color.White
+        Me.BtnOK.Appearance.Options.UseBackColor = True
+        Me.BtnOK.Appearance.Options.UseFont = True
+        Me.BtnOK.Appearance.Options.UseForeColor = True
+        Me.BtnOK.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnOK.AppearanceHovered.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOK.AppearanceHovered.ForeColor = System.Drawing.Color.White
+        Me.BtnOK.AppearanceHovered.Options.UseBackColor = True
+        Me.BtnOK.AppearanceHovered.Options.UseFont = True
+        Me.BtnOK.AppearanceHovered.Options.UseForeColor = True
+        Me.BtnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
+        Me.BtnOK.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnOK.ImageOptions.SvgImage = CType(resources.GetObject("BtnOK.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnOK.Location = New System.Drawing.Point(100, 242)
+        Me.BtnOK.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnOK.Name = "BtnOK"
+        Me.BtnOK.Size = New System.Drawing.Size(150, 40)
+        Me.BtnOK.TabIndex = 3
+        Me.BtnOK.Text = "Đăng nhập"
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LinePw, Me.LineUserName})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(497, 377)
+        Me.ShapeContainer1.TabIndex = 9
+        Me.ShapeContainer1.TabStop = False
+        '
+        'LinePw
+        '
+        Me.LinePw.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LinePw.Name = "LinePw"
+        Me.LinePw.X1 = 100
+        Me.LinePw.X2 = 400
+        Me.LinePw.Y1 = 204
+        Me.LinePw.Y2 = 204
+        '
+        'LineUserName
+        '
+        Me.LineUserName.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LineUserName.Name = "LineUserName"
+        Me.LineUserName.X1 = 100
+        Me.LineUserName.X2 = 400
+        Me.LineUserName.Y1 = 154
+        Me.LineUserName.Y2 = 154
         '
         'FrmUsersLogIn
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
+        Me.Appearance.BackColor = System.Drawing.Color.SteelBlue
+        Me.Appearance.Options.UseBackColor = True
+        Me.Appearance.Options.UseFont = True
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(403, 262)
-        Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnOK)
-        Me.Controls.Add(Me.txtPassWord)
-        Me.Controls.Add(Me.txtUserName)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.ClientSize = New System.Drawing.Size(731, 377)
+        Me.Controls.Add(Me.PnLogo)
+        Me.Controls.Add(Me.PnDetail)
+        Me.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FrmUsersLogIn"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.Opacity = 0.9R
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Đăng nhập"
-        CType(Me.txtUserName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PnLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PnLogo.ResumeLayout(False)
+        CType(Me.PicLogo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PnDetail, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PnDetail.ResumeLayout(False)
+        Me.PnDetail.PerformLayout()
         CType(Me.txtPassWord.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtUserName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents txtUserName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents PnLogo As DevExpress.XtraEditors.PanelControl
+    Friend WithEvents PnDetail As DevExpress.XtraEditors.PanelControl
     Friend WithEvents txtPassWord As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents btnOK As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents btnCancel As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents BtnCancel As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents txtUserName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents BtnOK As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents LinkLostPass As DevExpress.XtraEditors.HyperlinkLabelControl
+    Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
+    Friend WithEvents LineUserName As PowerPacks.LineShape
+    Friend WithEvents LblTitle As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents LinePw As PowerPacks.LineShape
+    Private WithEvents PicLogo As DevExpress.XtraEditors.PictureEdit
 End Class
