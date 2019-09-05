@@ -13,4 +13,17 @@ Public Class Security
 
         Return sBuilder.ToString()
     End Function
+    Public Shared Function RandomPassWord(Optional ByVal length As Integer = 8) As String
+        Dim allowedChars = "abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ123456789#@%_."
+
+        Dim chars = New Char(length - 1) {}
+        Dim rd = New Random()
+
+        For i = 0 To length - 1
+            chars(i) = allowedChars(rd.[Next](0, allowedChars.Length))
+        Next
+
+        Return New String(chars)
+    End Function
+
 End Class

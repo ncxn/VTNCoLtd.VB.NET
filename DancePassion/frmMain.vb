@@ -132,38 +132,47 @@ Public Class FrmMain
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
     Private Sub BtnHuman_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcUsersManager.ItemClick
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcUsersManager
         AddDocs(uc, "Nhân viên")
-        SplashScreenManager.CloseForm()
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Private Sub BtnRoles_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcRoleManager.ItemClick
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcRoleManager
         AddDocs(uc, "Phân quyền")
-        SplashScreenManager.CloseForm()
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 #End Region
 
 #Region " Phát triển"
     Private Sub BtnControls_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcControlsManager.ItemClick
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcControlsManager
         AddDocs(uc, "Quản lý Controls")
-        SplashScreenManager.CloseForm()
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
     Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctions.ItemClick
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcAccessManager
         AddDocs(uc, "Quản lý Action")
-        SplashScreenManager.CloseForm()
+        SplashScreenManager.CloseOverlayForm(Handle)
     End Sub
     Private Sub BtnFunctionsOnControl_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctionsOnControl.ItemClick
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcControlsAccessManager
         AddDocs(uc, "Quản lý chức năng")
-        SplashScreenManager.CloseForm()
+        SplashScreenManager.CloseOverlayForm(Handle)
+    End Sub
+#End Region
+
+#Region " Cấu hình"
+    Private Sub UcEmailManager_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcEmailManager.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcEmailManager
+        AddDocs(uc, "Cấu hình email")
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 #End Region
 

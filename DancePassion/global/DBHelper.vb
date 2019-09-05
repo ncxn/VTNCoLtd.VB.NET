@@ -138,17 +138,14 @@ Public Class DBHelper
 
     Public Function GetDataReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As MySqlDataReader
         OpenConnection()
-
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
-
         If parameters IsNot Nothing Then
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
-
         Return cmd.ExecuteReader(CommandBehavior.CloseConnection)
     End Function
 
-    Public Function GetScalarValue(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter()) = Nothing) As Object
+    Public Function GetScalarValue(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
         If parameters IsNot Nothing Then
             cmd.Parameters.AddRange(parameters.ToArray())

@@ -208,6 +208,9 @@
   <data name="markcomplete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\markcomplete1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="checkbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkbox1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="khachhangtra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khachhangtra.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -331,6 +334,9 @@
   <data name="twilio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\twilio1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="functionscompatibility" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\functionscompatibility.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="editquery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editquery.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -370,7 +376,7 @@
   <data name="eSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eSMS1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="functionscompatibility" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\functionscompatibility.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="actions_send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_send.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

@@ -100,6 +100,7 @@ Public Class ClsUserRoles
         Return ObjUserRoles
 
     End Function
+
     Public Function GetRolesByCurrentUserName() As UserRolesCollection
         Dim ObjUserRoles As New UserRolesCollection
         Dim strProc As String = "procGetRolesByUserName"

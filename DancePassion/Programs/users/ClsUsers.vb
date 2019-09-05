@@ -132,16 +132,19 @@ End Enum
 #Region " Data Access User"
 Public Class ClsUsers
     Private Shared Singleton As ClsUsers
+
     Public Shared Function GetInstance() As ClsUsers
         If Singleton Is Nothing Then
             Singleton = New ClsUsers()
         End If
         Return Singleton
     End Function
+
     Public Function GetDataTableUsers() As DataTable
         Dim dtUsers As DataTable = DBHelper.GetInstance.GetDataTable("procUsers_GetAll", CommandType.StoredProcedure)
         Return dtUsers
     End Function
+
     Public Function GetListUsers() As UserCollection
         Dim UserList As New UserCollection
         Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procUsers_GetAll", CommandType.StoredProcedure)
@@ -193,9 +196,39 @@ Public Class ClsUsers
 
     Public Function GetUserByUserName(user_name As String) As UsersDTO
         Dim ObjectUser As New UsersDTO
-        Dim strProc As String = "procGetUserByUserName"
+        Dim strProc As String = "procUsers_GetByUserName"
         Dim parameters As New List(Of MySqlParameter) From {
             New MySqlParameter("p_user_name", user_name)
+        }
+
+        Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
+
+        If Reader.Read() Then
+            With ObjectUser
+                .User_id = Reader("User_id").ToString()
+                .User_name = Reader("User_name").ToString()
+                .User_first_name = Reader("User_first_name").ToString()
+                .User_last_name = Reader("User_last_name").ToString()
+                .User_email = Reader("User_email").ToString()
+                .User_password = Reader("User_password").ToString()
+                .User_status = CInt(Reader("User_status"))
+                .User_created_at = CDate(Reader("User_created_at"))
+                .User_updated_at = CDate(Reader("User_updated_at"))
+
+            End With
+        End If
+        Reader.Close()
+
+        Return ObjectUser
+
+    End Function
+
+    Public Function GetUserByUserNameOrEmail(user_name As String, user_email As String) As UsersDTO
+        Dim ObjectUser As New UsersDTO
+        Dim strProc As String = "procUsers_GetByUserOrEmail"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("p_user_name", user_name),
+            New MySqlParameter("p_user_email", user_email)
         }
 
         Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
@@ -257,9 +290,20 @@ Public Class ClsUsers
         End If
         Return False
     End Function
+
+    Public Function UpdatePassWordByUserName(user_name As String, passWord As String) As Boolean
+        Dim strSQL = "procUsers_Update_PassWord"
+        Dim paraName() As String = {"p_user_name", "p_user_password"}
+        Dim paraValue As Object = New Object() {user_name, passWord}
+        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+    End Function
+
     Public Function Login(ByVal userName As String, ByVal passWord As String, ByRef status As User_status) As UsersDTO
 
         Dim objUser As UsersDTO = GetUserByUserName(userName)
+
         If objUser.User_name IsNot Nothing Then
             If objUser.User_password = Security.GetMD5(passWord) Then
                 If objUser.User_status = 1 Then
@@ -277,5 +321,21 @@ Public Class ClsUsers
         Return objUser
     End Function
 
+    Public Function CheckUser(ByRef status As User_status, Optional ByVal userName As String = Nothing, Optional ByVal User_email As String = Nothing) As UsersDTO
+
+        Dim objUser As UsersDTO = GetUserByUserNameOrEmail(userName, User_email)
+
+        If objUser.User_name IsNot Nothing Then
+            If objUser.User_status = 1 Then
+                status = User_status.Active
+            Else
+                status = User_status.Locked
+            End If
+        Else
+            status = User_status.NotExists
+        End If
+
+        Return objUser
+    End Function
 End Class
 #End Region

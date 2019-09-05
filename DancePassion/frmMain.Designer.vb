@@ -36,7 +36,7 @@ Partial Class FrmMain
         Me.UcRolesManager = New DevExpress.XtraBars.BarButtonItem()
         Me.UcUsersManager = New DevExpress.XtraBars.BarButtonItem()
         Me.roles = New DevExpress.XtraBars.BarButtonItem()
-        Me.gmail_email_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.UcEmailManager = New DevExpress.XtraBars.BarButtonItem()
         Me.outlook_email_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Dcom_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Twilio_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
@@ -137,19 +137,21 @@ Partial Class FrmMain
         Me.MainControlRibbon.ApplicationButtonKeyTip = "ĐĂNG NHẬP VÀO TÀI KHOẢN"
         Me.MainControlRibbon.AutoSizeItems = True
         Me.MainControlRibbon.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal
-        Me.MainControlRibbon.CommandLayout = DevExpress.XtraBars.Ribbon.CommandLayout.Simplified
         Me.MainControlRibbon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MainControlRibbon.ExpandCollapseItem.Id = 0
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.gmail_email_btn, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.BtnFunctions, Me.BtnFunctionsOnControl})
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcEmailManager, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.BtnFunctions, Me.BtnFunctionsOnControl})
         Me.MainControlRibbon.MaxItemId = 48
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
         Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpSystem, Me.RbpEventManagement, Me.RbpClubManager, Me.RbpSalesManager, Me.RbpDev})
         Me.MainControlRibbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019
+        Me.MainControlRibbon.ShowToolbarCustomizeItem = False
         Me.MainControlRibbon.StatusBar = Me.RibbonStatusBarOnMain
+        Me.MainControlRibbon.Toolbar.ShowCustomizeItem = False
+        Me.MainControlRibbon.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '
         'Slide_menu
         '
@@ -168,7 +170,6 @@ Partial Class FrmMain
         Me.Slide_menu.OwnerControl = Me.MainControlRibbon
         Me.Slide_menu.SelectedTab = Me.TaiKhoanCaNhan
         Me.Slide_menu.SelectedTabIndex = 0
-        Me.Slide_menu.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013
         '
         'BackstageViewClientControl1
         '
@@ -267,12 +268,12 @@ Partial Class FrmMain
         Me.roles.ItemInMenuAppearance.Pressed.Options.UseFont = True
         Me.roles.Name = "roles"
         '
-        'gmail_email_btn
+        'UcEmailManager
         '
-        resources.ApplyResources(Me.gmail_email_btn, "gmail_email_btn")
-        Me.gmail_email_btn.Id = 12
-        Me.gmail_email_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.gmail
-        Me.gmail_email_btn.Name = "gmail_email_btn"
+        resources.ApplyResources(Me.UcEmailManager, "UcEmailManager")
+        Me.UcEmailManager.Id = 12
+        Me.UcEmailManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.gmail
+        Me.UcEmailManager.Name = "UcEmailManager"
         '
         'outlook_email_btn
         '
@@ -665,7 +666,7 @@ Partial Class FrmMain
         '
         'RibbonPageGroup_Emails
         '
-        Me.RibbonPageGroup_Emails.ItemLinks.Add(Me.gmail_email_btn)
+        Me.RibbonPageGroup_Emails.ItemLinks.Add(Me.UcEmailManager)
         Me.RibbonPageGroup_Emails.ItemLinks.Add(Me.outlook_email_btn)
         Me.RibbonPageGroup_Emails.Name = "RibbonPageGroup_Emails"
         Me.RibbonPageGroup_Emails.ShowCaptionButton = False
@@ -890,7 +891,7 @@ Partial Class FrmMain
     Friend WithEvents roles As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RbpGPeoples As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RibbonPageGroup_Emails As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents gmail_email_btn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents UcEmailManager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents outlook_email_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RibbonPageGroup_SMS As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents Dcom_SMS_btn As DevExpress.XtraBars.BarButtonItem

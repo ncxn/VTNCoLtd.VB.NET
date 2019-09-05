@@ -1,5 +1,6 @@
 ﻿Imports DevExpress.XtraSplashScreen
 Imports System.Runtime.InteropServices
+
 Public Class FrmUsersLogIn
 
     Public Sub New()
@@ -13,7 +14,7 @@ Public Class FrmUsersLogIn
 
 #Region " Tính năng mở rộng"
 
-
+    ' Dùng để tạo header form
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
@@ -23,6 +24,7 @@ Public Class FrmUsersLogIn
 
     Const WM_SYSCOMMAND As Integer = &H112
     Dim SC_ARRASTRAR As IntPtr = CType(&HF012, IntPtr)
+
     Private Sub PnDetail_MouseDown(sender As Object, e As MouseEventArgs) Handles PnDetail.MouseDown
         ReleaseCapture()
         SendMessage(Me.Handle, WM_SYSCOMMAND, SC_ARRASTRAR, IntPtr.Zero)
@@ -54,19 +56,21 @@ Public Class FrmUsersLogIn
 
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
 
-
         Dim objUser As UsersDTO = ClsUsers.GetInstance.Login(txtUserName.Text.Trim(), txtPassWord.Text.Trim(), status)
 
         Select Case status
             Case User_status.NotExists
                 sMessage = "Không có người dùng này"
                 SplashScreenManager.CloseOverlayForm(handle)
+
             Case User_status.WrongPass
                 sMessage = "Không đúng mật khẩu"
                 SplashScreenManager.CloseOverlayForm(handle)
+
             Case User_status.Locked
                 sMessage = "Người dùng này đã bị khóa"
                 SplashScreenManager.CloseOverlayForm(handle)
+
             Case User_status.Active
                 CurrentUser.User = objUser
                 ' Lấy roles hiện tại của user (multi)
@@ -75,13 +79,16 @@ Public Class FrmUsersLogIn
                 CurrentRolesControlsAccess.RolesControlsAccess = ClsRoleManager.GetInstance.GetControlsAccessByUserName(CurrentUser.User.User_name)
                 ' Lấy tập hợp các chức năng trên form
                 CurrentControlsAccess.ControlsAccessColection = ClsControlsAccess.GetInstance.GetList()
+
                 SplashScreenManager.CloseOverlayForm(handle)
                 Loading.Show()
                 Me.Close()
         End Select
+
         If sMessage IsNot String.Empty Then
             MessageBox.Show(sMessage)
         End If
+
     End Sub
 
     Private Sub TxtUserName_Enter(sender As Object, e As EventArgs) Handles txtUserName.Enter
@@ -117,6 +124,16 @@ Public Class FrmUsersLogIn
             txtPassWord.Properties.UseSystemPasswordChar = True
             LinePw.BorderColor = Color.CadetBlue
         End If
+    End Sub
+
+    Private Sub FrmUsersLogIn_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyData = Keys.Enter Then
+            SelectNextControl(ActiveControl, True, True, True, True)
+        End If
+    End Sub
+
+    Private Sub LinkLostPass_Click(sender As Object, e As EventArgs) Handles LinkLostPass.Click
+        FrmUsersGetActiveCode.ShowDialog()
     End Sub
 
 #End Region
