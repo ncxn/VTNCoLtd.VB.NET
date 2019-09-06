@@ -48,7 +48,7 @@ Partial Class UcBase
         Me.RibbonControlBaseOnUserControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.RibbonControlBaseOnUserControl.Name = "RibbonControlBaseOnUserControl"
         Me.RibbonControlBaseOnUserControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpFunction})
-        Me.RibbonControlBaseOnUserControl.Size = New System.Drawing.Size(827, 239)
+        Me.RibbonControlBaseOnUserControl.Size = New System.Drawing.Size(724, 239)
         Me.RibbonControlBaseOnUserControl.StatusBar = Me.BaseStatusBar
         '
         'BtnCREATE
@@ -57,6 +57,7 @@ Partial Class UcBase
         Me.BtnCREATE.Id = 1
         Me.BtnCREATE.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.addparagraphtotableofcontents1
         Me.BtnCREATE.Name = "BtnCREATE"
+        Me.BtnCREATE.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnEDIT
         '
@@ -64,6 +65,7 @@ Partial Class UcBase
         Me.BtnEDIT.Id = 2
         Me.BtnEDIT.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.editquery
         Me.BtnEDIT.Name = "BtnEDIT"
+        Me.BtnEDIT.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnDELETE
         '
@@ -72,6 +74,7 @@ Partial Class UcBase
         Me.BtnDELETE.ImageOptions.Image = Global.DancePassion.My.Resources.Resources.deletegroupheader_32x321
         Me.BtnDELETE.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.deletetable
         Me.BtnDELETE.Name = "BtnDELETE"
+        Me.BtnDELETE.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnOK
         '
@@ -80,6 +83,7 @@ Partial Class UcBase
         Me.BtnOK.Id = 4
         Me.BtnOK.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.markcomplete
         Me.BtnOK.Name = "BtnOK"
+        Me.BtnOK.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnCANCEL
         '
@@ -88,6 +92,7 @@ Partial Class UcBase
         Me.BtnCANCEL.Id = 5
         Me.BtnCANCEL.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.delete
         Me.BtnCANCEL.Name = "BtnCANCEL"
+        Me.BtnCANCEL.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnPRINT
         '
@@ -95,6 +100,7 @@ Partial Class UcBase
         Me.BtnPRINT.Id = 6
         Me.BtnPRINT.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.printlayoutview
         Me.BtnPRINT.Name = "BtnPRINT"
+        Me.BtnPRINT.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnEXCEL
         '
@@ -102,6 +108,7 @@ Partial Class UcBase
         Me.BtnEXCEL.Id = 7
         Me.BtnEXCEL.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.export
         Me.BtnEXCEL.Name = "BtnEXCEL"
+        Me.BtnEXCEL.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnEMAIL
         '
@@ -109,6 +116,7 @@ Partial Class UcBase
         Me.BtnEMAIL.Id = 8
         Me.BtnEMAIL.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.mailmerge
         Me.BtnEMAIL.Name = "BtnEMAIL"
+        Me.BtnEMAIL.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnOKANDNEW
         '
@@ -117,6 +125,7 @@ Partial Class UcBase
         Me.BtnOKANDNEW.Id = 9
         Me.BtnOKANDNEW.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.actions_add
         Me.BtnOKANDNEW.Name = "BtnOKANDNEW"
+        Me.BtnOKANDNEW.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BtnREFRESH
         '
@@ -124,6 +133,7 @@ Partial Class UcBase
         Me.BtnREFRESH.Id = 10
         Me.BtnREFRESH.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.resetlayoutoptions
         Me.BtnREFRESH.Name = "BtnREFRESH"
+        Me.BtnREFRESH.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'RbpFunction
         '
@@ -165,16 +175,16 @@ Partial Class UcBase
         Me.BaseStatusBar.Location = New System.Drawing.Point(0, 243)
         Me.BaseStatusBar.Name = "BaseStatusBar"
         Me.BaseStatusBar.Ribbon = Me.RibbonControlBaseOnUserControl
-        Me.BaseStatusBar.Size = New System.Drawing.Size(827, 40)
+        Me.BaseStatusBar.Size = New System.Drawing.Size(724, 40)
         '
-        'UCBase
+        'UcBase
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.BaseStatusBar)
         Me.Controls.Add(Me.RibbonControlBaseOnUserControl)
-        Me.Name = "UCBase"
-        Me.Size = New System.Drawing.Size(827, 283)
+        Me.Name = "UcBase"
+        Me.Size = New System.Drawing.Size(724, 283)
         CType(Me.RibbonControlBaseOnUserControl, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

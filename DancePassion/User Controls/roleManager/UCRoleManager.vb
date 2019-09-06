@@ -128,10 +128,10 @@ Public Class UcRoleManager
         For Each Access As AccessDTO In ChLAccessControl.CheckedItems
 
             Dim RolesControlsAccessDTO As New RolesControlsAccessDTO With {
-                .Roles_name = Role,
-                .Controls_name = Control,
-                .Access_name = Access.Access_name,
-                .Allowed = True}
+                .Role_name = Role,
+                .Control_name = Control,
+                .Access_name = Access.Access_name
+            }
             RolesControlsAccessCollection.Add(RolesControlsAccessDTO)
 
         Next

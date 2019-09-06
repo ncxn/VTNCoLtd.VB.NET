@@ -1,5 +1,4 @@
-﻿Imports System.Security.Cryptography
-Imports System.Text
+﻿Imports System.Text
 Imports MySql.Data.MySqlClient
 
 #Region " DTO Users"
@@ -151,7 +150,6 @@ Public Class ClsUsers
 
         While Reader.Read()
             Dim objUser As New UsersDTO With {
-                .User_id = Reader("user_id").ToString(),
                 .User_name = Reader("user_name").ToString(),
                 .User_first_name = Reader("user_first_name").ToString(),
                 .User_last_name = Reader("user_last_name").ToString(),
@@ -177,7 +175,7 @@ Public Class ClsUsers
         Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
         If Reader.Read() Then
             With ObjectUser
-                .User_id = Reader("User_id").ToString()
+                '.User_id = Reader("User_id").ToString()
                 .User_name = Reader("User_name").ToString()
                 .User_first_name = Reader("User_first_name").ToString()
                 .User_last_name = Reader("User_last_name").ToString()
@@ -205,7 +203,7 @@ Public Class ClsUsers
 
         If Reader.Read() Then
             With ObjectUser
-                .User_id = Reader("User_id").ToString()
+                '.User_id = Reader("User_id").ToString()
                 .User_name = Reader("User_name").ToString()
                 .User_first_name = Reader("User_first_name").ToString()
                 .User_last_name = Reader("User_last_name").ToString()
@@ -235,7 +233,7 @@ Public Class ClsUsers
 
         If Reader.Read() Then
             With ObjectUser
-                .User_id = Reader("User_id").ToString()
+                '.User_id = Reader("User_id").ToString()
                 .User_name = Reader("User_name").ToString()
                 .User_first_name = Reader("User_first_name").ToString()
                 .User_last_name = Reader("User_last_name").ToString()

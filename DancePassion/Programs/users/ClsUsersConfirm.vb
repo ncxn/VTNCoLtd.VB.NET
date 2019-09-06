@@ -1,4 +1,5 @@
-﻿#Region " DTO Users"
+﻿
+#Region " DTO UsersConfirm"
 'table users
 Public Class UsersConfirmDTO
     Private _id As Integer
@@ -63,8 +64,11 @@ Public Class UsersConfirmDTO
     End Property
 End Class
 #End Region
+
 Public Class ClsUsersConfirm
+
     Private Shared Singleton As ClsUsersConfirm
+
     Public Shared Function GetInstance() As ClsUsersConfirm
         If Singleton Is Nothing Then
             Singleton = New ClsUsersConfirm()
@@ -80,6 +84,7 @@ Public Class ClsUsersConfirm
         Dim result As Integer = DBHelper.GetInstance.GetScalarValue(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
     Public Function Insert(UsersConfirm As UsersConfirmDTO) As Boolean
         Dim strSQL = "procUsers_email_confirm_Insert"
 
@@ -89,6 +94,7 @@ Public Class ClsUsersConfirm
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
     Public Function Update(User_name As String, ActiveCode As String) As Boolean
         Dim strSQL = "procUsers_email_confirm_Update"
 

@@ -42,7 +42,7 @@ Partial Class FrmUsersResetPass
         '
         'LblUserOrEmail
         '
-        Me.LblUserOrEmail.Location = New System.Drawing.Point(20, 11)
+        Me.LblUserOrEmail.Location = New System.Drawing.Point(20, 7)
         Me.LblUserOrEmail.Name = "LblUserOrEmail"
         Me.LblUserOrEmail.Size = New System.Drawing.Size(87, 17)
         Me.LblUserOrEmail.TabIndex = 1
@@ -62,7 +62,7 @@ Partial Class FrmUsersResetPass
         '
         'LblActiveCode
         '
-        Me.LblActiveCode.Location = New System.Drawing.Point(20, 86)
+        Me.LblActiveCode.Location = New System.Drawing.Point(20, 82)
         Me.LblActiveCode.Name = "LblActiveCode"
         Me.LblActiveCode.Size = New System.Drawing.Size(176, 17)
         Me.LblActiveCode.TabIndex = 3

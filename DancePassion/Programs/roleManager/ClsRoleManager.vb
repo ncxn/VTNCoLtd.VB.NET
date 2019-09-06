@@ -2,26 +2,26 @@
 Imports MySql.Data.MySqlClient
 
 Public Class RolesControlsAccessDTO
-    Private _roles_name As String
-    Private _controls_name As String
+    Private _role_name As String
+    Private _control_name As String
     Private _access_name As String
-    Private _allowed As Boolean
+    'Private _allowed As Boolean
     'Public CurrentRole As 
-    Public Property Roles_name As String
+    Public Property Role_name As String
         Get
-            Return _roles_name
+            Return _role_name
         End Get
         Set(value As String)
-            _roles_name = value
+            _role_name = value
         End Set
     End Property
 
-    Public Property Controls_name As String
+    Public Property Control_name As String
         Get
-            Return _controls_name
+            Return _control_name
         End Get
         Set(value As String)
-            _controls_name = value
+            _control_name = value
         End Set
     End Property
 
@@ -34,14 +34,14 @@ Public Class RolesControlsAccessDTO
         End Set
     End Property
 
-    Public Property Allowed As Boolean
-        Get
-            Return _allowed
-        End Get
-        Set(value As Boolean)
-            _allowed = value
-        End Set
-    End Property
+    'Public Property Allowed As Boolean
+    '    Get
+    '        Return _allowed
+    '    End Get
+    '    Set(value As Boolean)
+    '        _allowed = value
+    '    End Set
+    'End Property
 End Class
 Public Class RolesControlsAccessCollection
     Inherits List(Of RolesControlsAccessDTO)
@@ -79,11 +79,10 @@ Public Class ClsRoleManager
 
         While Reader.Read()
             Dim objRolesControlsAccess As New RolesControlsAccessDTO With {
-                .Roles_name = Reader(0).ToString(),
-                .Controls_name = Reader(1).ToString(),
-                .Access_name = Reader(2).ToString(),
-                .Allowed = Reader(3)
-            }
+                .Role_name = Reader(0).ToString(),
+                .Control_name = Reader(1).ToString(),
+                .Access_name = Reader(2).ToString()
+             }
             RolesControlsAccessList.Add(objRolesControlsAccess)
         End While
         Reader.Close()
@@ -100,14 +99,13 @@ Public Class ClsRoleManager
         Dim parameters As New List(Of MySqlParameter) From {
             New MySqlParameter("p_user_name", UserName)
         }
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetControlsAccessByUserName", CommandType.StoredProcedure, parameters)
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procControlsAccess_GetByUserName", CommandType.StoredProcedure, parameters)
 
         While Reader.Read()
             Dim objRolesControlsAccess As New RolesControlsAccessDTO With {
-                .Roles_name = Reader(0).ToString(),
-                .Controls_name = Reader(1).ToString(),
-                .Access_name = Reader(2).ToString(),
-                .Allowed = Reader(3)
+                .Role_name = Reader(0).ToString(),
+                .Control_name = Reader(1).ToString(),
+                .Access_name = Reader(2).ToString()
             }
             RolesControlsAccessList.Add(objRolesControlsAccess)
         End While
@@ -121,7 +119,7 @@ Public Class ClsRoleManager
     ''' </summary>
     Public Function GetControlsAccessByRole(Roles_name As String, RolesControlsAccessList As RolesControlsAccessCollection) As RolesControlsAccessCollection
         Dim ObjControlsAccess As New RolesControlsAccessCollection
-        ObjControlsAccess = RolesControlsAccessList.FindAll(Function(Fx) Fx.Roles_name = Roles_name)
+        ObjControlsAccess = RolesControlsAccessList.FindAll(Function(Fx) Fx.Role_name = Roles_name)
         Return ObjControlsAccess
     End Function
     ''' <summary>
@@ -129,13 +127,13 @@ Public Class ClsRoleManager
     ''' </summary>
     Public Function GetAccessByRoleAndControls(Roles_name As String, Controls_name As String, RolesControlsAccessList As RolesControlsAccessCollection) As RolesControlsAccessCollection
         Dim RolesControlsAccess As New RolesControlsAccessCollection
-        Dim ObjAccess = RolesControlsAccessList.FindAll(Function(Fx) Fx.Roles_name = Roles_name And Fx.Controls_name = Controls_name)
+        Dim ObjAccess = RolesControlsAccessList.FindAll(Function(Fx) Fx.Role_name = Roles_name And Fx.Control_name = Controls_name)
         For Each Obj In ObjAccess
             Dim RolesControlsAccessDTO As New RolesControlsAccessDTO With {
-             .Roles_name = Obj.Roles_name,
-              .Controls_name = Obj.Controls_name,
-             .Access_name = Obj.Access_name,
-             .Allowed = Obj.Allowed}
+                .Role_name = Obj.Role_name,
+                .Control_name = Obj.Control_name,
+                .Access_name = Obj.Access_name
+                }
             RolesControlsAccess.Add(RolesControlsAccessDTO)
         Next
         Return RolesControlsAccess
@@ -146,7 +144,7 @@ Public Class ClsRoleManager
     Public Function HasRoleOnMenu(MenuItem As String) As Boolean
         Dim Role = CurrentRolesControlsAccess.RolesControlsAccess
         If Role IsNot Nothing Then
-            If Role.Exists(Function(Fx) Fx.Controls_name = MenuItem) Then
+            If Role.Exists(Function(Fx) Fx.Control_name = MenuItem) Then
                 Return True
             Else
                 Return False
@@ -161,7 +159,7 @@ Public Class ClsRoleManager
     Public Function HasRoleOnUserControl(Control_name As String, Accese_name As String) As Boolean
         Dim Role = CurrentRolesControlsAccess.RolesControlsAccess
         If Role IsNot Nothing Then
-            If Role.Exists(Function(Fx) Fx.Controls_name = Control_name And Fx.Access_name = Accese_name) Then
+            If Role.Exists(Function(Fx) Fx.Control_name = Control_name And Fx.Access_name = Accese_name) Then
                 Return True
             Else
                 Return False
@@ -174,10 +172,9 @@ Public Class ClsRoleManager
     Public Function Insert(RolesControlsAccess As RolesControlsAccessDTO) As Boolean
         Dim strSQL = "procRolesControlsAaccess_Insert"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_roles_name", RolesControlsAccess.Roles_name),
-            New MySqlParameter("@p_controls_name", RolesControlsAccess.Controls_name),
-            New MySqlParameter("@p_access_name", RolesControlsAccess.Access_name),
-            New MySqlParameter("@p_allowed", RolesControlsAccess.Access_name)
+            New MySqlParameter("@p_role_name", RolesControlsAccess.Role_name),
+            New MySqlParameter("@p_control_name", RolesControlsAccess.Control_name),
+            New MySqlParameter("@p_access_name", RolesControlsAccess.Access_name)
         }
 
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
@@ -186,10 +183,10 @@ Public Class ClsRoleManager
     Public Function BulkInsert(RolesControlsAccessCollection As RolesControlsAccessCollection) As Boolean
         Dim strSQL = "procRolesControlsAaccess_Insert"
         Dim result As Integer = 0
-        Dim paraName() As String = {"p_roles_name", "p_controls_name", "p_access_name", "p_allowed"}
+        Dim paraName() As String = {"p_role_name", "p_control_name", "p_access_name"}
 
         For i As Integer = 0 To RolesControlsAccessCollection.Count - 1
-            Dim paraValue As Object = New Object() {RolesControlsAccessCollection(i).Roles_name, RolesControlsAccessCollection(i).Controls_name, RolesControlsAccessCollection(i).Access_name, RolesControlsAccessCollection(i).Allowed}
+            Dim paraValue As Object = New Object() {RolesControlsAccessCollection(i).Role_name, RolesControlsAccessCollection(i).Control_name, RolesControlsAccessCollection(i).Access_name}
             Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
             result = DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
         Next
@@ -199,10 +196,9 @@ Public Class ClsRoleManager
     Public Function Update(RolesControlsAccess As RolesControlsAccessDTO) As Boolean
         Dim strSQL = "procRolesControlsAaccess_Update"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_roles_name", RolesControlsAccess.Roles_name),
-            New MySqlParameter("@p_controls_name", RolesControlsAccess.Controls_name),
-            New MySqlParameter("@p_access_name", RolesControlsAccess.Access_name),
-            New MySqlParameter("@p_allowed", RolesControlsAccess.Access_name)
+            New MySqlParameter("@p_role_name", RolesControlsAccess.Role_name),
+            New MySqlParameter("@p_control_name", RolesControlsAccess.Control_name),
+            New MySqlParameter("@p_access_name", RolesControlsAccess.Access_name)
         }
 
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
@@ -221,21 +217,21 @@ Public Class ClsRoleManager
         Return result > 0
     End Function
 
-    Public Function DeleleByRole(Roles_name As String) As Boolean
+    Public Function DeleleByRole(Role_name As String) As Boolean
         Dim strSQL = "procRolesControlsAaccess_DeleteByRole"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_roles_name", Roles_name)
+            New MySqlParameter("@p_role_name", Role_name)
         }
 
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
 
-    Public Function DeleleByRoleAndControl(Roles_name As String, Controls_name As String) As Boolean
+    Public Function DeleleByRoleAndControl(Role_name As String, Control_name As String) As Boolean
         Dim strSQL = "procRolesControlsAaccess_DeleteByRole"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_roles_name", Roles_name),
-            New MySqlParameter("@p_controls_name", Controls_name)
+            New MySqlParameter("@p_role_name", Role_name),
+            New MySqlParameter("@p_control_name", Control_name)
         }
 
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)

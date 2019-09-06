@@ -82,7 +82,7 @@ Public Class ClsUserRoles
 
     Public Function GetRolesByUserName(user_name As String) As UserRolesCollection
         Dim ObjUserRoles As New UserRolesCollection
-        Dim strProc As String = "procGetRolesByUserName"
+        Dim strProc As String = "procRoles_GetByUserName"
 
         Dim parameters As New List(Of MySqlParameter) From {
             New MySqlParameter("@p_user_name", user_name)
@@ -103,7 +103,7 @@ Public Class ClsUserRoles
 
     Public Function GetRolesByCurrentUserName() As UserRolesCollection
         Dim ObjUserRoles As New UserRolesCollection
-        Dim strProc As String = "procGetRolesByUserName"
+        Dim strProc As String = "procRoles_GetByUserName"
 
         Dim parameters As New List(Of MySqlParameter) From {
             New MySqlParameter("@p_user_name", CurrentUser.User.User_name)

@@ -43,7 +43,7 @@ Partial Class FrmUsersLogIn
         '
         'PnLogo
         '
-        Me.PnLogo.Appearance.BackColor = System.Drawing.Color.SkyBlue
+        Me.PnLogo.Appearance.BackColor = System.Drawing.Color.LightBlue
         Me.PnLogo.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PnLogo.Appearance.Options.UseBackColor = True
         Me.PnLogo.Appearance.Options.UseBorderColor = True
@@ -182,6 +182,7 @@ Partial Class FrmUsersLogIn
         'BtnOK
         '
         Me.BtnOK.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.BtnOK.Appearance.BorderColor = System.Drawing.Color.Transparent
         Me.BtnOK.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnOK.Appearance.ForeColor = System.Drawing.Color.White
         Me.BtnOK.Appearance.Options.UseBackColor = True
@@ -191,6 +192,7 @@ Partial Class FrmUsersLogIn
         Me.BtnOK.AppearanceHovered.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnOK.AppearanceHovered.ForeColor = System.Drawing.Color.White
         Me.BtnOK.AppearanceHovered.Options.UseBackColor = True
+        Me.BtnOK.AppearanceHovered.Options.UseBorderColor = True
         Me.BtnOK.AppearanceHovered.Options.UseFont = True
         Me.BtnOK.AppearanceHovered.Options.UseForeColor = True
         Me.BtnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
@@ -234,6 +236,7 @@ Partial Class FrmUsersLogIn
         '
         'FrmUsersLogIn
         '
+        Me.AcceptButton = Me.BtnOK
         Me.Appearance.BackColor = System.Drawing.Color.SteelBlue
         Me.Appearance.Options.UseBackColor = True
         Me.Appearance.Options.UseFont = True

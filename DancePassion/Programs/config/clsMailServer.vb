@@ -9,7 +9,7 @@ Public Class MailDTO
     Private _id As Integer
     Private _mail_service As String
     Private _mail_user As String
-    Private _mail_password As Integer
+    Private _mail_password As String
 
     Public Property Id As Integer
         Get
@@ -38,11 +38,11 @@ Public Class MailDTO
         End Set
     End Property
 
-    Public Property Mail_password As Integer
+    Public Property Mail_password As String
         Get
             Return _mail_password
         End Get
-        Set(value As Integer)
+        Set(value As String)
             _mail_password = value
         End Set
     End Property
@@ -71,17 +71,21 @@ End Class
 
 #Region " Data Access User"
 Public Class ClsMailServer
+
     Private Shared Singleton As ClsMailServer
+
     Public Shared Function GetInstance() As ClsMailServer
         If Singleton Is Nothing Then
             Singleton = New ClsMailServer()
         End If
         Return Singleton
     End Function
+
     Public Function GetDataTable() As DataTable
         Dim dtMailServer As DataTable = DBHelper.GetInstance.GetDataTable("procMailServer_GetAll", CommandType.StoredProcedure)
         Return dtMailServer
     End Function
+
     Public Function GetList() As MailCollection
         Dim MailList As New MailCollection
         Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procMailServer_GetAll", CommandType.StoredProcedure)
@@ -131,6 +135,7 @@ Public Class ClsMailServer
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
     Public Function Update(Mail As MailDTO) As Boolean
         Dim strSQL = "procMailServer_Update"
 
@@ -154,6 +159,7 @@ Public Class ClsMailServer
     End Function
 
 #Region " Send mail"
+
     Public Sub SendMailMessage(ByVal toEmail As String, ByVal body As String, Optional ByVal fromEmail As String = Nothing, Optional ByVal subject As String = Nothing, Optional ByVal attachmentFullPath As List(Of String) = Nothing)
         Dim mMailMessage As MailMessage = New MailMessage()
 
@@ -186,6 +192,7 @@ Public Class ClsMailServer
             SMTP.Send(mMailMessage)
         End Using
     End Sub
+
     Public Function GetSMTP() As SmtpClient
         Dim SMTP As New SmtpClient
         Select Case CurrentMail.Mail.Mail_service
@@ -203,20 +210,24 @@ Public Class ClsMailServer
         SMTP.EnableSsl = True
         Return SMTP
     End Function
+
     Public Function IsValidEmailAddress(ByVal emailAddress As String) As Boolean
         If String.IsNullOrEmpty(emailAddress) Then
-            Return (False)
+            Return False
         End If
 
         Dim emailRegex As String = "^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" & "\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" & ".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
         Dim re As Regex = New Regex(emailRegex)
 
         If re.IsMatch(emailAddress) Then
-            Return (True)
+            Return True
         Else
-            Return (False)
+            Return False
         End If
     End Function
+
 #End Region
+
 End Class
+
 #End Region
