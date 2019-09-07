@@ -27,14 +27,17 @@ Public Class RolesDTO
     End Property
 End Class
 #End Region
+
 #Region " Current Roles"
 
 #End Region
+
 #Region " Roles Collection"
 Public Class RolesCollection
     Inherits List(Of RolesDTO)
 End Class
 #End Region
+
 #Region " Roles Status"
 Public Enum RoleStatus
     Exits = 0
@@ -43,19 +46,24 @@ Public Enum RoleStatus
     NotExists = 3
 End Enum
 #End Region
+
 #Region " Data Access for Roles"
 Public Class ClsRoles
+
     Private Shared Singleton As ClsRoles
+
     Public Shared Function GetInstance() As ClsRoles
         If Singleton Is Nothing Then
             Singleton = New ClsRoles()
         End If
         Return Singleton
     End Function
+
     Public Function GetDataTable() As DataTable
         Dim dtRoles As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllRoles", CommandType.StoredProcedure)
         Return dtRoles
     End Function
+
     Public Function GetList() As RolesCollection
         Dim RolesList As New RolesCollection
         Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllRoles", CommandType.StoredProcedure)

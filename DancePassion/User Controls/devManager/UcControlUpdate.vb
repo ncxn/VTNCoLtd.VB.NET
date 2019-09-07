@@ -29,22 +29,22 @@
     Private Sub LoadData()
         If CurrentRecord IsNot Nothing Then
             With CurrentRecord
-                TxtControls_name.Text = .Controls_name.ToString
-                TxtControls_description.Text = .Controls_description.ToString
-                TxtControls_parent.EditValue = .Controls_parent.ToString
-                TxtControls_type.Text = .Controls_type.ToString
-                TxtControls_sort.Text = .Controls_sort.ToString
+                TxtControls_name.Text = .Control_name.ToString
+                TxtControls_description.Text = .Control_description.ToString
+                TxtControls_parent.EditValue = .Control_parent.ToString
+                TxtControls_type.Text = .Control_type.ToString
+                TxtControls_sort.Text = .Control_sort.ToString
             End With
         End If
     End Sub
 
     Private Sub UpdateDB()
         Dim data As New ControlsDTO With {
-            .Controls_name = TxtControls_name.Text.ToString,
-            .Controls_description = TxtControls_description.Text.ToString,
-            .Controls_parent = TxtControls_parent.EditValue.ToString,
-            .Controls_type = TxtControls_type.Text.ToString,
-            .Controls_sort = CInt(TxtControls_sort.Text)
+            .Control_name = TxtControls_name.Text.ToString,
+            .Control_description = TxtControls_description.Text.ToString,
+            .Control_parent = TxtControls_parent.EditValue.ToString,
+            .Control_type = TxtControls_type.Text.ToString,
+            .Control_sort = CInt(TxtControls_sort.Text)
         }
         If ClsControls.GetInstance.UpdateControls(data) Then
             MessageBox.Show("Thành công")
@@ -70,7 +70,7 @@
     Private Sub Test()
         If CurrentRecord IsNot Nothing Then
             With CurrentRecord
-                Debug.WriteLine(.Controls_name.ToString + " : " + .Controls_description.ToString)
+                Debug.WriteLine(.Control_name.ToString + " : " + .Control_description.ToString)
             End With
         End If
     End Sub

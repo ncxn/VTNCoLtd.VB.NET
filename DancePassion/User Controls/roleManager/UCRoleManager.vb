@@ -34,13 +34,20 @@ Public Class UcRoleManager
         ' Dữ liệu cho form search nhóm người dùng
         PopularRole()
         ' Dữ liệu chức năng
-        PopularAction()
+        PopularControls()
         ' Ẩn cái ribbon nào không chứa các item
         HasRoles(Me.Name)
 
     End Sub
+
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
         UpdateDB()
+    End Sub
+
+    Private Sub BtnCANCEL_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
 #End Region
 
@@ -68,17 +75,17 @@ Public Class UcRoleManager
 #End Region
 
 #Region " Chức năng :TreeList"
-    Private Sub PopularAction()
+    Private Sub PopularControls()
         TrlControls.DataSource = ClsControls.GetInstance.GetList()
-        TrlControls.KeyFieldName = "Controls_name"
-        TrlControls.ParentFieldName = "Controls_parent"
+        TrlControls.KeyFieldName = "Control_name"
+        TrlControls.ParentFieldName = "Control_parent"
         TrlControls.SetFocusedNode(TrlControls.GetNodeByVisibleIndex(0))
         TrlControls.TreeLineStyle = LineStyle.Dark
         TrlControls.OptionsBehavior.Editable = False
         TrlControls.CollapseAll()
-        TrlControls.Columns("Controls_type").Visible = False
-        TrlControls.Columns("Controls_sort").Visible = False
-        TrlControls.Columns("Controls_description").Caption = "Chọn chức năng"
+        TrlControls.Columns("Control_type").Visible = False
+        TrlControls.Columns("Control_sort").Visible = False
+        TrlControls.Columns("Control_description").Caption = "Chọn chức năng"
     End Sub
 
     Private Sub TrlControls_FocusedNodeChanged(sender As Object, e As FocusedNodeChangedEventArgs) Handles TrlControls.FocusedNodeChanged

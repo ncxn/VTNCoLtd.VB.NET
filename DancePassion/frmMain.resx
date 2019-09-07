@@ -940,6 +940,9 @@
         Pg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
+  <data name="BH_KhoHang_btn.Caption" xml:space="preserve">
+    <value>Kho hàng</value>
+  </data>
   <data name="Club_DangKyLop.Caption" xml:space="preserve">
     <value>Đăng ký lớp</value>
   </data>
@@ -948,9 +951,6 @@
   </data>
   <data name="Club_dsHLV_btn.Caption" xml:space="preserve">
     <value>Danh sách HLV</value>
-  </data>
-  <data name="BH_KhoHang_btn.Caption" xml:space="preserve">
-    <value>Kho hàng</value>
   </data>
   <data name="Club_LopDangHoc.Caption" xml:space="preserve">
     <value>Lớp đang học</value>
@@ -973,10 +973,10 @@
   <data name="UcControlsManager.Caption" xml:space="preserve">
     <value>Controls</value>
   </data>
-  <data name="BtnFunctions.Caption" xml:space="preserve">
+  <data name="UcAccessManager.Caption" xml:space="preserve">
     <value>Functions</value>
   </data>
-  <data name="BtnFunctionsOnControl.Caption" xml:space="preserve">
+  <data name="UcControlsAccessManager.Caption" xml:space="preserve">
     <value>Add Functions</value>
   </data>
   <data name="MainControlRibbon.Location" type="System.Drawing.Point, System.Drawing">
@@ -1063,14 +1063,56 @@
   <data name="RbpSystem.Text" xml:space="preserve">
     <value>Hệ thống</value>
   </data>
+  <data name="RbpgCreateEvent.Text" xml:space="preserve">
+    <value>Khởi tạo sự kiện</value>
+  </data>
+  <data name="RbpgEventRegister.Text" xml:space="preserve">
+    <value>Đăng ký tham dự</value>
+  </data>
+  <data name="RibbonPageGroup_ThongkeSuKien.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="RibbonPageGroup_TienIchSuKien.Text" xml:space="preserve">
+    <value>Các tiện ích</value>
+  </data>
   <data name="RbpEventManagement.Text" xml:space="preserve">
     <value>Quản lý sự kiện</value>
+  </data>
+  <data name="RibbonPageGroup3.Text" xml:space="preserve">
+    <value>Các lớp học</value>
+  </data>
+  <data name="RibbonPageGroup2.Text" xml:space="preserve">
+    <value>Giáo Viên</value>
+  </data>
+  <data name="RibbonPageGroup4.Text" xml:space="preserve">
+    <value>Học Viên</value>
+  </data>
+  <data name="RibbonPageGroup9.Text" xml:space="preserve">
+    <value>Thống kê</value>
   </data>
   <data name="RbpClubManager.Text" xml:space="preserve">
     <value>Quản lý Club</value>
   </data>
+  <data name="RibbonPageGroup1.Text" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="RibbonPageGroup7.Text" xml:space="preserve">
+    <value>Mua hàng</value>
+  </data>
+  <data name="RibbonPageGroup6.Text" xml:space="preserve">
+    <value>Bán hàng</value>
+  </data>
+  <data name="RibbonPageGroup5.Text" xml:space="preserve">
+    <value>Báo cáo công nợ</value>
+  </data>
+  <data name="RibbonPageGroup8.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
   <data name="RbpSalesManager.Text" xml:space="preserve">
     <value>Quản lý bán hàng</value>
+  </data>
+  <data name="RbpgFunctionManager.Text" xml:space="preserve">
+    <value>Quản Lý Chức Năng</value>
   </data>
   <data name="RbpDev.Text" xml:space="preserve">
     <value>Development</value>
@@ -1110,48 +1152,6 @@
   </data>
   <data name="&gt;&gt;MainControlRibbon.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="RbpgCreateEvent.Text" xml:space="preserve">
-    <value>Khởi tạo sự kiện</value>
-  </data>
-  <data name="RbpgEventRegister.Text" xml:space="preserve">
-    <value>Đăng ký tham dự</value>
-  </data>
-  <data name="RibbonPageGroup_ThongkeSuKien.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
-  <data name="RibbonPageGroup_TienIchSuKien.Text" xml:space="preserve">
-    <value>Các tiện ích</value>
-  </data>
-  <data name="RibbonPageGroup3.Text" xml:space="preserve">
-    <value>Các lớp học</value>
-  </data>
-  <data name="RibbonPageGroup2.Text" xml:space="preserve">
-    <value>Giáo Viên</value>
-  </data>
-  <data name="RibbonPageGroup4.Text" xml:space="preserve">
-    <value>Học Viên</value>
-  </data>
-  <data name="RibbonPageGroup9.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
-  <data name="RibbonPageGroup1.Text" xml:space="preserve">
-    <value>Danh mục</value>
-  </data>
-  <data name="RibbonPageGroup7.Text" xml:space="preserve">
-    <value>Mua hàng</value>
-  </data>
-  <data name="RibbonPageGroup6.Text" xml:space="preserve">
-    <value>Bán hàng</value>
-  </data>
-  <data name="RibbonPageGroup5.Text" xml:space="preserve">
-    <value>Báo cáo công nợ</value>
-  </data>
-  <data name="RibbonPageGroup8.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
-  <data name="RbpgFunctionManager.Text" xml:space="preserve">
-    <value>Quản Lý Chức Năng</value>
   </data>
   <data name="BarButtonItem1.Caption" xml:space="preserve">
     <value>BarButtonItem1</value>
@@ -4347,16 +4347,16 @@
   <data name="&gt;&gt;UcControlsManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BtnFunctions.Name" xml:space="preserve">
-    <value>BtnFunctions</value>
+  <data name="&gt;&gt;UcAccessManager.Name" xml:space="preserve">
+    <value>UcAccessManager</value>
   </data>
-  <data name="&gt;&gt;BtnFunctions.Type" xml:space="preserve">
+  <data name="&gt;&gt;UcAccessManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BtnFunctionsOnControl.Name" xml:space="preserve">
-    <value>BtnFunctionsOnControl</value>
+  <data name="&gt;&gt;UcControlsAccessManager.Name" xml:space="preserve">
+    <value>UcControlsAccessManager</value>
   </data>
-  <data name="&gt;&gt;BtnFunctionsOnControl.Type" xml:space="preserve">
+  <data name="&gt;&gt;UcControlsAccessManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RbpSystem.Name" xml:space="preserve">

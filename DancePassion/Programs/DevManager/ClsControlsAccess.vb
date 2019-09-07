@@ -4,15 +4,15 @@ Imports MySql.Data.MySqlClient
 #Region " DTO Controls Access of form"
 'table controlsAccess
 Public Class ControlsAccessDTO
-    Private _controls_name As String
+    Private _control_name As String
     Private _access_name As String
 
-    Public Property Controls_name As String
+    Public Property Control_name As String
         Get
-            Return _controls_name
+            Return _control_name
         End Get
         Set(value As String)
-            _controls_name = value
+            _control_name = value
         End Set
     End Property
 
@@ -37,7 +37,9 @@ Public Class ControlsAccessCollection
 End Class
 
 Public Class CurrentControlsAccess
+
     Private Shared _CurrentControlsAccess As ControlsAccessCollection
+
     Public Shared Property ControlsAccessColection As ControlsAccessCollection
         Get
             Return _CurrentControlsAccess
@@ -58,13 +60,16 @@ End Enum
 
 #Region " Data Access for controls Access"
 Public Class ClsControlsAccess
+
     Private Shared Singleton As ClsControlsAccess
+
     Public Shared Function GetInstance() As ClsControlsAccess
         If Singleton Is Nothing Then
             Singleton = New ClsControlsAccess()
         End If
         Return Singleton
     End Function
+
     Public Function GetDataTable() As DataTable
         Dim dtControlsAccess As DataTable = DBHelper.GetInstance.GetDataTable("procControlsAccess_GetAll", CommandType.StoredProcedure)
         Return dtControlsAccess
@@ -76,7 +81,7 @@ Public Class ClsControlsAccess
 
         While Reader.Read()
             Dim objControlsAccess As New ControlsAccessDTO With {
-                .Controls_name = Reader(0).ToString(),
+                .Control_name = Reader(0).ToString(),
                 .Access_name = Reader(1).ToString()
             }
             ControlsAccessList.Add(objControlsAccess)
@@ -94,7 +99,7 @@ Public Class ClsControlsAccess
         Dim ObjAccess As New List(Of String)
 
         For Each Control In ControlsAccessList
-            If Control.Controls_name.ToString = Controls_name Then
+            If Control.Control_name.ToString = Controls_name Then
                 ObjAccess.Add(Control.Access_name.ToString)
             End If
         Next
@@ -109,7 +114,7 @@ Public Class ClsControlsAccess
     Public Function GetAccessByControlsWithDesc(Controls_name As String, ControlsAccessList As ControlsAccessCollection, ObjAccess As AccessCollection) As AccessCollection
         Dim ObjRS = (From ca In ControlsAccessList
                      Join a In ObjAccess On ca.Access_name Equals a.Access_name
-                     Where ca.Controls_name = Controls_name
+                     Where ca.Control_name = Controls_name
                      Select New With
                       {
                       ca.Access_name,
@@ -129,7 +134,7 @@ Public Class ClsControlsAccess
     Public Function Insert(ControlsAccess As ControlsAccessDTO) As Boolean
         Dim strSQL = "procControlsAccess_Insert"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_controls_name", ControlsAccess.Controls_name),
+            New MySqlParameter("@p_control_name", ControlsAccess.Control_name),
             New MySqlParameter("@p_access_name", ControlsAccess.Access_name)
         }
 
@@ -139,10 +144,10 @@ Public Class ClsControlsAccess
     Public Function BulkInsert(ControlsAccess As ControlsAccessCollection) As Boolean
         Dim strSQL = "procControlsAccess_Insert"
         Dim result As Integer = 0
-        Dim paraName() As String = {"p_controls_name", "p_access_name"}
+        Dim paraName() As String = {"p_control_name", "p_access_name"}
 
         For i As Integer = 0 To ControlsAccess.Count - 1
-            Dim paraValue As Object = New Object() {ControlsAccess(i).Controls_name, ControlsAccess(i).Access_name}
+            Dim paraValue As Object = New Object() {ControlsAccess(i).Control_name, ControlsAccess(i).Access_name}
             Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
             result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
         Next
@@ -152,7 +157,7 @@ Public Class ClsControlsAccess
     Public Function Update(ControlsAccess As ControlsAccessDTO) As Boolean
         Dim strSQL = "procControlsAccess_Update"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_controls_name", ControlsAccess.Controls_name),
+            New MySqlParameter("@p_control_name", ControlsAccess.Control_name),
             New MySqlParameter("@p_access_name", ControlsAccess.Access_name)
         }
 
@@ -162,10 +167,10 @@ Public Class ClsControlsAccess
     Public Function BulkUpdate(ControlsAccess As ControlsAccessCollection) As Boolean
         Dim strSQL = "procControlsAccess_Update"
         Dim result As Integer = 0
-        Dim paraName() As String = {"p_controls_name", "p_access_name"}
+        Dim paraName() As String = {"p_control_name", "p_access_name"}
 
         For i As Integer = 0 To ControlsAccess.Count - 1
-            Dim paraValue As Object = New Object() {ControlsAccess(i).Controls_name, ControlsAccess(i).Access_name}
+            Dim paraValue As Object = New Object() {ControlsAccess(i).Control_name, ControlsAccess(i).Access_name}
             Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
             result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
         Next
@@ -176,7 +181,7 @@ Public Class ClsControlsAccess
     Public Function Delete(ControlsAccess As ControlsAccessDTO) As Boolean
         Dim strSQL = "procControlsAccess_Delete"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_controls_name", ControlsAccess.Controls_name)
+            New MySqlParameter("@p_control_name", ControlsAccess.Control_name)
         }
 
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)

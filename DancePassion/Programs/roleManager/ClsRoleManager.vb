@@ -61,21 +61,24 @@ End Class
 #End Region
 
 Public Class ClsRoleManager
+
     Private Shared Singleton As ClsRoleManager
+
     Public Shared Function GetInstance() As ClsRoleManager
         If Singleton Is Nothing Then
             Singleton = New ClsRoleManager()
         End If
         Return Singleton
     End Function
+
     Public Function GetDataTable() As DataTable
-        Dim dtControlsAccess As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllRolesControlsAccess", CommandType.StoredProcedure)
+        Dim dtControlsAccess As DataTable = DBHelper.GetInstance.GetDataTable("procRolesControlsAccess_GetAll", CommandType.StoredProcedure)
         Return dtControlsAccess
     End Function
 
     Public Function GetList() As RolesControlsAccessCollection
         Dim RolesControlsAccessList As New RolesControlsAccessCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllRolesControlsAccess", CommandType.StoredProcedure)
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procRolesControlsAccess_GetAll", CommandType.StoredProcedure)
 
         While Reader.Read()
             Dim objRolesControlsAccess As New RolesControlsAccessDTO With {
@@ -114,6 +117,7 @@ Public Class ClsRoleManager
         Return RolesControlsAccessList
 
     End Function
+
     ''' <summary>
     ''' Return Access Controls by Role name, ex : Role{(ctr1, act1),(ctr1,act2),(ctr2,act1)}
     ''' </summary>
@@ -122,6 +126,7 @@ Public Class ClsRoleManager
         ObjControlsAccess = RolesControlsAccessList.FindAll(Function(Fx) Fx.Role_name = Roles_name)
         Return ObjControlsAccess
     End Function
+
     ''' <summary>
     ''' Return Access Controls by Role name, ex : Role{Ctrl(act1,act2...)}
     ''' </summary>
@@ -138,11 +143,17 @@ Public Class ClsRoleManager
         Next
         Return RolesControlsAccess
     End Function
+
     ''' <summary>
     ''' Return True if User has a role on menu Item.
     ''' </summary>
     Public Function HasRoleOnMenu(MenuItem As String) As Boolean
+
+        Dim cRole = CurrentUserRoles.RolesByUserName
+        If cRole.Exists(Function(Fx) Fx.Role_name = "Dev") Then Return True
+
         Dim Role = CurrentRolesControlsAccess.RolesControlsAccess
+
         If Role IsNot Nothing Then
             If Role.Exists(Function(Fx) Fx.Control_name = MenuItem) Then
                 Return True
@@ -152,12 +163,19 @@ Public Class ClsRoleManager
         Else
             Return False
         End If
+
     End Function
+
     ''' <summary>
     ''' Return True if User has a role on User Controls or form.
     ''' </summary>
     Public Function HasRoleOnUserControl(Control_name As String, Accese_name As String) As Boolean
+
+        Dim cRole = CurrentUserRoles.RolesByUserName
+        If cRole.Exists(Function(Fx) Fx.Role_name = "Dev") Then Return True
+
         Dim Role = CurrentRolesControlsAccess.RolesControlsAccess
+
         If Role IsNot Nothing Then
             If Role.Exists(Function(Fx) Fx.Control_name = Control_name And Fx.Access_name = Accese_name) Then
                 Return True
@@ -167,6 +185,7 @@ Public Class ClsRoleManager
         Else
             Return False
         End If
+
     End Function
 
     Public Function Insert(RolesControlsAccess As RolesControlsAccessDTO) As Boolean
@@ -180,6 +199,7 @@ Public Class ClsRoleManager
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
     Public Function BulkInsert(RolesControlsAccessCollection As RolesControlsAccessCollection) As Boolean
         Dim strSQL = "procRolesControlsAaccess_Insert"
         Dim result As Integer = 0
@@ -193,6 +213,7 @@ Public Class ClsRoleManager
 
         Return result > 0
     End Function
+
     Public Function Update(RolesControlsAccess As RolesControlsAccessDTO) As Boolean
         Dim strSQL = "procRolesControlsAaccess_Update"
         Dim parameters As New List(Of MySqlParameter) From {
@@ -204,6 +225,7 @@ Public Class ClsRoleManager
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
     Public Function Delele() As Boolean
         Dim strSQL = "procRolesControlsAaccess_Delete"
         'Dim parameters As New List(Of MySqlParameter) From {

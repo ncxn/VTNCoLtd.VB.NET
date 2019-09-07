@@ -20,6 +20,12 @@ Public Class UcRolesManager
             AddDocs(New UCRolesUpdate, "Sửa nhóm")
         End If
     End Sub
+
+    Private Sub BtnCANCEL_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
+    End Sub
     Private Sub LoadData()
         GridControlRoles.DataSource = ClsRoles.GetInstance.GetDataTable()
     End Sub

@@ -2,7 +2,9 @@
 Imports DevExpress.XtraEditors
 
 Public Class UcUsersUpdate
+
     Public CurrentUser As UsersDTO
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -38,6 +40,7 @@ Public Class UcUsersUpdate
             txtUser_Email.Text = CurrentUser.User_email
         End If
     End Sub
+
     Private Sub UpdateDB()
         Dim user As New UsersDTO With {
             .User_name = txtUser_Name.Text,

@@ -20,7 +20,7 @@ Public Class UcControlsManager
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
         Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
         ControlColection = ClsControls.GetInstance.GetList()
-        'HasRoles(Me.Name)
+        HasRoles(Me.Name)
     End Sub
 
 #Region " Forms"
@@ -78,11 +78,11 @@ Public Class UcControlsManager
             dr = GrvControls.GetDataRow(i)
             If dr.RowState = DataRowState.Added Then
                 Dim ctr As New ControlsDTO With {
-                   .Controls_name = dr(0).ToString,
-                   .Controls_description = dr(1).ToString,
-                   .Controls_parent = dr(2).ToString,
-                   .Controls_type = dr(3).ToString,
-                   .Controls_sort = CInt(dr(4).ToString)
+                   .Control_name = dr(0).ToString,
+                   .Control_description = dr(1).ToString,
+                   .Control_parent = dr(2).ToString,
+                   .Control_type = dr(3).ToString,
+                   .Control_sort = CInt(dr(4).ToString)
                 }
                 listControls.Add(ctr)
             End If
@@ -102,11 +102,11 @@ Public Class UcControlsManager
             dr = GrvControls.GetDataRow(i)
             If dr.RowState = DataRowState.Modified Then
                 Dim ctr As New ControlsDTO With {
-                   .Controls_name = dr(0).ToString,
-                   .Controls_description = dr(1).ToString,
-                   .Controls_parent = dr(2).ToString,
-                   .Controls_type = dr(3).ToString,
-                   .Controls_sort = CInt(dr(4).ToString)
+                   .Control_name = dr(0).ToString,
+                   .Control_description = dr(1).ToString,
+                   .Control_parent = dr(2).ToString,
+                   .Control_type = dr(3).ToString,
+                   .Control_sort = CInt(dr(4).ToString)
                 }
                 listControls.Add(ctr)
             End If
@@ -135,11 +135,11 @@ Public Class UcControlsManager
             dr = GrvControls.GetDataRow(i)
             If dr.RowState = DataRowState.Deleted Then
                 Dim ctr As New ControlsDTO With {
-                   .Controls_name = dr(0).ToString,
-                   .Controls_description = dr(1).ToString,
-                   .Controls_parent = dr(2).ToString,
-                   .Controls_type = dr(3).ToString,
-                   .Controls_sort = CInt(dr(4).ToString)
+                   .Control_name = dr(0).ToString,
+                   .Control_description = dr(1).ToString,
+                   .Control_parent = dr(2).ToString,
+                   .Control_type = dr(3).ToString,
+                   .Control_sort = CInt(dr(4).ToString)
                 }
                 listControls.Add(ctr)
             End If
@@ -196,7 +196,7 @@ Public Class UcControlsManager
 
     ' Không cho edit Khóa chính
     Private Sub GrvControls_ShowingEditor(sender As Object, e As CancelEventArgs) Handles GrvControls.ShowingEditor
-        If GrvControls.FocusedColumn Is GrvControls.Columns("Tên Controls") Then
+        If GrvControls.FocusedColumn Is GrvControls.Columns("Tên Control") Then
             If GrvControls.IsNewItemRow(GrvControls.FocusedRowHandle) Then
                 e.Cancel = False
             Else
@@ -218,11 +218,11 @@ Public Class UcControlsManager
         Dim dataControls As New ControlsDTO
         If SelectedRow IsNot Nothing Then
             With dataControls
-                .Controls_name = SelectedRow(0).ToString
-                .Controls_description = SelectedRow(1).ToString
-                .Controls_parent = SelectedRow(2).ToString
-                .Controls_type = SelectedRow(3).ToString
-                .Controls_sort = SelectedRow(4).ToString
+                .Control_name = SelectedRow(0).ToString
+                .Control_description = SelectedRow(1).ToString
+                .Control_parent = SelectedRow(2).ToString
+                .Control_type = SelectedRow(3).ToString
+                .Control_sort = SelectedRow(4).ToString
             End With
         End If
 
@@ -244,12 +244,12 @@ Public Class UcControlsManager
     Private Sub AddLookUpEdit()
         Dim edit As RepositoryItemSearchLookUpEdit = New RepositoryItemSearchLookUpEdit With {
             .DataSource = ClsControls.GetInstance.GetList(),
-            .ValueMember = "Controls_name",
-            .DisplayMember = "Controls_description"
+            .ValueMember = "Control_name",
+            .DisplayMember = "Control_description"
         }
         edit.PopulateViewColumns()
-        edit.View.Columns("Controls_name").Caption = "Mã Controls"
-        edit.View.Columns("Controls_description").Caption = "Mô tả"
+        edit.View.Columns("Control_name").Caption = "Mã Control"
+        edit.View.Columns("Control_description").Caption = "Mô tả"
         edit.View.Columns(2).Visible = False
         edit.View.Columns(3).Visible = False
         edit.View.Columns(4).Visible = False

@@ -23,11 +23,11 @@
 #Region " Xử lý dữ liệu"
     Private Sub UpdateDB()
         Dim CtrlDTO As New ControlsDTO With {
-        .Controls_name = TxtControls_name.Text.ToString(),
-        .Controls_description = TxtControls_description.Text.ToString(),
-        .Controls_parent = TxtControls_parent.Text.ToString(),
-        .Controls_type = TxtControls_type.Text.ToString(),
-        .Controls_sort = CInt(TxtControls_sort.Text)
+        .Control_name = TxtControls_name.Text.ToString(),
+        .Control_description = TxtControls_description.Text.ToString(),
+        .Control_parent = TxtControls_parent.Text.ToString(),
+        .Control_type = TxtControls_type.Text.ToString(),
+        .Control_sort = CInt(TxtControls_sort.Text)
         }
         ClsControls.GetInstance.InsertControls(CtrlDTO)
     End Sub

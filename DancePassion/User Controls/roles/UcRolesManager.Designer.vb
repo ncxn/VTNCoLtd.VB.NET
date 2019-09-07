@@ -25,6 +25,10 @@ Partial Class UcRolesManager
         CType(Me.GridViewRoles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'BaseStatusBar
+        '
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 404)
+        '
         'GridControlRoles
         '
         Me.GridControlRoles.Dock = System.Windows.Forms.DockStyle.Fill
@@ -32,7 +36,7 @@ Partial Class UcRolesManager
         Me.GridControlRoles.MainView = Me.GridViewRoles
         Me.GridControlRoles.MenuManager = Me.RibbonControlBaseOnUserControl
         Me.GridControlRoles.Name = "GridControlRoles"
-        Me.GridControlRoles.Size = New System.Drawing.Size(827, 205)
+        Me.GridControlRoles.Size = New System.Drawing.Size(724, 165)
         Me.GridControlRoles.TabIndex = 1
         Me.GridControlRoles.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewRoles})
         '
@@ -41,14 +45,16 @@ Partial Class UcRolesManager
         Me.GridViewRoles.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.GridViewRoles.GridControl = Me.GridControlRoles
         Me.GridViewRoles.Name = "GridViewRoles"
+        Me.GridViewRoles.OptionsView.ShowGroupPanel = False
         '
-        'UCRoles
+        'UcRolesManager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.GridControlRoles)
         Me.Name = "UcRolesManager"
-        Me.Size = New System.Drawing.Size(827, 444)
+        Me.Size = New System.Drawing.Size(724, 444)
+        Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
         Me.Controls.SetChildIndex(Me.GridControlRoles, 0)
         CType(Me.GridControlRoles, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridViewRoles, System.ComponentModel.ISupportInitialize).EndInit()

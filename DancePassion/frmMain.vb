@@ -153,17 +153,17 @@ Public Class FrmMain
         AddDocs(uc, "Quản lý Controls")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
-    Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctions.ItemClick
+    Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcAccessManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcAccessManager
         AddDocs(uc, "Quản lý Action")
-        SplashScreenManager.CloseOverlayForm(Handle)
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
-    Private Sub BtnFunctionsOnControl_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnFunctionsOnControl.ItemClick
+    Private Sub BtnFunctionsOnControl_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcControlsAccessManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcControlsAccessManager
         AddDocs(uc, "Quản lý chức năng")
-        SplashScreenManager.CloseOverlayForm(Handle)
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 #End Region
 

@@ -5,6 +5,7 @@ Public Class UcControlsAccessManager
 
     Private Control As String
     Private ObjControlsAccessList As ControlsAccessCollection
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -12,7 +13,7 @@ Public Class UcControlsAccessManager
 
         ' Add any initialization after the InitializeComponent() call.
         ObjControlsAccessList = ClsControlsAccess.GetInstance.GetList()
-        'HasRoles(Me.Name)
+        HasRoles(Me.Name)
     End Sub
 #Region " Form Action"
 
@@ -25,6 +26,7 @@ Public Class UcControlsAccessManager
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
         UpdateDB()
     End Sub
+
     Private Sub BtnREFRESH_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnREFRESH.ItemClick
         SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
         PopularControls()
@@ -32,6 +34,7 @@ Public Class UcControlsAccessManager
         SetCheckedItemOnAccessListBox()
         SplashScreenManager.CloseForm()
     End Sub
+
     Private Sub BtnCancel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
         If RemoveTab IsNot Nothing Then
             RemoveTab()
@@ -56,6 +59,7 @@ Public Class UcControlsAccessManager
         GrvControls.Columns(4).Visible = False
         GrvControls.OptionsBehavior.ReadOnly = True
     End Sub
+
     Private Sub PopularAccess()
         ChkAccess.DataSource = ClsAccess.GetInstance.GetList()
         ChkAccess.ValueMember = "Access_name"
@@ -63,7 +67,7 @@ Public Class UcControlsAccessManager
     End Sub
 
     Private Sub SetCheckedItemOnAccessListBox()
-        Dim ObjAccessByControl = ClsControlsAccess.GetInstance.GetAccessByControls(GrvControls.GetFocusedRowCellValue("Tên Controls").ToString, ObjControlsAccessList)
+        Dim ObjAccessByControl = ClsControlsAccess.GetInstance.GetAccessByControls(GrvControls.GetFocusedRowCellValue("Tên Control").ToString, ObjControlsAccessList)
 
         ' Duyệt qua từng phần tử trong ListAccess(chức năng) nếu tồn tại trong objAC thì checked, ngược lại thì Unchecked
 
@@ -75,24 +79,27 @@ Public Class UcControlsAccessManager
             End If
         Next
     End Sub
+
     Private Function GetControlsAccessCollection() As ControlsAccessCollection
         Dim ControlsAccessCollection As New ControlsAccessCollection
 
         For Each item As AccessDTO In ChkAccess.CheckedItems
             Dim ControlsAccessDTO As New ControlsAccessDTO With {
-                .Controls_name = GrvControls.GetFocusedRowCellValue("Tên Controls").ToString,
+                .Control_name = GrvControls.GetFocusedRowCellValue("Tên Control").ToString,
                 .Access_name = item.Access_name.ToString()}
             ControlsAccessCollection.Add(ControlsAccessDTO)
         Next
         Return ControlsAccessCollection
     End Function
+
     Private Function GetControlsAccessDTO() As ControlsAccessDTO
         Dim ControlsAccess As New ControlsAccessDTO With {
-            .Controls_name = GrvControls.GetFocusedRowCellValue("Tên Controls").ToString,
+            .Control_name = GrvControls.GetFocusedRowCellValue("Tên Control").ToString,
             .Access_name = ""}
 
         Return ControlsAccess
     End Function
+
     Private Sub UpdateDB()
 
         ' Xóa hết những chức năng trên control trước khi thêm mới

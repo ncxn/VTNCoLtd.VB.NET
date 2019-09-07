@@ -24,23 +24,23 @@ Public Class FrmUsersGetActiveCode
         '
         Me.TxtUserOrEmail.Location = New System.Drawing.Point(10, 44)
         Me.TxtUserOrEmail.Name = "TxtUserOrEmail"
-        Me.TxtUserOrEmail.Size = New System.Drawing.Size(340, 40)
+        Me.TxtUserOrEmail.Size = New System.Drawing.Size(291, 40)
         Me.TxtUserOrEmail.TabIndex = 0
         '
         'LabelControl1
         '
         Me.LabelControl1.Location = New System.Drawing.Point(12, 20)
         Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(163, 17)
+        Me.LabelControl1.Size = New System.Drawing.Size(160, 17)
         Me.LabelControl1.TabIndex = 1
-        Me.LabelControl1.Text = "Tên đăng nhập hoặc email.?"
+        Me.LabelControl1.Text = "Tên đăng nhập hoặc email?"
         '
         'BtnGetActiveCode
         '
         Me.BtnGetActiveCode.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
         Me.BtnGetActiveCode.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnGetActiveCode.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.actions_send
-        Me.BtnGetActiveCode.Location = New System.Drawing.Point(85, 109)
+        Me.BtnGetActiveCode.Location = New System.Drawing.Point(58, 109)
         Me.BtnGetActiveCode.Name = "BtnGetActiveCode"
         Me.BtnGetActiveCode.Size = New System.Drawing.Size(200, 40)
         Me.BtnGetActiveCode.TabIndex = 2
@@ -51,7 +51,7 @@ Public Class FrmUsersGetActiveCode
         Me.BtnOpenFromResetPass.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
         Me.BtnOpenFromResetPass.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnOpenFromResetPass.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.security_key
-        Me.BtnOpenFromResetPass.Location = New System.Drawing.Point(85, 159)
+        Me.BtnOpenFromResetPass.Location = New System.Drawing.Point(58, 159)
         Me.BtnOpenFromResetPass.Name = "BtnOpenFromResetPass"
         Me.BtnOpenFromResetPass.Size = New System.Drawing.Size(200, 40)
         Me.BtnOpenFromResetPass.TabIndex = 3
@@ -60,7 +60,7 @@ Public Class FrmUsersGetActiveCode
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(35, 146)
+        Me.Label1.Location = New System.Drawing.Point(8, 146)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(41, 17)
         Me.Label1.TabIndex = 4
@@ -68,7 +68,7 @@ Public Class FrmUsersGetActiveCode
         '
         'FrmUsersGetActiveCode
         '
-        Me.ClientSize = New System.Drawing.Size(358, 230)
+        Me.ClientSize = New System.Drawing.Size(313, 230)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnOpenFromResetPass)
         Me.Controls.Add(Me.BtnGetActiveCode)
