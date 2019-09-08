@@ -19,49 +19,54 @@ Partial Class UcRolesManager
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GridControlRoles = New DevExpress.XtraGrid.GridControl()
-        Me.GridViewRoles = New DevExpress.XtraGrid.Views.Grid.GridView()
-        CType(Me.GridControlRoles, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridViewRoles, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GrdRoles = New DevExpress.XtraGrid.GridControl()
+        Me.GrvRoles = New DevExpress.XtraGrid.Views.Grid.GridView()
+        CType(Me.GrdRoles, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GrvRoles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BaseStatusBar
         '
-        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 404)
+        Me.BaseStatusBar.Location = New System.Drawing.Point(0, 511)
+        Me.BaseStatusBar.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         '
-        'GridControlRoles
+        'GrdRoles
         '
-        Me.GridControlRoles.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControlRoles.Location = New System.Drawing.Point(0, 239)
-        Me.GridControlRoles.MainView = Me.GridViewRoles
-        Me.GridControlRoles.MenuManager = Me.RibbonControlBaseOnUserControl
-        Me.GridControlRoles.Name = "GridControlRoles"
-        Me.GridControlRoles.Size = New System.Drawing.Size(724, 165)
-        Me.GridControlRoles.TabIndex = 1
-        Me.GridControlRoles.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewRoles})
+        Me.GrdRoles.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GrdRoles.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GrdRoles.Location = New System.Drawing.Point(0, 262)
+        Me.GrdRoles.MainView = Me.GrvRoles
+        Me.GrdRoles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GrdRoles.MenuManager = Me.RibbonControlBaseOnUserControl
+        Me.GrdRoles.Name = "GrdRoles"
+        Me.GrdRoles.Size = New System.Drawing.Size(931, 249)
+        Me.GrdRoles.TabIndex = 1
+        Me.GrdRoles.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GrvRoles})
         '
-        'GridViewRoles
+        'GrvRoles
         '
-        Me.GridViewRoles.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.GridViewRoles.GridControl = Me.GridControlRoles
-        Me.GridViewRoles.Name = "GridViewRoles"
-        Me.GridViewRoles.OptionsView.ShowGroupPanel = False
+        Me.GrvRoles.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.GrvRoles.DetailHeight = 432
+        Me.GrvRoles.GridControl = Me.GrdRoles
+        Me.GrvRoles.Name = "GrvRoles"
+        Me.GrvRoles.OptionsView.ShowGroupPanel = False
         '
         'UcRolesManager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.GridControlRoles)
+        Me.Controls.Add(Me.GrdRoles)
+        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Name = "UcRolesManager"
-        Me.Size = New System.Drawing.Size(724, 444)
+        Me.Size = New System.Drawing.Size(931, 548)
         Me.Controls.SetChildIndex(Me.BaseStatusBar, 0)
-        Me.Controls.SetChildIndex(Me.GridControlRoles, 0)
-        CType(Me.GridControlRoles, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridViewRoles, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Controls.SetChildIndex(Me.GrdRoles, 0)
+        CType(Me.GrdRoles, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GrvRoles, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents GridControlRoles As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridViewRoles As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GrdRoles As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GrvRoles As DevExpress.XtraGrid.Views.Grid.GridView
 End Class

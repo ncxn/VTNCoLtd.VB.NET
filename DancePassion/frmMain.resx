@@ -126,10 +126,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="BackstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 63</value>
+    <value>229, 79</value>
+  </data>
+  <data name="BackstageViewClientControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="BackstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 297</value>
+    <value>1150, 376</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BackstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
@@ -212,13 +215,13 @@
 </value>
   </data>
   <data name="Slide_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 247</value>
+    <value>0, 280</value>
   </data>
   <data name="Slide_menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="Slide_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 361</value>
+    <value>1380, 456</value>
   </data>
   <data name="Slide_menu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -564,15 +567,15 @@
         dEluZGVudAhNYXhXaWR0aBJPd25lckFsbG93SHRtbFRleHQEVGV4dAQEBAAAAAEfRGV2RXhwcmVzcy5V
         dGlscy5EZWZhdWx0Qm9vbGVhbgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbg0AAAAoRGV2RXhwcmVzcy5V
         dGlscy5Ub29sVGlwSXRlbUltYWdlT3B0aW9ucwIAAAAICAECAAAAAfL////8////AgAAAAoJDwAAAAAA
-        AAA8AQAAAQYQAAAACkPDtG5nIGPhu6UFCAAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVtBwAA
+        AACLAQAAAQYQAAAACkPDtG5nIGPhu6UFCAAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVtBwAA
         AA1BbGxvd0h0bWxUZXh0BEljb24MSW1hZ2VPcHRpb25zCkxlZnRJbmRlbnQITWF4V2lkdGgST3duZXJB
         bGxvd0h0bWxUZXh0BFRleHQEBAQAAAABH0RldkV4cHJlc3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4DAAAA
         E1N5c3RlbS5EcmF3aW5nLkljb24NAAAAKERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9w
-        dGlvbnMCAAAACAgBAgAAAAHv/////P///wIAAAAKCRIAAAAGAAAAPAEAAAEGEwAAAIYBTmjhuq1wIHh1
+        dGlvbnMCAAAACAgBAgAAAAHv/////P///wIAAAAKCRIAAAAGAAAAiwEAAAEGEwAAAIYBTmjhuq1wIHh1
         4bqldCBk4buvIGxp4buHdSBjaG8gdG/DoG4gaOG7hyB0aOG7kW5nLg0KU+G7rSBk4bulbmcgY8OhYyBm
         b3JtIG3huqt1IGPDsyBz4bq1biDEkcaw4bujYyBjdW5nIGPhuqVwIGLhu59pIG5ow6AgcGjDoXQgdHJp
         4buDbi4FCgAAACVEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBTZXBhcmF0b3JJdGVtAAAAAAIAAAABDAAA
-        AAYAAAAB7P////z///8CAAAACgkVAAAABgAAADwBAAABBhYAAAAKVlROY28uLEx0ZAUPAAAAKERldkV4
+        AAYAAAAB7P////z///8CAAAACgkVAAAABgAAAIsBAAABBhYAAAAKVlROY28uLEx0ZAUPAAAAKERldkV4
         cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9wdGlvbnMFAAAACEltYWdlVXJpDFN2Z0ltYWdlU2l6
         ZQlBbGlnbm1lbnQKSW1hZ2VJbmRleBNJbWFnZVRvVGV4dERpc3RhbmNlAQQEAAATU3lzdGVtLkRyYXdp
         bmcuU2l6ZQ0AAAAmRGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgCAAAA
@@ -949,6 +952,38 @@
   <data name="Club_ThanhToan.Caption" xml:space="preserve">
     <value>Thanh toán</value>
   </data>
+  <data name="Club_ThanhToan.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMIFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJEb2xsYXJDaXJjbGVkIj4NCiAgICA8
+        cGF0aCBkPSJNMTMuOSwxMEMxNCwxMCwxNCwxMCwxMy45LDEwbDAuMSwzLjRjLTAuMi0wLjEtMC4zLTAu
+        MS0wLjQtMC4yYy0wLjQtMC4yLTAuNy0wLjQtMC45LTAuNiAgIGMtMC4yLTAuMy0wLjQtMC42LTAuNC0w
+        LjljMC0wLjMsMC4xLTAuNiwwLjItMC44YzAuMi0wLjIsMC4zLTAuNCwwLjYtMC41QzEzLjQsMTAuMiwx
+        My42LDEwLjEsMTMuOSwxMHogTTE3LjQsMTYuOCAgIGMtMC40LTAuMy0wLjgtMC41LTEuNC0wLjdWMjBj
+        MCwwLDAsMCwwLjEsMGMwLjMtMC4xLDAuNi0wLjEsMC45LTAuM3MwLjUtMC4zLDAuNy0wLjZjMC4yLTAu
+        MywwLjMtMC42LDAuMy0xICAgQzE3LjksMTcuNSwxNy44LDE3LjEsMTcuNCwxNi44eiBNMjgsMTVjMCw3
+        LjItNS44LDEzLTEzLDEzUzIsMjIuMiwyLDE1UzcuOCwyLDE1LDJTMjgsNy44LDI4LDE1eiBNMjAsMTcu
+        OGMwLTAuNi0wLjEtMS4yLTAuMy0xLjYgICBjLTAuMi0wLjQtMC41LTAuOC0wLjktMS4xYy0wLjQtMC4z
+        LTAuOC0wLjUtMS4yLTAuN2MtMC41LTAuMi0wLjktMC4zLTEuNC0wLjRjLTAuMSwwLTAuMSwwLTAuMiww
+        di0zLjhjMC4yLDAuMSwwLjQsMC4yLDAuNiwwLjMgICBjMC4zLDAuMiwwLjUsMC40LDAuNiwwLjdjMC4x
+        LDAuMiwwLjIsMC41LDAuMywwLjloMS45Yy0wLjEtMC43LTAuMi0xLjMtMC40LTEuOGMtMC4zLTAuNS0w
+        LjYtMS0xLTEuM3MtMC45LTAuNS0xLjUtMC43ICAgYy0wLjIsMC0wLjMtMC4xLTAuNS0wLjFWNmgtMnYy
+        Yy0wLjMsMC0wLjYsMC4xLTAuOSwwLjJjLTAuNSwwLjEtMSwwLjQtMS40LDAuN2MtMC40LDAuMy0wLjgs
+        MC43LTEsMS4yYy0wLjMsMC41LTAuNCwxLjEtMC40LDEuNyAgIGMwLDAuOSwwLjIsMS41LDAuNiwyYzAu
+        NCwwLjUsMC45LDAuOSwxLjQsMS4xYzAuNSwwLjMsMS4xLDAuNSwxLjgsMC42VjIwYzAsMCwwLDAsMCww
+        Yy0wLjQtMC4xLTAuNy0wLjItMS0wLjQgICBjLTAuMy0wLjItMC41LTAuNS0wLjctMC44QzEyLjEsMTgu
+        NSwxMiwxOC4zLDEyLDE4aC0xLjljMC4xLDAuNiwwLjIsMS4yLDAuNCwxLjZjMC4zLDAuNiwwLjYsMSwx
+        LjEsMS40YzAuNSwwLjQsMSwwLjYsMS42LDAuOCAgIGMwLjMsMC4xLDAuNiwwLjEsMC45LDAuMnYyaDJ2
+        LTJjMC4zLDAsMC41LTAuMSwwLjgtMC4xYzAuNi0wLjEsMS4xLTAuNCwxLjYtMC43YzAuNS0wLjMsMC45
+        LTAuOCwxLjItMS4zICAgQzE5LjksMTkuMywyMCwxOC42LDIwLDE3Ljh6IiBmaWxsPSIjMDM5QzIzIiBj
+        bGFzcz0iR3JlZW4iIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
   <data name="Club_dsHLV_btn.Caption" xml:space="preserve">
     <value>Danh sách HLV</value>
   </data>
@@ -983,7 +1018,7 @@
     <value>0, 0</value>
   </data>
   <data name="MainControlRibbon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RbpgDatabase.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1118,16 +1153,16 @@
     <value>Development</value>
   </data>
   <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 247</value>
+    <value>1380, 280</value>
   </data>
   <data name="RibbonStatusBarOnMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 568</value>
+    <value>0, 699</value>
   </data>
   <data name="RibbonStatusBarOnMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RibbonStatusBarOnMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 40</value>
+    <value>1380, 37</value>
   </data>
   <data name="&gt;&gt;RibbonStatusBarOnMain.Name" xml:space="preserve">
     <value>RibbonStatusBarOnMain</value>
@@ -1163,10 +1198,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 19</value>
+    <value>9, 23</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 608</value>
+    <value>1380, 736</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
@@ -3973,7 +4008,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

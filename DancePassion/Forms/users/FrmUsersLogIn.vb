@@ -56,7 +56,7 @@ Public Class FrmUsersLogIn
 
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
 
-        Dim objUser As UsersDTO = ClsUsers.GetInstance.Login(txtUserName.Text.Trim(), txtPassWord.Text.Trim(), status)
+        Dim objUser As UsersDTO = ClsUsers.GetInstance.Login(TxtUserName.Text.Trim(), TxtPassWord.Text.Trim(), status)
 
         Select Case status
             Case User_status.NotExists
@@ -91,37 +91,45 @@ Public Class FrmUsersLogIn
 
     End Sub
 
-    Private Sub TxtUserName_Enter(sender As Object, e As EventArgs) Handles txtUserName.Enter
-        If txtUserName.Text = "Tên đăng nhập" Then
-            txtUserName.Text = ""
-            txtUserName.ForeColor = Color.White
+    Private Sub TxtUserName_Enter(sender As Object, e As EventArgs) Handles TxtUserName.Enter
+        If TxtUserName.Text = "Tên đăng nhập" Then
+            TxtUserName.Text = ""
+            TxtUserName.ForeColor = Color.White
             LineUserName.BorderColor = Color.CadetBlue
         End If
     End Sub
 
-    Private Sub TxtUserName_Leave(sender As Object, e As EventArgs) Handles txtUserName.Leave
-        If txtUserName.Text = "" Then
-            txtUserName.Text = "Tên đăng nhập"
-            txtUserName.ForeColor = Color.Silver
+    Private Sub TxtUserName_MouseHover(sender As Object, e As EventArgs) Handles TxtUserName.MouseHover
+        LineUserName.BorderColor = Color.CadetBlue
+    End Sub
+
+    Private Sub TxtUserName_Leave(sender As Object, e As EventArgs) Handles TxtUserName.Leave
+        If TxtUserName.Text = "" Then
+            TxtUserName.Text = "Tên đăng nhập"
+            TxtUserName.ForeColor = Color.Silver
             LineUserName.BorderColor = Color.LightGray
         End If
     End Sub
 
-    Private Sub TxtPassWord_Leave(sender As Object, e As EventArgs) Handles txtPassWord.Leave
-        If txtPassWord.Text = "" Then
-            txtPassWord.Text = "Mật khẩu"
-            txtPassWord.ForeColor = Color.Silver
-            txtPassWord.Properties.UseSystemPasswordChar = False
+    Private Sub TxtUserName_MouseLeave(sender As Object, e As EventArgs) Handles TxtUserName.MouseLeave
+        LineUserName.BorderColor = Color.LightGray
+    End Sub
+
+    Private Sub TxtPassWord_Leave(sender As Object, e As EventArgs) Handles TxtPassWord.Leave
+        If TxtPassWord.Text = "" Then
+            TxtPassWord.Text = "Mật khẩu"
+            TxtPassWord.ForeColor = Color.Silver
+            TxtPassWord.Properties.UseSystemPasswordChar = False
             LinePw.BorderColor = Color.LightGray
         End If
 
     End Sub
 
-    Private Sub TxtPassWord_Enter(sender As Object, e As EventArgs) Handles txtPassWord.Enter
-        If txtPassWord.Text = "Mật khẩu" Then
-            txtPassWord.Text = ""
-            txtPassWord.ForeColor = Color.LightGray
-            txtPassWord.Properties.UseSystemPasswordChar = True
+    Private Sub TxtPassWord_Enter(sender As Object, e As EventArgs) Handles TxtPassWord.Enter
+        If TxtPassWord.Text = "Mật khẩu" Then
+            TxtPassWord.Text = ""
+            TxtPassWord.ForeColor = Color.LightGray
+            TxtPassWord.Properties.UseSystemPasswordChar = True
             LinePw.BorderColor = Color.CadetBlue
         End If
     End Sub
@@ -135,6 +143,9 @@ Public Class FrmUsersLogIn
     Private Sub LinkLostPass_Click(sender As Object, e As EventArgs) Handles LinkLostPass.Click
         FrmUsersGetActiveCode.ShowDialog()
     End Sub
+
+
+
 
 #End Region
 

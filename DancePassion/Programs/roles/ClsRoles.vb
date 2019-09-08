@@ -59,14 +59,22 @@ Public Class ClsRoles
         Return Singleton
     End Function
 
+    ''' <summary>
+    ''' Return datatable
+    ''' </summary>
+    ''' <returns></returns>
     Public Function GetDataTable() As DataTable
-        Dim dtRoles As DataTable = DBHelper.GetInstance.GetDataTable("procGetAllRoles", CommandType.StoredProcedure)
+        Dim dtRoles As DataTable = DBHelper.GetInstance.GetDataTable("procRoles_GetAll", CommandType.StoredProcedure)
         Return dtRoles
     End Function
 
+    ''' <summary>
+    ''' Return List (of Model)
+    ''' </summary>
+    ''' <returns></returns>
     Public Function GetList() As RolesCollection
         Dim RolesList As New RolesCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procGetAllRoles", CommandType.StoredProcedure)
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procRoles_GetAll", CommandType.StoredProcedure)
 
         While Reader.Read()
             Dim objRoles As New RolesDTO With {
@@ -81,48 +89,60 @@ Public Class ClsRoles
 
     End Function
 
-    Public Function GetRolesByUserID(user_id As Integer) As RolesCollection
-        Dim ObjectRoles As New RolesCollection
-        Dim strProc As String = "procGetAllRolesByUserID"
+    ''' <summary>
+    ''' Insert simple role(name, description)
+    ''' </summary>
+    ''' <param name="RolesDTO"></param>
+    ''' <returns>true or false</returns>
+    Public Function Insert(RolesDTO As RolesDTO) As Boolean
 
-        user_id = CurrentUser.User.User_id
-
+        Dim result As Integer
+        Dim strSQL = "procRoles_Insert"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("@p_user_id", user_id)
+            New MySqlParameter("p_role_name", RolesDTO.Role_name),
+            New MySqlParameter("p_role_description", RolesDTO.Role_description)
         }
-        Dim Reader As Object = DBHelper.GetInstance.GetDataReader(strProc, CommandType.StoredProcedure, parameters)
-        While Reader.Read()
-            Dim objRoles As New RolesDTO With {
-                .Role_name = Reader(0).ToString(),
-                .Role_description = Reader(1).ToString()
-            }
-            ObjectRoles.Add(objRoles)
-        End While
-        Reader.Close()
+        Try
+            result = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
 
-        Return ObjectRoles
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+        Return result > 0
 
     End Function
 
-    Public Function InsertUsers(Users As UsersDTO) As Boolean
-        Dim strSQL = "procInsertUsers"
+    ''' <summary>
+    ''' Update a role
+    ''' </summary>
+    ''' <param name="RolesDTO"></param>
+    ''' <returns>True/False</returns>
+    Public Function Update(RolesDTO As RolesDTO) As Boolean
+        Dim strSQL = "procRoles_Update"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("p_role_name", RolesDTO.Role_name),
+            New MySqlParameter("p_role_description", RolesDTO.Role_description)
+        }
 
-        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
-        Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
-    Public Function UpdateUsers(Users As UsersDTO) As Boolean
-        Dim strSQL = "procInsertUsers"
 
-        Dim paraName() As String = {"p_user_name", "p_user_first_name", "p_user_last_name", "p_user_email", "p_user_password", "p_user_status", "p_user_created_at", "p_user_updated_at"}
-        Dim paraValue As Object = New Object() {Users.User_name, Users.User_first_name, Users.User_last_name, Users.User_email, Users.User_password, Users.User_status, Users.User_created_at, Users.User_updated_at}
-        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+    ''' <summary>
+    ''' Delete a role
+    ''' </summary>
+    ''' <param name="RolesDTO"></param>
+    ''' <returns>True/False</returns>
+    Public Function Delete(RolesDTO As RolesDTO) As Boolean
+        Dim strSQL = "procRoles_Delete"
+        Dim parameters As New List(Of MySqlParameter) From {
+            New MySqlParameter("p_role_name", RolesDTO.Role_name),
+            New MySqlParameter("p_role_description", RolesDTO.Role_description)
+        }
+
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
-        Return result > 0
     End Function
-
 End Class
 #End Region

@@ -12,6 +12,7 @@ Public Class UcAccessManager
         ' Add any initialization after the InitializeComponent() call.
         HasRoles(Me.Name)
     End Sub
+
 #Region " Các chức năng trên form"
     Private Sub UcAccessManager_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadData()

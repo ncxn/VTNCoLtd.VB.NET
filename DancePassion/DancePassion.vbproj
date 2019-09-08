@@ -251,6 +251,12 @@
     <Compile Include="Programs\DevManager\ClsControls.vb" />
     <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="User Controls\roles\UcRolesAdd.Designer.vb">
+      <DependentUpon>UcRolesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\roles\UcRolesAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Programs\users\ClsUsersConfirm.vb" />
     <Compile Include="User Controls\devManager\UcControlsAccessManager.Designer.vb">
       <DependentUpon>UcControlsAccessManager.vb</DependentUpon>
@@ -391,6 +397,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\roles\UcRolesAdd.resx">
+      <DependentUpon>UcRolesAdd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\devManager\UcControlsAccessManager.resx">
       <DependentUpon>UcControlsAccessManager.vb</DependentUpon>

@@ -1,4 +1,4 @@
-﻿Public Class UcAccessAdd
+﻿Public Class UcRolesAdd
     Public Sub New()
 
         ' This call is required by the designer.
@@ -7,9 +7,20 @@
         ' Add any initialization after the InitializeComponent() call.
         HasAccess(Me.Name)
     End Sub
-#Region " Form action"
+
+
+#Region " Form"
+
+    Private Sub BtnOKANDNEW_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOKANDNEW.ItemClick
+        UpdateDB()
+        ResetForm()
+    End Sub
+
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
         UpdateDB()
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
 
     Private Sub BtnCancel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
@@ -17,17 +28,26 @@
             RemoveTab()
         End If
     End Sub
+
 #End Region
 
 #Region " Xử lý dữ liệu"
-    Private Sub UpdateDB()
-        Dim data As New AccessDTO With {
-            .Access_name = TxtAccess_name.Text.ToString,
-            .Access_desc = TxtAccess_desc.Text.ToString
-        }
-        If ClsAccess.GetInstance.insert(data) Then
 
+    Private Sub ResetForm()
+        TxtRole_name.Text = String.Empty
+        TxtRole_description.Text = String.Empty
+    End Sub
+
+    Private Sub UpdateDB()
+
+        Dim role As New RolesDTO With {
+            .Role_name = TxtRole_name.Text,
+            .Role_description = TxtRole_description.Text}
+
+        If ClsRoles.GetInstance.Insert(role) Then
+            MessageBox.Show("Thành công")
         End If
     End Sub
 #End Region
+
 End Class

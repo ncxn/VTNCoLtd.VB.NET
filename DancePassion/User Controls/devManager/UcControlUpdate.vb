@@ -6,8 +6,9 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-
+        HasAccess(Me.Name)
     End Sub
+
 #Region " Action controls"
     Private Sub UcControlUpdate_Load(sender As Object, e As EventArgs) Handles Me.Load
         BtnOK.Caption = "Lưu"
@@ -52,17 +53,17 @@
     End Sub
 
     Private Sub LookupEdit()
-        TxtControls_parent.Properties.DataSource = UCControlsManager.controlColection
-        TxtControls_parent.Properties.ValueMember = "Controls_name"
-        TxtControls_parent.Properties.DisplayMember = "Controls_description"
+        TxtControls_parent.Properties.DataSource = UCControlsManager.ControlColection
+        TxtControls_parent.Properties.ValueMember = "Control_name"
+        TxtControls_parent.Properties.DisplayMember = "Control_description"
         TxtControls_parent.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
 
         TxtControls_parent.Properties.PopulateViewColumns()
-        TxtControls_parent.Properties.View.Columns("Controls_name").Caption = "Tên Controls"
-        TxtControls_parent.Properties.View.Columns("Controls_description").Caption = "Mô tả"
-        TxtControls_parent.Properties.View.Columns("Controls_parent").Caption = "Cấp cha"
-        TxtControls_parent.Properties.View.Columns("Controls_type").Caption = "Phân loại"
-        TxtControls_parent.Properties.View.Columns("Controls_sort").Caption = "Sắp xếp"
+        TxtControls_parent.Properties.View.Columns("Control_name").Caption = "Tên Control"
+        TxtControls_parent.Properties.View.Columns("Control_description").Caption = "Mô tả"
+        TxtControls_parent.Properties.View.Columns("Control_parent").Caption = "Cấp cha"
+        TxtControls_parent.Properties.View.Columns("Control_type").Caption = "Phân loại"
+        TxtControls_parent.Properties.View.Columns("Control_sort").Caption = "Sắp xếp"
     End Sub
 #End Region
 

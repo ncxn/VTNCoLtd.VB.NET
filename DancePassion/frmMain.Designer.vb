@@ -552,7 +552,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.Club_ThanhToan, "Club_ThanhToan")
         Me.Club_ThanhToan.Id = 36
-        Me.Club_ThanhToan.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.bo_invoice
+        Me.Club_ThanhToan.ImageOptions.SvgImage = CType(resources.GetObject("Club_ThanhToan.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.Club_ThanhToan.Name = "Club_ThanhToan"
         '
         'Club_dsHLV_btn

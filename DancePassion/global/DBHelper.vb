@@ -16,8 +16,16 @@ Public Class DBHelper
     'Private ReadOnly connMSSQL As SqlConnection = DBUtils.GetInstance.MSSQL()
     'Private ReadOnly connSQLite As SQLiteConnection = DBUtils.GetInstance.SQLite()
     Private transactionScope As MySqlTransaction
+
+    ''' <summary>
+    ' Initialize singleton through lazy 
+    ' initialization to prevent unused 
+    ' singleton from taking up program 
+    ' memory
+    ''' </summary>
+    ''' <returns>single object instance</returns>
     Public Shared Function GetInstance() As DBHelper
-        If (Singleton Is Nothing) Then
+        If Singleton Is Nothing Then
             Singleton = New DBHelper()
         End If
         Return Singleton
@@ -59,6 +67,7 @@ Public Class DBHelper
 
         Return cmd
     End Function
+
     Private Function GetCommandWithTransaction(ByVal commandText As String, ByVal commandType As CommandType) As MySqlCommand
         Dim cmd = New MySqlCommand With {
             .CommandText = commandText,
@@ -157,14 +166,24 @@ Public Class DBHelper
 
     Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, Optional ByVal parameters As List(Of MySqlParameter) = Nothing) As Integer
 
+        Dim result As Integer = 0
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+
         If parameters IsNot Nothing Then
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
 
-        OpenConnection()
-        Return cmd.ExecuteNonQuery()
-        CloseConnection()
+        Try
+            OpenConnection()
+            result = cmd.ExecuteNonQuery()
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        Finally
+            CloseConnection()
+        End Try
+
+        Return result
+
     End Function
 
     Public Function ExecuteNonQuerytWithTransaction(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
@@ -235,6 +254,7 @@ Public Class DBHelper
         OpenConnection()
         Return Result
     End Function
+
     Public Function ExecuteReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
 
         Dim Result As MySqlDataReader

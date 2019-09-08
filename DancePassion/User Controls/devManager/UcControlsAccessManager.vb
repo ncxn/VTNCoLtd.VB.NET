@@ -15,6 +15,7 @@ Public Class UcControlsAccessManager
         ObjControlsAccessList = ClsControlsAccess.GetInstance.GetList()
         HasRoles(Me.Name)
     End Sub
+
 #Region " Form Action"
 
     Private Sub ControlsAccessManager_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -24,7 +25,9 @@ Public Class UcControlsAccessManager
     End Sub
 
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         UpdateDB()
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Private Sub BtnREFRESH_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnREFRESH.ItemClick
@@ -48,7 +51,6 @@ Public Class UcControlsAccessManager
         SetCheckedItemOnAccessListBox()
     End Sub
 #End Region
-
 
 #Region " Xử lý dữ liệu"
     Private Sub PopularControls()

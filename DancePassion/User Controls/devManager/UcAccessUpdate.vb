@@ -5,7 +5,7 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-
+        HasAccess(Me.Name)
     End Sub
 #Region " Các control trên form"
     Private Sub UcAccessUpdate_Load(sender As Object, e As EventArgs) Handles Me.Load

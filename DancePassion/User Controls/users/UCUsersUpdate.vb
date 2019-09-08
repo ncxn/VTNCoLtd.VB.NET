@@ -49,8 +49,7 @@ Public Class UcUsersUpdate
             .User_email = txtUser_Email.Text,
             .User_status = CInt(txtUser_Status.Text),
             .User_created_at = CurrentUser.User_created_at,
-            .User_updated_at = Now(),
-            .User_id = CurrentUser.User_id
+            .User_updated_at = Now()
         }
         If ClsUsers.GetInstance.Update(user) Then
 
@@ -60,7 +59,7 @@ Public Class UcUsersUpdate
 #End Region
 
 #Region " Tiện ích"
-    Private Sub txtUser_Status_Validating(sender As Object, e As CancelEventArgs) Handles txtUser_Status.Validating
+    Private Sub TxtUser_Status_Validating(sender As Object, e As CancelEventArgs) Handles txtUser_Status.Validating
         Dim edit = TryCast(sender, TextEdit)
         Dim value As Integer
         If Not Integer.TryParse(edit.EditValue.ToString(), value) Then

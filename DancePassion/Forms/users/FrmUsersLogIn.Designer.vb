@@ -23,8 +23,8 @@ Partial Class FrmUsersLogIn
         Me.PnLogo = New DevExpress.XtraEditors.PanelControl()
         Me.PicLogo = New DevExpress.XtraEditors.PictureEdit()
         Me.PnDetail = New DevExpress.XtraEditors.PanelControl()
-        Me.txtPassWord = New DevExpress.XtraEditors.TextEdit()
-        Me.txtUserName = New DevExpress.XtraEditors.TextEdit()
+        Me.TxtPassWord = New DevExpress.XtraEditors.TextEdit()
+        Me.TxtUserName = New DevExpress.XtraEditors.TextEdit()
         Me.LblTitle = New DevExpress.XtraEditors.LabelControl()
         Me.LinkLostPass = New DevExpress.XtraEditors.HyperlinkLabelControl()
         Me.BtnCancel = New DevExpress.XtraEditors.SimpleButton()
@@ -37,8 +37,8 @@ Partial Class FrmUsersLogIn
         CType(Me.PicLogo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PnDetail, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PnDetail.SuspendLayout()
-        CType(Me.txtPassWord.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtUserName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtPassWord.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtUserName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PnLogo
@@ -79,8 +79,8 @@ Partial Class FrmUsersLogIn
         Me.PnDetail.Appearance.Options.UseBackColor = True
         Me.PnDetail.Appearance.Options.UseBorderColor = True
         Me.PnDetail.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.PnDetail.Controls.Add(Me.txtPassWord)
-        Me.PnDetail.Controls.Add(Me.txtUserName)
+        Me.PnDetail.Controls.Add(Me.TxtPassWord)
+        Me.PnDetail.Controls.Add(Me.TxtUserName)
         Me.PnDetail.Controls.Add(Me.LblTitle)
         Me.PnDetail.Controls.Add(Me.LinkLostPass)
         Me.PnDetail.Controls.Add(Me.BtnCancel)
@@ -93,42 +93,42 @@ Partial Class FrmUsersLogIn
         Me.PnDetail.Size = New System.Drawing.Size(450, 400)
         Me.PnDetail.TabIndex = 7
         '
-        'txtPassWord
+        'TxtPassWord
         '
-        Me.txtPassWord.EditValue = "Mật khẩu"
-        Me.txtPassWord.Location = New System.Drawing.Point(75, 160)
-        Me.txtPassWord.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtPassWord.Name = "txtPassWord"
-        Me.txtPassWord.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.txtPassWord.Properties.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassWord.Properties.Appearance.ForeColor = System.Drawing.Color.White
-        Me.txtPassWord.Properties.Appearance.Options.UseBackColor = True
-        Me.txtPassWord.Properties.Appearance.Options.UseFont = True
-        Me.txtPassWord.Properties.Appearance.Options.UseForeColor = True
-        Me.txtPassWord.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.txtPassWord.Properties.NullValuePromptShowForEmptyValue = True
-        Me.txtPassWord.Size = New System.Drawing.Size(300, 40)
-        Me.txtPassWord.TabIndex = 2
+        Me.TxtPassWord.EditValue = "Mật khẩu"
+        Me.TxtPassWord.Location = New System.Drawing.Point(75, 160)
+        Me.TxtPassWord.Margin = New System.Windows.Forms.Padding(2)
+        Me.TxtPassWord.Name = "TxtPassWord"
+        Me.TxtPassWord.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.TxtPassWord.Properties.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPassWord.Properties.Appearance.ForeColor = System.Drawing.Color.White
+        Me.TxtPassWord.Properties.Appearance.Options.UseBackColor = True
+        Me.TxtPassWord.Properties.Appearance.Options.UseFont = True
+        Me.TxtPassWord.Properties.Appearance.Options.UseForeColor = True
+        Me.TxtPassWord.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.TxtPassWord.Properties.NullValuePromptShowForEmptyValue = True
+        Me.TxtPassWord.Size = New System.Drawing.Size(300, 28)
+        Me.TxtPassWord.TabIndex = 2
         '
-        'txtUserName
+        'TxtUserName
         '
-        Me.txtUserName.EditValue = "Tên đăng nhập"
-        Me.txtUserName.Location = New System.Drawing.Point(75, 110)
-        Me.txtUserName.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.txtUserName.Properties.Appearance.BackColor2 = System.Drawing.Color.Transparent
-        Me.txtUserName.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent
-        Me.txtUserName.Properties.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserName.Properties.Appearance.ForeColor = System.Drawing.Color.White
-        Me.txtUserName.Properties.Appearance.Options.UseBackColor = True
-        Me.txtUserName.Properties.Appearance.Options.UseBorderColor = True
-        Me.txtUserName.Properties.Appearance.Options.UseFont = True
-        Me.txtUserName.Properties.Appearance.Options.UseForeColor = True
-        Me.txtUserName.Properties.Appearance.Options.UseImage = True
-        Me.txtUserName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.txtUserName.Size = New System.Drawing.Size(300, 40)
-        Me.txtUserName.TabIndex = 1
+        Me.TxtUserName.EditValue = "Tên đăng nhập"
+        Me.TxtUserName.Location = New System.Drawing.Point(75, 110)
+        Me.TxtUserName.Margin = New System.Windows.Forms.Padding(2)
+        Me.TxtUserName.Name = "TxtUserName"
+        Me.TxtUserName.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.TxtUserName.Properties.Appearance.BackColor2 = System.Drawing.Color.Transparent
+        Me.TxtUserName.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent
+        Me.TxtUserName.Properties.Appearance.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUserName.Properties.Appearance.ForeColor = System.Drawing.Color.White
+        Me.TxtUserName.Properties.Appearance.Options.UseBackColor = True
+        Me.TxtUserName.Properties.Appearance.Options.UseBorderColor = True
+        Me.TxtUserName.Properties.Appearance.Options.UseFont = True
+        Me.TxtUserName.Properties.Appearance.Options.UseForeColor = True
+        Me.TxtUserName.Properties.Appearance.Options.UseImage = True
+        Me.TxtUserName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.TxtUserName.Size = New System.Drawing.Size(300, 28)
+        Me.TxtUserName.TabIndex = 1
         '
         'LblTitle
         '
@@ -138,7 +138,7 @@ Partial Class FrmUsersLogIn
         Me.LblTitle.Appearance.Options.UseForeColor = True
         Me.LblTitle.Location = New System.Drawing.Point(150, 30)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(136, 32)
+        Me.LblTitle.Size = New System.Drawing.Size(170, 41)
         Me.LblTitle.TabIndex = 0
         Me.LblTitle.Text = "ĐĂNG NHẬP"
         '
@@ -151,7 +151,7 @@ Partial Class FrmUsersLogIn
         Me.LinkLostPass.LineVisible = True
         Me.LinkLostPass.Location = New System.Drawing.Point(175, 330)
         Me.LinkLostPass.Name = "LinkLostPass"
-        Me.LinkLostPass.Size = New System.Drawing.Size(117, 21)
+        Me.LinkLostPass.Size = New System.Drawing.Size(145, 28)
         Me.LinkLostPass.TabIndex = 5
         Me.LinkLostPass.Text = "Quên mật khẩu?"
         '
@@ -190,12 +190,22 @@ Partial Class FrmUsersLogIn
         Me.BtnOK.Appearance.Options.UseFont = True
         Me.BtnOK.Appearance.Options.UseForeColor = True
         Me.BtnOK.AppearanceHovered.BackColor = System.Drawing.Color.Transparent
+        Me.BtnOK.AppearanceHovered.BorderColor = System.Drawing.Color.Transparent
         Me.BtnOK.AppearanceHovered.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnOK.AppearanceHovered.ForeColor = System.Drawing.Color.White
         Me.BtnOK.AppearanceHovered.Options.UseBackColor = True
         Me.BtnOK.AppearanceHovered.Options.UseBorderColor = True
         Me.BtnOK.AppearanceHovered.Options.UseFont = True
         Me.BtnOK.AppearanceHovered.Options.UseForeColor = True
+        Me.BtnOK.AppearancePressed.BackColor = System.Drawing.Color.Transparent
+        Me.BtnOK.AppearancePressed.BackColor2 = System.Drawing.Color.Transparent
+        Me.BtnOK.AppearancePressed.BorderColor = System.Drawing.Color.Transparent
+        Me.BtnOK.AppearancePressed.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOK.AppearancePressed.ForeColor = System.Drawing.Color.White
+        Me.BtnOK.AppearancePressed.Options.UseBackColor = True
+        Me.BtnOK.AppearancePressed.Options.UseBorderColor = True
+        Me.BtnOK.AppearancePressed.Options.UseFont = True
+        Me.BtnOK.AppearancePressed.Options.UseForeColor = True
         Me.BtnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.BtnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
         Me.BtnOK.Cursor = System.Windows.Forms.Cursors.Hand
@@ -240,7 +250,7 @@ Partial Class FrmUsersLogIn
         Me.Appearance.BackColor = System.Drawing.Color.SteelBlue
         Me.Appearance.Options.UseBackColor = True
         Me.Appearance.Options.UseFont = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 400)
         Me.Controls.Add(Me.PnLogo)
@@ -263,16 +273,16 @@ Partial Class FrmUsersLogIn
         CType(Me.PnDetail, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PnDetail.ResumeLayout(False)
         Me.PnDetail.PerformLayout()
-        CType(Me.txtPassWord.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtUserName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtPassWord.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtUserName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents PnLogo As DevExpress.XtraEditors.PanelControl
     Friend WithEvents PnDetail As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents txtPassWord As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TxtPassWord As DevExpress.XtraEditors.TextEdit
     Friend WithEvents BtnCancel As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents txtUserName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TxtUserName As DevExpress.XtraEditors.TextEdit
     Friend WithEvents BtnOK As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LinkLostPass As DevExpress.XtraEditors.HyperlinkLabelControl
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
