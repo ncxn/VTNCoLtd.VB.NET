@@ -1,4 +1,5 @@
 ﻿Public Class Loading
+
     Private Sub Loading_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.TransparencyKey = Color.Coral
         Me.BackColor = Color.Coral
@@ -6,6 +7,7 @@
         Me.Opacity = 0
         Timer1.Start()
     End Sub
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
         CirLoad.Value += 1
@@ -18,6 +20,7 @@
             Timer2.Start()
         End If
     End Sub
+
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         Me.Opacity -= 0.1
         If Me.Opacity = 0 Then
@@ -26,4 +29,5 @@
             Me.Close()
         End If
     End Sub
+
 End Class

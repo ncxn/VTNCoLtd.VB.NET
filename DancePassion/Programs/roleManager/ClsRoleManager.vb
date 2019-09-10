@@ -43,9 +43,11 @@ Public Class RolesControlsAccessDTO
     '    End Set
     'End Property
 End Class
+
 Public Class RolesControlsAccessCollection
     Inherits List(Of RolesControlsAccessDTO)
 End Class
+
 #Region " Current Current Roles Controls Access By UserName"
 Public Class CurrentRolesControlsAccess
     Private Shared _CurrentCurrentRolesControlsAccess As RolesControlsAccessCollection
@@ -259,4 +261,5 @@ Public Class ClsRoleManager
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
 End Class

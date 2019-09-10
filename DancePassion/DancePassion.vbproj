@@ -73,7 +73,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <ApplicationIcon>Toma4025-Flower-Flower.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
@@ -243,6 +243,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Programs\config\ClsConfig_Basic.vb" />
     <Compile Include="Programs\config\clsMailServer.vb" />
     <Compile Include="Programs\config\SMSconfig.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsDocumentManagerHelper.vb" />
@@ -251,6 +252,13 @@
     <Compile Include="Programs\DevManager\ClsControls.vb" />
     <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="Programs\EventSystem\ClsEvent_Type.vb" />
+    <Compile Include="User Controls\organization\UcConfig_Basic.Designer.vb">
+      <DependentUpon>UcConfig_Basic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\organization\UcConfig_Basic.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\roles\UcRolesAdd.Designer.vb">
       <DependentUpon>UcRolesAdd.vb</DependentUpon>
     </Compile>
@@ -397,6 +405,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\organization\UcConfig_Basic.resx">
+      <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\roles\UcRolesAdd.resx">
       <DependentUpon>UcRolesAdd.vb</DependentUpon>
@@ -755,6 +766,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\travel_hotel.svg" />
+    <None Include="Resources\bo_address.svg" />
+    <None Include="Resources\warning.svg" />
+    <Content Include="Toma4025-Flower-Flower.ico" />
     <None Include="Resources\security_key.svg" />
     <None Include="Resources\actions_send.svg" />
     <None Include="Resources\checkbox1.svg" />

@@ -27,6 +27,11 @@ Public Class UcBase
 #End Region
 
 #Region " Role and Controls"
+    ''' <summary>
+    ''' Check BarItemLink Is Visible
+    ''' </summary>
+    ''' <param name="itemLink"></param>
+    ''' <returns>Boolean</returns>
     Private Function IsVisible(ByVal itemLink As BarItemLink) As Boolean
         Return (itemLink.Item.Visibility = BarItemVisibility.Always OrElse itemLink.Item.Visibility = BarItemVisibility.OnlyInRuntime) AndAlso itemLink.Visible
     End Function
@@ -61,10 +66,12 @@ Public Class UcBase
                 Dim VisibleAll As Boolean = False
                 For Each itemLink As BarItemLink In pagGroup.ItemLinks
                     'Set control
-                    If ClsRoleManager.GetInstance.HasRoleOnUserControl(Control, itemLink.Item.Name.ToString) Then
-                        itemLink.Item.Visibility = BarItemVisibility.Always
-                    Else
-                        itemLink.Item.Visibility = BarItemVisibility.Never
+                    If itemLink.Item.Visibility = BarItemVisibility.Always Then
+                        If ClsRoleManager.GetInstance.HasRoleOnUserControl(Control, itemLink.Item.Name.ToString) Then
+                            itemLink.Item.Visibility = BarItemVisibility.Always
+                        Else
+                            itemLink.Item.Visibility = BarItemVisibility.Never
+                        End If
                     End If
                     'Check control
                     If IsVisible(itemLink) Then

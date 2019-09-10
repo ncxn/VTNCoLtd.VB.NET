@@ -41,7 +41,7 @@ Partial Class FrmMain
         Me.Dcom_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Twilio_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.eSMS__SMS_btn = New DevExpress.XtraBars.BarButtonItem()
-        Me.DoanhNghiep_CauHinh_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.UcConfig_Basic = New DevExpress.XtraBars.BarButtonItem()
         Me.CongCu__CauHinh_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.UcRoleManager = New DevExpress.XtraBars.BarButtonItem()
@@ -131,7 +131,6 @@ Partial Class FrmMain
         Me.MainControlRibbon.AllowHtmlText = True
         Me.MainControlRibbon.ApplicationButtonAnimationLength = 0
         Me.MainControlRibbon.ApplicationButtonDropDownControl = Me.Slide_menu
-        Me.MainControlRibbon.ApplicationButtonImageOptions.Image = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.Image"), System.Drawing.Image)
         Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImage = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImageSize = New System.Drawing.Size(32, 32)
         Me.MainControlRibbon.ApplicationButtonKeyTip = "ĐĂNG NHẬP VÀO TÀI KHOẢN"
@@ -142,7 +141,7 @@ Partial Class FrmMain
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcEmailManager, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.DoanhNghiep_CauHinh_btn, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager})
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcEmailManager, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager})
         Me.MainControlRibbon.MaxItemId = 48
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
@@ -303,12 +302,12 @@ Partial Class FrmMain
         Me.eSMS__SMS_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.eSMS
         Me.eSMS__SMS_btn.Name = "eSMS__SMS_btn"
         '
-        'DoanhNghiep_CauHinh_btn
+        'UcConfig_Basic
         '
-        resources.ApplyResources(Me.DoanhNghiep_CauHinh_btn, "DoanhNghiep_CauHinh_btn")
-        Me.DoanhNghiep_CauHinh_btn.Id = 1
-        Me.DoanhNghiep_CauHinh_btn.ImageOptions.SvgImage = CType(resources.GetObject("DoanhNghiep_CauHinh_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.DoanhNghiep_CauHinh_btn.Name = "DoanhNghiep_CauHinh_btn"
+        resources.ApplyResources(Me.UcConfig_Basic, "UcConfig_Basic")
+        Me.UcConfig_Basic.Id = 1
+        Me.UcConfig_Basic.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.travel_hotel
+        Me.UcConfig_Basic.Name = "UcConfig_Basic"
         '
         'CongCu__CauHinh_btn
         '
@@ -647,7 +646,7 @@ Partial Class FrmMain
         '
         Me.RibbonPageGroup_Configuration.AllowTextClipping = False
         Me.RibbonPageGroup_Configuration.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Configuration.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.DoanhNghiep_CauHinh_btn)
+        Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.UcConfig_Basic)
         Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.CongCu__CauHinh_btn)
         Me.RibbonPageGroup_Configuration.Name = "RibbonPageGroup_Configuration"
         Me.RibbonPageGroup_Configuration.ShowCaptionButton = False
@@ -780,7 +779,6 @@ Partial Class FrmMain
         Me.RibbonPageGroup7.ItemLinks.Add(Me.BH_ThanhToan_NCC_btn)
         Me.RibbonPageGroup7.ItemLinks.Add(Me.BH_TraHang_NCC_btn)
         Me.RibbonPageGroup7.Name = "RibbonPageGroup7"
-        Me.RibbonPageGroup7.ShowCaptionButton = False
         resources.ApplyResources(Me.RibbonPageGroup7, "RibbonPageGroup7")
         '
         'RibbonPageGroup6
@@ -897,7 +895,7 @@ Partial Class FrmMain
     Friend WithEvents Dcom_SMS_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents Twilio_SMS_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents eSMS__SMS_btn As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents DoanhNghiep_CauHinh_btn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents UcConfig_Basic As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RibbonPageGroup_Configuration As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents Slide_menu As DevExpress.XtraBars.Ribbon.BackstageViewControl
     Friend WithEvents DangNhap As DevExpress.XtraBars.Ribbon.BackstageViewButtonItem

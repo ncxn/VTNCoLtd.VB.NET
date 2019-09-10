@@ -58,7 +58,7 @@ Partial Class Loading
         Me.CirLoad.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CirLoad.Font = New System.Drawing.Font("Segoe UI", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CirLoad.ForeColor = System.Drawing.Color.White
-        Me.CirLoad.InnerColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.CirLoad.InnerColor = System.Drawing.Color.DeepSkyBlue
         Me.CirLoad.InnerMargin = 0
         Me.CirLoad.InnerWidth = -1
         Me.CirLoad.Location = New System.Drawing.Point(0, 0)
@@ -66,10 +66,10 @@ Partial Class Loading
         Me.CirLoad.MarqueeAnimationSpeed = 2000
         Me.CirLoad.Name = "CirLoad"
         Me.CirLoad.OuterColor = System.Drawing.Color.Red
-        Me.CirLoad.OuterMargin = -35
-        Me.CirLoad.OuterWidth = 30
+        Me.CirLoad.OuterMargin = -75
+        Me.CirLoad.OuterWidth = 75
         Me.CirLoad.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.CirLoad.ProgressWidth = 30
+        Me.CirLoad.ProgressWidth = 75
         Me.CirLoad.SecondaryFont = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CirLoad.Size = New System.Drawing.Size(150, 150)
         Me.CirLoad.StartAngle = 0
@@ -81,9 +81,10 @@ Partial Class Loading
         Me.CirLoad.SuperscriptColor = System.Drawing.Color.Black
         Me.CirLoad.SuperscriptMargin = New System.Windows.Forms.Padding(10, 30, 0, 0)
         Me.CirLoad.SuperscriptText = ""
-        Me.CirLoad.TabIndex = 15
+        Me.CirLoad.TabIndex = 0
         Me.CirLoad.Text = "0"
         Me.CirLoad.TextMargin = New System.Windows.Forms.Padding(3, 3, 0, 0)
+        Me.CirLoad.Value = 68
         '
         'Loading
         '

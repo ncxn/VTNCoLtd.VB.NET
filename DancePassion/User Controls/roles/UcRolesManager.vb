@@ -4,8 +4,10 @@ Public Class UcRolesManager
 
     Public Sub New()
         InitializeComponent()
+        HasAccess(Me.Name)
         HasRoles(Me.Name)
     End Sub
+
     Private Sub UcRolesManager_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadData()
     End Sub

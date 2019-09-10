@@ -19,13 +19,13 @@ Public Class UCRolesUpdate
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        'RbpGTools.Visible = False
-        'RbpGExtend.Visible = False
         HasAccess(Me.Name)
     End Sub
+
     Private Sub UCRolesUpdate_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadData()
     End Sub
+
     Private Sub BtnCancel_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BtnCANCEL.ItemClick
         If RemoveTab IsNot Nothing Then
             RemoveTab()
@@ -37,6 +37,7 @@ Public Class UCRolesUpdate
     End Sub
 
 #Region " Xử lý dữ liệu"
+
     Private Sub LoadData()
         txtRole_name.Text = Role.Role_name
         txtRole_name.Enabled = False
@@ -50,8 +51,12 @@ Public Class UCRolesUpdate
 
         If ClsRoles.GetInstance.Update(Role) Then
             MessageBox.Show("Thành công")
+            If RemoveTab IsNot Nothing Then
+                RemoveTab()
+            End If
         End If
     End Sub
+
 #End Region
 
 End Class

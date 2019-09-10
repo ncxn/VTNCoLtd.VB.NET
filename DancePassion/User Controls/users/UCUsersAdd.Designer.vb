@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class UCUsersAdd
+Partial Class UcUsersAdd
     'Inherits DevExpress.XtraEditors.XtraUserControl
     Inherits UCBase
     'UserControl overrides dispose to clean up the component list.

@@ -14,6 +14,7 @@ Public Class UcRoleManager
     Private Role As String
     ' Tên control khi người dùng click vào các chức năng trên treelist
     Private Control As String
+
 #End Region
 
 #Region " Cấu trúc form"
@@ -26,7 +27,9 @@ Public Class UcRoleManager
         ObjControlsAccessList = CurrentControlsAccess.ControlsAccessColection
         ObjRoleControlsAccessList = ClsRoleManager.GetInstance.GetList()
         ObjAccessList = ClsAccess.GetInstance.GetList()
+        HasAccess(Me.Name)
     End Sub
+
 #End Region
 
 #Region " Form"
@@ -36,7 +39,7 @@ Public Class UcRoleManager
         ' Dữ liệu chức năng
         PopularControls()
         ' Ẩn cái ribbon nào không chứa các item
-        HasRoles(Me.Name)
+        'HasRoles(Me.Name)
 
     End Sub
 
@@ -65,6 +68,7 @@ Public Class UcRoleManager
         SearchRoles.EditValue = "Admin"
 
     End Sub
+
     Private Sub SearchRoles_EditValueChanged(sender As Object, e As EventArgs) Handles SearchRoles.EditValueChanged
         If SearchRoles.EditValue IsNot Nothing Then
             Role = SearchRoles.EditValue.ToString
@@ -101,7 +105,11 @@ Public Class UcRoleManager
         Dim ObjAccessByRoleAndControl = ClsRoleManager.GetInstance.GetAccessByRoleAndControls(Role, Control, ObjRoleControlsAccessList)
         Dim ObjAccessByControl = ClsControlsAccess.GetInstance.GetAccessByControlsWithDesc(Control, ObjControlsAccessList, ObjAccessList)
 
-        ChLAccessControl.DataSource = ObjAccessByControl
+        ' Loại bỏ các chức năng mặc định: OK/Cancel/OkandNew
+        Dim ListExclude As New List(Of String) From {"BtnCANCEL", "BtnOK", "BtnOKANDNEW"}
+        Dim srcAccess = ObjAccessByControl.Where(Function(x) Not ListExclude.Exists(Function(y) x.Access_name.Contains(y)))
+
+        ChLAccessControl.DataSource = srcAccess
         ChLAccessControl.ValueMember = "Access_name"
         ChLAccessControl.DisplayMember = "Access_desc"
 
@@ -116,13 +124,10 @@ Public Class UcRoleManager
 
     End Sub
 
-    Private Sub ChLAccessControl_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ChLAccessControl.SelectedIndexChanged
-        ' MessageBox.Show(ChLAccessControl.Items.ToString)
-    End Sub
-
 #End Region
 
 #Region " Xử lý dữ liệu"
+
     Private Sub UpdateDB()
         ' Xóa tất cả action by control trước khi thêm mới (ở đây không dùng update mà là xóa toàn bộ rồi thêm mới)
         ClsRoleManager.GetInstance.DeleleByRoleAndControl(Role, Control)
@@ -144,36 +149,7 @@ Public Class UcRoleManager
         Next
         Return RolesControlsAccessCollection
     End Function
+
 #End Region
 
-#Region " Quyền hạn"
-    'Private Sub RoleUserControl()
-
-    '    For Each pag As RibbonPage In BaseRibbon.Pages
-
-    '        'If ClsRoleManager.GetInstance.HasRoleOnMenu(pag.Name.ToString) Then
-    '        '    pag.Visible = True
-    '        'Else
-    '        '    pag.Visible = False
-    '        'End If
-
-    '        For Each pagGroup As RibbonPageGroup In pag.Groups
-    '            'If ClsRoleManager.GetInstance.HasRoleOnMenu(pagGroup.Name.ToString) Then
-    '            '    pagGroup.Visible = True
-    '            'Else
-    '            '    pagGroup.Visible = False
-    '            'End If
-
-    '            For Each itemLink As BarItemLink In pagGroup.ItemLinks
-
-    '                If ClsRoleManager.GetInstance.HasRoleOnUserControl(Me.Name.ToString, itemLink.Item.Name.ToString) Then
-    '                    itemLink.Item.Visibility = BarItemVisibility.Always
-    '                Else
-    '                    itemLink.Item.Visibility = BarItemVisibility.Never
-    '                End If
-    '            Next
-    '        Next
-    '    Next
-    'End Sub
-#End Region
 End Class

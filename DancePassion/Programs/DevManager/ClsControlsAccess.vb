@@ -91,6 +91,7 @@ Public Class ClsControlsAccess
         Return ControlsAccessList
 
     End Function
+
     ''' <summary>
     ''' Return acction for each controls, ex : UCUsers{View, Create, Edit, Delele, Print,...on so}
     ''' </summary>
@@ -111,10 +112,10 @@ Public Class ClsControlsAccess
     '''' <summary>
     '''' Return acction for each controls with desc , ex : UCUsers{(View,"Truy cập") , (Create,"Tạo mới"), (Edit,"Sửa")} 
     '''' </summary>
-    Public Function GetAccessByControlsWithDesc(Controls_name As String, ControlsAccessList As ControlsAccessCollection, ObjAccess As AccessCollection) As AccessCollection
+    Public Function GetAccessByControlsWithDesc(Control_name As String, ControlsAccessList As ControlsAccessCollection, ObjAccess As AccessCollection) As AccessCollection
         Dim ObjRS = (From ca In ControlsAccessList
                      Join a In ObjAccess On ca.Access_name Equals a.Access_name
-                     Where ca.Control_name = Controls_name
+                     Where ca.Control_name = Control_name
                      Select New With
                       {
                       ca.Access_name,
@@ -127,9 +128,10 @@ Public Class ClsControlsAccess
                 .Access_desc = Access.Access_desc}
             AccessCollection.Add(AccessDTO)
         Next
-        Return AccessCollection
-    End Function
 
+        Return AccessCollection
+
+    End Function
 
     Public Function Insert(ControlsAccess As ControlsAccessDTO) As Boolean
         Dim strSQL = "procControlsAccess_Insert"
@@ -141,6 +143,7 @@ Public Class ClsControlsAccess
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
     Public Function BulkInsert(ControlsAccess As ControlsAccessCollection) As Boolean
         Dim strSQL = "procControlsAccess_Insert"
         Dim result As Integer = 0
@@ -154,6 +157,7 @@ Public Class ClsControlsAccess
 
         Return result > 0
     End Function
+
     Public Function Update(ControlsAccess As ControlsAccessDTO) As Boolean
         Dim strSQL = "procControlsAccess_Update"
         Dim parameters As New List(Of MySqlParameter) From {
@@ -164,6 +168,7 @@ Public Class ClsControlsAccess
         Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
         Return result > 0
     End Function
+
     Public Function BulkUpdate(ControlsAccess As ControlsAccessCollection) As Boolean
         Dim strSQL = "procControlsAccess_Update"
         Dim result As Integer = 0
@@ -188,4 +193,5 @@ Public Class ClsControlsAccess
         Return result > 0
     End Function
 End Class
+
 #End Region

@@ -4,7 +4,7 @@ Public Class UcUsersManager
 
         ' This call is required by the designer.
         InitializeComponent()
-
+        HasAccess(Me.Name)
         HasRoles(Me.Name)
     End Sub
 

@@ -107,7 +107,7 @@ Partial Class FrmUsersLogIn
         Me.TxtPassWord.Properties.Appearance.Options.UseForeColor = True
         Me.TxtPassWord.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.TxtPassWord.Properties.NullValuePromptShowForEmptyValue = True
-        Me.TxtPassWord.Size = New System.Drawing.Size(300, 28)
+        Me.TxtPassWord.Size = New System.Drawing.Size(300, 40)
         Me.TxtPassWord.TabIndex = 2
         '
         'TxtUserName
@@ -127,7 +127,7 @@ Partial Class FrmUsersLogIn
         Me.TxtUserName.Properties.Appearance.Options.UseForeColor = True
         Me.TxtUserName.Properties.Appearance.Options.UseImage = True
         Me.TxtUserName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.TxtUserName.Size = New System.Drawing.Size(300, 28)
+        Me.TxtUserName.Size = New System.Drawing.Size(300, 40)
         Me.TxtUserName.TabIndex = 1
         '
         'LblTitle
@@ -138,7 +138,7 @@ Partial Class FrmUsersLogIn
         Me.LblTitle.Appearance.Options.UseForeColor = True
         Me.LblTitle.Location = New System.Drawing.Point(150, 30)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(170, 41)
+        Me.LblTitle.Size = New System.Drawing.Size(136, 32)
         Me.LblTitle.TabIndex = 0
         Me.LblTitle.Text = "ĐĂNG NHẬP"
         '
@@ -151,7 +151,7 @@ Partial Class FrmUsersLogIn
         Me.LinkLostPass.LineVisible = True
         Me.LinkLostPass.Location = New System.Drawing.Point(175, 330)
         Me.LinkLostPass.Name = "LinkLostPass"
-        Me.LinkLostPass.Size = New System.Drawing.Size(145, 28)
+        Me.LinkLostPass.Size = New System.Drawing.Size(117, 21)
         Me.LinkLostPass.TabIndex = 5
         Me.LinkLostPass.Text = "Quên mật khẩu?"
         '
@@ -163,13 +163,15 @@ Partial Class FrmUsersLogIn
         Me.BtnCancel.Appearance.Options.UseBackColor = True
         Me.BtnCancel.Appearance.Options.UseFont = True
         Me.BtnCancel.Appearance.Options.UseForeColor = True
-        Me.BtnCancel.AppearanceHovered.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCancel.AppearanceHovered.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.BtnCancel.AppearanceHovered.BorderColor = System.Drawing.Color.Transparent
         Me.BtnCancel.AppearanceHovered.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCancel.AppearanceHovered.ForeColor = System.Drawing.Color.White
         Me.BtnCancel.AppearanceHovered.Options.UseBackColor = True
+        Me.BtnCancel.AppearanceHovered.Options.UseBorderColor = True
         Me.BtnCancel.AppearanceHovered.Options.UseFont = True
         Me.BtnCancel.AppearanceHovered.Options.UseForeColor = True
-        Me.BtnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
+        Me.BtnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.BtnCancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancel.ImageOptions.SvgImage = CType(resources.GetObject("BtnCancel.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BtnCancel.Location = New System.Drawing.Point(235, 240)
@@ -189,7 +191,7 @@ Partial Class FrmUsersLogIn
         Me.BtnOK.Appearance.Options.UseBorderColor = True
         Me.BtnOK.Appearance.Options.UseFont = True
         Me.BtnOK.Appearance.Options.UseForeColor = True
-        Me.BtnOK.AppearanceHovered.BackColor = System.Drawing.Color.Transparent
+        Me.BtnOK.AppearanceHovered.BackColor = System.Drawing.Color.LightSkyBlue
         Me.BtnOK.AppearanceHovered.BorderColor = System.Drawing.Color.Transparent
         Me.BtnOK.AppearanceHovered.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnOK.AppearanceHovered.ForeColor = System.Drawing.Color.White
@@ -207,7 +209,7 @@ Partial Class FrmUsersLogIn
         Me.BtnOK.AppearancePressed.Options.UseFont = True
         Me.BtnOK.AppearancePressed.Options.UseForeColor = True
         Me.BtnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BtnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
+        Me.BtnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.BtnOK.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnOK.ImageOptions.SvgImage = CType(resources.GetObject("BtnOK.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BtnOK.Location = New System.Drawing.Point(75, 240)
@@ -247,10 +249,11 @@ Partial Class FrmUsersLogIn
         '
         'FrmUsersLogIn
         '
+        Me.AcceptButton = Me.BtnOK
         Me.Appearance.BackColor = System.Drawing.Color.SteelBlue
         Me.Appearance.Options.UseBackColor = True
         Me.Appearance.Options.UseFont = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 400)
         Me.Controls.Add(Me.PnLogo)

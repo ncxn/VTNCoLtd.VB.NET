@@ -14,6 +14,7 @@ Imports DevExpress.XtraSplashScreen
 Imports MySql.Data.MySqlClient
 
 Public Class FrmMain
+
     ' Biến toàn cục cho Private Sub, sử dụng kỹ thuật Delegate, Bên dưới gọi Menuhanlder() bất cứ đâu sẽ trỏ đến RoleMenu()
     Public MenuHanlder As New ClsDelegate.RolesMenu(AddressOf RoleMenu)
 
@@ -124,13 +125,26 @@ Public Class FrmMain
 
 #Region "Hệ thống"
 
+#Region " Cấu hình doanh nghiệp"
+
+    Private Sub UcConfig_Basic_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcConfig_Basic.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcConfig_Basic
+        AddDocs(uc, "Thiết lập cơ bản")
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
+
+#End Region
+
 #Region " Nhân sự"
+
     Private Sub BtnHumanGroup_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcRolesManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcRolesManager
         AddDocs(uc, "Nhóm nhân viên")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
+
     Private Sub BtnHuman_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UcUsersManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcUsersManager
@@ -144,6 +158,7 @@ Public Class FrmMain
         AddDocs(uc, "Phân quyền")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
+
 #End Region
 
 #Region " Phát triển"
@@ -153,27 +168,32 @@ Public Class FrmMain
         AddDocs(uc, "Quản lý Controls")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
+
     Private Sub BtnFunctions_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcAccessManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcAccessManager
         AddDocs(uc, "Quản lý Action")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
+
     Private Sub BtnFunctionsOnControl_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcControlsAccessManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcControlsAccessManager
         AddDocs(uc, "Quản lý chức năng")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
+
 #End Region
 
 #Region " Cấu hình"
+
     Private Sub UcEmailManager_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcEmailManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
         Dim uc As New UcEmailManager
         AddDocs(uc, "Cấu hình email")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
+
 #End Region
 
 #End Region
@@ -209,7 +229,6 @@ Public Class FrmMain
             Next
         Next
     End Sub
-
 
 #End Region
 
