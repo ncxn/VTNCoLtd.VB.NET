@@ -540,7 +540,7 @@
         MiwyNywyMnoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="BtnEventCategory.Caption" xml:space="preserve">
+  <data name="UcEvent_Type_Manager.Caption" xml:space="preserve">
     <value>Loại sự kiện</value>
   </data>
   <data name="BtnEventCategory.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -3968,10 +3968,10 @@
   <data name="&gt;&gt;UcRoleManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BtnEventCategory.Name" xml:space="preserve">
-    <value>BtnEventCategory</value>
+  <data name="&gt;&gt;UcEvent_Type_Manager.Name" xml:space="preserve">
+    <value>UcEvent_Type_Manager</value>
   </data>
-  <data name="&gt;&gt;BtnEventCategory.Type" xml:space="preserve">
+  <data name="&gt;&gt;UcEvent_Type_Manager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;BtnEventCreate.Name" xml:space="preserve">

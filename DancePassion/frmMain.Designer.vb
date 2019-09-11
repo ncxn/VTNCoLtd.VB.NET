@@ -45,7 +45,7 @@ Partial Class FrmMain
         Me.CongCu__CauHinh_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.UcRoleManager = New DevExpress.XtraBars.BarButtonItem()
-        Me.BtnEventCategory = New DevExpress.XtraBars.BarButtonItem()
+        Me.UcEvent_Type_Manager = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnEventCreate = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnEventTicket = New DevExpress.XtraBars.BarButtonItem()
         Me.BtnRegister = New DevExpress.XtraBars.BarButtonItem()
@@ -141,7 +141,7 @@ Partial Class FrmMain
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcEmailManager, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.BtnEventCategory, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager})
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcEmailManager, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.UcEvent_Type_Manager, Me.BtnEventCreate, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager})
         Me.MainControlRibbon.MaxItemId = 48
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
@@ -330,12 +330,12 @@ Partial Class FrmMain
         Me.UcRoleManager.Name = "UcRoleManager"
         Me.UcRoleManager.Tag = "RoleManager"
         '
-        'BtnEventCategory
+        'UcEvent_Type_Manager
         '
-        resources.ApplyResources(Me.BtnEventCategory, "BtnEventCategory")
-        Me.BtnEventCategory.Id = 6
-        Me.BtnEventCategory.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventCategory.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.BtnEventCategory.Name = "BtnEventCategory"
+        resources.ApplyResources(Me.UcEvent_Type_Manager, "UcEvent_Type_Manager")
+        Me.UcEvent_Type_Manager.Id = 6
+        Me.UcEvent_Type_Manager.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventCategory.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcEvent_Type_Manager.Name = "UcEvent_Type_Manager"
         '
         'BtnEventCreate
         '
@@ -689,7 +689,7 @@ Partial Class FrmMain
         '
         'RbpgCreateEvent
         '
-        Me.RbpgCreateEvent.ItemLinks.Add(Me.BtnEventCategory)
+        Me.RbpgCreateEvent.ItemLinks.Add(Me.UcEvent_Type_Manager)
         Me.RbpgCreateEvent.ItemLinks.Add(Me.BtnEventCreate)
         Me.RbpgCreateEvent.ItemLinks.Add(Me.BtnEventTicket)
         Me.RbpgCreateEvent.Name = "RbpgCreateEvent"
@@ -905,7 +905,7 @@ Partial Class FrmMain
     Friend WithEvents CongCu__CauHinh_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents UcRoleManager As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BtnEventCategory As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents UcEvent_Type_Manager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnEventCreate As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnEventTicket As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnRegister As DevExpress.XtraBars.BarButtonItem

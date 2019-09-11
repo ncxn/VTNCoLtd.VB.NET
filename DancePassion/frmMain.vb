@@ -123,7 +123,7 @@ Public Class FrmMain
 
 #Region " Ribbon Button"
 
-#Region "Hệ thống"
+#Region " Hệ thống"
 
 #Region " Cấu hình doanh nghiệp"
 
@@ -195,6 +195,16 @@ Public Class FrmMain
     End Sub
 
 #End Region
+
+#End Region
+
+#Region " Sự kiện"
+    Private Sub UcEvent_Type_Manager_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcEvent_Type_Manager.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcEvent_Type_Manager
+        AddDocs(uc, "Quản lý loại sự kiện")
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
 
 #End Region
 

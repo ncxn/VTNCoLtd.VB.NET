@@ -76,7 +76,7 @@ Public Class ClsEvent_Type
     ''' </summary>
     ''' <returns>DataTable</returns>
     Public Function GetDataTable() As DataTable
-        Dim dtRoles As DataTable = DBHelper.GetInstance.GetDataTable("procEvent_Type_GetAll", CommandType.StoredProcedure)
+        Dim dtRoles As DataTable = DBHelper.GetInstance.GetDataTable("usp_tblEvent_Type_Select_All", CommandType.StoredProcedure)
         Return dtRoles
     End Function
 
@@ -84,35 +84,36 @@ Public Class ClsEvent_Type
     ''' Return List (of Model)
     ''' </summary>
     ''' <returns>Collection of Model</returns>
-    Public Function GetList() As RolesCollection
-        Dim RolesList As New RolesCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procEvent_Type_GetAll", CommandType.StoredProcedure)
+    Public Function GetList() As Event_TypeCollection
+        Dim ObjList As New Event_TypeCollection
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("usp_tblEvent_Type_Select_All", CommandType.StoredProcedure)
 
         While Reader.Read()
-            Dim objRoles As New RolesDTO With {
-                .Role_name = Reader(0).ToString(),
-                .Role_description = Reader(1).ToString()
+            Dim obj As New Event_TypeDTO With {
+                .Event_Type_Id = Reader(0).ToString(),
+                .Event_Type_Name = Reader(1).ToString(),
+                .Event_Type_Desc = Reader(2).ToString()
             }
-            RolesList.Add(objRoles)
+            ObjList.Add(obj)
         End While
         Reader.Close()
 
-        Return RolesList
+        Return ObjList
 
     End Function
 
     ''' <summary>
-    ''' Insert simple role(name, description)
+    ''' Insert simple Model
     ''' </summary>
-    ''' <param name="RolesDTO"></param>
+    ''' <param name="Model"></param>
     ''' <returns>true or false</returns>
-    Public Function Insert(RolesDTO As RolesDTO) As Boolean
+    Public Function Insert(Model As Event_TypeDTO) As Boolean
 
-        Dim result As Integer
-        Dim strSQL = "procRoles_Insert"
+        Dim result As Integer = 0
+        Dim strSQL = "usp_tblEvent_Type_Insert"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("p_role_name", RolesDTO.Role_name),
-            New MySqlParameter("p_role_description", RolesDTO.Role_description)
+            New MySqlParameter("p_Event_Type_Name", Model.Event_Type_Name),
+            New MySqlParameter("p_Event_Type_Desc", Model.Event_Type_Desc)
         }
         Try
             result = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
@@ -126,35 +127,76 @@ Public Class ClsEvent_Type
     End Function
 
     ''' <summary>
-    ''' Update a role
+    ''' Update a simple Model
     ''' </summary>
-    ''' <param name="RolesDTO"></param>
+    ''' <param name="Model"></param>
     ''' <returns>True/False</returns>
-    Public Function Update(RolesDTO As RolesDTO) As Boolean
-        Dim strSQL = "procRoles_Update"
+    Public Function Update(Model As Event_TypeDTO) As Boolean
+
+        Dim result As Integer = 0
+        Dim strSQL = "usp_tblEvent_Type_Update"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("p_role_name", RolesDTO.Role_name),
-            New MySqlParameter("p_role_description", RolesDTO.Role_description)
+            New MySqlParameter("p_Event_Type_Id", Model.Event_Type_Id),
+            New MySqlParameter("p_Event_Type_Name", Model.Event_Type_Name),
+            New MySqlParameter("p_Event_Type_Desc", Model.Event_Type_Desc)
         }
 
-        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Try
+            result = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
         Return result > 0
+
     End Function
 
     ''' <summary>
-    ''' Delete a role
+    ''' Delete a Model
     ''' </summary>
     ''' <param name="RolesDTO"></param>
     ''' <returns>True/False</returns>
-    Public Function Delete(RolesDTO As RolesDTO) As Boolean
-        Dim strSQL = "procRoles_Delete"
+    Public Function Delete(Model As Event_TypeDTO) As Boolean
+
+        Dim result As Integer = 0
+        Dim strSQL = "usp_tblEvent_Type_Delete"
         Dim parameters As New List(Of MySqlParameter) From {
-            New MySqlParameter("p_role_name", RolesDTO.Role_name),
-            New MySqlParameter("p_role_description", RolesDTO.Role_description)
+             New MySqlParameter("p_Event_Type_Id", Model.Event_Type_Id)
         }
 
-        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Try
+            result = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
         Return result > 0
+
     End Function
+
+    ''' <summary>
+    ''' Delete a Model by Id
+    ''' </summary>
+    ''' <param name="Id"></param>
+    ''' <returns>True/False</returns>
+    Public Function Delete(Id As Integer) As Boolean
+
+        Dim result As Integer = 0
+        Dim strSQL = "usp_tblEvent_Type_Delete"
+        Dim parameters As New List(Of MySqlParameter) From {
+             New MySqlParameter("p_Event_Type_Id", Id)
+        }
+
+        Try
+            result = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+        Return result > 0
+
+    End Function
+
 End Class
+
 #End Region

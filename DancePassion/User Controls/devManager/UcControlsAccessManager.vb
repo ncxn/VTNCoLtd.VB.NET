@@ -13,6 +13,7 @@ Public Class UcControlsAccessManager
 
         ' Add any initialization after the InitializeComponent() call.
         ObjControlsAccessList = ClsControlsAccess.GetInstance.GetList()
+        HasAccess(Me.Name)
         HasRoles(Me.Name)
     End Sub
 

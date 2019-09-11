@@ -20,6 +20,7 @@ Public Class UcControlsManager
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
         Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
         ControlColection = ClsControls.GetInstance.GetList()
+        HasAccess(Me.Name)
         HasRoles(Me.Name)
     End Sub
 

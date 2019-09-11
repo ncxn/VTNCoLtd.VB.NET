@@ -253,6 +253,24 @@
     <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
     <Compile Include="Programs\EventSystem\ClsEvent_Type.vb" />
+    <Compile Include="User Controls\EventSystem\UcEvent_Type_Add.Designer.vb">
+      <DependentUpon>UcEvent_Type_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvent_Type_Add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvent_Type_Manager.Designer.vb">
+      <DependentUpon>UcEvent_Type_Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvent_Type_Manager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvent_Type_Update.Designer.vb">
+      <DependentUpon>UcEvent_Type_Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvent_Type_Update.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\organization\UcConfig_Basic.Designer.vb">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </Compile>
@@ -405,6 +423,15 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EventSystem\UcEvent_Type_Add.resx">
+      <DependentUpon>UcEvent_Type_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EventSystem\UcEvent_Type_Manager.resx">
+      <DependentUpon>UcEvent_Type_Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EventSystem\UcEvent_Type_Update.resx">
+      <DependentUpon>UcEvent_Type_Update.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\organization\UcConfig_Basic.resx">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
