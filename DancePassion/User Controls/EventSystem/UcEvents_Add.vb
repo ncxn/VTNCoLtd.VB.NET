@@ -12,6 +12,16 @@ Public Class UcEvents_Add
         HasAccess(Me.Name)
     End Sub
 
+#Region " Form"
+    Sub Add() Handles BtnCREATE.ItemClick
+
+        ClsEvents.GetInstance.Insert(GetModel())
+    End Sub
+
+
+#End Region
+
+
 #Region " Xử lý dữ liệu"
 
     'Sub AddLookupEdit()
@@ -60,6 +70,7 @@ Public Class UcEvents_Add
         Return Model
 
     End Function
+
 
 
     Private Function ValidateData() As Boolean
