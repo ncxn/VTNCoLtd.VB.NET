@@ -252,7 +252,26 @@
     <Compile Include="Programs\DevManager\ClsControls.vb" />
     <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="Programs\EventSystem\ClsEvents.vb" />
     <Compile Include="Programs\EventSystem\ClsEvent_Type.vb" />
+    <Compile Include="User Controls\EventSystem\UcEvents_Add.Designer.vb">
+      <DependentUpon>UcEvents_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvents_Add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvents_Update.Designer.vb">
+      <DependentUpon>UcEvents_Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvents_Update.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvents_Manager.Designer.vb">
+      <DependentUpon>UcEvents_Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\EventSystem\UcEvents_Manager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\EventSystem\UcEvent_Type_Add.Designer.vb">
       <DependentUpon>UcEvent_Type_Add.vb</DependentUpon>
     </Compile>
@@ -423,6 +442,12 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EventSystem\UcEvents_Add.resx">
+      <DependentUpon>UcEvents_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EventSystem\UcEvents_Manager.resx">
+      <DependentUpon>UcEvents_Manager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\EventSystem\UcEvent_Type_Add.resx">
       <DependentUpon>UcEvent_Type_Add.vb</DependentUpon>

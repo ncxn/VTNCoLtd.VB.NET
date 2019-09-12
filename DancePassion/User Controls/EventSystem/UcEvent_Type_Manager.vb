@@ -34,9 +34,9 @@ Public Class UcEvent_Type_Manager
     End Sub
 
     Private Sub BtnREFRESH_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnREFRESH.ItemClick
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm), True, True, False)
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
         LoadData()
-        SplashScreenManager.CloseForm()
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Private Sub BtnCancel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
@@ -58,10 +58,6 @@ Public Class UcEvent_Type_Manager
 
     End Sub
 
-    Private Sub UpdateDB()
-        Throw New NotImplementedException()
-    End Sub
-
     Private Function GetModel() As Event_TypeDTO
 
         Dim SelectedRow = Grv.GetFocusedDataRow()
@@ -80,6 +76,7 @@ Public Class UcEvent_Type_Manager
 
     Private Function DeleteModel() As Boolean
         Return ClsEvent_Type.GetInstance.Delete(GetModel())
+
     End Function
 
 #End Region

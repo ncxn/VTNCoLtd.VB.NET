@@ -29,9 +29,6 @@ Public Class UcEvent_Type_Update
         Dim handle = SplashScreenManager.ShowOverlayForm(Me)
         UpdateDB()
         SplashScreenManager.CloseOverlayForm(handle)
-        If RemoveTab IsNot Nothing Then
-            RemoveTab()
-        End If
     End Sub
 
     'Private Sub OKandNew() Handles BtnOKANDNEW.ItemClick
@@ -62,6 +59,11 @@ Public Class UcEvent_Type_Update
         If ValidateData() Then
             If ClsEvent_Type.GetInstance.Update(GetModel()) Then
                 MessageBox.Show("Thành công")
+                If RemoveTab IsNot Nothing Then
+                    RemoveTab()
+                End If
+            Else
+                MessageBox.Show("Thất bại")
             End If
         Else
             MessageBox.Show("Kiểm tra dữ liệu nhập vào")
@@ -70,7 +72,7 @@ Public Class UcEvent_Type_Update
 
     Private Function GetModel() As Event_TypeDTO
         Dim Model As New Event_TypeDTO With {
-            .Event_Type_Id = 0,
+            .Event_Type_Id = Cmodel.Event_Type_Id,
             .Event_Type_Name = TxtEvent_Type_Name.Text,
             .Event_Type_Desc = If(TxtEvent_Type_Desc.Text, String.Empty)
         }

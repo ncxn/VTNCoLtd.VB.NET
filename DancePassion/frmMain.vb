@@ -206,6 +206,12 @@ Public Class FrmMain
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
+    Private Sub UcEvents_Manager_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcEvents_Manager.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcEvents_Manager
+        AddDocs(uc, "Quản lý sự kiện")
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
 #End Region
 
 #End Region
