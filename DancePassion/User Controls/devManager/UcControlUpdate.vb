@@ -43,7 +43,7 @@
         Dim data As New ControlsDTO With {
             .Control_name = TxtControls_name.Text.ToString,
             .Control_description = TxtControls_description.Text.ToString,
-            .Control_parent = TxtControls_parent.EditValue.ToString,
+            .Control_parent = TxtControls_parent.EditValue,
             .Control_type = TxtControls_type.Text.ToString,
             .Control_sort = CInt(TxtControls_sort.Text)
         }

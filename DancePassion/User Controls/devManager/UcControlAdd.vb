@@ -25,12 +25,13 @@
         Dim CtrlDTO As New ControlsDTO With {
         .Control_name = TxtControls_name.Text.ToString(),
         .Control_description = TxtControls_description.Text.ToString(),
-        .Control_parent = TxtControls_parent.Text.ToString(),
+        .Control_parent = TxtControls_parent.EditValue,
         .Control_type = TxtControls_type.Text.ToString(),
         .Control_sort = TxtControls_sort.Text
         }
         ClsControls.GetInstance.InsertControls(CtrlDTO)
     End Sub
+
     Private Sub GridLookupEdit()
         TxtControls_parent.Properties.DataSource = ClsControls.GetInstance.GetList()
         TxtControls_parent.Properties.ValueMember = "Control_name"

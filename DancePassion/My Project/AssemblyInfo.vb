@@ -10,13 +10,13 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("VTN CO., Ltd")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyDescription("Project for personal")>
 <Assembly: AssemblyCompany("VTN CO., Ltd")>
 <Assembly: AssemblyProduct("Dance Passion")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(True)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("fccee2ab-8bcd-4bc0-b993-ae6b9a2d9d98")>

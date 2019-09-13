@@ -449,6 +449,9 @@
     <EmbeddedResource Include="User Controls\EventSystem\UcEvents_Manager.resx">
       <DependentUpon>UcEvents_Manager.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EventSystem\UcEvents_Update.resx">
+      <DependentUpon>UcEvents_Update.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls\EventSystem\UcEvent_Type_Add.resx">
       <DependentUpon>UcEvent_Type_Add.vb</DependentUpon>
     </EmbeddedResource>

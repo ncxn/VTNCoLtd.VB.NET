@@ -1,4 +1,5 @@
-﻿Imports DevExpress.XtraSplashScreen
+﻿Imports DevExpress.XtraGrid.Views.Base
+Imports DevExpress.XtraSplashScreen
 
 Public Class UcEvents_Manager
     Public Sub New()
@@ -15,18 +16,22 @@ Public Class UcEvents_Manager
 #Region " Forms"
 
     Sub AddNew() Handles BtnCREATE.ItemClick
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
         If AddDocs IsNot Nothing Then
             AddDocs(New UcEvents_Add, "Thêm sự kiện")
         End If
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Sub Edit() Handles BtnEDIT.ItemClick
         Dim Uc As New UcEvents_Update With {
         .CModel = GetModel()
         }
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
         If AddDocs IsNot Nothing Then
             AddDocs(Uc, "Sửa sự kiện")
         End If
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Sub Delete() Handles BtnDELETE.ItemClick
@@ -49,17 +54,36 @@ Public Class UcEvents_Manager
 
 #End Region
 
-#Region "Xử lý dữ liệu"
+#Region " Xử lý dữ liệu"
 
     Private Sub LoadData() Handles Me.Load
         Grd.DataSource = ClsEvents.GetInstance.GetDataTable()
+        Grd.ForceInitialize()
         'Rename columm header
-        Grv.Columns(0).Caption = "Mã sự kiện"
-        Grv.Columns(1).Caption = "Tên loại sự kiện"
-        Grv.Columns(2).Caption = "Tên sự kiện"
-        Grv.Columns(3).Caption = "Ngày bắt đầu"
-        Grv.Columns(4).Caption = "Ngày kết thúc"
-        Grv.Columns(5).Caption = "Số lượng khách dự kiến"
+        Grv.Columns("Event_Id").Caption = "Mã sự kiện"
+        Grv.Columns("Event_Type_Id").Caption = "Tên loại sự kiện"
+        Grv.Columns("Event_Name").Caption = "Tên sự kiện"
+        Grv.Columns("Event_Start_Date").Caption = "Ngày bắt đầu"
+        Grv.Columns("Event_End_Date").Caption = "Ngày kết thúc"
+        Grv.Columns("Event_Participant_Max").Caption = "Số lượng khách dự kiến"
+
+        AddLookUpEdit()
+    End Sub
+
+    ' Add lookup edit cho cột Loại sự kiện
+    Private Sub AddLookUpEdit()
+        Dim edit As DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit = New DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit With {
+            .DataSource = ClsEvent_Type.GetInstance.GetList(),
+            .ValueMember = "Event_Type_Id",
+            .DisplayMember = "Event_Type_Name"
+        }
+        edit.PopulateViewColumns()
+        edit.View.Columns("Event_Type_Id").Caption = "Mã loại sự kiện"
+        edit.View.Columns("Event_Type_Name").Caption = "Tên loại sự kiện"
+        edit.View.Columns(2).Visible = False
+
+        Grd.RepositoryItems.Add(edit)
+        Grv.Columns(1).ColumnEdit = edit
 
     End Sub
 
@@ -93,6 +117,15 @@ Public Class UcEvents_Manager
             End If
         End If
 
+    End Sub
+
+    ''' <summary>
+    ''' Format number of column 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub Grv_CustomColumnDisplayText(sender As Object, e As CustomColumnDisplayTextEventArgs) Handles Grv.CustomColumnDisplayText
+        If e.Column.FieldName = "Event_Participant_Max" Then e.DisplayText = String.Format("{0:n}", e.Value)
     End Sub
 
 #End Region
