@@ -341,7 +341,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.UcEvents_Manager, "UcEvents_Manager")
         Me.UcEvents_Manager.Id = 7
-        Me.UcEvents_Manager.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventCreate.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcEvents_Manager.ImageOptions.SvgImage = CType(resources.GetObject("UcEvents_Manager.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.UcEvents_Manager.Name = "UcEvents_Manager"
         '
         'BtnEventTicket
@@ -788,7 +788,6 @@ Partial Class FrmMain
         Me.RibbonPageGroup6.ItemLinks.Add(Me.BH_ThanhToan_btn)
         Me.RibbonPageGroup6.ItemLinks.Add(Me.BH_TraHang_btn)
         Me.RibbonPageGroup6.Name = "RibbonPageGroup6"
-        Me.RibbonPageGroup6.ShowCaptionButton = False
         resources.ApplyResources(Me.RibbonPageGroup6, "RibbonPageGroup6")
         '
         'RibbonPageGroup5

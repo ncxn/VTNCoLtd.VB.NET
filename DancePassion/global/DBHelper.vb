@@ -18,10 +18,10 @@ Public Class DBHelper
     Private transactionScope As MySqlTransaction
 
     ''' <summary>
-    ' Initialize singleton through lazy 
-    ' initialization to prevent unused 
-    ' singleton from taking up program 
-    ' memory
+    ''' Initialize singleton through lazy 
+    ''' initialization to prevent unused 
+    ''' singleton from taking up program 
+    ''' memory
     ''' </summary>
     ''' <returns>single object instance</returns>
     Public Shared Function GetInstance() As DBHelper
@@ -138,7 +138,7 @@ Public Class DBHelper
             OpenConnection()
             dataAdaper.Fill(ds)
         Catch ex As Exception
-            Throw New Exception("Không thể fill data to dataset")
+            Throw New Exception(ex.Message)
         Finally
             CloseConnection()
         End Try

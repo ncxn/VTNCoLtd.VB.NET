@@ -45,9 +45,9 @@ Partial Class Loading
         Me.PnLoading.Controls.Add(Me.CirLoad)
         Me.PnLoading.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PnLoading.Location = New System.Drawing.Point(0, 0)
-        Me.PnLoading.Margin = New System.Windows.Forms.Padding(2)
+        Me.PnLoading.Margin = New System.Windows.Forms.Padding(0)
         Me.PnLoading.Name = "PnLoading"
-        Me.PnLoading.Size = New System.Drawing.Size(150, 150)
+        Me.PnLoading.Size = New System.Drawing.Size(200, 200)
         Me.PnLoading.TabIndex = 1
         '
         'CirLoad
@@ -58,20 +58,20 @@ Partial Class Loading
         Me.CirLoad.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CirLoad.Font = New System.Drawing.Font("Segoe UI", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CirLoad.ForeColor = System.Drawing.Color.White
-        Me.CirLoad.InnerColor = System.Drawing.Color.DeepSkyBlue
+        Me.CirLoad.InnerColor = System.Drawing.Color.Red
         Me.CirLoad.InnerMargin = 0
         Me.CirLoad.InnerWidth = -1
         Me.CirLoad.Location = New System.Drawing.Point(0, 0)
         Me.CirLoad.Margin = New System.Windows.Forms.Padding(0)
         Me.CirLoad.MarqueeAnimationSpeed = 2000
         Me.CirLoad.Name = "CirLoad"
-        Me.CirLoad.OuterColor = System.Drawing.Color.Red
-        Me.CirLoad.OuterMargin = -75
-        Me.CirLoad.OuterWidth = 75
-        Me.CirLoad.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.CirLoad.ProgressWidth = 75
+        Me.CirLoad.OuterColor = System.Drawing.Color.Teal
+        Me.CirLoad.OuterMargin = -100
+        Me.CirLoad.OuterWidth = 99
+        Me.CirLoad.ProgressColor = System.Drawing.Color.DeepSkyBlue
+        Me.CirLoad.ProgressWidth = 100
         Me.CirLoad.SecondaryFont = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CirLoad.Size = New System.Drawing.Size(150, 150)
+        Me.CirLoad.Size = New System.Drawing.Size(200, 200)
         Me.CirLoad.StartAngle = 0
         Me.CirLoad.Step = 1
         Me.CirLoad.Style = System.Windows.Forms.ProgressBarStyle.Marquee
@@ -79,7 +79,7 @@ Partial Class Loading
         Me.CirLoad.SubscriptMargin = New System.Windows.Forms.Padding(10, -35, 0, 0)
         Me.CirLoad.SubscriptText = "%"
         Me.CirLoad.SuperscriptColor = System.Drawing.Color.Black
-        Me.CirLoad.SuperscriptMargin = New System.Windows.Forms.Padding(10, 30, 0, 0)
+        Me.CirLoad.SuperscriptMargin = New System.Windows.Forms.Padding(10, 35, 0, 0)
         Me.CirLoad.SuperscriptText = ""
         Me.CirLoad.TabIndex = 0
         Me.CirLoad.Text = "0"
@@ -88,13 +88,13 @@ Partial Class Loading
         '
         'Loading
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(150, 150)
+        Me.ClientSize = New System.Drawing.Size(200, 200)
         Me.Controls.Add(Me.PnLoading)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Loading"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Loading"
