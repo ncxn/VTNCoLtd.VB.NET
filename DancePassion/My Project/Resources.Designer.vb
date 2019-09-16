@@ -223,9 +223,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
-        Friend ReadOnly Property checkbox1() As DevExpress.Utils.Svg.SvgImage
+        Friend ReadOnly Property customer_group() As DevExpress.Utils.Svg.SvgImage
             Get
-                Dim obj As Object = ResourceManager.GetObject("checkbox1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("customer-group", resourceCulture)
                 Return CType(obj,DevExpress.Utils.Svg.SvgImage)
             End Get
         End Property
@@ -251,162 +251,12 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_add_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_add_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_copy_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_copy_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_delete_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_delete_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_down_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_down_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_Edit_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_Edit_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_Error_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_Error_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_Find_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_Find_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_information_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_information_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_refresh_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_refresh_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_replace__WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_replace__WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_setting_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_setting_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Data_warning_WF() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Data_warning_WF", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
         Friend ReadOnly Property delete() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("delete", resourceCulture)
                 Return CType(obj,DevExpress.Utils.Svg.SvgImage)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
-        '''</summary>
-        Friend ReadOnly Property delete1() As DevExpress.Utils.Svg.SvgImage
-            Get
-                Dim obj As Object = ResourceManager.GetObject("delete1", resourceCulture)
-                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property deletegroupheader_32x32() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("deletegroupheader_32x32", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property deletegroupheader_32x321() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("deletegroupheader_32x321", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
@@ -683,16 +533,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
-        Friend ReadOnly Property markcomplete1() As DevExpress.Utils.Svg.SvgImage
-            Get
-                Dim obj As Object = ResourceManager.GetObject("markcomplete1", resourceCulture)
-                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
-        '''</summary>
         Friend ReadOnly Property movedown() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("movedown", resourceCulture)
@@ -823,16 +663,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
-        Friend ReadOnly Property removegroupheader1() As DevExpress.Utils.Svg.SvgImage
-            Get
-                Dim obj As Object = ResourceManager.GetObject("removegroupheader1", resourceCulture)
-                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
-        '''</summary>
         Friend ReadOnly Property resetlayoutoptions() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("resetlayoutoptions", resourceCulture)
@@ -946,16 +776,6 @@ Namespace My.Resources
         Friend ReadOnly Property updatetableofcontents() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("updatetableofcontents", resourceCulture)
-                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
-        '''</summary>
-        Friend ReadOnly Property updatetableofcontents1() As DevExpress.Utils.Svg.SvgImage
-            Get
-                Dim obj As Object = ResourceManager.GetObject("updatetableofcontents1", resourceCulture)
                 Return CType(obj,DevExpress.Utils.Svg.SvgImage)
             End Get
         End Property

@@ -71,7 +71,7 @@ Partial Class UcBase
         '
         Me.BtnDELETE.Caption = "Xóa"
         Me.BtnDELETE.Id = 3
-        Me.BtnDELETE.ImageOptions.Image = Global.DancePassion.My.Resources.Resources.deletegroupheader_32x321
+        Me.BtnDELETE.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.delete
         Me.BtnDELETE.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.deletetable
         Me.BtnDELETE.Name = "BtnDELETE"
         Me.BtnDELETE.Visibility = DevExpress.XtraBars.BarItemVisibility.Never

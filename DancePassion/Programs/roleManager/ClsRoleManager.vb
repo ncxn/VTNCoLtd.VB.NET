@@ -210,7 +210,7 @@ Public Class ClsRoleManager
         For i As Integer = 0 To RolesControlsAccessCollection.Count - 1
             Dim paraValue As Object = New Object() {RolesControlsAccessCollection(i).Role_name, RolesControlsAccessCollection(i).Control_name, RolesControlsAccessCollection(i).Access_name}
             Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
-            result = DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+            result = DBHelper.GetInstance.ExecuteNonQueryWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
         Next
 
         Return result > 0

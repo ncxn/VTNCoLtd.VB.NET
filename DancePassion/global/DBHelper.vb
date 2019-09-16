@@ -79,6 +79,12 @@ Public Class DBHelper
         Return cmd
     End Function
 
+    ''' <summary>
+    ''' Create parameter
+    ''' </summary>
+    ''' <param name="name"></param>
+    ''' <param name="value"></param>
+    ''' <returns>Single parameter</returns>
     Private Function AddParameter(ByVal name As String, ByVal value As Object) As MySqlParameter
         Try
             Dim Parameter = New MySqlParameter With {
@@ -86,13 +92,18 @@ Public Class DBHelper
                 .Value = value,
                 .Direction = ParameterDirection.Input
             }
-
             Return Parameter
         Catch ex As Exception
             Throw New Exception("Invalid parameter")
         End Try
     End Function
 
+    ''' <summary>
+    ''' Create list parameter
+    ''' </summary>
+    ''' <param name="name"></param>
+    ''' <param name="value"></param>
+    ''' <returns>List(of parameter)</returns>
     Public Function GetParameter(ByVal name() As String, ByVal value() As Object) As List(Of MySqlParameter)
         Try
             Dim parameters = New List(Of MySqlParameter)
@@ -106,13 +117,23 @@ Public Class DBHelper
         End Try
     End Function
 
+    ''' <summary>
+    ''' Get DataTable
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>DataTable</returns>
     Public Function GetDataTable(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As DataTable
+
         Dim dt As DataTable = New DataTable()
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
-        If parameters IsNot Nothing Then
-            cmd.Parameters.Add(parameters.ToArray())
-        End If
         Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+
+        If parameters IsNot Nothing Then
+            cmd.Parameters.AddRange(parameters.ToArray())
+        End If
+
         Try
             OpenConnection()
             adapter.Fill(dt)
@@ -121,19 +142,28 @@ Public Class DBHelper
         Finally
             CloseConnection()
         End Try
+
         Return dt
+
     End Function
 
+    ''' <summary>
+    ''' Get DataSet
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>DataSet</returns>
     Public Function GetDataSet(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As DataSet
 
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+        Dim ds = New DataSet()
+        Dim dataAdaper = New MySqlDataAdapter(cmd)
 
         If parameters IsNot Nothing Then
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
 
-        Dim ds = New DataSet()
-        Dim dataAdaper = New MySqlDataAdapter(cmd)
         Try
             OpenConnection()
             dataAdaper.Fill(ds)
@@ -142,28 +172,64 @@ Public Class DBHelper
         Finally
             CloseConnection()
         End Try
+
         Return ds
     End Function
 
+    ''' <summary>
+    ''' Get DataReader: must close connection after reading data!
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>DataReader</returns>
     Public Function GetDataReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As MySqlDataReader
-        OpenConnection()
+
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+
         If parameters IsNot Nothing Then
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
+
+        OpenConnection()
+
         Return cmd.ExecuteReader(CommandBehavior.CloseConnection)
+
     End Function
 
+    ''' <summary>
+    ''' Get ScalarValue (First column of first row)
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>First column of first row</returns>
     Public Function GetScalarValue(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
+
         Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
+
         If parameters IsNot Nothing Then
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
-        OpenConnection()
-        Return cmd.ExecuteScalar()
-        CloseConnection()
+
+        Try
+            OpenConnection()
+            Return cmd.ExecuteScalar()
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        Finally
+            CloseConnection()
+        End Try
+
     End Function
 
+    ''' <summary>
+    ''' Execute query and returns number of row effected
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>rows effected as Integer</returns>
     Public Function ExecuteNonQuery(ByVal commandText As String, ByVal commandType As CommandType, Optional ByVal parameters As List(Of MySqlParameter) = Nothing) As Integer
 
         Dim result As Integer = 0
@@ -186,10 +252,21 @@ Public Class DBHelper
 
     End Function
 
-    Public Function ExecuteNonQuerytWithTransaction(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
+    ''' <summary>
+    ''' Execute Query With Transaction
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>rows effected as Integer</returns>
+    Public Function ExecuteNonQueryWithTransaction(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As List(Of MySqlParameter) = Nothing) As Integer
+
         Dim result As Integer = 0
+
         BeginTransaction()
+
         Dim cmd As MySqlCommand = GetCommandWithTransaction(commandText, commandType)
+
         If parameters IsNot Nothing Then
             cmd.Parameters.AddRange(parameters.ToArray())
         End If
@@ -199,16 +276,25 @@ Public Class DBHelper
             CommitTransaction()
         Catch ex As Exception
             RollbackTransaction()
-            result = 0
+            Throw New Exception(ex.Message)
         Finally
             CloseConnection()
         End Try
 
         Return result
+
     End Function
-    ' Dưới là các function áp dụng cho commandtext = text, ví dụ:
-    ' "Select * from tblUser where userID = @userID and password = @password" 
-    ' Parameter phải dạng array và các phẩn tử phải có khoảng trắng (quan trọng)
+
+    ''' <summary>
+    ''' Execute Query commandType = commandType.text
+    ''' ex: "Select * from tblUsers where userID = @userID and password = @password"
+    ''' The argument must be an array of objects and there must be spaces between the elements.
+    ''' ex: parameters = new object{"para1", "para2", "para3"}
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>rows effected as Integer</returns>
     Public Function ExecuteNonQueryWithText(ByVal commandText As String, ByVal commandType As CommandType, Optional ByVal parameters As Object() = Nothing) As Integer
         OpenConnection()
         Dim result As Integer = 0
@@ -232,6 +318,16 @@ Public Class DBHelper
         Return result
     End Function
 
+    ''' <summary>
+    ''' Execute Query commandType = commandType.text
+    ''' ex: "Select * from tblUsers where userID = @userID and password = @password"
+    ''' The argument must be an array of objects and there must be spaces between the elements.
+    ''' ex: parameters = new object{"para1", "para2", "para3"}
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>first culumn of first row</returns>
     Public Function ExecuteScalar(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
         OpenConnection()
         Dim Result As Object = 0
@@ -255,6 +351,16 @@ Public Class DBHelper
         Return Result
     End Function
 
+    ''' <summary>
+    ''' Execute Query commandType = commandType.text
+    ''' ex: "Select * from tblUsers where userID = @userID and password = @password"
+    ''' The argument must be an array of objects and there must be spaces between the elements.
+    ''' ex: parameters = new object{"para1", "para2", "para3"}
+    ''' </summary>
+    ''' <param name="commandText"></param>
+    ''' <param name="commandType"></param>
+    ''' <param name="parameters"></param>
+    ''' <returns>first culumn of first row</returns>
     Public Function ExecuteReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
 
         Dim Result As MySqlDataReader

@@ -126,13 +126,10 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="BackstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 79</value>
-  </data>
-  <data name="BackstageViewClientControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>186, 63</value>
   </data>
   <data name="BackstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1150, 376</value>
+    <value>1040, 297</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BackstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
@@ -215,13 +212,13 @@
 </value>
   </data>
   <data name="Slide_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 280</value>
+    <value>0, 247</value>
   </data>
   <data name="Slide_menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="Slide_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1380, 456</value>
+    <value>1227, 361</value>
   </data>
   <data name="Slide_menu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -429,11 +426,8 @@
   <data name="roles.ItemInMenuAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
   </data>
-  <data name="UcEmailManager.Caption" xml:space="preserve">
-    <value>Gmail</value>
-  </data>
   <data name="outlook_email_btn.Caption" xml:space="preserve">
-    <value>Outlook</value>
+    <value>Khách hàng</value>
   </data>
   <data name="Dcom_SMS_btn.Caption" xml:space="preserve">
     <value>D-COM</value>
@@ -495,15 +489,15 @@
         dEluZGVudAhNYXhXaWR0aBJPd25lckFsbG93SHRtbFRleHQEVGV4dAQEBAAAAAEfRGV2RXhwcmVzcy5V
         dGlscy5EZWZhdWx0Qm9vbGVhbgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbg0AAAAoRGV2RXhwcmVzcy5V
         dGlscy5Ub29sVGlwSXRlbUltYWdlT3B0aW9ucwIAAAAICAECAAAAAfL////8////AgAAAAoJDwAAAAAA
-        AACLAQAAAQYQAAAACkPDtG5nIGPhu6UFCAAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVtBwAA
+        AAA8AQAAAQYQAAAACkPDtG5nIGPhu6UFCAAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVtBwAA
         AA1BbGxvd0h0bWxUZXh0BEljb24MSW1hZ2VPcHRpb25zCkxlZnRJbmRlbnQITWF4V2lkdGgST3duZXJB
         bGxvd0h0bWxUZXh0BFRleHQEBAQAAAABH0RldkV4cHJlc3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4DAAAA
         E1N5c3RlbS5EcmF3aW5nLkljb24NAAAAKERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9w
-        dGlvbnMCAAAACAgBAgAAAAHv/////P///wIAAAAKCRIAAAAGAAAAiwEAAAEGEwAAAIYBTmjhuq1wIHh1
+        dGlvbnMCAAAACAgBAgAAAAHv/////P///wIAAAAKCRIAAAAGAAAAPAEAAAEGEwAAAIYBTmjhuq1wIHh1
         4bqldCBk4buvIGxp4buHdSBjaG8gdG/DoG4gaOG7hyB0aOG7kW5nLg0KU+G7rSBk4bulbmcgY8OhYyBm
         b3JtIG3huqt1IGPDsyBz4bq1biDEkcaw4bujYyBjdW5nIGPhuqVwIGLhu59pIG5ow6AgcGjDoXQgdHJp
         4buDbi4FCgAAACVEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBTZXBhcmF0b3JJdGVtAAAAAAIAAAABDAAA
-        AAYAAAAB7P////z///8CAAAACgkVAAAABgAAAIsBAAABBhYAAAAKVlROY28uLEx0ZAUPAAAAKERldkV4
+        AAYAAAAB7P////z///8CAAAACgkVAAAABgAAADwBAAABBhYAAAAKVlROY28uLEx0ZAUPAAAAKERldkV4
         cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9wdGlvbnMFAAAACEltYWdlVXJpDFN2Z0ltYWdlU2l6
         ZQlBbGlnbm1lbnQKSW1hZ2VJbmRleBNJbWFnZVRvVGV4dERpc3RhbmNlAQQEAAATU3lzdGVtLkRyYXdp
         bmcuU2l6ZQ0AAAAmRGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgCAAAA
@@ -942,11 +936,14 @@
   <data name="UcControlsAccessManager.Caption" xml:space="preserve">
     <value>Add Functions</value>
   </data>
+  <data name="UcCustomer_Group_Manager.Caption" xml:space="preserve">
+    <value>Nhóm khách hàng</value>
+  </data>
   <data name="MainControlRibbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="MainControlRibbon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="RbpgDatabase.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1017,8 +1014,8 @@
   <data name="RbpGPeoples.Text" xml:space="preserve">
     <value>Nhân sự</value>
   </data>
-  <data name="RibbonPageGroup_Emails.Text" xml:space="preserve">
-    <value>Cấu hình email</value>
+  <data name="Rbpg_Customers.Text" xml:space="preserve">
+    <value>Khách hàng</value>
   </data>
   <data name="RibbonPageGroup_SMS.Text" xml:space="preserve">
     <value>Cấu hình SMS</value>
@@ -1081,16 +1078,16 @@
     <value>Development</value>
   </data>
   <data name="MainControlRibbon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1380, 280</value>
+    <value>1227, 247</value>
   </data>
   <data name="RibbonStatusBarOnMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 699</value>
+    <value>0, 568</value>
   </data>
   <data name="RibbonStatusBarOnMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="RibbonStatusBarOnMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1380, 37</value>
+    <value>1227, 40</value>
   </data>
   <data name="&gt;&gt;RibbonStatusBarOnMain.Name" xml:space="preserve">
     <value>RibbonStatusBarOnMain</value>
@@ -1126,10 +1123,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 23</value>
+    <value>8, 19</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1380, 736</value>
+    <value>1227, 608</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
@@ -3837,7 +3834,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -3915,12 +3912,6 @@
     <value>roles</value>
   </data>
   <data name="&gt;&gt;roles.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;UcEmailManager.Name" xml:space="preserve">
-    <value>UcEmailManager</value>
-  </data>
-  <data name="&gt;&gt;UcEmailManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;outlook_email_btn.Name" xml:space="preserve">
@@ -4223,6 +4214,12 @@
   <data name="&gt;&gt;UcControlsAccessManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;UcCustomer_Group_Manager.Name" xml:space="preserve">
+    <value>UcCustomer_Group_Manager</value>
+  </data>
+  <data name="&gt;&gt;UcCustomer_Group_Manager.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;RbpSystem.Name" xml:space="preserve">
     <value>RbpSystem</value>
   </data>
@@ -4247,10 +4244,10 @@
   <data name="&gt;&gt;RbpGPeoples.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_Emails.Name" xml:space="preserve">
-    <value>RibbonPageGroup_Emails</value>
+  <data name="&gt;&gt;Rbpg_Customers.Name" xml:space="preserve">
+    <value>Rbpg_Customers</value>
   </data>
-  <data name="&gt;&gt;RibbonPageGroup_Emails.Type" xml:space="preserve">
+  <data name="&gt;&gt;Rbpg_Customers.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RibbonPageGroup_SMS.Name" xml:space="preserve">

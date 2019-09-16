@@ -36,7 +36,6 @@ Partial Class FrmMain
         Me.UcRolesManager = New DevExpress.XtraBars.BarButtonItem()
         Me.UcUsersManager = New DevExpress.XtraBars.BarButtonItem()
         Me.roles = New DevExpress.XtraBars.BarButtonItem()
-        Me.UcEmailManager = New DevExpress.XtraBars.BarButtonItem()
         Me.outlook_email_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Dcom_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Twilio_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
@@ -87,11 +86,12 @@ Partial Class FrmMain
         Me.UcControlsManager = New DevExpress.XtraBars.BarButtonItem()
         Me.UcAccessManager = New DevExpress.XtraBars.BarButtonItem()
         Me.UcControlsAccessManager = New DevExpress.XtraBars.BarButtonItem()
+        Me.UcCustomer_Group_Manager = New DevExpress.XtraBars.BarButtonItem()
         Me.RbpSystem = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RbpgDatabase = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_Configuration = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpGPeoples = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPageGroup_Emails = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.Rbpg_Customers = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup_SMS = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RbpEventManagement = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RbpgCreateEvent = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -141,8 +141,8 @@ Partial Class FrmMain
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcEmailManager, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.UcEvent_Type_Manager, Me.UcEvents_Manager, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager})
-        Me.MainControlRibbon.MaxItemId = 48
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.UcEvent_Type_Manager, Me.UcEvents_Manager, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager, Me.UcCustomer_Group_Manager})
+        Me.MainControlRibbon.MaxItemId = 49
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
         Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpSystem, Me.RbpEventManagement, Me.RbpClubManager, Me.RbpSalesManager, Me.RbpDev})
@@ -267,18 +267,11 @@ Partial Class FrmMain
         Me.roles.ItemInMenuAppearance.Pressed.Options.UseFont = True
         Me.roles.Name = "roles"
         '
-        'UcEmailManager
-        '
-        resources.ApplyResources(Me.UcEmailManager, "UcEmailManager")
-        Me.UcEmailManager.Id = 12
-        Me.UcEmailManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.gmail
-        Me.UcEmailManager.Name = "UcEmailManager"
-        '
         'outlook_email_btn
         '
         resources.ApplyResources(Me.outlook_email_btn, "outlook_email_btn")
         Me.outlook_email_btn.Id = 13
-        Me.outlook_email_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.outlook
+        Me.outlook_email_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khachhang
         Me.outlook_email_btn.Name = "outlook_email_btn"
         '
         'Dcom_SMS_btn
@@ -624,9 +617,16 @@ Partial Class FrmMain
         Me.UcControlsAccessManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.listnumbers
         Me.UcControlsAccessManager.Name = "UcControlsAccessManager"
         '
+        'UcCustomer_Group_Manager
+        '
+        resources.ApplyResources(Me.UcCustomer_Group_Manager, "UcCustomer_Group_Manager")
+        Me.UcCustomer_Group_Manager.Id = 48
+        Me.UcCustomer_Group_Manager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.customer_group
+        Me.UcCustomer_Group_Manager.Name = "UcCustomer_Group_Manager"
+        '
         'RbpSystem
         '
-        Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgDatabase, Me.RibbonPageGroup_Configuration, Me.RbpGPeoples, Me.RibbonPageGroup_Emails, Me.RibbonPageGroup_SMS})
+        Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgDatabase, Me.RibbonPageGroup_Configuration, Me.RbpGPeoples, Me.Rbpg_Customers, Me.RibbonPageGroup_SMS})
         Me.RbpSystem.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.properties
         Me.RbpSystem.Name = "RbpSystem"
         Me.RbpSystem.Tag = "RbpSystem"
@@ -659,17 +659,15 @@ Partial Class FrmMain
         Me.RbpGPeoples.ItemLinks.Add(Me.UcUsersManager)
         Me.RbpGPeoples.ItemLinks.Add(Me.UcRoleManager)
         Me.RbpGPeoples.Name = "RbpGPeoples"
-        Me.RbpGPeoples.ShowCaptionButton = False
         Me.RbpGPeoples.Tag = "RbpGPeoples"
         resources.ApplyResources(Me.RbpGPeoples, "RbpGPeoples")
         '
-        'RibbonPageGroup_Emails
+        'Rbpg_Customers
         '
-        Me.RibbonPageGroup_Emails.ItemLinks.Add(Me.UcEmailManager)
-        Me.RibbonPageGroup_Emails.ItemLinks.Add(Me.outlook_email_btn)
-        Me.RibbonPageGroup_Emails.Name = "RibbonPageGroup_Emails"
-        Me.RibbonPageGroup_Emails.ShowCaptionButton = False
-        resources.ApplyResources(Me.RibbonPageGroup_Emails, "RibbonPageGroup_Emails")
+        Me.Rbpg_Customers.ItemLinks.Add(Me.UcCustomer_Group_Manager)
+        Me.Rbpg_Customers.ItemLinks.Add(Me.outlook_email_btn)
+        Me.Rbpg_Customers.Name = "Rbpg_Customers"
+        resources.ApplyResources(Me.Rbpg_Customers, "Rbpg_Customers")
         '
         'RibbonPageGroup_SMS
         '
@@ -887,8 +885,7 @@ Partial Class FrmMain
     Friend WithEvents UcUsersManager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents roles As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RbpGPeoples As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents RibbonPageGroup_Emails As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents UcEmailManager As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents Rbpg_Customers As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents outlook_email_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RibbonPageGroup_SMS As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents Dcom_SMS_btn As DevExpress.XtraBars.BarButtonItem
@@ -966,4 +963,5 @@ Partial Class FrmMain
     Friend WithEvents UcAccessManager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents UcControlsAccessManager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents UcUsersProfile As DevExpress.XtraBars.Ribbon.BackstageViewButtonItem
+    Friend WithEvents UcCustomer_Group_Manager As DevExpress.XtraBars.BarButtonItem
 End Class

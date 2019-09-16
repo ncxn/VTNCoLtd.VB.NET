@@ -1,5 +1,7 @@
 ﻿Public Class UcControlUpdate
+
     Public CurrentRecord As ControlsDTO
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -65,6 +67,7 @@
         TxtControls_parent.Properties.View.Columns("Control_type").Caption = "Phân loại"
         TxtControls_parent.Properties.View.Columns("Control_sort").Caption = "Sắp xếp"
     End Sub
+
 #End Region
 
 #Region " Test Sub or Function"
@@ -76,4 +79,5 @@
         End If
     End Sub
 #End Region
+
 End Class

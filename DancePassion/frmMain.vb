@@ -161,6 +161,30 @@ Public Class FrmMain
 
 #End Region
 
+#Region " Khách hàng"
+
+    Sub Customer_Group() Handles UcCustomer_Group_Manager.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcCustomer_Group_Manager
+        AddDocs(uc, "Nhóm khách hàng")
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
+
+#End Region
+
+#Region " Cấu hình"
+
+    Private Sub UcEmailManager_ItemClick(sender As Object, e As ItemClickEventArgs)
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcEmailManager
+        AddDocs(uc, "Cấu hình email")
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
+
+#End Region
+
+#End Region
+
 #Region " Phát triển"
     Private Sub BtnControls_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcControlsManager.ItemClick
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
@@ -182,19 +206,6 @@ Public Class FrmMain
         AddDocs(uc, "Quản lý chức năng")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
-
-#End Region
-
-#Region " Cấu hình"
-
-    Private Sub UcEmailManager_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcEmailManager.ItemClick
-        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
-        Dim uc As New UcEmailManager
-        AddDocs(uc, "Cấu hình email")
-        SplashScreenManager.CloseOverlayForm(handle)
-    End Sub
-
-#End Region
 
 #End Region
 

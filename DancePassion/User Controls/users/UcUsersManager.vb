@@ -40,6 +40,7 @@ Public Class UcUsersManager
     Private Sub Loaddata()
         Dim data = ClsUsers.GetInstance.GetDataTableUsers()
         GrdUsers.DataSource = data
+        GrvUsers.OptionsBehavior.ReadOnly = True
     End Sub
 
     Private Function GetUserDTO() As UsersDTO

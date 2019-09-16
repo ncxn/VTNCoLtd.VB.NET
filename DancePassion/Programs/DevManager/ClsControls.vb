@@ -124,7 +124,7 @@ Public Class ClsControls
         For i As Integer = 0 To Controls.Count - 1
             Dim paraValue As Object = New Object() {Controls(i).Control_name, Controls(i).Control_description, Controls(i).Control_parent, Controls(i).Control_type, Controls(i).Control_sort}
             Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
-            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+            result += DBHelper.GetInstance.ExecuteNonQueryWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
         Next
 
         Return result > 0
@@ -147,7 +147,7 @@ Public Class ClsControls
         For i As Integer = 0 To Controls.Count - 1
             Dim paraValue As Object = New Object() {Controls(i).Control_name, Controls(i).Control_description, Controls(i).Control_parent, Controls(i).Control_type, Controls(i).Control_sort}
             Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
-            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+            result += DBHelper.GetInstance.ExecuteNonQueryWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
         Next
 
         Return result > 0
@@ -171,7 +171,7 @@ Public Class ClsControls
         For i As Integer = 0 To Controls.Count - 1
             Dim paraValue As Object = New Object() {Controls(i).Control_name}
             Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
-            result += DBHelper.GetInstance.ExecuteNonQuerytWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
+            result += DBHelper.GetInstance.ExecuteNonQueryWithTransaction(strSQL, CommandType.StoredProcedure, parameters)
         Next
 
         Return result > 0

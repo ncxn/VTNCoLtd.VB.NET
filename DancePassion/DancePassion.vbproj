@@ -245,9 +245,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Programs\config\ClsConfig_Basic.vb" />
-    <Compile Include="Programs\config\clsMailServer.vb" />
-    <Compile Include="Programs\config\SMSconfig.vb" />
+    <Compile Include="Programs\Config\ClsConfig_Basic.vb" />
+    <Compile Include="Programs\Config\clsMailServer.vb" />
+    <Compile Include="Programs\Config\SMSconfig.vb" />
+    <Compile Include="Programs\Customers\ClsCustomers.vb" />
+    <Compile Include="Programs\Customers\ClsCustomer_Group.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsDocumentManagerHelper.vb" />
     <Compile Include="Programs\DevExpressHelper\ClsMessageHelper.vb" />
     <Compile Include="Programs\DevManager\ClsAccess.vb" />
@@ -256,6 +258,24 @@
     <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
     <Compile Include="Programs\EventSystem\ClsEvents.vb" />
     <Compile Include="Programs\EventSystem\ClsEvent_Type.vb" />
+    <Compile Include="User Controls\Customers\UcCustomer_Group_Add.Designer.vb">
+      <DependentUpon>UcCustomer_Group_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Customers\UcCustomer_Group_Add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Customers\UcCustomer_Group_Manager.Designer.vb">
+      <DependentUpon>UcCustomer_Group_Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Customers\UcCustomer_Group_Manager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Customers\UcCustomer_Group_Update.Designer.vb">
+      <DependentUpon>UcCustomer_Group_Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Customers\UcCustomer_Group_Update.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\EventSystem\UcEvents_Add.Designer.vb">
       <DependentUpon>UcEvents_Add.vb</DependentUpon>
     </Compile>
@@ -292,87 +312,87 @@
     <Compile Include="User Controls\EventSystem\UcEvent_Type_Update.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\organization\UcConfig_Basic.Designer.vb">
+    <Compile Include="User Controls\Organization\UcConfig_Basic.Designer.vb">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\organization\UcConfig_Basic.vb">
+    <Compile Include="User Controls\Organization\UcConfig_Basic.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\roles\UcRolesAdd.Designer.vb">
+    <Compile Include="User Controls\Roles\UcRolesAdd.Designer.vb">
       <DependentUpon>UcRolesAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\roles\UcRolesAdd.vb">
+    <Compile Include="User Controls\Roles\UcRolesAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Programs\users\ClsUsersConfirm.vb" />
-    <Compile Include="User Controls\devManager\UcControlsAccessManager.Designer.vb">
+    <Compile Include="Programs\Users\ClsUsersConfirm.vb" />
+    <Compile Include="User Controls\DevManager\UcControlsAccessManager.Designer.vb">
       <DependentUpon>UcControlsAccessManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcControlsAccessManager.vb">
+    <Compile Include="User Controls\DevManager\UcControlsAccessManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\devManager\UcAccessAdd.Designer.vb">
+    <Compile Include="User Controls\DevManager\UcAccessAdd.Designer.vb">
       <DependentUpon>UcAccessAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcAccessAdd.vb">
+    <Compile Include="User Controls\DevManager\UcAccessAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\devManager\UcAccessUpdate.Designer.vb">
+    <Compile Include="User Controls\DevManager\UcAccessUpdate.Designer.vb">
       <DependentUpon>UcAccessUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcAccessUpdate.vb">
+    <Compile Include="User Controls\DevManager\UcAccessUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\devManager\UcControlAdd.Designer.vb">
+    <Compile Include="User Controls\DevManager\UcControlAdd.Designer.vb">
       <DependentUpon>UcControlAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcControlAdd.vb">
+    <Compile Include="User Controls\DevManager\UcControlAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Programs\roleManager\ClsRoleManager.vb" />
-    <Compile Include="Programs\roles\ClsRoles.vb" />
-    <Compile Include="Programs\userroles\ClsUserToRoles.vb" />
-    <Compile Include="Programs\users\ClsUsers.vb" />
-    <Compile Include="User Controls\devManager\UcAccessManager.Designer.vb">
+    <Compile Include="Programs\RoleManager\ClsRoleManager.vb" />
+    <Compile Include="Programs\Roles\ClsRoles.vb" />
+    <Compile Include="Programs\UserRoles\ClsUserToRoles.vb" />
+    <Compile Include="Programs\Users\ClsUsers.vb" />
+    <Compile Include="User Controls\DevManager\UcAccessManager.Designer.vb">
       <DependentUpon>UcAccessManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcAccessManager.vb">
+    <Compile Include="User Controls\DevManager\UcAccessManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\devManager\UcControlsManager.Designer.vb">
+    <Compile Include="User Controls\DevManager\UcControlsManager.Designer.vb">
       <DependentUpon>UcControlsManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcControlsManager.vb">
+    <Compile Include="User Controls\DevManager\UcControlsManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\devManager\UcControlUpdate.Designer.vb">
+    <Compile Include="User Controls\DevManager\UcControlUpdate.Designer.vb">
       <DependentUpon>UcControlUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\devManager\UcControlUpdate.vb">
+    <Compile Include="User Controls\DevManager\UcControlUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\email\UcEmailManager.Designer.vb">
+    <Compile Include="User Controls\Email\UcEmailManager.Designer.vb">
       <DependentUpon>UcEmailManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\email\UcEmailManager.vb">
+    <Compile Include="User Controls\Email\UcEmailManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\roleManager\UcRoleManager.Designer.vb">
+    <Compile Include="User Controls\RoleManager\UcRoleManager.Designer.vb">
       <DependentUpon>UcRoleManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\roleManager\UcRoleManager.vb">
+    <Compile Include="User Controls\RoleManager\UcRoleManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\roles\UcRolesManager.Designer.vb">
+    <Compile Include="User Controls\Roles\UcRolesManager.Designer.vb">
       <DependentUpon>UcRolesManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\roles\UcRolesManager.vb">
+    <Compile Include="User Controls\Roles\UcRolesManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\roles\UcRolesUpdate.Designer.vb">
+    <Compile Include="User Controls\Roles\UcRolesUpdate.Designer.vb">
       <DependentUpon>UcRolesUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\roles\UcRolesUpdate.vb">
+    <Compile Include="User Controls\Roles\UcRolesUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Controls\UcBase.Designer.vb">
@@ -381,40 +401,40 @@
     <Compile Include="User Controls\UcBase.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\users\UcUserChangePass.Designer.vb">
+    <Compile Include="User Controls\Users\UcUserChangePass.Designer.vb">
       <DependentUpon>UcUserChangePass.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\users\UcUserChangePass.vb">
+    <Compile Include="User Controls\Users\UcUserChangePass.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersLogin.Designer.vb">
+    <Compile Include="User Controls\Users\UcUsersLogin.Designer.vb">
       <DependentUpon>UcUsersLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersLogin.vb">
+    <Compile Include="User Controls\Users\UcUsersLogin.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersManager.Designer.vb">
+    <Compile Include="User Controls\Users\UcUsersManager.Designer.vb">
       <DependentUpon>UcUsersManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersManager.vb">
+    <Compile Include="User Controls\Users\UcUsersManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersAdd.Designer.vb">
+    <Compile Include="User Controls\Users\UcUsersAdd.Designer.vb">
       <DependentUpon>UcUsersAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersAdd.vb">
+    <Compile Include="User Controls\Users\UcUsersAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersUpdate.Designer.vb">
+    <Compile Include="User Controls\Users\UcUsersUpdate.Designer.vb">
       <DependentUpon>UcUsersUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\users\UcUsersUpdate.vb">
+    <Compile Include="User Controls\Users\UcUsersUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\users\UcUserProfiles.Designer.vb">
+    <Compile Include="User Controls\Users\UcUserProfiles.Designer.vb">
       <DependentUpon>UcUserProfiles.vb</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\users\UcUserProfiles.vb">
+    <Compile Include="User Controls\Users\UcUserProfiles.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <EmbeddedResource Include="Forms\Loading.resx">
@@ -445,6 +465,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Customers\UcCustomer_Group_Add.resx">
+      <DependentUpon>UcCustomer_Group_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Customers\UcCustomer_Group_Manager.resx">
+      <DependentUpon>UcCustomer_Group_Manager.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls\EventSystem\UcEvents_Add.resx">
       <DependentUpon>UcEvents_Add.vb</DependentUpon>
     </EmbeddedResource>
@@ -463,64 +489,64 @@
     <EmbeddedResource Include="User Controls\EventSystem\UcEvent_Type_Update.resx">
       <DependentUpon>UcEvent_Type_Update.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\organization\UcConfig_Basic.resx">
+    <EmbeddedResource Include="User Controls\Organization\UcConfig_Basic.resx">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\roles\UcRolesAdd.resx">
+    <EmbeddedResource Include="User Controls\Roles\UcRolesAdd.resx">
       <DependentUpon>UcRolesAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcControlsAccessManager.resx">
+    <EmbeddedResource Include="User Controls\DevManager\UcControlsAccessManager.resx">
       <DependentUpon>UcControlsAccessManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcAccessAdd.resx">
+    <EmbeddedResource Include="User Controls\DevManager\UcAccessAdd.resx">
       <DependentUpon>UcAccessAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcAccessManager.resx">
+    <EmbeddedResource Include="User Controls\DevManager\UcAccessManager.resx">
       <DependentUpon>UcAccessManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcAccessUpdate.resx">
+    <EmbeddedResource Include="User Controls\DevManager\UcAccessUpdate.resx">
       <DependentUpon>UcAccessUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcControlAdd.resx">
+    <EmbeddedResource Include="User Controls\DevManager\UcControlAdd.resx">
       <DependentUpon>UcControlAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcControlsManager.resx">
+    <EmbeddedResource Include="User Controls\DevManager\UcControlsManager.resx">
       <DependentUpon>UcControlsManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\devManager\UcControlUpdate.resx">
+    <EmbeddedResource Include="User Controls\DevManager\UcControlUpdate.resx">
       <DependentUpon>UcControlUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\email\UcEmailManager.resx">
+    <EmbeddedResource Include="User Controls\Email\UcEmailManager.resx">
       <DependentUpon>UcEmailManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\roleManager\UcRoleManager.resx">
+    <EmbeddedResource Include="User Controls\RoleManager\UcRoleManager.resx">
       <DependentUpon>UcRoleManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\roles\UcRolesManager.resx">
+    <EmbeddedResource Include="User Controls\Roles\UcRolesManager.resx">
       <DependentUpon>UcRolesManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\roles\UcRolesUpdate.resx">
+    <EmbeddedResource Include="User Controls\Roles\UcRolesUpdate.resx">
       <DependentUpon>UcRolesUpdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\UcBase.resx">
       <DependentUpon>UcBase.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\users\UcUserChangePass.resx">
+    <EmbeddedResource Include="User Controls\Users\UcUserChangePass.resx">
       <DependentUpon>UcUserChangePass.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\users\UcUsersLogin.resx">
+    <EmbeddedResource Include="User Controls\Users\UcUsersLogin.resx">
       <DependentUpon>UcUsersLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\users\UcUsersManager.resx">
+    <EmbeddedResource Include="User Controls\Users\UcUsersManager.resx">
       <DependentUpon>UcUsersManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\users\UcUsersAdd.resx">
+    <EmbeddedResource Include="User Controls\Users\UcUsersAdd.resx">
       <DependentUpon>UcUsersAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\users\UcUsersUpdate.resx">
+    <EmbeddedResource Include="User Controls\Users\UcUsersUpdate.resx">
       <DependentUpon>UcUsersUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Controls\users\UcUserProfiles.resx">
+    <EmbeddedResource Include="User Controls\Users\UcUserProfiles.resx">
       <DependentUpon>UcUserProfiles.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
@@ -559,42 +585,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data add-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data copy-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data delete-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data down-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data Edit-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data Error-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data Find-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data information-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data refresh-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data replace -WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data setting-WF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data warning-WF.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eSMS.svg" />
@@ -756,12 +746,6 @@
     <None Include="Resources\deletequery.svg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\deletegroupheader_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\deletegroupheader_32x321.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\removegroupheader1.svg" />
   </ItemGroup>
   <ItemGroup>
@@ -790,9 +774,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\markcomplete1.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete1.svg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\actions_add.svg" />
@@ -826,6 +807,9 @@
     <None Include="Resources\travel_hotel.svg" />
     <None Include="Resources\bo_address.svg" />
     <None Include="Resources\warning.svg" />
+    <None Include="Resources\customer_group.png" />
+    <None Include="Resources\customer-group.svg" />
+    <None Include="Resources\customer-group1.svg" />
     <Content Include="Toma4025-Flower-Flower.ico" />
     <None Include="Resources\security_key.svg" />
     <None Include="Resources\actions_send.svg" />
