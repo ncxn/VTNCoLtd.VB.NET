@@ -36,7 +36,7 @@ Partial Class FrmMain
         Me.UcRolesManager = New DevExpress.XtraBars.BarButtonItem()
         Me.UcUsersManager = New DevExpress.XtraBars.BarButtonItem()
         Me.roles = New DevExpress.XtraBars.BarButtonItem()
-        Me.outlook_email_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.UcCustomer_Manager = New DevExpress.XtraBars.BarButtonItem()
         Me.Dcom_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.Twilio_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.eSMS__SMS_btn = New DevExpress.XtraBars.BarButtonItem()
@@ -141,7 +141,7 @@ Partial Class FrmMain
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.outlook_email_btn, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.UcEvent_Type_Manager, Me.UcEvents_Manager, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager, Me.UcCustomer_Group_Manager})
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcCustomer_Manager, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.UcEvent_Type_Manager, Me.UcEvents_Manager, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager, Me.UcCustomer_Group_Manager})
         Me.MainControlRibbon.MaxItemId = 49
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
@@ -267,12 +267,12 @@ Partial Class FrmMain
         Me.roles.ItemInMenuAppearance.Pressed.Options.UseFont = True
         Me.roles.Name = "roles"
         '
-        'outlook_email_btn
+        'UcCustomer_Manager
         '
-        resources.ApplyResources(Me.outlook_email_btn, "outlook_email_btn")
-        Me.outlook_email_btn.Id = 13
-        Me.outlook_email_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khachhang
-        Me.outlook_email_btn.Name = "outlook_email_btn"
+        resources.ApplyResources(Me.UcCustomer_Manager, "UcCustomer_Manager")
+        Me.UcCustomer_Manager.Id = 13
+        Me.UcCustomer_Manager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khachhang
+        Me.UcCustomer_Manager.Name = "UcCustomer_Manager"
         '
         'Dcom_SMS_btn
         '
@@ -665,7 +665,7 @@ Partial Class FrmMain
         'Rbpg_Customers
         '
         Me.Rbpg_Customers.ItemLinks.Add(Me.UcCustomer_Group_Manager)
-        Me.Rbpg_Customers.ItemLinks.Add(Me.outlook_email_btn)
+        Me.Rbpg_Customers.ItemLinks.Add(Me.UcCustomer_Manager)
         Me.Rbpg_Customers.Name = "Rbpg_Customers"
         resources.ApplyResources(Me.Rbpg_Customers, "Rbpg_Customers")
         '
@@ -886,7 +886,7 @@ Partial Class FrmMain
     Friend WithEvents roles As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RbpGPeoples As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents Rbpg_Customers As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-    Friend WithEvents outlook_email_btn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents UcCustomer_Manager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RibbonPageGroup_SMS As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents Dcom_SMS_btn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents Twilio_SMS_btn As DevExpress.XtraBars.BarButtonItem

@@ -170,6 +170,13 @@ Public Class FrmMain
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
+    Sub Customer() Handles UcCustomer_Manager.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcCustomer_Manager
+        AddDocs(uc, "Quản lý khách hàng")
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
+
 #End Region
 
 #Region " Cấu hình"

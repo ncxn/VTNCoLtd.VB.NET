@@ -1,4 +1,5 @@
 ﻿Imports DancePassion
+Imports DevExpress.XtraEditors
 Imports DevExpress.XtraSplashScreen
 
 Public Class UcEvent_Type_Manager
@@ -30,7 +31,11 @@ Public Class UcEvent_Type_Manager
     End Sub
 
     Private Sub BtnDELETE_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnDELETE.ItemClick
-        DeleteModel()
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
+        If DeleteModel() Then
+            Grv.DeleteRow(Grv.FocusedRowHandle)
+        End If
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Private Sub BtnREFRESH_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnREFRESH.ItemClick
@@ -75,7 +80,14 @@ Public Class UcEvent_Type_Manager
     End Function
 
     Private Function DeleteModel() As Boolean
-        Return ClsEvent_Type.GetInstance.Delete(GetModel())
+
+        Try
+            ClsEvent_Type.GetInstance.Delete(GetModel())
+            Return True
+        Catch ex As Exception
+            XtraMessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
 
     End Function
 

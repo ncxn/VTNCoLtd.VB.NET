@@ -1,16 +1,18 @@
 ﻿Imports DancePassion
+Imports DevExpress.XtraEditors
+Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraSplashScreen
 
 Public Class UcCustomer_Group_Add
 
-    Private _Customer_group_collection As Customer_GroupCollection
+    Private _customer_group As New Customer_GroupCollection
 
-    Public Property Customer_group_collection As Customer_GroupCollection
+    Public Property CustomerGroup As Customer_GroupCollection
         Get
-            Return If(_Customer_group_collection, ClsCustomer_Group.GetInstance.GetList())
+            Return _customer_group
         End Get
         Set(value As Customer_GroupCollection)
-            _Customer_group_collection = value
+            _customer_group = value
         End Set
     End Property
 
@@ -21,13 +23,25 @@ Public Class UcCustomer_Group_Add
 
         ' Add any initialization after the InitializeComponent() call.
         HasAccess(Me.Name)
+
     End Sub
 
 #Region " Form"
 
     Sub OK() Handles BtnOK.ItemClick
         Dim handle = SplashScreenManager.ShowOverlayForm(Me)
-        InsertModel()
+        If InsertModel() Then
+            Cancel()
+        End If
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
+
+    Sub OKAndNew() Handles BtnOKANDNEW.ItemClick
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
+        If InsertModel() Then
+            ResetForm()
+            GetSourceCustomer()
+        End If
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
@@ -35,6 +49,18 @@ Public Class UcCustomer_Group_Add
         If RemoveTab IsNot Nothing Then
             RemoveTab()
         End If
+    End Sub
+
+    Private Sub TxtCustomer_Group_Parent_GotFocus(sender As Object, e As EventArgs) Handles TxtCustomer_Group_Parent.GotFocus
+        If CustomerGroup.Count > 0 Then
+            LoadSearchLookup()
+        Else
+            Dim handle = SplashScreenManager.ShowOverlayForm(Me)
+            GetSourceCustomer()
+            SplashScreenManager.CloseOverlayForm(handle)
+            LoadSearchLookup()
+        End If
+
     End Sub
 
 #End Region
@@ -55,7 +81,7 @@ Public Class UcCustomer_Group_Add
         If String.IsNullOrEmpty(TxtCustomer_Group_Parent.Text) Then
             Return 0
         Else
-            Return CInt(TxtCustomer_Group_Parent.Text)
+            Return CInt(TxtCustomer_Group_Parent.EditValue)
         End If
     End Function
 
@@ -63,27 +89,42 @@ Public Class UcCustomer_Group_Add
         Return Not String.IsNullOrEmpty(TxtCustomer_Group_Name.Text)
     End Function
 
-    Private Sub InsertModel()
+    Sub ResetForm()
+        TxtCustomer_Group_Name.Text = String.Empty
+        TxtCustomer_Group_Name.Text = 0
+    End Sub
+
+    Private Function InsertModel() As Boolean
         If ValidateInput() Then
             Try
                 ClsCustomer_Group.GetInstance.Insert(GetModel())
+                Return True
             Catch ex As Exception
-                MessageBox.Show(ex.Message)
+                XtraMessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return False
             End Try
+        Else
+            Return False
         End If
-    End Sub
+    End Function
 
-    Sub LoadSearchLookup() Handles Me.Load
-        TxtCustomer_Group_Parent.Properties.DataSource = ClsCustomer_Group.GetInstance.GetList()
+    Sub LoadSearchLookup()
+        TxtCustomer_Group_Parent.Properties.DataSource = CustomerGroup
         TxtCustomer_Group_Parent.Properties.ValueMember = "Customer_group_id"
         TxtCustomer_Group_Parent.Properties.DisplayMember = "Customer_group_name"
         TxtCustomer_Group_Parent.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
+
         TxtCustomer_Group_Parent.Properties.PopulateViewColumns()
+        TxtCustomer_Group_Parent.Properties.BestFitMode = BestFitMode.BestFit
+        TxtCustomer_Group_Parent.Properties.View.Columns("Customer_group_id").Width = 50
         TxtCustomer_Group_Parent.Properties.View.Columns("Customer_group_id").Caption = "Mã nhóm khách hàng"
         TxtCustomer_Group_Parent.Properties.View.Columns("Customer_group_name").Caption = "Tên nhóm khách hàng"
         TxtCustomer_Group_Parent.Properties.View.Columns("Customer_group_parent").Visible = False
     End Sub
 
+    Sub GetSourceCustomer()
+        _customer_group = ClsCustomer_Group.GetInstance.GetList()
+    End Sub
 #End Region
 
 End Class

@@ -426,7 +426,7 @@
   <data name="roles.ItemInMenuAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
   </data>
-  <data name="outlook_email_btn.Caption" xml:space="preserve">
+  <data name="UcCustomer_Manager.Caption" xml:space="preserve">
     <value>Khách hàng</value>
   </data>
   <data name="Dcom_SMS_btn.Caption" xml:space="preserve">
@@ -3914,10 +3914,10 @@
   <data name="&gt;&gt;roles.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;outlook_email_btn.Name" xml:space="preserve">
-    <value>outlook_email_btn</value>
+  <data name="&gt;&gt;UcCustomer_Manager.Name" xml:space="preserve">
+    <value>UcCustomer_Manager</value>
   </data>
-  <data name="&gt;&gt;outlook_email_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;UcCustomer_Manager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;Dcom_SMS_btn.Name" xml:space="preserve">

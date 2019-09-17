@@ -4,86 +4,96 @@ Imports MySql.Data.MySqlClient
 ''' Generate model for basic config 
 ''' </summary>
 Public Class Customer_DTO
-    Private _config_basic_oId As Integer
-    Private _config_basic_oName As String
-    Private _config_basic_oSlogan As String
-    Private _config_basic_oAddress As String
-    Private _config_basic_oEmail As String
-    Private _config_basic_oTaxCode As String
+    Private _Customer_Id As Integer
+    Private _Customer_Name As String
+    Private _Customer_Address As String
+    Private _Customer_Phone As String
+    Private _Customer_Email As String
+    Private _Customer_Group_Id As Integer
+    Private _Customer_Expand_Info_Id As Integer
 
-    Public Property Config_basic_oId As Integer
+    Public Property Customer_Id As Integer
         Get
-            Return _config_basic_oId
+            Return _Customer_Id
         End Get
         Set(value As Integer)
-            _config_basic_oId = value
+            _Customer_Id = value
         End Set
     End Property
 
-    Public Property Config_basic_oName As String
+    Public Property Customer_Name As String
         Get
-            Return _config_basic_oName
+            Return _Customer_Name
         End Get
         Set(value As String)
-            _config_basic_oName = value
+            _Customer_Name = value
         End Set
     End Property
 
-    Public Property Config_basic_oSlogan As String
+    Public Property Customer_Address As String
         Get
-            Return _config_basic_oSlogan
+            Return _Customer_Address
         End Get
         Set(value As String)
-            _config_basic_oSlogan = value
+            _Customer_Address = value
         End Set
     End Property
 
-    Public Property Config_basic_oAddress As String
+    Public Property Customer_Phone As String
         Get
-            Return _config_basic_oAddress
+            Return _Customer_Phone
         End Get
         Set(value As String)
-            _config_basic_oAddress = value
+            _Customer_Phone = value
         End Set
     End Property
 
-    Public Property Config_basic_oEmail As String
+    Public Property Customer_Email As String
         Get
-            Return _config_basic_oEmail
+            Return _Customer_Email
         End Get
         Set(value As String)
-            _config_basic_oEmail = value
+            _Customer_Email = value
         End Set
     End Property
 
-    Public Property Config_basic_oTaxCode As String
+    Public Property Customer_Group_Id As Integer
         Get
-            Return _config_basic_oTaxCode
+            Return _Customer_Group_Id
         End Get
-        Set(value As String)
-            _config_basic_oTaxCode = value
+        Set(value As Integer)
+            _Customer_Group_Id = value
+        End Set
+    End Property
+
+    Public Property Customer_Expand_Info_Id As Integer
+        Get
+            Return _Customer_Expand_Info_Id
+        End Get
+        Set(value As Integer)
+            _Customer_Expand_Info_Id = value
         End Set
     End Property
 End Class
 
 ''' <summary>
-''' Share current config basic
+''' Share current Customer
 ''' </summary>
 Public Class CurrentCustomer
-    Private Shared _config_basic As Customer_DTO
+    Private Shared _Customer As Customer_DTO
 
-    Public Shared Property Config_basic As Customer_DTO
+    Public Shared Property Customer As Customer_DTO
         Get
-            Return _config_basic
+            Return _Customer
         End Get
         Set(value As Customer_DTO)
-            _config_basic = value
+            _Customer = value
         End Set
     End Property
 End Class
 
 ''' <summary>
-''' Get list of Config_Basic (Collection)
+''' Get list of Model List(of T)
 ''' </summary>
 Public Class CustomerCollection
     Inherits List(Of Customer_DTO)
@@ -106,36 +116,37 @@ Public Class ClsCustomers
     End Function
 
     ''' <summary>
-    ''' Get datatable of Config_Basic
+    ''' Get DataTable
     ''' </summary>
     ''' <returns>Datatable</returns>
     Public Function GetDataTable() As DataTable
-        Dim Config_Basic As DataTable = DBHelper.GetInstance.GetDataTable("procConfig_basic_GetAll", CommandType.StoredProcedure)
-        Return Config_Basic
+        Dim DataTable As DataTable = DBHelper.GetInstance.GetDataTable("usp_tblCustomers_Select_All", CommandType.StoredProcedure)
+        Return DataTable
     End Function
 
     ''' <summary>
     ''' Get list(of Model)
     ''' </summary>
     ''' <returns>Collection</returns>
-    Public Function GetList() As Config_BasicCollection
-        Dim Config_Basic_List As New Config_BasicCollection
-        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("procConfig_basic_GetAll", CommandType.StoredProcedure)
+    Public Function GetList() As CustomerCollection
+        Dim ListModel As New CustomerCollection
+        Dim Reader As MySqlDataReader = DBHelper.GetInstance.GetDataReader("usp_tblCustomers_Select_All", CommandType.StoredProcedure)
 
         While Reader.Read()
-            Dim objConfig_Basic As New Config_Basic_DTO With {
-                .Config_basic_oId = Reader(0).ToString(),
-                .Config_basic_oName = Reader(1).ToString(),
-                .Config_basic_oSlogan = Reader(2).ToString(),
-                .Config_basic_oAddress = Reader(3).ToString(),
-                .Config_basic_oEmail = Reader(4).ToString(),
-                .Config_basic_oTaxCode = Reader(5).ToString()
+            Dim Model As New Customer_DTO With {
+                .Customer_Id = Reader(0).ToString(),
+                .Customer_Name = Reader(1).ToString(),
+                .Customer_Address = Reader(2).ToString(),
+                .Customer_Phone = Reader(3).ToString(),
+                .Customer_Email = Reader(4).ToString(),
+                .Customer_Group_Id = Reader(5).ToString(),
+                .Customer_Expand_Info_Id = Reader(6).ToString()
             }
-            Config_Basic_List.Add(objConfig_Basic)
+            ListModel.Add(Model)
         End While
         Reader.Close()
 
-        Return Config_Basic_List
+        Return ListModel
 
     End Function
 

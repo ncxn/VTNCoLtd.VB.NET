@@ -11,20 +11,27 @@
         HasAccess(Me.Name)
     End Sub
 
-#Region " Action controls"
+#Region " Form"
     Private Sub UcControlUpdate_Load(sender As Object, e As EventArgs) Handles Me.Load
-        BtnOK.Caption = "Lưu"
         LoadData()
         LookupEdit()
         TxtControls_name.Enabled = False
     End Sub
 
     Private Sub BtnOk_itemClick() Handles BtnOK.ItemClick
-        UpdateDB()
+        If UpdateDB() Then
+            If RemoveTab IsNot Nothing Then
+                RemoveTab()
+            End If
+        End If
+    End Sub
+
+    Sub Cancel() Handles BtnCANCEL.ItemClick
         If RemoveTab IsNot Nothing Then
             RemoveTab()
         End If
     End Sub
+
 #End Region
 
 #Region " Xử lý dữ liệu"
@@ -41,7 +48,7 @@
         End If
     End Sub
 
-    Private Sub UpdateDB()
+    Private Function UpdateDB() As Boolean
         Dim data As New ControlsDTO With {
             .Control_name = TxtControls_name.Text.ToString,
             .Control_description = TxtControls_description.Text.ToString,
@@ -49,10 +56,9 @@
             .Control_type = TxtControls_type.Text.ToString,
             .Control_sort = CInt(TxtControls_sort.Text)
         }
-        If ClsControls.GetInstance.UpdateControls(data) Then
-            MessageBox.Show("Thành công")
-        End If
-    End Sub
+
+        Return ClsControls.GetInstance.UpdateControls(data)
+    End Function
 
     Private Sub LookupEdit()
         TxtControls_parent.Properties.DataSource = UCControlsManager.ControlColection

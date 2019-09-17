@@ -276,6 +276,12 @@
     <Compile Include="User Controls\Customers\UcCustomer_Group_Update.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="User Controls\Customers\UcCustomer_Manager.Designer.vb">
+      <DependentUpon>UcCustomer_Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Customers\UcCustomer_Manager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\EventSystem\UcEvents_Add.Designer.vb">
       <DependentUpon>UcEvents_Add.vb</DependentUpon>
     </Compile>
@@ -470,6 +476,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\Customers\UcCustomer_Group_Manager.resx">
       <DependentUpon>UcCustomer_Group_Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Customers\UcCustomer_Group_Update.resx">
+      <DependentUpon>UcCustomer_Group_Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Customers\UcCustomer_Manager.resx">
+      <DependentUpon>UcCustomer_Manager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\EventSystem\UcEvents_Add.resx">
       <DependentUpon>UcEvents_Add.vb</DependentUpon>

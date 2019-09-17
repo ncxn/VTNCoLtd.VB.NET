@@ -145,17 +145,25 @@ Public Class ClsCustomer_Group
     End Function
 
     Public Function Update(Model As Customer_Group_DTO) As Boolean
-        Dim strSQL = "usp_tblCustomer_groups_Update"
 
+        Dim strSQL = "usp_tblCustomer_groups_Update"
+        Dim result As Integer
         Dim paraName() As String = {"p_customer_group_id", "p_customer_group_name", "p_customer_group_parent"}
         Dim paraValue As Object = New Object() {
             Model.Customer_group_id,
             Model.Customer_group_name,
             Model.Customer_group_parent
         }
-        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
-        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+
+        Try
+            Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+            result = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+
         Return result > 0
+
     End Function
 
     Public Function Delete(id As Integer) As Boolean
@@ -168,4 +176,16 @@ Public Class ClsCustomer_Group
         Return result > 0
 
     End Function
+
+    Public Function Delete(Model As Customer_Group_DTO) As Boolean
+        Dim strSQL = "usp_tblCustomer_groups_Delete"
+
+        Dim paraName() As String = {"p_customer_group_id"}
+        Dim paraValue As Object = New Object() {Model.Customer_group_id}
+        Dim parameters = DBHelper.GetInstance.GetParameter(paraName, paraValue)
+        Dim result As Integer = DBHelper.GetInstance.ExecuteNonQuery(strSQL, CommandType.StoredProcedure, parameters)
+        Return result > 0
+
+    End Function
+
 End Class
