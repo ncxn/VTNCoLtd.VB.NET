@@ -160,6 +160,9 @@
   <data name="security_key" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\security_key.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="outlook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outlook1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="lophoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lophoc.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -184,9 +187,6 @@
   <data name="markcomplete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\markcomplete.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="listnumbers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\listnumbers.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="addcalculatedfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addcalculatedfield.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -205,8 +205,8 @@
   <data name="doanhthu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\doanhthu.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="outlook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\outlook1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="hocvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hocvien.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="donhangmua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\donhangmua.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -223,8 +223,8 @@
   <data name="pivottablecalculationsfieldsitemssetsgroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pivottablecalculationsfieldsitemssetsgroup.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="danhmucloaiSP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\danhmucloaiSP.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="listnumbers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listnumbers.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="deletetable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deletetable.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -253,11 +253,11 @@
   <data name="removegroupheader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\removegroupheader.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="hocvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hocvien.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="updatetableofcontents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updatetableofcontents.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="travel_hotel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\travel_hotel.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="danhmucloaiSP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\danhmucloaiSP.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="groupbyresource" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\groupbyresource.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -274,9 +274,6 @@
   <data name="printlayoutview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\printlayoutview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="updatetableofcontents" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updatetableofcontents.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="thanhtoanNCC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thanhtoanNCC.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -291,6 +288,9 @@
   </data>
   <data name="bo_statemachine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo_statemachine.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="travel_hotel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\travel_hotel.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="twilio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\twilio1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -334,7 +334,7 @@
   <data name="eSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eSMS1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="customer-group" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer-group1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

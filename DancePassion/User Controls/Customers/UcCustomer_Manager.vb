@@ -1,4 +1,5 @@
 ﻿Imports DancePassion
+Imports DevExpress.XtraSplashScreen
 
 Public Class UcCustomer_Manager
 
@@ -34,19 +35,39 @@ Public Class UcCustomer_Manager
     End Sub
 
     Sub Add() Handles BtnCREATE.ItemClick
-
+        If AddDocs IsNot Nothing Then
+            AddDocs(New UcCustomer_Add, "Thêm khách hàng")
+        End If
     End Sub
 
     Sub Edit() Handles BtnEDIT.ItemClick
-
+        Dim Uc As New UcCustomer_Update With {
+        .Cmodel = GetModel(),
+        .Customer = Customer
+        }
+        If AddDocs IsNot Nothing Then
+            AddDocs(Uc, "Sửa khách hàng")
+        End If
     End Sub
 
-    Sub Del() Handles BtnDELETE.ItemClick
-
+    Sub Delete() Handles BtnDELETE.ItemClick
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
+        If ClsCustomers.GetInstance.Delete(GetModel()) Then
+            Grv.DeleteRow(Grv.FocusedRowHandle)
+        End If
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Sub ReLoad() Handles BtnREFRESH.ItemClick
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
+        LoadData()
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
 
+    Sub Cancel() Handles BtnCANCEL.ItemClick
+        If RemoveTab IsNot Nothing Then
+            RemoveTab()
+        End If
     End Sub
 
 #End Region
@@ -89,7 +110,6 @@ Public Class UcCustomer_Manager
     Function GetModel() As Customer_DTO
         Return Grv.GetFocusedRow()
     End Function
-
 
 #End Region
 

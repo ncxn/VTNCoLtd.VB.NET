@@ -621,7 +621,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.UcCustomer_Group_Manager, "UcCustomer_Group_Manager")
         Me.UcCustomer_Group_Manager.Id = 48
-        Me.UcCustomer_Group_Manager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.customer_group
+        Me.UcCustomer_Group_Manager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.group
         Me.UcCustomer_Group_Manager.Name = "UcCustomer_Group_Manager"
         '
         'RbpSystem
