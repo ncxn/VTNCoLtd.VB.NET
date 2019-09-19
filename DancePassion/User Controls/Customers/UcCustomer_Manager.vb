@@ -11,11 +11,13 @@ Public Class UcCustomer_Manager
         ' Add any initialization after the InitializeComponent() call.
         HasAccess(Me.Name)
         HasRoles(Me.Name)
+
     End Sub
 
 #Region " Properties"
 
     Private _Customer As New CustomerCollection
+    Private _Customer_Group As New Customer_GroupCollection
 
     Public Property Customer As CustomerCollection
         Get
@@ -26,24 +28,38 @@ Public Class UcCustomer_Manager
         End Set
     End Property
 
+    Public Property Customer_Group As Customer_GroupCollection
+        Get
+            Return _Customer_Group
+        End Get
+        Set(value As Customer_GroupCollection)
+            _Customer_Group = value
+        End Set
+    End Property
+
 #End Region
 
 #Region " Form"
 
     Sub LoadData() Handles Me.Load
+        GetCustomerSource()
+        GetCustomerGroupSource()
         GridLoad()
     End Sub
 
     Sub Add() Handles BtnCREATE.ItemClick
+        Dim Uc As New UcCustomer_Add With {
+            .Customer_Group = Customer_Group
+        }
         If AddDocs IsNot Nothing Then
-            AddDocs(New UcCustomer_Add, "Thêm khách hàng")
+            AddDocs(Uc, "Thêm khách hàng")
         End If
     End Sub
 
     Sub Edit() Handles BtnEDIT.ItemClick
         Dim Uc As New UcCustomer_Update With {
         .Cmodel = GetModel(),
-        .Customer = Customer
+        .Customer_Group = Customer_Group
         }
         If AddDocs IsNot Nothing Then
             AddDocs(Uc, "Sửa khách hàng")
@@ -75,9 +91,6 @@ Public Class UcCustomer_Manager
 #Region " Xử lý dữ liệu"
 
     Sub GridLoad()
-        If Customer.Count = 0 Then
-            _Customer = ClsCustomers.GetInstance.GetList()
-        End If
         Grd.DataSource = Customer
         Grv.Columns("Customer_Id").Caption = "Mã khách hàng"
         Grv.Columns("Customer_Name").Caption = "Tên khách hàng"
@@ -94,7 +107,7 @@ Public Class UcCustomer_Manager
 
     Sub LoadLookupEdit()
         Dim edit As DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit = New DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit With {
-           .DataSource = ClsCustomer_Group.GetInstance.GetList(),
+           .DataSource = Customer_Group,
            .ValueMember = "Customer_group_id",
            .DisplayMember = "Customer_group_name"
        }
@@ -105,6 +118,14 @@ Public Class UcCustomer_Manager
 
         Grd.RepositoryItems.Add(edit)
         Grv.Columns("Customer_Group_Id").ColumnEdit = edit
+    End Sub
+
+    Sub GetCustomerGroupSource()
+        _Customer_Group = ClsCustomer_Group.GetInstance.GetList()
+    End Sub
+
+    Sub GetCustomerSource()
+        _Customer = ClsCustomers.GetInstance.GetList()
     End Sub
 
     Function GetModel() As Customer_DTO

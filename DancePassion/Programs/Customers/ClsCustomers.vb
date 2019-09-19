@@ -213,6 +213,7 @@ Public Class ClsCustomers
         Dim strSQL = "usp_tblCustomers_Update"
         Dim result As Integer
         Dim paraName() As String = {
+            "p_Customer_Id",
             "p_Customer_Name",
             "p_Customer_Address",
             "p_Customer_Phone",
@@ -221,6 +222,7 @@ Public Class ClsCustomers
             "p_Customer_Expand_Info_Id"
         }
         Dim paraValue As Object = New Object() {
+            Model.Customer_Id,
             Model.Customer_Name,
             Model.Customer_Address,
             Model.Customer_Phone,
