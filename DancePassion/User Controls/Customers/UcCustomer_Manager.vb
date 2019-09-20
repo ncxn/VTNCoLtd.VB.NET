@@ -68,10 +68,15 @@ Public Class UcCustomer_Manager
 
     Sub Delete() Handles BtnDELETE.ItemClick
         Dim handle = SplashScreenManager.ShowOverlayForm(Me)
-        If ClsCustomers.GetInstance.Delete(GetModel()) Then
-            Grv.DeleteRow(Grv.FocusedRowHandle)
-        End If
-        SplashScreenManager.CloseOverlayForm(handle)
+        Try
+            If ClsCustomers.GetInstance.Delete(GetModel()) Then
+                Grv.DeleteRow(Grv.FocusedRowHandle)
+            End If
+        Catch ex As Exception
+            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+        Finally
+            SplashScreenManager.CloseOverlayForm(handle)
+        End Try
     End Sub
 
     Sub ReLoad() Handles BtnREFRESH.ItemClick
@@ -121,11 +126,19 @@ Public Class UcCustomer_Manager
     End Sub
 
     Sub GetCustomerGroupSource()
-        _Customer_Group = ClsCustomer_Group.GetInstance.GetList()
+        Try
+            _Customer_Group = ClsCustomer_Group.GetInstance.GetList()
+        Catch ex As Exception
+            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+        End Try
     End Sub
 
     Sub GetCustomerSource()
-        _Customer = ClsCustomers.GetInstance.GetList()
+        Try
+            _Customer = ClsCustomers.GetInstance.GetList()
+        Catch ex As Exception
+            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+        End Try
     End Sub
 
     Function GetModel() As Customer_DTO

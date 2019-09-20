@@ -50,12 +50,15 @@ Public Class UcCustomer_Update
 
     Sub OK() Handles BtnOK.ItemClick
         Dim handle = DevExpress.XtraSplashScreen.SplashScreenManager.ShowOverlayForm(Me)
-        If ClsCustomers.GetInstance.Update(GetModel()) Then
-            If RemoveTab IsNot Nothing Then
-                RemoveTab()
+        Try
+            If ClsCustomers.GetInstance.Update(GetModel()) Then
+                Cancel()
             End If
-        End If
-        DevExpress.XtraSplashScreen.SplashScreenManager.CloseOverlayForm(handle)
+        Catch ex As Exception
+            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+        Finally
+            DevExpress.XtraSplashScreen.SplashScreenManager.CloseOverlayForm(handle)
+        End Try
     End Sub
 
     Sub Cancel() Handles BtnCANCEL.ItemClick
@@ -68,27 +71,27 @@ Public Class UcCustomer_Update
 
 #Region " Xử lý dữ liệu"
 
+    Private Function ValidateInput() As Boolean
+        Return Not String.IsNullOrEmpty(TxtCustomer_Name.Text)
+    End Function
+
     Private Function GetModel() As Customer_DTO
 
         Dim Model As New Customer_DTO
 
         If ValidateInput() Then
             With Model
-                .Customer_Id = Cmodel.Customer_Group_Id
+                .Customer_Id = Cmodel.Customer_Id
                 .Customer_Name = TxtCustomer_Name.Text
                 .Customer_Address = TxtCustomer_Addresss.Text
                 .Customer_Phone = TxtCustomer_Phone.Text
                 .Customer_Email = TxtCustomer_Email.Text
                 .Customer_Group_Id = TxtCustomer_Group_Id.EditValue
-                .Customer_Expand_Info_Id = vbNull
+                .Customer_Expand_Info_Id = Nothing
             End With
         End If
 
         Return Model
-    End Function
-
-    Private Function ValidateInput() As Boolean
-        Return Not String.IsNullOrEmpty(TxtCustomer_Name.Text)
     End Function
 
     Sub SearchLookup()
