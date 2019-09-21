@@ -224,17 +224,17 @@
     <Compile Include="Forms\WaitForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.Designer.vb">
+    <Compile Include="Presentation\FrmMain.Designer.vb">
       <DependentUpon>FrmMain.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmMain.vb">
+    <Compile Include="Presentation\FrmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Global\ClsDelegate.vb" />
-    <Compile Include="Global\DBConnection.vb" />
-    <Compile Include="Global\DBHelper.vb" />
-    <Compile Include="Global\DBUtils.vb" />
-    <Compile Include="Global\Security.vb" />
+    <Compile Include="DAL\ClsDelegate.vb" />
+    <Compile Include="DAL\DBConnection.vb" />
+    <Compile Include="DAL\DBHelper.vb" />
+    <Compile Include="DAL\DBUtils.vb" />
+    <Compile Include="DAL\Security.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -245,19 +245,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Programs\Config\ClsConfig_Basic.vb" />
-    <Compile Include="Programs\Config\clsMailServer.vb" />
-    <Compile Include="Programs\Config\SMSconfig.vb" />
-    <Compile Include="Programs\Customers\ClsCustomers.vb" />
-    <Compile Include="Programs\Customers\ClsCustomer_Group.vb" />
-    <Compile Include="Programs\DevExpressHelper\ClsDocumentManagerHelper.vb" />
-    <Compile Include="Programs\DevExpressHelper\ClsMessageHelper.vb" />
-    <Compile Include="Programs\DevManager\ClsAccess.vb" />
-    <Compile Include="Programs\DevManager\ClsControls.vb" />
-    <Compile Include="Programs\DevManager\ClsControlsAccess.vb" />
-    <Compile Include="Programs\DevExpressHelper\ClsGridControlHelper.vb" />
-    <Compile Include="Programs\EventSystem\ClsEvents.vb" />
-    <Compile Include="Programs\EventSystem\ClsEvent_Type.vb" />
+    <Compile Include="BUS\Config\ClsConfig_Basic.vb" />
+    <Compile Include="BUS\Config\clsMailServer.vb" />
+    <Compile Include="BUS\Config\SMSconfig.vb" />
+    <Compile Include="BUS\Customers\ClsCustomers.vb" />
+    <Compile Include="BUS\Customers\ClsCustomer_Group.vb" />
+    <Compile Include="BUS\DevExpressHelper\ClsDocumentManagerHelper.vb" />
+    <Compile Include="BUS\DevExpressHelper\ClsMessageHelper.vb" />
+    <Compile Include="BUS\DevManager\ClsAccess.vb" />
+    <Compile Include="BUS\DevManager\ClsControls.vb" />
+    <Compile Include="BUS\DevManager\ClsControlsAccess.vb" />
+    <Compile Include="BUS\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="BUS\EventSystem\ClsEvents.vb" />
+    <Compile Include="BUS\EventSystem\ClsEvent_Type.vb" />
     <Compile Include="User Controls\Customers\UcCustomer_Add.Designer.vb">
       <DependentUpon>UcCustomer_Add.vb</DependentUpon>
     </Compile>
@@ -342,7 +342,7 @@
     <Compile Include="User Controls\Roles\UcRolesAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Programs\Users\ClsUsersConfirm.vb" />
+    <Compile Include="BUS\Users\ClsUsersConfirm.vb" />
     <Compile Include="User Controls\DevManager\UcControlsAccessManager.Designer.vb">
       <DependentUpon>UcControlsAccessManager.vb</DependentUpon>
     </Compile>
@@ -367,10 +367,10 @@
     <Compile Include="User Controls\DevManager\UcControlAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Programs\RoleManager\ClsRoleManager.vb" />
-    <Compile Include="Programs\Roles\ClsRoles.vb" />
-    <Compile Include="Programs\UserRoles\ClsUserToRoles.vb" />
-    <Compile Include="Programs\Users\ClsUsers.vb" />
+    <Compile Include="BUS\RoleManager\ClsRoleManager.vb" />
+    <Compile Include="BUS\Roles\ClsRoles.vb" />
+    <Compile Include="BUS\UserRoles\ClsUserToRoles.vb" />
+    <Compile Include="BUS\Users\ClsUsers.vb" />
     <Compile Include="User Controls\DevManager\UcAccessManager.Designer.vb">
       <DependentUpon>UcAccessManager.vb</DependentUpon>
     </Compile>
@@ -473,7 +473,7 @@
     <EmbeddedResource Include="Forms\WaitForm.resx">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMain.resx">
+    <EmbeddedResource Include="Presentation\FrmMain.resx">
       <DependentUpon>FrmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
@@ -843,6 +843,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\config\" />
+    <Folder Include="Model\Core\" />
+    <Folder Include="Presentation\Core\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" />

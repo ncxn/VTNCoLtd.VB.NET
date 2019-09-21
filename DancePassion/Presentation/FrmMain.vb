@@ -46,12 +46,12 @@ Public Class FrmMain
 #Region " Document manager and Tabled events"
     Public ReadOnly Property DM As DocumentManager
         Get
-            Return DocumentManager1
+            Return MainDM
         End Get
     End Property
     Public ReadOnly Property View As TabbedView
         Get
-            Return TabbedView1
+            Return TabbedViewOnMain
         End Get
     End Property
 
@@ -78,7 +78,7 @@ Public Class FrmMain
 #End Region
 
 #Region " Merge Ribbon/ Stausbar"
-    Private Sub TabbedView1_DocumentActivated(sender As Object, e As DocumentEventArgs) Handles TabbedView1.DocumentActivated
+    Private Sub TabbedView1_DocumentActivated(sender As Object, e As DocumentEventArgs) Handles TabbedViewOnMain.DocumentActivated
         If Not e.Document.IsFloating Then
             MergeMainRibbon(TryCast(e.Document.Control, UcBase))
         End If

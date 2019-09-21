@@ -115,15 +115,15 @@ Partial Class FrmMain
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.NativeMdiViewOnMain = New DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView(Me.components)
         Me.WindowsUIViewOnMain = New DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView(Me.components)
-        Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
-        Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+        Me.MainDM = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
+        Me.TabbedViewOnMain = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
         CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Slide_menu.SuspendLayout()
         CType(Me.NativeMdiViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WindowsUIViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MainDM, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainControlRibbon
@@ -831,15 +831,15 @@ Partial Class FrmMain
         Me.BarButtonItem1.Id = 1
         Me.BarButtonItem1.Name = "BarButtonItem1"
         '
-        'DocumentManager1
+        'MainDM
         '
-        Me.DocumentManager1.MdiParent = Me
-        Me.DocumentManager1.MenuManager = Me.MainControlRibbon
-        Me.DocumentManager1.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
-        Me.DocumentManager1.View = Me.TabbedView1
-        Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
+        Me.MainDM.MdiParent = Me
+        Me.MainDM.MenuManager = Me.MainControlRibbon
+        Me.MainDM.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
+        Me.MainDM.View = Me.TabbedViewOnMain
+        Me.MainDM.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedViewOnMain})
         '
-        'TabbedView1
+        'TabbedViewOnMain
         '
         '
         'FrmMain
@@ -862,8 +862,8 @@ Partial Class FrmMain
         Me.Slide_menu.ResumeLayout(False)
         CType(Me.NativeMdiViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.WindowsUIViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MainDM, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -955,8 +955,8 @@ Partial Class FrmMain
     Friend WithEvents NativeMdiViewOnMain As DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView
     Friend WithEvents WindowsUIViewOnMain As DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView
     Private WithEvents MainControlRibbon As DevExpress.XtraBars.Ribbon.RibbonControl
-    Friend WithEvents DocumentManager1 As DevExpress.XtraBars.Docking2010.DocumentManager
-    Friend WithEvents TabbedView1 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
+    Friend WithEvents MainDM As DevExpress.XtraBars.Docking2010.DocumentManager
+    Friend WithEvents TabbedViewOnMain As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
     Friend WithEvents RbpDev As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RbpgFunctionManager As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents UcControlsManager As DevExpress.XtraBars.BarButtonItem
