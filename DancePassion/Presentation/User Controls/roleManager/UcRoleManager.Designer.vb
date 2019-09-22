@@ -228,7 +228,7 @@ Partial Class UcRoleManager
         '
         Me.BarStaticItem1.Caption = "Ghi chú"
         Me.BarStaticItem1.Id = 12
-        Me.BarStaticItem1.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.warning
+        Me.BarStaticItem1.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.warning
         Me.BarStaticItem1.Name = "BarStaticItem1"
         ToolTipTitleItem1.Text = "Về phân quyền"
         ToolTipItem1.LeftIndent = 6

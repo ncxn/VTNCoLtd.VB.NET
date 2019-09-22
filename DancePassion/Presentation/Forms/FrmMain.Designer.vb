@@ -179,7 +179,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.TaiKhoanCaNhan, "TaiKhoanCaNhan")
         Me.TaiKhoanCaNhan.ContentControl = Me.BackstageViewClientControl1
-        Me.TaiKhoanCaNhan.ImageOptions.ItemNormal.SvgImage = Global.DancePassion.My.Resources.Resources.bo_customer
+        Me.TaiKhoanCaNhan.ImageOptions.ItemNormal.SvgImage = Global.VTNcoLtd.My.Resources.Resources.bo_customer
         Me.TaiKhoanCaNhan.Name = "TaiKhoanCaNhan"
         Me.TaiKhoanCaNhan.Selected = True
         '
@@ -271,35 +271,35 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.UcCustomer_Manager, "UcCustomer_Manager")
         Me.UcCustomer_Manager.Id = 13
-        Me.UcCustomer_Manager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khachhang
+        Me.UcCustomer_Manager.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.khachhang
         Me.UcCustomer_Manager.Name = "UcCustomer_Manager"
         '
         'Dcom_SMS_btn
         '
         resources.ApplyResources(Me.Dcom_SMS_btn, "Dcom_SMS_btn")
         Me.Dcom_SMS_btn.Id = 14
-        Me.Dcom_SMS_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.sms
+        Me.Dcom_SMS_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.sms
         Me.Dcom_SMS_btn.Name = "Dcom_SMS_btn"
         '
         'Twilio_SMS_btn
         '
         resources.ApplyResources(Me.Twilio_SMS_btn, "Twilio_SMS_btn")
         Me.Twilio_SMS_btn.Id = 15
-        Me.Twilio_SMS_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.twilio
+        Me.Twilio_SMS_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.twilio
         Me.Twilio_SMS_btn.Name = "Twilio_SMS_btn"
         '
         'eSMS__SMS_btn
         '
         resources.ApplyResources(Me.eSMS__SMS_btn, "eSMS__SMS_btn")
         Me.eSMS__SMS_btn.Id = 16
-        Me.eSMS__SMS_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.eSMS
+        Me.eSMS__SMS_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.eSMS
         Me.eSMS__SMS_btn.Name = "eSMS__SMS_btn"
         '
         'UcConfig_Basic
         '
         resources.ApplyResources(Me.UcConfig_Basic, "UcConfig_Basic")
         Me.UcConfig_Basic.Id = 1
-        Me.UcConfig_Basic.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.travel_hotel
+        Me.UcConfig_Basic.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.travel_hotel
         Me.UcConfig_Basic.Name = "UcConfig_Basic"
         '
         'CongCu__CauHinh_btn
@@ -404,70 +404,70 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.Club_Bomon_btn, "Club_Bomon_btn")
         Me.Club_Bomon_btn.Id = 17
-        Me.Club_Bomon_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.bo_category
+        Me.Club_Bomon_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.bo_category
         Me.Club_Bomon_btn.Name = "Club_Bomon_btn"
         '
         'Club_LopHoc_btn
         '
         resources.ApplyResources(Me.Club_LopHoc_btn, "Club_LopHoc_btn")
         Me.Club_LopHoc_btn.Id = 18
-        Me.Club_LopHoc_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.lophoc
+        Me.Club_LopHoc_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.lophoc
         Me.Club_LopHoc_btn.Name = "Club_LopHoc_btn"
         '
         'Club_KhoaHoc_btn
         '
         resources.ApplyResources(Me.Club_KhoaHoc_btn, "Club_KhoaHoc_btn")
         Me.Club_KhoaHoc_btn.Id = 19
-        Me.Club_KhoaHoc_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khoahoc
+        Me.Club_KhoaHoc_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.khoahoc
         Me.Club_KhoaHoc_btn.Name = "Club_KhoaHoc_btn"
         '
         'BH_LoaiSP_btn
         '
         resources.ApplyResources(Me.BH_LoaiSP_btn, "BH_LoaiSP_btn")
         Me.BH_LoaiSP_btn.Id = 20
-        Me.BH_LoaiSP_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.danhmucloaiSP
+        Me.BH_LoaiSP_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.danhmucloaiSP
         Me.BH_LoaiSP_btn.Name = "BH_LoaiSP_btn"
         '
         'BH_DanhMuc_SP_btn
         '
         resources.ApplyResources(Me.BH_DanhMuc_SP_btn, "BH_DanhMuc_SP_btn")
         Me.BH_DanhMuc_SP_btn.Id = 21
-        Me.BH_DanhMuc_SP_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.products
+        Me.BH_DanhMuc_SP_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.products
         Me.BH_DanhMuc_SP_btn.Name = "BH_DanhMuc_SP_btn"
         '
         'BH_DonHang_btn
         '
         resources.ApplyResources(Me.BH_DonHang_btn, "BH_DonHang_btn")
         Me.BH_DonHang_btn.Id = 22
-        Me.BH_DonHang_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.donhangban
+        Me.BH_DonHang_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.donhangban
         Me.BH_DonHang_btn.Name = "BH_DonHang_btn"
         '
         'BH_ThanhToan_btn
         '
         resources.ApplyResources(Me.BH_ThanhToan_btn, "BH_ThanhToan_btn")
         Me.BH_ThanhToan_btn.Id = 23
-        Me.BH_ThanhToan_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.nhantien
+        Me.BH_ThanhToan_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.nhantien
         Me.BH_ThanhToan_btn.Name = "BH_ThanhToan_btn"
         '
         'BH_TraHang_btn
         '
         resources.ApplyResources(Me.BH_TraHang_btn, "BH_TraHang_btn")
         Me.BH_TraHang_btn.Id = 24
-        Me.BH_TraHang_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khachhangtra
+        Me.BH_TraHang_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.khachhangtra
         Me.BH_TraHang_btn.Name = "BH_TraHang_btn"
         '
         'BH_DonHangMua_btn
         '
         resources.ApplyResources(Me.BH_DonHangMua_btn, "BH_DonHangMua_btn")
         Me.BH_DonHangMua_btn.Id = 25
-        Me.BH_DonHangMua_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.donhangmua
+        Me.BH_DonHangMua_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.donhangmua
         Me.BH_DonHangMua_btn.Name = "BH_DonHangMua_btn"
         '
         'BH_DonVi_btn
         '
         resources.ApplyResources(Me.BH_DonVi_btn, "BH_DonVi_btn")
         Me.BH_DonVi_btn.Id = 26
-        Me.BH_DonVi_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.donvi
+        Me.BH_DonVi_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.donvi
         Me.BH_DonVi_btn.Name = "BH_DonVi_btn"
         '
         'BarButtonItem13
@@ -480,42 +480,42 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.BH_ds_NCC_btn, "BH_ds_NCC_btn")
         Me.BH_ds_NCC_btn.Id = 28
-        Me.BH_ds_NCC_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.nhacungcap
+        Me.BH_ds_NCC_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.nhacungcap
         Me.BH_ds_NCC_btn.Name = "BH_ds_NCC_btn"
         '
         'BH_ThanhToan_NCC_btn
         '
         resources.ApplyResources(Me.BH_ThanhToan_NCC_btn, "BH_ThanhToan_NCC_btn")
         Me.BH_ThanhToan_NCC_btn.Id = 29
-        Me.BH_ThanhToan_NCC_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.thanhtoanNCC
+        Me.BH_ThanhToan_NCC_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.thanhtoanNCC
         Me.BH_ThanhToan_NCC_btn.Name = "BH_ThanhToan_NCC_btn"
         '
         'BH_TraHang_NCC_btn
         '
         resources.ApplyResources(Me.BH_TraHang_NCC_btn, "BH_TraHang_NCC_btn")
         Me.BH_TraHang_NCC_btn.Id = 30
-        Me.BH_TraHang_NCC_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.tranhacungcap
+        Me.BH_TraHang_NCC_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.tranhacungcap
         Me.BH_TraHang_NCC_btn.Name = "BH_TraHang_NCC_btn"
         '
         'BH_ds_KhachHang_btn
         '
         resources.ApplyResources(Me.BH_ds_KhachHang_btn, "BH_ds_KhachHang_btn")
         Me.BH_ds_KhachHang_btn.Id = 31
-        Me.BH_ds_KhachHang_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khachhang
+        Me.BH_ds_KhachHang_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.khachhang
         Me.BH_ds_KhachHang_btn.Name = "BH_ds_KhachHang_btn"
         '
         'BH_NoPhaiTra_btn
         '
         resources.ApplyResources(Me.BH_NoPhaiTra_btn, "BH_NoPhaiTra_btn")
         Me.BH_NoPhaiTra_btn.Id = 32
-        Me.BH_NoPhaiTra_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.nophaitra
+        Me.BH_NoPhaiTra_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.nophaitra
         Me.BH_NoPhaiTra_btn.Name = "BH_NoPhaiTra_btn"
         '
         'BH_NoPhaiThu_btn
         '
         resources.ApplyResources(Me.BH_NoPhaiThu_btn, "BH_NoPhaiThu_btn")
         Me.BH_NoPhaiThu_btn.Id = 33
-        Me.BH_NoPhaiThu_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.nophaithu
+        Me.BH_NoPhaiThu_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.nophaithu
         Me.BH_NoPhaiThu_btn.Name = "BH_NoPhaiThu_btn"
         '
         'BH_SUB_DanhMuc
@@ -530,14 +530,14 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.BH_KhoHang_btn, "BH_KhoHang_btn")
         Me.BH_KhoHang_btn.Id = 38
-        Me.BH_KhoHang_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.khohang
+        Me.BH_KhoHang_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.khohang
         Me.BH_KhoHang_btn.Name = "BH_KhoHang_btn"
         '
         'Club_DangKyLop
         '
         resources.ApplyResources(Me.Club_DangKyLop, "Club_DangKyLop")
         Me.Club_DangKyLop.Id = 35
-        Me.Club_DangKyLop.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.dangkylop
+        Me.Club_DangKyLop.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.dangkylop
         Me.Club_DangKyLop.Name = "Club_DangKyLop"
         '
         'Club_ThanhToan
@@ -551,83 +551,83 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.Club_dsHLV_btn, "Club_dsHLV_btn")
         Me.Club_dsHLV_btn.Id = 37
-        Me.Club_dsHLV_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.giaovien
+        Me.Club_dsHLV_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.giaovien
         Me.Club_dsHLV_btn.Name = "Club_dsHLV_btn"
         '
         'Club_LopDangHoc
         '
         resources.ApplyResources(Me.Club_LopDangHoc, "Club_LopDangHoc")
         Me.Club_LopDangHoc.Id = 39
-        Me.Club_LopDangHoc.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.lopdanghoc
+        Me.Club_LopDangHoc.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.lopdanghoc
         Me.Club_LopDangHoc.Name = "Club_LopDangHoc"
         '
         'Club_PhanLop_btn
         '
         resources.ApplyResources(Me.Club_PhanLop_btn, "Club_PhanLop_btn")
         Me.Club_PhanLop_btn.Id = 40
-        Me.Club_PhanLop_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.phanlop
+        Me.Club_PhanLop_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.phanlop
         Me.Club_PhanLop_btn.Name = "Club_PhanLop_btn"
         '
         'Club_dsHocVien
         '
         resources.ApplyResources(Me.Club_dsHocVien, "Club_dsHocVien")
         Me.Club_dsHocVien.Id = 41
-        Me.Club_dsHocVien.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.hocvien
+        Me.Club_dsHocVien.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.hocvien
         Me.Club_dsHocVien.Name = "Club_dsHocVien"
         '
         'Club_LopDaHoc
         '
         resources.ApplyResources(Me.Club_LopDaHoc, "Club_LopDaHoc")
         Me.Club_LopDaHoc.Id = 42
-        Me.Club_LopDaHoc.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.lopketthuc
+        Me.Club_LopDaHoc.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.lopketthuc
         Me.Club_LopDaHoc.Name = "Club_LopDaHoc"
         '
         'BH_DoanhThu_btn
         '
         resources.ApplyResources(Me.BH_DoanhThu_btn, "BH_DoanhThu_btn")
         Me.BH_DoanhThu_btn.Id = 43
-        Me.BH_DoanhThu_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.doanhthu
+        Me.BH_DoanhThu_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.doanhthu
         Me.BH_DoanhThu_btn.Name = "BH_DoanhThu_btn"
         '
         'BH_TonKho_btn
         '
         resources.ApplyResources(Me.BH_TonKho_btn, "BH_TonKho_btn")
         Me.BH_TonKho_btn.Id = 44
-        Me.BH_TonKho_btn.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.tonkho
+        Me.BH_TonKho_btn.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.tonkho
         Me.BH_TonKho_btn.Name = "BH_TonKho_btn"
         '
         'UcControlsManager
         '
         resources.ApplyResources(Me.UcControlsManager, "UcControlsManager")
         Me.UcControlsManager.Id = 45
-        Me.UcControlsManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.bo_statemachine
+        Me.UcControlsManager.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.bo_statemachine
         Me.UcControlsManager.Name = "UcControlsManager"
         '
         'UcAccessManager
         '
         resources.ApplyResources(Me.UcAccessManager, "UcAccessManager")
         Me.UcAccessManager.Id = 46
-        Me.UcAccessManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.superscript
+        Me.UcAccessManager.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.superscript
         Me.UcAccessManager.Name = "UcAccessManager"
         '
         'UcControlsAccessManager
         '
         resources.ApplyResources(Me.UcControlsAccessManager, "UcControlsAccessManager")
         Me.UcControlsAccessManager.Id = 47
-        Me.UcControlsAccessManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.listnumbers
+        Me.UcControlsAccessManager.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.listnumbers
         Me.UcControlsAccessManager.Name = "UcControlsAccessManager"
         '
         'UcCustomer_Group_Manager
         '
         resources.ApplyResources(Me.UcCustomer_Group_Manager, "UcCustomer_Group_Manager")
         Me.UcCustomer_Group_Manager.Id = 48
-        Me.UcCustomer_Group_Manager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.group
+        Me.UcCustomer_Group_Manager.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.group
         Me.UcCustomer_Group_Manager.Name = "UcCustomer_Group_Manager"
         '
         'RbpSystem
         '
         Me.RbpSystem.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgDatabase, Me.RibbonPageGroup_Configuration, Me.RbpGPeoples, Me.Rbpg_Customers, Me.RibbonPageGroup_SMS})
-        Me.RbpSystem.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.properties
+        Me.RbpSystem.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.properties
         Me.RbpSystem.Name = "RbpSystem"
         Me.RbpSystem.Tag = "RbpSystem"
         resources.ApplyResources(Me.RbpSystem, "RbpSystem")
@@ -681,7 +681,7 @@ Partial Class FrmMain
         'RbpEventManagement
         '
         Me.RbpEventManagement.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgCreateEvent, Me.RbpgEventRegister, Me.RibbonPageGroup_ThongkeSuKien, Me.RibbonPageGroup_TienIchSuKien})
-        Me.RbpEventManagement.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.differentoddevenpages
+        Me.RbpEventManagement.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.differentoddevenpages
         Me.RbpEventManagement.Name = "RbpEventManagement"
         resources.ApplyResources(Me.RbpEventManagement, "RbpEventManagement")
         '
@@ -722,7 +722,7 @@ Partial Class FrmMain
         'RbpClubManager
         '
         Me.RbpClubManager.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup3, Me.RibbonPageGroup2, Me.RibbonPageGroup4, Me.RibbonPageGroup9})
-        Me.RbpClubManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.groupbyresource
+        Me.RbpClubManager.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.groupbyresource
         Me.RbpClubManager.Name = "RbpClubManager"
         resources.ApplyResources(Me.RbpClubManager, "RbpClubManager")
         '
@@ -759,7 +759,7 @@ Partial Class FrmMain
         'RbpSalesManager
         '
         Me.RbpSalesManager.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1, Me.RibbonPageGroup7, Me.RibbonPageGroup6, Me.RibbonPageGroup5, Me.RibbonPageGroup8})
-        Me.RbpSalesManager.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.bo_sale
+        Me.RbpSalesManager.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.bo_sale
         Me.RbpSalesManager.Name = "RbpSalesManager"
         resources.ApplyResources(Me.RbpSalesManager, "RbpSalesManager")
         '
@@ -807,7 +807,7 @@ Partial Class FrmMain
         'RbpDev
         '
         Me.RbpDev.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpgFunctionManager})
-        Me.RbpDev.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.showallfieldcodes
+        Me.RbpDev.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.showallfieldcodes
         Me.RbpDev.Name = "RbpDev"
         resources.ApplyResources(Me.RbpDev, "RbpDev")
         '

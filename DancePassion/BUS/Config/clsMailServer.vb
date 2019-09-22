@@ -2,6 +2,7 @@
 Imports System.Net.Mail
 Imports System.Text.RegularExpressions
 Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
 
 
 #Region "DTO"

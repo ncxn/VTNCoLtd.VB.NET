@@ -1,5 +1,6 @@
 ﻿
 Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
 
 Public Class RolesControlsAccessDTO
     Private _role_name As String

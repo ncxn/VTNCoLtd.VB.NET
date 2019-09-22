@@ -1,5 +1,4 @@
-﻿Imports DancePassion
-Imports DevExpress.XtraSplashScreen
+﻿Imports DevExpress.XtraSplashScreen
 
 Public Class UcCustomer_Manager
 

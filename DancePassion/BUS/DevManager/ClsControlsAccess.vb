@@ -1,5 +1,6 @@
 ﻿Imports System.Security.Cryptography
 Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
 
 #Region " DTO Controls Access of form"
 'table controlsAccess

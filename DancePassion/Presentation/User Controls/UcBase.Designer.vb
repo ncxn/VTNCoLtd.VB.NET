@@ -55,7 +55,7 @@ Partial Class UcBase
         '
         Me.BtnCREATE.Caption = "Thêm"
         Me.BtnCREATE.Id = 1
-        Me.BtnCREATE.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.addparagraphtotableofcontents1
+        Me.BtnCREATE.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.addparagraphtotableofcontents1
         Me.BtnCREATE.Name = "BtnCREATE"
         Me.BtnCREATE.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -63,7 +63,7 @@ Partial Class UcBase
         '
         Me.BtnEDIT.Caption = "Sửa"
         Me.BtnEDIT.Id = 2
-        Me.BtnEDIT.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.editquery
+        Me.BtnEDIT.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.editquery
         Me.BtnEDIT.Name = "BtnEDIT"
         Me.BtnEDIT.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -71,8 +71,8 @@ Partial Class UcBase
         '
         Me.BtnDELETE.Caption = "Xóa"
         Me.BtnDELETE.Id = 3
-        Me.BtnDELETE.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.delete
-        Me.BtnDELETE.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.deletetable
+        Me.BtnDELETE.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.delete
+        Me.BtnDELETE.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.deletetable
         Me.BtnDELETE.Name = "BtnDELETE"
         Me.BtnDELETE.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -81,7 +81,7 @@ Partial Class UcBase
         Me.BtnOK.Caption = "Chấp nhận"
         Me.BtnOK.Hint = "Chấp nhận và thoát"
         Me.BtnOK.Id = 4
-        Me.BtnOK.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.markcomplete
+        Me.BtnOK.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.markcomplete
         Me.BtnOK.Name = "BtnOK"
         Me.BtnOK.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -90,7 +90,7 @@ Partial Class UcBase
         Me.BtnCANCEL.Caption = "Bỏ qua"
         Me.BtnCANCEL.Hint = "Thoát màn hình hiện tại"
         Me.BtnCANCEL.Id = 5
-        Me.BtnCANCEL.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.delete
+        Me.BtnCANCEL.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.delete
         Me.BtnCANCEL.Name = "BtnCANCEL"
         Me.BtnCANCEL.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -98,7 +98,7 @@ Partial Class UcBase
         '
         Me.BtnPRINT.Caption = "Máy In"
         Me.BtnPRINT.Id = 6
-        Me.BtnPRINT.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.printlayoutview
+        Me.BtnPRINT.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.printlayoutview
         Me.BtnPRINT.Name = "BtnPRINT"
         Me.BtnPRINT.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -106,7 +106,7 @@ Partial Class UcBase
         '
         Me.BtnEXCEL.Caption = "Xuất Excel"
         Me.BtnEXCEL.Id = 7
-        Me.BtnEXCEL.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.export
+        Me.BtnEXCEL.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.export
         Me.BtnEXCEL.Name = "BtnEXCEL"
         Me.BtnEXCEL.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -114,7 +114,7 @@ Partial Class UcBase
         '
         Me.BtnEMAIL.Caption = "Gửi Email"
         Me.BtnEMAIL.Id = 8
-        Me.BtnEMAIL.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.mailmerge
+        Me.BtnEMAIL.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.mailmerge
         Me.BtnEMAIL.Name = "BtnEMAIL"
         Me.BtnEMAIL.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -123,7 +123,7 @@ Partial Class UcBase
         Me.BtnOKANDNEW.Caption = "Tiếp tục"
         Me.BtnOKANDNEW.Hint = "Lưu và thêm mới"
         Me.BtnOKANDNEW.Id = 9
-        Me.BtnOKANDNEW.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.actions_add
+        Me.BtnOKANDNEW.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.actions_add
         Me.BtnOKANDNEW.Name = "BtnOKANDNEW"
         Me.BtnOKANDNEW.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
@@ -131,14 +131,14 @@ Partial Class UcBase
         '
         Me.BtnREFRESH.Caption = "Làm mới"
         Me.BtnREFRESH.Id = 10
-        Me.BtnREFRESH.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.resetlayoutoptions
+        Me.BtnREFRESH.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.resetlayoutoptions
         Me.BtnREFRESH.Name = "BtnREFRESH"
         Me.BtnREFRESH.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'RbpFunction
         '
         Me.RbpFunction.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RbpGTools, Me.RbpGExtend, Me.RbpGConfirm})
-        Me.RbpFunction.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.pivottablecalculationsfieldsitemssetsgroup
+        Me.RbpFunction.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.pivottablecalculationsfieldsitemssetsgroup
         Me.RbpFunction.Name = "RbpFunction"
         Me.RbpFunction.Text = "Chức năng"
         '

@@ -1,5 +1,4 @@
-﻿Imports DancePassion
-Imports DevExpress.XtraEditors
+﻿Imports DevExpress.XtraEditors
 Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraSplashScreen
 

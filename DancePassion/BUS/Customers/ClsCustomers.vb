@@ -1,5 +1,5 @@
-﻿Imports DancePassion
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
 ''' <summary>
 ''' Generate model for basic config 
 ''' </summary>

@@ -53,7 +53,7 @@ Partial Class FrmUsersResetPass
         Me.BtnGetPassWord.Appearance.Options.UseBorderColor = True
         Me.BtnGetPassWord.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
         Me.BtnGetPassWord.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnGetPassWord.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.checkbox
+        Me.BtnGetPassWord.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.checkbox
         Me.BtnGetPassWord.Location = New System.Drawing.Point(90, 153)
         Me.BtnGetPassWord.Name = "BtnGetPassWord"
         Me.BtnGetPassWord.Size = New System.Drawing.Size(120, 40)

@@ -1,6 +1,8 @@
 ﻿
 #Region " DTO UsersConfirm"
 'table users
+Imports VTNcoLtd.DAL
+
 Public Class UsersConfirmDTO
     Private _id As Integer
     Private _user_id As String

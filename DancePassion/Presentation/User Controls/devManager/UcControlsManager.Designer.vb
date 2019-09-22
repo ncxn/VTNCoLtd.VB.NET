@@ -57,7 +57,7 @@ Partial Class UcControlsManager
         '
         Me.StsDesc.Caption = "Chú thích"
         Me.StsDesc.Id = 12
-        Me.StsDesc.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.functionscompatibility
+        Me.StsDesc.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.functionscompatibility
         Me.StsDesc.Name = "StsDesc"
         ToolTipTitleItem1.Text = "Hướng dẫn:"
         ToolTipItem1.ImageOptions.SvgImage = CType(resources.GetObject("resource.SvgImage"), DevExpress.Utils.Svg.SvgImage)

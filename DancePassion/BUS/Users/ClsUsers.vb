@@ -1,5 +1,7 @@
 ﻿Imports System.Text
 Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
+Imports VTNcoLtd.Helper
 
 #Region " DTO Users"
 'table users

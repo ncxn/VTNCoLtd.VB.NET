@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
 
 Public Class AccessDTO
     Private _access_name As String

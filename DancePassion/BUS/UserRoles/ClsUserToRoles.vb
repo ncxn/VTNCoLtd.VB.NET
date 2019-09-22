@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
 
 #Region " DTO UserRoles"
 'table Roles

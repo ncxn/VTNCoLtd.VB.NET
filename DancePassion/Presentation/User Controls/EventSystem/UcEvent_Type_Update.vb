@@ -1,4 +1,4 @@
-﻿Imports DancePassion
+﻿
 Imports DevExpress.XtraSplashScreen
 
 Public Class UcEvent_Type_Update

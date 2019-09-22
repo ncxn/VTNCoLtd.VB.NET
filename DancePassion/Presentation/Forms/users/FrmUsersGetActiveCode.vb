@@ -1,6 +1,6 @@
 ﻿Imports DevExpress.XtraEditors
 Imports DevExpress.XtraSplashScreen
-
+Imports VTNcoLtd.Helper
 Public Class FrmUsersGetActiveCode
     Inherits DevExpress.XtraEditors.XtraForm
     Public Sub New()
@@ -39,7 +39,7 @@ Public Class FrmUsersGetActiveCode
         '
         Me.BtnGetActiveCode.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
         Me.BtnGetActiveCode.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnGetActiveCode.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.actions_send
+        Me.BtnGetActiveCode.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.actions_send
         Me.BtnGetActiveCode.Location = New System.Drawing.Point(58, 109)
         Me.BtnGetActiveCode.Name = "BtnGetActiveCode"
         Me.BtnGetActiveCode.Size = New System.Drawing.Size(200, 40)
@@ -50,7 +50,7 @@ Public Class FrmUsersGetActiveCode
         '
         Me.BtnOpenFromResetPass.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
         Me.BtnOpenFromResetPass.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnOpenFromResetPass.ImageOptions.SvgImage = Global.DancePassion.My.Resources.Resources.security_key
+        Me.BtnOpenFromResetPass.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.security_key
         Me.BtnOpenFromResetPass.Location = New System.Drawing.Point(58, 159)
         Me.BtnOpenFromResetPass.Name = "BtnOpenFromResetPass"
         Me.BtnOpenFromResetPass.Size = New System.Drawing.Size(200, 40)

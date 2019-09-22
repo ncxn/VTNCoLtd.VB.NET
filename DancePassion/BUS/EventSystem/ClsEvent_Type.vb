@@ -1,6 +1,7 @@
 ﻿
 Imports System.Security.Cryptography
 Imports MySql.Data.MySqlClient
+Imports VTNcoLtd.DAL
 
 #Region " DTO"
 'table Roles

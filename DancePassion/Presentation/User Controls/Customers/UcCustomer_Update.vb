@@ -1,6 +1,4 @@
-﻿Imports DancePassion
-
-Public Class UcCustomer_Update
+﻿Public Class UcCustomer_Update
 
     Public Sub New()
 

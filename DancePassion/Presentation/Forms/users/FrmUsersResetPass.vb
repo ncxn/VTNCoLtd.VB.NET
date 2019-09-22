@@ -1,6 +1,6 @@
 ﻿Imports DevExpress.XtraEditors
 Imports DevExpress.XtraSplashScreen
-
+Imports VTNcoLtd.Helper
 Public Class FrmUsersResetPass
     Public Sub New()
 

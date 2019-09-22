@@ -62,9 +62,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.DancePassion.Settings
+        Friend ReadOnly Property Settings() As Global.VTNcoLtd.Settings
             Get
-                Return Global.DancePassion.Settings.Default
+                Return Global.VTNcoLtd.Settings.Default
             End Get
         End Property
     End Module
