@@ -202,6 +202,18 @@
     <Compile Include="BUS\Core\Users\CurrentUser.vb" />
     <Compile Include="BUS\Core\Users\UserCollection.vb" />
     <Compile Include="BUS\Core\UserRole\CurrentUserRole.vb" />
+    <Compile Include="GUI\User Controls\UcMenuBar.Designer.vb">
+      <DependentUpon>UcMenuBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User Controls\UcMenuBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Controls\UcToolBar.Designer.vb">
+      <DependentUpon>UcToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User Controls\UcToolBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Model\Core\Config\ConfigBasic.vb" />
     <Compile Include="Model\Core\Email\Mail.vb" />
     <Compile Include="Model\Core\RoleControlAccess\RolesControlsAccess.vb" />
@@ -263,7 +275,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="BUS\Core\Config\ClsConfigBasic.vb" />
-    <Compile Include="BUS\Core\Mail\clsMailServer.vb" />
+    <Compile Include="BUS\Core\Mail\ClsMailServer.vb" />
     <Compile Include="BUS\Core\Config\SMSconfig.vb" />
     <Compile Include="BUS\Customers\ClsCustomers.vb" />
     <Compile Include="BUS\Customers\ClsCustomer_Group.vb" />
@@ -492,6 +504,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Forms\FrmMain.resx">
       <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Controls\UcMenuBar.resx">
+      <DependentUpon>UcMenuBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Controls\UcToolBar.resx">
+      <DependentUpon>UcToolBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -850,6 +868,10 @@
     <None Include="Resources\functionscompatibility.svg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\resetlayoutoptions1.svg" />
+    <None Include="Resources\actions_remove.svg" />
+    <None Include="Resources\actions_edit.svg" />
+    <None Include="Resources\actions_add1.svg" />
     <None Include="Resources\group.svg" />
     <None Include="Resources\travel_hotel.svg" />
     <None Include="Resources\bo_address.svg" />
