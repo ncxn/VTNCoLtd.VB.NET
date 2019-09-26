@@ -191,46 +191,60 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Model\Core\Roles.vb" />
-    <Compile Include="Model\Core\UserRole.vb" />
-    <Compile Include="Model\Core\Users.vb" />
-    <Compile Include="Presentation\Forms\Loading.Designer.vb">
+    <Compile Include="BUS\Core\Config\ConfigBasicCollection.vb" />
+    <Compile Include="BUS\Core\Config\CurrentConfigBasic.vb" />
+    <Compile Include="BUS\Core\Mail\CurrentMail.vb" />
+    <Compile Include="BUS\Core\Mail\MailCollection.vb" />
+    <Compile Include="BUS\Core\RoleControlAccess\CurrentRolesControlsAccess.vb" />
+    <Compile Include="BUS\Core\RoleControlAccess\RoleControlAccessCollection.vb" />
+    <Compile Include="BUS\Core\Roles\RoleCollection.vb" />
+    <Compile Include="BUS\Core\UserRole\UserRoleCollection.vb" />
+    <Compile Include="BUS\Core\Users\CurrentUser.vb" />
+    <Compile Include="BUS\Core\Users\UserCollection.vb" />
+    <Compile Include="BUS\Core\UserRole\CurrentUserRole.vb" />
+    <Compile Include="Model\Core\Config\ConfigBasic.vb" />
+    <Compile Include="Model\Core\Email\Mail.vb" />
+    <Compile Include="Model\Core\RoleControlAccess\RolesControlsAccess.vb" />
+    <Compile Include="Model\Core\UserRole\UserRole.vb" />
+    <Compile Include="Model\Core\Roles\Roles.vb" />
+    <Compile Include="Model\Core\Users\Users.vb" />
+    <Compile Include="GUI\Forms\Loading.Designer.vb">
       <DependentUpon>Loading.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\Loading.vb">
+    <Compile Include="GUI\Forms\Loading.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\users\FrmUsersChangePassWord.Designer.vb">
+    <Compile Include="GUI\Forms\users\FrmUsersChangePassWord.Designer.vb">
       <DependentUpon>FrmUsersChangePassWord.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\users\FrmUsersChangePassWord.vb">
+    <Compile Include="GUI\Forms\users\FrmUsersChangePassWord.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\users\FrmUsersGetActiveCode.vb">
+    <Compile Include="GUI\Forms\users\FrmUsersGetActiveCode.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\users\FrmUsersLogIn.Designer.vb">
+    <Compile Include="GUI\Forms\users\FrmUsersLogIn.Designer.vb">
       <DependentUpon>FrmUsersLogIn.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\users\FrmUsersLogIn.vb">
+    <Compile Include="GUI\Forms\users\FrmUsersLogIn.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\users\FrmUsersResetPass.Designer.vb">
+    <Compile Include="GUI\Forms\users\FrmUsersResetPass.Designer.vb">
       <DependentUpon>FrmUsersResetPass.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\users\FrmUsersResetPass.vb">
+    <Compile Include="GUI\Forms\users\FrmUsersResetPass.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\WaitForm.Designer.vb">
+    <Compile Include="GUI\Forms\WaitForm.Designer.vb">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\WaitForm.vb">
+    <Compile Include="GUI\Forms\WaitForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\FrmMain.Designer.vb">
+    <Compile Include="GUI\Forms\FrmMain.Designer.vb">
       <DependentUpon>FrmMain.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\FrmMain.vb">
+    <Compile Include="GUI\Forms\FrmMain.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Helper\ClsDelegate.vb" />
@@ -248,9 +262,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="BUS\Config\ClsConfig_Basic.vb" />
-    <Compile Include="BUS\Config\clsMailServer.vb" />
-    <Compile Include="BUS\Config\SMSconfig.vb" />
+    <Compile Include="BUS\Core\Config\ClsConfigBasic.vb" />
+    <Compile Include="BUS\Core\Mail\clsMailServer.vb" />
+    <Compile Include="BUS\Core\Config\SMSconfig.vb" />
     <Compile Include="BUS\Customers\ClsCustomers.vb" />
     <Compile Include="BUS\Customers\ClsCustomer_Group.vb" />
     <Compile Include="BUS\DevExpressHelper\ClsDocumentManagerHelper.vb" />
@@ -261,222 +275,222 @@
     <Compile Include="BUS\DevExpressHelper\ClsGridControlHelper.vb" />
     <Compile Include="BUS\EventSystem\ClsEvents.vb" />
     <Compile Include="BUS\EventSystem\ClsEvent_Type.vb" />
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Add.Designer.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Add.Designer.vb">
       <DependentUpon>UcCustomer_Add.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Add.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Add.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Group_Add.Designer.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Group_Add.Designer.vb">
       <DependentUpon>UcCustomer_Group_Add.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Group_Add.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Group_Add.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Group_Manager.Designer.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Group_Manager.Designer.vb">
       <DependentUpon>UcCustomer_Group_Manager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Group_Manager.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Group_Manager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Group_Update.Designer.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Group_Update.Designer.vb">
       <DependentUpon>UcCustomer_Group_Update.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Group_Update.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Group_Update.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Manager.Designer.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Manager.Designer.vb">
       <DependentUpon>UcCustomer_Manager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Manager.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Manager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Update.Designer.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Update.Designer.vb">
       <DependentUpon>UcCustomer_Update.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Customers\UcCustomer_Update.vb">
+    <Compile Include="GUI\User Controls\Customers\UcCustomer_Update.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvents_Add.Designer.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvents_Add.Designer.vb">
       <DependentUpon>UcEvents_Add.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvents_Add.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvents_Add.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvents_Update.Designer.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvents_Update.Designer.vb">
       <DependentUpon>UcEvents_Update.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvents_Update.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvents_Update.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvents_Manager.Designer.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvents_Manager.Designer.vb">
       <DependentUpon>UcEvents_Manager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvents_Manager.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvents_Manager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvent_Type_Add.Designer.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvent_Type_Add.Designer.vb">
       <DependentUpon>UcEvent_Type_Add.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvent_Type_Add.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvent_Type_Add.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvent_Type_Manager.Designer.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvent_Type_Manager.Designer.vb">
       <DependentUpon>UcEvent_Type_Manager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvent_Type_Manager.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvent_Type_Manager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvent_Type_Update.Designer.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvent_Type_Update.Designer.vb">
       <DependentUpon>UcEvent_Type_Update.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\EventSystem\UcEvent_Type_Update.vb">
+    <Compile Include="GUI\User Controls\EventSystem\UcEvent_Type_Update.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Organization\UcConfig_Basic.Designer.vb">
+    <Compile Include="GUI\User Controls\Organization\UcConfig_Basic.Designer.vb">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Organization\UcConfig_Basic.vb">
+    <Compile Include="GUI\User Controls\Organization\UcConfig_Basic.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Roles\UcRolesAdd.Designer.vb">
+    <Compile Include="GUI\User Controls\Roles\UcRolesAdd.Designer.vb">
       <DependentUpon>UcRolesAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Roles\UcRolesAdd.vb">
+    <Compile Include="GUI\User Controls\Roles\UcRolesAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BUS\Users\ClsUsersConfirm.vb" />
-    <Compile Include="Presentation\User Controls\DevManager\UcControlsAccessManager.Designer.vb">
+    <Compile Include="BUS\Core\Users\ClsUsersConfirm.vb" />
+    <Compile Include="GUI\User Controls\DevManager\UcControlsAccessManager.Designer.vb">
       <DependentUpon>UcControlsAccessManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcControlsAccessManager.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcControlsAccessManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcAccessAdd.Designer.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcAccessAdd.Designer.vb">
       <DependentUpon>UcAccessAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcAccessAdd.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcAccessAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcAccessUpdate.Designer.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcAccessUpdate.Designer.vb">
       <DependentUpon>UcAccessUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcAccessUpdate.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcAccessUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcControlAdd.Designer.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcControlAdd.Designer.vb">
       <DependentUpon>UcControlAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcControlAdd.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcControlAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BUS\RoleManager\ClsRoleManager.vb" />
-    <Compile Include="BUS\Roles\ClsRoles.vb" />
-    <Compile Include="BUS\UserRoles\ClsUserToRoles.vb" />
-    <Compile Include="BUS\Users\ClsUsers.vb" />
-    <Compile Include="Presentation\User Controls\DevManager\UcAccessManager.Designer.vb">
+    <Compile Include="BUS\Core\RoleControlAccess\ClsRoleManager.vb" />
+    <Compile Include="BUS\Core\Roles\ClsRoles.vb" />
+    <Compile Include="BUS\Core\UserRole\ClsUserRole.vb" />
+    <Compile Include="BUS\Core\Users\ClsUsers.vb" />
+    <Compile Include="GUI\User Controls\DevManager\UcAccessManager.Designer.vb">
       <DependentUpon>UcAccessManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcAccessManager.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcAccessManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcControlsManager.Designer.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcControlsManager.Designer.vb">
       <DependentUpon>UcControlsManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcControlsManager.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcControlsManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcControlUpdate.Designer.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcControlUpdate.Designer.vb">
       <DependentUpon>UcControlUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\DevManager\UcControlUpdate.vb">
+    <Compile Include="GUI\User Controls\DevManager\UcControlUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Email\UcEmailManager.Designer.vb">
+    <Compile Include="GUI\User Controls\Email\UcEmailManager.Designer.vb">
       <DependentUpon>UcEmailManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Email\UcEmailManager.vb">
+    <Compile Include="GUI\User Controls\Email\UcEmailManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\RoleManager\UcRoleManager.Designer.vb">
+    <Compile Include="GUI\User Controls\RoleManager\UcRoleManager.Designer.vb">
       <DependentUpon>UcRoleManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\RoleManager\UcRoleManager.vb">
+    <Compile Include="GUI\User Controls\RoleManager\UcRoleManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Roles\UcRolesManager.Designer.vb">
+    <Compile Include="GUI\User Controls\Roles\UcRolesManager.Designer.vb">
       <DependentUpon>UcRolesManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Roles\UcRolesManager.vb">
+    <Compile Include="GUI\User Controls\Roles\UcRolesManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Roles\UcRolesUpdate.Designer.vb">
+    <Compile Include="GUI\User Controls\Roles\UcRolesUpdate.Designer.vb">
       <DependentUpon>UcRolesUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Roles\UcRolesUpdate.vb">
+    <Compile Include="GUI\User Controls\Roles\UcRolesUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\UcBase.Designer.vb">
+    <Compile Include="GUI\User Controls\UcBase.Designer.vb">
       <DependentUpon>UcBase.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\UcBase.vb">
+    <Compile Include="GUI\User Controls\UcBase.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUserChangePass.Designer.vb">
+    <Compile Include="GUI\User Controls\Users\UcUserChangePass.Designer.vb">
       <DependentUpon>UcUserChangePass.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUserChangePass.vb">
+    <Compile Include="GUI\User Controls\Users\UcUserChangePass.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersLogin.Designer.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersLogin.Designer.vb">
       <DependentUpon>UcUsersLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersLogin.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersLogin.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersManager.Designer.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersManager.Designer.vb">
       <DependentUpon>UcUsersManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersManager.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersManager.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersAdd.Designer.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersAdd.Designer.vb">
       <DependentUpon>UcUsersAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersAdd.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersAdd.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersUpdate.Designer.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersUpdate.Designer.vb">
       <DependentUpon>UcUsersUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUsersUpdate.vb">
+    <Compile Include="GUI\User Controls\Users\UcUsersUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUserProfiles.Designer.vb">
+    <Compile Include="GUI\User Controls\Users\UcUserProfiles.Designer.vb">
       <DependentUpon>UcUserProfiles.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\User Controls\Users\UcUserProfiles.vb">
+    <Compile Include="GUI\User Controls\Users\UcUserProfiles.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <EmbeddedResource Include="Presentation\Forms\Loading.resx">
+    <EmbeddedResource Include="GUI\Forms\Loading.resx">
       <DependentUpon>Loading.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\users\FrmUsersChangePassWord.resx">
+    <EmbeddedResource Include="GUI\Forms\users\FrmUsersChangePassWord.resx">
       <DependentUpon>FrmUsersChangePassWord.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\users\FrmUsersGetActiveCode.resx">
+    <EmbeddedResource Include="GUI\Forms\users\FrmUsersGetActiveCode.resx">
       <DependentUpon>FrmUsersGetActiveCode.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\users\FrmUsersLogIn.resx">
+    <EmbeddedResource Include="GUI\Forms\users\FrmUsersLogIn.resx">
       <DependentUpon>FrmUsersLogIn.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\users\FrmUsersResetPass.resx">
+    <EmbeddedResource Include="GUI\Forms\users\FrmUsersResetPass.resx">
       <DependentUpon>FrmUsersResetPass.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\WaitForm.resx">
+    <EmbeddedResource Include="GUI\Forms\WaitForm.resx">
       <DependentUpon>WaitForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\FrmMain.resx">
+    <EmbeddedResource Include="GUI\Forms\FrmMain.resx">
       <DependentUpon>FrmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
@@ -486,100 +500,100 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Customers\UcCustomer_Add.resx">
+    <EmbeddedResource Include="GUI\User Controls\Customers\UcCustomer_Add.resx">
       <DependentUpon>UcCustomer_Add.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Customers\UcCustomer_Group_Add.resx">
+    <EmbeddedResource Include="GUI\User Controls\Customers\UcCustomer_Group_Add.resx">
       <DependentUpon>UcCustomer_Group_Add.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Customers\UcCustomer_Group_Manager.resx">
+    <EmbeddedResource Include="GUI\User Controls\Customers\UcCustomer_Group_Manager.resx">
       <DependentUpon>UcCustomer_Group_Manager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Customers\UcCustomer_Group_Update.resx">
+    <EmbeddedResource Include="GUI\User Controls\Customers\UcCustomer_Group_Update.resx">
       <DependentUpon>UcCustomer_Group_Update.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Customers\UcCustomer_Manager.resx">
+    <EmbeddedResource Include="GUI\User Controls\Customers\UcCustomer_Manager.resx">
       <DependentUpon>UcCustomer_Manager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Customers\UcCustomer_Update.resx">
+    <EmbeddedResource Include="GUI\User Controls\Customers\UcCustomer_Update.resx">
       <DependentUpon>UcCustomer_Update.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\EventSystem\UcEvents_Add.resx">
+    <EmbeddedResource Include="GUI\User Controls\EventSystem\UcEvents_Add.resx">
       <DependentUpon>UcEvents_Add.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\EventSystem\UcEvents_Manager.resx">
+    <EmbeddedResource Include="GUI\User Controls\EventSystem\UcEvents_Manager.resx">
       <DependentUpon>UcEvents_Manager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\EventSystem\UcEvents_Update.resx">
+    <EmbeddedResource Include="GUI\User Controls\EventSystem\UcEvents_Update.resx">
       <DependentUpon>UcEvents_Update.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\EventSystem\UcEvent_Type_Add.resx">
+    <EmbeddedResource Include="GUI\User Controls\EventSystem\UcEvent_Type_Add.resx">
       <DependentUpon>UcEvent_Type_Add.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\EventSystem\UcEvent_Type_Manager.resx">
+    <EmbeddedResource Include="GUI\User Controls\EventSystem\UcEvent_Type_Manager.resx">
       <DependentUpon>UcEvent_Type_Manager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\EventSystem\UcEvent_Type_Update.resx">
+    <EmbeddedResource Include="GUI\User Controls\EventSystem\UcEvent_Type_Update.resx">
       <DependentUpon>UcEvent_Type_Update.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Organization\UcConfig_Basic.resx">
+    <EmbeddedResource Include="GUI\User Controls\Organization\UcConfig_Basic.resx">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Roles\UcRolesAdd.resx">
+    <EmbeddedResource Include="GUI\User Controls\Roles\UcRolesAdd.resx">
       <DependentUpon>UcRolesAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\DevManager\UcControlsAccessManager.resx">
+    <EmbeddedResource Include="GUI\User Controls\DevManager\UcControlsAccessManager.resx">
       <DependentUpon>UcControlsAccessManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\DevManager\UcAccessAdd.resx">
+    <EmbeddedResource Include="GUI\User Controls\DevManager\UcAccessAdd.resx">
       <DependentUpon>UcAccessAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\DevManager\UcAccessManager.resx">
+    <EmbeddedResource Include="GUI\User Controls\DevManager\UcAccessManager.resx">
       <DependentUpon>UcAccessManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\DevManager\UcAccessUpdate.resx">
+    <EmbeddedResource Include="GUI\User Controls\DevManager\UcAccessUpdate.resx">
       <DependentUpon>UcAccessUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\DevManager\UcControlAdd.resx">
+    <EmbeddedResource Include="GUI\User Controls\DevManager\UcControlAdd.resx">
       <DependentUpon>UcControlAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\DevManager\UcControlsManager.resx">
+    <EmbeddedResource Include="GUI\User Controls\DevManager\UcControlsManager.resx">
       <DependentUpon>UcControlsManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\DevManager\UcControlUpdate.resx">
+    <EmbeddedResource Include="GUI\User Controls\DevManager\UcControlUpdate.resx">
       <DependentUpon>UcControlUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Email\UcEmailManager.resx">
+    <EmbeddedResource Include="GUI\User Controls\Email\UcEmailManager.resx">
       <DependentUpon>UcEmailManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\RoleManager\UcRoleManager.resx">
+    <EmbeddedResource Include="GUI\User Controls\RoleManager\UcRoleManager.resx">
       <DependentUpon>UcRoleManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Roles\UcRolesManager.resx">
+    <EmbeddedResource Include="GUI\User Controls\Roles\UcRolesManager.resx">
       <DependentUpon>UcRolesManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Roles\UcRolesUpdate.resx">
+    <EmbeddedResource Include="GUI\User Controls\Roles\UcRolesUpdate.resx">
       <DependentUpon>UcRolesUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\UcBase.resx">
+    <EmbeddedResource Include="GUI\User Controls\UcBase.resx">
       <DependentUpon>UcBase.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Users\UcUserChangePass.resx">
+    <EmbeddedResource Include="GUI\User Controls\Users\UcUserChangePass.resx">
       <DependentUpon>UcUserChangePass.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Users\UcUsersLogin.resx">
+    <EmbeddedResource Include="GUI\User Controls\Users\UcUsersLogin.resx">
       <DependentUpon>UcUsersLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Users\UcUsersManager.resx">
+    <EmbeddedResource Include="GUI\User Controls\Users\UcUsersManager.resx">
       <DependentUpon>UcUsersManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Users\UcUsersAdd.resx">
+    <EmbeddedResource Include="GUI\User Controls\Users\UcUsersAdd.resx">
       <DependentUpon>UcUsersAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Users\UcUsersUpdate.resx">
+    <EmbeddedResource Include="GUI\User Controls\Users\UcUsersUpdate.resx">
       <DependentUpon>UcUsersUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\User Controls\Users\UcUserProfiles.resx">
+    <EmbeddedResource Include="GUI\User Controls\Users\UcUserProfiles.resx">
       <DependentUpon>UcUserProfiles.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
@@ -845,9 +859,8 @@
     <None Include="Resources\actions_send.svg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BUS\Core\" />
-    <Folder Include="Presentation\Core\" />
-    <Folder Include="Presentation\Forms\config\" />
+    <Folder Include="GUI\Core\" />
+    <Folder Include="GUI\Forms\config\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" />
