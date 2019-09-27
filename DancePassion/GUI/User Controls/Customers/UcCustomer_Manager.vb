@@ -1,4 +1,6 @@
 ﻿Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
 
 Public Class UcCustomer_Manager
 
@@ -140,7 +142,7 @@ Public Class UcCustomer_Manager
         End Try
     End Sub
 
-    Function GetModel() As Customer_DTO
+    Function GetModel() As Customer
         Return Grv.GetFocusedRow()
     End Function
 

@@ -1,4 +1,6 @@
 ﻿Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.Model
+Imports VTNcoLtd.BUS
 
 Public Class UcCustomer_Add
     Public Sub New()
@@ -66,8 +68,8 @@ Public Class UcCustomer_Add
 
 #Region " Xử lý dữ liệu"
 
-    Private Function GetModel() As Customer_DTO
-        Dim Model As New Customer_DTO
+    Private Function GetModel() As Customer
+        Dim Model As New Customer
         With Model
             .Customer_Id = 0
             .Customer_Name = TxtCustomer_Name.Text
@@ -126,7 +128,7 @@ Public Class UcCustomer_Add
     End Sub
 
     Sub GetSourceCustomer()
-        _customer_group = ClsCustomer_Group.GetInstance.GetList()
+        _Customer_Group = ClsCustomer_Group.GetInstance.GetList()
     End Sub
 #End Region
 

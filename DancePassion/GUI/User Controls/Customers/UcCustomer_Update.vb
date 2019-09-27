@@ -1,4 +1,7 @@
-﻿Public Class UcCustomer_Update
+﻿Imports VTNcoLtd.Model
+Imports VTNcoLtd.BUS
+
+Public Class UcCustomer_Update
 
     Public Sub New()
 
@@ -10,14 +13,14 @@
     End Sub
 
 #Region " Properties"
-    Private _Cmodel As Customer_DTO
+    Private _Cmodel As Customer
     Private _Customer_Group As Customer_GroupCollection
 
-    Public Property Cmodel As Customer_DTO
+    Public Property Cmodel As Customer
         Get
             Return _Cmodel
         End Get
-        Set(value As Customer_DTO)
+        Set(value As Customer)
             _Cmodel = value
         End Set
     End Property
@@ -73,9 +76,9 @@
         Return Not String.IsNullOrEmpty(TxtCustomer_Name.Text)
     End Function
 
-    Private Function GetModel() As Customer_DTO
+    Private Function GetModel() As Customer
 
-        Dim Model As New Customer_DTO
+        Dim Model As New Customer
 
         If ValidateInput() Then
             With Model
