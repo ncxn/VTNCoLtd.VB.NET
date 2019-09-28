@@ -1,9 +1,11 @@
 ﻿Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
 
 Public Class UcCustomer_Group_Update
 
-    Private _Cmodel As Customer_Group_DTO
-    Private _CustomerGroup As Customer_GroupCollection
+    Private _Cmodel As CustomerGroup
+    Private _CustomerGroup As CustomerGroupCollection
 
     Public Sub New()
 
@@ -14,20 +16,20 @@ Public Class UcCustomer_Group_Update
         HasAccess(Me.Name)
     End Sub
 
-    Public Property Cmodel As Customer_Group_DTO
+    Public Property Cmodel As CustomerGroup
         Get
             Return _Cmodel
         End Get
-        Set(value As Customer_Group_DTO)
+        Set(value As CustomerGroup)
             _Cmodel = value
         End Set
     End Property
 
-    Public Property CustomerGroup As Customer_GroupCollection
+    Public Property CustomerGroup As CustomerGroupCollection
         Get
             Return _CustomerGroup
         End Get
-        Set(value As Customer_GroupCollection)
+        Set(value As CustomerGroupCollection)
             _CustomerGroup = value
         End Set
     End Property
@@ -36,7 +38,7 @@ Public Class UcCustomer_Group_Update
 
     Sub OK() Handles BtnOK.ItemClick
         Dim handle = SplashScreenManager.ShowOverlayForm(Me)
-        If ClsCustomer_Group.GetInstance.Update(GetModel()) Then
+        If ClsCustomerGroup.GetInstance.Update(GetModel()) Then
             If RemoveTab IsNot Nothing Then
                 RemoveTab()
             End If
@@ -54,9 +56,9 @@ Public Class UcCustomer_Group_Update
 
 #Region " Xử lý dữ liệu"
 
-    Private Function GetModel() As Customer_Group_DTO
+    Private Function GetModel() As CustomerGroup
 
-        Dim Model As New Customer_Group_DTO
+        Dim Model As New CustomerGroup
 
         If ValidateInput() Then
             With Model

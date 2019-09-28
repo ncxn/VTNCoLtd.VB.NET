@@ -18,7 +18,7 @@ Public Class UcCustomer_Manager
 #Region " Properties"
 
     Private _Customer As New CustomerCollection
-    Private _Customer_Group As New Customer_GroupCollection
+    Private _Customer_Group As New CustomerGroupCollection
 
     Public Property Customer As CustomerCollection
         Get
@@ -29,11 +29,11 @@ Public Class UcCustomer_Manager
         End Set
     End Property
 
-    Public Property Customer_Group As Customer_GroupCollection
+    Public Property Customer_Group As CustomerGroupCollection
         Get
             Return _Customer_Group
         End Get
-        Set(value As Customer_GroupCollection)
+        Set(value As CustomerGroupCollection)
             _Customer_Group = value
         End Set
     End Property
@@ -128,7 +128,7 @@ Public Class UcCustomer_Manager
 
     Sub GetCustomerGroupSource()
         Try
-            _Customer_Group = ClsCustomer_Group.GetInstance.GetList()
+            _Customer_Group = ClsCustomerGroup.GetInstance.GetList()
         Catch ex As Exception
             ClsMessageHelper.GetInstance.ShowError(ex.Message)
         End Try

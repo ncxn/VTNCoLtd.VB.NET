@@ -14,7 +14,7 @@ Public Class UcCustomer_Update
 
 #Region " Properties"
     Private _Cmodel As Customer
-    Private _Customer_Group As Customer_GroupCollection
+    Private _Customer_Group As CustomerGroupCollection
 
     Public Property Cmodel As Customer
         Get
@@ -25,11 +25,11 @@ Public Class UcCustomer_Update
         End Set
     End Property
 
-    Public Property Customer_Group As Customer_GroupCollection
+    Public Property Customer_Group As CustomerGroupCollection
         Get
             Return _Customer_Group
         End Get
-        Set(value As Customer_GroupCollection)
+        Set(value As CustomerGroupCollection)
             _Customer_Group = value
         End Set
     End Property

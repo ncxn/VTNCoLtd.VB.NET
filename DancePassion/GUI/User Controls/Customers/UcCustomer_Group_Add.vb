@@ -1,16 +1,18 @@
 ﻿Imports DevExpress.XtraEditors
 Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
 
 Public Class UcCustomer_Group_Add
 
-    Private _customer_group As New Customer_GroupCollection
+    Private _customer_group As New CustomerGroupCollection
 
-    Public Property CustomerGroup As Customer_GroupCollection
+    Public Property CustomerGroup As CustomerGroupCollection
         Get
             Return _customer_group
         End Get
-        Set(value As Customer_GroupCollection)
+        Set(value As CustomerGroupCollection)
             _customer_group = value
         End Set
     End Property
@@ -66,8 +68,8 @@ Public Class UcCustomer_Group_Add
 
 #Region " Xử lý dữ liệu"
 
-    Private Function GetModel() As Customer_Group_DTO
-        Dim Model As New Customer_Group_DTO
+    Private Function GetModel() As CustomerGroup
+        Dim Model As New CustomerGroup
         With Model
             .Customer_group_id = 0
             .Customer_group_name = TxtCustomer_Group_Name.Text
@@ -96,7 +98,7 @@ Public Class UcCustomer_Group_Add
     Private Function InsertModel() As Boolean
         If ValidateInput() Then
             Try
-                ClsCustomer_Group.GetInstance.Insert(GetModel())
+                ClsCustomerGroup.GetInstance.Insert(GetModel())
                 Return True
             Catch ex As Exception
                 XtraMessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -122,7 +124,7 @@ Public Class UcCustomer_Group_Add
     End Sub
 
     Sub GetSourceCustomer()
-        _customer_group = ClsCustomer_Group.GetInstance.GetList()
+        _customer_group = ClsCustomerGroup.GetInstance.GetList()
     End Sub
 #End Region
 

@@ -1,9 +1,11 @@
 ﻿Imports DevExpress.XtraEditors.Repository
 Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
 
 Public Class UcCustomer_Group_Manager
 
-    Private CustomerGroup As Customer_GroupCollection
+    Private CustomerGroup As CustomerGroupCollection
 
     Public Sub New()
 
@@ -36,7 +38,7 @@ Public Class UcCustomer_Group_Manager
 
     Sub Delete() Handles BtnDELETE.ItemClick
         Dim handle = SplashScreenManager.ShowOverlayForm(Me)
-        If ClsCustomer_Group.GetInstance.Delete(GetModel()) Then
+        If ClsCustomerGroup.GetInstance.Delete(GetModel()) Then
             Grv.DeleteRow(Grv.FocusedRowHandle)
         End If
         SplashScreenManager.CloseOverlayForm(handle)
@@ -59,7 +61,7 @@ Public Class UcCustomer_Group_Manager
 #Region " Xử lý dữ liệu"
 
     Private Sub LoadData() Handles Me.Load
-        CustomerGroup = ClsCustomer_Group.GetInstance.GetList()
+        CustomerGroup = ClsCustomerGroup.GetInstance.GetList()
         Grd.DataSource = CustomerGroup
         Grv.Columns("Customer_group_id").Caption = "Mã nhóm khách hàng"
         Grv.Columns("Customer_group_name").Caption = "Tên nhóm khách hàng"
@@ -85,11 +87,11 @@ Public Class UcCustomer_Group_Manager
         Grv.Columns("Customer_group_parent").ColumnEdit = edit
     End Sub
 
-    Private Function GetModel() As Customer_Group_DTO
+    Private Function GetModel() As CustomerGroup
 
         'Dim SelectedRow As DataRow = Grv.GetFocusedRow()
 
-        'Dim Model As New Customer_Group_DTO
+        'Dim Model As New CustomerGroup
 
         'If SelectedRow IsNot Nothing Then
         '    With Model
