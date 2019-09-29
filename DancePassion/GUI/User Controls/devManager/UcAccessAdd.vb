@@ -1,4 +1,7 @@
-﻿Public Class UcAccessAdd
+﻿Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
+
+Public Class UcAccessAdd
     Public Sub New()
 
         ' This call is required by the designer.
@@ -7,6 +10,7 @@
         ' Add any initialization after the InitializeComponent() call.
         HasAccess(Me.Name)
     End Sub
+
 #Region " Form action"
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
         UpdateDB()
@@ -21,11 +25,11 @@
 
 #Region " Xử lý dữ liệu"
     Private Sub UpdateDB()
-        Dim data As New AccessDTO With {
+        Dim data As New Access With {
             .Access_name = TxtAccess_name.Text.ToString,
             .Access_desc = TxtAccess_desc.Text.ToString
         }
-        If ClsAccess.GetInstance.insert(data) Then
+        If ClsAccess.GetInstance.Insert(data) Then
 
         End If
     End Sub

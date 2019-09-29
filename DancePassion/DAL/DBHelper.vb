@@ -52,22 +52,20 @@ Namespace DAL
 
         Private Function GetCommand(ByVal commandText As String, ByVal commandType As CommandType) As MySqlCommand
             Dim cmd = New MySqlCommand With {
-            .CommandText = commandText,
-            .CommandType = commandType,
-            .Connection = connMYSQL
-        }
-
+                .CommandText = commandText,
+                .CommandType = commandType,
+                .Connection = connMYSQL
+            }
             Return cmd
         End Function
 
         Private Function GetCommandWithTransaction(ByVal commandText As String, ByVal commandType As CommandType) As MySqlCommand
             Dim cmd = New MySqlCommand With {
-            .CommandText = commandText,
-            .CommandType = commandType,
-            .Connection = connMYSQL,
-            .Transaction = transactionScope
-        }
-
+                .CommandText = commandText,
+                .CommandType = commandType,
+                .Connection = connMYSQL,
+                .Transaction = transactionScope
+            }
             Return cmd
         End Function
 
@@ -80,10 +78,10 @@ Namespace DAL
         Private Function AddParameter(ByVal name As String, ByVal value As Object) As MySqlParameter
             Try
                 Dim Parameter = New MySqlParameter With {
-                .ParameterName = name,
-                .Value = value,
-                .Direction = ParameterDirection.Input
-            }
+                    .ParameterName = name,
+                    .Value = value,
+                    .Direction = ParameterDirection.Input
+                }
                 Return Parameter
             Catch ex As Exception
                 Throw New Exception("Invalid parameter")

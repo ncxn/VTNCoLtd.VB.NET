@@ -38,7 +38,7 @@ Public Class UcBase
     End Function
 
     Private Sub HasAccessOnControl(Control As String)
-        Dim listAccess As List(Of String) = ClsControlsAccess.GetInstance.GetAccessByControls(Control, CurrentControlsAccess.ControlsAccessColection)
+        Dim listAccess As List(Of String) = ClsControlAccess.GetInstance.GetAccessByControls(Control, CurrentControlAccess.ControlAccessCollection)
         For Each pag As RibbonPage In BaseRibbon.Pages
             For Each pagGroup As RibbonPageGroup In pag.Groups
                 Dim VisibleAll As Boolean = False

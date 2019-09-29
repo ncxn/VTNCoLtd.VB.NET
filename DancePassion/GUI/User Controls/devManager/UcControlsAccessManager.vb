@@ -1,10 +1,12 @@
 ﻿Imports DevExpress.XtraGrid.Views.Base
 Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
 
 Public Class UcControlsAccessManager
 
     Private Control As String
-    Private ObjControlsAccessList As ControlsAccessCollection
+    Private ObjControlAccessList As ControlAccessCollection
 
     Public Sub New()
 
@@ -12,14 +14,14 @@ Public Class UcControlsAccessManager
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        ObjControlsAccessList = ClsControlsAccess.GetInstance.GetList()
+        ObjControlAccessList = ClsControlAccess.GetInstance.GetList()
         HasAccess(Me.Name)
         HasRoles(Me.Name)
     End Sub
 
 #Region " Form Action"
 
-    Private Sub ControlsAccessManager_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub ControlAccessManager_Load(sender As Object, e As EventArgs) Handles Me.Load
         PopularControls()
         PopularAccess()
         SetCheckedItemOnAccessListBox()
@@ -70,7 +72,7 @@ Public Class UcControlsAccessManager
     End Sub
 
     Private Sub SetCheckedItemOnAccessListBox()
-        Dim ObjAccessByControl = ClsControlsAccess.GetInstance.GetAccessByControls(GrvControls.GetFocusedRowCellValue("Tên Control").ToString, ObjControlsAccessList)
+        Dim ObjAccessByControl = ClsControlAccess.GetInstance.GetAccessByControls(GrvControls.GetFocusedRowCellValue("Tên Control").ToString, ObjControlAccessList)
 
         ' Duyệt qua từng phần tử trong ListAccess(chức năng) nếu tồn tại trong objAC thì checked, ngược lại thì Unchecked
 
@@ -83,33 +85,33 @@ Public Class UcControlsAccessManager
         Next
     End Sub
 
-    Private Function GetControlsAccessCollection() As ControlsAccessCollection
-        Dim ControlsAccessCollection As New ControlsAccessCollection
+    Private Function GetControlAccessCollection() As ControlAccessCollection
+        Dim ControlAccessCollection As New ControlAccessCollection
 
-        For Each item As AccessDTO In ChkAccess.CheckedItems
-            Dim ControlsAccessDTO As New ControlsAccessDTO With {
+        For Each item As Access In ChkAccess.CheckedItems
+            Dim ControlAccess As New ControlAccess With {
                 .Control_name = GrvControls.GetFocusedRowCellValue("Tên Control").ToString,
                 .Access_name = item.Access_name.ToString()}
-            ControlsAccessCollection.Add(ControlsAccessDTO)
+            ControlAccessCollection.Add(ControlAccess)
         Next
-        Return ControlsAccessCollection
+        Return ControlAccessCollection
     End Function
 
-    Private Function GetControlsAccessDTO() As ControlsAccessDTO
-        Dim ControlsAccess As New ControlsAccessDTO With {
+    Private Function GetControlAccess() As ControlAccess
+        Dim ControlAccess As New ControlAccess With {
             .Control_name = GrvControls.GetFocusedRowCellValue("Tên Control").ToString,
             .Access_name = ""}
 
-        Return ControlsAccess
+        Return ControlAccess
     End Function
 
     Private Sub UpdateDB()
 
         ' Xóa hết những chức năng trên control trước khi thêm mới
-        ClsControlsAccess.GetInstance.Delete(GetControlsAccessDTO())
+        ClsControlAccess.GetInstance.Delete(GetControlAccess())
 
         ' Thêm mới vào
-        If ClsControlsAccess.GetInstance.BulkInsert(GetControlsAccessCollection()) Then
+        If ClsControlAccess.GetInstance.BulkInsert(GetControlAccessCollection()) Then
             Debug.WriteLine("Thành công")
         End If
     End Sub

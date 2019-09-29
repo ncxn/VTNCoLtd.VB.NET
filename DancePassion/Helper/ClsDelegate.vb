@@ -1,4 +1,6 @@
-﻿Public Class ClsDelegate
+﻿Imports VTNcoLtd.BUS
+
+Public Class ClsDelegate
     ' 
     ' Hướng dẫn: https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/delegates/
     '
@@ -11,7 +13,7 @@
     Public Delegate Sub RemoveTab()
 
     ' Ẩn Page Group nếu không có item bên trong
-    Public Delegate Sub HideGroup(Controls As String, ControlsAccess As ControlsAccessCollection)
+    Public Delegate Sub HideGroup(Controls As String, ControlsAccess As ControlAccessCollection)
 
     'Role
     Public Delegate Sub CheckRole(Controls As String)

@@ -9,7 +9,7 @@ Public Class UcRoleManager
 
 #Region " Dữ liệu dùng chung"
     ' Mịa dùng MySQL server remote qua tới US chậm vãi nồi. Nên cho nó load khi load form
-    Private ObjControlsAccessList As ControlsAccessCollection
+    Private ObjControlsAccessList As ControlAccessCollection
     Private ObjAccessList As New AccessCollection
     Private ObjRoleControlsAccessList As New RoleControlAccessCollection
     ' Tên nhóm được tạo ra khi người dùng chọn nhóm, éo hiểu sao chơi trực tiếp thì nó không work, vứt lên đây thì ngon lành
@@ -26,7 +26,7 @@ Public Class UcRoleManager
         InitializeComponent()
 
         ' Danh sách controls và các action tương ứng trên controls
-        ObjControlsAccessList = CurrentControlsAccess.ControlsAccessColection
+        ObjControlsAccessList = CurrentControlAccess.ControlAccessCollection
         ObjRoleControlsAccessList = ClsRoleManager.GetInstance.GetList()
         ObjAccessList = ClsAccess.GetInstance.GetList()
         HasAccess(Me.Name)
@@ -105,7 +105,7 @@ Public Class UcRoleManager
     Private Sub PopularActions()
 
         Dim ObjAccessByRoleAndControl = ClsRoleManager.GetInstance.GetAccessByRoleAndControls(Role, Control, ObjRoleControlsAccessList)
-        Dim ObjAccessByControl = ClsControlsAccess.GetInstance.GetAccessByControlsWithDesc(Control, ObjControlsAccessList, ObjAccessList)
+        Dim ObjAccessByControl = ClsControlAccess.GetInstance.GetAccessByControlsWithDesc(Control, ObjControlsAccessList, ObjAccessList)
 
         ' Loại bỏ các chức năng mặc định: OK/Cancel/OkandNew
         Dim ListExclude As New List(Of String) From {"BtnCANCEL", "BtnOK", "BtnOKANDNEW"}
@@ -133,23 +133,23 @@ Public Class UcRoleManager
     Private Sub UpdateDB()
         ' Xóa tất cả action by control trước khi thêm mới (ở đây không dùng update mà là xóa toàn bộ rồi thêm mới)
         ClsRoleManager.GetInstance.DeleleByRoleAndControl(Role, Control)
-        ClsRoleManager.GetInstance.BulkInsert(GetRolesControlsAccessCollection)
+        ClsRoleManager.GetInstance.BulkInsert(GetRolesControlAccessCollection)
     End Sub
 
-    Private Function GetRolesControlsAccessCollection() As RoleControlAccessCollection
-        Dim RolesControlsAccessCollection As New RoleControlAccessCollection
+    Private Function GetRolesControlAccessCollection() As RoleControlAccessCollection
+        Dim RolesControlAccessCollection As New RoleControlAccessCollection
 
-        For Each Access As AccessDTO In ChLAccessControl.CheckedItems
+        For Each Access As Access In ChLAccessControl.CheckedItems
 
-            Dim RolesControlsAccessDTO As New RolesControlsAccess With {
+            Dim RolesControlsAccess As New RolesControlsAccess With {
                 .Role_name = Role,
                 .Control_name = Control,
                 .Access_name = Access.Access_name
             }
-            RolesControlsAccessCollection.Add(RolesControlsAccessDTO)
+            RolesControlAccessCollection.Add(RolesControlsAccess)
 
         Next
-        Return RolesControlsAccessCollection
+        Return RolesControlAccessCollection
     End Function
 
 #End Region

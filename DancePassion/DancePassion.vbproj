@@ -197,6 +197,9 @@
     <Compile Include="BUS\Core\Customers\CurrentCustomerGroup.vb" />
     <Compile Include="BUS\Core\Customers\CustomerCollection.vb" />
     <Compile Include="BUS\Core\Customers\CustomerGroupCollection.vb" />
+    <Compile Include="BUS\Core\DevManager\AccessCollection.vb" />
+    <Compile Include="BUS\Core\DevManager\ControlAccessCollection.vb" />
+    <Compile Include="BUS\Core\DevManager\CurrentControlAccess.vb" />
     <Compile Include="BUS\Core\Mail\CurrentMail.vb" />
     <Compile Include="BUS\Core\Mail\MailCollection.vb" />
     <Compile Include="BUS\Core\RoleControlAccess\CurrentRolesControlsAccess.vb" />
@@ -221,6 +224,8 @@
     <Compile Include="Model\Core\Config\ConfigBasic.vb" />
     <Compile Include="Model\Core\Customers\Customer.vb" />
     <Compile Include="Model\Core\Customers\CustomerGroup.vb" />
+    <Compile Include="Model\Core\DevManager\Access.vb" />
+    <Compile Include="Model\Core\DevManager\ControlAccess.vb" />
     <Compile Include="Model\Core\Email\Mail.vb" />
     <Compile Include="Model\Core\RoleControlAccess\RolesControlsAccess.vb" />
     <Compile Include="Model\Core\UserRole\UserRole.vb" />
@@ -289,7 +294,7 @@
     <Compile Include="BUS\DevExpressHelper\ClsMessageHelper.vb" />
     <Compile Include="BUS\Core\DevManager\ClsAccess.vb" />
     <Compile Include="BUS\Core\DevManager\ClsControls.vb" />
-    <Compile Include="BUS\Core\DevManager\ClsControlsAccess.vb" />
+    <Compile Include="BUS\Core\DevManager\ClsControlAccess.vb" />
     <Compile Include="BUS\DevExpressHelper\ClsGridControlHelper.vb" />
     <Compile Include="BUS\EventSystem\ClsEvents.vb" />
     <Compile Include="BUS\EventSystem\ClsEvent_Type.vb" />

@@ -1,15 +1,18 @@
 ﻿Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
 
 Public Class UcAccessManager
 
-    Public Shared AccessDTO As AccessDTO
+    Public Shared Access As Access
     Public Sub New()
 
         ' This call is required by the designer.
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        HasAccess(Me.Name)
         HasRoles(Me.Name)
     End Sub
 
@@ -23,14 +26,14 @@ Public Class UcAccessManager
         End If
     End Sub
     Private Sub BtnEdit_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnEDIT.ItemClick
-        AccessDTO = GetCurrentAccessDTO()
+        Access = GetCurrentAccess()
         If AddDocs IsNot Nothing Then
             AddDocs(New UcAccessUpdate, "Sửa chức năng")
         End If
     End Sub
     Private Sub BtnDelete_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnDELETE.ItemClick
-        AccessDTO = GetCurrentAccessDTO()
-        ClsAccess.GetInstance.Delete(AccessDTO)
+        Access = GetCurrentAccess()
+        ClsAccess.GetInstance.Delete(Access)
         GrvAccess.DeleteRow(GrvAccess.FocusedRowHandle)
     End Sub
     Private Sub BtnREFRESH_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnREFRESH.ItemClick
@@ -50,10 +53,10 @@ Public Class UcAccessManager
         GrdAccess.DataSource = ClsAccess.GetInstance.GetDataTable()
     End Sub
 
-    Private Function GetCurrentAccessDTO() As AccessDTO
+    Private Function GetCurrentAccess() As Access
 
         Dim SelectedRow = GrvAccess.GetFocusedDataRow()
-        Dim dataAccess As New AccessDTO
+        Dim dataAccess As New Access
 
         If SelectedRow IsNot Nothing Then
             With dataAccess

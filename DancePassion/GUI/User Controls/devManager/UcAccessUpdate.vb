@@ -1,4 +1,7 @@
-﻿Public Class UcAccessUpdate
+﻿Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Model
+
+Public Class UcAccessUpdate
     Public Sub New()
 
         ' This call is required by the designer.
@@ -29,16 +32,16 @@
 
 #Region " Xử lý dữ liệu"
     Private Sub LoadData()
-        Dim data = UcAccessManager.AccessDTO
+        Dim data = UcAccessManager.Access
         TxtAccess_name.Text = data.Access_name.ToString()
         TxtAccess_desc.Text = data.Access_desc.ToString
     End Sub
     Private Sub UpdateDB()
-        Dim AccessDTO As New AccessDTO With {
+        Dim Access As New Access With {
             .Access_name = TxtAccess_name.Text.ToString,
             .Access_desc = TxtAccess_desc.Text.ToString}
 
-        If ClsAccess.GetInstance.Update(AccessDTO) Then
+        If ClsAccess.GetInstance.Update(Access) Then
 
         End If
     End Sub

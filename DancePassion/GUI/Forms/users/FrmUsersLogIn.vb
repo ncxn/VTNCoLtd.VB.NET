@@ -80,7 +80,7 @@ Public Class FrmUsersLogIn
                 ' Lấy quyền hạn của user hiện tại thông qua roles (multi)
                 CurrentRolesControlsAccess.RolesControlsAccess = ClsRoleManager.GetInstance.GetControlsAccessByUserName(CurrentUser.User.User_name)
                 ' Lấy tập hợp các chức năng trên form
-                CurrentControlsAccess.ControlsAccessColection = ClsControlsAccess.GetInstance.GetList()
+                CurrentControlAccess.ControlAccessCollection = ClsControlAccess.GetInstance.GetList()
 
                 SplashScreenManager.CloseOverlayForm(handle)
                 Loading.Show()
