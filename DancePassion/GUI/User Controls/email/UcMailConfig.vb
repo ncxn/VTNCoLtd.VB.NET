@@ -1,4 +1,5 @@
-﻿Imports VTNcoLtd.BUS
+﻿Imports DevExpress.XtraEditors
+Imports VTNcoLtd.BUS
 
 Public Class UcMailConfig
     Public Sub New()
@@ -20,6 +21,18 @@ Public Class UcMailConfig
 #Region " Xử lý dữ liệu"
     Private Sub LoadData()
 
+    End Sub
+
+    Private Sub CbMail_service_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CbMail_service.SelectedIndexChanged
+        Dim editor As ImageComboBoxEdit = CType(sender, ImageComboBoxEdit)
+        Me.Text = "SelectedIndexChanged: index " + editor.SelectedIndex.ToString() +
+     " / value " + editor.EditValue.ToString() + " / display text " + editor.Text
+    End Sub
+
+    Private Sub CbMail_service_SelectedValueChanged(sender As Object, e As EventArgs) Handles CbMail_service.SelectedValueChanged
+        Dim editor As ImageComboBoxEdit = CType(sender, ImageComboBoxEdit)
+        Debug.WriteLine("SelectedIndexChanged: index " + editor.SelectedIndex.ToString() +
+     " / value " + editor.EditValue.ToString() + " / display text " + editor.Text)
     End Sub
 
 #End Region
