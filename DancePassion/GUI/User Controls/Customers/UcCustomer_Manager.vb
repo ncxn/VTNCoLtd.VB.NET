@@ -1,5 +1,6 @@
 ﻿Imports DevExpress.XtraSplashScreen
 Imports VTNcoLtd.BUS
+Imports VTNcoLtd.DevExpressHelper
 Imports VTNcoLtd.Model
 
 Public Class UcCustomer_Manager
@@ -74,7 +75,7 @@ Public Class UcCustomer_Manager
                 Grv.DeleteRow(Grv.FocusedRowHandle)
             End If
         Catch ex As Exception
-            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+            ShowMessage.GetInstance.ShowError(ex.Message)
         Finally
             SplashScreenManager.CloseOverlayForm(handle)
         End Try
@@ -130,7 +131,7 @@ Public Class UcCustomer_Manager
         Try
             _Customer_Group = ClsCustomerGroup.GetInstance.GetList()
         Catch ex As Exception
-            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+            ShowMessage.GetInstance.ShowError(ex.Message)
         End Try
     End Sub
 
@@ -138,7 +139,7 @@ Public Class UcCustomer_Manager
         Try
             _Customer = ClsCustomers.GetInstance.GetList()
         Catch ex As Exception
-            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+            ShowMessage.GetInstance.ShowError(ex.Message)
         End Try
     End Sub
 

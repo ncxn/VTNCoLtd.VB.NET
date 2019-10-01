@@ -164,10 +164,11 @@ Namespace DAL
             End Try
 
             Return ds
+
         End Function
 
         ''' <summary>
-        ''' Get DataReader: must close connection after reading data!
+        ''' Get DataReader: Must close connection after reading data!
         ''' </summary>
         ''' <param name="commandText"></param>
         ''' <param name="commandType"></param>
@@ -304,8 +305,11 @@ Namespace DAL
                 End If
                 result = cmd.ExecuteNonQuery()
             End Using
+
             CloseConnection()
+
             Return result
+
         End Function
 
         ''' <summary>
@@ -318,7 +322,7 @@ Namespace DAL
         ''' <param name="commandType"></param>
         ''' <param name="parameters"></param>
         ''' <returns>first culumn of first row</returns>
-        Public Function ExecuteScalar(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
+        Public Function GetScalarWithText(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
             OpenConnection()
             Dim Result As Object = 0
 
@@ -337,8 +341,10 @@ Namespace DAL
                 End If
                 Result = cmd.ExecuteScalar()
             End Using
-            OpenConnection()
+
+            CloseConnection()
             Return Result
+
         End Function
 
         ''' <summary>
@@ -351,7 +357,7 @@ Namespace DAL
         ''' <param name="commandType"></param>
         ''' <param name="parameters"></param>
         ''' <returns>first culumn of first row</returns>
-        Public Function ExecuteReader(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
+        Public Function GetDataReaderWithText(ByVal commandText As String, ByVal commandType As CommandType, ByVal Optional parameters As Object() = Nothing) As Object
 
             Dim Result As MySqlDataReader
             Dim cmd As MySqlCommand = GetCommand(commandText, commandType)
@@ -373,6 +379,7 @@ Namespace DAL
             Result = cmd.ExecuteReader(CommandBehavior.CloseConnection)
 
             Return Result
+
         End Function
     End Class
 

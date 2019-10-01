@@ -1,5 +1,6 @@
 ﻿Imports VTNcoLtd.Model
 Imports VTNcoLtd.BUS
+Imports VTNcoLtd.DevExpressHelper
 
 Public Class UcCustomer_Update
 
@@ -56,7 +57,7 @@ Public Class UcCustomer_Update
                 Cancel()
             End If
         Catch ex As Exception
-            ClsMessageHelper.GetInstance.ShowError(ex.Message)
+            ShowMessage.GetInstance.ShowError(ex.Message)
         Finally
             DevExpress.XtraSplashScreen.SplashScreenManager.CloseOverlayForm(handle)
         End Try

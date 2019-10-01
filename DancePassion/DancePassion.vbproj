@@ -191,8 +191,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="BUS\Core\Config\ConfigBasicCollection.vb" />
-    <Compile Include="BUS\Core\Config\CurrentConfigBasic.vb" />
+    <Compile Include="BUS\Core\Configuration\ClsConfig.vb" />
+    <Compile Include="BUS\Core\Configuration\ConfigBasicCollection.vb" />
+    <Compile Include="BUS\Core\Configuration\ConfigCollection.vb" />
+    <Compile Include="BUS\Core\Configuration\CurrentConfig.vb" />
+    <Compile Include="BUS\Core\Configuration\CurrentConfigBasic.vb" />
     <Compile Include="BUS\Core\Customers\CurrentCustomer.vb" />
     <Compile Include="BUS\Core\Customers\CurrentCustomerGroup.vb" />
     <Compile Include="BUS\Core\Customers\CustomerCollection.vb" />
@@ -221,7 +224,9 @@
     <Compile Include="GUI\User Controls\UcToolBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Model\Core\Config\ConfigBasic.vb" />
+    <Compile Include="Helper\JSon.vb" />
+    <Compile Include="Model\Core\Configuration\Config.vb" />
+    <Compile Include="Model\Core\Configuration\ConfigBasic.vb" />
     <Compile Include="Model\Core\Customers\Customer.vb" />
     <Compile Include="Model\Core\Customers\CustomerGroup.vb" />
     <Compile Include="Model\Core\DevManager\Access.vb" />
@@ -285,13 +290,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="BUS\Core\Config\ClsConfigBasic.vb" />
+    <Compile Include="BUS\Core\Configuration\ClsConfigBasic.vb" />
     <Compile Include="BUS\Core\Mail\ClsMailServer.vb" />
-    <Compile Include="BUS\Core\Config\SMSconfig.vb" />
+    <Compile Include="BUS\Core\Configuration\SMSconfig.vb" />
     <Compile Include="BUS\Core\Customers\ClsCustomers.vb" />
     <Compile Include="BUS\Core\Customers\ClsCustomerGroup.vb" />
     <Compile Include="BUS\DevExpressHelper\ClsDocumentManagerHelper.vb" />
-    <Compile Include="BUS\DevExpressHelper\ClsMessageHelper.vb" />
+    <Compile Include="BUS\DevExpressHelper\ShowMessage.vb" />
     <Compile Include="BUS\Core\DevManager\ClsAccess.vb" />
     <Compile Include="BUS\Core\DevManager\ClsControls.vb" />
     <Compile Include="BUS\Core\DevManager\ClsControlAccess.vb" />

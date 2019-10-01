@@ -2,6 +2,7 @@
 Imports System.Text
 
 Namespace Helper
+
     Public Class Security
         Public Shared Function GetMD5(ByVal input As String) As String
             Dim md5Hash As MD5 = MD5.Create()
@@ -14,6 +15,7 @@ Namespace Helper
 
             Return sBuilder.ToString()
         End Function
+
         Public Shared Function RandomPassWord(Optional ByVal length As Integer = 8) As String
             Dim allowedChars = "abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ123456789#@%_."
 

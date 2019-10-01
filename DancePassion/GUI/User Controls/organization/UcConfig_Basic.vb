@@ -1,5 +1,6 @@
 ﻿Imports VTNcoLtd.BUS
 Imports VTNcoLtd.Model
+Imports VTNcoLtd.DevExpressHelper
 
 Public Class UcConfig_Basic
     Public Sub New()
@@ -14,7 +15,7 @@ Public Class UcConfig_Basic
 #Region " Forms"
 
     Private Sub UcConfig_Basic_Load(sender As Object, e As EventArgs) Handles Me.Load
-        GetCurentConfig()
+        LoadData()
     End Sub
 
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
@@ -34,34 +35,44 @@ Public Class UcConfig_Basic
 
 #Region " Xử lý dữ liệu"
 
-    Private Sub GetCurentConfig()
-        Dim model = ClsConfigBasic.GetInstance.GetCurrentConfig_Basic(1)
+    Private Sub LoadData()
+        Dim ConfigCollection As ConfigCollection = ClsConfig.GetInstance.GetList()
+        Dim model As ConfigBasic = Nothing
+        Try
+            Dim Json As String = ClsConfig.GetInstance.GetJsonValue("BasicConfig", ConfigCollection)
+            model = ClsConfigBasic.GetInstance.GetModelFromJsonString(Json)
+        Catch ex As Exception
 
-        TxtoName.Text = model.Config_basic_oName
-        TxtoSologan.Text = model.Config_basic_oSlogan
-        TxtoAddress.Text = model.Config_basic_oAddress
-        TxtoEmail.Text = model.Config_basic_oEmail
-        TxtoTaxCode.Text = model.Config_basic_oTaxCode
-    End Sub
+        End Try
 
-    Private Sub UpdateDB()
-        If CurrentConfigBasic.ConfigBasic.Config_basic_oName IsNot Nothing Then
-            ClsConfigBasic.GetInstance.Update(GetDataForInsertOrUpdate())
-        Else
-            ClsConfigBasic.GetInstance.Insert(GetDataForInsertOrUpdate())
+        If model IsNot Nothing Then
+            TxtoName.Text = model.Config_basic_Name
+            TxtoSologan.Text = model.Config_basic_Slogan
+            TxtoAddress.Text = model.Config_basic_Address
+            TxtoEmail.Text = model.Config_basic_Email
+            TxtoTaxCode.Text = model.Config_basic_TaxCode
         End If
+
     End Sub
 
-    Private Function GetDataForInsertOrUpdate()
-        Dim data As New ConfigBasic With {
-            .Config_basic_oId = CurrentConfigBasic.ConfigBasic.Config_basic_oId,
-            .Config_basic_oName = TxtoName.Text,
-            .Config_basic_oSlogan = TxtoSologan.Text,
-            .Config_basic_oAddress = TxtoAddress.Text,
-            .Config_basic_oEmail = TxtoEmail.Text,
-            .Config_basic_oTaxCode = TxtoTaxCode.Text}
-        Return data
+    Private Function GetConfigBasicModel()
+        Dim BasicConfig As New ConfigBasic With {
+            .Config_basic_Name = TxtoName.Text,
+            .Config_basic_Slogan = TxtoSologan.Text,
+            .Config_basic_Address = TxtoAddress.Text,
+            .Config_basic_Email = TxtoEmail.Text,
+            .Config_basic_TaxCode = TxtoTaxCode.Text
+        }
+
     End Function
 
+
+    Private Sub UpdateDB()
+
+
+    End Sub
+
+
 #End Region
+
 End Class
