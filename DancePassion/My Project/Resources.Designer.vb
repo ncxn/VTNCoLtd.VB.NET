@@ -243,6 +243,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
+        Friend ReadOnly Property Building() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Building", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
         Friend ReadOnly Property checkbox() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("checkbox", resourceCulture)
@@ -403,6 +413,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         '''</summary>
+        Friend ReadOnly Property glyph_mail() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("glyph_mail", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
         Friend ReadOnly Property gmail() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("gmail", resourceCulture)
@@ -546,6 +566,16 @@ Namespace My.Resources
         Friend ReadOnly Property mailmerge() As DevExpress.Utils.Svg.SvgImage
             Get
                 Dim obj As Object = ResourceManager.GetObject("mailmerge", resourceCulture)
+                Return CType(obj,DevExpress.Utils.Svg.SvgImage)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        '''</summary>
+        Friend ReadOnly Property mailService() As DevExpress.Utils.Svg.SvgImage
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mailService", resourceCulture)
                 Return CType(obj,DevExpress.Utils.Svg.SvgImage)
             End Get
         End Property

@@ -1,8 +1,12 @@
 ﻿Imports VTNcoLtd.BUS
 Imports VTNcoLtd.Model
 Imports VTNcoLtd.DevExpressHelper
+Imports DevExpress.XtraSplashScreen
 
 Public Class UcConfig_Basic
+    Dim Config_Id As Integer = 0
+    Dim Config_Key As String = String.Empty
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -19,10 +23,13 @@ Public Class UcConfig_Basic
     End Sub
 
     Private Sub BtnOK_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnOK.ItemClick
-        UpdateDB()
-        If RemoveTab IsNot Nothing Then
-            RemoveTab()
+        Dim handle = SplashScreenManager.ShowOverlayForm(Me)
+        If UpdateDB() Then
+            If RemoveTab IsNot Nothing Then
+                RemoveTab()
+            End If
         End If
+        SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
     Private Sub BtnCancel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCANCEL.ItemClick
@@ -38,8 +45,9 @@ Public Class UcConfig_Basic
     Private Sub LoadData()
         Dim ConfigCollection As ConfigCollection = ClsConfig.GetInstance.GetList()
         Dim model As ConfigBasic = Nothing
+
         Try
-            Dim Json As String = ClsConfig.GetInstance.GetJsonValue("BasicConfig", ConfigCollection)
+            Dim Json As String = ClsConfig.GetInstance.GetJsonValue("BasicConfig", ConfigCollection, Config_Id, Config_Key)
             model = ClsConfigBasic.GetInstance.GetModelFromJsonString(Json)
         Catch ex As Exception
 
@@ -63,15 +71,34 @@ Public Class UcConfig_Basic
             .Config_basic_Email = TxtoEmail.Text,
             .Config_basic_TaxCode = TxtoTaxCode.Text
         }
+        Return BasicConfig
+    End Function
 
+    Private Function GetConfigModel()
+        Dim Config As New Config With {
+            .Config_Id = Config_Id,
+            .Config_Key = Config_Key,
+            .Config_Value = ClsConfigBasic.GetInstance.GetJsonValueFromModel(GetConfigBasicModel())
+        }
+        Return Config
     End Function
 
 
-    Private Sub UpdateDB()
+    Private Function UpdateDB() As Boolean
+        Try
+            If Int(Config_Id) > 0 Then
 
+                ClsConfig.GetInstance.Update(GetConfigModel())
+            Else
+                ClsConfig.GetInstance.Insert(GetConfigModel())
+            End If
+            Return True
+        Catch ex As Exception
+            ShowMessage.GetInstance.ShowError(ex.Message)
+            Return False
+        End Try
 
-    End Sub
-
+    End Function
 
 #End Region
 

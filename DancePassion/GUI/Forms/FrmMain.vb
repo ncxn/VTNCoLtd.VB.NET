@@ -135,6 +135,12 @@ Public Class FrmMain
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
 
+    Private Sub UcMailConfig_ItemClick(sender As Object, e As ItemClickEventArgs) Handles UcMailConfig.ItemClick
+        Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
+        Dim uc As New UcMailConfig
+        AddDocs(uc, "Cấu hình Email")
+        SplashScreenManager.CloseOverlayForm(handle)
+    End Sub
 #End Region
 
 #Region " Nhân sự"
@@ -184,7 +190,7 @@ Public Class FrmMain
 
     Private Sub UcEmailManager_ItemClick(sender As Object, e As ItemClickEventArgs)
         Dim handle As IOverlaySplashScreenHandle = SplashScreenManager.ShowOverlayForm(Me)
-        Dim uc As New UcEmailManager
+        Dim uc As New UcMailConfig
         AddDocs(uc, "Cấu hình email")
         SplashScreenManager.CloseOverlayForm(handle)
     End Sub
@@ -264,6 +270,7 @@ Public Class FrmMain
             Next
         Next
     End Sub
+
 
 #End Region
 

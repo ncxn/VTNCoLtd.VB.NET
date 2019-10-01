@@ -1,19 +1,9 @@
 ﻿Namespace Model
 
     Public Class Mail
-        Private _id As Integer
         Private _mail_service As String
         Private _mail_user As String
         Private _mail_password As String
-
-        Public Property Id As Integer
-            Get
-                Return _id
-            End Get
-            Set(value As Integer)
-                _id = value
-            End Set
-        End Property
 
         Public Property Mail_service As String
             Get

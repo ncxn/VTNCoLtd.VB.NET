@@ -129,9 +129,10 @@ Public Class FrmUsersGetActiveCode
                 ActiveCode = Security.RandomPassWord(16)
                 'Get server and Send email
                 If CurrentMail.Mail Is Nothing Then
-                    CurrentMail.Mail = ClsMailServer.GetInstance.GetCurrentMail("Outlook")
+                    'todo: Get mail
+                    CurrentMail.Mail = Nothing
                 End If
-                ClsMailServer.GetInstance.SendMailMessage(objUser.User_email, ActiveCode)
+                ClsMail.GetInstance.SendMailMessage(objUser.User_email, ActiveCode)
                 'Insert to Users_email_confim
                 UpdateDB(ActiveCode)
                 Close()

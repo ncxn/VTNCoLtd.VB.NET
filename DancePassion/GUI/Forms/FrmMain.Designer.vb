@@ -41,7 +41,7 @@ Partial Class FrmMain
         Me.Twilio_SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.eSMS__SMS_btn = New DevExpress.XtraBars.BarButtonItem()
         Me.UcConfig_Basic = New DevExpress.XtraBars.BarButtonItem()
-        Me.CongCu__CauHinh_btn = New DevExpress.XtraBars.BarButtonItem()
+        Me.UcMailConfig = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.UcRoleManager = New DevExpress.XtraBars.BarButtonItem()
         Me.UcEvent_Type_Manager = New DevExpress.XtraBars.BarButtonItem()
@@ -117,45 +117,45 @@ Partial Class FrmMain
         Me.WindowsUIViewOnMain = New DevExpress.XtraBars.Docking2010.Views.WindowsUI.WindowsUIView(Me.components)
         Me.MainDM = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
         Me.TabbedViewOnMain = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
-        CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Slide_menu.SuspendLayout()
-        CType(Me.NativeMdiViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.WindowsUIViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MainDM, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        CType(Me.MainControlRibbon,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Slide_menu,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Slide_menu.SuspendLayout
+        CType(Me.NativeMdiViewOnMain,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.WindowsUIViewOnMain,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MainDM,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TabbedViewOnMain,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'MainControlRibbon
         '
-        Me.MainControlRibbon.AllowHtmlText = True
+        Me.MainControlRibbon.AllowHtmlText = true
         Me.MainControlRibbon.ApplicationButtonAnimationLength = 0
         Me.MainControlRibbon.ApplicationButtonDropDownControl = Me.Slide_menu
-        Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImage = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImage = CType(resources.GetObject("MainControlRibbon.ApplicationButtonImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.MainControlRibbon.ApplicationButtonImageOptions.SvgImageSize = New System.Drawing.Size(32, 32)
         Me.MainControlRibbon.ApplicationButtonKeyTip = "ĐĂNG NHẬP VÀO TÀI KHOẢN"
-        Me.MainControlRibbon.AutoSizeItems = True
+        Me.MainControlRibbon.AutoSizeItems = true
         Me.MainControlRibbon.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal
         Me.MainControlRibbon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MainControlRibbon.ExpandCollapseItem.Id = 0
         resources.ApplyResources(Me.MainControlRibbon, "MainControlRibbon")
         Me.MainControlRibbon.ForeColor = System.Drawing.Color.White
         Me.MainControlRibbon.ImageAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcCustomer_Manager, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.CongCu__CauHinh_btn, Me.BarButtonItem3, Me.UcRoleManager, Me.UcEvent_Type_Manager, Me.UcEvents_Manager, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager, Me.UcCustomer_Group_Manager})
+        Me.MainControlRibbon.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainControlRibbon.ExpandCollapseItem, Me.BtnCreateDB, Me.BtnConnectDB, Me.BtnBackupDB, Me.UcRolesManager, Me.UcUsersManager, Me.roles, Me.UcCustomer_Manager, Me.Dcom_SMS_btn, Me.Twilio_SMS_btn, Me.eSMS__SMS_btn, Me.UcConfig_Basic, Me.UcMailConfig, Me.BarButtonItem3, Me.UcRoleManager, Me.UcEvent_Type_Manager, Me.UcEvents_Manager, Me.BtnEventTicket, Me.BtnRegister, Me.BtnPayment, Me.TongVeSuKien_bnt, Me.DaThanhToanSuKien_bnt, Me.ChuaThanhToanSuKien_bnt, Me.BtnSentTicket, Me.CheckInSuKien_bnt, Me.BtnCancelTicket, Me.Club_Bomon_btn, Me.Club_LopHoc_btn, Me.Club_KhoaHoc_btn, Me.BH_LoaiSP_btn, Me.BH_DanhMuc_SP_btn, Me.BH_DonHang_btn, Me.BH_ThanhToan_btn, Me.BH_TraHang_btn, Me.BH_DonHangMua_btn, Me.BH_DonVi_btn, Me.BarButtonItem13, Me.BH_ds_NCC_btn, Me.BH_ThanhToan_NCC_btn, Me.BH_TraHang_NCC_btn, Me.BH_ds_KhachHang_btn, Me.BH_NoPhaiTra_btn, Me.BH_NoPhaiThu_btn, Me.BH_SUB_DanhMuc, Me.Club_DangKyLop, Me.Club_ThanhToan, Me.Club_dsHLV_btn, Me.BH_KhoHang_btn, Me.Club_LopDangHoc, Me.Club_PhanLop_btn, Me.Club_dsHocVien, Me.Club_LopDaHoc, Me.BH_DoanhThu_btn, Me.BH_TonKho_btn, Me.UcControlsManager, Me.UcAccessManager, Me.UcControlsAccessManager, Me.UcCustomer_Group_Manager})
         Me.MainControlRibbon.MaxItemId = 49
         Me.MainControlRibbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainControlRibbon.Name = "MainControlRibbon"
         Me.MainControlRibbon.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RbpSystem, Me.RbpEventManagement, Me.RbpClubManager, Me.RbpSalesManager, Me.RbpDev})
         Me.MainControlRibbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019
-        Me.MainControlRibbon.ShowToolbarCustomizeItem = False
+        Me.MainControlRibbon.ShowToolbarCustomizeItem = false
         Me.MainControlRibbon.StatusBar = Me.RibbonStatusBarOnMain
-        Me.MainControlRibbon.Toolbar.ShowCustomizeItem = False
+        Me.MainControlRibbon.Toolbar.ShowCustomizeItem = false
         Me.MainControlRibbon.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '
         'Slide_menu
         '
-        Me.Slide_menu.Appearance.Font = CType(resources.GetObject("Slide_menu.Appearance.Font"), System.Drawing.Font)
-        Me.Slide_menu.Appearance.Options.UseFont = True
+        Me.Slide_menu.Appearance.Font = CType(resources.GetObject("Slide_menu.Appearance.Font"),System.Drawing.Font)
+        Me.Slide_menu.Appearance.Options.UseFont = true
         Me.Slide_menu.Controls.Add(Me.BackstageViewClientControl1)
         resources.ApplyResources(Me.Slide_menu, "Slide_menu")
         Me.Slide_menu.Items.Add(Me.TaiKhoanCaNhan)
@@ -181,24 +181,24 @@ Partial Class FrmMain
         Me.TaiKhoanCaNhan.ContentControl = Me.BackstageViewClientControl1
         Me.TaiKhoanCaNhan.ImageOptions.ItemNormal.SvgImage = Global.VTNcoLtd.My.Resources.Resources.bo_customer
         Me.TaiKhoanCaNhan.Name = "TaiKhoanCaNhan"
-        Me.TaiKhoanCaNhan.Selected = True
+        Me.TaiKhoanCaNhan.Selected = true
         '
         'DangNhap
         '
         resources.ApplyResources(Me.DangNhap, "DangNhap")
-        Me.DangNhap.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("DangNhap.ImageOptions.ItemNormal.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.DangNhap.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("DangNhap.ImageOptions.ItemNormal.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.DangNhap.Name = "DangNhap"
         '
         'DangXuat
         '
         resources.ApplyResources(Me.DangXuat, "DangXuat")
-        Me.DangXuat.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("DangXuat.ImageOptions.ItemNormal.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.DangXuat.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("DangXuat.ImageOptions.ItemNormal.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.DangXuat.Name = "DangXuat"
         '
         'UcUsersProfile
         '
         resources.ApplyResources(Me.UcUsersProfile, "UcUsersProfile")
-        Me.UcUsersProfile.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("UcUsersProfile.ImageOptions.ItemNormal.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcUsersProfile.ImageOptions.ItemNormal.SvgImage = CType(resources.GetObject("UcUsersProfile.ImageOptions.ItemNormal.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.UcUsersProfile.Name = "UcUsersProfile"
         '
         'BackstageViewItemSeparator1
@@ -213,28 +213,28 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.BtnCreateDB, "BtnCreateDB")
         Me.BtnCreateDB.Id = 5
-        Me.BtnCreateDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnCreateDB.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnCreateDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnCreateDB.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnCreateDB.Name = "BtnCreateDB"
         '
         'BtnConnectDB
         '
         resources.ApplyResources(Me.BtnConnectDB, "BtnConnectDB")
         Me.BtnConnectDB.Id = 6
-        Me.BtnConnectDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnConnectDB.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnConnectDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnConnectDB.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnConnectDB.Name = "BtnConnectDB"
         '
         'BtnBackupDB
         '
         resources.ApplyResources(Me.BtnBackupDB, "BtnBackupDB")
         Me.BtnBackupDB.Id = 7
-        Me.BtnBackupDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnBackupDB.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnBackupDB.ImageOptions.SvgImage = CType(resources.GetObject("BtnBackupDB.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnBackupDB.Name = "BtnBackupDB"
         '
         'UcRolesManager
         '
         resources.ApplyResources(Me.UcRolesManager, "UcRolesManager")
         Me.UcRolesManager.Id = 9
-        Me.UcRolesManager.ImageOptions.SvgImage = CType(resources.GetObject("UcRolesManager.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcRolesManager.ImageOptions.SvgImage = CType(resources.GetObject("UcRolesManager.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.UcRolesManager.Name = "UcRolesManager"
         Me.UcRolesManager.Tag = "RolesManager"
         '
@@ -242,7 +242,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.UcUsersManager, "UcUsersManager")
         Me.UcUsersManager.Id = 10
-        Me.UcUsersManager.ImageOptions.SvgImage = CType(resources.GetObject("UcUsersManager.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcUsersManager.ImageOptions.SvgImage = CType(resources.GetObject("UcUsersManager.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.UcUsersManager.Name = "UcUsersManager"
         Me.UcUsersManager.Tag = "UsersManager"
         '
@@ -250,21 +250,21 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.roles, "roles")
         Me.roles.Id = 11
-        Me.roles.ImageOptions.SvgImage = CType(resources.GetObject("roles.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.roles.ItemAppearance.Hovered.Font = CType(resources.GetObject("roles.ItemAppearance.Hovered.Font"), System.Drawing.Font)
-        Me.roles.ItemAppearance.Hovered.Options.UseFont = True
-        Me.roles.ItemAppearance.Normal.Font = CType(resources.GetObject("roles.ItemAppearance.Normal.Font"), System.Drawing.Font)
-        Me.roles.ItemAppearance.Normal.Options.UseFont = True
-        Me.roles.ItemAppearance.Pressed.Font = CType(resources.GetObject("roles.ItemAppearance.Pressed.Font"), System.Drawing.Font)
-        Me.roles.ItemAppearance.Pressed.Options.UseFont = True
-        Me.roles.ItemInMenuAppearance.Disabled.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Disabled.Font"), System.Drawing.Font)
-        Me.roles.ItemInMenuAppearance.Disabled.Options.UseFont = True
-        Me.roles.ItemInMenuAppearance.Hovered.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Hovered.Font"), System.Drawing.Font)
-        Me.roles.ItemInMenuAppearance.Hovered.Options.UseFont = True
-        Me.roles.ItemInMenuAppearance.Normal.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Normal.Font"), System.Drawing.Font)
-        Me.roles.ItemInMenuAppearance.Normal.Options.UseFont = True
-        Me.roles.ItemInMenuAppearance.Pressed.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Pressed.Font"), System.Drawing.Font)
-        Me.roles.ItemInMenuAppearance.Pressed.Options.UseFont = True
+        Me.roles.ImageOptions.SvgImage = CType(resources.GetObject("roles.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
+        Me.roles.ItemAppearance.Hovered.Font = CType(resources.GetObject("roles.ItemAppearance.Hovered.Font"),System.Drawing.Font)
+        Me.roles.ItemAppearance.Hovered.Options.UseFont = true
+        Me.roles.ItemAppearance.Normal.Font = CType(resources.GetObject("roles.ItemAppearance.Normal.Font"),System.Drawing.Font)
+        Me.roles.ItemAppearance.Normal.Options.UseFont = true
+        Me.roles.ItemAppearance.Pressed.Font = CType(resources.GetObject("roles.ItemAppearance.Pressed.Font"),System.Drawing.Font)
+        Me.roles.ItemAppearance.Pressed.Options.UseFont = true
+        Me.roles.ItemInMenuAppearance.Disabled.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Disabled.Font"),System.Drawing.Font)
+        Me.roles.ItemInMenuAppearance.Disabled.Options.UseFont = true
+        Me.roles.ItemInMenuAppearance.Hovered.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Hovered.Font"),System.Drawing.Font)
+        Me.roles.ItemInMenuAppearance.Hovered.Options.UseFont = true
+        Me.roles.ItemInMenuAppearance.Normal.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Normal.Font"),System.Drawing.Font)
+        Me.roles.ItemInMenuAppearance.Normal.Options.UseFont = true
+        Me.roles.ItemInMenuAppearance.Pressed.Font = CType(resources.GetObject("roles.ItemInMenuAppearance.Pressed.Font"),System.Drawing.Font)
+        Me.roles.ItemInMenuAppearance.Pressed.Options.UseFont = true
         Me.roles.Name = "roles"
         '
         'UcCustomer_Manager
@@ -299,15 +299,15 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.UcConfig_Basic, "UcConfig_Basic")
         Me.UcConfig_Basic.Id = 1
-        Me.UcConfig_Basic.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.travel_hotel
+        Me.UcConfig_Basic.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.Building
         Me.UcConfig_Basic.Name = "UcConfig_Basic"
         '
-        'CongCu__CauHinh_btn
+        'UcMailConfig
         '
-        resources.ApplyResources(Me.CongCu__CauHinh_btn, "CongCu__CauHinh_btn")
-        Me.CongCu__CauHinh_btn.Id = 3
-        Me.CongCu__CauHinh_btn.ImageOptions.SvgImage = CType(resources.GetObject("CongCu__CauHinh_btn.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.CongCu__CauHinh_btn.Name = "CongCu__CauHinh_btn"
+        resources.ApplyResources(Me.UcMailConfig, "UcMailConfig")
+        Me.UcMailConfig.Id = 3
+        Me.UcMailConfig.ImageOptions.SvgImage = Global.VTNcoLtd.My.Resources.Resources.mailService
+        Me.UcMailConfig.Name = "UcMailConfig"
         '
         'BarButtonItem3
         '
@@ -319,7 +319,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.UcRoleManager, "UcRoleManager")
         Me.UcRoleManager.Id = 5
-        Me.UcRoleManager.ImageOptions.SvgImage = CType(resources.GetObject("UcRoleManager.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcRoleManager.ImageOptions.SvgImage = CType(resources.GetObject("UcRoleManager.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.UcRoleManager.Name = "UcRoleManager"
         Me.UcRoleManager.Tag = "RoleManager"
         '
@@ -327,77 +327,77 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.UcEvent_Type_Manager, "UcEvent_Type_Manager")
         Me.UcEvent_Type_Manager.Id = 6
-        Me.UcEvent_Type_Manager.ImageOptions.SvgImage = CType(resources.GetObject("UcEvent_Type_Manager.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcEvent_Type_Manager.ImageOptions.SvgImage = CType(resources.GetObject("UcEvent_Type_Manager.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.UcEvent_Type_Manager.Name = "UcEvent_Type_Manager"
         '
         'UcEvents_Manager
         '
         resources.ApplyResources(Me.UcEvents_Manager, "UcEvents_Manager")
         Me.UcEvents_Manager.Id = 7
-        Me.UcEvents_Manager.ImageOptions.SvgImage = CType(resources.GetObject("UcEvents_Manager.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.UcEvents_Manager.ImageOptions.SvgImage = CType(resources.GetObject("UcEvents_Manager.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.UcEvents_Manager.Name = "UcEvents_Manager"
         '
         'BtnEventTicket
         '
         resources.ApplyResources(Me.BtnEventTicket, "BtnEventTicket")
         Me.BtnEventTicket.Id = 8
-        Me.BtnEventTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventTicket.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnEventTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnEventTicket.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnEventTicket.Name = "BtnEventTicket"
         '
         'BtnRegister
         '
         resources.ApplyResources(Me.BtnRegister, "BtnRegister")
         Me.BtnRegister.Id = 9
-        Me.BtnRegister.ImageOptions.SvgImage = CType(resources.GetObject("BtnRegister.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnRegister.ImageOptions.SvgImage = CType(resources.GetObject("BtnRegister.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnRegister.Name = "BtnRegister"
         '
         'BtnPayment
         '
         resources.ApplyResources(Me.BtnPayment, "BtnPayment")
         Me.BtnPayment.Id = 10
-        Me.BtnPayment.ImageOptions.SvgImage = CType(resources.GetObject("BtnPayment.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnPayment.ImageOptions.SvgImage = CType(resources.GetObject("BtnPayment.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnPayment.Name = "BtnPayment"
         '
         'TongVeSuKien_bnt
         '
         resources.ApplyResources(Me.TongVeSuKien_bnt, "TongVeSuKien_bnt")
         Me.TongVeSuKien_bnt.Id = 11
-        Me.TongVeSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("TongVeSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.TongVeSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("TongVeSuKien_bnt.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.TongVeSuKien_bnt.Name = "TongVeSuKien_bnt"
         '
         'DaThanhToanSuKien_bnt
         '
         resources.ApplyResources(Me.DaThanhToanSuKien_bnt, "DaThanhToanSuKien_bnt")
         Me.DaThanhToanSuKien_bnt.Id = 12
-        Me.DaThanhToanSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("DaThanhToanSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.DaThanhToanSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("DaThanhToanSuKien_bnt.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.DaThanhToanSuKien_bnt.Name = "DaThanhToanSuKien_bnt"
         '
         'ChuaThanhToanSuKien_bnt
         '
         resources.ApplyResources(Me.ChuaThanhToanSuKien_bnt, "ChuaThanhToanSuKien_bnt")
         Me.ChuaThanhToanSuKien_bnt.Id = 13
-        Me.ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("ChuaThanhToanSuKien_bnt.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.ChuaThanhToanSuKien_bnt.Name = "ChuaThanhToanSuKien_bnt"
         '
         'BtnSentTicket
         '
         resources.ApplyResources(Me.BtnSentTicket, "BtnSentTicket")
         Me.BtnSentTicket.Id = 14
-        Me.BtnSentTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnSentTicket.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnSentTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnSentTicket.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnSentTicket.Name = "BtnSentTicket"
         '
         'CheckInSuKien_bnt
         '
         resources.ApplyResources(Me.CheckInSuKien_bnt, "CheckInSuKien_bnt")
         Me.CheckInSuKien_bnt.Id = 15
-        Me.CheckInSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("CheckInSuKien_bnt.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.CheckInSuKien_bnt.ImageOptions.SvgImage = CType(resources.GetObject("CheckInSuKien_bnt.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.CheckInSuKien_bnt.Name = "CheckInSuKien_bnt"
         '
         'BtnCancelTicket
         '
         resources.ApplyResources(Me.BtnCancelTicket, "BtnCancelTicket")
         Me.BtnCancelTicket.Id = 16
-        Me.BtnCancelTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnCancelTicket.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnCancelTicket.ImageOptions.SvgImage = CType(resources.GetObject("BtnCancelTicket.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BtnCancelTicket.Name = "BtnCancelTicket"
         '
         'Club_Bomon_btn
@@ -522,7 +522,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.BH_SUB_DanhMuc, "BH_SUB_DanhMuc")
         Me.BH_SUB_DanhMuc.Id = 34
-        Me.BH_SUB_DanhMuc.ImageOptions.SvgImage = CType(resources.GetObject("BH_SUB_DanhMuc.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BH_SUB_DanhMuc.ImageOptions.SvgImage = CType(resources.GetObject("BH_SUB_DanhMuc.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.BH_SUB_DanhMuc.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BH_LoaiSP_btn, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(Me.BH_DanhMuc_SP_btn), New DevExpress.XtraBars.LinkPersistInfo(Me.BH_DonVi_btn), New DevExpress.XtraBars.LinkPersistInfo(Me.BH_KhoHang_btn)})
         Me.BH_SUB_DanhMuc.Name = "BH_SUB_DanhMuc"
         '
@@ -544,7 +544,7 @@ Partial Class FrmMain
         '
         resources.ApplyResources(Me.Club_ThanhToan, "Club_ThanhToan")
         Me.Club_ThanhToan.Id = 36
-        Me.Club_ThanhToan.ImageOptions.SvgImage = CType(resources.GetObject("Club_ThanhToan.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.Club_ThanhToan.ImageOptions.SvgImage = CType(resources.GetObject("Club_ThanhToan.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.Club_ThanhToan.Name = "Club_ThanhToan"
         '
         'Club_dsHLV_btn
@@ -634,27 +634,27 @@ Partial Class FrmMain
         '
         'RbpgDatabase
         '
-        Me.RbpgDatabase.ImageOptions.SvgImage = CType(resources.GetObject("RbpgDatabase.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RbpgDatabase.ImageOptions.SvgImage = CType(resources.GetObject("RbpgDatabase.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.RbpgDatabase.ItemLinks.Add(Me.BtnCreateDB)
         Me.RbpgDatabase.ItemLinks.Add(Me.BtnConnectDB)
         Me.RbpgDatabase.ItemLinks.Add(Me.BtnBackupDB)
         Me.RbpgDatabase.Name = "RbpgDatabase"
-        Me.RbpgDatabase.ShowCaptionButton = False
+        Me.RbpgDatabase.ShowCaptionButton = false
         resources.ApplyResources(Me.RbpgDatabase, "RbpgDatabase")
         '
         'RibbonPageGroup_Configuration
         '
-        Me.RibbonPageGroup_Configuration.AllowTextClipping = False
-        Me.RibbonPageGroup_Configuration.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Configuration.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RibbonPageGroup_Configuration.AllowTextClipping = false
+        Me.RibbonPageGroup_Configuration.ImageOptions.SvgImage = CType(resources.GetObject("RibbonPageGroup_Configuration.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.UcConfig_Basic)
-        Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.CongCu__CauHinh_btn)
+        Me.RibbonPageGroup_Configuration.ItemLinks.Add(Me.UcMailConfig)
         Me.RibbonPageGroup_Configuration.Name = "RibbonPageGroup_Configuration"
-        Me.RibbonPageGroup_Configuration.ShowCaptionButton = False
+        Me.RibbonPageGroup_Configuration.ShowCaptionButton = false
         resources.ApplyResources(Me.RibbonPageGroup_Configuration, "RibbonPageGroup_Configuration")
         '
         'RbpGPeoples
         '
-        Me.RbpGPeoples.ImageOptions.SvgImage = CType(resources.GetObject("RbpGPeoples.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RbpGPeoples.ImageOptions.SvgImage = CType(resources.GetObject("RbpGPeoples.ImageOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.RbpGPeoples.ItemLinks.Add(Me.UcRolesManager)
         Me.RbpGPeoples.ItemLinks.Add(Me.UcUsersManager)
         Me.RbpGPeoples.ItemLinks.Add(Me.UcRoleManager)
@@ -675,7 +675,7 @@ Partial Class FrmMain
         Me.RibbonPageGroup_SMS.ItemLinks.Add(Me.Twilio_SMS_btn)
         Me.RibbonPageGroup_SMS.ItemLinks.Add(Me.eSMS__SMS_btn)
         Me.RibbonPageGroup_SMS.Name = "RibbonPageGroup_SMS"
-        Me.RibbonPageGroup_SMS.ShowCaptionButton = False
+        Me.RibbonPageGroup_SMS.ShowCaptionButton = false
         resources.ApplyResources(Me.RibbonPageGroup_SMS, "RibbonPageGroup_SMS")
         '
         'RbpEventManagement
@@ -691,7 +691,7 @@ Partial Class FrmMain
         Me.RbpgCreateEvent.ItemLinks.Add(Me.UcEvents_Manager)
         Me.RbpgCreateEvent.ItemLinks.Add(Me.BtnEventTicket)
         Me.RbpgCreateEvent.Name = "RbpgCreateEvent"
-        Me.RbpgCreateEvent.ShowCaptionButton = False
+        Me.RbpgCreateEvent.ShowCaptionButton = false
         resources.ApplyResources(Me.RbpgCreateEvent, "RbpgCreateEvent")
         '
         'RbpgEventRegister
@@ -701,7 +701,7 @@ Partial Class FrmMain
         Me.RbpgEventRegister.ItemLinks.Add(Me.BtnSentTicket)
         Me.RbpgEventRegister.ItemLinks.Add(Me.BtnCancelTicket)
         Me.RbpgEventRegister.Name = "RbpgEventRegister"
-        Me.RbpgEventRegister.ShowCaptionButton = False
+        Me.RbpgEventRegister.ShowCaptionButton = false
         resources.ApplyResources(Me.RbpgEventRegister, "RbpgEventRegister")
         '
         'RibbonPageGroup_ThongkeSuKien
@@ -710,7 +710,7 @@ Partial Class FrmMain
         Me.RibbonPageGroup_ThongkeSuKien.ItemLinks.Add(Me.DaThanhToanSuKien_bnt)
         Me.RibbonPageGroup_ThongkeSuKien.ItemLinks.Add(Me.ChuaThanhToanSuKien_bnt)
         Me.RibbonPageGroup_ThongkeSuKien.Name = "RibbonPageGroup_ThongkeSuKien"
-        Me.RibbonPageGroup_ThongkeSuKien.ShowCaptionButton = False
+        Me.RibbonPageGroup_ThongkeSuKien.ShowCaptionButton = false
         resources.ApplyResources(Me.RibbonPageGroup_ThongkeSuKien, "RibbonPageGroup_ThongkeSuKien")
         '
         'RibbonPageGroup_TienIchSuKien
@@ -767,7 +767,7 @@ Partial Class FrmMain
         '
         Me.RibbonPageGroup1.ItemLinks.Add(Me.BH_SUB_DanhMuc)
         Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
-        Me.RibbonPageGroup1.ShowCaptionButton = False
+        Me.RibbonPageGroup1.ShowCaptionButton = false
         resources.ApplyResources(Me.RibbonPageGroup1, "RibbonPageGroup1")
         '
         'RibbonPageGroup7
@@ -793,7 +793,7 @@ Partial Class FrmMain
         Me.RibbonPageGroup5.ItemLinks.Add(Me.BH_NoPhaiTra_btn)
         Me.RibbonPageGroup5.ItemLinks.Add(Me.BH_NoPhaiThu_btn)
         Me.RibbonPageGroup5.Name = "RibbonPageGroup5"
-        Me.RibbonPageGroup5.ShowCaptionButton = False
+        Me.RibbonPageGroup5.ShowCaptionButton = false
         resources.ApplyResources(Me.RibbonPageGroup5, "RibbonPageGroup5")
         '
         'RibbonPageGroup8
@@ -801,7 +801,7 @@ Partial Class FrmMain
         Me.RibbonPageGroup8.ItemLinks.Add(Me.BH_DoanhThu_btn)
         Me.RibbonPageGroup8.ItemLinks.Add(Me.BH_TonKho_btn)
         Me.RibbonPageGroup8.Name = "RibbonPageGroup8"
-        Me.RibbonPageGroup8.ShowCaptionButton = False
+        Me.RibbonPageGroup8.ShowCaptionButton = false
         resources.ApplyResources(Me.RibbonPageGroup8, "RibbonPageGroup8")
         '
         'RbpDev
@@ -845,29 +845,29 @@ Partial Class FrmMain
         'FrmMain
         '
         Me.AllowFormGlass = DevExpress.Utils.DefaultBoolean.[False]
-        Me.Appearance.Options.UseFont = True
+        Me.Appearance.Options.UseFont = true
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.RibbonStatusBarOnMain)
         Me.Controls.Add(Me.Slide_menu)
         Me.Controls.Add(Me.MainControlRibbon)
         Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
-        Me.IsMdiContainer = True
+        Me.IsMdiContainer = true
         Me.Name = "FrmMain"
         Me.Ribbon = Me.MainControlRibbon
         Me.StatusBar = Me.RibbonStatusBarOnMain
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.MainControlRibbon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Slide_menu, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Slide_menu.ResumeLayout(False)
-        CType(Me.NativeMdiViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.WindowsUIViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MainDM, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TabbedViewOnMain, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        CType(Me.MainControlRibbon,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Slide_menu,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Slide_menu.ResumeLayout(false)
+        CType(Me.NativeMdiViewOnMain,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.WindowsUIViewOnMain,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MainDM,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TabbedViewOnMain,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents RibbonStatusBarOnMain As DevExpress.XtraBars.Ribbon.RibbonStatusBar
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnCreateDB As DevExpress.XtraBars.BarButtonItem
@@ -898,7 +898,7 @@ Partial Class FrmMain
     Friend WithEvents DangXuat As DevExpress.XtraBars.Ribbon.BackstageViewButtonItem
     Friend WithEvents BackstageViewItemSeparator1 As DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator
     Friend WithEvents BackstageViewItemSeparator2 As DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator
-    Friend WithEvents CongCu__CauHinh_btn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents UcMailConfig As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents UcRoleManager As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents UcEvent_Type_Manager As DevExpress.XtraBars.BarButtonItem

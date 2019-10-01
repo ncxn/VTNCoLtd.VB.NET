@@ -192,10 +192,10 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="BUS\Core\Configuration\ClsConfig.vb" />
-    <Compile Include="BUS\Core\Configuration\ConfigBasicCollection.vb" />
+    <Compile Include="BUS\Core\Configuration\Basic\ConfigBasicCollection.vb" />
     <Compile Include="BUS\Core\Configuration\ConfigCollection.vb" />
     <Compile Include="BUS\Core\Configuration\CurrentConfig.vb" />
-    <Compile Include="BUS\Core\Configuration\CurrentConfigBasic.vb" />
+    <Compile Include="BUS\Core\Configuration\Basic\CurrentConfigBasic.vb" />
     <Compile Include="BUS\Core\Customers\CurrentCustomer.vb" />
     <Compile Include="BUS\Core\Customers\CurrentCustomerGroup.vb" />
     <Compile Include="BUS\Core\Customers\CustomerCollection.vb" />
@@ -203,8 +203,8 @@
     <Compile Include="BUS\Core\DevManager\AccessCollection.vb" />
     <Compile Include="BUS\Core\DevManager\ControlAccessCollection.vb" />
     <Compile Include="BUS\Core\DevManager\CurrentControlAccess.vb" />
-    <Compile Include="BUS\Core\Mail\CurrentMail.vb" />
-    <Compile Include="BUS\Core\Mail\MailCollection.vb" />
+    <Compile Include="BUS\Core\Configuration\Mail\CurrentMail.vb" />
+    <Compile Include="BUS\Core\Configuration\Mail\MailCollection.vb" />
     <Compile Include="BUS\Core\RoleControlAccess\CurrentRolesControlsAccess.vb" />
     <Compile Include="BUS\Core\RoleControlAccess\RoleControlAccessCollection.vb" />
     <Compile Include="BUS\Core\Roles\RoleCollection.vb" />
@@ -231,7 +231,7 @@
     <Compile Include="Model\Core\Customers\CustomerGroup.vb" />
     <Compile Include="Model\Core\DevManager\Access.vb" />
     <Compile Include="Model\Core\DevManager\ControlAccess.vb" />
-    <Compile Include="Model\Core\Email\Mail.vb" />
+    <Compile Include="Model\Core\Configuration\Mail.vb" />
     <Compile Include="Model\Core\RoleControlAccess\RolesControlsAccess.vb" />
     <Compile Include="Model\Core\UserRole\UserRole.vb" />
     <Compile Include="Model\Core\Roles\Roles.vb" />
@@ -290,9 +290,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="BUS\Core\Configuration\ClsConfigBasic.vb" />
-    <Compile Include="BUS\Core\Mail\ClsMailServer.vb" />
-    <Compile Include="BUS\Core\Configuration\SMSconfig.vb" />
+    <Compile Include="BUS\Core\Configuration\Basic\ClsConfigBasic.vb" />
+    <Compile Include="BUS\Core\Configuration\Mail\ClsMail.vb" />
+    <Compile Include="BUS\Core\Configuration\SMS\SMSconfig.vb" />
     <Compile Include="BUS\Core\Customers\ClsCustomers.vb" />
     <Compile Include="BUS\Core\Customers\ClsCustomerGroup.vb" />
     <Compile Include="BUS\DevExpressHelper\ClsDocumentManagerHelper.vb" />
@@ -434,10 +434,10 @@
     <Compile Include="GUI\User Controls\DevManager\UcControlUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\User Controls\Email\UcEmailManager.Designer.vb">
-      <DependentUpon>UcEmailManager.vb</DependentUpon>
+    <Compile Include="GUI\User Controls\Email\UcMailConfig.Designer.vb">
+      <DependentUpon>UcMailConfig.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User Controls\Email\UcEmailManager.vb">
+    <Compile Include="GUI\User Controls\Email\UcMailConfig.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\User Controls\RoleManager\UcRoleManager.Designer.vb">
@@ -597,8 +597,8 @@
     <EmbeddedResource Include="GUI\User Controls\DevManager\UcControlUpdate.resx">
       <DependentUpon>UcControlUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\User Controls\Email\UcEmailManager.resx">
-      <DependentUpon>UcEmailManager.vb</DependentUpon>
+    <EmbeddedResource Include="GUI\User Controls\Email\UcMailConfig.resx">
+      <DependentUpon>UcMailConfig.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Controls\RoleManager\UcRoleManager.resx">
       <DependentUpon>UcRoleManager.vb</DependentUpon>
@@ -884,6 +884,9 @@
     <None Include="Resources\functionscompatibility.svg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\mailService.svg" />
+    <None Include="Resources\Building.svg" />
+    <None Include="Resources\glyph_mail.svg" />
     <None Include="Resources\resetlayoutoptions1.svg" />
     <None Include="Resources\actions_remove.svg" />
     <None Include="Resources\actions_edit.svg" />

@@ -133,11 +133,17 @@
   <data name="bo_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo_category.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="Building" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Building.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="bo_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo_customer.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="phanlop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phanlop.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="glyph_mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glyph_mail.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="mailmerge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mailmerge.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -202,6 +208,9 @@
   <data name="nhacungcap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nhacungcap.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="resetlayoutoptions1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resetlayoutoptions1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="khachhangtra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khachhangtra.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -214,9 +223,6 @@
   <data name="donhangmua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\donhangmua.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="export" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="nhantien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nhantien.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -225,6 +231,9 @@
   </data>
   <data name="pivottablecalculationsfieldsitemssetsgroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pivottablecalculationsfieldsitemssetsgroup.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="khoahoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\khoahoc.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="listnumbers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\listnumbers.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -337,8 +346,8 @@
   <data name="donhangban" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\donhangban.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="khoahoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\khoahoc.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="checkbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkbox.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -346,7 +355,7 @@
   <data name="eSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eSMS1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="resetlayoutoptions1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resetlayoutoptions1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="mailService" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mailService.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

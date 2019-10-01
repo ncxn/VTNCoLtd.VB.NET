@@ -79,12 +79,19 @@ Namespace BUS
         ''' <param name="Key"></param>
         ''' <param name="ListObj"></param>
         ''' <returns> Json String</returns>
-        Public Function GetJsonValue(Key As String, ListObj As ConfigCollection) As String
+        Public Function GetJsonValue(Key As String, ListObj As ConfigCollection, ByRef Config_Id As Integer, ByRef Config_key As String) As String
+            Dim JsonString As String = String.Empty
             Try
-                Return ListObj.First(Function(fn) fn.Config_Key = Key).Config_Value
+                Dim Model = ListObj.First(Function(fn) fn.Config_Key = Key)
+                JsonString = Model.Config_Value
+                Config_Id = Model.Config_Id
+                Config_key = Model.Config_Key
             Catch ex As Exception
                 Throw New Exception(ex.Message)
             End Try
+
+            Return JsonString
+
         End Function
 
         Public Function Insert(Model As Config) As Boolean

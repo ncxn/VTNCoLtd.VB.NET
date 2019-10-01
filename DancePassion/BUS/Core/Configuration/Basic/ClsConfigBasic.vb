@@ -39,12 +39,6 @@ Namespace BUS
             Return JsonConvert.SerializeObject(Model, Formatting.Indented)
         End Function
 
-        Public Function Update(Model As Config) As Boolean
-            Dim result As Integer = 0
-
-            Return result > 0
-        End Function
-
     End Class
 
 End Namespace
