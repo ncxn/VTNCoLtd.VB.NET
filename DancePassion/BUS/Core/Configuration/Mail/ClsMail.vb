@@ -14,7 +14,7 @@ Namespace BUS
             Return Singleton
         End Function
 
-        Public Property MailConfig As String = "MailConfig"
+        Public Property Key As String = "MailConfig"
 
         ''' <summary>
         ''' Get Current Model
@@ -34,8 +34,8 @@ Namespace BUS
             Return JsonConvert.SerializeObject(Model, Formatting.Indented)
         End Function
 
-        Public Sub GetCurrentMailConfig(MailSerice As String)
-            CurrentMail.Mail = GetModelFromJsonString(ClsConfig.GetInstance.GetConfigByKey(MailSerice).Config_Value)
+        Public Sub GetCurrentMailConfig()
+            CurrentMail.Mail = GetModelFromJsonString(ClsConfig.GetInstance.GetConfigByKey(Key).Config_Value)
         End Sub
 
     End Class

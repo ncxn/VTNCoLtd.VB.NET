@@ -64,17 +64,24 @@ Public Class UcMailConfig
         Dim model As Mail = Nothing
 
         Try
-            Dim Json As String = ClsConfig.GetInstance.GetJsonValue(CbMail_service.EditValue, ConfigCollection, Config_Id, Config_Key)
+            Dim Json As String = ClsConfig.GetInstance.GetJsonValue(ClsMail.GetInstance.Key, ConfigCollection, Config_Id, Config_Key)
             model = ClsMail.GetInstance.GetModelFromJsonString(Json)
         Catch ex As Exception
 
         End Try
 
         If model IsNot Nothing Then
-            TxtHost.Text = model.Host
-            TxtPort.Text = model.Port
-            TxtMail_user.Text = model.Mail_user
-            TxtMail_password.Text = model.Mail_password
+            If CbMail_service.EditValue = model.Service Then
+                TxtHost.Text = model.Host
+                TxtPort.Text = model.Port
+                TxtMail_user.Text = model.User
+                TxtMail_password.Text = model.Password
+            Else
+                TxtHost.Text = String.Empty
+                TxtPort.Text = 0
+                TxtMail_user.Text = String.Empty
+                TxtMail_password.Text = String.Empty
+            End If
         Else
             TxtHost.Text = String.Empty
             TxtPort.Text = 0
@@ -86,10 +93,11 @@ Public Class UcMailConfig
 
     Private Function GetSubModel()
         Dim SubModel As New Mail With {
+            .Service = CbMail_service.EditValue,
             .Host = TxtHost.Text,
             .Port = TxtPort.EditValue,
-            .Mail_user = TxtMail_user.Text,
-            .Mail_password = TxtMail_password.Text
+            .User = TxtMail_user.Text,
+            .Password = TxtMail_password.Text
         }
         Return SubModel
     End Function

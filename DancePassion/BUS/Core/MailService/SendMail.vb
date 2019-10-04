@@ -23,7 +23,7 @@ Namespace BUS
             If Not String.IsNullOrEmpty(fromEmail) Then
                 mMailMessage.From = New MailAddress(fromEmail)
             Else
-                mMailMessage.From = New MailAddress(CurrentMail.Mail.Mail_user)
+                mMailMessage.From = New MailAddress(CurrentMail.Mail.User)
             End If
 
             mMailMessage.To.Add(New MailAddress(toEmail))
@@ -108,7 +108,7 @@ Namespace BUS
             Dim SmtpClient As New SmtpClient With {
                 .Host = ConfigMail.Host,
                 .Port = ConfigMail.Port,
-                .Credentials = New Net.NetworkCredential(ConfigMail.Mail_user, ConfigMail.Mail_password),
+                .Credentials = New Net.NetworkCredential(ConfigMail.User, ConfigMail.Password),
                 .EnableSsl = True
             }
             Return SmtpClient
