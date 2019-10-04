@@ -87,6 +87,8 @@ Namespace BUS
                 Config_Id = Model.Config_Id
                 Config_key = Model.Config_Key
             Catch ex As Exception
+                Config_Id = 0
+                Config_key = Key
                 Throw New Exception(ex.Message)
             End Try
 

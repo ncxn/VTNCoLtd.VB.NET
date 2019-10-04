@@ -40,7 +40,7 @@ Public Class FrmUsersResetPass
                 ' Get email of user
                 Dim objUser As Users = ClsUsers.GetInstance.GetUserByUserName(TxtUserNameOrEmail.Text)
                 ' Send mail or print password (NewPassWord) for user
-                ClsMail.GetInstance.SendMailMessage(objUser.User_email, NewPassWord)
+                SendMail.GetInstance.Send(objUser.User_email, NewPassWord)
 
                 ' Update Status Code to 1 (disabled reset pass by this code)
                 UpdateActiveCodeStatus()

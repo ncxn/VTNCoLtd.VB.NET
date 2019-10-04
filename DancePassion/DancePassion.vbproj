@@ -205,6 +205,7 @@
     <Compile Include="BUS\Core\DevManager\CurrentControlAccess.vb" />
     <Compile Include="BUS\Core\Configuration\Mail\CurrentMail.vb" />
     <Compile Include="BUS\Core\Configuration\Mail\MailCollection.vb" />
+    <Compile Include="BUS\Core\MailService\SendMail.vb" />
     <Compile Include="BUS\Core\RoleControlAccess\CurrentRolesControlsAccess.vb" />
     <Compile Include="BUS\Core\RoleControlAccess\RoleControlAccessCollection.vb" />
     <Compile Include="BUS\Core\Roles\RoleCollection.vb" />
@@ -375,10 +376,10 @@
     <Compile Include="GUI\User Controls\EventSystem\UcEvent_Type_Update.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\User Controls\Organization\UcConfig_Basic.Designer.vb">
+    <Compile Include="GUI\Core\Organization\UcConfig_Basic.Designer.vb">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User Controls\Organization\UcConfig_Basic.vb">
+    <Compile Include="GUI\Core\Organization\UcConfig_Basic.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\User Controls\Roles\UcRolesAdd.Designer.vb">
@@ -434,10 +435,10 @@
     <Compile Include="GUI\User Controls\DevManager\UcControlUpdate.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\User Controls\Email\UcMailConfig.Designer.vb">
+    <Compile Include="GUI\Core\Organization\UcMailConfig.Designer.vb">
       <DependentUpon>UcMailConfig.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User Controls\Email\UcMailConfig.vb">
+    <Compile Include="GUI\Core\Organization\UcMailConfig.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\User Controls\RoleManager\UcRoleManager.Designer.vb">
@@ -570,7 +571,7 @@
     <EmbeddedResource Include="GUI\User Controls\EventSystem\UcEvent_Type_Update.resx">
       <DependentUpon>UcEvent_Type_Update.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\User Controls\Organization\UcConfig_Basic.resx">
+    <EmbeddedResource Include="GUI\Core\Organization\UcConfig_Basic.resx">
       <DependentUpon>UcConfig_Basic.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Controls\Roles\UcRolesAdd.resx">
@@ -597,7 +598,7 @@
     <EmbeddedResource Include="GUI\User Controls\DevManager\UcControlUpdate.resx">
       <DependentUpon>UcControlUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\User Controls\Email\UcMailConfig.resx">
+    <EmbeddedResource Include="GUI\Core\Organization\UcMailConfig.resx">
       <DependentUpon>UcMailConfig.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Controls\RoleManager\UcRoleManager.resx">
@@ -900,7 +901,6 @@
     <None Include="Resources\actions_send.svg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GUI\Core\" />
     <Folder Include="GUI\Forms\config\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

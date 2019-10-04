@@ -132,7 +132,7 @@ Public Class FrmUsersGetActiveCode
                     'todo: Get mail
                     CurrentMail.Mail = Nothing
                 End If
-                ClsMail.GetInstance.SendMailMessage(objUser.User_email, ActiveCode)
+                SendMail.GetInstance.Send(objUser.User_email, ActiveCode)
                 'Insert to Users_email_confim
                 UpdateDB(ActiveCode)
                 Close()
