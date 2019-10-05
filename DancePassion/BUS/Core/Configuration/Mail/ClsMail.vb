@@ -38,6 +38,10 @@ Namespace BUS
             CurrentMail.Mail = GetModelFromJsonString(ClsConfig.GetInstance.GetConfigByKey(Key).Config_Value)
         End Sub
 
+        Public Sub GetCurrentMailConfig(JSonValue As String)
+            CurrentMail.Mail = GetModelFromJsonString(ClsConfig.GetInstance.GetJsonValue(Key, CurrentConfig.Config))
+        End Sub
+
     End Class
 
 End Namespace

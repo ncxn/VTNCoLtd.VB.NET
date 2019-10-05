@@ -47,7 +47,7 @@ Public Class UcConfig_Basic
         Dim model As ConfigBasic = Nothing
 
         Try
-            Dim Json As String = ClsConfig.GetInstance.GetJsonValue("BasicConfig", ConfigCollection, Config_Id, Config_Key)
+            Dim Json As String = ClsConfig.GetInstance.GetJsonValue(ClsConfigBasic.GetInstance.Key, ConfigCollection, Config_Id, Config_Key)
             model = ClsConfigBasic.GetInstance.GetModelFromJsonString(Json)
         Catch ex As Exception
 
@@ -86,7 +86,7 @@ Public Class UcConfig_Basic
 
     Private Function UpdateDB() As Boolean
         Try
-            If Int(Config_Id) > 0 Then
+            If Config_Id > 0 Then
 
                 ClsConfig.GetInstance.Update(GetConfigModel())
             Else

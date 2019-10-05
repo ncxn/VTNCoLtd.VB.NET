@@ -21,6 +21,8 @@ Namespace BUS
             Return Singleton
         End Function
 
+        Public Property Key As String = "BasicConfig"
+
         ''' <summary>
         ''' Get Current Basic Config
         ''' </summary>

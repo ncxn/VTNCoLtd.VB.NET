@@ -96,6 +96,26 @@ Namespace BUS
 
         End Function
 
+        ''' <summary>
+        ''' Get Json Format String
+        ''' </summary>
+        ''' <param name="Key"></param>
+        ''' <param name="ListObj"></param>
+        ''' <returns> Json String</returns>
+        Public Function GetJsonValue(Key As String, ListObj As ConfigCollection) As String
+            Dim JsonString As String = String.Empty
+
+            Try
+                Dim Model = ListObj.First(Function(fn) fn.Config_Key = Key)
+                JsonString = Model.Config_Value
+            Catch ex As Exception
+                Throw New Exception(ex.Message)
+            End Try
+
+            Return JsonString
+
+        End Function
+
         Public Function Insert(Model As Config) As Boolean
             Dim strSQL = "usp_tblConfig_Insert"
             Dim result As Integer
