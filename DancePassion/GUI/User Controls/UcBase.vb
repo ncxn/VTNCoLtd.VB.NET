@@ -1,12 +1,13 @@
 ﻿Imports DevExpress.XtraBars
 Imports DevExpress.XtraBars.Ribbon
 Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Helper
 
 Public Class UcBase
-    Public AddDocs As New ClsDelegate.AddTab(AddressOf FrmMain.AddDocs)
-    Public RemoveTab As New ClsDelegate.RemoveTab(AddressOf FrmMain.RemoveDocs)
-    Public HasAccess As New ClsDelegate.CheckRole(AddressOf HasAccessOnControl)
-    Public HasRoles As New ClsDelegate.CheckRole(AddressOf CheckRole)
+    Public AddDocs As New DelegateHelper.AddTab(AddressOf FrmMain.AddDocs)
+    Public RemoveTab As New DelegateHelper.RemoveTab(AddressOf FrmMain.RemoveDocs)
+    Public HasAccess As New DelegateHelper.CheckRole(AddressOf HasAccessOnControl)
+    Public HasRoles As New DelegateHelper.CheckRole(AddressOf CheckRole)
 
 #Region " Khởi tạo"
     Public Sub New()

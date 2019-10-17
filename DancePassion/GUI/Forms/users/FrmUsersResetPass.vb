@@ -21,7 +21,7 @@ Public Class FrmUsersResetPass
     End Function
 
     Private Function GenPassWord() As String
-        Return Security.RandomPassWord(8)
+        Return SecurityHelper.RandomPassWord(8)
     End Function
 
     Private Sub UpdateActiveCodeStatus()

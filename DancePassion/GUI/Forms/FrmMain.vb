@@ -1,23 +1,17 @@
-﻿Imports System.ComponentModel
-Imports System.Reflection
-Imports System.Threading
-Imports System.Xml.Serialization
-Imports DevExpress.LookAndFeel
-Imports DevExpress.Skins
+﻿Imports System.Threading
 Imports DevExpress.XtraBars
 Imports DevExpress.XtraBars.Docking2010
 Imports DevExpress.XtraBars.Docking2010.Views
 Imports DevExpress.XtraBars.Docking2010.Views.Tabbed
 Imports DevExpress.XtraBars.Ribbon
-Imports DevExpress.XtraEditors
 Imports DevExpress.XtraSplashScreen
-Imports MySql.Data.MySqlClient
 Imports VTNcoLtd.BUS
+Imports VTNcoLtd.Helper
 
 Public Class FrmMain
 
     ' Biến toàn cục cho Private Sub, sử dụng kỹ thuật Delegate, Bên dưới gọi Menuhanlder() bất cứ đâu sẽ trỏ đến RoleMenu()
-    Public MenuHanlder As New ClsDelegate.RolesMenu(AddressOf RoleMenu)
+    Public MenuHanlder As New DelegateHelper.RolesMenu(AddressOf RoleMenu)
 
 #Region " Constructor"
 

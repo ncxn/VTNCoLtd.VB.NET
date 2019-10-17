@@ -217,7 +217,7 @@ Namespace BUS
         Public Function HasMatchUserAndPassWord(UserName As String, PassWord As String) As Boolean
             Dim objUser As Users = GetUserByUserName(UserName)
             If objUser.User_name IsNot Nothing Then
-                If objUser.User_password = Security.GetMD5(PassWord) Then
+                If objUser.User_password = SecurityHelper.GetMD5(PassWord) Then
                     Return True
                 End If
             End If
@@ -246,7 +246,7 @@ Namespace BUS
             Dim objUser As Users = GetUserByUserName(userName)
 
             If objUser.User_name IsNot Nothing Then
-                If objUser.User_password = Security.GetMD5(passWord) Then
+                If objUser.User_password = SecurityHelper.GetMD5(passWord) Then
                     If objUser.User_status = 1 Then
                         status = User_status.Active
                     Else

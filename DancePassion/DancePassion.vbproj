@@ -225,7 +225,7 @@
     <Compile Include="GUI\User Controls\UcToolBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Helper\JSon.vb" />
+    <Compile Include="Helper\JSonHelper.vb" />
     <Compile Include="Model\Core\Configuration\Config.vb" />
     <Compile Include="Model\Core\Configuration\ConfigBasic.vb" />
     <Compile Include="Model\Core\Customers\Customer.vb" />
@@ -276,11 +276,11 @@
     <Compile Include="GUI\Forms\FrmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Helper\ClsDelegate.vb" />
+    <Compile Include="Helper\DelegateHelper.vb" />
     <Compile Include="DAL\DBConnection.vb" />
     <Compile Include="DAL\DBHelper.vb" />
     <Compile Include="DAL\DBUtils.vb" />
-    <Compile Include="Helper\Security.vb" />
+    <Compile Include="Helper\SecurityHelper.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -296,12 +296,12 @@
     <Compile Include="BUS\Core\Configuration\SMS\SMSconfig.vb" />
     <Compile Include="BUS\Core\Customers\ClsCustomers.vb" />
     <Compile Include="BUS\Core\Customers\ClsCustomerGroup.vb" />
-    <Compile Include="BUS\DevExpressHelper\ClsDocumentManagerHelper.vb" />
-    <Compile Include="BUS\DevExpressHelper\ShowMessage.vb" />
+    <Compile Include="Helper\DevExpressHelper\DocumentManagerHelper.vb" />
+    <Compile Include="Helper\DevExpressHelper\ShowMessage.vb" />
     <Compile Include="BUS\Core\DevManager\ClsAccess.vb" />
     <Compile Include="BUS\Core\DevManager\ClsControls.vb" />
     <Compile Include="BUS\Core\DevManager\ClsControlAccess.vb" />
-    <Compile Include="BUS\DevExpressHelper\ClsGridControlHelper.vb" />
+    <Compile Include="Helper\DevExpressHelper\GridControlHelper.vb" />
     <Compile Include="BUS\EventSystem\ClsEvents.vb" />
     <Compile Include="BUS\EventSystem\ClsEvent_Type.vb" />
     <Compile Include="GUI\User Controls\Customers\UcCustomer_Add.Designer.vb">
@@ -501,6 +501,7 @@
     <Compile Include="GUI\User Controls\Users\UcUserProfiles.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Program.vb" />
     <EmbeddedResource Include="GUI\Forms\Loading.resx">
       <DependentUpon>Loading.vb</DependentUpon>
     </EmbeddedResource>

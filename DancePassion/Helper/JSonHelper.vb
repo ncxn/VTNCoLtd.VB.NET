@@ -2,16 +2,16 @@
 
 Namespace Helper
 
-    Public Class JSon
+    Public Class JSonHelper
 
-        Private Shared Singleton As JSon
+        Private Shared Singleton As JSonHelper
         ''' <summary>
         ''' Use  Singleton Pattern
         ''' </summary>
         ''' <returns></returns>
-        Public Shared Function GetInstance() As JSon
+        Public Shared Function GetInstance() As JSonHelper
             If Singleton Is Nothing Then
-                Singleton = New JSon()
+                Singleton = New JSonHelper()
             End If
             Return Singleton
         End Function

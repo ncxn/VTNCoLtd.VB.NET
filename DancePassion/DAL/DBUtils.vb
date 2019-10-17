@@ -6,7 +6,7 @@ Namespace DAL
     Public Class DBUtils
         Private Shared Singleton As DBUtils
         Public Function GetInstance() As DBUtils
-            If (Singleton Is Nothing) Then
+            If Singleton Is Nothing Then
                 Singleton = New DBUtils()
             End If
             Return Singleton

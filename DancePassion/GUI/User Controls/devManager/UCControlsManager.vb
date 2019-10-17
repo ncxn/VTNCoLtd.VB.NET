@@ -7,6 +7,7 @@ Imports DevExpress.XtraGrid.Columns
 Imports DevExpress.XtraGrid.Views.Base
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraSplashScreen
+Imports VTNcoLtd.Helper
 
 Public Class UcControlsManager
     Public Shared ControlColection As ControlsCollection
@@ -18,7 +19,7 @@ Public Class UcControlsManager
 
         ' Mở rộng.
         ' 1. Thêm dòng khi Enter hoặc tab tại cột cuối cùng
-        Dim TempGridNewRowHelper As ClsGridControlHelper = New ClsGridControlHelper(GrvControls)
+        Dim TempGridNewRowHelper As GridControlHelper = New GridControlHelper(GrvControls)
         ControlColection = ClsControls.GetInstance.GetList()
         HasAccess(Me.Name)
         HasRoles(Me.Name)

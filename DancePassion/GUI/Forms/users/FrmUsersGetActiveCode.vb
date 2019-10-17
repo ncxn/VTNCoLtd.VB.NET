@@ -126,7 +126,7 @@ Public Class FrmUsersGetActiveCode
 
             Case User_status.Active
                 'Get code
-                ActiveCode = Security.RandomPassWord(16)
+                ActiveCode = SecurityHelper.RandomPassWord(16)
                 'Get server and Send email
                 If CurrentMail.Mail Is Nothing Then
                     'todo: Get mail
