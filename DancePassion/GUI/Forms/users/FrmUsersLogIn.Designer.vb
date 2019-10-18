@@ -29,9 +29,8 @@ Partial Class FrmUsersLogIn
         Me.LinkLostPass = New DevExpress.XtraEditors.HyperlinkLabelControl()
         Me.BtnCancel = New DevExpress.XtraEditors.SimpleButton()
         Me.BtnOK = New DevExpress.XtraEditors.SimpleButton()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LinePw = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineUserName = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.PnLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PnLogo.SuspendLayout()
         CType(Me.PicLogo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,7 +59,7 @@ Partial Class FrmUsersLogIn
         '
         Me.PicLogo.Cursor = System.Windows.Forms.Cursors.Default
         Me.PicLogo.EditValue = CType(resources.GetObject("PicLogo.EditValue"), Object)
-        Me.PicLogo.Location = New System.Drawing.Point(0, 125)
+        Me.PicLogo.Location = New System.Drawing.Point(1, 125)
         Me.PicLogo.Margin = New System.Windows.Forms.Padding(0)
         Me.PicLogo.Name = "PicLogo"
         Me.PicLogo.Properties.AllowFocused = False
@@ -69,7 +68,7 @@ Partial Class FrmUsersLogIn
         Me.PicLogo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.PicLogo.Properties.ShowMenu = False
         Me.PicLogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch
-        Me.PicLogo.Size = New System.Drawing.Size(150, 150)
+        Me.PicLogo.Size = New System.Drawing.Size(148, 148)
         Me.PicLogo.TabIndex = 0
         '
         'PnDetail
@@ -79,13 +78,14 @@ Partial Class FrmUsersLogIn
         Me.PnDetail.Appearance.Options.UseBackColor = True
         Me.PnDetail.Appearance.Options.UseBorderColor = True
         Me.PnDetail.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PnDetail.Controls.Add(Me.Panel2)
+        Me.PnDetail.Controls.Add(Me.Panel1)
         Me.PnDetail.Controls.Add(Me.TxtPassWord)
         Me.PnDetail.Controls.Add(Me.TxtUserName)
         Me.PnDetail.Controls.Add(Me.LblTitle)
         Me.PnDetail.Controls.Add(Me.LinkLostPass)
         Me.PnDetail.Controls.Add(Me.BtnCancel)
         Me.PnDetail.Controls.Add(Me.BtnOK)
-        Me.PnDetail.Controls.Add(Me.ShapeContainer1)
         Me.PnDetail.Dock = System.Windows.Forms.DockStyle.Right
         Me.PnDetail.Location = New System.Drawing.Point(150, 0)
         Me.PnDetail.Margin = New System.Windows.Forms.Padding(0)
@@ -219,33 +219,21 @@ Partial Class FrmUsersLogIn
         Me.BtnOK.TabIndex = 3
         Me.BtnOK.Text = "Đăng nhập"
         '
-        'ShapeContainer1
+        'Panel2
         '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LinePw, Me.LineUserName})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(450, 400)
-        Me.ShapeContainer1.TabIndex = 9
-        Me.ShapeContainer1.TabStop = False
+        Me.Panel2.BackColor = System.Drawing.Color.Honeydew
+        Me.Panel2.Location = New System.Drawing.Point(75, 200)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(300, 1)
+        Me.Panel2.TabIndex = 11
         '
-        'LinePw
+        'Panel1
         '
-        Me.LinePw.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LinePw.Name = "LinePw"
-        Me.LinePw.X1 = 75
-        Me.LinePw.X2 = 375
-        Me.LinePw.Y1 = 200
-        Me.LinePw.Y2 = 200
-        '
-        'LineUserName
-        '
-        Me.LineUserName.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LineUserName.Name = "LineUserName"
-        Me.LineUserName.X1 = 75
-        Me.LineUserName.X2 = 375
-        Me.LineUserName.Y1 = 150
-        Me.LineUserName.Y2 = 150
+        Me.Panel1.BackColor = System.Drawing.Color.Honeydew
+        Me.Panel1.Location = New System.Drawing.Point(76, 149)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(300, 1)
+        Me.Panel1.TabIndex = 10
         '
         'FrmUsersLogIn
         '
@@ -288,9 +276,8 @@ Partial Class FrmUsersLogIn
     Friend WithEvents TxtUserName As DevExpress.XtraEditors.TextEdit
     Friend WithEvents BtnOK As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LinkLostPass As DevExpress.XtraEditors.HyperlinkLabelControl
-    Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
-    Friend WithEvents LineUserName As PowerPacks.LineShape
     Friend WithEvents LblTitle As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents LinePw As PowerPacks.LineShape
     Private WithEvents PicLogo As DevExpress.XtraEditors.PictureEdit
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel1 As Panel
 End Class

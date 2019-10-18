@@ -1,13 +1,8 @@
 ﻿Option Explicit On
 'SMS DCOM
-Imports System
 Imports System.Threading
-Imports System.ComponentModel
 Imports System.IO.Ports
 ' SMS API
-Imports Twilio
-Imports Twilio.Rest.Api.V2010.Account
-Imports Twilio.Types
 
 Namespace SMS
 #Region "DCOM"
@@ -125,20 +120,20 @@ Namespace SMS
     End Class
 #End Region
 
-#Region "twilio"
-    Public Class Twilio
-        Private Const accountSid = ""
-        Private Const authToken = ""
-        Public Function SendSMS(fromNum As PhoneNumber, toNum As PhoneNumber, body As String) As String
-            TwilioClient.Init(accountSid, authToken)
-            'Dim frNum As New PhoneNumber(fromNum)
-            'Dim tNum As New PhoneNumber(toNum)
-            Dim sms = MessageResource.Create(
-            fromNum,,
-            toNum,,
-            body)
-            Return sms.Status.ToString
-        End Function
-    End Class
-#End Region
+    '#Region "twilio"
+    '    Public Class Twilio
+    '        Private Const accountSid = ""
+    '        Private Const authToken = ""
+    '        Public Function SendSMS(fromNum As PhoneNumber, toNum As PhoneNumber, body As String) As String
+    '            TwilioClient.Init(accountSid, authToken)
+    '            'Dim frNum As New PhoneNumber(fromNum)
+    '            'Dim tNum As New PhoneNumber(toNum)
+    '            Dim sms = MessageResource.Create(
+    '            fromNum,,
+    '            toNum,,
+    '            body)
+    '            Return sms.Status.ToString
+    '        End Function
+    '    End Class
+    '#End Region
 End Namespace
