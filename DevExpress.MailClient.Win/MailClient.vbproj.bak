@@ -65,106 +65,131 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DevAV.v18.2.Data">
       <SpecificVersion>False</SpecificVersion>
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Images.v18.2">
       <SpecificVersion>False</SpecificVersion>
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Printing.v18.2.Core">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Office.v18.2.Core">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Docs.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v18.2.Core">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.SpellChecker.v18.2.Core">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Tutorials.v18.2">
       <SpecificVersion>False</SpecificVersion>
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Utils.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraNavBar.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v18.2.Extensions">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraSpellChecker.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v18.2.Reporting.Extensions">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v18.2">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v18.2.Core">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v18.2.Extensions">
-      
+      <HintPath>
+      </HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">

@@ -117,32 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="SvgImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="SvgImageCollection1.Other" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="resource.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi40
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAPYDAAAC77u/
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFQBAAAC77u/
         PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCA1OCA1OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
         MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iQ2FwYV8xIj4NCiAgPGc+DQogICAgPGc+DQogICAgICA8cG9seWdvbiBw
-        b2ludHM9IjAsNSAwLDQ0IDI4LDQ0IDU2LDQ0IDU2LDUgICAiIGZpbGw9IiNEQ0Q2Q0QiIC8+DQogICAg
-        ICA8cGF0aCBkPSJNMzAuOTY1LDI3LjEwN2MtMS42MzcsMS40NjItNC4yOTIsMS40NjItNS45MywwbC0y
-        LjA4Ny0xLjg0M0MxNi40MTksMzEuMDkxLDAsNDQsMCw0NGgyMS42MDcgICAgaDEyLjc4N0g1NmMwLDAt
-        MTYuNDE5LTEyLjkwOS0yMi45NDgtMTguNzM2TDMwLjk2NSwyNy4xMDd6IiBmaWxsPSIjRThFM0Q5IiAv
-        Pg0KICAgICAgPHBhdGggZD0iTTAsNWwyNS4wMzUsMjIuMTA3YzEuNjM3LDEuNDYyLDQuMjkyLDEuNDYy
-        LDUuOTMsMEw1Niw1SDB6IiBmaWxsPSIjRUZFQkRFIiAvPg0KICAgIDwvZz4NCiAgICA8Zz4NCiAgICAg
-        IDxjaXJjbGUgY3g9IjQ2IiBjeT0iNDEiIHI9IjEyIiBmaWxsPSIjNzFDMzg2IiAvPg0KICAgICAgPHBh
-        dGggZD0iTTUyLDQwaC01di01YzAtMC41NTItMC40NDgtMS0xLTFzLTEsMC40NDgtMSwxdjVoLTVjLTAu
-        NTUyLDAtMSwwLjQ0OC0xLDFzMC40NDgsMSwxLDFoNXY1ICAgIGMwLDAuNTUyLDAuNDQ4LDEsMSwxczEt
-        MC40NDgsMS0xdi01aDVjMC41NTIsMCwxLTAuNDQ4LDEtMVM1Mi41NTIsNDAsNTIsNDB6IiBmaWxsPSIj
-        RkZGRkZGIiAvPg0KICAgIDwvZz4NCiAgPC9nPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8
-        ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0K
-        ICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KICA8ZyAvPg0KPC9zdmc+Cw==
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJNYXJrQ29tcGxldGUiPg0KICAgIDxw
+        b2x5Z29uIHBvaW50cz0iMjcsNCAxMSwyMCA1LDE0IDIsMTcgMTEsMjYgMzAsNyAgIiBmaWxsPSIjMDM5
+        QzIzIiBjbGFzcz0iR3JlZW4iIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
+  </data>
+  <data name="ToolTipItem1.Text" xml:space="preserve">
+    <value>1. Có thể thêm, sửa, xóa trực tiếp trên lưới, sau đó nhấn nút "Chấp nhận" để lưu vào cơ sở dữ liệu.
+2. Nhấn nút Insert để thêm dòng; Delete để xóa dòng; Sửa dòng bằng cách nhấn chuột trên dòng.
+3. Có thể nhấn nút thêm/sửa/xóa trên màn hình để mở cửa sổ mới và thao tác.</value>
   </data>
 </root>
