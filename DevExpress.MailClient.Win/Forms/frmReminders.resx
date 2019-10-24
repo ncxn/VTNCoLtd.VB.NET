@@ -129,7 +129,7 @@
     <value>layoutControlItem2</value>
   </data>
   <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;sbOpen.Parent" xml:space="preserve">
     <value>layoutControl1</value>
@@ -159,7 +159,7 @@
     <value>8</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;sbOpen.Name" xml:space="preserve">
     <value>sbOpen</value>
@@ -187,13 +187,13 @@
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;lbSubject.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.ToolTip" xml:space="preserve">
     <value></value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="layoutControl1.OptionsPrint.AppearanceItemCaption.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -208,19 +208,19 @@
     <value>emptySpaceItem3</value>
   </data>
   <data name="&gt;&gt;sbOpen.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Tile</value>
@@ -235,13 +235,13 @@
     <value>Open Item</value>
   </data>
   <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="layoutControlGroup3.CustomizationFormText" xml:space="preserve">
     <value>Root</value>
   </data>
   <data name="&gt;&gt;sbClose.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -256,7 +256,7 @@
     <value>layoutControl1</value>
   </data>
   <data name="&gt;&gt;colDueIn.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="lbDueDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 29</value>
@@ -274,7 +274,7 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
     <value></value>
@@ -303,8 +303,8 @@
   <data name="layoutControl1.Appearance.DisabledLayoutItem.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2"></assembly>
-  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v18.2">
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1"></assembly>
+  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
@@ -314,10 +314,10 @@
     <value></value>
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v18.2</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1</value>
   </data>
   <data name="layoutControlItem3.CustomizationFormText" xml:space="preserve">
     <value>layoutControlItem3</value>
@@ -341,10 +341,10 @@
     <value>Close</value>
   </data>
   <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="colSubject.Width" type="System.Int32, mscorlib">
     <value>468</value>
@@ -389,13 +389,13 @@
     <value>lbDueDate</value>
   </data>
   <data name="&gt;&gt;colSubject.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="lbDueDate.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="&gt;&gt;lbDueDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;sbClose.Parent" xml:space="preserve">
     <value>layoutControl1</value>
@@ -407,7 +407,7 @@
     <value>679, 433</value>
   </data>
   <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>frmReminders</value>
@@ -416,7 +416,7 @@
     <value>layoutControlItem4</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
     <value>layoutControlGroup3</value>
@@ -439,8 +439,8 @@
   <data name="layoutControl1.Appearance.DisabledLayoutItem.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2"></assembly>
-  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1"></assembly>
+  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>Center</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
@@ -455,12 +455,12 @@
   <data name="colDueIn.Width" type="System.Int32, mscorlib">
     <value>219</value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2"></assembly>
-  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v18.2">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1"></assembly>
+  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
     <value>None</value>
   </data>
   <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="layoutControl1.OptionsPrint.AppearanceItemCaption.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
     <value>Horizontal</value>

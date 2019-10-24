@@ -165,8 +165,8 @@
   <data name="dateEdit2.Properties.CalendarTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2, Culture=neutral"></assembly>
-  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Culture=neutral"></assembly>
+  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -175,7 +175,7 @@
   <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -193,7 +193,7 @@
   <data name="dateEdit2.Properties.CalendarTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="dateEdit2.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit2.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="dateEdit2.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -202,7 +202,7 @@
   <data name="dateEdit2.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="dateEdit2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="dateEdit2.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -241,7 +241,7 @@
   <data name="dateEdit1.Properties.CalendarTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -250,7 +250,7 @@
   <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -268,7 +268,7 @@
   <data name="dateEdit1.Properties.CalendarTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="dateEdit1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="dateEdit1.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -277,7 +277,7 @@
   <data name="dateEdit1.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="dateEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="dateEdit1.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">

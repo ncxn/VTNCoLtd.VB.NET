@@ -145,7 +145,7 @@
     <value>lblDescription</value>
   </data>
   <data name="&gt;&gt;lblDescription.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblDescription.Parent" xml:space="preserve">
     <value>flyoutPanel1</value>
@@ -175,7 +175,7 @@
     <value>lblMail</value>
   </data>
   <data name="&gt;&gt;lblMail.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblMail.Parent" xml:space="preserve">
     <value>flyoutPanel1</value>
@@ -201,14 +201,14 @@
   <data name="repositoryItemFontEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2, Culture=neutral"></assembly>
-  <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Culture=neutral"></assembly>
+  <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="repositoryItemRichEditFontSizeEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemRichEditFontSizeEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemRichEditFontSizeEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="richEditControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -230,7 +230,7 @@
     <value>richEditControl</value>
   </data>
   <data name="&gt;&gt;richEditControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.RichEditControl, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.RichEditControl, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;richEditControl.Parent" xml:space="preserve">
     <value>splitContainerControl1.Panel1</value>
@@ -241,7 +241,7 @@
   <data name="repositoryItemBorderLineStyle1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemBorderLineStyle1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemBorderLineStyle1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="changeTableBorderLineStyleItem1.EditWidth" type="System.Int32, mscorlib">
@@ -250,7 +250,7 @@
   <data name="repositoryItemBorderLineWeight1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemBorderLineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemBorderLineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="changeTableBorderLineWeightItem1.EditWidth" type="System.Int32, mscorlib">
@@ -259,7 +259,7 @@
   <data name="repositoryItemFloatingObjectOutlineWeight1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemFloatingObjectOutlineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemFloatingObjectOutlineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="ribbonControl.Location" type="System.Drawing.Point, System.Drawing">
@@ -289,7 +289,7 @@
   <data name="repositoryItemRichEditStyleEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemRichEditStyleEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemRichEditStyleEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="ribbonControl.Size" type="System.Drawing.Size, System.Drawing">
@@ -308,7 +308,7 @@
     <value>statusBar</value>
   </data>
   <data name="&gt;&gt;statusBar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;statusBar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -320,7 +320,7 @@
     <value>ribbonControl</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -341,7 +341,7 @@
     <value>picContact</value>
   </data>
   <data name="&gt;&gt;picContact.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;picContact.Parent" xml:space="preserve">
     <value>flyoutPanel1</value>
@@ -355,7 +355,7 @@
   <data name="buttonPanel.Buttons1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="buttonPanel.Buttons2" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v18.2">
+  <data name="buttonPanel.Buttons2" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v19.1">
     <value>PushButton</value>
   </data>
   <data name="buttonPanel.Buttons3" xml:space="preserve">
@@ -394,7 +394,7 @@
   <data name="buttonPanel.Buttons14" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="buttonPanel.Buttons15" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v18.2">
+  <data name="buttonPanel.Buttons15" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v19.1">
     <value>PushButton</value>
   </data>
   <data name="buttonPanel.Buttons16" xml:space="preserve">
@@ -433,7 +433,7 @@
   <data name="buttonPanel.Buttons27" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="buttonPanel.Buttons28" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v18.2">
+  <data name="buttonPanel.Buttons28" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v19.1">
     <value>PushButton</value>
   </data>
   <data name="buttonPanel.Buttons29" xml:space="preserve">
@@ -472,7 +472,7 @@
   <data name="buttonPanel.Buttons40" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="buttonPanel.Buttons41" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v18.2">
+  <data name="buttonPanel.Buttons41" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v19.1">
     <value>PushButton</value>
   </data>
   <data name="buttonPanel.Buttons42" xml:space="preserve">
@@ -527,7 +527,7 @@
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;buttonPanel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ButtonsPanelControl.ButtonPanelControl, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ButtonsPanelControl.ButtonPanelControl, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;buttonPanel.Parent" xml:space="preserve">
     <value>flyoutPanel1</value>
@@ -554,7 +554,7 @@
     <value>edtTo</value>
   </data>
   <data name="&gt;&gt;edtTo.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TokenEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TokenEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtTo.Parent" xml:space="preserve">
     <value>panelControl</value>
@@ -572,7 +572,7 @@
     <value>flyoutPanel1</value>
   </data>
   <data name="&gt;&gt;flyoutPanel1.Type" xml:space="preserve">
-    <value>DevExpress.Utils.FlyoutPanel, DevExpress.Utils.v18.2, Culture=neutral</value>
+    <value>DevExpress.Utils.FlyoutPanel, DevExpress.Utils.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;flyoutPanel1.Parent" xml:space="preserve">
     <value>splitContainerControl1.Panel1</value>
@@ -596,7 +596,7 @@
     <value>lblTo</value>
   </data>
   <data name="&gt;&gt;lblTo.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblTo.Parent" xml:space="preserve">
     <value>panelControl</value>
@@ -623,7 +623,7 @@
     <value>lblSubject</value>
   </data>
   <data name="&gt;&gt;lblSubject.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblSubject.Parent" xml:space="preserve">
     <value>panelControl</value>
@@ -647,7 +647,7 @@
     <value>edtSubject</value>
   </data>
   <data name="&gt;&gt;edtSubject.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtSubject.Parent" xml:space="preserve">
     <value>panelControl</value>
@@ -671,7 +671,7 @@
     <value>panelControl</value>
   </data>
   <data name="&gt;&gt;panelControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;panelControl.Parent" xml:space="preserve">
     <value>splitContainerControl1.Panel1</value>
@@ -722,7 +722,7 @@
     <value>splitContainerControl1</value>
   </data>
   <data name="&gt;&gt;splitContainerControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SplitContainerControl, DevExpress.Utils.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SplitContainerControl, DevExpress.Utils.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;splitContainerControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1008,942 +1008,942 @@
     <value>applicationMenu</value>
   </data>
   <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Name" xml:space="preserve">
     <value>fileSaveItem1</value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;quickPrintItem1.Name" xml:space="preserve">
     <value>quickPrintItem1</value>
   </data>
   <data name="&gt;&gt;quickPrintItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.QuickPrintItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.QuickPrintItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;printItem1.Name" xml:space="preserve">
     <value>printItem1</value>
   </data>
   <data name="&gt;&gt;printItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PrintItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.PrintItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;printPreviewItem1.Name" xml:space="preserve">
     <value>printPreviewItem1</value>
   </data>
   <data name="&gt;&gt;printPreviewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;undoItem1.Name" xml:space="preserve">
     <value>undoItem1</value>
   </data>
   <data name="&gt;&gt;undoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;redoItem1.Name" xml:space="preserve">
     <value>redoItem1</value>
   </data>
   <data name="&gt;&gt;redoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;pasteItem1.Name" xml:space="preserve">
     <value>pasteItem1</value>
   </data>
   <data name="&gt;&gt;pasteItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;cutItem1.Name" xml:space="preserve">
     <value>cutItem1</value>
   </data>
   <data name="&gt;&gt;cutItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.CutItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.CutItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;copyItem1.Name" xml:space="preserve">
     <value>copyItem1</value>
   </data>
   <data name="&gt;&gt;copyItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.CopyItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.CopyItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;pasteSpecialItem1.Name" xml:space="preserve">
     <value>pasteSpecialItem1</value>
   </data>
   <data name="&gt;&gt;pasteSpecialItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PasteSpecialItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.PasteSpecialItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;barButtonGroup1.Name" xml:space="preserve">
     <value>barButtonGroup1</value>
   </data>
   <data name="&gt;&gt;barButtonGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFontNameItem1.Name" xml:space="preserve">
     <value>changeFontNameItem1</value>
   </data>
   <data name="&gt;&gt;changeFontNameItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemFontEdit1.Name" xml:space="preserve">
     <value>repositoryItemFontEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemFontEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFontSizeItem1.Name" xml:space="preserve">
     <value>changeFontSizeItem1</value>
   </data>
   <data name="&gt;&gt;changeFontSizeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Name" xml:space="preserve">
     <value>repositoryItemRichEditFontSizeEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;spellChecker1.Name" xml:space="preserve">
     <value>spellChecker1</value>
   </data>
   <data name="&gt;&gt;spellChecker1.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;fontSizeIncreaseItem1.Name" xml:space="preserve">
     <value>fontSizeIncreaseItem1</value>
   </data>
   <data name="&gt;&gt;fontSizeIncreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Name" xml:space="preserve">
     <value>fontSizeDecreaseItem1</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Name" xml:space="preserve">
     <value>barButtonGroup2</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleFontBoldItem1.Name" xml:space="preserve">
     <value>toggleFontBoldItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontBoldItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleFontItalicItem1.Name" xml:space="preserve">
     <value>toggleFontItalicItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontItalicItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleFontUnderlineItem1.Name" xml:space="preserve">
     <value>toggleFontUnderlineItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontUnderlineItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;barButtonGroup3.Name" xml:space="preserve">
     <value>barButtonGroup3</value>
   </data>
   <data name="&gt;&gt;barButtonGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFontColorItem1.Name" xml:space="preserve">
     <value>changeFontColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFontColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Name" xml:space="preserve">
     <value>changeFontBackColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;barButtonGroup4.Name" xml:space="preserve">
     <value>barButtonGroup4</value>
   </data>
   <data name="&gt;&gt;barButtonGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleBulletedListItem1.Name" xml:space="preserve">
     <value>toggleBulletedListItem1</value>
   </data>
   <data name="&gt;&gt;toggleBulletedListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Name" xml:space="preserve">
     <value>toggleNumberingListItem1</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;barButtonGroup5.Name" xml:space="preserve">
     <value>barButtonGroup5</value>
   </data>
   <data name="&gt;&gt;barButtonGroup5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Name" xml:space="preserve">
     <value>decreaseIndentItem1</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;increaseIndentItem1.Name" xml:space="preserve">
     <value>increaseIndentItem1</value>
   </data>
   <data name="&gt;&gt;increaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;barButtonGroup6.Name" xml:space="preserve">
     <value>barButtonGroup6</value>
   </data>
   <data name="&gt;&gt;barButtonGroup6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentLeftItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentCenterItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentRightItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Name" xml:space="preserve">
     <value>barButtonGroup7</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Name" xml:space="preserve">
     <value>changeParagraphBackColorItem1</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;findItem1.Name" xml:space="preserve">
     <value>findItem1</value>
   </data>
   <data name="&gt;&gt;findItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;replaceItem1.Name" xml:space="preserve">
     <value>replaceItem1</value>
   </data>
   <data name="&gt;&gt;replaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Name" xml:space="preserve">
     <value>insertTableItem1</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertPictureItem1.Name" xml:space="preserve">
     <value>insertPictureItem1</value>
   </data>
   <data name="&gt;&gt;insertPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Name" xml:space="preserve">
     <value>insertFloatingPictureItem1</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertHyperlinkItem1.Name" xml:space="preserve">
     <value>insertHyperlinkItem1</value>
   </data>
   <data name="&gt;&gt;insertHyperlinkItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertTextBoxItem1.Name" xml:space="preserve">
     <value>insertTextBoxItem1</value>
   </data>
   <data name="&gt;&gt;insertTextBoxItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertSymbolItem1.Name" xml:space="preserve">
     <value>insertSymbolItem1</value>
   </data>
   <data name="&gt;&gt;insertSymbolItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Name" xml:space="preserve">
     <value>changeTableCellsShadingItem1</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeTableBordersItem1.Name" xml:space="preserve">
     <value>changeTableBordersItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsLeftBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsRightBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;resetTableCellsAllBordersItem1.Name" xml:space="preserve">
     <value>resetTableCellsAllBordersItem1</value>
   </data>
   <data name="&gt;&gt;resetTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Name" xml:space="preserve">
     <value>toggleTableCellsAllBordersItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsOutsideBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideHorizontalBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideVerticalBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Name" xml:space="preserve">
     <value>toggleShowTableGridLinesItem1</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineStyleItem1.Name" xml:space="preserve">
     <value>changeTableBorderLineStyleItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineStyleItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineStyle1.Name" xml:space="preserve">
     <value>repositoryItemBorderLineStyle1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineStyle1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineWeightItem1.Name" xml:space="preserve">
     <value>changeTableBorderLineWeightItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineWeight1.Name" xml:space="preserve">
     <value>repositoryItemBorderLineWeight1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeTableBorderColorItem1.Name" xml:space="preserve">
     <value>changeTableBorderColorItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;selectTableElementsItem1.Name" xml:space="preserve">
     <value>selectTableElementsItem1</value>
   </data>
   <data name="&gt;&gt;selectTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;selectTableCellItem1.Name" xml:space="preserve">
     <value>selectTableCellItem1</value>
   </data>
   <data name="&gt;&gt;selectTableCellItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;selectTableColumnItem1.Name" xml:space="preserve">
     <value>selectTableColumnItem1</value>
   </data>
   <data name="&gt;&gt;selectTableColumnItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;selectTableRowItem1.Name" xml:space="preserve">
     <value>selectTableRowItem1</value>
   </data>
   <data name="&gt;&gt;selectTableRowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Name" xml:space="preserve">
     <value>selectTableItem1</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Name" xml:space="preserve">
     <value>showTablePropertiesFormItem1</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;deleteTableElementsItem1.Name" xml:space="preserve">
     <value>deleteTableElementsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;showDeleteTableCellsFormItem1.Name" xml:space="preserve">
     <value>showDeleteTableCellsFormItem1</value>
   </data>
   <data name="&gt;&gt;showDeleteTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Name" xml:space="preserve">
     <value>deleteTableColumnsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Name" xml:space="preserve">
     <value>deleteTableRowsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;deleteTableItem1.Name" xml:space="preserve">
     <value>deleteTableItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Name" xml:space="preserve">
     <value>insertTableRowAboveItem1</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Name" xml:space="preserve">
     <value>insertTableRowBelowItem1</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToLeftItem1.Name" xml:space="preserve">
     <value>insertTableColumnToLeftItem1</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToRightItem1.Name" xml:space="preserve">
     <value>insertTableColumnToRightItem1</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Name" xml:space="preserve">
     <value>mergeTableCellsItem1</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;showSplitTableCellsForm1.Name" xml:space="preserve">
     <value>showSplitTableCellsForm1</value>
   </data>
   <data name="&gt;&gt;showSplitTableCellsForm1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;splitTableItem1.Name" xml:space="preserve">
     <value>splitTableItem1</value>
   </data>
   <data name="&gt;&gt;splitTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitContentsItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitContentsItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitContentsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitWindowItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitWindowItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitWindowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableFixedColumnWidthItem1.Name" xml:space="preserve">
     <value>toggleTableFixedColumnWidthItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableFixedColumnWidthItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectFillColorItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectFillColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectFillColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineColorItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectOutlineColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectOutlineWeightItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemFloatingObjectOutlineWeight1.Name" xml:space="preserve">
     <value>repositoryItemFloatingObjectOutlineWeight1</value>
   </data>
   <data name="&gt;&gt;repositoryItemFloatingObjectOutlineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectTextWrapTypeItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectSquareTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectSquareTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectSquareTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTightTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTightTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTightTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectThroughTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectThroughTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectThroughTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopAndBottomTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopAndBottomTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopAndBottomTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBehindTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectInFrontOfTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectAlignmentItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardSubItem1.Name" xml:space="preserve">
     <value>floatingObjectBringForwardSubItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardItem1.Name" xml:space="preserve">
     <value>floatingObjectBringForwardItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringToFrontItem1.Name" xml:space="preserve">
     <value>floatingObjectBringToFrontItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringToFrontItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Name" xml:space="preserve">
     <value>floatingObjectBringInFrontOfTextItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardSubItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Name" xml:space="preserve">
     <value>floatingObjectSendToBackItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBehindTextItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableToolsRibbonPageCategory1.Name" xml:space="preserve">
     <value>tableToolsRibbonPageCategory1</value>
   </data>
   <data name="&gt;&gt;tableToolsRibbonPageCategory1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableToolsRibbonPageCategory, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableToolsRibbonPageCategory, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableDesignRibbonPage1.Name" xml:space="preserve">
     <value>tableDesignRibbonPage1</value>
   </data>
   <data name="&gt;&gt;tableDesignRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableDesignRibbonPage, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableDesignRibbonPage, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableStylesRibbonPageGroup1.Name" xml:space="preserve">
     <value>tableStylesRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tableStylesRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableStylesRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableStylesRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableDrawBordersRibbonPageGroup1.Name" xml:space="preserve">
     <value>tableDrawBordersRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tableDrawBordersRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableDrawBordersRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableDrawBordersRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableLayoutRibbonPage1.Name" xml:space="preserve">
     <value>tableLayoutRibbonPage1</value>
   </data>
   <data name="&gt;&gt;tableLayoutRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableLayoutRibbonPage, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableLayoutRibbonPage, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableTableRibbonPageGroup1.Name" xml:space="preserve">
     <value>tableTableRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tableTableRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableTableRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableTableRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableRowsAndColumnsRibbonPageGroup1.Name" xml:space="preserve">
     <value>tableRowsAndColumnsRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tableRowsAndColumnsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableRowsAndColumnsRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableRowsAndColumnsRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableMergeRibbonPageGroup1.Name" xml:space="preserve">
     <value>tableMergeRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tableMergeRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableMergeRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableMergeRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableCellSizeRibbonPageGroup1.Name" xml:space="preserve">
     <value>tableCellSizeRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tableCellSizeRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableCellSizeRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableCellSizeRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tableAlignmentRibbonPageGroup1.Name" xml:space="preserve">
     <value>tableAlignmentRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tableAlignmentRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableAlignmentRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TableAlignmentRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsRibbonPageCategory1.Name" xml:space="preserve">
     <value>floatingPictureToolsRibbonPageCategory1</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsRibbonPageCategory1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsRibbonPageCategory, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsRibbonPageCategory, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsFormatPage1.Name" xml:space="preserve">
     <value>floatingPictureToolsFormatPage1</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsFormatPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsFormatPage, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsFormatPage, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsShapeStylesPageGroup1.Name" xml:space="preserve">
     <value>floatingPictureToolsShapeStylesPageGroup1</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsShapeStylesPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsShapeStylesPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsShapeStylesPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsArrangePageGroup1.Name" xml:space="preserve">
     <value>floatingPictureToolsArrangePageGroup1</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsArrangePageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsArrangePageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsArrangePageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Name" xml:space="preserve">
     <value>homeRibbonPage1</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;clipboardRibbonPageGroup1.Name" xml:space="preserve">
     <value>clipboardRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;clipboardRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;fontRibbonPageGroup1.Name" xml:space="preserve">
     <value>fontRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;fontRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.FontRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;paragraphRibbonPageGroup1.Name" xml:space="preserve">
     <value>paragraphRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;paragraphRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;editingRibbonPageGroup1.Name" xml:space="preserve">
     <value>editingRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;editingRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;insertRibbonPage1.Name" xml:space="preserve">
     <value>insertRibbonPage1</value>
   </data>
   <data name="&gt;&gt;insertRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertRibbonPage, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertRibbonPage, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tablesRibbonPageGroup1.Name" xml:space="preserve">
     <value>tablesRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;tablesRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TablesRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TablesRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;illustrationsRibbonPageGroup1.Name" xml:space="preserve">
     <value>illustrationsRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;illustrationsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.IllustrationsRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.IllustrationsRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;linksRibbonPageGroup1.Name" xml:space="preserve">
     <value>linksRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;linksRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.LinksRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.LinksRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;textRibbonPageGroup1.Name" xml:space="preserve">
     <value>textRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;textRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TextRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.TextRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;symbolsRibbonPageGroup1.Name" xml:space="preserve">
     <value>symbolsRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;symbolsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SymbolsRibbonPageGroup, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.SymbolsRibbonPageGroup, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Name" xml:space="preserve">
     <value>repositoryItemRichEditStyleEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;buttonPanelTooltipController.Name" xml:space="preserve">
     <value>buttonPanelTooltipController</value>
   </data>
   <data name="&gt;&gt;buttonPanelTooltipController.Type" xml:space="preserve">
-    <value>DevExpress.Utils.ToolTipController, DevExpress.Utils.v18.2, Culture=neutral</value>
+    <value>DevExpress.Utils.ToolTipController, DevExpress.Utils.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;richEditBarController1.Name" xml:space="preserve">
     <value>richEditBarController1</value>
   </data>
   <data name="&gt;&gt;richEditBarController1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Name" xml:space="preserve">
     <value>showFontFormItem1</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;showParagraphFormItem1.Name" xml:space="preserve">
     <value>showParagraphFormItem1</value>
   </data>
   <data name="&gt;&gt;showParagraphFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Name" xml:space="preserve">
     <value>showEditStyleFormItem1</value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Name" xml:space="preserve">
     <value>showInsertTableCellsFormItem1</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditMail</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v19.1, Culture=neutral</value>
   </data>
 </root>

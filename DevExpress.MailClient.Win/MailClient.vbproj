@@ -64,106 +64,102 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v18.2">
+    <Reference Include="DevExpress.BonusSkins.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Data.v18.2">
+    <Reference Include="DevExpress.Data.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.DevAV.v18.2.Data">
+    <Reference Include="DevExpress.DevAV.v19.1.Data">
       <SpecificVersion>False</SpecificVersion>
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Images.v18.2">
+    <Reference Include="DevExpress.Images.v19.1">
       <SpecificVersion>False</SpecificVersion>
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v18.2.Core">
+    <Reference Include="DevExpress.Printing.v19.1.Core">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Office.v18.2.Core">
+    <Reference Include="DevExpress.Office.v19.1.Core">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Docs.v18.2">
+    <Reference Include="DevExpress.Docs.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v18.2.Core">
+    <Reference Include="DevExpress.RichEdit.v19.1.Core">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.SpellChecker.v18.2.Core">
+    <Reference Include="DevExpress.SpellChecker.v19.1.Core">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Tutorials.v18.2">
+    <Reference Include="DevExpress.Tutorials.v19.1">
       <SpecificVersion>False</SpecificVersion>
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Utils.v18.2">
+    <Reference Include="DevExpress.Utils.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v18.2">
+    <Reference Include="DevExpress.XtraBars.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v18.2">
+    <Reference Include="DevExpress.XtraEditors.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v18.2">
+    <Reference Include="DevExpress.XtraGrid.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v18.2">
+    <Reference Include="DevExpress.XtraLayout.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v18.2">
+    <Reference Include="DevExpress.XtraNavBar.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v18.2">
+    <Reference Include="DevExpress.XtraPrinting.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v18.2">
+    <Reference Include="DevExpress.XtraRichEdit.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v18.2.Extensions">
+    <Reference Include="DevExpress.XtraSpellChecker.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraSpellChecker.v18.2">
+    <Reference Include="DevExpress.XtraTreeList.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v18.2">
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Reporting.Extensions">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v18.2.Reporting.Extensions">
+    <Reference Include="DevExpress.XtraScheduler.v19.1">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v18.2">
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core">
       
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v18.2.Core">
-      
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v18.2.Extensions">
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Extensions">
       
       <Private>False</Private>
     </Reference>

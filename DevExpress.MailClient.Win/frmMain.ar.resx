@@ -702,8 +702,8 @@
   <data name="backstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 63</value>
   </data>
-  <assembly alias="DevExpress.XtraBars.v18.2" name="DevExpress.XtraBars.v18.2, Culture=neutral"></assembly>
-  <data name="ribbonControl1.Categories" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="DevExpress.XtraBars.v19.1" name="DevExpress.XtraBars.v19.1, Culture=neutral"></assembly>
+  <data name="ribbonControl1.Categories" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxNS4xLCBWZXJzaW9uPTE1
         LjEuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
@@ -713,7 +713,7 @@
         ABnJ9QEL
 </value>
   </data>
-  <data name="ribbonControl1.Categories1" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonControl1.Categories1" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxNS4xLCBWZXJzaW9uPTE1
         LjEuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
@@ -723,7 +723,7 @@
         oYHqWPPMCZsBCw==
 </value>
   </data>
-  <data name="ribbonControl1.Categories2" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonControl1.Categories2" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxNS4xLCBWZXJzaW9uPTE1
         LjEuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
@@ -733,7 +733,7 @@
         kC71Tp6Rd1UBCw==
 </value>
   </data>
-  <data name="ribbonControl1.Categories3" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonControl1.Categories3" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxNS4xLCBWZXJzaW9uPTE1
         LjEuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
@@ -743,7 +743,7 @@
         PisEmOMBCw==
 </value>
   </data>
-  <data name="ribbonControl1.Categories4" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonControl1.Categories4" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxNS4xLCBWZXJzaW9uPTE1
         LjEuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA

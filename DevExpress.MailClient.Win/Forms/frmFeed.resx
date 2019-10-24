@@ -160,7 +160,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;sbOK.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
     <value>emptySpaceItem1</value>
@@ -169,7 +169,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -180,8 +180,8 @@
   <data name="heLink.Size" type="System.Drawing.Size, System.Drawing">
     <value>400, 20</value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2"></assembly>
-  <data name="cbeGroup.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1"></assembly>
+  <data name="cbeGroup.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="heLink.Properties.Mask.EditMask" xml:space="preserve">
@@ -200,7 +200,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="heLink.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -224,7 +224,7 @@
     <value>CenterParent</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;heLink.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -242,7 +242,7 @@
     <value>400, 20</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v18.2</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1</value>
   </data>
   <data name="&gt;&gt;teCaption.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -260,7 +260,7 @@
     <value>4</value>
   </data>
   <data name="&gt;&gt;teCaption.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="cbeGroup.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -287,19 +287,19 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="teCaption.Properties.NullValuePrompt" xml:space="preserve">
     <value></value>
   </data>
   <data name="&gt;&gt;heLink.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.HyperLinkEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.HyperLinkEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;sbCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
     <value>layoutControlItem5</value>
@@ -320,16 +320,16 @@
     <value></value>
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;heLink.Name" xml:space="preserve">
     <value>heLink</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2"></assembly>
-  <data name="teCaption.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1"></assembly>
+  <data name="teCaption.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
-  <data name="heLink.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="heLink.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="layoutControlItem3.CustomizationFormText" xml:space="preserve">
@@ -348,21 +348,21 @@
     <value>frmFeed</value>
   </data>
   <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="cbeGroup.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;cbeGroup.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="heLink.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
     <value>_</value>
   </data>
-  <data name="teCaption.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="teCaption.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="teCaption.Location" type="System.Drawing.Point, System.Drawing">
@@ -395,7 +395,7 @@
   <data name="cbeGroup.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <data name="heLink.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="heLink.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
@@ -414,7 +414,7 @@
     <value>490, 138</value>
   </data>
   <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>frmFeed</value>
@@ -510,7 +510,7 @@
     <value>sbCancel</value>
   </data>
   <data name="&gt;&gt;dxValidationProvider1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="sbCancel.Text" xml:space="preserve">
     <value>Cancel</value>

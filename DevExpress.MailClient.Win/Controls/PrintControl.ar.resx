@@ -213,8 +213,8 @@
   <data name="copySpinEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2, Culture=neutral"></assembly>
-  <data name="copySpinEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Culture=neutral"></assembly>
+  <data name="copySpinEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="copySpinEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -223,7 +223,7 @@
   <data name="copySpinEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="copySpinEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="copySpinEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>Numeric</value>
   </data>
   <data name="copySpinEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -373,7 +373,7 @@
   <data name="zoomTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="zoomTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="zoomTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="zoomTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -382,7 +382,7 @@
   <data name="zoomTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="zoomTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="zoomTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>Numeric</value>
   </data>
   <data name="zoomTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -418,7 +418,7 @@
   <data name="pageButtonEdit.Properties.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <data name="pageButtonEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="pageButtonEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="pageButtonEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -427,7 +427,7 @@
   <data name="pageButtonEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pageButtonEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="pageButtonEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="pageButtonEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">

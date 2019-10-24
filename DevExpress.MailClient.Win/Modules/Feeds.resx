@@ -150,7 +150,7 @@
     <value>Root</value>
   </data>
   <data name="&gt;&gt;colTitle.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -169,7 +169,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Feeds</value>
@@ -178,7 +178,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="gridView1.Appearance.ViewCaption.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -186,8 +186,8 @@
   <data name="layoutControl1.Appearance.DisabledLayoutItem.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
-  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2"></assembly>
-  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v18.2">
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1"></assembly>
+  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
@@ -200,7 +200,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="layoutControl1.OptionsPrint.AppearanceItemCaption.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -212,10 +212,10 @@
     <value>564, 6</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;splitterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;colFrom.Name" xml:space="preserve">
     <value>colFrom</value>
@@ -230,7 +230,7 @@
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="layoutControl1.Appearance.DisabledLayoutGroupCaption.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
@@ -260,7 +260,7 @@
     <value>6, 13</value>
   </data>
   <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
     <value></value>
@@ -268,8 +268,8 @@
   <data name="colDate.Caption" xml:space="preserve">
     <value>Date</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2"></assembly>
-  <data name="repositoryItemTextEdit1.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1"></assembly>
+  <data name="repositoryItemTextEdit1.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="repositoryItemTextEdit1.Mask.SaveLiteral" type="System.Boolean, mscorlib">
@@ -296,7 +296,7 @@
   <data name="layoutControl1.OptionsPrint.AppearanceGroupCaption.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <data name="repositoryItemTextEdit1.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="repositoryItemTextEdit1.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
@@ -309,10 +309,10 @@
     <value>553, 525</value>
   </data>
   <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v19.1</value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2"></assembly>
-  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v18.2">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1"></assembly>
+  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
     <value>None</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -352,7 +352,7 @@
     <value>layoutControlItem2</value>
   </data>
   <data name="&gt;&gt;colFrom.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;colDate.Name" xml:space="preserve">
     <value>colDate</value>
@@ -391,9 +391,9 @@
     <value>Title</value>
   </data>
   <data name="&gt;&gt;colDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
-  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v18.2">
+  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>Center</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
@@ -424,7 +424,7 @@
     <value>5</value>
   </data>
   <data name="&gt;&gt;repositoryItemMemoEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>

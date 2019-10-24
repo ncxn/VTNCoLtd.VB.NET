@@ -132,7 +132,7 @@
     <value>memoEdit1</value>
   </data>
   <data name="&gt;&gt;memoEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;memoEdit1.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -156,7 +156,7 @@
     <value>sbCancel</value>
   </data>
   <data name="&gt;&gt;sbCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;sbCancel.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -170,8 +170,8 @@
   <data name="tePhone.Properties.Mask.EditMask" xml:space="preserve">
     <value>(\(\d\d\d\)) ?\d{1,3}-\d\d\d\d</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2, Culture=neutral"></assembly>
-  <data name="tePhone.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Culture=neutral"></assembly>
+  <data name="tePhone.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>RegEx</value>
   </data>
   <data name="tePhone.Size" type="System.Drawing.Size, System.Drawing">
@@ -184,7 +184,7 @@
     <value>tePhone</value>
   </data>
   <data name="&gt;&gt;tePhone.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tePhone.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -198,7 +198,7 @@
   <data name="teZip.Properties.Mask.EditMask" xml:space="preserve">
     <value>\d\d\d\d\d</value>
   </data>
-  <data name="teZip.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="teZip.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>RegEx</value>
   </data>
   <data name="teZip.Size" type="System.Drawing.Size, System.Drawing">
@@ -211,7 +211,7 @@
     <value>teZip</value>
   </data>
   <data name="&gt;&gt;teZip.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teZip.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -232,7 +232,7 @@
     <value>meLine</value>
   </data>
   <data name="&gt;&gt;meLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;meLine.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -253,7 +253,7 @@
     <value>teLastName</value>
   </data>
   <data name="&gt;&gt;teLastName.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teLastName.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -277,7 +277,7 @@
     <value>sbOK</value>
   </data>
   <data name="&gt;&gt;sbOK.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;sbOK.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -298,7 +298,7 @@
     <value>teMiddleName</value>
   </data>
   <data name="&gt;&gt;teMiddleName.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teMiddleName.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -319,7 +319,7 @@
     <value>teFirstName</value>
   </data>
   <data name="&gt;&gt;teFirstName.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teFirstName.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -330,8 +330,8 @@
   <data name="icbTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>394, 84</value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2, Culture=neutral"></assembly>
-  <data name="icbTitle.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Culture=neutral"></assembly>
+  <data name="icbTitle.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="icbTitle.Size" type="System.Drawing.Size, System.Drawing">
@@ -344,7 +344,7 @@
     <value>icbTitle</value>
   </data>
   <data name="&gt;&gt;icbTitle.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;icbTitle.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -365,7 +365,7 @@
     <value>pePhoto</value>
   </data>
   <data name="&gt;&gt;pePhoto.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;pePhoto.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -376,7 +376,7 @@
   <data name="cbeCity.Location" type="System.Drawing.Point, System.Drawing">
     <value>406, 187</value>
   </data>
-  <data name="cbeCity.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="cbeCity.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cbeCity.Size" type="System.Drawing.Size, System.Drawing">
@@ -389,7 +389,7 @@
     <value>cbeCity</value>
   </data>
   <data name="&gt;&gt;cbeCity.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;cbeCity.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -400,7 +400,7 @@
   <data name="cbeState.Location" type="System.Drawing.Point, System.Drawing">
     <value>406, 211</value>
   </data>
-  <data name="cbeState.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="cbeState.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cbeState.Size" type="System.Drawing.Size, System.Drawing">
@@ -413,7 +413,7 @@
     <value>cbeState</value>
   </data>
   <data name="&gt;&gt;cbeState.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;cbeState.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -434,7 +434,7 @@
     <value>teEmail</value>
   </data>
   <data name="&gt;&gt;teEmail.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.HyperLinkEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.HyperLinkEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teEmail.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -449,13 +449,13 @@
   <data name="deBirthDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>406, 325</value>
   </data>
-  <data name="deBirthDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="deBirthDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="deBirthDate.Properties.Mask.EditMask" xml:space="preserve">
     <value></value>
   </data>
-  <data name="deBirthDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="deBirthDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="deBirthDate.Size" type="System.Drawing.Size, System.Drawing">
@@ -468,7 +468,7 @@
     <value>deBirthDate</value>
   </data>
   <data name="&gt;&gt;deBirthDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;deBirthDate.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -621,7 +621,7 @@
     <value>lcMain</value>
   </data>
   <data name="&gt;&gt;lcMain.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lcMain.Parent" xml:space="preserve">
     <value>$this</value>
@@ -907,174 +907,174 @@
     <value>layoutControlGroup1</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciFirstName.Name" xml:space="preserve">
     <value>lciFirstName</value>
   </data>
   <data name="&gt;&gt;lciFirstName.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciMiddleName.Name" xml:space="preserve">
     <value>lciMiddleName</value>
   </data>
   <data name="&gt;&gt;lciMiddleName.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciLastName.Name" xml:space="preserve">
     <value>lciLastName</value>
   </data>
   <data name="&gt;&gt;lciLastName.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciTitle.Name" xml:space="preserve">
     <value>lciTitle</value>
   </data>
   <data name="&gt;&gt;lciTitle.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciPhoto.Name" xml:space="preserve">
     <value>lciPhoto</value>
   </data>
   <data name="&gt;&gt;lciPhoto.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
     <value>emptySpaceItem3</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
     <value>emptySpaceItem2</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
     <value>layoutControlItem2</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
     <value>layoutControlItem1</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;splitterItem1.Name" xml:space="preserve">
     <value>splitterItem1</value>
   </data>
   <data name="&gt;&gt;splitterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem5.Name" xml:space="preserve">
     <value>emptySpaceItem5</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciNotes.Name" xml:space="preserve">
     <value>lciNotes</value>
   </data>
   <data name="&gt;&gt;lciNotes.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lcgAddress.Name" xml:space="preserve">
     <value>lcgAddress</value>
   </data>
   <data name="&gt;&gt;lcgAddress.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciLine.Name" xml:space="preserve">
     <value>lciLine</value>
   </data>
   <data name="&gt;&gt;lciLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciCity.Name" xml:space="preserve">
     <value>lciCity</value>
   </data>
   <data name="&gt;&gt;lciCity.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciState.Name" xml:space="preserve">
     <value>lciState</value>
   </data>
   <data name="&gt;&gt;lciState.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciZip.Name" xml:space="preserve">
     <value>lciZip</value>
   </data>
   <data name="&gt;&gt;lciZip.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
     <value>emptySpaceItem4</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lcgInfo.Name" xml:space="preserve">
     <value>lcgInfo</value>
   </data>
   <data name="&gt;&gt;lcgInfo.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciEmail.Name" xml:space="preserve">
     <value>lciEmail</value>
   </data>
   <data name="&gt;&gt;lciEmail.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciPhone.Name" xml:space="preserve">
     <value>lciPhone</value>
   </data>
   <data name="&gt;&gt;lciPhone.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lciBirthDate.Name" xml:space="preserve">
     <value>lciBirthDate</value>
   </data>
   <data name="&gt;&gt;lciBirthDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem6.Name" xml:space="preserve">
     <value>emptySpaceItem6</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem6.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem7.Name" xml:space="preserve">
     <value>emptySpaceItem7</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem7.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
     <value>emptySpaceItem1</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem8.Name" xml:space="preserve">
     <value>emptySpaceItem8</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem8.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;dxValidationProvider1.Name" xml:space="preserve">
     <value>dxValidationProvider1</value>
   </data>
   <data name="&gt;&gt;dxValidationProvider1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditContact</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Culture=neutral</value>
   </data>
 </root>

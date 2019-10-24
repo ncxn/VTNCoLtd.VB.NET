@@ -142,7 +142,7 @@
     <value>schedulerControl1</value>
   </data>
   <data name="&gt;&gt;schedulerControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.SchedulerControl, DevExpress.XtraScheduler.v18.2</value>
+    <value>DevExpress.XtraScheduler.SchedulerControl, DevExpress.XtraScheduler.v19.1</value>
   </data>
   <data name="&gt;&gt;schedulerControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -166,7 +166,7 @@
     <value>schedulerStorage1</value>
   </data>
   <data name="&gt;&gt;schedulerStorage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.SchedulerStorage, DevExpress.XtraScheduler.v18.2</value>
+    <value>DevExpress.XtraScheduler.SchedulerStorage, DevExpress.XtraScheduler.v19.1</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Calendar</value>

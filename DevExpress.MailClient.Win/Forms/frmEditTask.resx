@@ -127,7 +127,7 @@
     <value>barButtonGroup1</value>
   </data>
   <data name="&gt;&gt;changeFontSizeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;pasteSpecialItem1.Name" xml:space="preserve">
     <value>pasteSpecialItem1</value>
@@ -137,7 +137,7 @@
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;tableRowsAndColumnsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableRowsAndColumnsRibbonPageGroup, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableRowsAndColumnsRibbonPageGroup, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Name" xml:space="preserve">
     <value>insertTableItem1</value>
@@ -150,7 +150,7 @@
     <value>_</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentRightItem1</value>
@@ -169,19 +169,19 @@
     <value>tableStylesRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;icbCategory.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="lcMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>671, 482</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringToFrontItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;tableDesignRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableDesignRibbonPage, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableDesignRibbonPage, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;paragraphRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -193,7 +193,7 @@
     <value>fileOpenItem1</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="icbPriority.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -223,14 +223,14 @@
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
-  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2"></assembly>
-  <data name="icbPriority.Properties.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v18.2">
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1"></assembly>
+  <data name="icbPriority.Properties.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
     <value>Near</value>
   </data>
   <data name="&gt;&gt;cutItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.CutItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.CutItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardSubItem1</value>
@@ -254,7 +254,7 @@
     <value>resetTableCellsAllBordersItem1</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;tableDesignRibbonPage1.Name" xml:space="preserve">
     <value>tableDesignRibbonPage1</value>
@@ -278,7 +278,7 @@
     <value>richEditControl1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>901, 143</value>
@@ -299,22 +299,22 @@
     <value>removeSpacingAfterParagraphItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;clearFormattingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ClearFormattingItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ClearFormattingItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="lcMain.Appearance.DisabledLayoutGroupCaption.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;richEditBarController1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;insertSymbolItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;textRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TextRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.TextRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="lcMain.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -332,16 +332,16 @@
     <value>selectTableColumnItem1</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;selectTableCellItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;sePercentComplete.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;icbPriority.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="sePercentComplete.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -380,10 +380,10 @@
     <value>symbolsRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;fileSaveAsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FileSaveAsItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FileSaveAsItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;editPageFooterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.EditPageFooterItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.EditPageFooterItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;teSubject.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -395,7 +395,7 @@
     <value>fileNewItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="deDueDate.Properties.CalendarTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -410,13 +410,13 @@
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;fileOpenItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FileOpenItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FileOpenItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;symbolsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SymbolsRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SymbolsRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;splitTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleFontDoubleStrikeoutItem1.Name" xml:space="preserve">
     <value>toggleFontDoubleStrikeoutItem1</value>
@@ -439,8 +439,8 @@
   <data name="&gt;&gt;icbStatus.Name" xml:space="preserve">
     <value>icbStatus</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2"></assembly>
-  <data name="sePercentComplete.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1"></assembly>
+  <data name="sePercentComplete.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="icbStatus.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -450,7 +450,7 @@
     <value>frmEditTask</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleFontStrikeoutItem1.Name" xml:space="preserve">
     <value>toggleFontStrikeoutItem1</value>
@@ -468,10 +468,10 @@
     <value></value>
   </data>
   <data name="&gt;&gt;icCategory.Type" xml:space="preserve">
-    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v18.2</value>
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v19.1</value>
   </data>
   <data name="&gt;&gt;insertPageNumberItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertPageNumberItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertPageNumberItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="splitContainerControl1.Panel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 12, 10, 11</value>
@@ -492,7 +492,7 @@
     <value>selectTableElementsItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontUnderlineItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Name" xml:space="preserve">
     <value>fileSaveItem1</value>
@@ -504,7 +504,7 @@
     <value>pasteItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableFixedColumnWidthItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectInFrontOfTextWrapTypeItem1</value>
@@ -516,31 +516,31 @@
     <value>quickPrintItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontSuperscriptItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontSuperscriptItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontSuperscriptItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;barButtonGroup6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleFontStrikeoutItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontStrikeoutItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontStrikeoutItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;deStartDate.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="deStartDate.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="deStartDate.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="floatingObjectSendBackwardSubItem1.MenuAppearance.HeaderItemAppearance.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentJustifyItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentJustifyItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentJustifyItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Name" xml:space="preserve">
     <value>selectTableItem1</value>
@@ -567,7 +567,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;insertRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertRibbonPage, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertRibbonPage, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Name" xml:space="preserve">
     <value>mergeTableCellsItem1</value>
@@ -576,7 +576,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="lciStartDate.Text" xml:space="preserve">
     <value>Start Date:</value>
@@ -585,10 +585,10 @@
     <value>textRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;changeTextCaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTextCaseItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTextCaseItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;insertPageBreakItem1.Name" xml:space="preserve">
     <value>insertPageBreakItem1</value>
@@ -600,7 +600,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;toggleFontDoubleStrikeoutItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontDoubleStrikeoutItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontDoubleStrikeoutItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="barButtonGroup7.MenuAppearance.HeaderItemAppearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -609,16 +609,16 @@
     <value>toggleTableAutoFitContentsItem1</value>
   </data>
   <data name="&gt;&gt;splitContainerControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SplitContainerControl, DevExpress.Utils.v18.2</value>
+    <value>DevExpress.XtraEditors.SplitContainerControl, DevExpress.Utils.v19.1</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2"></assembly>
-  <data name="deDueDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1"></assembly>
+  <data name="deDueDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
-  <data name="deStartDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="deStartDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Name" xml:space="preserve">
@@ -646,16 +646,16 @@
     <value>changeTableBorderColorItem1</value>
   </data>
   <data name="&gt;&gt;richEditControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.RichEditControl, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.RichEditControl, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectThroughTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="barButtonGroup2.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;editingRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
@@ -673,7 +673,7 @@
     <value>insertRibbonPage1</value>
   </data>
   <data name="&gt;&gt;linksRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.LinksRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.LinksRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;fileSaveAsItem1.Name" xml:space="preserve">
     <value>fileSaveAsItem1</value>
@@ -688,13 +688,13 @@
     <value>insertPageCountItem1</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Name" xml:space="preserve">
     <value>floatingObjectSendToBackItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;richEditControl1.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -703,13 +703,13 @@
     <value>11</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.CalendarTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
     <value>_</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="teSubject.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -717,7 +717,7 @@
   <data name="deDueDate.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
     <value>_</value>
   </data>
-  <data name="icCategory.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="icCategory.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNS4xLCBWZXJzaW9uPTE1LjEu
         MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQMAwAAAFFT
@@ -769,7 +769,7 @@
 </value>
   </data>
   <data name="&gt;&gt;barButtonGroup5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="&gt;&gt;changeParagraphLineSpacingItem1.Name" xml:space="preserve">
     <value>changeParagraphLineSpacingItem1</value>
@@ -778,7 +778,7 @@
     <value>Subject:</value>
   </data>
   <data name="&gt;&gt;changeFontNameItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;lciCategory.Name" xml:space="preserve">
     <value>lciCategory</value>
@@ -790,10 +790,10 @@
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;findItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="richEditControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>647, 338</value>
@@ -802,13 +802,13 @@
     <value>addSpacingBeforeParagraphItem1</value>
   </data>
   <data name="&gt;&gt;lciSubject.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Name" xml:space="preserve">
     <value>insertTableRowAboveItem1</value>
   </data>
   <data name="&gt;&gt;barButtonGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="deStartDate.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -817,7 +817,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;showSplitTableCellsForm1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;icbStatus.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -853,13 +853,13 @@
     <value>setFloatingObjectMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="teSubject.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleLeftAlignmentItem1</value>
@@ -877,7 +877,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;ribbonControl1.Name" xml:space="preserve">
     <value>ribbonControl1</value>
@@ -886,13 +886,13 @@
     <value>addSpacingAfterParagraphItem1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Name" xml:space="preserve">
     <value>insertFloatingPictureItem1</value>
   </data>
   <data name="&gt;&gt;insertPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -904,13 +904,13 @@
     <value>insertTableColumnToRightItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="changeParagraphLineSpacingItem1.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;insertTextBoxItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="changeFloatingObjectAlignmentItem1.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
@@ -919,13 +919,13 @@
     <value>lcMain</value>
   </data>
   <data name="&gt;&gt;makeTextUpperCaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.MakeTextUpperCaseItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.MakeTextUpperCaseItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="changeTextCaseItem1.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;barButtonGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="lciCategory.Text" xml:space="preserve">
     <value>Category: </value>
@@ -946,7 +946,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;selectTableRowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="ucContactInfo1.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 459</value>
@@ -961,10 +961,10 @@
     <value>toggleTableAutoFitWindowItem1</value>
   </data>
   <data name="&gt;&gt;fontRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FontRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;makeTextLowerCaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.MakeTextLowerCaseItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.MakeTextLowerCaseItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardItem1</value>
@@ -979,7 +979,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;toggleShowWhitespaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleShowWhitespaceItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleShowWhitespaceItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Name" xml:space="preserve">
     <value>decreaseIndentItem1</value>
@@ -1000,7 +1000,7 @@
     <value>lciStatus</value>
   </data>
   <data name="&gt;&gt;barButtonGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="barButtonGroup4.MenuAppearance.HeaderItemAppearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -1033,25 +1033,25 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;redoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;fileNewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FileNewItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FileNewItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;addSpacingBeforeParagraphItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.AddSpacingBeforeParagraphItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.AddSpacingBeforeParagraphItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;insertPageBreakItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertPageBreakItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertPageBreakItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleTextCaseItem1.Name" xml:space="preserve">
     <value>toggleTextCaseItem1</value>
   </data>
-  <data name="repositoryItemFloatingObjectOutlineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemFloatingObjectOutlineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="sePercentComplete.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1060,16 +1060,16 @@
     <value>emptySpaceItem3</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="sbOK.Text" xml:space="preserve">
     <value>&amp;OK</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitWindowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;lcMain.Parent" xml:space="preserve">
     <value>splitContainerControl1.Panel1</value>
@@ -1078,7 +1078,7 @@
     <value>repositoryItemRichEditFontSizeEdit1</value>
   </data>
   <data name="&gt;&gt;selectTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsRibbonPageCategory1.Name" xml:space="preserve">
     <value>floatingPictureToolsRibbonPageCategory1</value>
@@ -1087,28 +1087,28 @@
     <value>140, 20</value>
   </data>
   <data name="&gt;&gt;showParagraphFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deleteTableElementsItem1.MenuAppearance.HeaderItemAppearance.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;printItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PrintItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.PrintItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.CalendarTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
   <data name="&gt;&gt;sbCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopRightAlignmentItem1</value>
@@ -1117,10 +1117,10 @@
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;toggleFontItalicItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>901, 625</value>
@@ -1132,7 +1132,7 @@
     <value>519, 60</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deDueDate.Properties.CalendarTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1140,7 +1140,7 @@
   <data name="layoutControlItem2.CustomizationFormText" xml:space="preserve">
     <value>layoutControlItem2</value>
   </data>
-  <data name="icEditors.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="icEditors.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNS4xLCBWZXJzaW9uPTE1LjEu
         MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQMAwAAAFFT
@@ -1250,27 +1250,27 @@
 </value>
   </data>
   <data name="&gt;&gt;lciStartDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="icbStatus.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTightTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.CalendarTimeProperties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
-  <data name="repositoryItemBorderLineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemBorderLineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="homeRibbonPage1.Text" xml:space="preserve">
@@ -1295,7 +1295,7 @@
     <value>icbCategory</value>
   </data>
   <data name="&gt;&gt;toggleBulletedListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="richEditControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 100</value>
@@ -1304,34 +1304,34 @@
     <value>T</value>
   </data>
   <data name="&gt;&gt;editPageHeaderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.EditPageHeaderItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.EditPageHeaderItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopAndBottomTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentCenterItem1</value>
   </data>
-  <data name="icbPriority.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="icbPriority.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;deDueDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;lciCategory.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;insertHyperlinkItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1349,19 +1349,19 @@
     <value>emptySpaceItem2</value>
   </data>
   <data name="&gt;&gt;toggleFontBoldItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="sePercentComplete.Location" type="System.Drawing.Point, System.Drawing">
     <value>78, 60</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="changeTableBordersItem1.MenuAppearance.HeaderItemAppearance.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
@@ -1370,16 +1370,16 @@
     <value>deleteTableItem1</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsShapeStylesPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsShapeStylesPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsShapeStylesPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;undoItem1.Name" xml:space="preserve">
     <value>undoItem1</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;tableToolsRibbonPageCategory1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableToolsRibbonPageCategory, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableToolsRibbonPageCategory, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Name" xml:space="preserve">
     <value>changeTableCellsShadingItem1</value>
@@ -1391,25 +1391,25 @@
     <value>tableAlignmentRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;pagesRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PagesRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.PagesRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="sbCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 448</value>
   </data>
-  <data name="repositoryItemRichEditFontSizeEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemRichEditFontSizeEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="barButtonGroup6.MenuAppearance.HeaderItemAppearance.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
     <value>emptySpaceItem2</value>
@@ -1418,22 +1418,22 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;stylesRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.StylesRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.StylesRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;illustrationsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.IllustrationsRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.IllustrationsRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Name" xml:space="preserve">
     <value>changeParagraphBackColorItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontDoubleUnderlineItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontDoubleUnderlineItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontDoubleUnderlineItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Name" xml:space="preserve">
     <value>showTablePropertiesFormItem1</value>
@@ -1442,28 +1442,28 @@
     <value>repositoryItemFloatingObjectOutlineWeight1</value>
   </data>
   <data name="&gt;&gt;changeFontColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="barButtonGroup1.MenuAppearance.HeaderItemAppearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;dxValidationProvider1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v19.1</value>
   </data>
-  <data name="deDueDate.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="deDueDate.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="sbCancel.Text" xml:space="preserve">
     <value>&amp;Cancel</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deleteTableElementsItem1.MenuAppearance.HeaderItemAppearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
   <data name="&gt;&gt;sbOK.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomBorderItem1</value>
@@ -1472,7 +1472,7 @@
     <value>setFloatingObjectSquareTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;printPreviewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Name" xml:space="preserve">
     <value>showFontFormItem1</value>
@@ -1490,7 +1490,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="teSubject.Properties.NullValuePrompt" xml:space="preserve">
     <value></value>
@@ -1499,16 +1499,16 @@
     <value>icEditors</value>
   </data>
   <data name="&gt;&gt;changeStyleItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeStyleItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeStyleItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentLeftItem1</value>
   </data>
   <data name="&gt;&gt;lciDueDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;ucContactInfo1.Name" xml:space="preserve">
     <value>ucContactInfo1</value>
@@ -1526,7 +1526,7 @@
     <value>homeRibbonPage1</value>
   </data>
   <data name="&gt;&gt;quickPrintItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.QuickPrintItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.QuickPrintItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="icbStatus.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1550,7 +1550,7 @@
     <value>262, 36</value>
   </data>
   <data name="&gt;&gt;setSingleParagraphSpacingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetSingleParagraphSpacingItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetSingleParagraphSpacingItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;splitContainerControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1559,10 +1559,10 @@
     <value>showDeleteTableCellsFormItem1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;tableTableRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableTableRibbonPageGroup, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableTableRibbonPageGroup, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Name" xml:space="preserve">
     <value>changeFontBackColorItem1</value>
@@ -1571,7 +1571,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;removeSpacingBeforeParagraphItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RemoveSpacingBeforeParagraphItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.RemoveSpacingBeforeParagraphItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>901, 482</value>
@@ -1583,7 +1583,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsArrangePageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsArrangePageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsArrangePageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deDueDate.Properties.CalendarTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1595,13 +1595,13 @@
     <value></value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleMultiLevelListItem1.Name" xml:space="preserve">
     <value>toggleMultiLevelListItem1</value>
   </data>
   <data name="&gt;&gt;changeParagraphLineSpacingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphLineSpacingItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphLineSpacingItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="barButtonGroup7.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1612,7 +1612,7 @@
   <data name="deDueDate.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="repositoryItemBorderLineStyle1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemBorderLineStyle1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="deDueDate.Properties.CalendarTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
@@ -1642,7 +1642,7 @@
   <data name="&gt;&gt;floatingPictureToolsShapeStylesPageGroup1.Name" xml:space="preserve">
     <value>floatingPictureToolsShapeStylesPageGroup1</value>
   </data>
-  <data name="teSubject.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="teSubject.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="toggleTableAutoFitItem1.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
@@ -1655,7 +1655,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBehindTextWrapTypeItem1</value>
@@ -1676,10 +1676,10 @@
     <value></value>
   </data>
   <data name="&gt;&gt;removeSpacingAfterParagraphItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RemoveSpacingAfterParagraphItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.RemoveSpacingAfterParagraphItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;teSubject.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;icbPriority.Parent" xml:space="preserve">
     <value>lcMain</value>
@@ -1688,7 +1688,7 @@
     <value>toggleTableCellsInsideBorderItem1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineStyle1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="changeFloatingObjectAlignmentItem1.MenuAppearance.HeaderItemAppearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -1703,13 +1703,13 @@
     <value>headerFooterRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="toggleTableAutoFitItem1.MenuAppearance.HeaderItemAppearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
   <data name="&gt;&gt;copyItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.CopyItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.CopyItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;tableToolsRibbonPageCategory1.Name" xml:space="preserve">
     <value>tableToolsRibbonPageCategory1</value>
@@ -1718,19 +1718,19 @@
     <value>makeTextUpperCaseItem1</value>
   </data>
   <data name="&gt;&gt;tableCellSizeRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableCellSizeRibbonPageGroup, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableCellSizeRibbonPageGroup, DevExpress.XtraRichEdit.v19.1</value>
   </data>
-  <data name="deStartDate.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="deStartDate.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;changeStyleItem1.Name" xml:space="preserve">
     <value>changeStyleItem1</value>
   </data>
   <data name="&gt;&gt;tableMergeRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableMergeRibbonPageGroup, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableMergeRibbonPageGroup, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="teSubject.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1742,13 +1742,13 @@
     <value>deDueDate</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitContentsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="selectTableElementsItem1.MenuAppearance.HeaderItemAppearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;resetTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Name" xml:space="preserve">
     <value>fontSizeDecreaseItem1</value>
@@ -1786,7 +1786,7 @@
   <data name="splitContainerControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="icbStatus.Properties.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v18.2">
+  <data name="icbStatus.Properties.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
     <value>Near</value>
   </data>
   <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
@@ -1811,7 +1811,7 @@
     <value>layoutControlItem2</value>
   </data>
   <data name="&gt;&gt;ribbonControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="&gt;&gt;makeTextLowerCaseItem1.Name" xml:space="preserve">
     <value>makeTextLowerCaseItem1</value>
@@ -1826,7 +1826,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;toggleMultiLevelListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleMultiLevelListItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleMultiLevelListItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deDueDate.Properties.Mask.EditMask" xml:space="preserve">
     <value>d</value>
@@ -1835,28 +1835,28 @@
     <value>262, 60</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;lciPriority.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Name" xml:space="preserve">
     <value>deleteTableRowsItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;teSubject.Parent" xml:space="preserve">
     <value>lcMain</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="icbPriority.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1865,7 +1865,7 @@
     <value>showLineSpacingFormItem1</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsFormatPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsFormatPage, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsFormatPage, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="teSubject.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1880,7 +1880,7 @@
     <value>201, 0, 119</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="barButtonGroup1.MenuAppearance.HeaderItemAppearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -1895,15 +1895,15 @@
     <value>109, 448</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;insertBookmarkItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertBookmarkItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertBookmarkItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;setSesquialteralParagraphSpacingItem1.Name" xml:space="preserve">
     <value>setSesquialteralParagraphSpacingItem1</value>
   </data>
-  <data name="deDueDate.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="deDueDate.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Name" xml:space="preserve">
@@ -1922,15 +1922,15 @@
     <value>18</value>
   </data>
   <data name="&gt;&gt;headerFooterRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.HeaderFooterRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.HeaderFooterRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Name" xml:space="preserve">
     <value>deleteTableColumnsItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectFillColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
-  <data name="teSubject.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="teSubject.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="lciDescription.Text" xml:space="preserve">
@@ -1943,13 +1943,13 @@
     <value></value>
   </data>
   <data name="&gt;&gt;lciPercentComplete.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Name" xml:space="preserve">
     <value>showInsertTableCellsFormItem1</value>
@@ -1961,22 +1961,22 @@
     <value></value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FileSaveItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FileSaveItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;setDoubleParagraphSpacingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetDoubleParagraphSpacingItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetDoubleParagraphSpacingItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="richEditControl1.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="&gt;&gt;lcMain.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="teSubject.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1984,7 +1984,7 @@
   <data name="&gt;&gt;insertSymbolItem1.Name" xml:space="preserve">
     <value>insertSymbolItem1</value>
   </data>
-  <data name="deDueDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="deDueDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="lcMain.Location" type="System.Drawing.Point, System.Drawing">
@@ -2258,17 +2258,17 @@
         rEEAAKxBAACsQQAArEEAAKxBAACsQQAArEE=
 </value>
   </data>
-  <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;addSpacingAfterParagraphItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.AddSpacingAfterParagraphItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.AddSpacingAfterParagraphItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="layoutControlGroup1.Text" xml:space="preserve">
     <value>Root</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="repositoryItemFontEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2280,10 +2280,10 @@
     <value>26</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomCenterAlignmentItem1</value>
@@ -2307,12 +2307,12 @@
     <value>changeFontColorItem1</value>
   </data>
   <data name="&gt;&gt;replaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;tableStylesRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableStylesRibbonPageGroup, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableStylesRibbonPageGroup, DevExpress.XtraRichEdit.v19.1</value>
   </data>
-  <data name="icbStatus.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="icbStatus.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Name" xml:space="preserve">
@@ -2322,7 +2322,7 @@
     <value>toggleTableCellsBottomLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="barButtonGroup4.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2355,10 +2355,10 @@
     <value></value>
   </data>
   <data name="&gt;&gt;clipboardRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;icEditors.Type" xml:space="preserve">
-    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v18.2</value>
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v19.1</value>
   </data>
   <data name="changeTableBordersItem1.MenuAppearance.HeaderItemAppearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -2367,13 +2367,13 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;deleteTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="barButtonGroup1.MenuAppearance.HeaderItemAppearance.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;tableDrawBordersRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableDrawBordersRibbonPageGroup, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableDrawBordersRibbonPageGroup, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;sePercentComplete.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -2397,7 +2397,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;lciDescription.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;cutItem1.Name" xml:space="preserve">
     <value>cutItem1</value>
@@ -2409,16 +2409,16 @@
     <value>DevExpress.MailClient.Win.Controls.ucContactInfo, DevExpress.MailClient.Win, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;teSubject.Name" xml:space="preserve">
     <value>teSubject</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v18.2</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v19.1</value>
   </data>
   <data name="&gt;&gt;deStartDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="sePercentComplete.EditValue" type="System.Decimal, mscorlib">
     <value>0</value>
@@ -2430,16 +2430,16 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;pasteItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="barButtonGroup2.MenuAppearance.HeaderItemAppearance.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;toggleFontSubscriptItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontSubscriptItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontSubscriptItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="barButtonGroup4.MenuAppearance.HeaderItemAppearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
     <value>Horizontal</value>
@@ -2448,9 +2448,9 @@
     <value>insertBookmarkItem1</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
-  <data name="deStartDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="deStartDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Name" xml:space="preserve">
@@ -2463,16 +2463,16 @@
     <value>_</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="floatingObjectSendBackwardSubItem1.MenuAppearance.HeaderItemAppearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;floatingPictureToolsRibbonPageCategory1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsRibbonPageCategory, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingPictureToolsRibbonPageCategory, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;dxValidationProvider1.Name" xml:space="preserve">
     <value>dxValidationProvider1</value>
@@ -2484,31 +2484,31 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;changeTableBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="&gt;&gt;toggleTextCaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTextCaseItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTextCaseItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectSquareTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;tableAlignmentRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableAlignmentRibbonPageGroup, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableAlignmentRibbonPageGroup, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;repositoryItemFontEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;setSesquialteralParagraphSpacingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetSesquialteralParagraphSpacingItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetSesquialteralParagraphSpacingItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;lcMain.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;tablesRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TablesRibbonPageGroup, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.TablesRibbonPageGroup, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="deStartDate.Properties.Mask.EditMask" xml:space="preserve">
     <value>d</value>
@@ -2523,7 +2523,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleShowWhitespaceItem1.Name" xml:space="preserve">
     <value>toggleShowWhitespaceItem1</value>
@@ -2534,19 +2534,19 @@
   <data name="lcMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="icbCategory.Properties.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v18.2">
+  <data name="icbCategory.Properties.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
     <value>Near</value>
   </data>
-  <data name="deStartDate.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="deStartDate.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="deStartDate.Properties.CalendarTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="icbCategory.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="icbCategory.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
-  <data name="sePercentComplete.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="sePercentComplete.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>Numeric</value>
   </data>
   <data name="deDueDate.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -2565,7 +2565,7 @@
     <value>9</value>
   </data>
   <data name="&gt;&gt;showDeleteTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="splitContainerControl1.Text" xml:space="preserve">
     <value>splitContainerControl1</value>
@@ -2592,16 +2592,16 @@
     <value>519, 36</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineStyleItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;tableLayoutRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.TableLayoutRibbonPage, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.TableLayoutRibbonPage, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;lciStatus.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Name" xml:space="preserve">
     <value>barButtonGroup2</value>
@@ -2634,10 +2634,10 @@
     <value>lcMain</value>
   </data>
   <data name="&gt;&gt;undoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Name" xml:space="preserve">
     <value>showEditStyleFormItem1</value>
@@ -2658,13 +2658,13 @@
     <value>barButtonGroup5</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;increaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBehindTextItem1</value>
@@ -2676,7 +2676,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;repositoryItemFloatingObjectOutlineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;lciDescription.Name" xml:space="preserve">
     <value>lciDescription</value>
@@ -2690,7 +2690,7 @@
   <data name="&gt;&gt;setDoubleParagraphSpacingItem1.Name" xml:space="preserve">
     <value>setDoubleParagraphSpacingItem1</value>
   </data>
-  <data name="repositoryItemRichEditStyleEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemRichEditStyleEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;sbOK.Parent" xml:space="preserve">
@@ -2706,28 +2706,28 @@
     <value>5</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="lciPriority.CustomizationFormText" xml:space="preserve">
     <value>Priority:</value>
   </data>
   <data name="&gt;&gt;selectTableColumnItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;showLineSpacingFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowLineSpacingFormItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowLineSpacingFormItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;icbStatus.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v19.1</value>
   </data>
-  <data name="deDueDate.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="deDueDate.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="barButtonGroup5.MenuAppearance.HeaderItemAppearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;pasteSpecialItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PasteSpecialItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.PasteSpecialItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
     <value>layoutControlItem1</value>
@@ -2739,22 +2739,22 @@
     <value>lciPercentComplete</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectOutlineWeightItem1</value>
   </data>
   <data name="&gt;&gt;insertPageCountItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertPageCountItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertPageCountItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="icbCategory.Location" type="System.Drawing.Point, System.Drawing">
     <value>78, 12</value>
   </data>
   <data name="&gt;&gt;fontSizeIncreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Name" xml:space="preserve">
     <value>barButtonGroup7</value>
@@ -2781,7 +2781,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v18.2.Extensions</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v19.1.Extensions</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Name" xml:space="preserve">
     <value>insertTableRowBelowItem1</value>
@@ -2802,7 +2802,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v18.2</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v19.1</value>
   </data>
   <data name="deStartDate.Properties.CalendarTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
     <value>False</value>

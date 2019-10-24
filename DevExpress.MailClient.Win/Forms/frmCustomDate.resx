@@ -140,8 +140,8 @@
   <data name="dateEdit1.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2, Culture=neutral"></assembly>
-  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Culture=neutral"></assembly>
+  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="dateEdit2.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
@@ -166,16 +166,16 @@
     <value>T</value>
   </data>
   <data name="&gt;&gt;sbCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="dateEdit2.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit2.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;dateEdit2.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -191,13 +191,13 @@
     <value>Custom</value>
   </data>
   <data name="&gt;&gt;dxValidationProvider1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="dateEdit1.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -209,7 +209,7 @@
     <value></value>
   </data>
   <data name="&gt;&gt;sbOK.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="dateEdit1.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
     <value>_</value>
@@ -229,8 +229,8 @@
   <data name="layoutControl1.Appearance.DisabledLayoutGroupCaption.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2, Culture=neutral"></assembly>
-  <data name="dateEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Culture=neutral"></assembly>
+  <data name="dateEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="dateEdit2.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -257,7 +257,7 @@
   <data name="layoutControlItem2.Text" xml:space="preserve">
     <value>Due Date:</value>
   </data>
-  <data name="dateEdit2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="layoutControl1.Text" xml:space="preserve">
@@ -279,7 +279,7 @@
     <value>emptySpaceItem1</value>
   </data>
   <data name="&gt;&gt;dateEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -306,7 +306,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmCustomDate</value>
@@ -330,7 +330,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="dateEdit2.Properties.CalendarTimeProperties.NullValuePrompt" xml:space="preserve">
     <value></value>
@@ -357,13 +357,13 @@
     <value>12, 85</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;dateEdit2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Culture=neutral</value>
   </data>
   <data name="layoutControl1.OptionsPrint.AppearanceItemCaption.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
@@ -444,19 +444,19 @@
     <value>_</value>
   </data>
   <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v19.1, Culture=neutral</value>
   </data>
-  <data name="dateEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="dateEdit1.Properties.CalendarTimeProperties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v18.2, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Culture=neutral</value>
   </data>
   <data name="layoutControl1.Appearance.DisabledLayoutGroupCaption.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
@@ -476,7 +476,7 @@
   <data name="sbOK.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 22</value>
   </data>
-  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTime</value>
   </data>
   <data name="layoutControl1.OptionsPrint.AppearanceItemCaption.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -518,7 +518,7 @@
   <data name="dateEdit1.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="dateEdit1.Properties.AutoHeight" type="System.Boolean, mscorlib">
@@ -527,7 +527,7 @@
   <data name="layoutControl1.OptionsPrint.AppearanceGroupCaption.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
   </data>
-  <data name="dateEdit1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="dateEdit1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
@@ -542,7 +542,7 @@
   <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="dateEdit2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="dateEdit2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="dateEdit2.Location" type="System.Drawing.Point, System.Drawing">

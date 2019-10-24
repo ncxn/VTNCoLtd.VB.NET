@@ -165,8 +165,8 @@
   <data name="colDueDate.Width" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
-  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2"></assembly>
-  <data name="icEditors.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1"></assembly>
+  <data name="icEditors.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNS4xLCBWZXJzaW9uPTE1LjEu
         MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQMAwAAAFFT
@@ -309,8 +309,8 @@
   <data name="&gt;&gt;colDueDate.Name" xml:space="preserve">
     <value>colDueDate</value>
   </data>
-  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2"></assembly>
-  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v18.2">
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1"></assembly>
+  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
     <value>Default</value>
   </data>
   <data name="colFlagStatus.Visible" type="System.Boolean, mscorlib">
@@ -338,14 +338,14 @@
   <data name="colDueDate.Caption" xml:space="preserve">
     <value>Due Date</value>
   </data>
-  <data name="repositoryItemImageComboBox2.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v18.2">
+  <data name="repositoryItemImageComboBox2.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
     <value>Center</value>
   </data>
   <data name="repositoryItemImageComboBox2.Items" xml:space="preserve">
     <value>Completed</value>
   </data>
   <data name="&gt;&gt;colCompleted.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="layoutControl1.OptionsPrint.AppearanceGroupCaption.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
@@ -371,29 +371,29 @@
   <data name="&gt;&gt;colCategory.Name" xml:space="preserve">
     <value>colCategory</value>
   </data>
-  <data name="repositoryItemImageComboBox2.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemImageComboBox2.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="colFlagStatus.Width" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="&gt;&gt;colPriority.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="layoutControl1.Appearance.DisabledLayoutItem.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
   <data name="&gt;&gt;icCategory.Type" xml:space="preserve">
-    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v18.2</value>
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v19.1</value>
   </data>
   <data name="repositoryItemProgressBar1.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
     <value>Horizontal</value>
@@ -417,9 +417,9 @@
     <value>Task Subject</value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v19.1</value>
   </data>
-  <data name="icCategory.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="icCategory.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNS4xLCBWZXJzaW9uPTE1LjEu
         MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQMAwAAAFFT
@@ -480,7 +480,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;colFlagStatus.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="repositoryItemImageComboBox4.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -488,7 +488,7 @@
   <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>942, 526</value>
   </data>
-  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v18.2">
+  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
     <value>None</value>
   </data>
   <data name="repositoryItemProgressBar1.Appearance.FontSizeDelta" type="System.Int32, mscorlib">
@@ -507,7 +507,7 @@
     <value>10</value>
   </data>
   <data name="&gt;&gt;icEditors.Type" xml:space="preserve">
-    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v18.2</value>
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v19.1</value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox3.Name" xml:space="preserve">
     <value>repositoryItemImageComboBox3</value>
@@ -519,10 +519,10 @@
     <value>Low</value>
   </data>
   <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;repositoryItemTrackBar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTrackBar, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTrackBar, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="gridView1.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -537,7 +537,7 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;colCreated.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
     <value>layoutControl1</value>
@@ -569,7 +569,7 @@
   <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="repositoryItemImageComboBox4.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemImageComboBox4.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="layoutControl1.Appearance.DisabledLayoutItem.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
@@ -615,10 +615,10 @@
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;colDueDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;colStatus.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
     <value>layoutControlGroup1</value>
@@ -639,7 +639,7 @@
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="layoutControl1.Appearance.DisabledLayoutGroupCaption.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
     <value>Regular</value>
@@ -647,8 +647,8 @@
   <data name="colComplete.ToolTip" xml:space="preserve">
     <value>Complete</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2"></assembly>
-  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1"></assembly>
+  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>Center</value>
   </data>
   <data name="colFlagStatus.VisibleIndex" type="System.Int32, mscorlib">
@@ -702,7 +702,7 @@
   <data name="repositoryItemImageComboBox1.Items1" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="repositoryItemImageComboBox3.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemImageComboBox3.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="colCompleted.Width" type="System.Int32, mscorlib">
@@ -712,7 +712,7 @@
     <value>layoutControlItem1</value>
   </data>
   <data name="&gt;&gt;colSubject.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -766,10 +766,10 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v18.2</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v19.1</value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="layoutControl1.Appearance.DisabledLayoutGroupCaption.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -801,7 +801,7 @@
   <data name="repositoryItemProgressBar1.AppearanceFocused.FontSizeDelta" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="gridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v18.2">
+  <data name="gridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
     <value>Count</value>
   </data>
   <data name="colCreated.Width" type="System.Int32, mscorlib">
@@ -814,9 +814,9 @@
     <value></value>
   </data>
   <data name="&gt;&gt;colCategory.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
-  <data name="repositoryItemImageComboBox1.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v18.2">
+  <data name="repositoryItemImageComboBox1.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
     <value>Center</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
@@ -829,7 +829,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;colStartDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="colStartDate.Caption" xml:space="preserve">
     <value>Start Date</value>
@@ -853,10 +853,10 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;colIcon.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="repositoryItemImageComboBox2.Items4" type="System.Int32, mscorlib">
     <value>1</value>
@@ -874,19 +874,19 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;colComplete.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;colOverdue.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="colPercent.VisibleIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="&gt;&gt;colPercent.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1</value>
   </data>
   <data name="&gt;&gt;repositoryItemProgressBar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemProgressBar, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemProgressBar, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="repositoryItemImageComboBox2.Items1" type="System.Int32, mscorlib">
     <value>0</value>
@@ -915,7 +915,7 @@
   <data name="colIcon.Width" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="repositoryItemImageComboBox5.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+  <data name="repositoryItemImageComboBox5.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="colPriority.VisibleIndex" type="System.Int32, mscorlib">
@@ -928,10 +928,10 @@
     <value>Regular</value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v19.1</value>
   </data>
   <data name="repositoryItemImageComboBox1.Items3" xml:space="preserve">
     <value>Medium</value>

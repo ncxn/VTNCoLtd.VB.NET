@@ -134,6 +134,6 @@
     <value>wfMain</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraWaitForm.DemoWaitForm, DevExpress.XtraEditors.v18.2</value>
+    <value>DevExpress.XtraWaitForm.DemoWaitForm, DevExpress.XtraEditors.v19.1</value>
   </data>
 </root>

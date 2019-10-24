@@ -162,8 +162,8 @@
   <data name="teAddress.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2, Culture=neutral"></assembly>
-  <data name="teAddress.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Culture=neutral"></assembly>
+  <data name="teAddress.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="teAddress.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -172,7 +172,7 @@
   <data name="teAddress.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="teAddress.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="teAddress.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="teAddress.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -202,7 +202,7 @@
   <data name="tePhone.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tePhone.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="tePhone.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="tePhone.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -211,7 +211,7 @@
   <data name="tePhone.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tePhone.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="tePhone.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="tePhone.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -244,7 +244,7 @@
   <data name="teEmail.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="teEmail.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="teEmail.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="teEmail.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -253,7 +253,7 @@
   <data name="teEmail.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="teEmail.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="teEmail.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="teEmail.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
@@ -286,7 +286,7 @@
   <data name="teBirthDate.Properties.AutoHeight" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="teBirthDate.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v18.2">
+  <data name="teBirthDate.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v19.1">
     <value>Default</value>
   </data>
   <data name="teBirthDate.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
@@ -295,7 +295,7 @@
   <data name="teBirthDate.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="teBirthDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+  <data name="teBirthDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>None</value>
   </data>
   <data name="teBirthDate.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
