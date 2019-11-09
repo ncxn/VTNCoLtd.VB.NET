@@ -12,11 +12,11 @@ Namespace DAL
             Return Singleton
         End Function
         Public Function MYSQL() As MySqlConnection
-            Dim host As String = "45.81.5.21"
+            Dim host As String = "45.81.xxx.xxx"
             Dim port As Integer = 3306
-            Dim database As String = "dps"
-            Dim username As String = "root"
-            Dim password As String = "mmttmhh"
+            Dim database As String = "database"
+            Dim username As String = "username"
+            Dim password As String = "password"
             Dim charset As String = "utf8"
             Return DBConnection.GetDBConnection(host, port, database, username, password, charset)
         End Function
